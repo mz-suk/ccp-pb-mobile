@@ -44,8 +44,24 @@
     }
   }
 
+  &.like {
+    background-image: url(/assets/img/layout/icon-l-favorite.png);
+  }
+
   &.location {
     background-image: url(/assets/img/layout/icon-location.png);
+  }
+
+  &.direction {
+    background-image: url(/assets/img/layout/icon-direction.png);
+  }
+
+  &.phone {
+    background-image: url(/assets/img/layout/icon-phone.png);
+  }
+
+  &.share {
+    background-image: url(/assets/img/layout/icon-share.png);
   }
 
   &.review {
@@ -82,5 +98,21 @@
 
   &.filter-type {
     background-image: url(/assets/img/layout/icon-filter-type.png);
+  }
+
+  &.tooltip {
+    background-image: url(/assets/img/layout/icon-tooltip.png);
+  }
+
+  &.toggle {
+    background-image: url(/assets/img/layout/icon-toggle-type1.png);
+  }
+
+  &.more {
+    background-image: url(/assets/img/layout/icon-more-type2.png);
+  }
+
+  &.add {
+    background-image: url(/assets/img/layout/icon-add.png);
   }
 }

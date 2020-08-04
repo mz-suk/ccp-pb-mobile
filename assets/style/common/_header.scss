@@ -1,4 +1,25 @@
 //header
+.isDetail {
+  .header {
+    height: auto;
+    z-index: 100;
+    .title {
+      display: none;
+    }
+    .left,
+    .right {
+      top: 0;
+      transform: translateY(0);
+      .prev {
+        background-image: url(/assets/img/layout/icon-prev-white.png);
+      }
+      .menu {
+        background-image: url(/assets/img/layout/icon-hamburg-white.png);
+      }
+    }
+  }
+}
+
 .header {
   position: sticky;
   height: 5.5rem;

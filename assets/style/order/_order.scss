@@ -1,0 +1,290 @@
+.order-cont {
+  padding: 4rem 2rem 3.5rem;
+  box-sizing: border-box;
+  border-top: 0.8rem solid $fcF9;
+  border-bottom: 0.1rem solid $fcF0;
+
+  &:first-of-type {
+    border-top: 0;
+  }
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+
+  .customer-info {
+    overflow: hidden;
+    margin-top: 2.5rem;
+    padding: 0 0.5rem;
+
+    dt,
+    dd {
+      float: left;
+      margin-bottom: 2rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    dt {
+      position: relative;
+      clear: both;
+      min-width: 10.4rem;
+      padding-left: 1.2rem;
+      color: $fc1;
+
+      &:before {
+        position: absolute;
+        top: 0.8rem;
+        left: 0.4rem;
+        width: 0.3rem;
+        height: 0.3rem;
+        background: $fc6;
+        border-radius: 50%;
+        content: "";
+      }
+    }
+  }
+
+  .safe-number {
+    margin-top: 3rem;
+
+    .tooltip {
+      margin-left: 0.3rem;
+    }
+  }
+
+  .define-box {
+    margin-top: 2rem;
+
+    &.total {
+      margin-top: 2.5rem;
+      border-color: $pc3;
+      color: $pc3;
+
+      span {
+        font-size: 2rem;
+        line-height: 1;
+      }
+    }
+
+    &.benefit {
+      margin-top: 1rem;
+      padding: 1rem 1.5rem;
+      background: rgba(234, 0, 44, 0.06);
+      border: 0;
+    }
+  }
+
+  .define-list {
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+  }
+
+  .wrap-text-link {
+    margin-top: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .order-info {
+    .total {
+      border-color: $gc3;
+      color: $gc3;
+    }
+  }
+
+  .point-info {
+    .define-list {
+      color: $fc1;
+    }
+
+    .desc {
+      color: $fc6;
+    }
+
+    .text-guide {
+      margin: 1.2rem 0 0 1rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  .terms-box {
+    overflow: hidden;
+    margin: 2rem 1rem 0;
+
+    .more {
+      float: right;
+      width: 2rem;
+      height: 2rem;
+      background-size: 1.2rem 1.2rem;
+    }
+  }
+
+  .wrap-btn {
+    margin-top: 4rem;
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .wrap-tab {
+    margin: 2.5rem 1rem 0;
+  }
+
+  .card-add {
+    display: block;
+    height: 17rem;
+    margin: 2.5rem 2.5rem 0;
+    box-sizing: border-box;
+    border: 0.1rem dotted $fc9;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.1;
+
+    .add {
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      margin: 5.7rem auto 1rem;
+    }
+  }
+
+  .wrap-btn-order {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2.5rem -0.5rem 0;
+
+    .btn {
+      flex: 1;
+      margin: 0 0.5rem 1.2rem;
+
+      &:first-of-type,
+      &:last-of-type {
+        flex-basis: 100%;
+      }
+
+      &:first-of-type {
+        border-color: $fc9;
+      }
+    }
+  }
+
+  .wrap-card {
+    margin-top: 4rem;
+
+    .logo-card {
+      display: block;
+      height: 2rem;
+      margin-bottom: 4rem;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .info {
+      //height: 13rem;
+      padding: 2.2rem 2.2rem 1.4rem;
+      background: #777;
+      border-radius: 2rem 2rem 0 0;
+      box-sizing: border-box;
+      color: $fcF;
+    }
+
+    .date {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4rem;
+      padding: 0 2.8rem 0 2.2rem;
+      background: #6a6a6a;
+      border-radius: 0 0 2rem 2rem;
+      color: $fc9;
+    }
+  }
+}
+
+.tag {
+  &.point {
+    display: inline-block;
+    position: relative;
+    height: 2.2rem;
+    margin-left: 1rem;
+    padding: 0 1rem;
+    background: linear-gradient(to right, #04a0f3 0%, #45d49a 100%);
+    border-radius: 0.1rem;
+    font-size: 1.1rem;
+    color: $fcF;
+    line-height: 2.2rem;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: -0.4rem;
+      width: 0.5rem;
+      height: 1rem;
+      background: url(/assets/img/layout/icon-tag-arrow.png) 0 0 / 100% auto no-repeat;
+      transform: translateY(-50%);
+      content: "";
+    }
+  }
+}
+
+.accordion {
+  .accordion-title {
+    display: block;
+    position: relative;
+    padding: 0 2rem 1rem 0;
+    border-bottom: 0.1rem solid $fcF0;
+    color: $fc1;
+    font-size: 1.5rem;
+
+    .title {
+      label {
+        vertical-align: middle;
+      }
+    }
+
+    .toggle {
+      position: absolute;
+      top: 0.2rem;
+      right: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+
+  .accordion-cont {
+    display: none;
+  }
+
+  &.active {
+    .toggle {
+      transform: rotate(180deg);
+    }
+
+    .accordion-cont {
+      display: block;
+    }
+  }
+}
+
+.text-link {
+  display: block;
+  margin-bottom: 2rem;
+  padding-right: 1.5rem;
+  background: url(/assets/img/layout/icon-more-type2.png) 100% 50% / 1.2rem 1.2rem no-repeat;
+  color: $fc1;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.tooltip {
+  width: 1.6rem;
+  height: 1.6rem;
+}

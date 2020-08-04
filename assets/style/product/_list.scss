@@ -476,18 +476,39 @@
   }
 }
 
-.title-cont {
-  overflow: hidden;
+.define-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
   padding: 0 1rem 1rem;
   border-bottom: 0.1rem solid $fc1;
   color: $fc1;
 
-  p {
+  * {
     display: inline-block;
 
     &.right {
       float: right;
     }
+  }
+}
+
+.define-list {
+  overflow: hidden;
+
+  dt,
+  dd {
+    float: left;
+    margin-top: 2rem;
+  }
+
+  dt {
+    clear: both;
+  }
+
+  dd {
+    float: right;
   }
 }
 
