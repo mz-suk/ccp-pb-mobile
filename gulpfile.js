@@ -38,7 +38,7 @@ function watchFiles() {
 }
 
 exports.build = gulp.series(
-  del(assets + "css/"),
+  () => del(assets + "css/"),
   gulp.parallel(() => cssTask("*", true))
 );
 exports.default = gulp.parallel(watchFiles, browser);
