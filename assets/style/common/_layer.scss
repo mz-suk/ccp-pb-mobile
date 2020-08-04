@@ -1,0 +1,128 @@
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($fc1, 0.5);
+}
+
+.wrapper-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($fc1, 0.5);
+
+  .layer-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  &.pos-bottom {
+    .wrap-layer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 51;
+      width: 100%;
+      background-color: $fcF;
+      border-radius: 3rem 3rem 0 0;
+    }
+  }
+
+  .wrap-layer {
+    padding-top: 4rem;
+    box-sizing: border-box;
+  }
+
+  .wrap-layer-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem 2rem 1.5rem 3rem;
+    border-top: .1rem solid $fcD7;
+
+    .refresh {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: .5rem;
+    }
+
+    .type2 {
+      width: auto;
+    }
+  }
+
+  .layer-cont {
+    padding: 0 2rem 4rem;
+
+    .title-sub {
+      margin-bottom: 2.5rem;
+    }
+
+    .wrap-checkbox {
+      margin-top: -1rem;
+    }
+
+    .wrap-btn {
+      display: flex;
+      flex-wrap: wrap;
+
+      .btn {
+        flex: 1 1 auto;
+        margin-right: 1rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .wrap-price {
+      .left {
+        font-size: 1.5rem;
+
+        em {
+          font-size: 1.6rem;
+        }
+      }
+
+      .text-guide {
+        margin-top: 2rem;
+        color: $fc1;
+      }
+    }
+
+    .wrap-time {
+      padding: 0 1rem;
+
+      .wrap-checkbox {
+        margin-top: 0;
+      }
+    }
+
+    .checkbox {
+      &.type1 {
+        label {
+          min-width: 7.1rem;
+          padding: 0;
+        }
+      }
+    }
+
+
+    .title-cont {
+      margin-bottom: 2rem;
+
+      .right {
+        color: $gc3;
+      }
+    }
+  }
+}
