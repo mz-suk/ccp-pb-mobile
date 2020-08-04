@@ -5,82 +5,82 @@
   @include blind();
 
   &.prev {
-    background-image: url(~assets/img/layout/icon-prev.png);
+    background-image: url(/assets/img/layout/icon-prev.png);
   }
 
   &.menu {
-    background-image: url(~assets/img/layout/icon-hamburg.png);
+    background-image: url(/assets/img/layout/icon-hamburg.png);
   }
 
   &.close {
-    background-image: url(~assets/img/layout/icon-close.png);
+    background-image: url(/assets/img/layout/icon-close.png);
   }
 
   &.filter {
-    background-image: url(~assets/img/layout/icon-filter.png);
+    background-image: url(/assets/img/layout/icon-filter.png);
   }
 
   &.refresh {
-    background-image: url(~assets/img/layout/icon-refresh.png);
+    background-image: url(/assets/img/layout/icon-refresh.png);
   }
 
   &.store {
-    background-image: url(~assets/img/layout/icon-store.png);
+    background-image: url(/assets/img/layout/icon-store.png);
   }
 
   &.calendar {
-    background-image: url(~assets/img/layout/icon-calendar.png);
+    background-image: url(/assets/img/layout/icon-calendar.png);
   }
 
   &.time {
-    background-image: url(~assets/img/layout/icon-time.png);
+    background-image: url(/assets/img/layout/icon-time.png);
   }
 
   &.favorite {
-    background-image: url(~assets/img/layout/icon-favorite.png);
+    background-image: url(/assets/img/layout/icon-favorite.png);
 
     &.active {
-      background-image: url(~assets/img/layout/icon-favorite-on.png);
+      background-image: url(/assets/img/layout/icon-favorite-on.png);
     }
   }
 
   &.location {
-    background-image: url(~assets/img/layout/icon-location.png);
+    background-image: url(/assets/img/layout/icon-location.png);
   }
 
   &.review {
-    background-image: url(~assets/img/layout/icon-review.png);
+    background-image: url(/assets/img/layout/icon-review.png);
   }
 
   &.tag1 {
-    background-image: url(~assets/img/layout/icon-goodstag-type1.png);
+    background-image: url(/assets/img/layout/icon-goodstag-type1.png);
   }
 
   &.tag2 {
-    background-image: url(~assets/img/layout/icon-goodstag-type2.png);
+    background-image: url(/assets/img/layout/icon-goodstag-type2.png);
   }
 
   &.tag3 {
-    background-image: url(~assets/img/layout/icon-goodstag-type3.png);
+    background-image: url(/assets/img/layout/icon-goodstag-type3.png);
   }
 
   &.tag4 {
-    background-image: url(~assets/img/layout/icon-goodstag-type4.png);
+    background-image: url(/assets/img/layout/icon-goodstag-type4.png);
   }
 
   &.tag5 {
-    background-image: url(~assets/img/layout/icon-goodstag-type5.png);
+    background-image: url(/assets/img/layout/icon-goodstag-type5.png);
   }
 
   &.tag6 {
-    background-image: url(~assets/img/layout/icon-goodstag-type6.png);
+    background-image: url(/assets/img/layout/icon-goodstag-type6.png);
   }
 
   &.filter-sorting {
-    background-image: url(~assets/img/layout/icon-filter-sorting.png);
+    background-image: url(/assets/img/layout/icon-filter-sorting.png);
   }
 
   &.filter-type {
-    background-image: url(~assets/img/layout/icon-filter-type.png);
+    background-image: url(/assets/img/layout/icon-filter-type.png);
   }
 }

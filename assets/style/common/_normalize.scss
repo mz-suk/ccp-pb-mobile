@@ -79,22 +79,22 @@ table {
 }
 
 button,
-html input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   overflow: visible;
   -webkit-appearance: button;
   cursor: pointer;
 }
 
 // button::-moz-focus-inner, input::-moz-focus-inner {padding:0; border:0;}
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -110,7 +110,7 @@ html {
 
 body {
   height: 100%;
-  font: 1.3rem/1.5 'Moebius', sans-serif;
+  font: 1.3rem/1.5 "Moebius", sans-serif;
   // letter-spacing: -0.05em;
   word-break: keep-all;
   color: $fc6;
@@ -174,33 +174,25 @@ span {
 }
 
 @font-face {
-  font-family: 'Moebius';
-  src: local('MoebiusKorea'),
-    url('~assets/font/MoebiusKorea-Regular.woff2') format('woff2'),
-    url('~assets/font/MoebiusKorea-Regular.woff') format('woff');
+  font-family: "Moebius";
+  src: local("MoebiusKorea"), url("/assets/font/MoebiusKorea-Regular.woff2") format("woff2"), url("/assets/font/MoebiusKorea-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Moebius';
+  font-family: "Moebius";
   font-weight: 700;
-  src: local('MoebiusKorea'),
-    url('~assets/font/MoebiusKorea-Bold.woff2') format('woff2'),
-    url('~assets/font/MoebiusKorea-Bold.woff') format('woff');
+  src: local("MoebiusKorea"), url("/assets/font/MoebiusKorea-Bold.woff2") format("woff2"), url("/assets/font/MoebiusKorea-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Moebius';
-  src: local('Jost-Medium'),
-    url('~assets/font/jostMedium.woff2') format('woff2'),
-    url('~assets/font/jostMedium.woff') format('woff');
+  font-family: "Moebius";
+  src: local("Jost-Medium"), url("/assets/font/jostMedium.woff2") format("woff2"), url("/assets/font/jostMedium.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Moebius';
+  font-family: "Moebius";
   font-weight: 700;
-  src: local('Jost-Medium'),
-    url('~assets/font/jostMedium.woff2') format('woff2'),
-    url('~assets/font/jostMedium.woff') format('woff');
+  src: local("Jost-Medium"), url("/assets/font/jostMedium.woff2") format("woff2"), url("/assets/font/jostMedium.woff") format("woff");
 }
 
 html {
@@ -234,14 +226,13 @@ html {
 
 .required {
   &:after {
-    content: '';
+    content: "";
     display: inline-block;
     width: 0.7rem;
     height: 0.7rem;
     margin-left: 0.5rem;
     vertical-align: 0.15em;
-    background: url(~assets/img/layout/icon-required.png) 0 0 / 100% auto
-      no-repeat;
+    background: url(/assets/img/layout/icon-required.png) 0 0 / 100% auto no-repeat;
   }
 }
 
