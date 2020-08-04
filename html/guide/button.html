@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    @@include(../layout/header.html)
+
+    <div id="container">
+      <div class="wrap-guide">
+        <p>버튼 사이즈</p>
+        <a href="javascript:;" class="btn">기본 </a>
+        <a href="javascript:;" class="btn size1">버튼 size1</a>
+        <a href="javascript:;" class="btn type1">버튼 type1</a>
+        <a href="javascript:;" class="btn type2">버튼 type2</a>
+
+        <p>버튼 컬러</p>
+        <a href="javascript:;" class="btn">기본 </a>
+        <a href="javascript:;" class="btn color1">버튼 color1</a>
+        <a href="javascript:;" class="btn color2">버튼 color2</a>
+        <a href="javascript:;" class="btn color3">버튼 color3</a>
+        <a href="javascript:;" class="btn color4">버튼 color4</a>
+        <a href="javascript:;" class="btn color5">버튼 color5</a>
+        <a href="javascript:;" class="btn color11">버튼 color11</a>
+        <a href="javascript:;" class="btn color12">버튼 color12</a>
+
+        <p>버튼 disabled</p>
+        <a href="javascript:;" class="btn" disabled>기본 disabled</a>
+      </div>
+    </div>
+  </body>
+</html>
