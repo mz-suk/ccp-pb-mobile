@@ -65,10 +65,26 @@
 
       <!-- Wrap-contents -->
       <div class="wrap-contents">
-        <div class="list-item">
+        <div class="list-item detail-page">
           <div class="item-top">
             <div class="thumbnail">
-              <img src="/assets/img/temp/list-thumb-1.png" alt="" />
+              <div class="slider-wrap">
+                <ul class="thumbnail-slider">
+                  <li>
+                    <img src="/assets/img/temp/list-thumb-1.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="/assets/img/temp/list-thumb-1.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="/assets/img/temp/list-thumb-1.png" alt="" />
+                  </li>
+                </ul>
+                <div>
+                  <button type="button">prev</button>
+                  <button type="button">next</button>
+                </div>
+              </div>
             </div>
             <div class="label"><span>혼잡도 여유 .</span></div>
           </div>
@@ -108,7 +124,7 @@
 
             <ul class="store-link">
               <li>
-                <a href="#"><i class="bg-icon like"></i><span>679</span></a>
+                <button type="button"><i class="bg-icon like"></i><span>679</span></button>
               </li>
               <li>
                 <a href="#"><i class="bg-icon direction"></i><span>길찾기</span></a>
@@ -133,74 +149,123 @@
                 <div class="barcode">바코드 영역</div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <ul>
-              <li>
-                <a href="#">매장정보</a>
+        <div class="row-section">
+          <div class="wrap-content-tab">
+            <ul class="tab-menu">
+              <li class="active">
+                <button type="button">매장정보</button>
               </li>
               <li>
-                <a href="#">리뷰<span>(17)</span></a>
+                <button type="button">리뷰 <span class="num">(17)</span></button>
               </li>
             </ul>
+          </div>
 
-            <div>
-              <h2>매장소개</h2>
-              <p>일산 대자동에 위치한 저희 매장은 다른 세차장과 차별화된 건축물과 다양한 기계들로 조화를 이루고 있습니다. 일산 대자동에 위</p>
-              <button type="button">펼쳐보기</button>
-            </div>
+          <div class="article-area">
+            <h2 class="article-title">매장소개</h2>
+            <p>일산 대자동에 위치한 저희 매장은 다른 세차장과 차별화된 건축물과 다양한 기계들로 조화를 이루고 있습니다. 일산 대자동에 위</p>
+            <button type="button">펼쳐보기</button>
+          </div>
 
-            <div>
-              <h2>주요시설<span>[2]</span></h2>
-              <ul>
+          <div class="article-area">
+            <h2 class="article-title">주요시설 <span class="num">[2]</span></h2>
+            <div class="icon-list-wrap">
+              <ul class="icon-list">
                 <li>
-                  <div>
-                    <i class="bg-icon tag3"></i>
-                    <span>8</span>
+                  <div class="list-cont">
+                    <div class="circle-icon">
+                      <i class="bg-icon tag3"></i>
+                      <span class="num">8</span>
+                    </div>
+                    베이
                   </div>
-                  베이
                 </li>
                 <li>
-                  <div>
-                    <i class="bg-icon tag3"></i>
-                    <span>4</span>
+                  <div class="list-cont">
+                    <div class="circle-icon">
+                      <i class="bg-icon tag3"></i>
+                      <span class="num">4</span>
+                    </div>
+                    청소기
                   </div>
-                  청소기
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div>
-              <h2>편의시설<span>[4]</span></h2>
-              <ul>
+          <div class="article-area">
+            <h2 class="article-title">편의시설 <span class="num">[4]</span></h2>
+            <div class="icon-list-wrap">
+              <ul class="icon-list">
                 <li>
-                  <div>
-                    <i class="bg-icon tag3"></i>
+                  <div class="list-cont">
+                    <div class="circle-icon">
+                      <i class="bg-icon tag3"></i>
+                    </div>
+                    카페
                   </div>
-                  카페
                 </li>
                 <li>
-                  <div>
-                    <i class="bg-icon tag3"></i>
+                  <div class="list-cont">
+                    <div class="circle-icon">
+                      <i class="bg-icon tag3"></i>
+                    </div>
+                    푸드
                   </div>
-                  푸드
                 </li>
                 <li>
-                  <div>
-                    <i class="bg-icon tag3"></i>
+                  <div class="list-cont">
+                    <div class="circle-icon">
+                      <i class="bg-icon tag3"></i>
+                    </div>
+                    주유소
                   </div>
-                  주유소
                 </li>
                 <li>
-                  <div>
-                    <i class="bg-icon tag3"></i>
+                  <div class="list-cont">
+                    <div class="circle-icon">
+                      <i class="bg-icon tag3"></i>
+                    </div>
+                    편의점
                   </div>
-                  편의점
+                </li>
+                <li>
+                  <div class="list-cont">
+                    <div class="circle-icon">
+                      <i class="bg-icon tag3"></i>
+                    </div>
+                    편의점
+                  </div>
+                </li>
+                <li>
+                  <div class="list-cont">
+                    <div class="circle-icon">
+                      <i class="bg-icon tag3"></i>
+                    </div>
+                    편의점
+                  </div>
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div>
-              지도 영역
+          <div class="article-area type-map">
+            지도 영역
+          </div>
+
+          <div class="article-area">
+            <h2 class="article-title">사용자 리뷰</h2>
+            <div class="box-review">
+              <p class="">리뷰 571개</p>
+              <div class="wrap-rating">
+                <div class="rating small">
+                  <i style="width: 100%;">5.0</i>
+                </div>
+                <span class="num">4.7</span>
+              </div>
             </div>
           </div>
         </div>

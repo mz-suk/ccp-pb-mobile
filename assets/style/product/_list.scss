@@ -70,10 +70,18 @@
     position: relative;
     padding: 3rem 2rem 0;
     box-sizing: border-box;
-
     .btn {
       width: 100%;
       margin-top: 3rem;
+    }
+  }
+
+  &.detail-page {
+    .thumbnail {
+      height: auto;
+    }
+    .info {
+      padding-right: 0;
     }
   }
 
