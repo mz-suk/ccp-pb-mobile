@@ -39,21 +39,21 @@ function watchFiles() {
   gulp.watch([assets + "style/**/*", "html/**/*"], browserReload);
 }
 
-function buildMoveImg() {
-  return gulp.src(assets + "img/**/*").pipe(gulp.dest(static + "img/"));
-}
-function buildMoveFont() {
-  return gulp.src(assets + "font/**/*").pipe(gulp.dest(static + "font/"));
-}
-function buildConvertCss() {
-  console.log("buildConvertCss");
+// function buildMoveImg() {
+//   return gulp.src(assets + "img/**/*").pipe(gulp.dest(static + "img/"));
+// }
+// function buildMoveFont() {
+//   return gulp.src(assets + "font/**/*").pipe(gulp.dest(static + "font/"));
+// }
+// function buildConvertCss() {
+//   console.log("buildConvertCss");
 
-  return gulp
-    .src(assets + "style/**/*")
-    .pipe(replace("/assets/", "~assets/"))
-    .pipe(gulp.dest(static + "css/"));
-}
+//   return gulp
+//     .src(assets + "style/**/*")
+//     .pipe(replace("/assets/", "~assets/"))
+//     .pipe(gulp.dest(static + "css/"));
+// }
 
 exports.default = gulp.parallel(watchFiles, browser);
-exports.build = gulp.series(() => del(static), gulp.parallel(buildMoveImg, buildMoveFont, buildConvertCss));
-exports.clear = gulp.series(() => del(static));
+// exports.build = gulp.series(() => del(static), gulp.parallel(buildMoveImg, buildMoveFont, buildConvertCss));
+// exports.clear = gulp.series(() => del(static));
