@@ -575,7 +575,7 @@
       overflow: hidden;
     }
 
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
       &.info-type-cont {
         background: $fcF;
         border-color: $fc1;
@@ -647,7 +647,7 @@
     margin-top: 1rem;
     font-size: 1.3rem;
 
-    &+.info-txt2 {
+    & + .info-txt2 {
       margin-top: 1rem;
     }
   }
