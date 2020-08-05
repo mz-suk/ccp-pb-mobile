@@ -85,3 +85,17 @@
     background-color: $fcD7;
   }
 }
+
+// icon 버튼
+.btn-search {
+  .bg-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.btn-clear-x {
+  .bg-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
