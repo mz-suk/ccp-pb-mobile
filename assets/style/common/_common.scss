@@ -24,9 +24,7 @@ $fcF9: #f9f9f9;
     overflow-x: visible;
     overflow-y: hidden;
     white-space: nowrap;
-  }
-
-  @else {
+  } @else {
     @if $_max-height !=null {
       max-height: $_max-height;
     }
@@ -52,9 +50,7 @@ $fcF9: #f9f9f9;
 
   @if $clamp==1 {
     white-space: nowrap;
-  }
-
-  @else {
+  } @else {
     -webkit-line-clamp: $clamp;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -79,9 +75,7 @@ $fcF9: #f9f9f9;
       min-height: 100%;
       width: 100%;
       height: auto;
-    }
-
-    @else {
+    } @else {
       min-width: 100%;
       max-width: initial;
       width: auto;
