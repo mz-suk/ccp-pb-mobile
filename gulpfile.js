@@ -3,8 +3,10 @@ const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const browsersync = require("browser-sync").create();
 const del = require("del");
+const replace = require("gulp-replace");
 
 const assets = "./assets/";
+const static = "./static/";
 
 function browser(done) {
   browsersync.init({
@@ -34,11 +36,24 @@ function watchFiles() {
     gulp.series(() => cssTask("*", true))
   );
 
-  gulp.watch([assets + "css/**/*", "html/**/*"], browserReload);
+  gulp.watch([assets + "style/**/*", "html/**/*"], browserReload);
 }
 
-exports.build = gulp.series(
-  () => del(assets + "css/"),
-  gulp.parallel(() => cssTask("*", true))
-);
+function buildMoveImg() {
+  return gulp.src(assets + "img/**/*").pipe(gulp.dest(static + "img/"));
+}
+function buildMoveFont() {
+  return gulp.src(assets + "font/**/*").pipe(gulp.dest(static + "font/"));
+}
+function buildConvertCss() {
+  console.log("buildConvertCss");
+
+  return gulp
+    .src(assets + "style/**/*")
+    .pipe(replace("/assets/", "~assets/"))
+    .pipe(gulp.dest(static + "css/"));
+}
+
 exports.default = gulp.parallel(watchFiles, browser);
+exports.build = gulp.series(() => del(static), gulp.parallel(buildMoveImg, buildMoveFont, buildConvertCss));
+exports.clear = gulp.series(() => del(static));
