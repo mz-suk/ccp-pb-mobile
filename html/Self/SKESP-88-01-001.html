@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">{{ title }}</h1>
+        <h1 class="title"><button type="button">전지역</button></h1>
         <div class="left">
           <button type="button" class="bg-icon prev">
             이전페이지
@@ -34,40 +34,13 @@
           </button>
         </div>
       </header>
-      <div class="right-header" style="display: none;">
-        <div class="test">
-          <div class="left"><span>USER</span> <span>홍길동 고객님</span></div>
-          <div class="right-header">
-            <span><bell-icon /></span>
-            <span><cancel-icon /></span>
-          </div>
-        </div>
-        <ul>
-          <p><a href="/">내정보</a></p>
-          <li>회원정보</li>
-          <li>차량정보</li>
-          <li>결제관리</li>
-          <li>패턴관리</li>
-        </ul>
-        <ul>
-          <p>혜택</p>
-          <li>쿠폰함</li>
-          <li>이벤트</li>
-        </ul>
-        <ul>
-          <p>활동내역</p>
-          <li>예약/이용내역</li>
-          <li>포인트내역</li>
-        </ul>
-      </div>
-      <div class="outline"></div>
       <!-- //Header -->
 
       <!-- Wrap-contents -->
       <div class="wrap-contents">
         <div class="wrap-filter">
           <div class="left">
-            <p class="desc">{{ total + '개의 세차장' }}</p>
+            <p class="desc">123 개의 세차장</p>
           </div>
           <div class="right">
             <button type="button" class="bg-icon filter">필터</button>
@@ -131,9 +104,17 @@
           </div>
         </div>
 
-        <button type="button" class="add-product">
-          더보기
-        </button>
+        <div style="text-align: center; padding: 20px;">
+          <button type="button" class="btn type1 add-product">
+            더보기
+          </button>
+        </div>
+
+        <div style="text-align: center;">
+          <button type="button" class="btn type2 color4 next-product">
+            다음으로
+          </button>
+        </div>
       </div>
       <!-- //Wrap-contents -->
 
