@@ -34,7 +34,7 @@ function watchFiles() {
     gulp.series(() => cssTask("*", true))
   );
 
-  gulp.watch([assets + "css/**/*", "html/**/*"], browserReload);
+  gulp.watch([assets + "style/**/*", "html/**/*"], browserReload);
 }
 
 exports.build = gulp.series(
