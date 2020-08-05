@@ -27,6 +27,7 @@ textarea,
 }
 
 .checkbox {
+
   input[type="checkbox"],
   input[type="radio"] {
     position: absolute;
@@ -56,8 +57,8 @@ textarea,
       transition: all 0.2s ease;
     }
 
-    input[type="checkbox"]:checked + label,
-    input[type="radio"]:checked + label {
+    input[type="checkbox"]:checked+label,
+    input[type="radio"]:checked+label {
       background: $fc1;
       color: $fcF;
     }
@@ -103,8 +104,8 @@ textarea,
       }
     }
 
-    input[type="checkbox"]:checked + label,
-    input[type="radio"]:checked + label {
+    input[type="checkbox"]:checked+label,
+    input[type="radio"]:checked+label {
       background-color: $fcF;
       border: 0.1rem solid $fc1;
       color: $fc1;
@@ -186,10 +187,61 @@ input[type="checkbox"] {
     background: url(/assets/img/layout/icon-checkbox-on.png) 0 0 / 100% auto no-repeat;
   }
 
-  & + label {
+  &+label {
     margin-left: 0.8rem;
     color: $fc1;
     line-height: 1.5;
+  }
+}
+
+.form-div {
+  .title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+
+.div {
+  display: flex;
+
+  div {
+    width: 30px;
+    height: 30px;
+    background: pink;
+  }
+}
+
+.form-search {
+  position: relative;
+
+  input {
+    padding: 0 7rem 0 1rem;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 1;
+    font-size: 1.6rem;
+    color: $fc1;
+    border-bottom: 0.2rem solid $fc1;
+
+    &::placeholder {
+      font-size: 1.5rem;
+      color: $fc9;
+    }
+  }
+
+  .btn-clear-x {
+    position: absolute;
+    top: 50%;
+    right: 4.5rem;
+    transform: translate(0, -50%);
+  }
+
+  .btn-search {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translate(0, -50%);
   }
 }
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="wrap-guide">
+        <p>header - 서브</p>
+        <header class="header header-sub">
+          <h1 class="title">페이지명</h1>
+          <div class="left">
+            <a href="javascript:;" class="bg-icon prev">이전페이지</a>
+          </div>
+          <div class="right">
+            <button type="button" class="bg-icon menu">메뉴</button>
+          </div>
+        </header>
+        <header class="header header-sub">
+          <h1 class="title">
+            <a href="javascript:;">서울 강남구</a>
+          </h1>
+          <div class="left">
+            <a href="javascript:;" class="bg-icon prev">이전페이지</a>
+          </div>
+          <div class="right">
+            <button type="button" class="bg-icon menu">메뉴</button>
+          </div>
+        </header>
+
+        <p>header - 팝업</p>
+        <header class="header header-popup">
+          <h1 class="title">페이지명페이지명페이지명페이지명페이지명페이지명</h1>
+          <div class="left">
+            <a href="javascript:;" class="bg-icon prev">이전페이지</a>
+          </div>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <header class="header header-popup">
+          <h1 class="title">페이지명</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+      </div>
+    </div>
+  </body>
+</html>

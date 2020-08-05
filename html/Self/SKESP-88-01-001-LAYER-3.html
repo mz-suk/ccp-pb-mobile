@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <div class="right-header" style="display: none;">
+        <div class="test">
+          <div class="left"><span>USER</span> <span>홍길동 고객님</span></div>
+          <div class="right-header">
+            <span><bell-icon /></span>
+            <span><cancel-icon /></span>
+          </div>
+        </div>
+        <ul>
+          <p><a href="/">내정보</a></p>
+          <li>회원정보</li>
+          <li>차량정보</li>
+          <li>결제관리</li>
+          <li>패턴관리</li>
+        </ul>
+        <ul>
+          <p>혜택</p>
+          <li>쿠폰함</li>
+          <li>이벤트</li>
+        </ul>
+        <ul>
+          <p>활동내역</p>
+          <li>예약/이용내역</li>
+          <li>포인트내역</li>
+        </ul>
+      </div>
+      <div class="outline"></div>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents"></div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-bottom">
+      <div class="wrap-layer">
+        <div class="layer-cont">
+          <div class="title-sub">
+            <p class="title"><i class="bg-icon store"></i>충전할 금액</p>
+          </div>
+          <dl class="define-box">
+            <dt class="left">사용가능 금액</dt>
+            <dd class="right">24,000원</dd>
+          </dl>
+          <div class="wrap-price">
+            <div class="checkbox type2">
+              <input type="radio" id="chk1" name="group" checked />
+              <label for="chk1">
+                <p class="left"><em>50,000</em>원</p>
+                <p class="right">+<em>8,000</em>원 추가충전</p>
+              </label>
+            </div>
+            <div class="checkbox type2">
+              <input type="radio" id="chk2" name="group" />
+              <label for="chk2">
+                <p class="left"><em>50,000</em>원</p>
+                <p class="right">+<em>8,000</em>원 추가충전</p>
+              </label>
+            </div>
+            <div class="checkbox type2">
+              <input type="radio" id="chk3" name="group" />
+              <label for="chk3">
+                <p class="left"><em>50,000</em>원</p>
+                <p class="right">+<em>8,000</em>원 추가충전</p>
+              </label>
+            </div>
+            <div class="checkbox type2">
+              <input type="radio" id="chk4" name="group" />
+              <label for="chk4">
+                <p class="left"><em>50,000</em>원</p>
+                <p class="right">+<em>8,000</em>원 추가충전</p>
+              </label>
+            </div>
+            <p class="text-guide">
+              선불충전 가능한 가맹점에서 이용이 가능합니다.
+            </p>
+          </div>
+        </div>
+        <button type="button" class="bg-icon layer-close">
+          레이어팝업 닫기
+        </button>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Layer Pop -->
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-popup">
+        <h1 class="title">새로운 차량 등록</h1>
+        <div class="right">
+          <button type="button" class="bg-icon close">닫기</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-search">
+          <div class="form-div">
+            <p class="title">차량을 검색해 주세요.</p>
+            <div class="form-search">
+              <input type="text" placeholder="차량번호를 입력하세요." />
+              <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+              <button type="button" class="btn-search" title="검색"><i class="bg-icon search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
