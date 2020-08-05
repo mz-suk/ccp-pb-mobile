@@ -122,4 +122,32 @@
   &.search {
     background-image: url(/assets/img/layout/icon-search.png);
   }
+  &.download {
+    background-image: url(/assets/img/layout/icon-download.png);
+  }
+}
+
+// 뱃지
+
+.badge {
+  &:not(:first-child) {
+    margin-left: 0.1rem;
+  }
+  padding: 0.4rem 1rem;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: $fcF;
+  border: 1px solid;
+  border-radius: 10rem;
+  &.blue {
+    color: $pc3;
+    border-color: $pc3;
+  }
+  &.red {
+    color: $gc3;
+    border-color: $gc3;
+  }
 }
