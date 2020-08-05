@@ -193,6 +193,50 @@ input[type="checkbox"] {
   }
 }
 
+.form-div {
+  .title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+.div {
+  display: flex;
+  div {
+    width: 30px;
+    height: 30px;
+    background: pink;
+  }
+}
+.form-search {
+  position: relative;
+  input {
+    padding: 0 7rem 0 1rem;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 1;
+    font-size: 1.6rem;
+    color: $fc1;
+    border-bottom: 0.2rem solid $fc1;
+    &::placeholder {
+      font-size: 1.5rem;
+      color: $fc9;
+    }
+  }
+  .btn-clear-x {
+    position: absolute;
+    top: 50%;
+    right: 4.5rem;
+    transform: translate(0, -50%);
+  }
+  .btn-search {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translate(0, -50%);
+  }
+}
+
 // input[type="number"],
 // input[type="date"],
 // input[type="text"],
