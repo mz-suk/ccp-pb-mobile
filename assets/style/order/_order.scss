@@ -30,8 +30,9 @@
     dt {
       position: relative;
       clear: both;
-      min-width: 10.4rem;
+      width: 10.4rem;
       padding-left: 1.2rem;
+      box-sizing: border-box;
       color: $fc1;
 
       &:before {
@@ -42,8 +43,13 @@
         height: 0.3rem;
         background: $fc6;
         border-radius: 50%;
-        content: "";
+        content: '';
       }
+    }
+
+    dd {
+      width: calc(100% - 10.4rem);
+      word-break: break-all;
     }
   }
 
@@ -135,8 +141,9 @@
 
   .card-add {
     display: block;
+    width: 26.5rem;
     height: 17rem;
-    margin: 2.5rem 2.5rem 0;
+    margin: 2.5rem auto 0;
     box-sizing: border-box;
     border: 0.1rem dotted $fc9;
     border-radius: 2rem;
@@ -148,32 +155,71 @@
       display: block;
       width: 3rem;
       height: 3rem;
-      margin: 5.7rem auto 1rem;
+      margin: 0 auto 1rem;
     }
   }
 
-  .wrap-btn-order {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2.5rem -0.5rem 0;
+  .wrap-btn-pay {
+    margin-top: 2.5rem;
 
     .btn {
-      flex: 1;
-      margin: 0 0.5rem 1.2rem;
+      width: 100%;
+    }
 
-      &:first-of-type,
-      &:last-of-type {
-        flex-basis: 100%;
-      }
+    .wrap-etc {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 1.2rem;
 
-      &:first-of-type {
-        border-color: $fc9;
+      .btn {
+        width: calc(50% - 0.5rem);
+        margin-top: 1.2rem;
       }
+    }
+
+    .skpay {
+      width: 5.3rem;
+      height: 1.5rem;
+    }
+
+    .payco {
+      width: 4.8rem;
+      height: 1.1rem;
+    }
+
+    .npay {
+      width: 4.3rem;
+      height: 1.6rem;
+    }
+
+    .kakaopay {
+      width: 4.2rem;
+      height: 1.3rem;
+    }
+
+    .zeropay {
+      width: 3.8rem;
+      height: 1rem;
+    }
+
+  }
+
+  .pay-method {
+    margin: 4rem 2.5rem 0;
+
+    .wrap-select {
+      margin-top: 1.8rem;
+    }
+
+    .text-guide {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
     }
   }
 
   .wrap-card {
-    margin-top: 4rem;
+    //margin: 4rem 0 0 2.5rem;
 
     .logo-card {
       display: block;
@@ -185,8 +231,20 @@
       }
     }
 
+    .card {
+      position: relative;
+      width: 26.5rem;
+    }
+
+    .card-tag {
+      position: absolute;
+      top: -2rem;
+      right: 1.5rem;
+      width: 10.9rem;
+      height: 4.4rem;
+    }
+
     .info {
-      //height: 13rem;
       padding: 2.2rem 2.2rem 1.4rem;
       background: #777;
       border-radius: 2rem 2rem 0 0;
@@ -203,6 +261,44 @@
       background: #6a6a6a;
       border-radius: 0 0 2rem 2rem;
       color: $fc9;
+    }
+  }
+
+  .wrap-empty {
+    padding-top: 0;
+
+    .desc {
+      margin-top: 2rem;
+    }
+
+    .wrap-btn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .btn {
+        width: calc(50% - .5rem);
+      }
+    }
+  }
+
+  .text-box {
+    margin-top: 3rem;
+  }
+}
+
+.text-box {
+  padding: 1.8rem 0;
+  background-color: $fcF9;
+  border: .1rem solid $fcF0;
+  text-align: center;
+
+  .text {
+    margin-top: .3rem;
+
+    strong {
+      font-weight: 400;
+      color: $gc3;
     }
   }
 }
@@ -226,9 +322,9 @@
       left: -0.4rem;
       width: 0.5rem;
       height: 1rem;
-      background: url(/assets/img/layout/icon-tag-arrow.png) 0 0 / 100% auto no-repeat;
+      background: url(~assets/img/layout/icon-tag-arrow.png) 0 0 / 100% auto no-repeat;
       transform: translateY(-50%);
-      content: "";
+      content: '';
     }
   }
 }
@@ -287,4 +383,25 @@
 .tooltip {
   width: 1.6rem;
   height: 1.6rem;
+}
+
+.coupon-cont {
+  padding: 4rem 2rem 0;
+
+  .text-guide {
+    font-size: 1.1rem;
+  }
+
+  .wrap-btn {
+    margin-top: 4rem;
+
+    .btn {
+      width: 100%;
+    }
+
+    .download {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
 }
