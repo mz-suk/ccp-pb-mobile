@@ -13,7 +13,7 @@ textarea,
   width: 100%;
   height: 4.5rem;
   padding: 0 1.5rem;
-  background: url(/assets/img/layout/icon-toggle.png) 95% 50% / 1.2rem 1.2rem no-repeat;
+  background: url(../../assets/img/layout/icon-toggle.png) 95% 50% / 1.2rem 1.2rem no-repeat;
   border: 0.1rem solid $fcE4;
 }
 
@@ -27,7 +27,6 @@ textarea,
 }
 
 .checkbox {
-
   input[type="checkbox"],
   input[type="radio"] {
     position: absolute;
@@ -57,8 +56,8 @@ textarea,
       transition: all 0.2s ease;
     }
 
-    input[type="checkbox"]:checked+label,
-    input[type="radio"]:checked+label {
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
       background: $fc1;
       color: $fcF;
     }
@@ -104,8 +103,8 @@ textarea,
       }
     }
 
-    input[type="checkbox"]:checked+label,
-    input[type="radio"]:checked+label {
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
       background-color: $fcF;
       border: 0.1rem solid $fc1;
       color: $fc1;
@@ -138,12 +137,12 @@ textarea,
 
     &.minus {
       left: 0;
-      background: $fcF0 url(/assets/img/layout/icon-minus.png) 50% 50% / 1.2rem no-repeat;
+      background: $fcF0 url(../../assets/img/layout/icon-minus.png) 50% 50% / 1.2rem no-repeat;
     }
 
     &.plus {
       right: 0;
-      background: $fc1 url(/assets/img/layout/icon-plus.png) 50% 50% / 1.2rem no-repeat;
+      background: $fc1 url(../../assets/img/layout/icon-plus.png) 50% 50% / 1.2rem no-repeat;
     }
   }
 
@@ -181,13 +180,13 @@ textarea,
 input[type="checkbox"] {
   width: 2rem;
   height: 2rem;
-  background: url(/assets/img/layout/icon-checkbox.png) 0 0 / 100% auto no-repeat;
+  background: url(../../assets/img/layout/icon-checkbox.png) 0 0 / 100% auto no-repeat;
 
   &:checked {
-    background: url(/assets/img/layout/icon-checkbox-on.png) 0 0 / 100% auto no-repeat;
+    background: url(../../assets/img/layout/icon-checkbox-on.png) 0 0 / 100% auto no-repeat;
   }
 
-  &+label {
+  & + label {
     margin-left: 0.8rem;
     color: $fc1;
     line-height: 1.5;

@@ -11,10 +11,10 @@
       top: 0;
       transform: translateY(0);
       .prev {
-        background-image: url(/assets/img/layout/icon-prev-white.png);
+        background-image: url(../../assets/img/layout/icon-prev-white.png);
       }
       .menu {
-        background-image: url(/assets/img/layout/icon-hamburg-white.png);
+        background-image: url(../../assets/img/layout/icon-hamburg-white.png);
       }
     }
   }
@@ -42,7 +42,7 @@
       max-width: 100%;
       box-sizing: border-box;
       padding-right: 1.7rem;
-      background: url(/assets/img/layout/icon-toggle.png) 100% 50% / 1.2rem 1.2rem no-repeat;
+      background: url(../../assets/img/layout/icon-toggle.png) 100% 50% / 1.2rem 1.2rem no-repeat;
       @include clamp(1);
     }
   }
