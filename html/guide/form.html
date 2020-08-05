@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="wrap-guide">
+        <p class="title">select box</p>
+        <div class="wrap-select">
+          <select class="select">
+            <option>option1</option>
+            <option>option2</option>
+            <option>option3</option>
+          </select>
+        </div>
+
+        <p class="title">input</p>
+        <div class="input-spinner">
+          <div class="input-box">
+            <input type="number" class="" value="30" />
+            <p>분<span>(최대 300분)</span></p>
+          </div>
+          <button type="button" class="minus">감소</button>
+          <button type="button" class="plus">증가</button>
+        </div>
+
+        <p class="title">check type1</p>
+        <div class="checkbox type1">
+          <input type="radio" id="chk1" name="group" checked />
+          <label for="chk1">60분</label>
+        </div>
+        <div class="checkbox type1">
+          <input type="radio" id="chk2" name="group" />
+          <label for="chk2">120분</label>
+        </div>
+        <div class="checkbox type1">
+          <input type="radio" id="chk3" name="group" checked />
+          <label for="chk3">180분</label>
+        </div>
+        <div class="checkbox type1">
+          <input type="radio" id="chk4" name="group" />
+          <label for="chk4">240분</label>
+        </div>
+
+        <p class="title">check type2</p>
+        <div class="checkbox type2">
+          <input type="radio" id="chk5" name="group" checked />
+          <label for="chk5">
+            <p class="left"><em>50,000</em>원</p>
+            <p class="right">+<em>8,000</em>원 추가충전</p>
+          </label>
+        </div>
+        <div class="checkbox type2">
+          <input type="radio" id="chk6" name="group" />
+          <label for="chk6">
+            <p class="left"><em>30,000</em>원</p>
+            <p class="right">+<em>5,000</em>원 추가충전</p>
+          </label>
+        </div>
+
+        <p class="title">check box</p>
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1">텍스트</label>
+        <input type="checkbox" id="checkbox2" cehcked />
+        <label for="checkbox2">텍스트</label>
+      </div>
+    </div>
+  </body>
+</html>
