@@ -116,14 +116,40 @@
     background-image: url(/assets/img/layout/icon-add.png);
   }
 
+  &.card-tag {
+    background-image: url(/assets/img/layout/icon-cardtag.png);
+  }
+
+  &.skpay {
+    background-image: url(/assets/img/layout/icon-skpay.png);
+  }
+
+  &.payco {
+    background-image: url(/assets/img/layout/icon-payco.png);
+  }
+
+  &.npay {
+    background-image: url(/assets/img/layout/icon-npay.png);
+  }
+
+  &.kakaopay {
+    background-image: url(/assets/img/layout/icon-kakaopay.png);
+  }
+
+  &.zeropay {
+    background-image: url(/assets/img/layout/icon-zeropay.png);
+  }
+
+  &.download {
+    background-image: url(/assets/img/layout/icon-download.png);
+  }
+
   &.clear-x {
     background-image: url(/assets/img/layout/icon-clear.png);
   }
+
   &.search {
     background-image: url(/assets/img/layout/icon-search.png);
-  }
-  &.download {
-    background-image: url(/assets/img/layout/icon-download.png);
   }
   &.cafe {
     background-image: url(/assets/img/layout/icon-cafe.png);
@@ -151,6 +177,7 @@
   &:not(:first-child) {
     margin-left: 0.1rem;
   }
+
   padding: 0.4rem 1rem;
   display: inline-block;
   vertical-align: top;
@@ -160,10 +187,12 @@
   background: $fcF;
   border: 1px solid;
   border-radius: 10rem;
+
   &.blue {
     color: $pc3;
     border-color: $pc3;
   }
+
   &.red {
     color: $gc3;
     border-color: $gc3;
