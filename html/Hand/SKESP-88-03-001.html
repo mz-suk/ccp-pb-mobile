@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">차량선택</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <div class="right-header" style="display: none;">
+        <div class="test">
+          <div class="left"><span>USER</span> <span>홍길동 고객님</span></div>
+          <div class="right-header">
+            <span><bell-icon /></span>
+            <span><cancel-icon /></span>
+          </div>
+        </div>
+        <ul>
+          <p><a href="/">내정보</a></p>
+          <li>회원정보</li>
+          <li>차량정보</li>
+          <li>결제관리</li>
+          <li>패턴관리</li>
+        </ul>
+        <ul>
+          <p>혜택</p>
+          <li>쿠폰함</li>
+          <li>이벤트</li>
+        </ul>
+        <ul>
+          <p>활동내역</p>
+          <li>예약/이용내역</li>
+          <li>포인트내역</li>
+        </ul>
+      </div>
+      <div class="outline"></div>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-empty">
+          <div class="empty-img"><img src="/_nuxt/client/assets/img/layout/icon-empty.png" alt="" /></div>
+          <p class="empty-text"><strong>이런! 아직 차량정보가 없네요.</strong></p>
+          <p class="empty-text">차량을 미리 등록해 두시면,<br />서비스 이용 시간이 단축 됩니다.</p>
+          <div class="btn-area">
+            <button type="button" class="btn type1">새로운 차량 등록</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
