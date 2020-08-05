@@ -29,6 +29,12 @@
     position: relative;
     text-align: center;
     color: $fc1;
+    font-size: 1.4rem;
+    button {
+      display: block;
+      width: 100%;
+      font: inherit;
+    }
     &:first-child:before {
       display: none;
     }
@@ -73,7 +79,7 @@
   border-bottom: 0.1rem solid $fcF0;
 }
 
-.wrap-content-tab {
+.content-tab-wrap {
   .tab-menu {
     display: flex;
     li {
@@ -98,7 +104,6 @@
   &.type-map {
     margin: 5rem -2rem 0;
     height: 14rem;
-    background: red;
   }
   .article-title {
     font-size: 1.5rem;
