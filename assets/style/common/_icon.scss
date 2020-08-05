@@ -151,7 +151,24 @@
   &.search {
     background-image: url(/assets/img/layout/icon-search.png);
   }
-
+  &.cafe {
+    background-image: url(/assets/img/layout/icon-cafe.png);
+  }
+  &.food {
+    background-image: url(/assets/img/layout/icon-food.png);
+  }
+  &.gas {
+    background-image: url(/assets/img/layout/icon-gas-station.png);
+  }
+  &.market {
+    background-image: url(/assets/img/layout/icon-market.png);
+  }
+  &.bay {
+    background-image: url(/assets/img/layout/icon-bay.png);
+  }
+  &.vacuum {
+    background-image: url(/assets/img/layout/icon-vacuum.png);
+  }
 }
 
 // 뱃지
