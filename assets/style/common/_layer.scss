@@ -96,6 +96,12 @@
 
     .title-sub {
       margin-bottom: 2.5rem;
+
+      .bg-icon {
+        width: 2rem;
+        height: 2rem;
+        margin-top: -0.3rem;
+      }
     }
 
     .wrap-checkbox {
@@ -107,8 +113,10 @@
       flex-wrap: wrap;
 
       .btn {
-        flex: 1 1 auto;
+        flex: 1 0 auto;
+        width: 20%;
         margin-right: 1rem;
+        padding: 0 1rem;
 
         &:last-of-type {
           margin-right: 0;
