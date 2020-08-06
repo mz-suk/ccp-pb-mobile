@@ -180,6 +180,7 @@ input[type="tel"] {
     width: 5.6rem;
     height: 5.6rem;
     border-radius: 50%;
+    box-shadow: .1rem .1rem rgba(0, 0, 0, 0.08);
     @include blind();
 
     &.minus {

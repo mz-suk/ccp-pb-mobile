@@ -36,7 +36,7 @@ function watchFiles() {
     gulp.series(() => cssTask("*", true))
   );
 
-  gulp.watch([assets + "style/**/*", "html/**/*"], browserReload);
+  gulp.watch([assets + "style/**/*", "./html/**/*"], browserReload);
 }
 
 function buildMoveImg() {

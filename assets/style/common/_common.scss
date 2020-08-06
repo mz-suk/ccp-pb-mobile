@@ -71,7 +71,7 @@ $fcF9: #f9f9f9;
     z-index: 1;
     transform: translate(-50%, -50%);
 
-    @if $_ori==x {
+    @if $_ori==w {
       max-height: initial;
       min-height: 100%;
       width: 100%;
@@ -81,6 +81,42 @@ $fcF9: #f9f9f9;
       max-width: initial;
       width: auto;
       height: 100%;
+    }
+  }
+}
+
+// 믹스인 - list-dot
+/*
+  $dotSt
+  1 > ·
+*/
+@mixin listdot($mt, $fz, $fc, $dotSt) {
+  li {
+    position: relative;
+    padding-left: 1.2rem;
+    font-size: $fz;
+    color: $fc;
+    &:not(:first-child) {
+      margin-top: $mt;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      display: block;
+      transform: translate(0, -50%);
+    }
+    span {
+      color: $gc3;
+    }
+    @if $dotSt==1 {
+      &:before {
+        left: calc((1.2rem - 0.2rem) / 2);
+        width: 0.2rem;
+        height: 0.2rem;
+        background: $fc6;
+        border-radius: 50%;
+      }
     }
   }
 }

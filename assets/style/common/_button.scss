@@ -117,3 +117,13 @@
     height: 2rem;
   }
 }
+//버튼 레이아웃
+.btn-area {
+  margin-top: 4rem;
+  &.grid {
+    display: flex;
+    button {
+      flex: 1;
+    }
+  }
+}

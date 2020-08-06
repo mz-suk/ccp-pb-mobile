@@ -19,9 +19,10 @@
 
   .layer-close {
     position: absolute;
-    top: 0;
-    right: 0;
     z-index: 5;
+    width: 4rem;
+    height: 4rem;
+    background-size: 2rem;
   }
 
   .wrap-layer {
@@ -31,24 +32,44 @@
     width: 100%;
     background-color: $fcF;
     box-sizing: border-box;
-
     @include scroll(y);
 
     .header-popup {
       top: 0;
     }
   }
+
   &.pos-bottom {
     .wrap-layer {
       bottom: 0;
       border-radius: 3rem 3rem 0 0;
       padding-top: 4rem;
     }
+
+    .layer-close {
+      top: 1rem;
+      right: 1rem;
+    }
   }
+
   &.pos-right {
     .wrap-layer {
       top: 0;
       height: 100%;
+    }
+  }
+
+  &.pos-sns {
+    .wrap-layer {
+      bottom: 0;
+      background-color: transparent;
+    }
+
+    .layer-close {
+      bottom: 1rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: brightness(30);
     }
   }
 
@@ -122,7 +143,8 @@
       &.type1 {
         label {
           min-width: 7.1rem;
-          padding: 0;
+          margin-left: 0;
+          padding: 0 1.6rem;
         }
       }
     }
@@ -134,5 +156,41 @@
         color: $gc3;
       }
     }
+  }
+}
+
+.wrap-partner-images {
+  box-sizing: border-box;
+  min-height: calc(100vh - 5.5rem);
+  background-color: $fc1;
+}
+
+.wrap-list-image {
+  padding: 1.5rem 2rem;
+
+  .item {
+    height: 20rem;
+    margin-top: 1rem;
+    @include cropimg(w);
+  }
+}
+
+.layer-share {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 8.5rem 0;
+  text-align: center;
+
+  .bg-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 2.5rem;
+    padding: 2.2rem;
+    background-color: $fcF;
+    background-size: 2rem;
+    border-radius: 50%;
   }
 }

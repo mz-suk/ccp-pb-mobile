@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-sns">
+      <div class="wrap-layer">
+        <div class="inner-layer">
+          <div class="layer-share">
+            <button type="button" class="bg-icon share-url">클립보드 복사</button>
+            <button type="button" class="bg-icon share-facebook">페이스북 공유하기</button>
+            <button type="button" class="bg-icon share-kakao">카카오톡 공유하기</button>
+          </div>
+        </div>
+        <button type="button" class="bg-icon layer-close">
+          레이어팝업 닫기
+        </button>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Layer Pop -->
+  </body>
+</html>
