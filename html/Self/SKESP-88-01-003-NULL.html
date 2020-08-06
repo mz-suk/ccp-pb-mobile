@@ -21,36 +21,48 @@
   <body>
     <div id="container">
       <!-- Header -->
-      <header class="header header-popup">
-        <h1 class="title">쿠폰적용</h1>
-        <div class="right">
-          <button type="button" class="bg-icon close">닫기</button>
-        </div>
-      </header>
+
       <!-- //Header -->
       <!-- wrap-contents -->
-      <div class="wrap-contents">
-        <div class="coupon-cont">
-          <div class="wrap-tab type1">
-            <ul class="tab-menu">
-              <li class="active"><button type="button">내 쿠폰 (2)</button></li>
-              <li><button type="button">다운 가능 쿠폰 (3)</button></li>
-            </ul>
-            <div class="tab-content">
-              <div class="wrap-empty">
-                <div class="empty-img">
-                  <img src="../../assets/img/layout/icon-empty-coupon.png" alt />
+
+      <!-- //wrap-contents -->
+      <!-- Footer -->
+    </div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">쿠폰적용</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="coupon-cont">
+            <div class="wrap-tab type1">
+              <ul class="tab-menu">
+                <li class="active"><button type="button">내 쿠폰 (2)</button></li>
+                <li><button type="button">다운 가능 쿠폰 (3)</button></li>
+              </ul>
+              <div class="tab-content">
+                <div class="wrap-empty">
+                  <div class="empty-img">
+                    <img src="../../assets/img/layout/icon-empty-coupon.png" alt />
+                  </div>
+                  <p class="empty-text">
+                    <strong>사용 가능한 쿠폰이 없습니다.</strong>
+                  </p>
                 </div>
-                <p class="empty-text">
-                  <strong>사용 가능한 쿠폰이 없습니다.</strong>
-                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- //wrap-contents -->
-      <!-- Footer -->
+
+      <div class="mask"></div>
     </div>
+    <!-- //Popup -->
   </body>
 </html>

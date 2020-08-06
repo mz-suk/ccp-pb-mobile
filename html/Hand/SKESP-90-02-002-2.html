@@ -19,36 +19,38 @@
   </head>
 
   <body>
-    <div id="container">
-      <!-- Header -->
-      <header class="header header-popup">
-        <h1 class="title">새로운 차량 등록</h1>
-        <div class="right">
-          <button type="button" class="bg-icon close">닫기</button>
-        </div>
-      </header>
-      <!-- //Header -->
+    <div id="container"></div>
 
-      <!-- Wrap-contents -->
-      <div class="wrap-contents">
-        <div class="wrap-car-add">
-          <div class="form-div">
-            <p class="title">차량을 검색해 주세요.</p>
-            <div class="form-search active">
-              <!-- 텍스트가 입력 될 경우 active 클래스 추가 -btn-clear-x 버튼 활성-->
-              <input type="text" placeholder="차량번호를 입력하세요." value="28저 8617" />
-              <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
-              <button type="button" class="btn-search" title="검색"><i class="bg-icon search"></i></button>
-            </div>
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">새로운 차량 등록</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
           </div>
-          <ul class="form-list">
-            <li></li>
-          </ul>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="wrap-car-add">
+            <div class="form-div">
+              <p class="title">차량을 검색해 주세요.</p>
+              <div class="form-search active">
+                <!-- 텍스트가 입력 될 경우 active 클래스 추가 -btn-clear-x 버튼 활성-->
+                <input type="text" placeholder="차량번호를 입력하세요." value="28저 8617" />
+                <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+                <button type="button" class="btn-search" title="검색"><i class="bg-icon search"></i></button>
+              </div>
+            </div>
+            <ul class="form-list">
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <!-- //Wrap-contents -->
 
-      <!-- Footer -->
+      <div class="mask"></div>
     </div>
+    <!-- //Popup -->
   </body>
 </html>
