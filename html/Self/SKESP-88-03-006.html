@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+  <title>Document</title>
+  <script>
+    function setFontSize() {
+      var doc = document.documentElement,
+        fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+      fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+      doc.style.fontSize = fontSizeVal + "%";
+    }
+    setFontSize();
+    window.addEventListener("resize", setFontSize);
+  </script>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+  <div id="container">
+    <!-- Header -->
+    <header class="header header-popup">
+      <h1 class="title">머핀 포인트</h1>
+      <div class="right">
+        <button type="button" class="bg-icon close">닫기</button>
+      </div>
+    </header>
+    <!-- //Header -->
+    <!-- wrap-contents -->
+    <div class="wrap-contents">
+      <div class="point-cont">
+        <p class="title">보유 포인트</p>
+        <p class="point"><strong>48,000</strong>P</p>
+        <p class="text-guide">포인트는 1P 단위로 사용 가능하며, 적용 시 1P당 1원으로 환산됩니다.</p>
+        <div class="wrap-form">
+          <input type="number" placeholder="사용(차감)할 포인트">
+          <div class="wrap-check">
+            <input type="checkbox" id="chk1">
+            <label for="chk1">모두 사용</label>
+          </div>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+      <!-- Footer -->
+    </div>
+</body>
+
+</html>
