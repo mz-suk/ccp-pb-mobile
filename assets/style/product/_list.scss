@@ -582,8 +582,12 @@
     content: "";
   }
 }
+.list-dot {
+  // default   :  margin-top, font-size, color, dot style
+  @include listdot(0.8rem, 1.1rem, $fc1, 1);
+}
 
-// 카든박스타입
+// 카드박스타입
 .info-type-box {
   &:not(:first-child) {
     margin-top: 2rem;
