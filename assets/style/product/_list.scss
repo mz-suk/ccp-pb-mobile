@@ -243,8 +243,13 @@
 
   .top {
     display: flex;
+    box-sizing: border-box;
+    width: 100%;
     padding: 3rem;
     border-bottom: 0.1rem solid $fcE4;
+    .desc {
+      flex: 1 1 auto;
+    }
   }
 
   .wrap-filter-tab {
@@ -253,8 +258,7 @@
   }
 
   .filter-menu {
-    overflow-x: hidden;
-    overflow-y: visible;
+    @include scroll(y);
     width: 10.6rem;
     background: $fcF9;
 
@@ -292,8 +296,7 @@
 
   .filter-content {
     flex: 1 1 auto;
-    overflow-x: hidden;
-    overflow-y: visible;
+    @include scroll(y);
   }
 
   .filter-list-item {
