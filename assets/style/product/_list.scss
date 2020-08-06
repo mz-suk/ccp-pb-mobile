@@ -556,7 +556,7 @@
   }
 }
 
-// 박스타입
+// 카든박스타입
 .info-type-box {
   &:not(:first-child) {
     margin-top: 2rem;
@@ -591,7 +591,6 @@
 
     label {
       margin: 0;
-      display: block;
       transition: background 0.2s, border 0.2s, box-shadow 0.2s;
 
       &:after {
@@ -626,6 +625,7 @@
   .info-type-cont {
     position: relative;
     padding: 3rem 2.5rem;
+    display: block;
     line-height: 1;
     background: $fcF9;
     border: 1px solid $fcD7;
