@@ -58,17 +58,91 @@
   }
 }
 
-.coupon {
-  border-radius: 1.6rem;
-  border: 0.1rem solid $fc1;
-  color: $fc1;
-  &.purple {
-    color: $fcF;
-    border-color: $pc3;
-    background: $pc4;
+.item-bottom {
+  .coupon {
+    margin: 3rem 0 0;
   }
-  .discount {
-    font-size: 3.4rem;
+}
+
+.coupon {
+  position: relative;
+  overflow: hidden;
+  width: 33.5rem;
+  height: 11.8rem;
+  background: url(../../assets/img/layout/img-coupon-purple.png) no-repeat 0 0;
+  background-size: contain;
+  color: $fcF;
+  .left {
+    position: relative;
+    width: 22.7rem;
+    padding: 2rem 0 0 3rem;
+    .discount {
+      margin-bottom: 0.5rem;
+      font-size: 3.4rem;
+      line-height: 3.6rem;
+      img {
+        display: inline-block;
+        vertical-align: top;
+        width: 2rem;
+        height: 2.5rem;
+        margin-top: 0.5rem;
+      }
+    }
+    .d-day {
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      box-sizing: border-box;
+      width: 4.4rem;
+      height: 4.4rem;
+      padding-top: 0.8rem;
+      font-size: 0.9rem;
+      border-radius: 50%;
+      border: 1px solid #4538ff;
+      background: #493cff;
+      box-shadow: 0 0.3rem 0.6rem #493cff;
+      text-align: center;
+      span {
+        display: block;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        i {
+          display: inline-block;
+          vertical-align: top;
+          margin-top: -0.1rem;
+          font-size: 2.2rem;
+        }
+      }
+    }
+    .download {
+      margin-top: 0.5rem;
+      padding-left: 2rem;
+      font-size: 1.1rem;
+      color: $pc2;
+      background: url(../../assets/img/layout/icon-coupon-download.png) no-repeat 0 0;
+      background-size: 1.5rem 1.2rem;
+    }
+  }
+
+  .right {
+    .barcode {
+      position: absolute;
+      right: 1.76rem;
+      top: 50%;
+      transform: translateY(-50%);
+      .date {
+        position: absolute;
+        top: 50%;
+        left: -3.5rem;
+        margin-top: -0.8rem;
+        transform: rotate(-90deg);
+        font-size: 1rem;
+      }
+      img {
+        width: 2.3em;
+        height: 7.818rem;
+      }
+    }
   }
 }
 
@@ -95,6 +169,14 @@
     color: $fc1;
     .num {
       font-size: 1.4rem;
+    }
+  }
+  .article-desc {
+    margin: 1.5rem 0 0;
+    @include clamp(2);
+    &.active {
+      display: block;
+      -webkit-line-clamp: inherit;
     }
   }
   .icon-list-wrap {
@@ -148,7 +230,7 @@
         line-height: 2rem;
         color: $fcF;
         background-color: $fc1;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16);
       }
     }
   }
@@ -164,15 +246,19 @@
       height: 1.2rem;
       background-size: 6.4rem 2.4rem;
     }
+    .num {
+      font-size: 1.2rem;
+    }
   }
   .rating {
     text-align: left;
-    vertical-align: middle;
+    vertical-align: top;
     width: 8.8rem;
-    background: url(../../assets/img/layout/icon_rating_star.png) no-repeat 0 100%;
+    margin: 0.25rem 0 0;
+    background: url(../../assets/img/layout/icon-rating-star.png) no-repeat 0 100%;
     font-size: 0;
     .percent {
-      background: url(../../assets/img/layout/icon_rating_star.png) no-repeat 0 0.2rem;
+      background: url(../../assets/img/layout/icon-rating-star.png) no-repeat 0 0.2rem;
     }
   }
   .rating,
@@ -183,7 +269,7 @@
   }
   .num {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     font-size: 1.6rem;
     color: $fc1;
   }
@@ -208,7 +294,7 @@
     .user {
       display: inline-block;
       position: relative;
-      vertical-align: middle;
+      vertical-align: top;
       line-height: 2rem;
     }
     .user {
@@ -225,6 +311,7 @@
       }
       .label {
         display: inline-block;
+        vertical-align: top;
         margin-left: 1rem;
         text-align: center;
         min-width: 4.6rem;
@@ -284,18 +371,21 @@
   width: 100%;
   padding: 2rem 0 0;
   text-align: center;
-}
-.more-text {
-  padding-bottom: 0.2rem;
-  display: inline-block;
-  border-bottom: 1px solid #999;
-  &:after {
-    content: "";
+  .more-text {
+    padding-bottom: 0.2rem;
     display: inline-block;
-    vertical-align: middle;
-    width: 1.2rem;
-    height: 1.2rem;
-    background: url(../../assets/img/layout/icon-more-txt.png) no-repeat 0 0;
-    background-size: 1.2rem 1.2rem;
+    border-bottom: 1px solid $fc9;
+    font-size: 1.3rem;
+    color: $fc9;
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-left: 4px;
+      background: url(../../assets/img/layout/icon-more-txt.png) no-repeat 0 0;
+      background-size: 1.2rem 1.2rem;
+    }
   }
 }
