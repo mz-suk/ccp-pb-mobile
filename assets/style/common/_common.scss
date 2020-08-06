@@ -71,7 +71,7 @@ $fcF9: #f9f9f9;
     z-index: 1;
     transform: translate(-50%, -50%);
 
-    @if $_ori==x {
+    @if $_ori==w {
       max-height: initial;
       min-height: 100%;
       width: 100%;
