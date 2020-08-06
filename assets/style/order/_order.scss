@@ -407,3 +407,34 @@
     margin-top: 3rem;
   }
 }
+
+.point-cont {
+  margin: 4rem 2rem 0;
+
+  .title {
+    font-size: 1.5rem;
+    color: $fc1;
+  }
+
+  .point {
+    font-size: 3.5rem;
+    color: $fc1;
+
+    strong {
+      padding-right: .4rem;
+    }
+  }
+
+  .text-guide {
+    margin-top: .5rem;
+    font-size: 1.1rem;
+  }
+
+  .wrap-form {
+    margin-top: 3rem;
+  }
+
+  .wrap-check {
+    margin-top: 1.5rem;
+  }
+}
