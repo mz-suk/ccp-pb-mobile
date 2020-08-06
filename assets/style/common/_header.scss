@@ -37,7 +37,8 @@
     line-height: 5.5rem;
     @include clamp(1);
 
-    a {
+    a,
+    button {
       display: inline-block;
       max-width: 100%;
       box-sizing: border-box;
