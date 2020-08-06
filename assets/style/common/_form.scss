@@ -15,6 +15,19 @@ textarea,
   padding: 0 1.5rem;
   background: url(../../assets/img/layout/icon-toggle.png) 95% 50% / 1.2rem 1.2rem no-repeat;
   border: 0.1rem solid $fcE4;
+
+  &.type1 {
+    padding: 0 1rem;
+    color: $fc1;
+    border: none;
+    border-bottom: 0.1rem solid $fcE4;
+    &:not(:focus):invalid {
+      color: $fc9;
+    }
+    option:first-of-type {
+      color: $fc9;
+    }
+  }
 }
 
 .wrap-checkbox {
@@ -192,25 +205,20 @@ input[type="checkbox"] {
     line-height: 1.5;
   }
 }
-
+.form-list {
+  .form-div:not(:first-child) {
+    margin-top: 4rem;
+  }
+}
 .form-div {
   .title {
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    color: $fc1;
     line-height: 1;
   }
 }
-
-.div {
-  display: flex;
-
-  div {
-    width: 30px;
-    height: 30px;
-    background: pink;
-  }
-}
-
+// 검색화면
 .form-search {
   position: relative;
   &.active {
