@@ -179,7 +179,7 @@
   border-bottom: 0.1rem solid $fcF0;
 }
 
-.article-area {
+.row-area {
   margin-top: 4rem;
   &.type-map {
     margin: 5rem -2rem 0;
@@ -190,14 +190,14 @@
       -webkit-object-fit: cover;
     }
   }
-  .article-title {
+  .row-title {
     font-size: 1.5rem;
     color: $fc1;
     .num {
       font-size: 1.4rem;
     }
   }
-  .article-desc {
+  .row-desc {
     margin: 1.5rem 0 0;
     @include clamp(2);
     &.active {
