@@ -247,6 +247,15 @@
       border-radius: 2rem 2rem 0 0;
       box-sizing: border-box;
       color: $fcF;
+
+      .brand {
+        font-size: 1.1rem;
+      }
+
+      .num {
+        margin-top: 0.3rem;
+        font-size: 1.4rem;
+      }
     }
 
     .date {
@@ -255,9 +264,10 @@
       align-items: center;
       height: 4rem;
       padding: 0 2.8rem 0 2.2rem;
-      background: $fc6;
+      background-color: $fc6;
       border-radius: 0 0 2rem 2rem;
       color: $fc9;
+      font-size: 1.1rem;
     }
   }
 
@@ -405,5 +415,74 @@
 
   .list-coupon {
     margin-top: 3rem;
+  }
+}
+
+.point-cont {
+  margin: 4rem 2rem 0;
+
+  .title {
+    font-size: 1.5rem;
+    color: $fc1;
+  }
+
+  .point {
+    font-size: 3.5rem;
+    color: $fc1;
+
+    strong {
+      padding-right: 0.4rem;
+    }
+  }
+
+  .text-guide {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .wrap-form {
+    margin-top: 3rem;
+  }
+
+  .wrap-check {
+    margin-top: 1.5rem;
+  }
+}
+
+.wrap-text {
+  margin: 4rem 2rem 0;
+
+  .desc {
+    color: $pc3;
+  }
+
+  .list-text {
+    margin-top: 2rem;
+  }
+}
+
+.list-text {
+  li {
+    position: relative;
+    padding-left: 1.2rem;
+
+    &:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0.7rem;
+      left: 0.5rem;
+      width: 0.2rem;
+      height: 0.2rem;
+      background: $fc6;
+      border-radius: 50%;
+      content: "";
+    }
+
+    em {
+      color: $gc3;
+    }
   }
 }

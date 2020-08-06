@@ -233,12 +233,36 @@
       }
     }
   }
+  &.type2 {
+    .tab-menu {
+      display: flex;
+      li {
+        flex: 1;
+        height: auto;
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        border: 0 none;
+        border-bottom: 0.1rem solid $fcF0;
+        background: $fcF;
+        color: $fc1;
+        &.active {
+          border-bottom: 0.2rem solid $fc1;
+        }
+        .num {
+          display: inline-block;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
 }
 
 .filter-layer {
   position: fixed;
   top: 5.5rem;
   left: 0;
+  width: 100%;
   height: 100%;
 
   .top {
@@ -558,8 +582,12 @@
     content: "";
   }
 }
+.list-dot {
+  // default   :  margin-top, font-size, color, dot style
+  @include listdot(0.8rem, 1.1rem, $fc1, 1);
+}
 
-// 카든박스타입
+// 카드박스타입
 .info-type-box {
   &:not(:first-child) {
     margin-top: 2rem;
@@ -571,11 +599,7 @@
     border: none;
 
     input[type="checkbox"] {
-      position: absolute;
-      left: -99999px;
-      width: 0;
-      height: 0;
-      overflow: hidden;
+      @include blind();
     }
 
     input[type="checkbox"]:checked + label {
@@ -631,7 +655,7 @@
     display: block;
     line-height: 1;
     background: $fcF9;
-    border: 1px solid $fcD7;
+    border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
   }
 

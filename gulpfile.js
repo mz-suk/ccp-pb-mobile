@@ -36,7 +36,7 @@ function watchFiles() {
     gulp.series(() => cssTask("*", true))
   );
 
-  gulp.watch([assets + "style/**/*", "html/**/*"], browserReload);
+  gulp.watch([assets + "style/**/*", "./html/**/*"], browserReload);
 }
 
 function buildMoveImg() {
@@ -54,6 +54,6 @@ function buildConvertCss() {
     .pipe(gulp.dest(static + "css/"));
 }
 
-// exports.clear = gulp.series(() => del(static));
-// exports.build = gulp.parallel(buildMoveImg, buildMoveFont, buildConvertCss);
+exports.clear = gulp.series(() => del(static));
 exports.default = gulp.parallel(watchFiles, browser);
+exports.build = gulp.series(() => del(static), gulp.parallel(buildMoveImg, buildMoveFont, buildConvertCss));

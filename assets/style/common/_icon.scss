@@ -12,7 +12,8 @@
     background-image: url(../../assets/img/layout/icon-hamburg.png);
   }
 
-  &.close {
+  &.close,
+  &.layer-close {
     background-image: url(../../assets/img/layout/icon-close.png);
   }
 
@@ -169,6 +170,27 @@
   &.vacuum {
     background-image: url(../../assets/img/layout/icon-vacuum.png);
   }
+  &.share-url {
+    background-image: url(../../assets/img/layout/icon-share-url.png);
+  }
+  &.share-facebook {
+    background-image: url(../../assets/img/layout/icon-share-facebook.png);
+  }
+  &.share-kakao {
+    background-image: url(../../assets/img/layout/icon-share-kakao.png);
+  }
+  &.oil {
+    background-image: url(../../assets/img/layout/icon-oil.png);
+  }
+  &.locator {
+    background-image: url(../../assets/img/layout/icon-locator.png);
+  }
+  &.locator-kakao {
+    background-image: url(../../assets/img/layout/icon-locator-kakao.png);
+  }
+  &.locator-tmap {
+    background-image: url(../../assets/img/layout/icon-locator-tmap.png);
+  }
 }
 
 // 뱃지
@@ -185,7 +207,7 @@
   font-size: 0.9rem;
   font-weight: 700;
   background: $fcF;
-  border: 1px solid;
+  border: 0.1rem solid;
   border-radius: 10rem;
 
   &.blue {

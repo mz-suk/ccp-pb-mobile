@@ -13,6 +13,13 @@
   vertical-align: middle;
   white-space: nowrap;
   color: $fc1;
+  font-size: 1.5rem;
+
+  .bg-icon {
+    width: 2rem;
+    height: 2rem;
+    margin: -0.4rem 0.4rem 0 0;
+  }
 
   // 버튼 타입
   &.size1 {
@@ -20,11 +27,13 @@
     padding: 0 1.9rem;
     line-height: 4rem;
     border-radius: 2rem;
+    font-size: 1.3rem;
   }
 
   &.type1 {
     border-style: dotted;
     border-color: $fc9;
+    font-size: 1.3rem;
 
     &:before {
       content: "";
@@ -115,5 +124,15 @@
   .bg-icon {
     width: 2rem;
     height: 2rem;
+  }
+}
+//버튼 레이아웃
+.btn-area {
+  margin-top: 4rem;
+  &.grid {
+    display: flex;
+    button {
+      flex: 1;
+    }
   }
 }
