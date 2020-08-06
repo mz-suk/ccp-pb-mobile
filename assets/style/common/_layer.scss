@@ -24,6 +24,7 @@
     height: 4rem;
     background-size: 2rem;
   }
+
   .wrap-layer {
     position: absolute;
     left: 0;
@@ -37,6 +38,7 @@
       top: 0;
     }
   }
+
   &.pos-bottom {
     .wrap-layer {
       bottom: 0;
@@ -49,17 +51,20 @@
       right: 1rem;
     }
   }
+
   &.pos-right {
     .wrap-layer {
       top: 0;
       height: 100%;
     }
   }
+
   &.pos-sns {
     .wrap-layer {
       bottom: 0;
       background-color: transparent;
     }
+
     .layer-close {
       bottom: 1rem;
       left: 50%;
@@ -138,7 +143,8 @@
       &.type1 {
         label {
           min-width: 7.1rem;
-          padding: 0;
+          margin-left: 0;
+          padding: 0 1.6rem;
         }
       }
     }
@@ -158,6 +164,7 @@
   min-height: calc(100vh - 5.5rem);
   background-color: $fc1;
 }
+
 .wrap-list-image {
   padding: 1.5rem 2rem;
 
