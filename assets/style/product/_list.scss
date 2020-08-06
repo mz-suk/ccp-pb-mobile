@@ -233,6 +233,29 @@
       }
     }
   }
+  &.type2 {
+    .tab-menu {
+      display: flex;
+      li {
+        flex: 1;
+        height: auto;
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        border: 0 none;
+        border-bottom: 0.1rem solid $fcF0;
+        background: #fff;
+        color: #111;
+        &.active {
+          border-bottom: 0.2rem solid $fc1;
+        }
+        .num {
+          display: inline-block;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
 }
 
 .filter-layer {
