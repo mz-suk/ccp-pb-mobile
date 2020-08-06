@@ -37,11 +37,7 @@
   &.radio-type {
     padding: 0;
     input[type="radio"] {
-      position: absolute;
-      left: -99999px;
-      width: 0;
-      height: 0;
-      overflow: hidden;
+      @include blind();
     }
 
     input[type="radio"]:checked + label {
@@ -65,7 +61,7 @@
     display: block;
     line-height: 1;
     background: $fcF9;
-    border: 1px solid $fcD7;
+    border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
   }
   .logo {

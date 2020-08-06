@@ -243,7 +243,7 @@
 
     .info {
       padding: 2.2rem 2.2rem 1.4rem;
-      background: #777;
+      background: $fc6;
       border-radius: 2rem 2rem 0 0;
       box-sizing: border-box;
       color: $fcF;
@@ -253,7 +253,7 @@
       }
 
       .num {
-        margin-top: .3rem;
+        margin-top: 0.3rem;
         font-size: 1.4rem;
       }
     }
@@ -264,7 +264,7 @@
       align-items: center;
       height: 4rem;
       padding: 0 2.8rem 0 2.2rem;
-      background-color: #6a6a6a;
+      background-color: $fc6;
       border-radius: 0 0 2rem 2rem;
       color: $fc9;
       font-size: 1.1rem;
@@ -431,12 +431,12 @@
     color: $fc1;
 
     strong {
-      padding-right: .4rem;
+      padding-right: 0.4rem;
     }
   }
 
   .text-guide {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     font-size: 1.1rem;
   }
 
@@ -472,13 +472,13 @@
 
     &:before {
       position: absolute;
-      top: .7rem;
-      left: .5rem;
-      width: .2rem;
-      height: .2rem;
+      top: 0.7rem;
+      left: 0.5rem;
+      width: 0.2rem;
+      height: 0.2rem;
       background: $fc6;
       border-radius: 50%;
-      content: '';
+      content: "";
     }
 
     em {

@@ -244,8 +244,8 @@
         text-align: center;
         border: 0 none;
         border-bottom: 0.1rem solid $fcF0;
-        background: #fff;
-        color: #111;
+        background: $fcF;
+        color: $fc1;
         &.active {
           border-bottom: 0.2rem solid $fc1;
         }
@@ -599,11 +599,7 @@
     border: none;
 
     input[type="checkbox"] {
-      position: absolute;
-      left: -99999px;
-      width: 0;
-      height: 0;
-      overflow: hidden;
+      @include blind();
     }
 
     input[type="checkbox"]:checked + label {
@@ -659,7 +655,7 @@
     display: block;
     line-height: 1;
     background: $fcF9;
-    border: 1px solid $fcD7;
+    border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
   }
 
