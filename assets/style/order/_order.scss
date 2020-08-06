@@ -218,8 +218,6 @@
   }
 
   .wrap-card {
-    //margin: 4rem 0 0 2.5rem;
-
     .logo-card {
       display: block;
       height: 2rem;
@@ -388,6 +386,7 @@
   padding: 4rem 2rem 0;
 
   .text-guide {
+    margin-top: 2rem;
     font-size: 1.1rem;
   }
 
@@ -402,5 +401,9 @@
       width: 1.6rem;
       height: 1.6rem;
     }
+  }
+
+  .list-coupon {
+    margin-top: 3rem;
   }
 }
