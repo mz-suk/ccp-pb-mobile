@@ -43,7 +43,7 @@
         height: 0.3rem;
         background: $fc6;
         border-radius: 50%;
-        content: '';
+        content: "";
       }
     }
 
@@ -202,7 +202,6 @@
       width: 3.8rem;
       height: 1rem;
     }
-
   }
 
   .pay-method {
@@ -277,7 +276,7 @@
       justify-content: space-between;
 
       .btn {
-        width: calc(50% - .5rem);
+        width: calc(50% - 0.5rem);
       }
     }
   }
@@ -290,11 +289,11 @@
 .text-box {
   padding: 1.8rem 0;
   background-color: $fcF9;
-  border: .1rem solid $fcF0;
+  border: 0.1rem solid $fcF0;
   text-align: center;
 
   .text {
-    margin-top: .3rem;
+    margin-top: 0.3rem;
 
     strong {
       font-weight: 400;
@@ -324,7 +323,7 @@
       height: 1rem;
       background: url(~assets/img/layout/icon-tag-arrow.png) 0 0 / 100% auto no-repeat;
       transform: translateY(-50%);
-      content: '';
+      content: "";
     }
   }
 }
@@ -372,7 +371,7 @@
   display: block;
   margin-bottom: 2rem;
   padding-right: 1.5rem;
-  background: url(/assets/img/layout/icon-more-type2.png) 100% 50% / 1.2rem 1.2rem no-repeat;
+  background: url(../../assets/img/layout/icon-more-type2.png) 100% 50% / 1.2rem 1.2rem no-repeat;
   color: $fc1;
 
   &:last-of-type {

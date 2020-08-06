@@ -59,7 +59,7 @@
         width: 2.8rem;
         height: 2.8rem;
         margin-right: 0.3rem;
-        background: url(/assets/img/layout/icon-confusion-off.png) 0 0 / 100% auto no-repeat;
+        background: url(../../assets/img/layout/icon-confusion-off.png) 0 0 / 100% auto no-repeat;
         vertical-align: middle;
         content: "";
       }
@@ -575,7 +575,7 @@
       overflow: hidden;
     }
 
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
       &.info-type-cont {
         background: $fcF;
         border-color: $fc1;
@@ -584,7 +584,7 @@
       }
 
       &:after {
-        background: url("/assets/img/layout/icon-chk-on.png") no-repeat center center;
+        background: url("../../assets/img/layout/icon-chk-on.png") no-repeat center center;
         background-size: 100% auto;
       }
     }
@@ -602,7 +602,7 @@
         display: block;
         width: 2rem;
         height: 2rem;
-        background: url("/assets/img/layout/icon-chk-off.png") no-repeat center center;
+        background: url("../../assets/img/layout/icon-chk-off.png") no-repeat center center;
         background-size: 100% auto;
         transform: translate(0, -50%);
       }
@@ -647,7 +647,7 @@
     margin-top: 1rem;
     font-size: 1.3rem;
 
-    &+.info-txt2 {
+    & + .info-txt2 {
       margin-top: 1rem;
     }
   }

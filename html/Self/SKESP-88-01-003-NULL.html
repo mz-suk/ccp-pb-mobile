@@ -1,87 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
-  <title>Document</title>
-  <script>
-    function setFontSize() {
-      var doc = document.documentElement,
-        fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
-      fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
 
-      doc.style.fontSize = fontSizeVal + "%";
-    }
-    setFontSize();
-    window.addEventListener("resize", setFontSize);
-  </script>
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
-
-<body>
-  <div id="container">
-    <!-- Header -->
-    <header class="header header-popup">
-      <h1 class="title">쿠폰적용</h1>
-      <div class="right">
-        <button type="button" class="bg-icon close">닫기</button>
-      </div>
-    </header>
-    <div class="right-header" style="display: none;">
-      <div class="test">
-        <div class="left"><span>USER</span> <span>홍길동 고객님</span></div>
-        <div class="right-header">
-          <span>
-            <bell-icon /></span>
-          <span>
-            <cancel-icon /></span>
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-popup">
+        <h1 class="title">쿠폰적용</h1>
+        <div class="right">
+          <button type="button" class="bg-icon close">닫기</button>
         </div>
-      </div>
-      <ul>
-        <p><a href="/">내정보</a></p>
-        <li>회원정보</li>
-        <li>차량정보</li>
-        <li>결제관리</li>
-        <li>패턴관리</li>
-      </ul>
-      <ul>
-        <p>혜택</p>
-        <li>쿠폰함</li>
-        <li>이벤트</li>
-      </ul>
-      <ul>
-        <p>활동내역</p>
-        <li>예약/이용내역</li>
-        <li>포인트내역</li>
-      </ul>
-    </div>
-    <div class="outline"></div>
-    <!-- //Header -->
-    <!-- wrap-contents -->
-    <div class="wrap-contents">
-      <div class="coupon-cont">
-        <div class="wrap-tab type1">
-          <ul class="tab-menu">
-            <li class="active"><button type="button">내 쿠폰 (2)</button></li>
-            <li><button type="button">다운 가능 쿠폰 (3)</button></li>
-          </ul>
-          <div class="tab-content">
-            <div class="wrap-empty">
-              <div class="empty-img">
-                <img src="/assets/img/layout/icon-empty-coupon.png" alt />
+      </header>
+      <!-- //Header -->
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="coupon-cont">
+          <div class="wrap-tab type1">
+            <ul class="tab-menu">
+              <li class="active"><button type="button">내 쿠폰 (2)</button></li>
+              <li><button type="button">다운 가능 쿠폰 (3)</button></li>
+            </ul>
+            <div class="tab-content">
+              <div class="wrap-empty">
+                <div class="empty-img">
+                  <img src="../../assets/img/layout/icon-empty-coupon.png" alt />
+                </div>
+                <p class="empty-text">
+                  <strong>사용 가능한 쿠폰이 없습니다.</strong>
+                </p>
               </div>
-              <p class="empty-text">
-                <strong>사용 가능한 쿠폰이 없습니다.</strong>
-              </p>
             </div>
           </div>
         </div>
       </div>
+      <!-- //wrap-contents -->
+      <!-- Footer -->
     </div>
-    <!-- //wrap-contents -->
-    <!-- Footer -->
-  </div>
-</body>
-
+  </body>
 </html>
