@@ -24,21 +24,32 @@
     z-index: 5;
   }
 
-  &.pos-bottom {
-    .wrap-layer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 51;
-      width: 100%;
-      background-color: $fcF;
-      border-radius: 3rem 3rem 0 0;
+  .wrap-layer {
+    position: absolute;
+    left: 0;
+    z-index: 51;
+    width: 100%;
+    background-color: $fcF;
+    box-sizing: border-box;
+
+    @include scroll(y);
+
+    .header-popup {
+      top: 0;
     }
   }
-
-  .wrap-layer {
-    padding-top: 4rem;
-    box-sizing: border-box;
+  &.pos-bottom {
+    .wrap-layer {
+      bottom: 0;
+      border-radius: 3rem 3rem 0 0;
+      padding-top: 4rem;
+    }
+  }
+  &.pos-right {
+    .wrap-layer {
+      top: 0;
+      height: 100%;
+    }
   }
 
   .wrap-layer-btn {
@@ -46,12 +57,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1.5rem 2rem 1.5rem 3rem;
-    border-top: .1rem solid $fcD7;
+    border-top: 0.1rem solid $fcD7;
 
     .refresh {
       width: 1.6rem;
       height: 1.6rem;
-      margin-right: .5rem;
+      margin-right: 0.5rem;
     }
 
     .type2 {
@@ -115,7 +126,6 @@
         }
       }
     }
-
 
     .define-box {
       margin-bottom: 2rem;
