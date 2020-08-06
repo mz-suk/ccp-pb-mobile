@@ -17,7 +17,7 @@
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.6);
         &.active {
-          background: #fff;
+          background: $fcF;
         }
       }
     }
@@ -47,9 +47,9 @@
   display: flex;
   padding: 1.8em 0;
   margin-top: 2.8rem;
-  border-radius: 1px;
+  border-radius: 0.1rem;
   background: $fcF9;
-  border: 1px solid $fcF0;
+  border: 0.1rem solid $fcF0;
   li {
     flex: 1;
     position: relative;
@@ -124,7 +124,7 @@
       padding-top: 0.8rem;
       font-size: 0.9rem;
       border-radius: 50%;
-      border: 1px solid #4538ff;
+      border: 0.1rem solid #4538ff;
       background: #493cff;
       box-shadow: 0 0.3rem 0.6rem #493cff;
       text-align: center;
@@ -304,7 +304,7 @@
 .review-info-box {
   margin-top: 1.5rem;
   padding: 1.8rem 0;
-  border: 1px solid $fcF0;
+  border: 0.1rem solid $fcF0;
   background: $fcF9;
   text-align: center;
   font-size: 1.3rem;
@@ -344,7 +344,7 @@
         line-height: 2rem;
         font-size: 0.9rem;
         color: $gc3;
-        border: 1px solid $gc3;
+        border: 0.1rem solid $gc3;
         border-radius: 1rem;
       }
     }
@@ -364,7 +364,7 @@
         li {
           position: relative;
           float: left;
-          margin: 0 0 0 5px;
+          margin: 0 0 0 0.5rem;
           border-radius: 0.1rem;
           overflow: hidden;
           &:first-child {
@@ -400,7 +400,7 @@
   .more-text {
     padding-bottom: 0.2rem;
     display: inline-block;
-    border-bottom: 1px solid $fc9;
+    border-bottom: 0.1rem solid $fc9;
     font-size: 1.3rem;
     color: $fc9;
     &:after {
@@ -409,7 +409,7 @@
       vertical-align: middle;
       width: 1.2rem;
       height: 1.2rem;
-      margin-left: 4px;
+      margin-left: 0.4rem;
       background: url(../../assets/img/layout/icon-more-txt.png) no-repeat 0 0;
       background-size: 1.2rem 1.2rem;
     }
