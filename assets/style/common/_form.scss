@@ -213,7 +213,11 @@ input[type="checkbox"] {
 
 .form-search {
   position: relative;
-
+  &.active {
+    .btn-clear-x {
+      display: block;
+    }
+  }
   input {
     padding: 0 7rem 0 1rem;
     width: 100%;
@@ -228,14 +232,13 @@ input[type="checkbox"] {
       color: $fc9;
     }
   }
-
   .btn-clear-x {
     position: absolute;
     top: 50%;
     right: 4.5rem;
+    display: none;
     transform: translate(0, -50%);
   }
-
   .btn-search {
     position: absolute;
     top: 50%;
