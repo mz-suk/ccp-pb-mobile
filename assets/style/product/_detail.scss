@@ -29,6 +29,12 @@
     position: relative;
     text-align: center;
     color: $fc1;
+    font-size: 1.4rem;
+    button {
+      display: block;
+      width: 100%;
+      font: inherit;
+    }
     &:first-child:before {
       display: none;
     }
@@ -63,5 +69,100 @@
   }
   .discount {
     font-size: 3.4rem;
+  }
+}
+
+.row-section {
+  padding: 4rem 2rem 3.5rem;
+  box-sizing: border-box;
+  border-top: 0.8rem solid $fcF9;
+  border-bottom: 0.1rem solid $fcF0;
+}
+
+.content-tab-wrap {
+  .tab-menu {
+    display: flex;
+    li {
+      flex: 1;
+      font-size: 1.7rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      border-bottom: 0.1rem solid $fcF0;
+      &.active {
+        border-bottom: 0.2rem solid $fc1;
+      }
+      .num {
+        display: inline-block;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+.article-area {
+  margin-top: 4rem;
+  &.type-map {
+    margin: 5rem -2rem 0;
+    height: 14rem;
+  }
+  .article-title {
+    font-size: 1.5rem;
+    .num {
+      font-size: 1.4rem;
+    }
+  }
+  .icon-list-wrap {
+    margin-top: 2rem;
+  }
+}
+
+.icon-list-wrap {
+  overflow: hidden;
+  .icon-list {
+    margin: -2.6rem 0 0 -2.6rem;
+    li {
+      float: left;
+      width: 25%;
+      box-sizing: border-box;
+      padding: 2.6rem 0 0 2.6rem;
+      font-size: 1.3rem;
+      text-align: center;
+      .list-cont {
+        display: inline-block;
+        width: 6.4rem;
+      }
+    }
+    .circle-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: 6.4rem;
+      box-sizing: border-box;
+      margin: 0 auto 1rem;
+      background-color: $fcF9;
+      border: 0.1rem solid $fcF0;
+      border-radius: 50%;
+      .bg-icon {
+        width: 2.8rem;
+        height: 2.8rem;
+      }
+      .num {
+        display: block;
+        position: absolute;
+        right: -0.3rem;
+        top: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+        overflow: hidden;
+        border-radius: 50%;
+        font-size: 1.1rem;
+        line-height: 2rem;
+        color: $fcF;
+        background-color: $fc1;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      }
+    }
   }
 }

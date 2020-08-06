@@ -50,10 +50,10 @@ function buildConvertCss() {
 
   return gulp
     .src(assets + "style/**/*")
-    .pipe(replace("/assets/", "~assets/"))
+    .pipe(replace("../../assets/", "~assets/"))
     .pipe(gulp.dest(static + "css/"));
 }
 
-exports.default = gulp.parallel(watchFiles, browser);
-exports.build = gulp.series(() => del(static), gulp.parallel(buildMoveImg, buildMoveFont, buildConvertCss));
 exports.clear = gulp.series(() => del(static));
+// exports.build = gulp.parallel(buildMoveImg, buildMoveFont, buildConvertCss);
+exports.default = gulp.parallel(watchFiles, browser);

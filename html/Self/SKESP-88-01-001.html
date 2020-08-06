@@ -15,14 +15,14 @@
       setFontSize();
       window.addEventListener("resize", setFontSize);
     </script>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
   </head>
 
   <body>
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title"><button type="button">전지역</button></h1>
+        <h1 class="title">{{ title }}</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">
             이전페이지
@@ -40,7 +40,7 @@
       <div class="wrap-contents">
         <div class="wrap-filter">
           <div class="left">
-            <p class="desc">123 개의 세차장</p>
+            <p class="desc">{{ total + '개의 세차장' }}</p>
           </div>
           <div class="right">
             <button type="button" class="bg-icon filter">필터</button>
@@ -52,7 +52,7 @@
           <div class="wash-info">
             <div class="list-item">
               <div class="item-top">
-                <div class="thumbnail"><img src="/assets/img/temp/list-thumb-1.png" alt="" /></div>
+                <div class="thumbnail"><img src="../../assets/img/temp/list-thumb-1.png" alt="" /></div>
                 <div class="label"><span>혼잡도 여유 .</span></div>
               </div>
               <div class="item-bottom">
@@ -79,7 +79,7 @@
           <div class="wash-info">
             <div class="list-item">
               <div class="item-top">
-                <div class="thumbnail"><img src="/assets/img/temp/list-thumb-1.png" alt="" /></div>
+                <div class="thumbnail"><img src="../../assets/img/temp/list-thumb-1.png" alt="" /></div>
                 <div class="label"><span>혼잡도 여유 .</span></div>
               </div>
               <div class="item-bottom">
@@ -104,17 +104,9 @@
           </div>
         </div>
 
-        <div style="text-align: center; padding: 20px;">
-          <button type="button" class="btn type1 add-product">
-            더보기
-          </button>
-        </div>
-
-        <div style="text-align: center;">
-          <button type="button" class="btn type2 color4 next-product">
-            다음으로
-          </button>
-        </div>
+        <button type="button" class="add-product">
+          더보기
+        </button>
       </div>
       <!-- //Wrap-contents -->
 

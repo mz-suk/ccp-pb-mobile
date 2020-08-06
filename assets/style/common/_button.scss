@@ -21,6 +21,7 @@
     line-height: 4rem;
     border-radius: 2rem;
   }
+
   &.type1 {
     border-style: dotted;
     border-color: $fc9;
@@ -31,10 +32,11 @@
       width: 0.6rem;
       height: 0.6rem;
       margin: 0 0.6rem;
-      background: url(/assets/img/layout/icon-more-type1.png) 0 0 / 100% auto no-repeat;
+      background: url(../../assets/img/layout/icon-more-type1.png) 0 0 / 100% auto no-repeat;
       vertical-align: 0.2rem;
     }
   }
+
   &.type2 {
     width: 100%;
     height: 5.5rem;
@@ -42,42 +44,50 @@
     line-height: 5.4rem;
     border-radius: 0;
   }
+
   // 버튼 컬러
   &.color1 {
     color: $fcF;
     border-color: $fc1;
     background-color: $fc1;
   }
+
   &.color2 {
     color: $fcF;
     border-color: $fcE4;
     background-color: $fcE4;
   }
+
   &.color3 {
     color: $fc1;
     border-color: $fcE4;
     background-color: $fcF;
   }
+
   &.color4 {
     color: $fcF;
     border-color: $pc3;
     background-color: $pc3;
   }
+
   &.color5 {
     color: $fcF;
     border-color: $pc1;
     background-color: $pc1;
   }
+
   &.color11 {
     border: 0;
     color: $fcF;
     background: linear-gradient(to right, $gc1 0%, $gc2 100%);
   }
+
   &.color12 {
     border: 0;
     color: $fcF;
     background: linear-gradient(to right, $gc3 0%, $gc4 100%);
   }
+
   &:disabled,
   &[disabled] {
     color: $fcF;
@@ -93,9 +103,17 @@
     height: 2rem;
   }
 }
+
 .btn-clear-x {
   .bg-icon {
     width: 1.6rem;
     height: 1.6rem;
+  }
+}
+
+.btn-download {
+  .bg-icon {
+    width: 2rem;
+    height: 2rem;
   }
 }
