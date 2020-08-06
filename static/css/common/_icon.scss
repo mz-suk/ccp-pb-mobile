@@ -12,7 +12,8 @@
     background-image: url(~assets/img/layout/icon-hamburg.png);
   }
 
-  &.close {
+  &.close,
+  &.layer-close {
     background-image: url(~assets/img/layout/icon-close.png);
   }
 
@@ -116,10 +117,106 @@
     background-image: url(~assets/img/layout/icon-add.png);
   }
 
+  &.card-tag {
+    background-image: url(~assets/img/layout/icon-cardtag.png);
+  }
+
+  &.skpay {
+    background-image: url(~assets/img/layout/icon-skpay.png);
+  }
+
+  &.payco {
+    background-image: url(~assets/img/layout/icon-payco.png);
+  }
+
+  &.npay {
+    background-image: url(~assets/img/layout/icon-npay.png);
+  }
+
+  &.kakaopay {
+    background-image: url(~assets/img/layout/icon-kakaopay.png);
+  }
+
+  &.zeropay {
+    background-image: url(~assets/img/layout/icon-zeropay.png);
+  }
+
+  &.download {
+    background-image: url(~assets/img/layout/icon-download.png);
+  }
+
   &.clear-x {
     background-image: url(~assets/img/layout/icon-clear.png);
   }
+
   &.search {
     background-image: url(~assets/img/layout/icon-search.png);
+  }
+  &.cafe {
+    background-image: url(~assets/img/layout/icon-cafe.png);
+  }
+  &.food {
+    background-image: url(~assets/img/layout/icon-food.png);
+  }
+  &.gas {
+    background-image: url(~assets/img/layout/icon-gas-station.png);
+  }
+  &.market {
+    background-image: url(~assets/img/layout/icon-market.png);
+  }
+  &.bay {
+    background-image: url(~assets/img/layout/icon-bay.png);
+  }
+  &.vacuum {
+    background-image: url(~assets/img/layout/icon-vacuum.png);
+  }
+  &.share-url {
+    background-image: url(~assets/img/layout/icon-share-url.png);
+  }
+  &.share-facebook {
+    background-image: url(~assets/img/layout/icon-share-facebook.png);
+  }
+  &.share-kakao {
+    background-image: url(~assets/img/layout/icon-share-kakao.png);
+  }
+  &.oil {
+    background-image: url(~assets/img/layout/icon-oil.png);
+  }
+  &.locator {
+    background-image: url(~assets/img/layout/icon-locator.png);
+  }
+  &.locator-kakao {
+    background-image: url(~assets/img/layout/icon-locator-kakao.png);
+  }
+  &.locator-tmap {
+    background-image: url(~assets/img/layout/icon-locator-tmap.png);
+  }
+}
+
+// 뱃지
+
+.badge {
+  &:not(:first-child) {
+    margin-left: 0.1rem;
+  }
+
+  padding: 0.4rem 1rem;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: $fcF;
+  border: 0.1rem solid;
+  border-radius: 10rem;
+
+  &.blue {
+    color: $pc3;
+    border-color: $pc3;
+  }
+
+  &.red {
+    color: $gc3;
+    border-color: $gc3;
   }
 }

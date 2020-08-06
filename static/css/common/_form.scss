@@ -9,12 +9,58 @@ textarea,
   }
 }
 
+input[type="number"],
+input[type="date"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="file"],
+input[type="tel"] {
+  display: inline-block;
+  width: 100%;
+  height: 4.5rem;
+  padding: 0 3.6rem 0 1rem;
+  box-sizing: border-box;
+  background-color: $fcF9;
+  border: 0.1rem solid $fcF0;
+  color: $fc1;
+
+  &::placeholder {
+    color: $fc9;
+  }
+}
+
+.form-input {
+  position: relative;
+
+  .btn-clear-x {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
+}
+
 .select {
   width: 100%;
   height: 4.5rem;
   padding: 0 1.5rem;
   background: url(~assets/img/layout/icon-toggle.png) 95% 50% / 1.2rem 1.2rem no-repeat;
   border: 0.1rem solid $fcE4;
+
+  &.type1 {
+    padding: 0 1rem;
+    color: $fc1;
+    border: none;
+    border-bottom: 0.1rem solid $fcE4;
+    &:not(:focus):invalid {
+      color: $fc9;
+    }
+    option:first-of-type {
+      color: $fc9;
+    }
+  }
 }
 
 .wrap-checkbox {
@@ -78,7 +124,7 @@ textarea,
       height: 5.5rem;
       padding: 0 3rem;
       box-sizing: border-box;
-      background-color: #fafafa;
+      background-color: $fcF9;
       border: 0.1rem solid $fcE4;
       border-radius: 5rem;
       color: $fc9;
@@ -133,6 +179,7 @@ textarea,
     width: 5.6rem;
     height: 5.6rem;
     border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.08);
     @include blind();
 
     &.minus {
@@ -156,6 +203,8 @@ textarea,
     input[type="number"] {
       display: inline-block;
       width: 4.5rem;
+      padding: 0;
+      border: 0;
       color: $fc1;
       font-size: 2.4rem;
       text-align: right;
@@ -192,24 +241,23 @@ input[type="checkbox"] {
     line-height: 1.5;
   }
 }
-
+.form-list {
+  .form-div:not(:first-child) {
+    margin-top: 4rem;
+  }
+}
 .form-div {
   .title {
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    color: $fc1;
     line-height: 1;
   }
 }
-.div {
-  display: flex;
-  div {
-    width: 30px;
-    height: 30px;
-    background: pink;
-  }
-}
+// 검색화면
 .form-search {
   position: relative;
+
   input {
     padding: 0 7rem 0 1rem;
     width: 100%;
@@ -217,18 +265,23 @@ input[type="checkbox"] {
     line-height: 1;
     font-size: 1.6rem;
     color: $fc1;
+    background-color: $fcF;
+    border: 0;
     border-bottom: 0.2rem solid $fc1;
+
     &::placeholder {
       font-size: 1.5rem;
       color: $fc9;
     }
   }
+
   .btn-clear-x {
     position: absolute;
     top: 50%;
     right: 4.5rem;
     transform: translate(0, -50%);
   }
+
   .btn-search {
     position: absolute;
     top: 50%;
@@ -236,106 +289,3 @@ input[type="checkbox"] {
     transform: translate(0, -50%);
   }
 }
-
-// input[type="number"],
-// input[type="date"],
-// input[type="text"],
-// input[type="email"],
-// input[type="password"],
-// input[type="search"],
-// input[type="file"],
-// input[type="tel"] {
-//   box-sizing: border-box;
-//   display: inline-block;
-//   width: 100%;
-//   height: 45px;
-//   padding: 1px 15px 0; // line-height:45px;
-//   border: 1px solid $fcD;
-//   font-size: 15px;
-//   color: $fc1;
-//   letter-spacing: -0.05em;
-//   font-weight: 700;
-
-//   &::placeholder {
-//     padding-top: 1px;
-//     color: $fc9;
-//     font-size: 13px;
-//     font-weight: 400;
-//   }
-
-//   &:focus {
-//     // , &:not(:placeholder-shown)
-//     border-color: $fc2;
-//     // box-shadow:0 1px 0 $fc2;
-//   }
-
-//   &:disabled,
-//   &:read-only {
-//     color: $fc9;
-//     font-weight: 700;
-//     font-size: 13px;
-//     background-color: $fcF6;
-//     border-color: $fcD;
-//   }
-// }
-
-// // checkbox
-// input[type="checkbox"],
-// input[type="radio"] {
-//   width: 20px;
-//   height: 20px;
-//   // background: url(../img/layout/sp-form.png) 0 0 / 100px auto no-repeat;
-
-//   &:checked {
-//     background-position-x: -20px;
-//   }
-
-//   &:disabled {
-//     background-position-x: -40px;
-//   }
-// }
-
-// input[type="radio"] {
-//   background-position-y: -20px;
-// }
-
-// //select 박스
-// .select {
-//   position: relative;
-//   width: 100%;
-
-//   &:before {
-//     content: "";
-//     position: absolute;
-//     right: 15px;
-//     top: 50%;
-//     width: 11px;
-//     height: 6.5px;
-//     // background: url(../img/layout/sp-form.png) -77px 0 / 100px auto no-repeat;
-//     transform: translateY(-50%);
-//   }
-
-//   select {
-//     position: relative;
-//     width: 100%;
-//     height: 45px;
-//     line-height: 45px;
-//     padding: 0 15px;
-//     font-size: 13px;
-//     color: $fc2;
-//     font-weight: 700;
-//     border: 1px solid $fcD;
-
-//     // &.selected{
-//     // 	color: $fc2; font-weight: 700;
-//     // }
-//     // &.already{
-//     // 	color: $fc2; font-weight: 700;
-//     // }
-//     option {
-//       &:disabled {
-//         color: $fc9;
-//       }
-//     }
-//   }
-// }
