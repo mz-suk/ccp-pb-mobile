@@ -78,7 +78,7 @@ textarea,
       height: 5.5rem;
       padding: 0 3rem;
       box-sizing: border-box;
-      background-color: #fafafa;
+      background-color: $fcF9;
       border: 0.1rem solid $fcE4;
       border-radius: 5rem;
       color: $fc9;
@@ -213,7 +213,11 @@ input[type="checkbox"] {
 
 .form-search {
   position: relative;
-
+  &.active {
+    .btn-clear-x {
+      display: block;
+    }
+  }
   input {
     padding: 0 7rem 0 1rem;
     width: 100%;
@@ -228,14 +232,13 @@ input[type="checkbox"] {
       color: $fc9;
     }
   }
-
   .btn-clear-x {
     position: absolute;
     top: 50%;
     right: 4.5rem;
+    display: none;
     transform: translate(0, -50%);
   }
-
   .btn-search {
     position: absolute;
     top: 50%;

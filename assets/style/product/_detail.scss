@@ -65,7 +65,7 @@
   &.purple {
     color: $fcF;
     border-color: $pc3;
-    background: #6257ff;
+    background: $pc4;
   }
   .discount {
     font-size: 3.4rem;
@@ -177,8 +177,8 @@
 .review-box {
   margin-top: 1.5rem;
   padding: 1.8rem 0;
-  border: 1px solid #f0f0f0;
-  background: #f9f9f9;
+  border: 1px solid $fcF0;
+  background: $fcF9;
   text-align: center;
   color: $fc1;
 }

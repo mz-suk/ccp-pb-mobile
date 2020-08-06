@@ -243,7 +243,7 @@
 
     .info {
       padding: 2.2rem 2.2rem 1.4rem;
-      background: #777;
+      background: $fc6;
       border-radius: 2rem 2rem 0 0;
       box-sizing: border-box;
       color: $fcF;
@@ -255,7 +255,7 @@
       align-items: center;
       height: 4rem;
       padding: 0 2.8rem 0 2.2rem;
-      background: #6a6a6a;
+      background: $fc6;
       border-radius: 0 0 2rem 2rem;
       color: $fc9;
     }
@@ -307,7 +307,7 @@
     height: 2.2rem;
     margin-left: 1rem;
     padding: 0 1rem;
-    background: linear-gradient(to right, #04a0f3 0%, #45d49a 100%);
+    background: linear-gradient(to right, $gc1 0%, $gc2 100%);
     border-radius: 0.1rem;
     font-size: 1.1rem;
     color: $fcF;

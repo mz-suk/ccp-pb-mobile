@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
-  <title>Document</title>
-  <script>
-    function setFontSize() {
-      var doc = document.documentElement,
-        fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
-      fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
 
-      doc.style.fontSize = fontSizeVal + "%";
-    }
-    setFontSize();
-    window.addEventListener("resize", setFontSize);
-  </script>
-  <link rel="stylesheet" href="../../assets/css/style.css" />
-</head>
+  <body>
+    <div id="container"></div>
 
-<body>
-  <div id="container">
-    <!-- Header -->
-    <header class="header header-popup">
-      <h1 class="title">쿠폰적용</h1>
-      <div class="right">
-        <button type="button" class="bg-icon close">닫기</button>
-      </div>
-    </header>
-    <!-- //Header -->
-    <!-- wrap-contents -->
-    <div class="wrap-contents">
-      <div class="coupon-cont">
-        <div class="wrap-tab type1">
-          <ul class="tab-menu">
-            <li><button type="button">내 쿠폰 (2)</button></li>
-            <li class="active"><button type="button">다운 가능 쿠폰 (3)</button></li>
-          </ul>
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">쿠폰적용</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
 
-          <div class="tab-content">
-            <ul class="list-coupon">
-              <li class="info-type-box right-btn">
-                <div class="info-type-cont">
-                  <div class="top">
-                    <span class="badge blue">세차</span>
-                    <span class="badge red">가맹점</span>
-                  </div>
-                  <div class="big-title">
-                    <strong>3,000</strong>원
-                  </div>
-                  <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
-                  <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
-                  <p class="info-txt2">15,000원 이상 구매 시</p>
-                  <button type="button" class="btn-download" data-type="right-btn" title="다운로드"><i class="bg-icon download"></i></button>
+        <div class="wrap-contents">
+          <div class="coupon-cont">
+            <div class="wrap-tab type1">
+              <ul class="tab-menu">
+                <li><button type="button">내 쿠폰 (2)</button></li>
+                <li class="active"><button type="button">다운 가능 쿠폰 (3)</button></li>
+              </ul>
+
+              <div class="tab-content">
+                <ul class="list-coupon">
+                  <li class="info-type-box right-btn">
+                    <div class="info-type-cont">
+                      <div class="top">
+                        <span class="badge blue">세차</span>
+                        <span class="badge red">가맹점</span>
+                      </div>
+                      <div class="big-title"><strong>3,000</strong>원</div>
+                      <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
+                      <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
+                      <p class="info-txt2">15,000원 이상 구매 시</p>
+                      <button type="button" class="btn-download" data-type="right-btn" title="다운로드"><i class="bg-icon download"></i></button>
+                    </div>
+                  </li>
+                  <li class="info-type-box right-btn">
+                    <div class="info-type-cont">
+                      <div class="top">
+                        <span class="badge blue">세차</span>
+                        <span class="badge red">가맹점</span>
+                      </div>
+                      <div class="big-title"><strong>3,000</strong>원</div>
+                      <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
+                      <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
+                      <p class="info-txt2">15,000원 이상 구매 시</p>
+                      <button type="button" class="btn-download" data-type="right-btn" title="다운로드"><i class="bg-icon download"></i></button>
+                    </div>
+                  </li>
+                </ul>
+                <p class="text-guide">
+                  본 상품에 적용 가능한 쿠폰만 노출되며,<br />
+                  모든 전체 쿠폰은 [쿠폰함]에서 다운받으실 수 있습니다.
+                </p>
+                <div class="wrap-btn">
+                  <button type="button" class="btn">
+                    쿠폰 모두 받기
+                    <i class="bg-icon download"></i>
+                  </button>
                 </div>
-              </li>
-              <li class="info-type-box right-btn">
-                <div class="info-type-cont">
-                  <div class="top">
-                    <span class="badge blue">세차</span>
-                    <span class="badge red">가맹점</span>
-                  </div>
-                  <div class="big-title">
-                    <strong>3,000</strong>원
-                  </div>
-                  <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
-                  <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
-                  <p class="info-txt2">15,000원 이상 구매 시</p>
-                  <button type="button" class="btn-download" data-type="right-btn" title="다운로드"><i class="bg-icon download"></i></button>
-                </div>
-              </li>
-            </ul>
-            <p class="text-guide">본 상품에 적용 가능한 쿠폰만 노출되며,<br />
-              모든 전체 쿠폰은 [쿠폰함]에서 다운받으실 수 있습니다.</p>
-            <div class="wrap-btn">
-              <button type="button" class="btn">쿠폰 모두 받기
-                <i class="bg-icon download"></i>
-              </button>
+              </div>
             </div>
           </div>
+          <!-- //wrap-contents -->
+          <!-- Footer -->
         </div>
       </div>
-      <!-- //wrap-contents -->
-      <!-- Footer -->
-    </div>
-</body>
 
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
 </html>
