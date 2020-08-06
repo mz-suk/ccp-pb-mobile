@@ -104,9 +104,15 @@
   &.type-map {
     margin: 5rem -2rem 0;
     height: 14rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+      -webkit-object-fit: cover;
+    }
   }
   .article-title {
     font-size: 1.5rem;
+    color: $fc1;
     .num {
       font-size: 1.4rem;
     }
@@ -127,6 +133,7 @@
       padding: 2.6rem 0 0 2.6rem;
       font-size: 1.3rem;
       text-align: center;
+      color: $fc1;
       .list-cont {
         display: inline-block;
         width: 6.4rem;
@@ -164,5 +171,39 @@
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
       }
     }
+  }
+}
+
+.review-box {
+  margin-top: 1.5rem;
+  padding: 1.8rem 0;
+  border: 1px solid #f0f0f0;
+  background: #f9f9f9;
+  text-align: center;
+  color: $fc1;
+}
+
+.rating-wrap {
+  .rating {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 8.8rem;
+    height: 1.6rem;
+    background: url(../../assets/img/layout/icon_rating_star.png) no-repeat 0 100%;
+    background-size: 8.8rem 3.2rem;
+    font-size: 0;
+    .percent {
+      display: inline-block;
+      background: url(../../assets/img/layout/icon_rating_star.png) no-repeat 0 0.2rem;
+      background-size: 8.8rem 3.2rem;
+      height: 1.6rem;
+    }
+  }
+  .num {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    color: $fc1;
   }
 }
