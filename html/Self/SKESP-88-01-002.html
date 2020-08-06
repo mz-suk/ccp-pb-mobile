@@ -22,7 +22,9 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">{{ title }}</h1>
+        <h1 class="title">
+          <button type="button">{{ title }}</button>
+        </h1>
         <div class="left">
           <button type="button" class="bg-icon prev">
             이전페이지
@@ -226,18 +228,28 @@
           </div>
 
           <div class="article-area type-map">
-            지도 영역
+            <img src="../../assets/img/temp/map-thumb-1.png" />
           </div>
 
           <div class="article-area">
-            <h2 class="article-title">사용자 리뷰</h2>
-            <div class="box-review">
+            <h2 class="article-title">사용자 리뷰 test</h2>
+            <div class="review-box">
               <p class="">리뷰 571개</p>
-              <div class="wrap-rating">
-                <div class="rating small">
-                  <i style="width: 100%;">5.0</i>
+              <div class="rating-wrap">
+                <div class="rating">
+                  <span class="percent" style="width: 70%;">4.7</span>
                 </div>
                 <span class="num">4.7</span>
+              </div>
+            </div>
+            <div class="review-wrap">
+              <div>
+                <div class="rating-wrap">
+                  <div class="rating">
+                    <span class="percent" style="width: 70%;">4.7</span>
+                  </div>
+                  <span class="num">4.7</span>
+                </div>
               </div>
             </div>
           </div>
