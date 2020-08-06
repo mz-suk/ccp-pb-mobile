@@ -9,6 +9,39 @@ textarea,
   }
 }
 
+input[type="number"],
+input[type="date"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="file"],
+input[type="tel"] {
+  display: inline-block;
+  width: 100%;
+  height: 4.5rem;
+  padding: 0 3.6rem 0 1rem;
+  box-sizing: border-box;
+  background-color: $fcF9;
+  border: .1rem solid $fcF0;
+  color: $fc1;
+
+  &::placeholder {
+    color: $fc9;
+  }
+}
+
+.form-input {
+  position: relative;
+
+  .btn-clear-x {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
+}
+
 .select {
   width: 100%;
   height: 4.5rem;
@@ -27,6 +60,7 @@ textarea,
 }
 
 .checkbox {
+
   input[type="checkbox"],
   input[type="radio"] {
     position: absolute;
@@ -56,8 +90,8 @@ textarea,
       transition: all 0.2s ease;
     }
 
-    input[type="checkbox"]:checked + label,
-    input[type="radio"]:checked + label {
+    input[type="checkbox"]:checked+label,
+    input[type="radio"]:checked+label {
       background: $fc1;
       color: $fcF;
     }
@@ -78,7 +112,7 @@ textarea,
       height: 5.5rem;
       padding: 0 3rem;
       box-sizing: border-box;
-      background-color: $fcF9;
+      background-color: #fafafa;
       border: 0.1rem solid $fcE4;
       border-radius: 5rem;
       color: $fc9;
@@ -103,8 +137,8 @@ textarea,
       }
     }
 
-    input[type="checkbox"]:checked + label,
-    input[type="radio"]:checked + label {
+    input[type="checkbox"]:checked+label,
+    input[type="radio"]:checked+label {
       background-color: $fcF;
       border: 0.1rem solid $fc1;
       color: $fc1;
@@ -156,6 +190,8 @@ textarea,
     input[type="number"] {
       display: inline-block;
       width: 4.5rem;
+      padding: 0;
+      border: 0;
       color: $fc1;
       font-size: 2.4rem;
       text-align: right;
@@ -186,7 +222,7 @@ input[type="checkbox"] {
     background: url(../../assets/img/layout/icon-checkbox-on.png) 0 0 / 100% auto no-repeat;
   }
 
-  & + label {
+  &+label {
     margin-left: 0.8rem;
     color: $fc1;
     line-height: 1.5;
@@ -213,11 +249,7 @@ input[type="checkbox"] {
 
 .form-search {
   position: relative;
-  &.active {
-    .btn-clear-x {
-      display: block;
-    }
-  }
+
   input {
     padding: 0 7rem 0 1rem;
     width: 100%;
@@ -225,6 +257,8 @@ input[type="checkbox"] {
     line-height: 1;
     font-size: 1.6rem;
     color: $fc1;
+    background-color: $fcF;
+    border: 0;
     border-bottom: 0.2rem solid $fc1;
 
     &::placeholder {
@@ -232,13 +266,14 @@ input[type="checkbox"] {
       color: $fc9;
     }
   }
+
   .btn-clear-x {
     position: absolute;
     top: 50%;
     right: 4.5rem;
-    display: none;
     transform: translate(0, -50%);
   }
+
   .btn-search {
     position: absolute;
     top: 50%;
