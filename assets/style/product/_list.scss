@@ -199,6 +199,10 @@
       color: $fc9;
       transition: all 0.2s ease;
 
+      &+li {
+        margin-left: -.1rem;
+      }
+
       &.active {
         background-color: $pc3;
         border-color: $pc3;
@@ -227,6 +231,10 @@
           border-color: $fc1;
           border-bottom-color: $fcF;
           color: $fc1;
+
+          &+li {
+            border-left-color: $fc1;
+          }
         }
       }
     }
@@ -615,8 +623,7 @@
       opacity: 0;
     }
 
-    input[type="checkbox"]:checked+label {
-
+    input[type="checkbox"]:checked + label {
       &.info-type-cont,
       &.info-car-cont {
         background: $fcF;
@@ -659,8 +666,7 @@
       opacity: 0;
     }
 
-    input[type="radio"]:checked+label {
-
+    input[type="radio"]:checked + label {
       &.info-type-cont,
       &.info-car-cont {
         background: $fcF;
@@ -737,7 +743,7 @@
       font-size: 1.3rem;
       line-height: 1.8rem;
 
-      &+.info-txt2 {
+      & + .info-txt2 {
         margin-top: 1rem;
       }
     }
@@ -750,44 +756,6 @@
 
     .info-sub-txt {
       color: $fc9;
-    }
-
-    .price-box {
-      margin-top: 2rem;
-      display: flex;
-      justify-content: space-between;
-      color: $fc1;
-
-      .wash-time {
-        line-height: 1.6rem;
-
-        .bg-icon.time {
-          width: 1.6rem;
-          height: 1.6rem;
-          vertical-align: top;
-        }
-      }
-
-      .price-unit {
-        color: $fc9;
-        font-size: 1.1rem;
-
-        span {
-          font-size: 1.2rem;
-          text-decoration: line-through;
-        }
-      }
-
-      .discount {
-        margin-left: 0.6rem;
-        vertical-align: middle;
-
-        span {
-          font-size: 1.6rem;
-        }
-
-        font-size: 1.5rem;
-      }
     }
   }
 

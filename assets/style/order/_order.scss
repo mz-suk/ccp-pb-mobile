@@ -166,6 +166,10 @@
   .wrap-btn-pay {
     margin-top: 2.5rem;
 
+    >.btn:first-child {
+      border-color: $fc9;
+    }
+
     .btn {
       width: 100%;
     }
@@ -225,7 +229,6 @@
     overflow-x: visible;
     overflow-y: hidden;
     height: 17rem;
-    // margin-right: -5.5rem;
     margin: 0 -5.5rem;
     padding-top: 2.5rem;
     white-space: nowrap;
@@ -247,7 +250,7 @@
       width: 26.5rem;
       height: 17rem;
       margin-left: 1.7rem;
-      scroll-snap-align: start;
+      scroll-snap-align: center;
 
       &:first-child {
         margin-left: 0;
@@ -289,7 +292,6 @@
 
     .info {
       padding: 2.2rem 2.2rem 1.4rem;
-      // background-color: #777;
       border-radius: 2rem 2rem 0 0;
       box-sizing: border-box;
       color: $fcF;
@@ -310,7 +312,6 @@
       align-items: center;
       height: 4rem;
       padding: 0 2.8rem 0 2.2rem;
-      // background-color: #6a6a6a;
       border-radius: 0 0 2rem 2rem;
       color: $fc9;
       font-size: 1.1rem;
@@ -383,6 +384,17 @@
 }
 
 .accordion {
+  &.type1 {
+    &.active {
+      .accordion-cont {
+        border-bottom: 0.1rem solid $fcF0;
+      }
+    }
+    .accordion-title {
+      border-color: $fc1;
+    }
+  }
+
   .accordion-title {
     display: block;
     position: relative;
