@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
-    <title>Document</title>
-    <script>
-      function setFontSize() {
-        var doc = document.documentElement,
-          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
-        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
 
-        doc.style.fontSize = fontSizeVal + "%";
-      }
-      setFontSize();
-      window.addEventListener("resize", setFontSize);
-    </script>
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+  <title>Document</title>
+  <script>
+    function setFontSize() {
+      var doc = document.documentElement,
+        fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+      fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
 
-  <body>
-    <div id="container">
-      <!-- Header -->
+      doc.style.fontSize = fontSizeVal + "%";
+    }
+    setFontSize();
+    window.addEventListener("resize", setFontSize);
+  </script>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
 
-      <!-- //Header -->
-      <!-- wrap-contents -->
+<body>
+  <div id="container">
+    <!-- Header -->
 
-      <!-- //wrap-contents -->
-      <!-- Footer -->
-    </div>
+    <!-- //Header -->
+    <!-- wrap-contents -->
 
-    <!-- Popup -->
-    <div class="wrapper-layer pos-right">
-      <div class="wrap-layer">
-        <header class="header header-popup">
-          <h1 class="title">쿠폰적용</h1>
-          <div class="right">
-            <button type="button" class="bg-icon close">닫기</button>
-          </div>
-        </header>
+    <!-- //wrap-contents -->
+    <!-- Footer -->
+  </div>
 
-        <div class="wrap-contents">
-          <div class="coupon-cont">
-            <div class="wrap-tab type1">
-              <ul class="tab-menu">
-                <li class="active"><button type="button">내 쿠폰 (2)</button></li>
-                <li><button type="button">다운 가능 쿠폰 (3)</button></li>
-              </ul>
-              <div class="tab-content">
-                <div class="wrap-empty">
-                  <div class="empty-img">
-                    <img src="../../assets/img/layout/icon-empty-coupon.png" alt />
-                  </div>
-                  <p class="empty-text">
-                    <strong>사용 가능한 쿠폰이 없습니다.</strong>
-                  </p>
+  <!-- Popup -->
+  <div class="wrapper-layer pos-right">
+    <div class="wrap-layer">
+      <header class="header header-popup">
+        <h1 class="title">쿠폰적용</h1>
+        <div class="right">
+          <button type="button" class="bg-icon close">닫기</button>
+        </div>
+      </header>
+
+      <div class="wrap-contents">
+        <div class="coupon-cont">
+          <div class="wrap-tab type1">
+            <ul class="tab-menu">
+              <li class="active"><button type="button">내 쿠폰 (2)</button></li>
+              <li><button type="button">다운 가능 쿠폰 (3)</button></li>
+            </ul>
+            <div class="tab-content">
+              <div class="wrap-empty">
+                <div class="empty-img">
+                  <img src="../../assets/img/layout/icon-empty-coupon.png" alt />
                 </div>
+                <p class="empty-text">
+                  <strong>사용 가능한 쿠폰이 없습니다.</strong>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="mask"></div>
     </div>
-    <!-- //Popup -->
-  </body>
+
+    <div class="mask"></div>
+  </div>
+  <!-- //Popup -->
+</body>
+
 </html>

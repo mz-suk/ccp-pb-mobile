@@ -217,7 +217,11 @@ html {
 .title-sub {
   padding-bottom: 0.8rem;
   border-bottom: 0.1rem solid $fcF0;
-
+  &.type-third {
+    .title {
+      color: $fc6;
+    }
+  }
   .title {
     font-size: 1.5rem;
     color: $fc1;
@@ -233,14 +237,5 @@ html {
     margin-left: 0.5rem;
     vertical-align: 0.15em;
     background: url(../../assets/img/layout/icon-required.png) 0 0 / 100% auto no-repeat;
-  }
-}
-
-.dialog {
-  dt {
-    font-size: 1.5rem;
-    color: $fc1;
-  }
-  dd {
   }
 }

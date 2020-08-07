@@ -1,3 +1,7 @@
+.wrap-order {
+  padding-bottom: 8rem;
+}
+
 .order-cont {
   padding: 4rem 2rem 3.5rem;
   box-sizing: border-box;
@@ -162,6 +166,10 @@
   .wrap-btn-pay {
     margin-top: 2.5rem;
 
+    >.btn:first-child {
+      border-color: $fc9;
+    }
+
     .btn {
       width: 100%;
     }
@@ -205,7 +213,7 @@
   }
 
   .pay-method {
-    margin: 4rem 2.5rem 0;
+    margin: 1.5rem 2.5rem 0;
 
     .wrap-select {
       margin-top: 1.8rem;
@@ -218,6 +226,14 @@
   }
 
   .wrap-card {
+    overflow-x: visible;
+    overflow-y: hidden;
+    height: 17rem;
+    margin: 0 -5.5rem;
+    padding-top: 2.5rem;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
     .logo-card {
       display: block;
       height: 2rem;
@@ -229,8 +245,41 @@
     }
 
     .card {
+      display: inline-block;
       position: relative;
       width: 26.5rem;
+      height: 17rem;
+      margin-left: 1.7rem;
+      scroll-snap-align: center;
+
+      &:first-child {
+        margin-left: 0;
+        padding-left: 5.5rem;
+      }
+
+      &:last-child {
+        margin-right: 5.5rem;
+      }
+
+      &.type1 {
+        .info {
+          background-color: #777;
+        }
+
+        .date {
+          background-color: #6a6a6a;
+        }
+      }
+
+      &.type2 {
+        .info {
+          background-color: #ffcb00;
+        }
+
+        .date {
+          background-color: #ffb300;
+        }
+      }
     }
 
     .card-tag {
@@ -243,7 +292,6 @@
 
     .info {
       padding: 2.2rem 2.2rem 1.4rem;
-      background: $fc6;
       border-radius: 2rem 2rem 0 0;
       box-sizing: border-box;
       color: $fcF;
@@ -253,8 +301,8 @@
       }
 
       .num {
-        margin-top: 0.3rem;
         font-size: 1.4rem;
+        line-height: 1.4;
       }
     }
 
@@ -264,7 +312,6 @@
       align-items: center;
       height: 4rem;
       padding: 0 2.8rem 0 2.2rem;
-      background-color: $fc6;
       border-radius: 0 0 2rem 2rem;
       color: $fc9;
       font-size: 1.1rem;
@@ -295,7 +342,7 @@
 }
 
 .text-box {
-  padding: 1.8rem 0;
+  padding: 2rem 0;
   background-color: $fcF9;
   border: 0.1rem solid $fcF0;
   text-align: center;
@@ -337,6 +384,17 @@
 }
 
 .accordion {
+  &.type1 {
+    &.active {
+      .accordion-cont {
+        border-bottom: 0.1rem solid $fcF0;
+      }
+    }
+    .accordion-title {
+      border-color: $fc1;
+    }
+  }
+
   .accordion-title {
     display: block;
     position: relative;
@@ -393,7 +451,7 @@
 }
 
 .coupon-cont {
-  padding: 4rem 2rem 0;
+  padding: 4rem 2rem 11.5rem;
 
   .text-guide {
     margin-top: 2rem;
@@ -419,7 +477,7 @@
 }
 
 .point-cont {
-  margin: 4rem 2rem 0;
+  padding: 4rem 2rem 11.5rem;
 
   .title {
     font-size: 1.5rem;
@@ -485,4 +543,8 @@
       color: $gc3;
     }
   }
+}
+
+.terms-cont {
+  margin: 4rem 2rem 0;
 }

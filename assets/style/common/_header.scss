@@ -28,6 +28,23 @@
   background-color: $fcF;
   border-bottom: 0.1rem solid $fcF0;
 
+  &.isDetail {
+    background: transparent;
+    border-bottom: 0 none;
+    & + .wrap-contents {
+      margin-top: -5.5rem;
+    }
+    .title {
+      display: none;
+    }
+    .prev {
+      background-image: url(../../assets/img/layout/icon-prev-white.png);
+    }
+    .menu {
+      background-image: url(../../assets/img/layout/icon-hamburg-white.png);
+    }
+  }
+
   .title {
     height: 5.5rem;
     padding: 0 4rem;
