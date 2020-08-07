@@ -76,6 +76,10 @@
     width: 2.4rem;
     height: 2.4rem;
   }
+  .like {
+    &.active {
+    }
+  }
 }
 
 .item-bottom {
@@ -167,7 +171,7 @@
 }
 
 .row-section {
-  padding: 4rem 2rem 3.5rem;
+  padding: 4rem 2rem 9rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
