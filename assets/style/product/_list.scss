@@ -599,7 +599,8 @@
     border: none;
 
     input[type="checkbox"] {
-      @include blind();
+      position: absolute;
+      opacity: 0;
     }
 
     input[type="checkbox"]:checked + label {
