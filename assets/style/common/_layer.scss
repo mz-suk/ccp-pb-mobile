@@ -39,6 +39,56 @@
     }
   }
 
+  &.none-mask {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    .mask {
+      display: none;
+    }
+  }
+
+  &.pos-drag {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    min-height: 65%;
+    &.active {
+      height: 88%;
+    }
+    .wrap-layer {
+      height: 100%;
+      overflow-y: hidden;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4.5rem;
+        height: 0.5rem;
+        border-radius: 0.3rem;
+        background: $fcE4;
+      }
+      .inner-layer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .layer-cont {
+          flex: 1 1 auto; /* flex: 1 1 0 */
+          &.scroll-cont {
+            margin-top: -6.6rem;
+            @include scroll(y);
+          }
+        }
+      }
+    }
+    .layer-close {
+      display: none;
+    }
+  }
+
   &.pos-bottom {
     .wrap-layer {
       bottom: 0;

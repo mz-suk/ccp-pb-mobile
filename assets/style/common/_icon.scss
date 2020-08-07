@@ -52,6 +52,9 @@
   &.location {
     background-image: url(../../assets/img/layout/icon-location.png);
   }
+  &.location-small {
+    background-image: url(../../assets/img/layout/icon-location-small.png);
+  }
 
   &.direction {
     background-image: url(../../assets/img/layout/icon-direction.png);
@@ -190,6 +193,18 @@
   }
   &.locator-tmap {
     background-image: url(../../assets/img/layout/icon-locator-tmap.png);
+  }
+  &.home {
+    background-image: url(../../assets/img/layout/icon-quick-home.png);
+  }
+  &.bill {
+    background-image: url(../../assets/img/layout/icon-quick-list.png);
+  }
+  &.my-muffin {
+    background-image: url(../../assets/img/layout/icon-quick-my.png);
+  }
+  &.del {
+    background-image: url(../../assets/img/layout/icon-close-small.png);
   }
 }
 
