@@ -1,6 +1,13 @@
 .map-wrap {
-  height: 35vh;
+  position: absolute;
+  left: 0;
+  top: 5.5rem;
+  height: calc(40% - 5.5rem);
+  width: 100%;
   background: red;
+  &.full-height {
+    height: calc(100% - 5.5rem);
+  }
 }
 
 .block-layout {
@@ -65,6 +72,29 @@
     }
     .match {
       color: $gc3;
+    }
+  }
+}
+
+.search-address {
+  padding-bottom: 2rem;
+  .title {
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    .bg-icon {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-top: -0.5rem;
+    }
+  }
+  .desc {
+    p {
+      font-size: 1.1rem;
+      color: $fc6;
+      &:first-child {
+        font-size: 1.3rem;
+        color: $fc1;
+      }
     }
   }
 }
