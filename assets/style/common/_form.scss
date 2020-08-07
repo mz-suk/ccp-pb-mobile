@@ -241,6 +241,34 @@ input[type="checkbox"] {
     line-height: 1.5;
   }
 }
+
+.checkbox-st {
+  position: relative;
+  padding-left: 3rem;
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  input[type="checkbox"] + label {
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .label-tit {
+    button {
+      margin-left: 0.6rem;
+      vertical-align: top;
+    }
+  }
+  .sub-txt {
+    margin-top: 0.45rem;
+    font-size: 1.1rem;
+    color: $fc6;
+  }
+}
 .form-list {
   .form-div:not(:first-child) {
     margin-top: 4rem;

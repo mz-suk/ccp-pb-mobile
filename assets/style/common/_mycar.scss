@@ -1,6 +1,15 @@
 // 레이아웃
 .inner-layout {
   padding: 4rem 2rem 7rem;
+  .block-layout {
+    margin: 0 -2rem;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 }
 .block-layout {
   position: relative;
@@ -52,6 +61,12 @@
       margin-top: 4rem;
     }
   }
+  .checkbox-st {
+    margin-top: 2.5rem;
+    &:last-child {
+      margin-bottom: 2.5rem;
+    }
+  }
 }
 .price-box {
   margin-top: 2rem;
@@ -100,6 +115,20 @@
     color: $fc1;
   }
 }
-.option-list {
-  // padding:;
+.detail-introduce {
+  margin-top: 2.25rem;
+  .row-txt {
+    line-height: 1.8rem;
+  }
+  .thumb {
+    margin-top: 1.25rem;
+  }
+  .price-box {
+    padding: 1.5rem 1.5rem 1.5rem 1.7rem;
+    background: $fcF9;
+    border: 1px solid $fcF0;
+    .discount {
+      color: $gc3;
+    }
+  }
 }
