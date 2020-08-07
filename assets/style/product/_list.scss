@@ -199,6 +199,10 @@
       color: $fc9;
       transition: all 0.2s ease;
 
+      &+li {
+        margin-left: -.1rem;
+      }
+
       &.active {
         background-color: $pc3;
         border-color: $pc3;
@@ -227,6 +231,10 @@
           border-color: $fc1;
           border-bottom-color: $fcF;
           color: $fc1;
+
+          &+li {
+            border-left-color: $fc1;
+          }
         }
       }
     }
