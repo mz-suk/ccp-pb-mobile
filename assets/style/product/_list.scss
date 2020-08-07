@@ -35,6 +35,7 @@
 
   .thumbnail {
     height: 20rem;
+    @include cropimg(w);
   }
 
   .item-top {
@@ -44,6 +45,7 @@
       position: absolute;
       bottom: 1.5rem;
       right: 1.5rem;
+      z-index: 3;
       height: 3.4rem;
       padding: 0 1rem;
       background: $fcF;
@@ -78,10 +80,6 @@
   }
 
   &.detail-page {
-    .thumbnail {
-      height: auto;
-    }
-
     .info {
       padding-right: 0;
     }
@@ -233,9 +231,11 @@
       }
     }
   }
+
   &.type2 {
     .tab-menu {
       display: flex;
+
       li {
         flex: 1;
         height: auto;
@@ -246,9 +246,11 @@
         border-bottom: 0.1rem solid $fcF0;
         background: $fcF;
         color: $fc1;
+
         &.active {
           border-bottom: 0.2rem solid $fc1;
         }
+
         .num {
           display: inline-block;
           font-size: 1.4rem;
@@ -271,6 +273,7 @@
     width: 100%;
     padding: 3rem;
     border-bottom: 0.1rem solid $fcE4;
+
     .desc {
       flex: 1 1 auto;
     }
@@ -340,6 +343,10 @@
       }
     }
   }
+}
+
+.wrap-reservation {
+  padding-bottom: 8.5rem;
 }
 
 .reservation-cont {
@@ -430,8 +437,8 @@
       text-align: center;
     }
 
-    .btn {
-      margin-bottom: 3rem;
+    .btn:not(:first-of-type) {
+      margin-top: 3rem;
     }
   }
 
@@ -455,6 +462,10 @@
     padding-top: 2.5rem;
     border-top: 0.1rem solid $fcF0;
   }
+}
+
+.wrap-setting {
+  padding-bottom: 8rem;
 }
 
 .setting-cont {
@@ -582,6 +593,7 @@
     content: "";
   }
 }
+
 .list-dot {
   // default   :  margin-top, font-size, color, dot style
   @include listdot(0.8rem, 1.1rem, $fc1, 1);
@@ -640,6 +652,7 @@
   //radio
   &.radio-type {
     padding: 0;
+
     input[type="radio"] {
       position: absolute;
       opacity: 0;
@@ -687,16 +700,20 @@
     .top {
       display: flex;
       align-items: center;
+
       .title {
         font-size: 1.5rem;
         font-weight: 700;
+
         &.blue {
           color: $pc3;
         }
+
         &.green {
           color: $pc5;
         }
       }
+
       .btn-arrow {
         margin-left: auto;
       }
@@ -749,23 +766,28 @@
       right: 3rem;
       width: 7.5rem;
       transform: translate(0, -50%);
+
       img {
         width: 100%;
       }
+
       button {
         margin-top: 1.2rem;
         margin-left: -0.6rem;
         width: 8.7rem;
       }
     }
+
     .car-barnd {
       color: $fc9;
     }
+
     .car-name {
       margin-top: 1.1rem;
       font-size: 1.5rem;
       color: $fc1;
     }
+
     .car-number {
       margin-top: 0.4rem;
       font-size: 1.8rem;
