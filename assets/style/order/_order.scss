@@ -337,6 +337,17 @@
 }
 
 .accordion {
+  &.type1 {
+    &.active {
+      .accordion-cont {
+        border-bottom: 1px solid $fcf0;
+      }
+    }
+    .accordion-title {
+      border-color: $fc1;
+    }
+  }
+
   .accordion-title {
     display: block;
     position: relative;

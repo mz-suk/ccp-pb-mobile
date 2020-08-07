@@ -732,37 +732,6 @@
     .info-sub-txt {
       color: $fc9;
     }
-
-    .price-box {
-      margin-top: 2rem;
-      display: flex;
-      justify-content: space-between;
-      color: $fc1;
-      .wash-time {
-        line-height: 1.6rem;
-        .bg-icon.time {
-          width: 1.6rem;
-          height: 1.6rem;
-          vertical-align: top;
-        }
-      }
-      .price-unit {
-        color: $fc9;
-        font-size: 1.1rem;
-        span {
-          font-size: 1.2rem;
-          text-decoration: line-through;
-        }
-      }
-      .discount {
-        margin-left: 0.6rem;
-        vertical-align: middle;
-        span {
-          font-size: 1.6rem;
-        }
-        font-size: 1.5rem;
-      }
-    }
   }
 
   .info-car-cont {
