@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">세차상품 선택</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="inner-layout">
+          <ul>
+            <li class="info-type-box radio-type">
+              <input type="radio" id="r01" name="group" />
+              <label for="r01" class="info-type-cont">
+                <div class="top">
+                  <p class="title blue">베이직 세차</p>
+                  <button type="button" class="btn-arrow">상세보기</button>
+                </div>
+                <p class="info-txt">99.9% 살균 인증 받은 스팀 세차기로 차량 내부 / 외부스 팀 세차(트렁크포함)</p>
+                <div class="price-box">
+                  <span class="wash-time"><i class="bg-icon time"></i> 약 60분 소요</span>
+                  <span>
+                    <span class="price-unit"><span>63,000</span>원</span>
+                    <span class="discount"><span>60,000</span>원</span>
+                  </span>
+                </div>
+              </label>
+            </li>
+            <li class="info-type-box radio-type">
+              <input type="radio" id="r02" name="group" />
+              <label for="r02" class="info-type-cont">
+                <div class="top">
+                  <p class="title green">베이직 세차</p>
+                  <button type="button" class="btn-arrow">상세보기</button>
+                </div>
+                <p class="info-txt">99.9% 살균 인증 받은 스팀 세차기로 차량 내부 / 외부스 팀 세차(트렁크포함)</p>
+                <div class="price-box">
+                  <span class="wash-time"><i class="bg-icon time"></i> 약 60분 소요</span>
+                  <span>
+                    <span class="price-unit"><span>63,000</span>원</span>
+                    <span class="discount"><span>60,000</span>원</span>
+                  </span>
+                </div>
+              </label>
+            </li>
+            <li class="info-type-box radio-type">
+              <input type="radio" id="r03" name="group" />
+              <label for="r03" class="info-type-cont">
+                <div class="top">
+                  <p class="title blue">베이직 세차</p>
+                  <button type="button" class="btn-arrow">상세보기</button>
+                </div>
+                <p class="info-txt">99.9% 살균 인증 받은 스팀 세차기로 차량 내부 / 외부스 팀 세차(트렁크포함)</p>
+                <div class="price-box">
+                  <span class="wash-time"><i class="bg-icon time"></i> 약 60분 소요</span>
+                  <span>
+                    <span class="price-unit"><span>63,000</span>원</span>
+                    <span class="discount"><span>60,000</span>원</span>
+                  </span>
+                </div>
+              </label>
+            </li>
+            <li class="info-type-box radio-type">
+              <input type="radio" id="r04" name="group" />
+              <label for="r04" class="info-type-cont">
+                <div class="top">
+                  <p class="title blue">베이직 세차</p>
+                  <button type="button" class="btn-arrow">상세보기</button>
+                </div>
+                <p class="info-txt">99.9% 살균 인증 받은 스팀 세차기로 차량 내부 / 외부스 팀 세차(트렁크포함)</p>
+                <div class="price-box">
+                  <span class="wash-time"><i class="bg-icon time"></i> 약 60분 소요</span>
+                  <span>
+                    <span class="price-unit"><span>63,000</span>원</span>
+                    <span class="discount"><span>60,000</span>원</span>
+                  </span>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4" disabled>다음으로</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

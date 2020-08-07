@@ -1,24 +1,18 @@
 .detail-page {
-  .slider-wrap {
-    position: relative;
-    .slider-paging {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-bottom: 1.5rem;
-      text-align: center;
-      font-size: 0;
-      button {
-        display: inline-block;
+  .item-top {
+    .swiper-slide {
+      height: 20rem;
+      @include cropimg(w);
+    }
+    .swiper-pagination {
+      bottom: 1rem;
+
+      .swiper-pagination-bullet {
         width: 0.6rem;
         height: 0.6rem;
         margin: 0 0.3rem;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.6);
-        &.active {
-          background: $fcF;
-        }
+        background: $fcF;
+        opacity: 0.6;
       }
     }
   }

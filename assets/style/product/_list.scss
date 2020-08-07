@@ -35,6 +35,7 @@
 
   .thumbnail {
     height: 20rem;
+    @include cropimg(w);
   }
 
   .item-top {
@@ -44,6 +45,7 @@
       position: absolute;
       bottom: 1.5rem;
       right: 1.5rem;
+      z-index: 3;
       height: 3.4rem;
       padding: 0 1rem;
       background: $fcF;
@@ -78,10 +80,6 @@
   }
 
   &.detail-page {
-    .thumbnail {
-      height: auto;
-    }
-
     .info {
       padding-right: 0;
     }
@@ -233,9 +231,11 @@
       }
     }
   }
+
   &.type2 {
     .tab-menu {
       display: flex;
+
       li {
         flex: 1;
         height: auto;
@@ -246,9 +246,11 @@
         border-bottom: 0.1rem solid $fcF0;
         background: $fcF;
         color: $fc1;
+
         &.active {
           border-bottom: 0.2rem solid $fc1;
         }
+
         .num {
           display: inline-block;
           font-size: 1.4rem;
@@ -271,6 +273,7 @@
     width: 100%;
     padding: 3rem;
     border-bottom: 0.1rem solid $fcE4;
+
     .desc {
       flex: 1 1 auto;
     }
@@ -340,6 +343,10 @@
       }
     }
   }
+}
+
+.wrap-reservation {
+  padding-bottom: 8.5rem;
 }
 
 .reservation-cont {
@@ -430,8 +437,8 @@
       text-align: center;
     }
 
-    .btn {
-      margin-bottom: 3rem;
+    .btn:not(:first-of-type) {
+      margin-top: 3rem;
     }
   }
 
@@ -455,6 +462,10 @@
     padding-top: 2.5rem;
     border-top: 0.1rem solid $fcF0;
   }
+}
+
+.wrap-setting {
+  padding-bottom: 8rem;
 }
 
 .setting-cont {
@@ -582,6 +593,7 @@
     content: "";
   }
 }
+
 .list-dot {
   // default   :  margin-top, font-size, color, dot style
   @include listdot(0.8rem, 1.1rem, $fc1, 1);
@@ -599,11 +611,14 @@
     border: none;
 
     input[type="checkbox"] {
-      @include blind();
+      position: absolute;
+      opacity: 0;
     }
 
-    input[type="checkbox"]:checked + label {
-      &.info-type-cont {
+    input[type="checkbox"]:checked+label {
+
+      &.info-type-cont,
+      &.info-car-cont {
         background: $fcF;
         border-color: $fc1;
         box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.08);
@@ -635,6 +650,32 @@
     }
   }
 
+  //radio
+  &.radio-type {
+    padding: 0;
+
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+    }
+
+    input[type="radio"]:checked+label {
+
+      &.info-type-cont,
+      &.info-car-cont {
+        background: $fcF;
+        border-color: $fc1;
+        box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.08);
+        transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+      }
+    }
+
+    label {
+      margin: 0;
+      transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+    }
+  }
+
   &.right-btn {
     .info-type-cont {
       padding-right: 5rem;
@@ -657,35 +698,140 @@
     background: $fcF9;
     border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
-  }
 
-  .big-title {
-    margin-top: 0.85rem;
-    font-size: 1.5rem;
-    color: $fc1;
+    .top {
+      display: flex;
+      align-items: center;
 
-    strong {
-      font-size: 2.4rem;
-      font-weight: 700;
+      .title {
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        &.blue {
+          color: $pc3;
+        }
+
+        &.green {
+          color: $pc5;
+        }
+      }
+
+      .btn-arrow {
+        margin-left: auto;
+      }
+    }
+
+    .big-title {
+      margin-top: 0.85rem;
+      font-size: 1.5rem;
+      color: $fc1;
+
+      strong {
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+    }
+
+    .info-txt {
+      margin-top: 0.75rem;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+
+      &+.info-txt2 {
+        margin-top: 1rem;
+      }
+    }
+
+    .info-txt2 {
+      margin-top: 0.2rem;
+      font-size: 1.2rem;
+      color: $fc9;
+    }
+
+    .info-sub-txt {
+      color: $fc9;
+    }
+
+    .price-box {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      color: $fc1;
+
+      .wash-time {
+        line-height: 1.6rem;
+
+        .bg-icon.time {
+          width: 1.6rem;
+          height: 1.6rem;
+          vertical-align: top;
+        }
+      }
+
+      .price-unit {
+        color: $fc9;
+        font-size: 1.1rem;
+
+        span {
+          font-size: 1.2rem;
+          text-decoration: line-through;
+        }
+      }
+
+      .discount {
+        margin-left: 0.6rem;
+        vertical-align: middle;
+
+        span {
+          font-size: 1.6rem;
+        }
+
+        font-size: 1.5rem;
+      }
     }
   }
 
-  .info-txt {
-    margin-top: 1rem;
-    font-size: 1.3rem;
+  .info-car-cont {
+    position: relative;
+    padding: 3.5rem 3rem 4rem;
+    display: block;
+    line-height: 1;
+    background: $fcF9;
+    border: 0.1rem solid $fcD7;
+    border-radius: 1.6rem;
 
-    & + .info-txt2 {
-      margin-top: 1rem;
+    .logo {
+      position: absolute;
+      top: 50%;
+      right: 3rem;
+      width: 7.5rem;
+      transform: translate(0, -50%);
+
+      img {
+        width: 100%;
+      }
+
+      button {
+        margin-top: 1.2rem;
+        margin-left: -0.6rem;
+        width: 8.7rem;
+      }
     }
-  }
 
-  .info-txt2 {
-    margin-top: 0.2rem;
-    font-size: 1.2rem;
-    color: $fc9;
-  }
+    .car-barnd {
+      color: $fc9;
+    }
 
-  .info-sub-txt {
-    color: $fc9;
+    .car-name {
+      margin-top: 1.1rem;
+      font-size: 1.5rem;
+      color: $fc1;
+    }
+
+    .car-number {
+      margin-top: 0.4rem;
+      font-size: 1.8rem;
+      color: $fc1;
+    }
   }
 }

@@ -182,9 +182,9 @@
   &.share-kakao {
     background-image: url(../../assets/img/layout/icon-share-kakao.png);
   }
-  &.oil {
-    background-image: url(../../assets/img/layout/icon-oil.png);
-  }
+  // &.oil {
+  //   background-image: url(../../assets/img/layout/icon-oil.png);
+  // }
   &.locator {
     background-image: url(../../assets/img/layout/icon-locator.png);
   }
@@ -212,7 +212,7 @@
 
 .badge {
   &:not(:first-child) {
-    margin-left: 0.1rem;
+    margin-left: 0.5rem;
   }
 
   padding: 0.4rem 1rem;
