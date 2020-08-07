@@ -1,120 +1,127 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
-    <title>Document</title>
-    <script>
-      function setFontSize() {
-        var doc = document.documentElement,
-          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
-        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
 
-        doc.style.fontSize = fontSizeVal + "%";
-      }
-      setFontSize();
-      window.addEventListener("resize", setFontSize);
-    </script>
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+  <title>Document</title>
+  <script>
+    function setFontSize() {
+      var doc = document.documentElement,
+        fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+      fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
 
-  <body>
-    <div id="container"></div>
+      doc.style.fontSize = fontSizeVal + "%";
+    }
+    setFontSize();
+    window.addEventListener("resize", setFontSize);
+  </script>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
 
-    <!-- Popup -->
-    <div class="wrapper-layer pos-right">
-      <div class="wrap-layer">
-        <header class="header header-popup">
-          <h1 class="title">쿠폰적용</h1>
-          <div class="right">
-            <button type="button" class="bg-icon close">닫기</button>
-          </div>
-        </header>
+<body>
+  <div id="container"></div>
 
-        <div class="wrap-contents">
-          <div class="coupon-cont">
-            <div class="wrap-tab type1">
-              <ul class="tab-menu">
-                <li class="active"><button type="button">내 쿠폰 (2)</button></li>
-                <li><button type="button">다운 가능 쿠폰 (3)</button></li>
+  <!-- Popup -->
+  <div class="wrapper-layer pos-right">
+    <div class="wrap-layer">
+      <header class="header header-popup">
+        <h1 class="title">쿠폰적용</h1>
+        <div class="right">
+          <button type="button" class="bg-icon close">닫기</button>
+        </div>
+      </header>
+
+      <div class="wrap-contents">
+        <div class="coupon-cont">
+          <div class="wrap-tab type1">
+            <ul class="tab-menu">
+              <li class="active"><button type="button">내 쿠폰 (2)</button></li>
+              <li><button type="button">다운 가능 쿠폰 (3)</button></li>
+            </ul>
+
+            <div class="tab-content">
+              <ul class="list-coupon">
+                <li class="info-type-box chk-type">
+                  <input type="checkbox" id="chk01" checked />
+                  <label for="chk01" class="info-type-cont">
+                    <div class="top">
+                      <span class="badge blue">세차</span>
+                    </div>
+                    <div class="big-title"><strong>3,000</strong>원</div>
+                    <p class="info-txt">머핀 앱 출시기념 신규회원 가입쿠폰</p>
+                    <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
+                    <p class="info-txt2">15,000원 이상 구매 시</p>
+                  </label>
+                </li>
+                <li class="info-type-box chk-type">
+                  <input type="checkbox" id="chk02" />
+                  <label for="chk02" class="info-type-cont">
+                    <div class="top">
+                      <span class="badge blue">주유</span>
+                      <span class="badge red">가맹점</span>
+                    </div>
+                    <div class="big-title"><strong>24</strong>%</div>
+                    <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
+                    <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
+                    <p class="info-txt2">15,000원 이상 구매 시</p>
+                  </label>
+                </li>
+                <li class="info-type-box chk-type">
+                  <input type="checkbox" id="chk02" />
+                  <label for="chk02" class="info-type-cont">
+                    <div class="top">
+                      <span class="badge blue">주유</span>
+                      <span class="badge red">가맹점</span>
+                    </div>
+                    <div class="big-title"><strong>24</strong>%</div>
+                    <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
+                    <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
+                    <p class="info-txt2">15,000원 이상 구매 시</p>
+                  </label>
+                </li>
+                <li class="info-type-box chk-type">
+                  <input type="checkbox" id="chk02" />
+                  <label for="chk02" class="info-type-cont">
+                    <div class="top">
+                      <span class="badge blue">주유</span>
+                      <span class="badge red">가맹점</span>
+                    </div>
+                    <div class="big-title"><strong>24</strong>%</div>
+                    <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
+                    <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
+                    <p class="info-txt2">15,000원 이상 구매 시</p>
+                  </label>
+                </li>
+                <li class="info-type-box chk-type">
+                  <input type="checkbox" id="chk02" />
+                  <label for="chk02" class="info-type-cont">
+                    <div class="top">
+                      <span class="badge blue">주유</span>
+                      <span class="badge red">가맹점</span>
+                    </div>
+                    <div class="big-title"><strong>24</strong>%</div>
+                    <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
+                    <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
+                    <p class="info-txt2">15,000원 이상 구매 시</p>
+                  </label>
+                </li>
               </ul>
-
-              <div class="tab-content">
-                <ul class="list-coupon">
-                  <li class="info-type-box chk-type">
-                    <input type="checkbox" id="chk01" checked />
-                    <label for="chk01" class="info-type-cont">
-                      <div class="top">
-                        <span class="badge blue">세차</span>
-                      </div>
-                      <div class="big-title"><strong>3,000</strong>원</div>
-                      <p class="info-txt">머핀 앱 출시기념 신규회원 가입쿠폰</p>
-                      <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
-                      <p class="info-txt2">15,000원 이상 구매 시</p>
-                    </label>
-                  </li>
-                  <li class="info-type-box chk-type">
-                    <input type="checkbox" id="chk02" />
-                    <label for="chk02" class="info-type-cont">
-                      <div class="top">
-                        <span class="badge blue">주유</span>
-                        <span class="badge red">가맹점</span>
-                      </div>
-                      <div class="big-title"><strong>24</strong>%</div>
-                      <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
-                      <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
-                      <p class="info-txt2">15,000원 이상 구매 시</p>
-                    </label>
-                  </li>
-                  <li class="info-type-box chk-type">
-                    <input type="checkbox" id="chk02" />
-                    <label for="chk02" class="info-type-cont">
-                      <div class="top">
-                        <span class="badge blue">주유</span>
-                        <span class="badge red">가맹점</span>
-                      </div>
-                      <div class="big-title"><strong>24</strong>%</div>
-                      <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
-                      <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
-                      <p class="info-txt2">15,000원 이상 구매 시</p>
-                    </label>
-                  </li>
-                  <li class="info-type-box chk-type">
-                    <input type="checkbox" id="chk02" />
-                    <label for="chk02" class="info-type-cont">
-                      <div class="top">
-                        <span class="badge blue">주유</span>
-                        <span class="badge red">가맹점</span>
-                      </div>
-                      <div class="big-title"><strong>24</strong>%</div>
-                      <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
-                      <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
-                      <p class="info-txt2">15,000원 이상 구매 시</p>
-                    </label>
-                  </li>
-                  <li class="info-type-box chk-type">
-                    <input type="checkbox" id="chk02" />
-                    <label for="chk02" class="info-type-cont">
-                      <div class="top">
-                        <span class="badge blue">주유</span>
-                        <span class="badge red">가맹점</span>
-                      </div>
-                      <div class="big-title"><strong>24</strong>%</div>
-                      <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
-                      <p class="info-txt2">2020.07.01 ~ 2020.07.31</p>
-                      <p class="info-txt2">15,000원 이상 구매 시</p>
-                    </label>
-                  </li>
-                </ul>
-                <p class="text-guide">쿠폰 선택 시 해당 상품 또는 옵션의 판매가에 적용되며, 실 결제금액이 할인적용 총 금액보다 낮을 경우 포인트 차감정보는 초기화 됩니다.</p>
-              </div>
+              <p class="text-guide">쿠폰 선택 시 해당 상품 또는 옵션의 판매가에 적용되며, 실 결제금액이 할인적용 총 금액보다 낮을 경우 포인트 차감정보는 초기화 됩니다.</p>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mask"></div>
+        <div class="fix-footer-area">
+          <!-- <button type="button" class="btn type2 color4" disabled>사용하기</button> -->
+          <button type="button" class="btn type2 color4">사용하기</button>
+        </div>
+      </div>
     </div>
-    <!-- //Popup -->
-  </body>
+
+    <div class="mask"></div>
+  </div>
+  <!-- //Popup -->
+</body>
+
 </html>
