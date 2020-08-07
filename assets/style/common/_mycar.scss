@@ -55,9 +55,13 @@
 // content
 .head-title {
   padding-bottom: 0.8rem;
+  display: flex;
   font-size: 1.5rem;
   color: $fc1;
   border-bottom: 1px solid $fcF0;
+  .right {
+    margin-left: auto;
+  }
 }
 .new-add-noti {
   padding: 2.3rem 0 0;
@@ -107,6 +111,11 @@
     font-size: 1.5rem;
   }
 }
+.gray-box {
+  padding: 1.5rem 1.5rem 1.5rem 1.7rem;
+  background: $fcF9;
+  border: 1px solid $fcF0;
+}
 
 // 세차상품 선택
 .detail-option-top {
@@ -132,9 +141,6 @@
     margin-top: 1.25rem;
   }
   .price-box {
-    padding: 1.5rem 1.5rem 1.5rem 1.7rem;
-    background: $fcF9;
-    border: 1px solid $fcF0;
     .discount {
       color: $gc3;
     }
