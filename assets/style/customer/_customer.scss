@@ -1,0 +1,95 @@
+.alarm-area {
+  .wrap-tab-scroll {
+    margin-top: 4rem;
+  }
+}
+.alarm-content {
+  padding: 3rem 2rem 8rem;
+  .alarm-top {
+    margin-bottom: 1.5rem;
+  }
+  .alarm-list {
+    margin-top: 4rem;
+    &.delete {
+      .alarm-info {
+        padding-right: 2rem;
+        .date {
+          margin-right: -2rem;
+        }
+      }
+      .btn-clear-x {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+      }
+    }
+    .alarm-box {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      border-top: 0.1rem dotted $fcD7;
+      &:first-child {
+        padding-top: 0;
+        border-top: none;
+      }
+    }
+  }
+}
+.alarm-top {
+  color: $fc1;
+  display: flex;
+  align-items: center;
+
+  .right {
+    margin-left: auto;
+  }
+}
+.alarm-box {
+  position: relative;
+  display: flex;
+  .thumb {
+    margin-right: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .alarm-info {
+    padding-top: 0.5rem;
+    flex: 1;
+    color: $fc1;
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      .date {
+        margin-left: auto;
+        font-size: 1.1rem;
+      }
+    }
+    .txt-box {
+      margin-top: 0.4rem;
+      line-height: 1.4;
+    }
+    .reserve-title {
+      margin-top: 0.55rem;
+      .bg-icon {
+        margin-top: -0.3rem;
+        margin-right: 0.5rem;
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+      & + .list-dot {
+        margin-top: 0.2rem;
+      }
+    }
+    .list-dot {
+      margin-top: 0.65rem;
+      li:not(:first-child) {
+        margin-top: 0.1rem;
+      }
+    }
+    .btn-arrow {
+      margin-top: 1.4rem;
+    }
+  }
+}

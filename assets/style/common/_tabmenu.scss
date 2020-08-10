@@ -1,0 +1,40 @@
+.wrap-tab-scroll {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background: $fcF0;
+    z-index: -1;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .tab-scroll-menu {
+    padding: 0 2rem;
+    display: flex;
+    width: 100%;
+    li {
+      &:not(:first-child) {
+        margin-left: 2rem;
+      }
+      &.active {
+        border-bottom: 0.2rem solid $fc1;
+      }
+      button {
+        padding: 0 1.7rem 1rem;
+      }
+    }
+  }
+}

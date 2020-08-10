@@ -147,7 +147,42 @@
     background-size: 1rem auto;
     vertical-align: top;
   }
+  &.blue {
+    color: $pc3;
+    &:after {
+      background: url(../../assets/img/layout/icon-arrow-left-blue.png) no-repeat 0 0;
+      background-size: 1rem auto;
+    }
+  }
 }
+.btn-delete {
+  font-size: 1.1rem;
+  &:before {
+    content: "";
+    margin-right: 0.5rem;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../../assets/img/layout/icon-trashcan.png) no-repeat 0 0;
+    background-size: 1.2rem auto;
+    vertical-align: top;
+  }
+}
+.btn-chk-ok {
+  font-size: 1.1rem;
+  color: $pc3;
+  &:before {
+    content: "";
+    margin-right: 0.5rem;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../../assets/img/layout/icon-chk-blue.png) no-repeat 0 0;
+    background-size: 1.2rem auto;
+    vertical-align: top;
+  }
+}
+
 //버튼 레이아웃
 .btn-area {
   margin-top: 4rem;

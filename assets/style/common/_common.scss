@@ -103,9 +103,8 @@ $fcF9: #f9f9f9;
     &:before {
       content: "";
       position: absolute;
-      top: 50%;
+      top: 0.7rem;
       display: block;
-      transform: translate(0, -50%);
     }
     span {
       color: $gc3;
