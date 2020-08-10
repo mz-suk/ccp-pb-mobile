@@ -121,3 +121,20 @@
     height: 1.2rem;
   }
 }
+
+.info-box {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid $fcF0;
+  color: $fc1;
+  .title {
+    font-size: 1.7rem;
+    padding: 0.2rem 0 0.4rem;
+  }
+  &.type-business {
+    padding-left: 12rem;
+    background: url(../../assets/img/layout/icon-info-business-map.png) 0 0 / 11rem 9rem no-repeat;
+    .title {
+      color: $pc3;
+    }
+  }
+}
