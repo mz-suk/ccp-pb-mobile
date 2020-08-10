@@ -2,9 +2,10 @@
   position: absolute;
   left: 0;
   top: 5.5rem;
-  height: calc(40% - 5.5rem);
+  height: calc(38% - 5.5rem);
   width: 100%;
-  background: red;
+  background: $fc1;
+  color: $fcF;
   &.full-height {
     height: calc(100% - 5.5rem);
   }
@@ -24,7 +25,7 @@
       padding-left: 0;
     }
   }
-  padding-bottom: 2rem;
+  padding-bottom: 6rem;
   li {
     position: relative;
     padding: 2.5rem 0;
@@ -96,5 +97,27 @@
         color: $fc1;
       }
     }
+  }
+}
+
+.link-msg-box {
+  position: relative;
+  box-sizing: border-box;
+  height: 4.5rem;
+  padding: 0 3.2rem 0 1rem;
+  line-height: 4.5rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid $fc1;
+  button {
+    height: 4.5rem;
+    width: 3.2rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .bg-icon.more {
+    width: 1.2rem;
+    height: 1.2rem;
   }
 }
