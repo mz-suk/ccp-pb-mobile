@@ -13,3 +13,56 @@
     margin: 1.5rem 0 0;
   }
 }
+
+.review-cont {
+  .label {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;
+    min-width: 4.6rem;
+    padding: 0 1rem;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    border: 0.1rem solid $fcD7;
+    border-radius: 1rem;
+    &.type-1 {
+      color: $pc3;
+    }
+    &.type-2 {
+      border-color: $gc3;
+      color: $gc3;
+    }
+  }
+  .review-row {
+    padding: 4rem 2rem 3.5rem;
+    box-sizing: border-box;
+    border-top: 0.8rem solid #f9f9f9;
+    border-bottom: 0.1rem solid #f0f0f0;
+    .top-row {
+      padding-bottom: 2rem;
+    }
+    .body-row {
+      padding-top: 2rem;
+      border-top: 0.1rem solid #f0f0f0;
+    }
+  }
+  .label-area {
+    padding-bottom: 1rem;
+  }
+  .title-area {
+    position: relative;
+    color: $fc1;
+    .title {
+      font-size: 1.7rem;
+    }
+    .desc {
+      margin-top: 0.6rem;
+      font-size: 1.5rem;
+    }
+    .option {
+      margin-top: 0.3rem;
+      color: $fc6;
+    }
+  }
+}
