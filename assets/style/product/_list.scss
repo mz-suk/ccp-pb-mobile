@@ -30,6 +30,10 @@
   }
 }
 
+.list-content {
+  padding-bottom: 12rem;
+}
+
 .list-item {
   margin-bottom: 4rem;
 
@@ -359,9 +363,9 @@
 
 .reservation-cont {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 3rem 2rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
@@ -388,6 +392,11 @@
 
   .date {
     color: $pc3;
+    text-align: right;
+
+    &+.date {
+      flex-basis: 100%;
+    }
   }
 
   .desc {
@@ -439,19 +448,23 @@
     margin-top: 2.5rem;
   }
 
-  .tab-content {
-    .wrap-btn {
-      margin-top: 4rem;
-      text-align: center;
-    }
+  .wrap-btn {
+    margin-top: 4rem;
+    text-align: center;
+  }
 
+  .tab-content {
     .btn:not(:first-of-type) {
       margin-top: 3rem;
+    }
+
+    .wrap-car-info {
+      padding: 2.5rem 0;
     }
   }
 
   .wrap-car-info {
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
     border-bottom: 0.1rem solid $fcF0;
 
     &:last-of-type {
@@ -469,6 +482,21 @@
     margin-top: 1rem;
     padding-top: 2.5rem;
     border-top: 0.1rem solid $fcF0;
+  }
+
+  .text-guide {
+    margin: 2rem 0 .5rem;
+    color: $fc1;
+    font-size: 1.1rem;
+
+    &:before {
+      top: .1rem;
+      left: .3rem;
+      width: 0;
+      height: 0;
+      background: none;
+      content: '*';
+    }
   }
 }
 
@@ -623,7 +651,8 @@
       opacity: 0;
     }
 
-    input[type="checkbox"]:checked + label {
+    input[type="checkbox"]:checked+label {
+
       &.info-type-cont,
       &.info-car-cont {
         background: $fcF;
@@ -666,7 +695,8 @@
       opacity: 0;
     }
 
-    input[type="radio"]:checked + label {
+    input[type="radio"]:checked+label {
+
       &.info-type-cont,
       &.info-car-cont {
         background: $fcF;
@@ -743,7 +773,7 @@
       font-size: 1.3rem;
       line-height: 1.8rem;
 
-      & + .info-txt2 {
+      &+.info-txt2 {
         margin-top: 1rem;
       }
     }
