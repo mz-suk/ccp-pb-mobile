@@ -1,0 +1,27 @@
+.tbl {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  th {
+    padding: 1.2rem 0.5rem;
+    color: $fc1;
+    background: $fcF9;
+    border: 1px solid $fcE4;
+    &:first-child {
+      border-left: none;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+  td {
+    padding: 1.2rem 0.5rem;
+    border: 1px solid $fcE4;
+    &:first-child {
+      border-left: none;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

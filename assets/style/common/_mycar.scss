@@ -199,3 +199,29 @@
     margin-top: 1.75rem;
   }
 }
+.car-grade-area {
+  .tbl {
+    margin-top: 4rem;
+  }
+  .num {
+    font-size: 1.4rem;
+  }
+}
+.refund-area {
+  margin-top: 4rem;
+  color: $fc1;
+  .list-number {
+    margin-top: 3rem;
+    color: $fc1;
+    & > li:not(:first-child) {
+      margin-top: 2.15rem;
+    }
+    .list-dot {
+      margin-top: 1.25rem;
+      padding-left: 1rem;
+      li {
+        color: $fc6;
+      }
+    }
+  }
+}
