@@ -1,0 +1,15 @@
+.review-top {
+  padding: 3rem 2rem;
+  background: $fcF9;
+  border-bottom: 1px solid $fcE4;
+  .title {
+    font-size: 1.5rem;
+    color: $fc1;
+    .num {
+      color: $pc3;
+    }
+  }
+  .link-msg-box {
+    margin: 1.5rem 0 0;
+  }
+}
