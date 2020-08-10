@@ -30,6 +30,7 @@
     left: 0;
     z-index: 51;
     width: 100%;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16%);
     background-color: $fcF;
     box-sizing: border-box;
     @include scroll(y);
@@ -81,26 +82,8 @@
             margin-top: -6.6rem;
             @include scroll(y);
           }
-        }
-        .layer-info {
-          flex: 1 1 auto;
-          padding: 0 2rem 0;
-          margin-bottom: 3rem;
-          &.type-business {
-            .info-inner {
-              padding-left: 12rem;
-              background: url(../../assets/img/layout/icon-info-business-map.png) 0 0 / 11rem 9rem no-repeat;
-            }
-          }
-          .info-inner {
+          &.type-info {
             padding-bottom: 3rem;
-            border-bottom: 1px solid $fcF0;
-            color: $fc1;
-            .title {
-              font-size: 1.7rem;
-              color: $pc3;
-              padding: 0.2rem 0 0.4rem;
-            }
           }
         }
       }

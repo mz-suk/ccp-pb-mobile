@@ -40,6 +40,11 @@
       display: none;
     }
   }
+  .title-sub {
+    &.type-third {
+      margin-top: 3rem;
+    }
+  }
 }
 
 //fix-footer
