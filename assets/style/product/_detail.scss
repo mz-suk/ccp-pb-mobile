@@ -171,10 +171,34 @@
 }
 
 .row-section {
-  padding: 4rem 2rem 9rem;
+  padding: 4rem 2rem 3.5rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
+  &:first-child {
+    border-top: 0 none;
+  }
+  &.type-address {
+    .wrap-form {
+      margin-top: 2rem;
+    }
+    .form-text-area {
+      margin-bottom: 6.5rem;
+    }
+    .wrap-check {
+      margin-top: 1rem;
+      .more-msg {
+        display: block;
+        font-size: 1.1rem;
+        color: $fc9;
+        padding: 0.3rem 0 0 3.3rem;
+      }
+    }
+  }
+  .section-sub-title {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem;
+  }
 }
 
 .row-area {
@@ -310,6 +334,7 @@
 }
 
 .review-wrap {
+  margin-bottom: 6rem;
   .review-row {
     margin: 3rem 0 0;
     padding: 0 0 3rem;

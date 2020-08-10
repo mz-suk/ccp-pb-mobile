@@ -1,3 +1,10 @@
+.blind {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  opacity: 0;
+  overflow: hidden;
+}
 // 레이아웃
 .inner-layout {
   padding: 4rem 2rem 7rem;
@@ -131,6 +138,14 @@
     line-height: 1.8rem;
     color: $fc1;
   }
+  .noti-box {
+    margin-top: 2rem;
+    color: $fc1;
+    text-align: center;
+  }
+  button {
+    margin-top: 2.5rem;
+  }
 }
 .detail-introduce {
   margin-top: 2.25rem;
@@ -143,6 +158,70 @@
   .price-box {
     .discount {
       color: $gc3;
+    }
+  }
+}
+
+// 세차상품상세
+.step-cont {
+  margin-top: 4rem;
+  color: $fc1;
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+    span {
+      position: relative;
+      display: inline-block;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.5rem;
+        background: $pc3;
+        opacity: 0.6;
+      }
+    }
+  }
+  .sub-title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .txt-box {
+    margin-top: 1rem;
+    line-height: 1.4;
+    color: $fc6;
+  }
+  .thumb {
+    margin-top: 1.75rem;
+  }
+}
+.car-grade-area {
+  .tbl {
+    margin-top: 4rem;
+  }
+  .num {
+    font-size: 1.4rem;
+  }
+}
+.refund-area {
+  margin-top: 4rem;
+  color: $fc1;
+  .list-number {
+    margin-top: 3rem;
+    color: $fc1;
+    & > li:not(:first-child) {
+      margin-top: 2.15rem;
+    }
+    .list-dot {
+      margin-top: 1.25rem;
+      padding-left: 1rem;
+      li {
+        color: $fc6;
+      }
     }
   }
 }
