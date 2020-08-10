@@ -30,6 +30,7 @@
     left: 0;
     z-index: 51;
     width: 100%;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16%);
     background-color: $fcF;
     box-sizing: border-box;
     @include scroll(y);
@@ -57,7 +58,6 @@
       height: 88%;
     }
     .wrap-layer {
-      box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16%);
       height: 100%;
       overflow-y: hidden;
       &:after {

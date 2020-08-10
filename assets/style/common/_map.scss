@@ -130,11 +130,31 @@
     font-size: 1.7rem;
     padding: 0.2rem 0 0.4rem;
   }
+  .attention {
+    margin: 0.5rem 0 0 -1.2rem;
+    padding-left: 1.2rem;
+    font-size: 1.1rem;
+    background: url(../../assets/img/layout/icon-attention.png) 0 0.2rem / 1.2rem 1.2rem no-repeat;
+    .under-line {
+      color: $pc3;
+      text-decoration: underline;
+    }
+  }
   &.type-business {
     padding-left: 12rem;
     background: url(../../assets/img/layout/icon-info-business-map.png) 0 0 / 11rem 9rem no-repeat;
     .title {
       color: $pc3;
     }
+  }
+  &.type-dawn {
+    position: absolute;
+    left: 0;
+    top: 5.5rem;
+    width: 100%;
+    min-height: calc(38% - 5.5rem);
+    box-sizing: border-box;
+    padding: 2.8rem 2rem 0 12.2rem;
+    background: $fcF9 url(../../assets/img/layout/icon-info-dawn-map.png) 1.23rem 2.6rem / 11.1rem 12.8rem no-repeat;
   }
 }
