@@ -126,7 +126,7 @@
   }
 
   .order-info {
-    &+.order-info {
+    & + .order-info {
       overflow: hidden;
       margin-top: 1.5rem;
     }
@@ -199,7 +199,7 @@
   .wrap-btn-pay {
     margin-top: 2.5rem;
 
-    >.btn:first-child {
+    > .btn:first-child {
       border-color: $fc9;
     }
 
@@ -454,6 +454,10 @@
 
   .accordion-cont {
     display: none;
+  }
+  .gray-box {
+    border-top: none;
+    padding: 2rem;
   }
 
   &.active {
