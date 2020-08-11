@@ -1,0 +1,341 @@
+// // form
+input,
+button,
+select,
+textarea,
+[contenteditable="true"] {
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="number"],
+input[type="date"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="file"],
+input[type="tel"],
+textarea {
+  display: inline-block;
+  width: 100%;
+  height: 4.5rem;
+  padding: 0 3.6rem 0 1rem;
+  box-sizing: border-box;
+  background-color: $fcF9;
+  border: 0.1rem solid $fcF0;
+  color: $fc1;
+  &::placeholder {
+    color: $fc9;
+  }
+}
+textarea {
+  min-height: 12rem;
+  padding: 1.5rem 1rem;
+  resize: none;
+}
+
+.form-input {
+  position: relative;
+
+  .btn-clear-x {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
+}
+
+.form-text-area {
+  position: relative;
+  .text-length {
+    color: $fc9;
+    font-size: 1.3rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1.5rem;
+    strong {
+      font-weight: normal;
+      &.active {
+        color: $fc1;
+      }
+    }
+  }
+}
+
+.select {
+  width: 100%;
+  height: 4.5rem;
+  padding: 0 1.5rem;
+  background: url(~assets/img/layout/icon-toggle.png) 95% 50% / 1.2rem 1.2rem no-repeat;
+  border: 0.1rem solid $fcE4;
+
+  &.type1 {
+    padding: 0 1rem;
+    color: $fc1;
+    border: none;
+    border-bottom: 0.1rem solid $fcE4;
+    &:not(:focus):invalid {
+      color: $fc9;
+    }
+    option:first-of-type {
+      color: $fc9;
+    }
+  }
+}
+
+.wrap-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+
+  .checkbox {
+    margin: 1rem 1rem 0 0;
+  }
+}
+
+.checkbox {
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    clip: rect(0 0 0 0);
+  }
+
+  &.type1 {
+    display: inline-block;
+    position: relative;
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+
+    label {
+      display: inline-block;
+      height: 4rem;
+      padding: 0 1.9rem;
+      box-sizing: border-box;
+      background: $fcF0;
+      border: 0.1rem solid $fcE4;
+      border-radius: 10rem;
+      line-height: 4rem;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
+      background: $fc1;
+      color: $fcF;
+    }
+  }
+
+  &.type2 {
+    margin-bottom: 1rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 5.5rem;
+      padding: 0 3rem;
+      box-sizing: border-box;
+      background-color: $fcF9;
+      border: 0.1rem solid $fcE4;
+      border-radius: 5rem;
+      color: $fc9;
+      transition: all 0.2s ease;
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        &:before {
+          display: inline-block;
+          width: 0.6rem;
+          height: 0.6rem;
+          margin-right: 0.9rem;
+          background-color: $fcF;
+          border: 0.7rem solid $fcE4;
+          border-radius: 50%;
+          vertical-align: middle;
+          transition: all 0.2s ease;
+          content: "";
+        }
+      }
+    }
+
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
+      background-color: $fcF;
+      border: 0.1rem solid $fc1;
+      color: $fc1;
+
+      .left {
+        &:before {
+          border-color: $fc1;
+        }
+      }
+    }
+  }
+}
+
+.input-spinner {
+  position: relative;
+  height: 5.6rem;
+  margin-bottom: 2rem;
+  padding: 0 5.6rem;
+  background: $fcF9;
+  border: 0.1rem solid $fcF0;
+  border-radius: 5rem;
+
+  button {
+    position: absolute;
+    top: 0;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.08);
+    @include blind();
+
+    &.minus {
+      left: 0;
+      background: $fcF0 url(~assets/img/layout/icon-minus.png) 50% 50% / 1.2rem no-repeat;
+    }
+
+    &.plus {
+      right: 0;
+      background: $fc1 url(~assets/img/layout/icon-plus.png) 50% 50% / 1.2rem no-repeat;
+    }
+  }
+
+  .input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5.6rem;
+
+    input[type="number"] {
+      display: inline-block;
+      width: 4.5rem;
+      padding: 0;
+      border: 0;
+      color: $fc1;
+      font-size: 2.4rem;
+      text-align: right;
+    }
+
+    p {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $fc1;
+
+      span {
+        padding-left: 0.5rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: $fc9;
+      }
+    }
+  }
+}
+
+input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  background: url(~assets/img/layout/icon-checkbox.png) 0 0 / 100% auto no-repeat;
+
+  &:checked {
+    background: url(~assets/img/layout/icon-checkbox-on.png) 0 0 / 100% auto no-repeat;
+  }
+
+  & + label {
+    margin-left: 0.8rem;
+    color: $fc1;
+    line-height: 1.5;
+  }
+}
+
+.checkbox-st {
+  position: relative;
+  padding-left: 3rem;
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  input[type="checkbox"] + label {
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .label-tit {
+    button {
+      margin-left: 0.6rem;
+      vertical-align: top;
+    }
+  }
+  .sub-txt {
+    margin-top: 0.45rem;
+    font-size: 1.1rem;
+    color: $fc6;
+  }
+}
+.form-list {
+  .form-div:not(:first-child) {
+    margin-top: 4rem;
+  }
+}
+.form-div {
+  .title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: $fc1;
+    line-height: 1;
+  }
+}
+// 검색화면
+.form-search {
+  position: relative;
+
+  input {
+    padding: 0 7rem 0 1rem;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 1;
+    font-size: 1.6rem;
+    color: $fc1;
+    background-color: $fcF;
+    border: 0;
+    border-bottom: 0.2rem solid $fc1;
+
+    &::placeholder {
+      font-size: 1.5rem;
+      color: $fc9;
+    }
+  }
+
+  .btn-clear-x {
+    position: absolute;
+    top: 50%;
+    right: 4.5rem;
+    transform: translate(0, -50%);
+  }
+
+  .btn-search {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translate(0, -50%);
+  }
+}

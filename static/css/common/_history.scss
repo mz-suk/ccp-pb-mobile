@@ -1,0 +1,320 @@
+.review-top {
+  padding: 3rem 2rem;
+  background: $fcF9;
+  border-bottom: 0.1rem solid $fcE4;
+  .title {
+    font-size: 1.5rem;
+    color: $fc1;
+    .num {
+      color: $pc3;
+    }
+  }
+  .link-msg-box {
+    margin: 1.5rem 0 0;
+  }
+}
+
+.review-cont {
+  padding-bottom: 6rem;
+  background: $fcF;
+  .review-row {
+    padding: 4rem 2rem 3.5rem;
+    box-sizing: border-box;
+    border-top: 0.8rem solid $fcF9;
+    border-bottom: 0.1rem solid $fcF0;
+    &:first-child {
+      border-top: 0 none;
+    }
+    &:last-child {
+      border-bottom: 0 none;
+    }
+    &.type-apply {
+      border: 0.1rem solid $fcD7;
+      border-radius: 1.6rem;
+      margin: 3rem 2rem 0;
+      padding: 3rem 2.5rem;
+      &:last-child {
+        margin-bottom: 3rem;
+      }
+    }
+    .top-row {
+      padding-bottom: 2rem;
+    }
+    .body-row {
+      padding-top: 2rem;
+      border-top: 0.1rem solid $fcF0;
+    }
+    .blind-row {
+      .wrap-empty {
+        padding-top: 1rem;
+      }
+    }
+  }
+  .label-area {
+    padding-bottom: 1rem;
+    .label {
+      display: inline-block;
+      box-sizing: border-box;
+      vertical-align: top;
+      text-align: center;
+      min-width: 4.6rem;
+      padding: 0 1rem;
+      line-height: 2rem;
+      font-size: 0.9rem;
+      border: 0.1rem solid $fcD7;
+      border-radius: 1rem;
+      &.type-1 {
+        color: $pc3;
+      }
+      &.type-2 {
+        border-color: $gc3;
+        color: $gc3;
+      }
+    }
+  }
+  .title-area {
+    position: relative;
+    color: $fc1;
+    .title {
+      font-size: 1.7rem;
+      padding-right: 1.6rem;
+      .bg-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        vertical-align: top;
+        margin: 0.5rem 0 0 0.3rem;
+      }
+    }
+    .desc {
+      margin-top: 0.6rem;
+      font-size: 1.5rem;
+    }
+    .option {
+      margin-top: 0.3rem;
+      color: $fc6;
+    }
+  }
+  .edit-layer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    .more {
+      font-size: 0;
+      .bg-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+    .edite-box {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 2.5rem;
+      border: 0.1rem solid $fcD7;
+      background: $fcF;
+      color: $fc1;
+      &.active {
+        display: block;
+      }
+      li:first-child button {
+        border-top: 0 none;
+      }
+      button {
+        padding: 1.5rem 7rem 1.5rem 1.5rem;
+        position: relative;
+        display: block;
+        border-top: 0.1rem solid $fcF0;
+        .bg-icon {
+          position: absolute;
+          right: 1.5rem;
+          top: 1.5rem;
+          width: 1.6rem;
+          height: 1.6rem;
+        }
+      }
+    }
+  }
+  .rating-area {
+    overflow: hidden;
+    .rating-box {
+      float: left;
+    }
+    .date {
+      float: right;
+      font-size: 1.2rem;
+      color: $fc6;
+    }
+  }
+  .comment-area {
+    margin-top: 1rem;
+    .comment {
+      @include clamp(2);
+    }
+  }
+  .reply-area {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    border: 0.1rem solid $fcF0;
+    background: $fcF9;
+    .title {
+      color: $fc1;
+      padding-bottom: 0.6rem;
+      .bg-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.3rem;
+      }
+    }
+    .comment {
+      @include clamp(2);
+    }
+    .date {
+      text-align: right;
+      font-size: 1.2rem;
+      padding-top: 0.6rem;
+    }
+  }
+  .applay-row {
+    padding: 4rem 2rem 0;
+    text-align: center;
+    .title {
+      padding: 0;
+      font-size: 1.8rem;
+    }
+    .review-info-box {
+      border: 0 none;
+      margin-top: 2rem;
+      .rating {
+        height: auto;
+        width: auto;
+        margin-top: 0.5rem;
+        background: none;
+        .star {
+          width: 3rem;
+          height: 3rem;
+          display: inline-block;
+          background: url(~assets/img/layout/icon-review-apply-star.png) 0 0.2rem / 3rem 3rem no-repeat;
+          &.active {
+            background-image: url(~assets/img/layout/icon-review-apply-star-active.png);
+          }
+        }
+      }
+      .num {
+        display: block;
+        margin-top: 0.3rem;
+        font-size: 2.4rem;
+      }
+    }
+    .form-text-area {
+      margin-top: 1.5rem;
+      textarea {
+        background: $fcF;
+        min-height: 18rem;
+      }
+    }
+    .review-add-img {
+      overflow: hidden;
+      margin-top: 1rem;
+      .img-list {
+        margin-left: -0.5rem;
+        display: flex;
+        li {
+          flex: 1;
+          position: relative;
+          margin-left: 0.5rem;
+          width: 8rem;
+          height: 8rem;
+          img {
+            height: 100%;
+            object-fit: cover;
+            -webkit-object-fit: cover;
+          }
+          .remove {
+            position: absolute;
+            right: 0.4rem;
+            top: 0.5rem;
+            width: 1.6rem;
+            height: 1.6rem;
+          }
+          .more-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.16);
+            color: $fcF;
+            font-size: 1.6rem;
+            text-align: center;
+            line-height: 7.5rem;
+          }
+        }
+      }
+      .btn-add-photo {
+        align-items: center;
+        justify-content: center;
+        width: 8rem;
+        height: 8rem;
+        border: 0.1rem solid $fcE4;
+        box-sizing: border-box;
+        color: $fc1;
+        .photo {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+        .num {
+          display: block;
+          width: 100%;
+          margin-top: 0.3rem;
+          text-align: center;
+        }
+      }
+    }
+    .attention-info {
+      margin: 3rem 0 4rem;
+      padding: 1.5rem 0 0;
+      border-top: 0.1rem solid $fcF0;
+      text-align: left;
+      .title {
+        color: $fc1;
+        font-size: 1.3rem;
+      }
+      .dotted-list {
+        margin: 0.3rem 0 4rem;
+        li {
+          color: $fc6;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  .img-wrap {
+    margin-top: 1rem;
+  }
+  .apply {
+    width: 100%;
+  }
+}
+
+.dotted-list {
+  li {
+    position: relative;
+    padding-left: 1.2rem;
+    color: $fc1;
+    margin-top: 0.5rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0.8rem;
+      left: 0.4rem;
+      width: 0.3rem;
+      height: 0.3rem;
+      background-color: $fc1;
+      border-radius: 50%;
+    }
+  }
+}
