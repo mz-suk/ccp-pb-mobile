@@ -182,6 +182,11 @@
     vertical-align: top;
   }
 }
+.btn-link {
+  font-size: 1.1rem;
+  color: $fc9;
+  border-bottom: 0.1rem solid $fc9;
+}
 
 //버튼 레이아웃
 .btn-area {
