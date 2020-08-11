@@ -1,0 +1,245 @@
+.blind {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+// 레이아웃
+.inner-layout {
+  padding: 4rem 2rem 8rem;
+  .block-layout {
+    margin: 0 -2rem;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+.block-layout {
+  position: relative;
+  padding: 4rem 2rem 3.5rem;
+  box-sizing: border-box;
+  border-top: 0.9rem solid $fcF9;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -0.9rem;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background: $fcF0;
+  }
+  &:nth-of-type(1) {
+    border-top: none;
+    &:before {
+      display: none;
+    }
+  }
+  .title-sub {
+    &.type-third {
+      margin-top: 3rem;
+    }
+  }
+}
+
+//fix-footer
+.fix-footer-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  .btn {
+    flex: 1;
+    border-left: 1px solid rgba(255, 255, 255, 0.16);
+    &:first-child {
+      border-left: 0 none;
+    }
+  }
+}
+
+// content
+.head-title {
+  padding-bottom: 0.8rem;
+  display: flex;
+  font-size: 1.5rem;
+  color: $fc1;
+  border-bottom: 1px solid $fcF0;
+  .right {
+    margin-left: auto;
+  }
+}
+.new-add-noti {
+  padding: 2.3rem 0 0;
+  .list-dot > li {
+    color: $fc1;
+  }
+}
+.acc-list {
+  margin-top: 2.5rem;
+  .accordion {
+    &:not(:first-child) {
+      margin-top: 4rem;
+    }
+  }
+  .checkbox-st {
+    margin-top: 2.5rem;
+    &:last-child {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+.price-box {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: $fc1;
+  line-height: 1;
+  .wash-time {
+    line-height: 1.6rem;
+    .bg-icon.time {
+      width: 1.6rem;
+      height: 1.6rem;
+      vertical-align: top;
+    }
+  }
+  .price-unit {
+    color: $fc9;
+    font-size: 1.1rem;
+    span {
+      font-size: 1.2rem;
+      text-decoration: line-through;
+    }
+  }
+  .discount {
+    margin-left: 0.6rem;
+    vertical-align: middle;
+    span {
+      font-size: 1.6rem;
+    }
+    font-size: 1.5rem;
+  }
+}
+.gray-box {
+  padding: 1.5rem 1.5rem 1.5rem 1.7rem;
+  background: $fcF9;
+  border: 1px solid $fcF0;
+  &.round {
+    padding: 1.2rem 1.5rem 1.1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $fc1;
+    text-align: center;
+    border: none;
+    border-radius: 2.1rem;
+  }
+}
+
+// 세차상품 선택
+.detail-option-top {
+  line-height: 1;
+  .title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $pc3;
+  }
+  .txt {
+    margin-top: 0.75rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: $fc1;
+  }
+  .noti-box {
+    margin-top: 2rem;
+    color: $fc1;
+    text-align: center;
+  }
+  button {
+    margin-top: 2.5rem;
+  }
+}
+.detail-introduce {
+  margin-top: 2.25rem;
+  .row-txt {
+    line-height: 1.8rem;
+  }
+  .thumb {
+    margin-top: 1.25rem;
+  }
+  .price-box {
+    .discount {
+      color: $gc3;
+    }
+  }
+}
+
+// 세차상품상세
+.step-cont {
+  margin-top: 4rem;
+  color: $fc1;
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+    span {
+      position: relative;
+      display: inline-block;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.5rem;
+        background: $pc3;
+        opacity: 0.6;
+      }
+    }
+  }
+  .sub-title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .txt-box {
+    margin-top: 1rem;
+    line-height: 1.4;
+    color: $fc6;
+  }
+  .thumb {
+    margin-top: 1.75rem;
+  }
+}
+.car-grade-area {
+  .tbl {
+    margin-top: 4rem;
+  }
+  .num {
+    font-size: 1.4rem;
+  }
+}
+.refund-area {
+  margin-top: 4rem;
+  color: $fc1;
+  .top-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+  }
+  .list-number {
+    margin-top: 3rem;
+    color: $fc1;
+    & > li:not(:first-child) {
+      margin-top: 2.15rem;
+    }
+    .list-dot {
+      margin-top: 1.25rem;
+      padding-left: 1rem;
+    }
+  }
+}
