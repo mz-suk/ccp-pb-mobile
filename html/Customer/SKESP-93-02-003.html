@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">1:1 문의상세</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="question-cont">
+          <div class="question-top">
+            <span class="state comp">답변완료</span>
+            <span class="date">2020.06.20 16:20</span>
+          </div>
+          <div class="q-txt">[세차] 세차원이 맘에 안드는데 상품은 그대로 유지하고, 세차원을 바꾸면 안되나요?</div>
+          <!-- 이미지 스와이프 -->
+          <div class="thumb-swiper">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../assets/img/temp/step01.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="a-txt">
+            <p class="txt-row">
+              안녕하세요, 백호 고객님, SK 머핀 CS 담당자 김진수 입 니다. 불편함을 드려 죄송합니다. 고객님이 요청하신바를 검토해 보니품 시 지불하셔야 하 는 반품 비용은 회수비 2,500원입니다.
+            </p>
+            <p class="txt-row mt">※ 추가비용이 발생하는 경우</p>
+            <p class="txt-row">도서산간: +2,500원 (5,000원)</p>
+            <p class="txt-row">제주도: +2,500원 (5,000원)</p>
+            <div class="txt-row">제주도외 도서산간지역 : +7,000원 (9,500원)</div>
+            <p class="date">2020.06.20</p>
+          </div>
+          <div class="btn-area">
+            <button type="button" class="btn-link">문의취소</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
