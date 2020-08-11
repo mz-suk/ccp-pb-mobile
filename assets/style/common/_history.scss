@@ -216,67 +216,10 @@
     }
     .form-text-area {
       margin-top: 1.5rem;
+      background: $fcF;
       textarea {
         background: $fcF;
         min-height: 18rem;
-      }
-    }
-    .review-add-img {
-      overflow: hidden;
-      margin-top: 1rem;
-      .img-list {
-        margin-left: -0.5rem;
-        display: flex;
-        li {
-          flex: 1;
-          position: relative;
-          margin-left: 0.5rem;
-          width: 8rem;
-          height: 8rem;
-          img {
-            height: 100%;
-            object-fit: cover;
-            -webkit-object-fit: cover;
-          }
-          .remove {
-            position: absolute;
-            right: 0.4rem;
-            top: 0.5rem;
-            width: 1.6rem;
-            height: 1.6rem;
-          }
-          .more-num {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.16);
-            color: $fcF;
-            font-size: 1.6rem;
-            text-align: center;
-            line-height: 7.5rem;
-          }
-        }
-      }
-      .btn-add-photo {
-        align-items: center;
-        justify-content: center;
-        width: 8rem;
-        height: 8rem;
-        border: 0.1rem solid $fcE4;
-        box-sizing: border-box;
-        color: $fc1;
-        .photo {
-          width: 2.4rem;
-          height: 2.4rem;
-        }
-        .num {
-          display: block;
-          width: 100%;
-          margin-top: 0.3rem;
-          text-align: center;
-        }
       }
     }
     .attention-info {
@@ -304,7 +247,83 @@
     width: 100%;
   }
 }
-
+.review-add-img {
+  overflow: hidden;
+  margin-top: 1rem;
+  .img-list {
+    margin-left: -0.5rem;
+    display: flex;
+    li {
+      flex: 1;
+      position: relative;
+      margin-left: 0.5rem;
+      width: 8rem;
+      height: 8rem;
+      img {
+        height: 100%;
+        object-fit: cover;
+        -webkit-object-fit: cover;
+      }
+      .remove {
+        position: absolute;
+        right: 0.4rem;
+        top: 0.5rem;
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+      .more-num {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.16);
+        color: $fcF;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 7.5rem;
+      }
+      .no-add-img {
+        position: relative;
+        display: block;
+        height: 100%;
+        border: 0.1rem solid $fcE4;
+        box-sizing: border-box;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: block;
+          width: 2rem;
+          height: 2rem;
+          background: url(../../assets/img/layout/icon-plus02.png) no-repeat 0 0;
+          background-size: 100% auto;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  .btn-add-photo {
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    border: 0.1rem solid $fcE4;
+    box-sizing: border-box;
+    color: $fc1;
+    .photo {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    .num {
+      display: block;
+      width: 100%;
+      margin-top: 0.3rem;
+      text-align: center;
+    }
+  }
+}
 .dotted-list {
   li {
     position: relative;

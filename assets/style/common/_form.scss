@@ -49,6 +49,13 @@ textarea {
 
 .form-text-area {
   position: relative;
+  padding: 1.5rem 1rem 4.5rem;
+  background: $fcF9;
+  border: 0.1rem solid $fcF0;
+  textarea {
+    padding: 0;
+    border: none;
+  }
   .text-length {
     color: $fc9;
     font-size: 1.3rem;
