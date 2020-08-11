@@ -184,6 +184,32 @@ textarea {
       }
     }
   }
+
+  &.type3 {
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 7rem;
+      border-radius: 4rem;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    input[type="radio"]:checked + label {
+      background-color: $fc1;
+
+      span {
+        color: $fcF;
+      }
+
+      .date:after {
+        border-color: $fcF;
+      }
+    }
+  }
 }
 
 .input-spinner {

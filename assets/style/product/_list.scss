@@ -156,6 +156,40 @@
     width: 1.6rem;
     height: 1.6rem;
   }
+
+  .wrap-checkbox {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 0.1rem solid $fcE4;
+
+    label {
+      width: 5.8rem;
+      height: 3rem;
+      margin: 0;
+      padding: 0;
+      font-size: 1.2rem;
+      line-height: 3rem;
+    }
+
+    .text-box {
+      width: 100%;
+      margin: 1rem 0.5rem 0;
+      padding: 1.2rem 0;
+      color: $fc1;
+    }
+  }
+
+  .checkbox:nth-of-type(4n) {
+    margin-right: 1rem;
+  }
+
+  .checkbox:nth-of-type(5n) {
+    margin-right: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 //empty
@@ -900,6 +934,61 @@
       margin-top: 0.4rem;
       font-size: 1.8rem;
       color: $fc1;
+    }
+  }
+}
+
+.wrap-date {
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3rem 3rem 2rem;
+    box-sizing: border-box;
+    color: $fc1;
+
+    .date {
+      color: $pc3;
+    }
+  }
+
+  .list-date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+    background-color: $fcF9;
+    border-top: 0.1rem solid $fcF0;
+    border-bottom: 0.1rem solid $fcF0;
+
+    .sat {
+      color: #2d80de;
+    }
+
+    .sun {
+      color: #ff2533;
+    }
+
+    label {
+      span {
+        flex: 1 1 100%;
+        color: $fc1;
+        transition: all 0.2s ease;
+
+        &.date {
+          font-size: 1.8rem;
+
+          &:after {
+            display: block;
+            width: 1.1rem;
+            height: 0.1rem;
+            margin: 0.4rem auto 0.7rem;
+            border-top: 1px dotted $fc9;
+            content: "";
+          }
+        }
+      }
     }
   }
 }
