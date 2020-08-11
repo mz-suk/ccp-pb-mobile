@@ -7,7 +7,7 @@
 }
 // 레이아웃
 .inner-layout {
-  padding: 4rem 2rem 7rem;
+  padding: 4rem 2rem 8rem;
   .block-layout {
     margin: 0 -2rem;
     &:first-child {
@@ -77,6 +77,9 @@
 }
 .new-add-noti {
   padding: 2.3rem 0 0;
+  .list-dot > li {
+    color: $fc1;
+  }
 }
 .acc-list {
   margin-top: 2.5rem;
@@ -127,6 +130,15 @@
   padding: 1.5rem 1.5rem 1.5rem 1.7rem;
   background: $fcF9;
   border: 1px solid $fcF0;
+  &.round {
+    padding: 1.2rem 1.5rem 1.1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $fc1;
+    text-align: center;
+    border: none;
+    border-radius: 2.1rem;
+  }
 }
 
 // 세차상품 선택
@@ -215,6 +227,10 @@
 .refund-area {
   margin-top: 4rem;
   color: $fc1;
+  .top-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+  }
   .list-number {
     margin-top: 3rem;
     color: $fc1;
@@ -224,9 +240,6 @@
     .list-dot {
       margin-top: 1.25rem;
       padding-left: 1rem;
-      li {
-        color: $fc6;
-      }
     }
   }
 }
