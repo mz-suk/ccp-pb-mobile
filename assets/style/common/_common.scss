@@ -90,6 +90,7 @@ $fcF9: #f9f9f9;
 /*
   $dotSt
   1 > ·
+  2 > -
 */
 @mixin listdot($mt, $fz, $fc, $dotSt) {
   li {
@@ -109,7 +110,7 @@ $fcF9: #f9f9f9;
     span {
       color: $gc3;
     }
-    @if $dotSt==1 {
+    @if $dotSt==0 {
       &:before {
         left: calc((1.2rem - 0.2rem) / 2);
         width: 0.2rem;
