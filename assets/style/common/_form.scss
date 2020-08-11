@@ -49,6 +49,13 @@ textarea {
 
 .form-text-area {
   position: relative;
+  padding: 1.5rem 1rem 4.5rem;
+  background: $fcF9;
+  border: 0.1rem solid $fcF0;
+  textarea {
+    padding: 0;
+    border: none;
+  }
   .text-length {
     color: $fc9;
     font-size: 1.3rem;
@@ -175,6 +182,79 @@ textarea {
     input[type="radio"]:checked + label {
       background-color: $fcF;
       border: 0.1rem solid $fc1;
+      color: $fc1;
+
+      .left {
+        &:before {
+          border-color: $fc1;
+        }
+      }
+    }
+  }
+
+  &.type3 {
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 7rem;
+      border-radius: 4rem;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    input[type="radio"]:checked + label {
+      background-color: $fc1;
+
+      span {
+        color: $fcF;
+      }
+
+      .date:after {
+        border-color: $fcF;
+      }
+    }
+  }
+
+  &.type4 {
+    display: inline-block;
+
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      background-color: $fcF;
+      border: 0 none;
+      color: $fc9;
+      transition: all 0.2s ease;
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        &:before {
+          display: inline-block;
+          width: 0.6rem;
+          height: 0.6rem;
+          margin-right: 0.9rem;
+          background-color: $fcF;
+          border: 0.7rem solid $fcE4;
+          border-radius: 50%;
+          vertical-align: middle;
+          transition: all 0.2s ease;
+          content: "";
+        }
+      }
+    }
+
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
+      background-color: $fcF;
+      border: 0 none;
       color: $fc1;
 
       .left {

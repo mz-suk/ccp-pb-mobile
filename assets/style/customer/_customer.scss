@@ -109,7 +109,7 @@
 }
 
 // 문의하기
-.qna-top {
+.customer-top {
   padding: 3rem 0;
   text-align: center;
   background: $fcF9;
@@ -145,8 +145,7 @@
     }
   }
 }
-
-.qna-call {
+.customer-call {
   position: relative;
   padding: 3rem 0 6rem;
   font-size: 1.1rem;
@@ -169,5 +168,105 @@
     padding: 1.6rem 0;
     font-size: 2rem;
     color: $fc1;
+  }
+}
+.onetoone-list {
+  .q-txt {
+    @include clamp(2);
+  }
+  .a-txt .txt-row {
+    @include clamp(2);
+  }
+}
+.question-cont {
+  position: relative;
+  padding: 3rem 2rem;
+  &:not(:first-of-type) {
+    border-top: 0.9rem solid $fcF9;
+  }
+  &:not(:last-of-type) {
+    border-bottom: 0.1rem solid $fcF0;
+  }
+
+  .question-top {
+    display: flex;
+    align-items: center;
+    .state {
+      font-weight: 700;
+      color: $fc1;
+      &.comp {
+        color: $gc3;
+      }
+      &.wait {
+        color: $pc3;
+      }
+    }
+    .date {
+      margin-left: auto;
+      font-size: 1.2rem;
+    }
+  }
+  .q-txt {
+    position: relative;
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    line-height: 1.4;
+    color: $fc1;
+    &:before {
+      content: "Q";
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: 700;
+    }
+  }
+  .a-txt {
+    position: relative;
+    margin-top: 1.5rem;
+    padding: 2rem 2rem 2rem 3.5rem;
+    background: $fcF9;
+    border: 0.1rem solid $fcF0;
+    &:before {
+      content: "A";
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      font-weight: 700;
+      color: $fc5;
+    }
+    .txt-row.mt {
+      margin-top: 2.5rem;
+    }
+    .date {
+      margin-top: 1.1rem;
+      text-align: right;
+      font-size: 1.2rem;
+    }
+    .thumb-swiper {
+      margin-top: 1.5rem;
+      margin-left: -1.5rem;
+    }
+  }
+  .thumb-swiper {
+    margin-top: 2rem;
+  }
+  .attach-box {
+    margin-top: 1rem;
+    padding: 1.2rem 1.5rem;
+    border: 0.1rem solid $fcF0;
+  }
+  .btn-area {
+    margin-top: 1.5rem;
+    text-align: right;
+    button {
+      vertical-align: top;
+    }
+  }
+}
+//문의쓰기
+.wrap-question-write {
+  padding: 4rem 2rem;
+  .form-text-area {
+    margin-top: 1.5rem;
   }
 }

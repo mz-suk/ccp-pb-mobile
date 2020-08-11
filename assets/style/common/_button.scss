@@ -182,6 +182,22 @@
     vertical-align: top;
   }
 }
+.btn-attach {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: $fc1;
+  .bg-icon {
+    margin-right: 0.5rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    vertical-align: top;
+  }
+}
+.btn-link {
+  font-size: 1.1rem;
+  color: $fc9;
+  border-bottom: 0.1rem solid $fc9;
+}
 
 //버튼 레이아웃
 .btn-area {

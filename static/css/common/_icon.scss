@@ -1,0 +1,289 @@
+.bg-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background: 50% 50% / 100% no-repeat;
+  @include blind();
+
+  &.prev {
+    background-image: url(~assets/img/layout/icon-prev.png);
+  }
+
+  &.menu {
+    background-image: url(~assets/img/layout/icon-hamburg.png);
+  }
+
+  &.close,
+  &.layer-close {
+    background-image: url(~assets/img/layout/icon-close.png);
+  }
+
+  &.filter {
+    background-image: url(~assets/img/layout/icon-filter.png);
+  }
+
+  &.refresh {
+    background-image: url(~assets/img/layout/icon-refresh.png);
+  }
+
+  &.store {
+    background-image: url(~assets/img/layout/icon-store.png);
+  }
+
+  &.calendar {
+    background-image: url(~assets/img/layout/icon-calendar.png);
+  }
+
+  &.time {
+    background-image: url(~assets/img/layout/icon-time.png);
+  }
+
+  &.favorite {
+    background-image: url(~assets/img/layout/icon-favorite.png);
+
+    &.active {
+      background-image: url(~assets/img/layout/icon-favorite-on.png);
+    }
+  }
+
+  &.like {
+    background-image: url(~assets/img/layout/icon-l-favorite.png);
+  }
+
+  &.location {
+    background-image: url(~assets/img/layout/icon-location.png);
+  }
+
+  &.location-small {
+    background-image: url(~assets/img/layout/icon-location-small.png);
+  }
+
+  &.direction {
+    background-image: url(~assets/img/layout/icon-direction.png);
+  }
+
+  &.phone {
+    background-image: url(~assets/img/layout/icon-phone.png);
+  }
+
+  &.share {
+    background-image: url(~assets/img/layout/icon-share.png);
+  }
+
+  &.review {
+    background-image: url(~assets/img/layout/icon-review.png);
+  }
+
+  &.tag1 {
+    background-image: url(~assets/img/layout/icon-goodstag-type1.png);
+  }
+
+  &.tag2 {
+    background-image: url(~assets/img/layout/icon-goodstag-type2.png);
+  }
+
+  &.tag3 {
+    background-image: url(~assets/img/layout/icon-goodstag-type3.png);
+  }
+
+  &.tag4 {
+    background-image: url(~assets/img/layout/icon-goodstag-type4.png);
+  }
+
+  &.tag5 {
+    background-image: url(~assets/img/layout/icon-goodstag-type5.png);
+  }
+
+  &.tag6 {
+    background-image: url(~assets/img/layout/icon-goodstag-type6.png);
+  }
+
+  &.filter-sorting {
+    background-image: url(~assets/img/layout/icon-filter-sorting.png);
+  }
+
+  &.filter-type {
+    background-image: url(~assets/img/layout/icon-filter-type.png);
+  }
+
+  &.tooltip {
+    background-image: url(~assets/img/layout/icon-tooltip.png);
+  }
+
+  &.toggle {
+    background-image: url(~assets/img/layout/icon-toggle-type1.png);
+  }
+
+  &.more {
+    background-image: url(~assets/img/layout/icon-more-type2.png);
+  }
+
+  &.add {
+    background-image: url(~assets/img/layout/icon-add.png);
+  }
+
+  &.card-tag {
+    background-image: url(~assets/img/layout/icon-cardtag.png);
+  }
+
+  &.skpay {
+    background-image: url(~assets/img/layout/icon-skpay.png);
+  }
+
+  &.payco {
+    background-image: url(~assets/img/layout/icon-payco.png);
+  }
+
+  &.npay {
+    background-image: url(~assets/img/layout/icon-npay.png);
+  }
+
+  &.kakaopay {
+    background-image: url(~assets/img/layout/icon-kakaopay.png);
+  }
+
+  &.zeropay {
+    background-image: url(~assets/img/layout/icon-zeropay.png);
+  }
+
+  &.download {
+    background-image: url(~assets/img/layout/icon-download.png);
+  }
+
+  &.clear-x {
+    background-image: url(~assets/img/layout/icon-clear.png);
+  }
+
+  &.search {
+    background-image: url(~assets/img/layout/icon-search.png);
+  }
+
+  &.cafe {
+    background-image: url(~assets/img/layout/icon-cafe.png);
+  }
+
+  &.food {
+    background-image: url(~assets/img/layout/icon-food.png);
+  }
+
+  &.gas {
+    background-image: url(~assets/img/layout/icon-gas-station.png);
+  }
+
+  &.market {
+    background-image: url(~assets/img/layout/icon-market.png);
+  }
+
+  &.bay {
+    background-image: url(~assets/img/layout/icon-bay.png);
+  }
+
+  &.vacuum {
+    background-image: url(~assets/img/layout/icon-vacuum.png);
+  }
+
+  &.share-url {
+    background-image: url(~assets/img/layout/icon-share-url.png);
+  }
+
+  &.share-facebook {
+    background-image: url(~assets/img/layout/icon-share-facebook.png);
+  }
+
+  &.share-kakao {
+    background-image: url(~assets/img/layout/icon-share-kakao.png);
+  }
+
+  // &.oil {
+  //   background-image: url(~assets/img/layout/icon-oil.png);
+  // }
+  &.locator {
+    background-image: url(~assets/img/layout/icon-locator.png);
+  }
+
+  &.locator-kakao {
+    background-image: url(~assets/img/layout/icon-locator-kakao.png);
+  }
+
+  &.locator-tmap {
+    background-image: url(~assets/img/layout/icon-locator-tmap.png);
+  }
+
+  &.home {
+    background-image: url(~assets/img/layout/icon-quick-home.png);
+  }
+
+  &.bill {
+    background-image: url(~assets/img/layout/icon-quick-list.png);
+  }
+
+  &.my-muffin {
+    background-image: url(~assets/img/layout/icon-quick-my.png);
+  }
+
+  &.del {
+    background-image: url(~assets/img/layout/icon-close-small.png);
+  }
+
+  &.info {
+    background-image: url(~assets/img/layout/icon-info.png);
+  }
+
+  &.link {
+    background-image: url(~assets/img/layout/icon-more-type3.png);
+  }
+
+  &.del {
+    background-image: url(~assets/img/layout/icon-review-del.png);
+  }
+
+  &.write {
+    background-image: url(~assets/img/layout/icon-review-write.png);
+  }
+
+  &.edite-more {
+    background-image: url(~assets/img/layout/icon-review-edit.png);
+  }
+
+  &.reply {
+    background-image: url(~assets/img/layout/icon-review-reply.png);
+  }
+
+  &.trashcan {
+    background-image: url(~assets/img/layout/icon-trashcan.png);
+  }
+
+  &.remove {
+    background-image: url(~assets/img/layout/icon-remove-img.png);
+  }
+
+  &.photo {
+    background-image: url(~assets/img/layout/icon-photo.png);
+  }
+}
+// 뱃지
+
+.badge {
+  &:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+
+  padding: 0.4rem 1rem;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: $fcF;
+  border: 0.1rem solid;
+  border-radius: 10rem;
+
+  &.blue {
+    color: $pc3;
+    border-color: $pc3;
+  }
+
+  &.red {
+    color: $gc3;
+    border-color: $gc3;
+  }
+}
