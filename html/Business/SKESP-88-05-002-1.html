@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="map-wrap">
+          MAP
+          <a href="https://www.naver.com" target="_blank">naver</a>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+
+    <!-- Layer Pop -->
+    <!-- 드레그시 active 클래스 추가 -->
+    <div class="wrapper-layer pos-bottom none-mask pos-drag">
+      <div class="wrap-layer">
+        <div class="inner-layer">
+          <div class="layer-cont type-info">
+            <div class="info-box type-business">
+              <p class="title">출장세차란 ?</p>
+              <p class="desc">고객님이 지정해주신 시간에 차량이 주차된 장소에 방문하여 차량을 깨끗하게 관리해주는 서비스입니다.</p>
+            </div>
+          </div>
+          <div class="layer-cont">
+            <div class="form-search">
+              <!-- 텍스트가 입력 될 경우 active 클래스 추가 -btn-clear-x 버튼 활성-->
+              <input type="text" placeholder="지번, 도로명, 건물명으로 입력해주세요." />
+              <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+              <button type="button" class="btn-search" title="검색"><i class="bg-icon search"></i></button>
+            </div>
+          </div>
+          <div class="layer-cont">
+            <div class="title-sub">
+              <p class="title">최근 검색 위치</p>
+            </div>
+          </div>
+          <div class="layer-cont scroll-cont">
+            <div class="search-result">
+              <ul class="result-list">
+                <li>
+                  <a href="#">
+                    <p class="title"><i class="bg-icon location-small"></i> 시그니쳐타워</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 중구 청계천로 100 시그니쳐타워</p>
+                      <p class="old-address">서울 중구 수표동 99 시그니쳐타워</p>
+                    </div>
+                  </a>
+                  <button type="button" class="btn-del"><i class="bg-icon del">삭제</i></button>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title"><i class="bg-icon location-small"></i> 시그니쳐타워</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 중구 청계천로 100 시그니쳐타워</p>
+                      <!-- <p class="old-address">서울 중구 수표동 99 시그니쳐타워</p> -->
+                    </div>
+                  </a>
+                  <button type="button" class="btn-del"><i class="bg-icon del">삭제</i></button>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title"><i class="bg-icon location-small"></i> 시그니쳐타워</p>
+                    <div class="desc">
+                      <!-- <p class="new-address">서울시 중구 청계천로 100 시그니쳐타워</p> -->
+                      <p class="old-address">서울 중구 수표동 99 시그니쳐타워</p>
+                    </div>
+                  </a>
+                  <button type="button" class="btn-del"><i class="bg-icon del">삭제</i></button>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title"><i class="bg-icon location-small"></i> 시그니쳐타워</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 중구 청계천로 100 시그니쳐타워</p>
+                      <p class="old-address">서울 중구 수표동 99 시그니쳐타워</p>
+                    </div>
+                  </a>
+                  <button type="button" class="btn-del"><i class="bg-icon del">삭제</i></button>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title"><i class="bg-icon location-small"></i> 시그니쳐타워</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 중구 청계천로 100 시그니쳐타워</p>
+                      <p class="old-address">서울 중구 수표동 99 시그니쳐타워</p>
+                    </div>
+                  </a>
+                  <button type="button" class="btn-del"><i class="bg-icon del">삭제</i></button>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title"><i class="bg-icon location-small"></i> 시그니쳐타워</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 중구 청계천로 100 시그니쳐타워</p>
+                      <p class="old-address">서울 중구 수표동 99 시그니쳐타워</p>
+                    </div>
+                  </a>
+                  <button type="button" class="btn-del"><i class="bg-icon del">삭제</i></button>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title"><i class="bg-icon location-small"></i> 시그니쳐타워</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 중구 청계천로 100 시그니쳐타워</p>
+                      <p class="old-address">서울 중구 수표동 99 시그니쳐타워</p>
+                    </div>
+                  </a>
+                  <button type="button" class="btn-del"><i class="bg-icon del">삭제</i></button>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title"><i class="bg-icon location-small"></i> LAST 시그니쳐타워</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 중구 청계천로 100 시그니쳐타워</p>
+                      <p class="old-address">서울 중구 수표동 99 시그니쳐타워</p>
+                    </div>
+                  </a>
+                  <button type="button" class="btn-del"><i class="bg-icon del">삭제</i></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="bg-icon layer-close">
+          레이어팝업 닫기
+        </button>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Layer Pop -->
+  </body>
+</html>

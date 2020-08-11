@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">세부옵션 소개</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="inner-layout">
+            <p class="head-title">풀 커버 전면 왁스코팅</p>
+            <div class="detail-introduce">
+              <p class="row-txt">고객님이 지정해주신 일시에 차량이 주차된 장소에 방문하여 차량 을 깨끗하게 관리해주는 서비스입니다.</p>
+              <div class="thumb"><img src="../../assets/img/temp/di-img.png" alt="" /></div>
+              <div class="price-box gray-box">
+                <span class="wash-time"><i class="bg-icon time"></i> 약 60분 소요</span>
+                <span>
+                  <span class="price-unit"><span>63,000</span>원</span>
+                  <span class="discount"><span>60,000</span>원</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>

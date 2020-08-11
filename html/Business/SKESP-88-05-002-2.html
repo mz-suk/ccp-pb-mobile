@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="row-section type-address">
+          <div class="title-sub">
+            <strong class="title">주소정보</strong>
+          </div>
+          <div class="wrap-form">
+            <div class="link-msg-box type-search">
+              <p class="msg">경기 의정부시 누원로 52 수락리버시티 2단지</p>
+              <button type="button" class="link"><i class="bg-icon more"></i></button>
+            </div>
+            <div class="section-sub-title">
+              <p class="title">상세주소</p>
+            </div>
+            <div class="form-input">
+              <input type="text" placeholder="주차하신 층수 / 구역을 입력해주세요." />
+              <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row-section type-address">
+          <div class="title-sub">
+            <strong class="title">이용자 연락처</strong>
+          </div>
+          <div class="wrap-form">
+            <div class="form-input">
+              <input type="number" placeholder="01012341234" />
+              <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+            </div>
+            <div class="wrap-check">
+              <input type="checkbox" id="chk1" />
+              <label for="chk1">
+                가급적 전화통화는 원치 않습니다.
+                <span class="more-msg">(단, 긴급 시 부득이하게 연락드릴 수 있습니다.)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row-section type-address">
+          <div class="title-sub">
+            <strong class="title">차량 세부위치 또는 요청사항</strong>
+          </div>
+          <div class="wrap-form">
+            <div class="form-text-area">
+              <textarea maxlength="200" placeholder="(선택) 테크니션이 이해하기 쉽도록 기재해주세요."></textarea>
+              <span class="text-length">
+                <!-- 글 작성 시 strong에  class="active" -->
+                <strong>0</strong>/200자
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4">다음으로</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

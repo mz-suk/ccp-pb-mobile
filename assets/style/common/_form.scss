@@ -16,7 +16,8 @@ input[type="email"],
 input[type="password"],
 input[type="search"],
 input[type="file"],
-input[type="tel"] {
+input[type="tel"],
+textarea {
   display: inline-block;
   width: 100%;
   height: 4.5rem;
@@ -25,10 +26,14 @@ input[type="tel"] {
   background-color: $fcF9;
   border: 0.1rem solid $fcF0;
   color: $fc1;
-
   &::placeholder {
     color: $fc9;
   }
+}
+textarea {
+  min-height: 12rem;
+  padding: 1.5rem 1rem;
+  resize: none;
 }
 
 .form-input {
@@ -39,6 +44,23 @@ input[type="tel"] {
     top: 50%;
     right: 1rem;
     transform: translateY(-50%);
+  }
+}
+
+.form-text-area {
+  position: relative;
+  .text-length {
+    color: $fc9;
+    font-size: 1.3rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1.5rem;
+    strong {
+      font-weight: normal;
+      &.active {
+        color: $fc1;
+      }
+    }
   }
 }
 
@@ -239,6 +261,34 @@ input[type="checkbox"] {
     margin-left: 0.8rem;
     color: $fc1;
     line-height: 1.5;
+  }
+}
+
+.checkbox-st {
+  position: relative;
+  padding-left: 3rem;
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  input[type="checkbox"] + label {
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .label-tit {
+    button {
+      margin-left: 0.6rem;
+      vertical-align: top;
+    }
+  }
+  .sub-txt {
+    margin-top: 0.45rem;
+    font-size: 1.1rem;
+    color: $fc6;
   }
 }
 .form-list {

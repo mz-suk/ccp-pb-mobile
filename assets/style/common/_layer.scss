@@ -30,6 +30,7 @@
     left: 0;
     z-index: 51;
     width: 100%;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16%);
     background-color: $fcF;
     box-sizing: border-box;
     @include scroll(y);
@@ -52,7 +53,7 @@
     position: fixed;
     top: auto;
     bottom: 0;
-    min-height: 65%;
+    min-height: 68%;
     &.active {
       height: 88%;
     }
@@ -81,6 +82,9 @@
             margin-top: -6.6rem;
             @include scroll(y);
           }
+          &.type-info {
+            padding-bottom: 3rem;
+          }
         }
       }
     }
@@ -102,7 +106,7 @@
       font-size: 1.8rem;
       text-align: center;
 
-      &+.inner-layer {
+      & + .inner-layer {
         padding-top: 0;
       }
     }
