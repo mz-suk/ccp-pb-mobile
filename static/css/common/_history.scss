@@ -11,55 +11,6 @@
   }
   .link-msg-box {
     margin: 1.5rem 0 0;
-    a {
-      display: block;
-    }
-  }
-}
-
-.edit-layer {
-  position: absolute;
-  right: 0;
-  top: 0;
-  .more {
-    font-size: 0;
-    .bg-icon {
-      width: 1.6rem;
-      height: 1.6rem;
-    }
-  }
-  .edite-box {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 2.5rem;
-    border: 0.1rem solid $fcD7;
-    background: $fcF;
-    color: $fc1;
-    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.08%);
-    &.active {
-      display: block;
-    }
-    li {
-      border-top: 0.1rem solid $fcF0;
-    }
-    li:first-child {
-      border-top: 0 none;
-    }
-    button {
-      position: relative;
-      display: block;
-      width: 100%;
-      padding: 1.5rem 7rem 1.5rem 1.5rem;
-      text-align: left;
-      .bg-icon {
-        position: absolute;
-        right: 1.5rem;
-        top: 1.5rem;
-        width: 1.6rem;
-        height: 1.6rem;
-      }
-    }
   }
 }
 
@@ -143,6 +94,46 @@
       color: $fc6;
     }
   }
+  .edit-layer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    .more {
+      font-size: 0;
+      .bg-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+    .edite-box {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 2.5rem;
+      border: 0.1rem solid $fcD7;
+      background: $fcF;
+      color: $fc1;
+      &.active {
+        display: block;
+      }
+      li:first-child button {
+        border-top: 0 none;
+      }
+      button {
+        padding: 1.5rem 7rem 1.5rem 1.5rem;
+        position: relative;
+        display: block;
+        border-top: 0.1rem solid $fcF0;
+        .bg-icon {
+          position: absolute;
+          right: 1.5rem;
+          top: 1.5rem;
+          width: 1.6rem;
+          height: 1.6rem;
+        }
+      }
+    }
+  }
   .rating-area {
     overflow: hidden;
     .rating-box {
@@ -202,9 +193,9 @@
           width: 3rem;
           height: 3rem;
           display: inline-block;
-          background: url(../../assets/img/layout/icon-review-apply-star.png) 0 0.2rem / 3rem 3rem no-repeat;
+          background: url(~assets/img/layout/icon-review-apply-star.png) 0 0.2rem / 3rem 3rem no-repeat;
           &.active {
-            background-image: url(../../assets/img/layout/icon-review-apply-star-active.png);
+            background-image: url(~assets/img/layout/icon-review-apply-star-active.png);
           }
         }
       }
