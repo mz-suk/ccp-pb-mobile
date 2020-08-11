@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="review-top">
+          <p class="title">내가 작성한 리뷰 <strong class="num">5</strong></p>
+          <p class="desc">등록 후 7일이 지난 리뷰는 수정할 수 없습니다.</p>
+          <div class="link-msg-box">
+            <a href="#" class="msg">
+              리뷰 등록하러 가기
+              <span class="link"><i class="bg-icon more"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="review-cont">
+          <!-- Review -->
+          <div class="review-row">
+            <div class="top-row">
+              <div class="label-area">
+                <span class="label type-1">손세차</span>
+              </div>
+              <div class="title-area">
+                <p class="title"><strong>불스원프라자 대자점</strong><i class="bg-icon more"></i></p>
+                <p class="desc">[개인] 시간권 30분</p>
+                <p class="option">전면 유리 유막 제거 및 발수코팅 외 1건</p>
+                <!-- 수정 및 삭제 레이어 영역 -->
+                <div class="edit-layer">
+                  <button type="button" class="more">더보기<i class="bg-icon edite-more"></i></button>
+                  <!-- 더보기 버튼 클릭시 active 클래스 추가 및 제거 -->
+                  <div class="edite-box active">
+                    <ul>
+                      <li>
+                        <button type="button">수정하기<i class="bg-icon write"></i></button>
+                      </li>
+                      <li>
+                        <button type="button">삭제하기<i class="bg-icon del"></i></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- //수정 및 삭제 레이어 영역 -->
+              </div>
+            </div>
+            <div class="body-row">
+              <div class="rating-area">
+                <div class="rating-box type-small">
+                  <div class="rating">
+                    <span class="percent" style="width: 70%;">4.7</span>
+                  </div>
+                  <span class="num">4.7</span>
+                </div>
+                <p class="date">2020.06.14</p>
+              </div>
+              <div class="comment-area">
+                <p class="comment">
+                  사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나 믿음이 갑니다.사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나..
+                </p>
+                <div class="img-wrap">
+                  <ul>
+                    <li><img src="../../assets/img/temp/list-thumb-1.png" alt="" /></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="reply-area">
+                <p class="title"><i class="bg-icon reply"></i>불스원프라자 대자점</p>
+                <p class="comment">
+                  사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나 믿음이 갑니다.사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나..
+                </p>
+                <p class="date">2020.06.14</p>
+                <div class="img-wrap">
+                  <ul>
+                    <li><img src="../../assets/img/temp/list-thumb-1.png" alt="" /></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //Review -->
+          <!-- Review -->
+          <div class="review-row">
+            <div class="top-row">
+              <div class="label-area">
+                <span class="label type-1">손세차</span>
+              </div>
+              <div class="title-area">
+                <p class="title"><strong>불스원프라자 대자점</strong><i class="bg-icon more"></i></p>
+                <p class="desc">[개인] 시간권 30분</p>
+                <p class="option">전면 유리 유막 제거 및 발수코팅 외 1건</p>
+                <!-- 수정 및 삭제 레이어 영역 -->
+                <div class="edit-layer">
+                  <button type="button" class="more">더보기<i class="bg-icon edite-more"></i></button>
+                  <!-- 더보기 버튼 클릭시 active 클래스 추가 -->
+                  <div class="edite-box active">
+                    <ul>
+                      <li>
+                        <button type="button">수정하기<i class="bg-icon write"></i></button>
+                      </li>
+                      <li>
+                        <button type="button">삭제하기<i class="bg-icon del"></i></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- //수정 및 삭제 레이어 영역 -->
+              </div>
+            </div>
+            <div class="body-row">
+              <div class="rating-area">
+                <div class="rating-box type-small">
+                  <div class="rating">
+                    <span class="percent" style="width: 70%;">4.7</span>
+                  </div>
+                  <span class="num">4.7</span>
+                </div>
+                <p class="date">2020.06.14</p>
+              </div>
+              <div class="comment-area">
+                <p class="comment">
+                  사장님 너무 친절하시고, 항상 잘 이용하고 있어요.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- //Review -->
+          <!-- Review -->
+          <div class="review-row">
+            <div class="top-row">
+              <div class="label-area">
+                <span class="label type-1">손세차</span>
+              </div>
+              <div class="title-area">
+                <p class="title"><strong>불스원프라자 대자점</strong><i class="bg-icon more"></i></p>
+                <p class="desc">[개인] 시간권 30분</p>
+                <p class="option">전면 유리 유막 제거 및 발수코팅 외 1건</p>
+                <!-- 수정 및 삭제 레이어 영역 -->
+                <div class="edit-layer">
+                  <button type="button" class="more">더보기<i class="bg-icon edite-more"></i></button>
+                  <!-- 더보기 버튼 클릭시 active 클래스 추가 -->
+                  <div class="edite-box active">
+                    <ul>
+                      <li>
+                        <button type="button">수정하기<i class="bg-icon write"></i></button>
+                      </li>
+                      <li>
+                        <button type="button">삭제하기<i class="bg-icon del"></i></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- //수정 및 삭제 레이어 영역 -->
+              </div>
+            </div>
+            <div class="body-row">
+              <div class="rating-area">
+                <div class="rating-box type-small">
+                  <div class="rating">
+                    <span class="percent" style="width: 70%;">4.7</span>
+                  </div>
+                  <span class="num">4.7</span>
+                </div>
+                <p class="date">2020.06.14</p>
+              </div>
+              <div class="comment-area">
+                <p class="comment">
+                  사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나 믿음이 갑니다.사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나..
+                </p>
+              </div>
+              <div class="reply-area">
+                <p class="title"><i class="bg-icon reply"></i>불스원프라자 대자점</p>
+                <p class="comment">
+                  사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나 믿음이 갑니다.사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나..
+                </p>
+                <p class="date">2020.06.14</p>
+              </div>
+            </div>
+          </div>
+          <!-- //Review -->
+          <!-- Review -->
+          <div class="review-row">
+            <div class="top-row">
+              <div class="label-area">
+                <span class="label type-1">손세차</span>
+              </div>
+              <div class="title-area">
+                <p class="title"><strong>불스원프라자 대자점</strong><i class="bg-icon more"></i></p>
+                <!-- <p class="desc">[개인] 시간권 30분</p>
+                <p class="option">전면 유리 유막 제거 및 발수코팅 외 1건</p> -->
+                <!-- 수정 및 삭제 레이어 영역 -->
+                <div class="edit-layer">
+                  <button type="button" class="more">더보기<i class="bg-icon edite-more"></i></button>
+                  <!-- 더보기 버튼 클릭시 active 클래스 추가 -->
+                  <div class="edite-box active">
+                    <ul>
+                      <li>
+                        <button type="button">수정하기<i class="bg-icon write"></i></button>
+                      </li>
+                      <li>
+                        <button type="button">삭제하기<i class="bg-icon del"></i></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- //수정 및 삭제 레이어 영역 -->
+              </div>
+            </div>
+            <div class="blind-row">
+              <div class="wrap-empty">
+                <div class="empty-img">
+                  <img src="../../assets/img/layout/icon-empty-blind.png" alt="" />
+                </div>
+                <p class="empty-text">
+                  <strong>비방과 욕설로 인해<br />블라인드 처리되었습니다.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- //Review -->
+          <!-- Review -->
+          <div class="review-row">
+            <div class="top-row">
+              <div class="label-area">
+                <span class="label type-1">손세차</span>
+              </div>
+              <div class="title-area">
+                <p class="title"><strong>불스원프라자 대자점</strong><i class="bg-icon more"></i></p>
+                <p class="desc">[개인] 시간권 30분</p>
+                <p class="option">전면 유리 유막 제거 및 발수코팅 외 1건</p>
+              </div>
+            </div>
+            <a href="#" class="btn apply">리뷰 등록하기</a>
+          </div>
+          <!-- //Review -->
+          <!-- Review -->
+          <div class="review-row">
+            <div class="top-row">
+              <div class="label-area">
+                <span class="label type-1">손세차</span>
+              </div>
+              <div class="title-area">
+                <p class="title"><strong>불스원프라자 대자점</strong><i class="bg-icon more"></i></p>
+                <p class="desc">[개인] 시간권 30분</p>
+              </div>
+            </div>
+            <a href="#" class="btn apply">리뷰 등록하기</a>
+          </div>
+          <!-- //Review -->
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>

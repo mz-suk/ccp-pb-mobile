@@ -100,11 +100,11 @@
   line-height: 4.5rem;
   font-size: 1.3rem;
   color: $fc1;
-  border: 1px solid $fcE4;
+  border: 0.1rem solid $fcE4;
   background: $fcF;
   &.type-search {
     border: 0 none;
-    border-bottom: 1px solid $fc1;
+    border-bottom: 0.1rem solid $fc1;
   }
   .link {
     height: 4.5rem;
@@ -126,7 +126,7 @@
 
 .info-box {
   padding-bottom: 3rem;
-  border-bottom: 1px solid $fcF0;
+  border-bottom: 0.1rem solid $fcF0;
   color: $fc1;
   .title {
     font-size: 1.7rem;
