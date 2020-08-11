@@ -210,6 +210,53 @@ textarea {
       }
     }
   }
+
+  &.type4 {
+    display: inline-block;
+
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      background-color: $fcF;
+      border: 0 none;
+      color: $fc9;
+      transition: all 0.2s ease;
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        &:before {
+          display: inline-block;
+          width: 0.6rem;
+          height: 0.6rem;
+          margin-right: 0.9rem;
+          background-color: $fcF;
+          border: 0.7rem solid $fcE4;
+          border-radius: 50%;
+          vertical-align: middle;
+          transition: all 0.2s ease;
+          content: "";
+        }
+      }
+    }
+
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
+      background-color: $fcF;
+      border: 0 none;
+      color: $fc1;
+
+      .left {
+        &:before {
+          border-color: $fc1;
+        }
+      }
+    }
+  }
 }
 
 .input-spinner {
