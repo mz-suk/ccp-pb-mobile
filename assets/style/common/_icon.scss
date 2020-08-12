@@ -47,6 +47,9 @@
 
   &.like {
     background-image: url(../../assets/img/layout/icon-l-favorite.png);
+    &.active {
+      background-image: url(../../assets/img/layout/icon-l-favorite-on.png);
+    }
   }
 
   &.location {

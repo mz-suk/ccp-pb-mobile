@@ -81,6 +81,25 @@
     right: 0;
   }
 
+  .btn-txt {
+    height: 4rem;
+    padding-right: 1.2rem;
+    text-align: right;
+    line-height: 4rem;
+    color: $fcF;
+    .num {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      border-radius: 50%;
+      background: $pc3;
+      text-align: center;
+      font-size: 1.1rem;
+      margin-right: 0.5rem;
+    }
+  }
+
   .bg-icon {
     width: 4rem;
     height: 4rem;

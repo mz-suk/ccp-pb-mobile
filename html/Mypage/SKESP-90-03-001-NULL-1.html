@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">결제실패</h1>
+        <h1 class="title">{{ title }}</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">
             이전페이지
@@ -35,36 +35,24 @@
         </div>
       </header>
       <!-- //Header -->
-      <!-- wrap-contents -->
+
+      <!-- Wrap-contents -->
       <div class="wrap-contents">
-        <div class="wrap-order">
-          <div class="order-cont">
-            <div class="wrap-empty">
-              <div class="empty-img">
-                <img src="../../assets/img/layout/icon-empty.png" alt />
-              </div>
-              <p class="empty-text">
-                <strong
-                  >아래와 같은 사유로<br />
-                  결제가 실패하였습니다.</strong
-                >
-              </p>
-              <p class="empty-text">
-                잠시 후 다시 시도해주시거나, 반복적으로<br />
-                오류가 발생할 경우 관리자에 문의주시기 바랍니다
-              </p>
-              <div class="text-box">
-                <p class="text"><strong>실패사유 : PG사 통신오류</strong></p>
-              </div>
-              <div class="wrap-btn">
-                <a href="javascript:;" class="btn">1:1 상담</a>
-                <a href="javascript:;" class="btn color1">다시 주문하기</a>
-              </div>
-            </div>
+        <div class="wrap-empty">
+          <div class="empty-img">
+            <img src="../../assets/img/layout/icon-empty-card.png" alt />
+          </div>
+          <p class="empty-text">
+            <strong>준회원은 카드등록을 할 수 없습니다.</strong>
+          </p>
+          <p class="empty-text">정회원 이상인 경우에만<br />카드등록을 할 수 있습니다.</p>
+          <div class="btn-area">
+            <a href="javascript:;" class="btn color1">정회원 인증하기</a>
           </div>
         </div>
       </div>
-      <!-- //wrap-contents -->
+      <!-- //Wrap-contents -->
+
       <!-- Footer -->
     </div>
 
