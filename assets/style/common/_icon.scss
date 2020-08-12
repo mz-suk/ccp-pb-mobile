@@ -332,12 +332,14 @@
   padding: 0.4rem 1rem;
   display: inline-block;
   vertical-align: top;
-  line-height: 1;
+  height: 2rem;
   font-size: 0.9rem;
+  line-height: 1;
   font-weight: 700;
   background: $fcF;
   border: 0.1rem solid;
   border-radius: 10rem;
+  box-sizing: border-box;
 
   &.blue {
     color: $pc3;
@@ -347,5 +349,12 @@
   &.red {
     color: $gc3;
     border-color: $gc3;
+  }
+
+  &.grad1 {
+    padding-top: 0.5rem;
+    color: $fcF;
+    border: none;
+    background: linear-gradient(to right, #04a0f3 0%, #45d49a 100%);
   }
 }

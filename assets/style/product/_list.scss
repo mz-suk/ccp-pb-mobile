@@ -842,6 +842,17 @@
     background: $fcF9;
     border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
+    overflow: hidden;
+
+    &.type1 {
+      padding-top: 5.4rem;
+      &:after {
+        top: calc(50% + 2.7rem);
+      }
+      .big-title {
+        margin-top: 2rem;
+      }
+    }
 
     .top {
       display: flex;
@@ -863,6 +874,43 @@
       .btn-arrow {
         margin-left: auto;
       }
+      .date {
+        margin-left: auto;
+        font-size: 1.1rem;
+        color: $fc9;
+      }
+    }
+    .top-grad {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 1rem 2.5rem 0;
+      display: flex;
+      align-items: center;
+      height: 5.4rem;
+      color: $fcF;
+      background: linear-gradient(to right, #ea002c 0%, #ff7a00 100%);
+      box-sizing: border-box;
+
+      &.grad1 {
+        background: linear-gradient(to right, #04a0f3 0%, #45d49a 100%);
+      }
+      .title {
+        font-weight: 700;
+        strong {
+          margin-right: 0.4rem;
+          font-size: 2rem;
+          vertical-align: middle;
+        }
+      }
+
+      .date {
+        margin-left: auto;
+        font-size: 1.1rem;
+        color: $fcF;
+      }
     }
 
     .big-title {
@@ -877,7 +925,7 @@
     }
 
     .info-txt {
-      margin-top: 0.75rem;
+      margin-top: 1rem;
       font-size: 1.3rem;
       line-height: 1.8rem;
 
@@ -894,6 +942,13 @@
 
     .info-sub-txt {
       color: $fc9;
+    }
+
+    .btn-area {
+      margin-top: 2rem;
+      padding-top: 1.9rem;
+      text-align: center;
+      border-top: 0.1rem dotted $fcD7;
     }
   }
 
