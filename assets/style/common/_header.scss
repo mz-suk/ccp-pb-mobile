@@ -31,7 +31,7 @@
   &.isDetail {
     background: transparent;
     border-bottom: 0 none;
-    & + .wrap-contents {
+    & ~ .wrap-contents {
       margin-top: -5.5rem;
     }
     .title {
