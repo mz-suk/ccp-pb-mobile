@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        test
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- KeyPad -->
+    <div class="keypad">
+      <div class="keypad-top">
+        <p class="on-msg"><i class="bg-icon shield"></i> 보안 키패드 작동중</p>
+        <button type="button" class="close-keypad">닫기</button>
+      </div>
+      <div class="keypad-body">
+        <ul class="number">
+          <li><button type="button">0</button></li>
+          <li><button type="button">1</button></li>
+          <li><button type="button">2</button></li>
+          <li><button type="button">3</button></li>
+          <li><button type="button">4</button></li>
+          <li><button type="button">5</button></li>
+          <li><button type="button">6</button></li>
+          <li><button type="button">7</button></li>
+          <li><button type="button">8</button></li>
+          <li><button type="button">9</button></li>
+          <li></li>
+          <li class="key-back"><button type="button">삭제</button></li>
+        </ul>
+        <ul class="apply">
+          <li class="refresh"><button type="button">재배열</button></li>
+          <li class="confirm"><button type="button">확인</button></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //KeyPad -->
+  </body>
+</html>
