@@ -193,6 +193,14 @@
     vertical-align: top;
   }
 }
+.btn-drpomenu {
+  padding: 0.5rem 0.5rem;
+  .bg-icon {
+    width: 2rem;
+    height: 2rem;
+    background-size: 100%;
+  }
+}
 .btn-link {
   font-size: 1.1rem;
   color: $fc9;

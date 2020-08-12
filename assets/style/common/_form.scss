@@ -371,6 +371,57 @@ input[type="checkbox"] {
     color: $fc6;
   }
 }
+.checkbox-spinner {
+  input[type="checkbox"] {
+    position: absolute;
+    left: -9999rem;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    font-size: 0;
+  }
+  input[type="checkbox"] + label {
+    position: relative;
+    margin: 0;
+    padding: 0.6rem 3rem 0.6rem 1.2rem;
+    display: inline-block;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: $fc9;
+    background: $fcF;
+    border: 0.1rem solid $fcD7;
+    border-radius: 1.25rem;
+    transition: padding 0.2s, color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 2.3rem;
+      height: 2.3rem;
+      z-index: 1;
+      background: $fcF;
+      border: 0.1rem solid $fcD7;
+      border-radius: 50%;
+      box-sizing: border-box;
+      transition: right 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+  }
+  input[type="checkbox"]:checked + label {
+    padding: 0.6rem 1.2rem 0.6rem 3rem;
+    color: $fc1;
+    background: $pc2;
+    border-color: $pc6;
+    transition: padding 0.2s, color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
+    &:before {
+      right: calc(100% - 2.3rem);
+      border-color: $pc6;
+      box-shadow: 0.1rem 0 0.2rem 0 rgba(252, 203, 58, 1);
+      transition: right 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+  }
+}
 .form-list {
   .form-div:not(:first-child) {
     margin-top: 4rem;
@@ -417,5 +468,47 @@ input[type="checkbox"] {
     top: 50%;
     right: 1rem;
     transform: translate(0, -50%);
+  }
+}
+
+// 드롭다운
+.dropdown-area {
+  position: relative;
+  z-index: 6;
+  &.active {
+    .drop-menu {
+      display: block;
+    }
+  }
+  .drop-menu {
+    position: absolute;
+    top: 3.5rem;
+    right: 0.5rem;
+    display: none;
+    min-width: 15.8rem;
+    background: $fcF;
+    border: 0.1rem solid $fcD7;
+    li {
+      &:not(:first-child) {
+        border-top: 0.1rem solid $fcF0;
+      }
+    }
+    button {
+      position: relative;
+      padding: 0 4rem 0 1.5rem;
+      width: 100%;
+      height: 4.5rem;
+      color: $fc1;
+      white-space: nowrap;
+      text-align: left;
+      .bg-icon {
+        position: absolute;
+        top: 50%;
+        right: 1.55rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        transform: translate(0, -50%);
+      }
+    }
   }
 }
