@@ -112,6 +112,14 @@ textarea {
     }
   }
 }
+.tab-checkbox-cont {
+  .form-input {
+    &.active {
+      display: block;
+    }
+    display: none;
+  }
+}
 
 .checkbox {
   input[type="checkbox"],
