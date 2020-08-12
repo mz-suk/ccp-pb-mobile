@@ -101,6 +101,18 @@ textarea {
   }
 }
 
+.tab-checkbox {
+  font-size: 0;
+  padding: 2.5rem 0 1.5rem;
+  .checkbox {
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
 .checkbox {
   input[type="checkbox"],
   input[type="radio"] {
@@ -382,6 +394,9 @@ input[type="checkbox"] {
     font-size: 1.5rem;
     color: $fc1;
     line-height: 1;
+    &.type1 {
+      font-size: 1.7rem;
+    }
   }
 }
 // 검색화면

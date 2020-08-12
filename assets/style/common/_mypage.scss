@@ -1,0 +1,49 @@
+.block-layout {
+  .card-list {
+    margin: 0 -2rem 0;
+  }
+}
+.card-list {
+  border-top: 0.8rem solid $fcF9;
+  padding: 4rem 2rem;
+  .title {
+    font-size: 1.5rem;
+    color: $fc1;
+  }
+  .list-area {
+    overflow: hidden;
+  }
+  .list {
+    margin-left: -0.9rem;
+    li {
+      float: left;
+      box-sizing: border-box;
+      width: 33.333%;
+      margin: 0.9rem 0 0;
+      padding-left: 0.9rem;
+      button {
+        position: relative;
+        width: 100%;
+        padding-bottom: 84%;
+        border: 0.1rem solid $fcE4;
+        border-radius: 0.5rem;
+        .list-cont {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          span {
+            display: block;
+            color: $fc1;
+          }
+          .bg-icon {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">SK주유소 할인정보 직접등록</h1>
+          <div class="left">
+            <a href="javascript:;" class="bg-icon prev">이전페이지</a>
+          </div>
+          <div class="right">
+            <button type="button" class="btn-txt">적용안함</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="block-layout">
+            <div class="title-sub">
+              <strong class="title"><i class="bg-icon gas2"></i> SK주유 할인</strong>
+            </div>
+            <div class="tab-checkbox">
+              <div class="checkbox type4">
+                <input type="radio" id="chk7-1" name="group4" checked="" />
+                <label for="chk7-1">
+                  <p class="left">주유 리터당 할인</p>
+                </label>
+              </div>
+              <div class="checkbox type4">
+                <input type="radio" id="chk7-2" name="group4" />
+                <label for="chk7-2">
+                  <p class="left">주유 이용금액 할인</p>
+                </label>
+              </div>
+            </div>
+            <div>
+              <div class="form-input">
+                <input type="tel" placeholder="주유 할인금액을 입력해 주세요." />
+                <span class="btn-clear-x">원</span>
+              </div>
+              <div class="form-input">
+                <input type="tel" placeholder="할인율을 입력해 주세요." />
+                <span class="btn-clear-x">%</span>
+              </div>
+            </div>
+          </div>
+          <div class="fix-footer-area">
+            <button type="button" class="btn type2 color4" disabled>확인</button>
+            <!-- <button type="button" class="btn type2 color4">확인</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
