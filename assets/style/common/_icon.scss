@@ -172,6 +172,10 @@
     background-image: url(../../assets/img/layout/icon-gas-station.png);
   }
 
+  &.gas2 {
+    background-image: url(../../assets/img/layout/icon-gas-station-2.png);
+  }
+
   &.market {
     background-image: url(../../assets/img/layout/icon-market.png);
   }
@@ -235,7 +239,7 @@
     background-image: url(../../assets/img/layout/icon-more-type3.png);
   }
 
-  &.del {
+  &.trash-del {
     background-image: url(../../assets/img/layout/icon-review-del.png);
   }
 
@@ -265,6 +269,43 @@
 
   &.attach {
     background-image: url(../../assets/img/layout/icon-attach.png);
+  }
+
+  &.shinhan {
+    background-image: url(../../assets/img/layout/icon-card-shinhan.png);
+  }
+  &.samsung {
+    background-image: url(../../assets/img/layout/icon-card-samsung.png);
+  }
+  &.hyundai {
+    background-image: url(../../assets/img/layout/icon-card-hyundai.png);
+  }
+  &.kb {
+    background-image: url(../../assets/img/layout/icon-card-kb.png);
+  }
+  &.lotte {
+    background-image: url(../../assets/img/layout/icon-card-lotte.png);
+  }
+  &.hana {
+    background-image: url(../../assets/img/layout/icon-card-hana.png);
+  }
+  &.bc {
+    background-image: url(../../assets/img/layout/icon-card-bc.png);
+  }
+  &.woori {
+    background-image: url(../../assets/img/layout/icon-card-woori.png);
+  }
+  &.citi {
+    background-image: url(../../assets/img/layout/icon-card-citi.png);
+  }
+  &.nonghyup {
+    background-image: url(../../assets/img/layout/icon-card-nonghyup.png);
+  }
+  &.suhyup {
+    background-image: url(../../assets/img/layout/icon-card-suhyup.png);
+  }
+  &.other-bank {
+    background-image: url(../../assets/img/layout/icon-card-bank.png);
   }
   &.car-oil {
     background-image: url(../../assets/img/layout/icon-car-oil.png);
