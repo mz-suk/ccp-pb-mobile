@@ -434,4 +434,9 @@
       background-size: 1.2rem 1.2rem;
     }
   }
+  &.active {
+    .more-text:after {
+      background-image: url(../../assets/img/layout/icon-more-txt-active.png);
+    }
+  }
 }
