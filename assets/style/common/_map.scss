@@ -20,7 +20,10 @@
   & + .result-more {
     margin: -6rem -2rem 0;
   }
-  padding-bottom: 6rem;
+  //padding-bottom: 6rem;
+  .pos-bottom & {
+    padding-bottom: 6rem;
+  }
   li {
     position: relative;
     padding: 2.5rem 0;

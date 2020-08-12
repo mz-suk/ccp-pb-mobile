@@ -306,6 +306,20 @@
   }
   &.other-bank {
     background-image: url(../../assets/img/layout/icon-card-bank.png);
+
+  &.car-oil {
+    background-image: url(../../assets/img/layout/icon-car-oil.png);
+  }
+  &.tooltip2 {
+    background-image: url(../../assets/img/layout/icon-tooltip-type1.png);
+  }
+
+  &.tooltip-close {
+    background-image: url(../../assets/img/layout/icon-close-type2.png);
+  }
+
+  &.toggle2 {
+    background-image: url(../../assets/img/layout/icon-toggle-type2.png);
   }
 }
 // 뱃지
