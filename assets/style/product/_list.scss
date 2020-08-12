@@ -810,14 +810,13 @@
       &.info-car-cont {
         background: $fcF;
         border-color: $fc1;
-        box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.08);
-        transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+        transition: background 0.2s, border 0.2s;
       }
     }
 
     input[type="radio"] + label {
       margin: 0;
-      transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+      transition: background 0.2s, border 0.2s;
     }
   }
 
