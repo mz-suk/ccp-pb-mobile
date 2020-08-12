@@ -305,13 +305,26 @@
     }
   }
   .btn-add-photo {
+    position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 8rem;
     height: 8rem;
     border: 0.1rem solid $fcE4;
     box-sizing: border-box;
     color: $fc1;
+    input[type="file"] {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
     .photo {
       width: 2.4rem;
       height: 2.4rem;

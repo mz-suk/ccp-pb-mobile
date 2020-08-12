@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">SK주유소 할인정보 직접등록</h1>
+          <div class="left">
+            <a href="javascript:;" class="bg-icon prev">이전페이지</a>
+          </div>
+          <div class="right">
+            <button type="button" class="btn-txt">적용안함</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="block-layout">
+            <div class="form-div">
+              <p class="title type1">카드를 검색해 주세요.</p>
+              <div class="form-search active">
+                <!-- 텍스트가 입력 될 경우 active 클래스 추가 -btn-clear-x 버튼 활성-->
+                <input type="text" placeholder="검색할 카드를 입력해 주세요." />
+                <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+                <button type="button" class="btn-search" title="검색"><i class="bg-icon search"></i></button>
+              </div>
+            </div>
+            <div class="card-list">
+              <p class="title">카드사 바로선택</p>
+              <div class="list-area">
+                <ul class="list">
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon shinhan"></i>
+                        <span>신한은행</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon samsung"></i>
+                        <span>삼성카드</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon hyundai"></i>
+                        <span>현대카드</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon kb"></i>
+                        <span>KB국민카드</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon lotte"></i>
+                        <span>롯데카드</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon hana"></i>
+                        <span>KEB하나카드</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon bc"></i>
+                        <span>BC카드</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon woori"></i>
+                        <span>우리카드</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon citi"></i>
+                        <span>시티은행(카드)</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon nonghyup"></i>
+                        <span>NH농협카드</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon suhyup"></i>
+                        <span>수협은행(카드)</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon other-bank"></i>
+                        <span>광주은행(카드)</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon other-bank"></i>
+                        <span>전북은행(카드)</span>
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <span class="list-cont">
+                        <i class="bg-icon shinhan"></i>
+                        <span>제주은행(카드)</span>
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>

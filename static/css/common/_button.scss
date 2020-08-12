@@ -154,6 +154,15 @@
       background-size: 1rem auto;
     }
   }
+
+  &.type1 {
+    font-size: 1.5rem;
+    &:after {
+      width: 1.3rem;
+      height: 1.3rem;
+      background-size: 1.3rem auto;
+    }
+  }
 }
 .btn-delete {
   font-size: 1.1rem;
@@ -180,6 +189,25 @@
     background: url(~assets/img/layout/icon-chk-blue.png) no-repeat 0 0;
     background-size: 1.2rem auto;
     vertical-align: top;
+  }
+}
+.btn-attach {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: $fc1;
+  .bg-icon {
+    margin-right: 0.5rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    vertical-align: top;
+  }
+}
+.btn-drpomenu {
+  padding: 0.5rem 0.5rem;
+  .bg-icon {
+    width: 2rem;
+    height: 2rem;
+    background-size: 100%;
   }
 }
 .btn-link {

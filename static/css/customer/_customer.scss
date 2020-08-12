@@ -170,7 +170,14 @@
     color: $fc1;
   }
 }
-
+.onetoone-list {
+  .q-txt {
+    @include clamp(2);
+  }
+  .a-txt .txt-row {
+    @include clamp(2);
+  }
+}
 .question-cont {
   position: relative;
   padding: 3rem 2rem;
@@ -200,7 +207,6 @@
     }
   }
   .q-txt {
-    @include clamp(2);
     position: relative;
     margin-top: 1.5rem;
     padding-left: 1.5rem;
@@ -220,22 +226,34 @@
     padding: 2rem 2rem 2rem 3.5rem;
     background: $fcF9;
     border: 0.1rem solid $fcF0;
-    .a-cont {
-      @include clamp(2);
-      &:before {
-        content: "A";
-        position: absolute;
-        top: 2rem;
-        left: 2rem;
-        font-weight: 700;
-        color: $fc5;
-      }
+    &:before {
+      content: "A";
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      font-weight: 700;
+      color: $fc5;
+    }
+    .txt-row.mt {
+      margin-top: 2.5rem;
     }
     .date {
       margin-top: 1.1rem;
       text-align: right;
       font-size: 1.2rem;
     }
+    .thumb-swiper {
+      margin-top: 1.5rem;
+      margin-left: -1.5rem;
+    }
+  }
+  .thumb-swiper {
+    margin-top: 2rem;
+  }
+  .attach-box {
+    margin-top: 1rem;
+    padding: 1.2rem 1.5rem;
+    border: 0.1rem solid $fcF0;
   }
   .btn-area {
     margin-top: 1.5rem;
@@ -243,5 +261,12 @@
     button {
       vertical-align: top;
     }
+  }
+}
+//문의쓰기
+.wrap-question-write {
+  padding: 4rem 2rem;
+  .form-text-area {
+    margin-top: 1.5rem;
   }
 }
