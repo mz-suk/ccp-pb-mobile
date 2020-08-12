@@ -1,72 +1,123 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
-  <title>Document</title>
-  <script>
-    function setFontSize() {
-      var doc = document.documentElement,
-        fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
-      fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
 
-      doc.style.fontSize = fontSizeVal + "%";
-    }
-    setFontSize();
-    window.addEventListener("resize", setFontSize);
-  </script>
-  <link rel="stylesheet" href="../../assets/css/style.css" />
-</head>
-
-<body>
-  <div id="container">
-    <!-- Header -->
-    <header class="header header-sub">
-      <h1 class="title">예약일시 선택</h1>
-      <div class="left">
-        <button type="button" class="bg-icon prev">
-          이전페이지
-        </button>
-      </div>
-      <div class="right">
-        <button type="button" class="bg-icon menu">
-          메뉴
-        </button>
-      </div>
-    </header>
-    <!-- //Header -->
-    <!-- wrap-contents -->
-    <div class="wrap-contents">
-      <div class="wrap-reservation">
-        <div class="reservation-cont">
-          <p class="title"><i class="bg-icon calendar"></i>예약날짜</p>
-          <div class="wrap-calendar">
-            //달력
-          </div>
-          <div class="wrap-calendar">
-            //달력
-          </div>
-          <p class="text-guide">선택하신 날짜는 테크니션의 스케줄에 따라<br />부득이하게 유선연락을 통해 조정 요청드릴 수 있습니다.</p>
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">예약일시 선택</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
         </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-reservation">
+          <div class="reservation-cont">
+            <div class="wrap-title">
+              <p class="title"><i class="bg-icon calendar"></i>예약날짜</p>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box" style="display: block;">
+                  <!-- [D] style="display:block" 제거 -->
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>선택하신 날짜는 테크니션의 스케줄에 따라 부득이하게 유선연락을 통해 조정 요청드릴 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-calendar">
+              <div class="accordion">
+                <!-- [D] accordion 펼침 상태 : .active 추가 -->
+                <div class="accordion-title">
+                  <p>1회차</p>
+                  <button type="button" class="btn-toggle">선택하기<i class="bg-icon toggle2">펼침</i></button>
+                </div>
+                <div class="accordion-cont">
+                  <div class="calendar">
+                    //달력영역
+                  </div>
+                </div>
+              </div>
 
-        <div class="reservation-cont">
-          <p class="title"><i class="bg-icon calendar"></i>내 차량 주차 시간대</p>
-          <div class="wrap-info">
-            <div class="wrap-btn">
-              <a href="javascript:;" class="btn">입차/출차 시간 설정</a>
+              <div class="accordion">
+                <div class="accordion-title">
+                  <p>2회차</p>
+                  <button type="button" class="btn-toggle">선택하기<i class="bg-icon toggle2">펼침</i></button>
+                </div>
+                <div class="accordion-cont">
+                  <div class="calendar">
+                    //달력영역
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-title">
+                  <p>3회차</p>
+                  <button type="button" class="btn-toggle">선택하기<i class="bg-icon toggle2">펼침</i></button>
+                </div>
+                <div class="accordion-cont">
+                  <div class="calendar">
+                    //달력영역
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-title">
+                  <p>4회차</p>
+                  <button type="button" class="btn-toggle">선택하기<i class="bg-icon toggle2">펼침</i></button>
+                </div>
+                <div class="accordion-cont">
+                  <div class="calendar">
+                    //달력영역
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reservation-cont">
+            <p class="title"><i class="bg-icon calendar"></i>시간 (내 차량이 주차장에 있는 시간대)</p>
+            <div class="wrap-info">
+              <div class="wrap-btn">
+                <a href="javascript:;" class="btn">입차/출차 시간 설정</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="fix-footer-area">
-        <button type="button" class="btn type2 color4" disabled>다음으로</button>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4" disabled>다음으로</button>
+        </div>
       </div>
+      <!-- //wrap-contents -->
+      <!-- Footer -->
     </div>
-    <!-- //wrap-contents -->
-    <!-- Footer -->
-  </div>
-</body>
-
+  </body>
 </html>
