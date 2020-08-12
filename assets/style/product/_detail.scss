@@ -93,7 +93,7 @@
   overflow: hidden;
   width: 33.5rem;
   height: 11.8rem;
-  background: url(../../assets/img/layout/img-coupon-purple.png) no-repeat 0 0;
+  background: url(../../assets/img/layout/img-coupon-purple.png) 0 0 / 33.5rem 11.8rem no-repeat;
   background-size: contain;
   color: $fcF;
   .left {
@@ -151,21 +151,17 @@
   .right {
     .barcode {
       position: absolute;
-      right: 1.76rem;
+      right: 2.2rem;
       top: 50%;
       transform: translateY(-50%);
       .date {
-        position: absolute;
-        top: 50%;
-        left: -3.5rem;
-        margin-top: -0.8rem;
         transform: rotate(-90deg);
         font-size: 1rem;
       }
-      img {
-        width: 2.3em;
-        height: 7.818rem;
-      }
+      // img {
+      //   width: 2.3em;
+      //   height: 7.818rem;
+      // }
     }
   }
 }
