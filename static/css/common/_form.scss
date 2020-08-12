@@ -49,6 +49,13 @@ textarea {
 
 .form-text-area {
   position: relative;
+  padding: 1.5rem 1rem 4.5rem;
+  background: $fcF9;
+  border: 0.1rem solid $fcF0;
+  textarea {
+    padding: 0;
+    border: none;
+  }
   .text-length {
     color: $fc9;
     font-size: 1.3rem;
@@ -91,6 +98,18 @@ textarea {
 
   .checkbox {
     margin: 1rem 1rem 0 0;
+  }
+}
+
+.tab-checkbox {
+  font-size: 0;
+  padding: 2.5rem 0 1.5rem;
+  .checkbox {
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
@@ -175,6 +194,79 @@ textarea {
     input[type="radio"]:checked + label {
       background-color: $fcF;
       border: 0.1rem solid $fc1;
+      color: $fc1;
+
+      .left {
+        &:before {
+          border-color: $fc1;
+        }
+      }
+    }
+  }
+
+  &.type3 {
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 7rem;
+      border-radius: 4rem;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    input[type="radio"]:checked + label {
+      background-color: $fc1;
+
+      span {
+        color: $fcF;
+      }
+
+      .date:after {
+        border-color: $fcF;
+      }
+    }
+  }
+
+  &.type4 {
+    display: inline-block;
+
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      background-color: $fcF;
+      border: 0 none;
+      color: $fc9;
+      transition: all 0.2s ease;
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        &:before {
+          display: inline-block;
+          width: 0.6rem;
+          height: 0.6rem;
+          margin-right: 0.9rem;
+          background-color: $fcF;
+          border: 0.7rem solid $fcE4;
+          border-radius: 50%;
+          vertical-align: middle;
+          transition: all 0.2s ease;
+          content: "";
+        }
+      }
+    }
+
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
+      background-color: $fcF;
+      border: 0 none;
       color: $fc1;
 
       .left {
@@ -291,6 +383,57 @@ input[type="checkbox"] {
     color: $fc6;
   }
 }
+.checkbox-spinner {
+  input[type="checkbox"] {
+    position: absolute;
+    left: -9999rem;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    font-size: 0;
+  }
+  input[type="checkbox"] + label {
+    position: relative;
+    margin: 0;
+    padding: 0.6rem 3rem 0.6rem 1.2rem;
+    display: inline-block;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: $fc9;
+    background: $fcF;
+    border: 0.1rem solid $fcD7;
+    border-radius: 1.25rem;
+    transition: padding 0.2s, color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 2.3rem;
+      height: 2.3rem;
+      z-index: 1;
+      background: $fcF;
+      border: 0.1rem solid $fcD7;
+      border-radius: 50%;
+      box-sizing: border-box;
+      transition: right 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+  }
+  input[type="checkbox"]:checked + label {
+    padding: 0.6rem 1.2rem 0.6rem 3rem;
+    color: $fc1;
+    background: $pc2;
+    border-color: $pc6;
+    transition: padding 0.2s, color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
+    &:before {
+      right: calc(100% - 2.3rem);
+      border-color: $pc6;
+      box-shadow: 0.1rem 0 0.2rem 0 rgba(252, 203, 58, 1);
+      transition: right 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+  }
+}
 .form-list {
   .form-div:not(:first-child) {
     margin-top: 4rem;
@@ -299,9 +442,12 @@ input[type="checkbox"] {
 .form-div {
   .title {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: $fc1;
     line-height: 1;
+    &.type1 {
+      font-size: 1.7rem;
+    }
   }
 }
 // 검색화면
@@ -337,5 +483,47 @@ input[type="checkbox"] {
     top: 50%;
     right: 1rem;
     transform: translate(0, -50%);
+  }
+}
+
+// 드롭다운
+.dropdown-area {
+  position: relative;
+  z-index: 6;
+  &.active {
+    .drop-menu {
+      display: block;
+    }
+  }
+  .drop-menu {
+    position: absolute;
+    top: 3.5rem;
+    right: 0.5rem;
+    display: none;
+    min-width: 15.8rem;
+    background: $fcF;
+    border: 0.1rem solid $fcD7;
+    li {
+      &:not(:first-child) {
+        border-top: 0.1rem solid $fcF0;
+      }
+    }
+    button {
+      position: relative;
+      padding: 0 4rem 0 1.5rem;
+      width: 100%;
+      height: 4.5rem;
+      color: $fc1;
+      white-space: nowrap;
+      text-align: left;
+      .bg-icon {
+        position: absolute;
+        top: 50%;
+        right: 1.55rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        transform: translate(0, -50%);
+      }
+    }
   }
 }
