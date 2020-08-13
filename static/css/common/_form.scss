@@ -453,9 +453,14 @@ input[type="checkbox"] {
     font-size: 1.7rem;
     color: $fc1;
     line-height: 1;
-    &.type1 {
-      font-size: 1.7rem;
-    }
+  }
+  .title-sm {
+    margin-bottom: 1rem;
+    color: $fc1;
+    line-height: 1;
+  }
+  & + .form-div {
+    margin-top: 3rem;
   }
 }
 // 검색화면
