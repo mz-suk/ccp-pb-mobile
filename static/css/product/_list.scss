@@ -587,10 +587,7 @@
     display: flex;
     align-items: center;
 
-    .tooltip2 {
-      display: inline-block;
-      width: 1.6rem;
-      height: 1.6rem;
+    .bg-icon {
       margin-left: 0.5rem;
     }
   }
@@ -748,6 +745,9 @@
 .list-dot {
   // default   :  margin-top, font-size, color, dot style
   @include listdot(0.8rem, 1.1rem, $fc6, 0); // ·
+  &.color1 {
+    @include listdot(0.8rem, 1.1rem, $pc3, 0, $pc3);
+  }
 }
 
 // 카드박스타입
@@ -829,6 +829,9 @@
     .info-type-cont {
       padding-right: 5rem;
       background: $fcF;
+      .top .date {
+        margin-right: -2.5rem;
+      }
     }
 
     button[data-type="right-btn"] {
@@ -896,11 +899,11 @@
       align-items: center;
       height: 5.4rem;
       color: $fcF;
-      background: linear-gradient(to right, #ea002c 0%, #ff7a00 100%);
+      background: linear-gradient(to right, #ea002c 0%, #ff7a00 40%);
       box-sizing: border-box;
 
       &.grad1 {
-        background: linear-gradient(to right, #04a0f3 0%, #45d49a 100%);
+        background: linear-gradient(to right, #04a0f3 0%, #45d49a 40%);
       }
       .title {
         font-weight: 700;
@@ -947,6 +950,9 @@
 
     .info-sub-txt {
       color: $fc9;
+    }
+    .list-dot {
+      margin-top: 2rem;
     }
 
     .btn-area {
@@ -1137,13 +1143,20 @@
 
 .wrap-tooltip {
   position: relative;
-  z-index: 50;
+
+  .tooltip2 {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 0.5rem;
+  }
 
   .tooltip-box {
     display: none;
     position: absolute;
     top: 3rem;
-    left: -7.5rem;
+    left: -7.3rem;
+    z-index: 50;
     width: 31rem;
     padding: 1.8rem 2rem;
     box-sizing: border-box;
@@ -1175,5 +1188,11 @@
     right: 1rem;
     width: 1.2rem;
     height: 1.2rem;
+  }
+
+  &.active {
+    .tooltip-box {
+      display: block;
+    }
   }
 }

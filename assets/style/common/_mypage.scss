@@ -82,6 +82,7 @@
   }
   .keypad-body {
     overflow: hidden;
+    background: #222;
     ul {
       margin-left: -0.1rem;
       overflow: hidden;
@@ -89,12 +90,12 @@
         float: left;
         width: 25%;
         height: 6rem;
+        box-sizing: border-box;
+        border-left: 0.1rem solid #222;
+        border-top: 0.1rem solid #222;
+        font-size: 2.2rem;
         color: $fcF;
         text-align: center;
-        box-sizing: border-box;
-        border-left: 0.1rem solid $fc1;
-        border-top: 0.1rem solid $fc1;
-        font-size: 2.2rem;
         button {
           display: block;
           width: 100%;
@@ -117,13 +118,13 @@
     }
     .apply {
       .refresh {
+        width: 25%;
         font-size: 1.3rem;
         color: $fc9;
-        width: 25%;
       }
       .confirm {
-        font-size: 1.5rem;
         width: 75%;
+        font-size: 1.5rem;
       }
     }
   }
