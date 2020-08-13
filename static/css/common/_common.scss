@@ -94,7 +94,7 @@ $fcF9: #f9f9f9;
   1 > ·
   2 > -
 */
-@mixin listdot($mt, $fz, $fc, $dotSt) {
+@mixin listdot($mt, $fz, $fc, $dotSt, $dotCol: null) {
   li {
     position: relative;
     padding-left: 1.2rem;
@@ -119,6 +119,12 @@ $fcF9: #f9f9f9;
         height: 0.2rem;
         background: $fc6;
         border-radius: 50%;
+      }
+    }
+
+    @if $dotCol != null {
+      &::before {
+        background: $dotCol;
       }
     }
   }
