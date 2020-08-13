@@ -629,10 +629,7 @@
     display: flex;
     align-items: center;
 
-    .tooltip2 {
-      display: inline-block;
-      width: 1.6rem;
-      height: 1.6rem;
+    .bg-icon {
       margin-left: 0.5rem;
     }
   }
@@ -1185,13 +1182,20 @@
 
 .wrap-tooltip {
   position: relative;
-  z-index: 50;
+
+  .tooltip2 {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 0.5rem;
+  }
 
   .tooltip-box {
     display: none;
     position: absolute;
     top: 3rem;
     left: -7.5rem;
+    z-index: 50;
     width: 31rem;
     padding: 1.8rem 2rem;
     box-sizing: border-box;
