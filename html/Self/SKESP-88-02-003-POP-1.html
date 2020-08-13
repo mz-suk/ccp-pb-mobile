@@ -1,153 +1,151 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
-  <title>Document</title>
-  <script>
-    function setFontSize() {
-      var doc = document.documentElement,
-        fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
-      fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
 
-      doc.style.fontSize = fontSizeVal + "%";
-    }
-    setFontSize();
-    window.addEventListener("resize", setFontSize);
-  </script>
-  <link rel="stylesheet" href="../../assets/css/style.css" />
-</head>
+  <body>
+    <div id="container"></div>
 
-<body>
-  <div id="container"></div>
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">이용/시작 시간 설정</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
 
-  <!-- Popup -->
-  <div class="wrapper-layer pos-right">
-    <div class="wrap-layer">
-      <header class="header header-popup">
-        <h1 class="title">이용/시작 시간 설정</h1>
-        <div class="right">
-          <button type="button" class="bg-icon close">닫기</button>
-        </div>
-      </header>
-
-      <div class="wrap-contents">
-        <div class="wrap-setting">
-          <div class="setting-cont">
-            <div class="title-sub">
-              <p>이용시간 선택</p>
+        <div class="wrap-contents">
+          <div class="wrap-setting">
+            <div class="setting-cont">
+              <div class="title-sub">
+                <p>이용시간 선택</p>
+              </div>
+              <p class="desc">원하시는 시간을 선택 하시거나, 직접 입력 해주세요.</p>
+              <div class="input-spinner">
+                <div class="input-box">
+                  <input type="number" value="30" />
+                  <p>분<span>(최대 300분)</span></p>
+                </div>
+                <button type="button" class="minus" disabled>감소</button>
+                <button type="button" class="plus">증가</button>
+              </div>
+              <div class="wrap-checkbox">
+                <div class="checkbox type1">
+                  <input type="radio" id="chk13" name="minute1" checked />
+                  <label for="chk13">60분</label>
+                </div>
+                <div class="checkbox type1">
+                  <input type="radio" id="chk14" name="minute1" />
+                  <label for="chk14">120분</label>
+                </div>
+                <div class="checkbox type1">
+                  <input type="radio" id="chk15" name="minute1" />
+                  <label for="chk15">180분</label>
+                </div>
+                <div class="checkbox type1">
+                  <input type="radio" id="chk16" name="minute1" />
+                  <label for="chk16">240분</label>
+                </div>
+              </div>
             </div>
-            <p class="desc">원하시는 시간을 선택 하시거나, 직접 입력 해주세요.</p>
-            <div class="input-spinner">
-              <div class="input-box">
-                <input type="number" value="30" />
-                <p>분<span>(최대 300분)</span></p>
+
+            <div class="setting-cont">
+              <div class="title-sub">
+                <p>시작시간 선택</p>
+                <button type="button" class="bg-icon refresh">새로고침</button>
               </div>
-              <button type="button" class="minus">감소</button>
-              <button type="button" class="plus">증가</button>
-            </div>
-            <div class="wrap-checkbox">
-              <div class="checkbox type1">
-                <input type="radio" id="chk13" name="minute1" checked />
-                <label for="chk13">60분</label>
+              <div class="wrap-time">
+                <p class="title">오전</p>
+                <div class="wrap-checkbox">
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk1" name="am" checked />
+                    <label for="chk1">8시</label>
+                  </div>
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk2" name="am" />
+                    <label for="chk2">9시</label>
+                  </div>
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk3" name="am" />
+                    <label for="chk3">10시</label>
+                  </div>
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk4" name="am" />
+                    <label for="chk4">11시</label>
+                  </div>
+                </div>
               </div>
-              <div class="checkbox type1">
-                <input type="radio" id="chk14" name="minute1" />
-                <label for="chk14">120분</label>
+              <div class="wrap-time">
+                <p class="title">오후</p>
+                <div class="wrap-checkbox">
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk5" name="pm" checked />
+                    <label for="chk5">16시</label>
+                  </div>
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk6" name="pm" />
+                    <label for="chk6">17시</label>
+                  </div>
+                </div>
               </div>
-              <div class="checkbox type1">
-                <input type="radio" id="chk15" name="minute1" />
-                <label for="chk15">180분</label>
-              </div>
-              <div class="checkbox type1">
-                <input type="radio" id="chk16" name="minute1" />
-                <label for="chk16">240분</label>
+              <div class="wrap-time">
+                <p class="title">분</p>
+                <div class="wrap-checkbox">
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk7" name="minute2" checked />
+                    <label for="chk7">정각</label>
+                  </div>
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk8" name="minute2" />
+                    <label for="chk8">10분</label>
+                  </div>
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk9" name="minute2" />
+                    <label for="chk9">20분</label>
+                  </div>
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk10" name="minute2" />
+                    <label for="chk10">30분</label>
+                  </div>
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk11" name="minute2" />
+                    <label for="chk11">40분</label>
+                  </div>
+                  <div class="checkbox type1">
+                    <input type="radio" id="chk12" name="minute2" />
+                    <label for="chk12">50분</label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="setting-cont">
-            <div class="title-sub">
-              <p>시작시간 선택</p>
-              <button type="button" class="bg-icon refresh">새로고침</button>
-            </div>
-            <div class="wrap-time">
-              <p class="title">오전</p>
-              <div class="wrap-checkbox">
-                <div class="checkbox type1">
-                  <input type="radio" id="chk1" name="am" checked />
-                  <label for="chk1">8시</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk2" name="am" />
-                  <label for="chk2">9시</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk3" name="am" />
-                  <label for="chk3">10시</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk4" name="am" />
-                  <label for="chk4">11시</label>
-                </div>
-              </div>
-            </div>
-            <div class="wrap-time">
-              <p class="title">오후</p>
-              <div class="wrap-checkbox">
-                <div class="checkbox type1">
-                  <input type="radio" id="chk5" name="pm" checked />
-                  <label for="chk5">16시</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk6" name="pm" />
-                  <label for="chk6">17시</label>
-                </div>
-              </div>
-            </div>
-            <div class="wrap-time">
-              <p class="title">분</p>
-              <div class="wrap-checkbox">
-                <div class="checkbox type1">
-                  <input type="radio" id="chk7" name="minute2" checked />
-                  <label for="chk7">정각</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk8" name="minute2" />
-                  <label for="chk8">10분</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk9" name="minute2" />
-                  <label for="chk9">20분</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk10" name="minute2" />
-                  <label for="chk10">30분</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk11" name="minute2" />
-                  <label for="chk11">40분</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk12" name="minute2" />
-                  <label for="chk12">50분</label>
-                </div>
-              </div>
-            </div>
+          <div class="fix-footer-area">
+            <!-- <button type="button" class="btn type2 color4" disabled>선택완료</button> -->
+            <button type="button" class="btn type2 color4">선택완료</button>
           </div>
-        </div>
-
-        <div class="fix-footer-area">
-          <!-- <button type="button" class="btn type2 color4" disabled>선택완료</button> -->
-          <button type="button" class="btn type2 color4">선택완료</button>
         </div>
       </div>
+
+      <div class="mask"></div>
     </div>
-
-    <div class="mask"></div>
-  </div>
-  <!-- //Popup -->
-</body>
-
+    <!-- //Popup -->
+  </body>
 </html>
