@@ -371,6 +371,48 @@
       }
     }
   }
+  &.type5 {
+    .tab-menu {
+      position: relative;
+      display: flex;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 0.1rem;
+        background: $fcF0;
+        z-index: 0;
+      }
+      li {
+        position: relative;
+        margin: 0 1.5rem;
+        padding-bottom: 1rem;
+        flex: 0;
+        height: auto;
+        font-size: 1.5rem;
+        text-align: center;
+        white-space: nowrap;
+        border: 0 none;
+        background: $fcF;
+        color: $fc1;
+        z-index: 1;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &.active {
+          color: $pc3;
+          border-bottom: 0.2rem solid $pc3;
+        }
+      }
+    }
+  }
 }
 
 .filter-layer {
@@ -552,6 +594,11 @@
   .wrap-btn {
     margin-top: 4rem;
     text-align: center;
+  }
+  .wrap-car-info {
+    .wrap-btn {
+      margin: 0.5rem 0;
+    }
   }
 
   .tab-content {
@@ -743,6 +790,9 @@
 .list-dot {
   // default   :  margin-top, font-size, color, dot style
   @include listdot(0.8rem, 1.1rem, $fc6, 0); // ·
+  &.color1 {
+    @include listdot(0.8rem, 1.1rem, $pc3, 0, $pc3);
+  }
 }
 
 // 카드박스타입
@@ -891,11 +941,11 @@
       align-items: center;
       height: 5.4rem;
       color: $fcF;
-      background: linear-gradient(to right, #ea002c 0%, #ff7a00 100%);
+      background: linear-gradient(to right, #ea002c 0%, #ff7a00 40%);
       box-sizing: border-box;
 
       &.grad1 {
-        background: linear-gradient(to right, #04a0f3 0%, #45d49a 100%);
+        background: linear-gradient(to right, #04a0f3 0%, #45d49a 40%);
       }
       .title {
         font-weight: 700;
@@ -942,6 +992,9 @@
 
     .info-sub-txt {
       color: $fc9;
+    }
+    .list-dot {
+      margin-top: 2rem;
     }
 
     .btn-area {

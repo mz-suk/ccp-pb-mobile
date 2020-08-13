@@ -500,6 +500,19 @@
   .list-coupon {
     margin-top: 3rem;
   }
+
+  .tab-content {
+    .wrap-tab {
+      margin-top: 3rem;
+    }
+  }
+
+  .coupon-top-select {
+    margin-top: 3rem;
+    & + .list-coupon {
+      margin-top: 2rem;
+    }
+  }
 }
 
 .point-cont {
