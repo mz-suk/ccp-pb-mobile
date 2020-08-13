@@ -306,12 +306,15 @@ textarea {
 
     &.minus {
       left: 0;
-      background: $fcF0 url(../../assets/img/layout/icon-minus.png) 50% 50% / 1.2rem no-repeat;
+      background: $fc1 url(../../assets/img/layout/icon-minus.png) 50% 50% / 1.2rem no-repeat;
     }
 
     &.plus {
       right: 0;
       background: $fc1 url(../../assets/img/layout/icon-plus.png) 50% 50% / 1.2rem no-repeat;
+    }
+    &:disabled {
+      background-color: $fcF0;
     }
   }
 
