@@ -56,8 +56,11 @@
   margin-bottom: 2rem;
   box-sizing: border-box;
   border-radius: 2rem;
-  background: #414141;
+  background: #414141 url(../../assets/img/layout/icon-card-sim.png) 2.5rem 6.5rem / 2.7rem 2.1rem no-repeat;
   color: $fcF;
+  &.type-yellow {
+    background-color: #ffcb00;
+  }
   .bottom-area {
     position: absolute;
     left: 0;
