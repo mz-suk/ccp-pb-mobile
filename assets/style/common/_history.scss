@@ -64,7 +64,6 @@
 }
 
 .review-cont {
-  padding-bottom: 6rem;
   background: $fcF;
   .review-row {
     padding: 4rem 2rem 3.5rem;
@@ -183,7 +182,7 @@
       padding-top: 0.6rem;
     }
   }
-  .applay-row {
+  .apply-row {
     padding: 4rem 2rem 0;
     text-align: center;
     .title {
@@ -223,7 +222,7 @@
       }
     }
     .attention-info {
-      margin: 3rem 0 4rem;
+      margin: 3rem 0 0;
       padding: 1.5rem 0 0;
       border-top: 0.1rem solid $fcF0;
       text-align: left;
