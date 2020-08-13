@@ -1,12 +1,15 @@
 .block-layout {
-  .card-list {
+  .card-list-wrap {
     margin: 0 -2rem 0;
   }
 }
 
-.card-list {
-  border-top: 0.8rem solid $fcF9;
-  padding: 4rem 2rem;
+.card-list-wrap {
+  padding: 3.5rem 0 0;
+  .card-list-inner {
+    border-top: 0.8rem solid $fcF9;
+    padding: 4rem 2rem 0;
+  }
   .title {
     font-size: 1.5rem;
     color: $fc1;
