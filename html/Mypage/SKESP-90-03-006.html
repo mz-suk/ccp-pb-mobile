@@ -38,7 +38,75 @@
 
       <!-- Wrap-contents -->
       <div class="wrap-contents">
-        test
+        <div>
+          <div class="row-section">
+            <div class="card-box type-yellow">
+              <div>
+                <p class="card-title">KB 국민카드</p>
+              </div>
+              <div class="bottom-area">
+                <div class="card-data">
+                  <p class="card-name">국민카드</p>
+                  <p class="card-number">
+                    <span>6514</span>
+                    <span>5141</span>
+                    <span>****</span>
+                    <span>****</span>
+                  </p>
+                </div>
+                <p class="card-date">MM/YY</p>
+              </div>
+            </div>
+            <div class="card-scan">
+              <button type="button" class="btn type2 color3"><i class="bg-icon photo"></i> 카드스캔</button>
+            </div>
+            <div class="form-wrap">
+              <div class="form-row">
+                <div class="row-cell">
+                  <p class="title"><label for="card-number">카드번호</label></p>
+                  <div class="form-card">
+                    <input type="text" id="card-number" placeholder="0000" maxlength="4" />
+                    <span>-</span>
+                    <input type="text" placeholder="0000" maxlength="4" />
+                    <span>-</span>
+                    <input type="password" placeholder="0000" maxlength="4" />
+                    <span>-</span>
+                    <input type="password" placeholder="0000" maxlength="4" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="row-cell">
+                  <p class="title"><label for="card-date">유효기간</label></p>
+                  <div class="form-input">
+                    <input type="text" id="card-date" placeholder="YY/MM" maxlength="4" />
+                  </div>
+                </div>
+                <div class="row-cell">
+                  <p class="title"><label for="card-pw">비밀번호</label></p>
+                  <div class="form-input">
+                    <input type="password" id="card-pw" placeholder="**" maxlength="2" />
+                  </div>
+                </div>
+              </div>
+              <div class="applay-check">
+                <button type="button" class="btn type2 color3">SK주유소 할인 체크하기 <i class="bg-icon more"></i></button>
+                <div class="wrap-tooltip">
+                  <button type="button" class="bg-icon tooltip2">툴팁</button>
+                  <!-- SHOW OR HIDE active 토글 -->
+                  <div class="tooltip-box active">
+                    <button type="button" class="bg-icon tooltip-close">닫기</button>
+                    <p>SK주유소 할인 체크를 해두시면 주유소에서<br />카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4" disabled="disabled">확인</button>
+          <!-- <button type="button" class="btn type2 color4">확인</button> -->
+        </div>
       </div>
       <!-- //Wrap-contents -->
 
@@ -46,6 +114,7 @@
     </div>
 
     <!-- KeyPad -->
+    <!-- SHOW OR HIDE active 토글 -->
     <div class="keypad">
       <div class="keypad-top">
         <p class="on-msg"><i class="bg-icon shield"></i> 보안 키패드 작동중</p>
