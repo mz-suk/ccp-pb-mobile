@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">쿠폰함</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="coupon-cont">
+          <div class="wrap-tab type1">
+            <ul class="tab-menu">
+              <li><button type="button">내 쿠폰 (2)</button></li>
+              <li class="active"><button type="button">다운 가능 쿠폰 (3)</button></li>
+            </ul>
+            <!-- 다운 가능 쿠폰 탭-->
+            <div class="tab-content">
+              <ul class="list-coupon">
+                <li class="info-type-box right-btn">
+                  <div class="info-type-cont">
+                    <div class="top">
+                      <span class="badge grad1">세차</span>
+                      <span class="date">2020.07.01 ~ 2020.07.31</span>
+                    </div>
+                    <div class="big-title"><strong>3,000</strong>원</div>
+                    <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
+                    <p class="info-txt2">15,000원 이상 구매 시 최대 6,000원 할인</p>
+                    <button type="button" class="btn-download" data-type="right-btn" title="다운로드"><i class="bg-icon download"></i></button>
+                  </div>
+                </li>
+                <li class="info-type-box right-btn">
+                  <div class="info-type-cont">
+                    <div class="top">
+                      <span class="badge grad1">세차</span>
+                      <span class="badge red">가맹점</span>
+                      <span class="date">2020.07.01 ~ 2020.07.31</span>
+                    </div>
+                    <div class="big-title"><strong>24</strong>%</div>
+                    <p class="info-txt">불스원프라자 플라자 대자점 쿠폰</p>
+                    <p class="info-txt2">15,000원 이상 구매 시 최대 6,000원 할인</p>
+                    <button type="button" class="btn-download" data-type="right-btn" title="다운로드"><i class="bg-icon download"></i></button>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-area grid">
+                <button type="button" class="btn">쿠폰 모두 받기<i class="bg-icon download"></i></button>
+                <!-- <button type="button" class="btn color6">쿠폰 다운로드가 완료되었습니다.</button> -->
+              </div>
+            </div>
+            <!-- //다운 가능 쿠폰 -->
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
