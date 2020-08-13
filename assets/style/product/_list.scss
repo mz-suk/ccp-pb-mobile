@@ -1163,7 +1163,9 @@
     background: linear-gradient(to right, #04a0f3 0%, #45d49a 100%);
     border-radius: 0.6rem;
     box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.08);
-
+    &.active {
+      display: block;
+    }
     p {
       color: $fcF;
       line-height: 1.5;
