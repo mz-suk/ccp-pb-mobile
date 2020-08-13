@@ -571,6 +571,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 10;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.6);
@@ -642,6 +643,29 @@
         vertical-align: middle;
         content: "";
       }
+    }
+  }
+
+  .detail {
+    position: relative;
+    padding-right: 9rem;
+
+    .checkbox-spinner {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .dropdown-area {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.1rem;
+
+    .edite-more {
+      width: 1.6rem;
+      height: 1.6rem;
+      filter: brightness(10);
     }
   }
 }
