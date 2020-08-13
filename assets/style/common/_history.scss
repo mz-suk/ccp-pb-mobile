@@ -99,6 +99,7 @@
     }
   }
   .label-area {
+    display: flex;
     padding-bottom: 1rem;
     .label {
       display: inline-block;
@@ -237,6 +238,9 @@
           font-size: 1.1rem;
         }
       }
+    }
+    .label-area {
+      justify-content: center;
     }
   }
   .img-wrap {
