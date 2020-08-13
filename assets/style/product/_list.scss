@@ -829,6 +829,9 @@
     .info-type-cont {
       padding-right: 5rem;
       background: $fcF;
+      .top .date {
+        margin-right: -2.5rem;
+      }
     }
 
     button[data-type="right-btn"] {
