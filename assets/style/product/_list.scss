@@ -531,7 +531,7 @@
 
     dt,
     dd {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
 
       &:last-of-type {
         margin-bottom: 0;
@@ -899,11 +899,11 @@
       align-items: center;
       height: 5.4rem;
       color: $fcF;
-      background: linear-gradient(to right, #ea002c 0%, #ff7a00 40%);
+      background: linear-gradient(to right, $gc3 0%, $gc4 40%);
       box-sizing: border-box;
 
       &.grad1 {
-        background: linear-gradient(to right, #04a0f3 0%, #45d49a 40%);
+        background: linear-gradient(to right, $gc1 0%, $gc2 40%);
       }
       .title {
         font-weight: 700;
@@ -1125,7 +1125,7 @@
 
     &.active {
       .accordion-title {
-        border-bottom: 0.1rem solid #111;
+        border-bottom: 0.1rem solid $fc1;
       }
 
       .bg-icon {
@@ -1160,7 +1160,7 @@
     width: 31rem;
     padding: 1.8rem 2rem;
     box-sizing: border-box;
-    background: linear-gradient(to right, #04a0f3 0%, #45d49a 100%);
+    background: linear-gradient(to right, $gc1 0%, $gc2 100%);
     border-radius: 0.6rem;
     box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.08);
 
