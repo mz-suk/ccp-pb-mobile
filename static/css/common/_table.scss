@@ -2,6 +2,21 @@
   width: 100%;
   table-layout: fixed;
   text-align: center;
+  &.type1 {
+    text-align: left;
+    th,
+    td {
+      border-left: none;
+      border-right: none;
+    }
+    th {
+      padding-left: 3.2rem;
+    }
+    td {
+      padding-left: 2rem;
+    }
+  }
+
   th {
     padding: 1.2rem 0.5rem;
     color: $fc1;

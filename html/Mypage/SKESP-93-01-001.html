@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="row-section">
+          <ul class="board-list">
+            <li>
+              <a href="#">
+                <p class="title">[공지] 공지사항 리스트 타이틀 길이가 길때 케이스 공지사항 리스트 타이틀 길이가 길때 케이스 공지사항 리스트 타이틀 길이가 길때 케이스</p>
+                <p class="info">
+                  <span class="date">2020.07.31</span>
+                  <i class="bg-icon attach2">첨부파일</i>
+                  <i class="bg-icon new-label">NEW</i>
+                </p>
+                <i class="bg-icon more"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="title">[공지] 공지사항 리스트 타이틀 길이가 길때 케이스 공지사항 리스트 타이틀 길이가 길때 케이스 공지사항 리스트 타이틀 길이가 길때 케이스</p>
+                <p class="info">
+                  <span class="date">2020.07.31</span>
+                  <i class="bg-icon attach2">첨부파일</i>
+                  <i class="bg-icon new-label">NEW</i>
+                </p>
+                <i class="bg-icon more"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="title">[공지] 공지사항 리스트 타이틀 길이가 길때 케이스 공지사항 리스트 타이틀 길이가 길때 케이스 공지사항 리스트 타이틀 길이가 길때 케이스</p>
+                <p class="info">
+                  <span class="date">2020.07.31</span>
+                  <!-- <i class="bg-icon attach2">첨부파일</i>
+                  <i class="bg-icon new-label">NEW</i> -->
+                </p>
+                <i class="bg-icon more"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="title">[공지] 공지사항 리스트 타이틀 길이가 길때 케이스 공지사항 리스트 타이틀 길이가 길때 케이스 공지사항 리스트 타이틀 길이가 길때 케이스</p>
+                <p class="info">
+                  <span class="date">2020.07.31</span>
+                  <!-- <i class="bg-icon attach2">첨부파일</i>
+                  <i class="bg-icon new-label">NEW</i> -->
+                </p>
+                <i class="bg-icon more"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

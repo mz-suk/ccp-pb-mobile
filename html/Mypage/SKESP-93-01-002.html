@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="row-section">
+          <div class="board-detail">
+            <div class="detail-title">
+              <p class="title">
+                [공지] 현대카드 일부 주유소 결제오류 안내 두줄짜리안내 메세지 케이스
+                <i class="bg-icon new-label">NEW</i>
+              </p>
+              <p class="info">
+                <span class="date">2020.07.31</span>
+              </p>
+              <div class="attach-box">
+                <button type="button" class="btn-attach"><i class="bg-icon attach"></i>환불처리건.pdf</button>
+                <button type="button" class="btn-attach"><i class="bg-icon attach"></i>환불처리건.pdf</button>
+              </div>
+            </div>
+            <div class="detail-body">
+              <p>신규 가맹된 33개 주유소에서 현대카드 결제가 정상적으로 이루어 지지 않으니, 다른 카드사의 카드로 결제하여 주시기 바랍니다. 해당 오류는 차주 8/3(월) 수정 예정입니다</p>
+              <p><img src="../../assets/img/temp/step01.png" alt="" /></p>
+              <p>신규 가맹된 33개 주유소에서 현대카드 결제가 정상적으로 이루어 지지 않으니, 다른 카드사의 카드로 결제하여 주시기 바랍니다. 해당 오류는 차주 8/3(월) 수정 예정입니다</p>
+              <p><img src="../../assets/img/temp/step01.png" alt="" /></p>
+            </div>
+            <button type="button" class="btn color1">목록으로 가기</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
