@@ -135,10 +135,15 @@
     }
 
     .layer-close {
-      bottom: 1rem;
+      bottom: 3rem;
       left: 50%;
+      width: 3.6rem;
+      height: 3.6rem;
       transform: translate(-50%, -50%);
-      filter: brightness(30);
+      filter: invert(100%);
+      background-color: $fcF;
+      background-size: 1.8rem;
+      border-radius: 50%;
     }
   }
 
@@ -258,13 +263,13 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 8.5rem 0;
+  padding: 11rem 0;
   text-align: center;
 
   .bg-icon {
     width: 2rem;
     height: 2rem;
-    margin-top: 2.5rem;
+    margin-top: 2.1rem;
     padding: 2.2rem;
     background-color: $fcF;
     background-size: 2rem;

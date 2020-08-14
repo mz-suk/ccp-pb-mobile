@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">이용약관</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-policy">
+          <div class="wrap-select">
+            <select class="select">
+              <option>시행일 2020.12.15</option>
+              <option>시행일 2020.12.16</option>
+              <option>시행일 2020.12.17</option>
+            </select>
+          </div>
+          <txt class="row">
+            SK에너지(이하 “회사”라 함)은 이용자의 개인정보를 소중하게 생각하며 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」과 「개인정보보호법」 등 개인정보 보호 법령을 준수하고자 노력하고
+            있습니다. 회사는 개인정보 처리방침을 통해 이용자의 개인정보 처리를 포함한 회사의 개인정보 보호를 위한 조치 내용을 이용자에게 알리고, 회사와 이용자 간의 권리 및 의무관계를 규정하여 이용자의
+            개인정보 자기결정권을 보장합니다. 본 개인정보 처리방침은 머핀 서비스 웹 및 앱에 적용됩니다.
+          </txt>
+          <div class="title">1. 이용자 및 법정대리인의 권리와 의무 및 행사방법</div>
+          <div class="txt-row">회사는 이용자의 권리를 보호하고 이용자는 안전한 이용에 대한 의무를 성실하게 이행하여야 합니다.</div>
+          <ul class="list-dot type1">
+            <li>
+              <strong>이용자 권리</strong>
+              <ul class="list-dot type2">
+                <li>
+                  언제든지 자신의 개인정보를 조회하고 수정할 수 있습니다. <br />
+                  <button type="button">[회원정보수정] 클릭</button>
+                </li>
+                <li>
+                  언제든지 자신의 개인정보를 조회하고 수정할 수 있습니다.<br />
+                  <button type="button">[회원정보수정] 클릭</button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <table class="tbl type1">
+            <colgroup>
+              <col width="30%" />
+              <col />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>구분</th>
+                <td>고객행복센터</td>
+              </tr>
+              <tr>
+                <th>전화</th>
+                <td>1670-1234</td>
+              </tr>
+              <tr>
+                <th>이메일</th>
+                <td>privacy@sk.com</td>
+              </tr>
+              <tr>
+                <th>기타</th>
+                <td>머핀 어플리케이션 내 1:1상담</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
