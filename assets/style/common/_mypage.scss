@@ -160,6 +160,101 @@
   }
 }
 
+.board-list {
+  .title {
+    color: $fc1;
+    @include clamp(1);
+  }
+  .info {
+    margin-top: 0.3rem;
+    .date {
+      display: inline-block;
+      font-size: 1.2rem;
+      vertical-align: middle;
+      color: $fc6;
+    }
+    .bg-icon {
+      margin-left: 0.2rem;
+      &.attach2 {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+      &.new-label {
+        width: 2.516rem;
+        height: 0.85rem;
+      }
+    }
+  }
+  li {
+    border-bottom: 0.1rem solid $fcF0;
+    &:first-child a {
+      padding-top: 0;
+      .more {
+        top: 0.3rem;
+      }
+    }
+    & > a {
+      display: block;
+      padding: 2rem 2rem 2rem 1rem;
+      position: relative;
+    }
+    .bg-icon {
+      &.more {
+        position: absolute;
+        right: 0.7rem;
+        top: 2.3rem;
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+  }
+}
+
+.board-detail {
+  & > .btn {
+    width: 100%;
+  }
+  .detail-title {
+    .title {
+      font-size: 1.7rem;
+      color: $fc1;
+      .new-label {
+        margin: -0.6rem 0 0 0.3rem;
+        width: 2.516rem;
+        height: 0.85rem;
+      }
+    }
+    .info {
+      margin-top: 0.6rem;
+      font-size: 1.2rem;
+      color: $fc6;
+    }
+  }
+  .attach-box {
+    margin-top: 1.5rem;
+    padding: 1.2rem 1.5rem;
+    border: 0.1rem solid #f0f0f0;
+    button {
+      &:first-child {
+        margin-top: 0;
+      }
+      display: block;
+      width: 100%;
+      margin-top: 1rem;
+      text-align: left;
+      color: $fc1;
+    }
+  }
+  .detail-body {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    img {
+      width: 100%;
+      margin: 1.5rem 0;
+    }
+  }
+}
+
 .keypad {
   display: none;
   position: fixed;
