@@ -248,6 +248,11 @@
   .detail-body {
     padding-top: 2.5rem;
     padding-bottom: 4rem;
+    p {
+      &:first-child img {
+        margin-top: 0;
+      }
+    }
     img {
       width: 100%;
       margin: 1.5rem 0;
