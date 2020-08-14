@@ -345,3 +345,21 @@
     }
   }
 }
+
+.pattern-info {
+  padding: 3rem 0 4rem;
+  .title {
+    font-size: 1.5rem;
+    color: $fc1;
+    .bg-icon {
+      width: 0.6rem;
+      height: 0.6rem;
+      vertical-align: top;
+      margin-top: 0.7rem;
+    }
+  }
+  .desc {
+    padding: 0.5rem 0 0 1rem;
+    color: $pc3;
+  }
+}
