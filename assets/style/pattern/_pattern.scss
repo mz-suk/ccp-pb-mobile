@@ -20,6 +20,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  &.type1 {
+    & > div {
+      padding-top: 0;
+      width: 100%;
+      height: 17rem;
+    }
+  }
 
   & > div {
     position: relative;
@@ -29,6 +36,7 @@
     font-size: 1.5rem;
     border: 0.1rem dotted $fc9;
     border-radius: 1.6rem;
+
     button {
       position: absolute;
       top: 0;
