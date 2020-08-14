@@ -112,6 +112,9 @@ $fcF9: #f9f9f9;
     span {
       color: $gc3;
     }
+    ul {
+      margin-top: 0.5rem;
+    }
     @if $dotSt==0 {
       &:before {
         left: calc((1.2rem - 0.2rem) / 2);
@@ -120,11 +123,26 @@ $fcF9: #f9f9f9;
         background: $fc6;
         border-radius: 50%;
       }
+    } @else if $dotSt == 1 {
+      &:before {
+        left: calc((1.2rem - 0.5rem) / 2);
+        width: 0.5rem;
+        height: 0.1rem;
+        background: $fc6;
+        border-radius: none;
+      }
     }
-
+    // dot color
     @if $dotCol != null {
       &::before {
         background: $dotCol;
+      }
+    }
+    //dot size
+    @if $fz == 1.3rem {
+      &::before {
+        width: 0.3rem;
+        height: 0.3rem;
       }
     }
   }
