@@ -19,6 +19,7 @@
   }
   .list {
     margin-left: -0.9rem;
+    overflow: hidden;
     li {
       float: left;
       box-sizing: border-box;
@@ -83,8 +84,8 @@
     .card-date {
       position: absolute;
       right: 2.5rem;
-      bottom: 0.2rem;
-      font-size: 1, 5rem;
+      bottom: 0rem;
+      font-size: 1.4rem;
     }
   }
 }

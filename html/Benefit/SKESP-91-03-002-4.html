@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">이벤트 상세</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon share">
+            공유하기
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-view">
+          <div class="view-title">
+            <div class="wrap-label">
+              <span class="label">당첨된 이벤트</span>
+              <span class="label">참여한 이벤트</span>
+            </div>
+            <strong class="title">[응모 이벤트] 이번 주말 주유 특가!</strong>
+            <p class="sub-txt">50,000원 충전시, 8,000원을 더 드리는 혜택</p>
+            <p class="date">2020.07.31 ~ 2020.08.31</p>
+          </div>
+
+          <div class="view-content">
+            <div class="winner">
+              <strong class="title">당첨자</strong>
+              <ul class="list-dot">
+                <li>fksenddlqkqh11</li>
+                <li>khvopp45</li>
+                <li>Happydays67</li>
+                <li>sktmapb55</li>
+                <li>love1004</li>
+                <li>sktmapb55</li>
+                <li>sktmapb55</li>
+                <li>sktmapb55</li>
+                <li>sktmapb55</li>
+                <li>sktmapb55</li>
+              </ul>
+            </div>
+
+            <div class="view-etc">
+              <strong class="title">유의사항</strong>
+              <ul class="list-dot">
+                <li>본 이벤트는 당사 사정에 따라 조기종료 될 수 있습니다.</li>
+                <li>머핀 회원만 제공되는 서비스 입니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>

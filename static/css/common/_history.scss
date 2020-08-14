@@ -64,7 +64,6 @@
 }
 
 .review-cont {
-  padding-bottom: 6rem;
   background: $fcF;
   .review-row {
     padding: 4rem 2rem 3.5rem;
@@ -100,6 +99,7 @@
     }
   }
   .label-area {
+    display: flex;
     padding-bottom: 1rem;
     .label {
       display: inline-block;
@@ -223,7 +223,7 @@
       }
     }
     .attention-info {
-      margin: 3rem 0 4rem;
+      margin: 3rem 0 0;
       padding: 1.5rem 0 0;
       border-top: 0.1rem solid $fcF0;
       text-align: left;
@@ -238,6 +238,9 @@
           font-size: 1.1rem;
         }
       }
+    }
+    .label-area {
+      justify-content: center;
     }
   }
   .img-wrap {
