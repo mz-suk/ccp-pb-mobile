@@ -347,10 +347,11 @@
 }
 
 .pattern-info {
-  padding: 3rem 0 4rem;
+  padding: 3rem 0 0;
   .title {
     font-size: 1.5rem;
     color: $fc1;
+    padding-left: 0.3rem;
     .bg-icon {
       width: 0.6rem;
       height: 0.6rem;
@@ -359,7 +360,7 @@
     }
   }
   .desc {
-    padding: 0.5rem 0 0 1rem;
+    padding: 0.5rem 0 0 1.3rem;
     color: $pc3;
   }
 }

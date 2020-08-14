@@ -113,11 +113,31 @@ textarea {
   }
 }
 .tab-checkbox-cont {
-  .form-input {
+  .checkbox-cont {
     &.active {
       display: block;
     }
+    .right-txt {
+      input {
+        text-align: right;
+        padding-right: 1rem;
+      }
+    }
     display: none;
+  }
+  .form-input {
+    & + .wrap-checkbox {
+      margin-top: 1.5rem;
+    }
+  }
+  .wrap-checkbox {
+    .checkbox {
+      flex: 1;
+      label {
+        margin: 0;
+        width: 100%;
+      }
+    }
   }
 }
 
