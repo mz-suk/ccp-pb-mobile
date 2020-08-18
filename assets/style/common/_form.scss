@@ -502,6 +502,58 @@ input[type="checkbox"] {
     }
   }
 }
+.checkbox-btn {
+  input[type="checkbox"] {
+    position: absolute;
+    left: -9999rem;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    font-size: 0;
+  }
+  input[type="checkbox"] + label {
+    position: relative;
+    margin: 0;
+    padding: 0.6rem 1.2rem 0.6rem 3rem;
+    display: inline-block;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: $fc9;
+    background: $fcF;
+    border: 0.1rem solid $fcD7;
+    border-radius: 1.25rem;
+    transition: color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 2.3rem;
+      height: 2.3rem;
+      z-index: 1;
+      background: $fcF url(../../../assets/img/layout/icon-chk-off.png) no-repeat center center;
+      background-size: 1.2rem auto;
+      border: 0.1rem solid $fcD7;
+      border-radius: 50%;
+      box-sizing: border-box;
+      transition: right 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+  }
+  input[type="checkbox"]:checked + label {
+    color: $fc1;
+    background: $pc2;
+    border-color: $pc6;
+    transition: color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
+    &:before {
+      background: $fcF url(../../../assets/img/layout/icon-chk-on.png) no-repeat center center;
+      background-size: 1.2rem auto;
+      border-color: $pc6;
+      box-shadow: 0.1rem 0 0.2rem 0 rgba(252, 203, 58, 1);
+      transition: right 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+  }
+}
 .form-list {
   .form-div:not(:first-child) {
     margin-top: 4rem;

@@ -276,3 +276,33 @@
     border-radius: 50%;
   }
 }
+
+.wrap-fullscreen {
+  position: relative;
+  height: 100%;
+
+  .bg-icon.close {
+    width: 4rem;
+    height: 4rem;
+    background-size: 2rem 2rem;
+    filter: brightness(30);
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    z-index: 9;
+  }
+}
+.list-review-zoom {
+  height: 100%;
+  background-color: $fc1;
+
+  .swiper-slide-zoomed {
+    overflow: hidden;
+  }
+  .swiper-pagination-fraction {
+    bottom: auto;
+    top: 1.4rem;
+    font-size: 1.8rem;
+    color: $fcF;
+  }
+}
