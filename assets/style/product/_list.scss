@@ -520,6 +520,10 @@
   .bg-icon {
     width: 1.6rem;
     height: 1.6rem;
+    &.size2 {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }
 

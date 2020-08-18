@@ -225,4 +225,9 @@
       }
     }
   }
+  &.center {
+    .tab-menu {
+      justify-content: space-around;
+    }
+  }
 }
