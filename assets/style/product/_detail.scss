@@ -1,4 +1,7 @@
 .detail-page {
+  & + div .row-section {
+    border-top: 0.8rem solid #f9f9f9;
+  }
   .item-top {
     .swiper-slide {
       height: 20rem;

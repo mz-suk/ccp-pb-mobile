@@ -131,6 +131,16 @@ textarea {
     }
   }
   .wrap-checkbox {
+    .btn {
+      flex: 1;
+      margin: 0;
+      width: 100%;
+      &.active {
+        border-color: $fc1;
+        background-color: $fc1;
+        color: $fcF;
+      }
+    }
     .checkbox {
       flex: 1;
       label {
