@@ -45,6 +45,25 @@ textarea {
     right: 1rem;
     transform: translateY(-50%);
   }
+  .form-more-msg {
+    padding: 1rem 0 0 1rem;
+    font-size: 1.1rem;
+    color: $fc9;
+    .more-number {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 0.5rem;
+        margin: 0 0 0 0.5rem;
+        height: 0.7rem;
+        border-left: 0.1rem dotted $fc9;
+      }
+    }
+  }
 }
 
 .form-text-area {
@@ -106,7 +125,7 @@ textarea {
   padding: 2.5rem 0 1.5rem;
   .checkbox {
     margin-left: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     &:first-child {
       margin-left: 0;
     }
@@ -422,6 +441,14 @@ input[type="checkbox"] {
     margin-top: 0.45rem;
     font-size: 1.1rem;
     color: $fc6;
+    .dotted-list {
+      li {
+        color: $fc6;
+        &:before {
+          background-color: $fc6;
+        }
+      }
+    }
   }
 }
 .checkbox-spinner {
