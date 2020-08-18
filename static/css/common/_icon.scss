@@ -350,6 +350,9 @@
   &.meter {
     background-image: url(~assets/img/layout/icon-meter.png);
   }
+  &.coupon-label {
+    background-image: url(~assets/img/layout/icon-coupon-label.png);
+  }
 }
 // 뱃지
 
@@ -387,5 +390,10 @@
     color: $fcF;
     border: none;
     background: linear-gradient(to right, $gc1 0%, $gc2 100%);
+  }
+  &.grad2 {
+    color: $fcF;
+    border: none;
+    background: linear-gradient(to right, $gc3 0%, $gc4 100%);
   }
 }
