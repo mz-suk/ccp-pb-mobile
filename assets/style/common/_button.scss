@@ -192,6 +192,19 @@
     background-size: 1.2rem auto;
     vertical-align: top;
   }
+  &.type1 {
+    font-size: 1.3rem;
+    color: $fc1;
+    &:before {
+      margin-top: -0.1rem;
+      margin-right: 0.3rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      background: url(../../assets/img/layout/icon-review-del.png) no-repeat 0 0;
+      background-size: 1.6rem auto;
+      vertical-align: top;
+    }
+  }
 }
 .btn-chk-ok {
   font-size: 1.1rem;
