@@ -245,3 +245,10 @@ html {
 .wrap-contents {
   padding-bottom: 9rem;
 }
+
+.swiper-pagination-current {
+  opacity: 1;
+}
+.swiper-pagination-total {
+  opacity: 0.5;
+}
