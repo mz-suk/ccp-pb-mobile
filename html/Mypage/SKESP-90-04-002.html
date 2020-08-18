@@ -37,87 +37,109 @@
       <!-- //Header -->
       <!-- Wrap-contents -->
       <div class="wrap-contents">
-        <div class="row-section">
-          <div class="wrap-tab type3">
-            <ul class="tab-menu">
-              <li class="active">
-                <button type="button">주유</button>
-              </li>
-              <li>
-                <button type="button">세차</button>
-              </li>
-              <li>
-                <button type="button">텍스트</button>
-              </li>
-            </ul>
-          </div>
-          <div class="title-sub pos-top">
-            <strong class="title"><i class="bg-icon meter"></i>주유량을 선택해주세요.</strong>
-          </div>
-          <div class="tab-checkbox">
-            <div class="checkbox type4">
-              <input type="radio" id="chk7-1" name="group4" checked="" />
-              <label for="chk7-1">
-                <p class="left">금액</p>
-              </label>
+        <div>
+          <div class="row-section">
+            <div class="wrap-tab type3">
+              <ul class="tab-menu">
+                <li class="active">
+                  <button type="button">휘발유</button>
+                </li>
+                <li>
+                  <button type="button">경유</button>
+                </li>
+                <li>
+                  <button type="button">고급휘발유</button>
+                </li>
+              </ul>
             </div>
-            <div class="checkbox type4">
-              <input type="radio" id="chk7-2" name="group4" />
-              <label for="chk7-2">
-                <p class="left">리터</p>
-              </label>
+            <div class="title-sub pos-top">
+              <strong class="title"><i class="bg-icon meter size2"></i>주유량을 선택해주세요.</strong>
             </div>
-          </div>
-          <div class="tab-checkbox-cont">
-            <!-- active 클래스 추가 -->
-            <div class="checkbox-cont active">
-              <div class="form-input right-txt">
-                <input type="tel" placeholder="최대 150,000 원" />
+            <div class="tab-checkbox">
+              <div class="checkbox type4">
+                <input type="radio" id="chk7-1" name="group4" checked="" />
+                <label for="chk7-1">
+                  <p class="left">금액</p>
+                </label>
               </div>
-              <div class="wrap-checkbox">
-                <div class="checkbox type1">
-                  <input type="radio" id="chk1-1" name="radio-1" />
-                  <label for="chk1-1">+1만</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk1-2" name="radio-1" />
-                  <label for="chk1-2">+5만</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk1-3" name="radio-1" />
-                  <label for="chk1-3">+10만</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk1-4" name="radio-1" />
-                  <label for="chk1-4">가득</label>
-                </div>
+              <div class="checkbox type4">
+                <input type="radio" id="chk7-2" name="group4" />
+                <label for="chk7-2">
+                  <p class="left">리터</p>
+                </label>
               </div>
             </div>
-            <div class="checkbox-cont active">
+            <div class="tab-checkbox-cont">
               <!-- active 클래스 추가 -->
-              <div class="form-input right-txt">
-                <input type="tel" placeholder="최대 70L" />
+              <div class="checkbox-cont active">
+                <div class="form-input right-txt">
+                  <input type="tel" placeholder="최대 150,000 원" />
+                </div>
+                <div class="wrap-checkbox">
+                  <div class="checkbox type1">
+                    <!-- 클릭시 active 클래스 추가 -->
+                    <button type="button" class="btn size1 color7 active">+1만</button>
+                    <!-- <input type="radio" id="chk1-1" name="radio-1" />
+                    <label for="chk1-1">+1만</label> -->
+                  </div>
+                  <div class="checkbox type1">
+                    <!-- 클릭시 active 클래스 추가 -->
+                    <button type="button" class="btn size1 color7">+5만</button>
+                    <!-- <input type="radio" id="chk1-2" name="radio-1" />
+                    <label for="chk1-2">+5만</label> -->
+                  </div>
+                  <div class="checkbox type1">
+                    <!-- 클릭시 active 클래스 추가 -->
+                    <button type="button" class="btn size1 color7">+10만</button>
+                    <!-- <input type="radio" id="chk1-3" name="radio-1" />
+                    <label for="chk1-3">+10만</label> -->
+                  </div>
+                  <div class="checkbox type1">
+                    <!-- 클릭시 active 클래스 추가 -->
+                    <button type="button" class="btn size1 color7">가득</button>
+                    <!-- <input type="radio" id="chk1-4" name="radio-1" />
+                    <label for="chk1-4">가득</label> -->
+                  </div>
+                </div>
               </div>
-              <div class="wrap-checkbox">
-                <div class="checkbox type1">
-                  <input type="radio" id="chk2-1" name="radio-2" />
-                  <label for="chk2-1">+10L</label>
+              <div class="checkbox-cont active">
+                <!-- active 클래스 추가 -->
+                <div class="form-input right-txt">
+                  <input type="tel" placeholder="최대 70L" />
                 </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk2-2" name="radio-2" />
-                  <label for="chk2-2">+30L</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk2-3" name="radio-2" />
-                  <label for="chk2-3">+50L</label>
-                </div>
-                <div class="checkbox type1">
-                  <input type="radio" id="chk2-4" name="radio-2" />
-                  <label for="chk2-4">가득</label>
+                <div class="wrap-checkbox">
+                  <div class="checkbox type1">
+                    <!-- 클릭시 active 클래스 추가 -->
+                    <button type="button" class="btn size1 color7 active">+10L</button>
+                    <!-- <input type="radio" id="chk2-1" name="radio-2" />
+                    <label for="chk2-1">+10L</label> -->
+                  </div>
+                  <div class="checkbox type1">
+                    <!-- 클릭시 active 클래스 추가 -->
+                    <button type="button" class="btn size1 color7">+30L</button>
+                    <!-- <input type="radio" id="chk2-2" name="radio-2" />
+                    <label for="chk2-2">+30L</label> -->
+                  </div>
+                  <div class="checkbox type1">
+                    <!-- 클릭시 active 클래스 추가 -->
+                    <button type="button" class="btn size1 color7">+50L</button>
+                    <!-- <input type="radio" id="chk2-3" name="radio-2" />
+                    <label for="chk2-3">+50L</label> -->
+                  </div>
+                  <div class="checkbox type1">
+                    <!-- 클릭시 active 클래스 추가 -->
+                    <button type="button" class="btn size1 color7">가득</button>
+                    <!-- <input type="radio" id="chk2-4" name="radio-2" />
+                    <label for="chk2-4">가득</label> -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="fix-footer-area">
+          <!-- <button type="button" class="btn type2 color4" disabled>다음</button> -->
+          <button type="button" class="btn type2 color4">다음</button>
         </div>
       </div>
       <!-- //Wrap-contents -->
