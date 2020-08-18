@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">예약일시 및 상품선택</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-reservation">
+          <div class="reservation-cont">
+            <p class="title"><i class="bg-icon time"></i>예약상품 및 시간</p>
+            <div class="wrap-info">
+              <div class="wrap-tab">
+                <ul class="tab-menu">
+                  <li class="active"><a href="javascript:;">시간권</a></li>
+                  <li><a href="javascript:;">1일권</a></li>
+                </ul>
+                <!-- <div class="tab-content">
+                  <div class="wrap-car-info">
+                    <dl class="car-info">
+                      <dt>예약상품</dt>
+                      <dd>시간권 / 30분</dd>
+                      <dt>시작시간</dt>
+                      <dd>오전 9시30분</dd>
+                    </dl>
+                  </div>
+                </div> -->
+
+                <div class="tab-content">
+                  <!-- <div class="wrap-car-info">
+                    <p class="title">1번 차량</p>
+                    <dl class="car-info">
+                      <dt>예약상품</dt>
+                      <dd>시간권 / 30분</dd>
+                      <dt>시작시간</dt>
+                      <dd>오전 9시30분</dd>
+                    </dl>
+                  </div> -->
+                  <div class="wrap-car-info">
+                    <div class="wrap-btn">
+                      <button type="button" class="btn">이용/시작 시간 설정</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fix-footer-area">
+          <!-- <button type="button" class="btn type2 color4" disabled>다음으로</button> -->
+          <button type="button" class="btn type2 color4">다음</button>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

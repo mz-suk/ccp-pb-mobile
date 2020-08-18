@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div>
+          <div class="row-section">
+            <div class="member-apply">
+              <p class="apply-info">결제 확인을 위한<br />비밀번호를 설정해 주세요.</p>
+              <div class="apply-form">
+                <p class="apply-title">비밀번호</p>
+                <div class="form-input">
+                  <input type="tel" maxlength="4" placeholder="숫자 4자리" />
+                </div>
+                <!-- active 클래스 추가 -->
+                <ul class="dotted-list error-msg active">
+                  <li>4자리 모두 입력해주세요.</li>
+                </ul>
+              </div>
+              <div class="apply-form">
+                <p class="apply-title">비밀번호 재입력</p>
+                <div class="form-input">
+                  <input type="password" maxlength="4" placeholder="비밀번호 재입력" />
+                </div>
+                <!-- active 클래스 추가 -->
+                <ul class="dotted-list error-msg active">
+                  <li>비밀번호가 일치하지 않습니다.</li>
+                </ul>
+              </div>
+              <div class="wrap-check">
+                <input type="checkbox" id="chk1" />
+                <label for="chk1">원터치 결제 시 비밀번호 입력 없이 자동 결제를 진행합니다.</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fix-footer-area">
+          <!-- <button type="button" class="btn type2 color4" disabled>확인</button> -->
+          <button type="button" class="btn type2 color4">확인</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

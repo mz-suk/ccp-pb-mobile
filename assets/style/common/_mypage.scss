@@ -422,3 +422,42 @@
     }
   }
 }
+
+.member-apply {
+  color: $fc1;
+  .apply-info {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+  }
+  .apply-form {
+    margin-top: 30px;
+    .apply-title {
+      font-size: 1.5rem;
+      padding-bottom: 0.7rem;
+    }
+    .dotted-list {
+      margin-top: 1.3rem;
+      font-size: 1.1rem;
+    }
+    .error-msg {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .apply-form-info {
+    margin-top: 35px;
+    color: $fc6;
+    .apply-title {
+      font-size: 1.3rem;
+      padding-bottom: 1.3rem;
+    }
+  }
+  .wrap-check {
+    border-top: 0.1rem solid $fcF0;
+    margin-top: 4rem;
+    padding-top: 2.5rem;
+    display: flex;
+  }
+}
