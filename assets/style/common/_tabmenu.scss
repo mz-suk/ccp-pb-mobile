@@ -1,6 +1,7 @@
 .wrap-tab-scroll {
   position: relative;
   width: 100%;
+  overflow: hidden;
   .tab-scroll-menu {
     position: relative;
     padding: 0 2rem;
