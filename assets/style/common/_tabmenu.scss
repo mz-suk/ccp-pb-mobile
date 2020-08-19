@@ -1,28 +1,29 @@
 .wrap-tab-scroll {
   position: relative;
+
+  padding: 0 2rem;
   width: 100%;
-  overflow: hidden;
+  box-sizing: border-box;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background: $fcF0;
+    z-index: -1;
+  }
   .tab-scroll-menu {
     position: relative;
-    padding: 0 2rem;
     display: flex;
     width: 100%;
-
     overflow: hidden;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: block;
-      width: 100%;
-      height: 0.1rem;
-      background: $fcF0;
-      z-index: -1;
-    }
+    box-sizing: border-box;
 
     &::-webkit-scrollbar {
       display: none;
@@ -31,13 +32,13 @@
     }
     li {
       &:not(:first-child) {
-        margin-left: 2rem;
+        margin-left: 5rem;
       }
       &.active {
         border-bottom: 0.2rem solid $fc1;
       }
       button {
-        padding: 0 1.7rem 1rem;
+        padding: 0 0 1rem;
       }
     }
   }
