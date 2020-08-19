@@ -15,7 +15,9 @@
   z-index: 50;
   width: 100%;
   height: 100%;
-  // background-color: rgba($fc1, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .layer-close {
     position: absolute;
@@ -304,5 +306,38 @@
     top: 1.4rem;
     font-size: 1.8rem;
     color: $fcF;
+  }
+}
+
+.wrap-layer-alert {
+  flex: 0 1 calc(100% - 6rem);
+  position: relative;
+  overflow: hidden;
+  z-index: 51;
+  background-color: $fcF;
+  border-radius: 0.2rem;
+
+  .desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.9rem 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: $fc1;
+
+    strong {
+      font-size: 1.8rem;
+    }
+  }
+  .wrap-btn {
+    display: flex;
+
+    .btn {
+      flex: 1;
+      height: 5rem;
+      font-size: 1.5rem;
+      line-height: 4.9rem;
+    }
   }
 }
