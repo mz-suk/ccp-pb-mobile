@@ -210,6 +210,8 @@ html {
   &,
   body {
     position: fixed;
+    overflow: hidden;
+    touch-action: none;
   }
 }
 
@@ -244,8 +246,24 @@ html {
 
 .wrap-contents {
   padding-bottom: 9rem;
+
+  .wrap-layer & {
+    padding-bottom: 0;
+  }
 }
 
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0 0.3rem;
+    background: $fcF;
+    opacity: 0.6;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+}
 .swiper-pagination-current {
   opacity: 1;
 }
