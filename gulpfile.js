@@ -56,4 +56,5 @@ function buildConvertCss() {
 
 exports.clear = gulp.series(() => del(static));
 exports.default = gulp.parallel(watchFiles, browser);
+exports.css = gulp.series(() => cssTask("*", true));
 exports.build = gulp.series(() => del(static), gulp.parallel(buildMoveImg, buildMoveFont, buildConvertCss));
