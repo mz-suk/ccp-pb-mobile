@@ -232,6 +232,10 @@ html {
   }
 }
 
+.point3 {
+  color: $pc3;
+}
+
 .required {
   &:after {
     content: "";
