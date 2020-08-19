@@ -931,14 +931,9 @@
           background: $fc6;
           border-radius: 50%;
         }
-        span {
-          display: block;
-          &:not(:first-of-type) {
-            margin-top: 0.3rem;
-          }
-        }
         .sub-txt {
-          color: $fc6;
+          margin-top: 0.3rem;
+          display: block;
         }
         .bg-icon {
           position: absolute;
