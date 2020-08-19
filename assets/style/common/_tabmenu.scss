@@ -227,6 +227,27 @@
       }
     }
   }
+  &.type5 {
+    .tab-menu {
+      li {
+        flex: 1;
+        height: auto;
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        white-space: nowrap;
+        border: 0 none;
+        border-bottom: 0.1rem solid $fcF0;
+        background: $fcF;
+        color: $fc1;
+        z-index: 1;
+        &.active {
+          border-bottom: 0.2rem solid $fc1;
+        }
+      }
+    }
+  }
+
   &.center {
     .tab-menu {
       justify-content: space-around;
