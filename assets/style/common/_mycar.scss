@@ -42,18 +42,18 @@
   overflow: hidden;
 }
 // 레이아웃
-.wrap-mycar {
-  padding: 4rem 2rem;
-  .block-layout {
-    margin: 0 -2rem;
-    &:first-child {
-      padding-top: 0;
-    }
-    &:last-child {
-      padding-bottom: 0;
-    }
-  }
-}
+// .wrap-mycar {
+//   padding: 4rem 2rem;
+//   .block-layout {
+//     margin: 0 -2rem;
+//     &:first-child {
+//       padding-top: 0;
+//     }
+//     &:last-child {
+//       padding-bottom: 0;
+//     }
+//   }
+// }
 .block-layout {
   position: relative;
   padding: 4rem 2rem 3.5rem;
@@ -80,6 +80,9 @@
     &.type-third {
       margin-top: 3rem;
     }
+  }
+  .wrap-tab-scroll {
+    margin: 0 -2rem 0;
   }
 }
 
