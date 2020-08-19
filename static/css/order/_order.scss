@@ -550,6 +550,7 @@
 
       .bottom {
         background-color: #6a6a6a;
+        color: $fc9;
       }
     }
 
@@ -650,7 +651,7 @@
     position: relative;
     padding-right: 9rem;
 
-    .checkbox-spinner {
+    .checkbox-btn {
       position: absolute;
       right: 0;
       bottom: 0;
