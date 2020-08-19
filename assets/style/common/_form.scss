@@ -554,15 +554,15 @@ input[type="checkbox"] {
     }
   }
 }
-.form-list {
-  .form-div:not(:first-child) {
-    margin-top: 4rem;
-  }
-}
+// .form-list {
+//   .form-div:not(:first-child) {
+//     margin-top: 3rem;
+//   }
+// }
 .form-div {
   .title {
     margin-bottom: 1rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: $fc1;
     line-height: 1;
   }

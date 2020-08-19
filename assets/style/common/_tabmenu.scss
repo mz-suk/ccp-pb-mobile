@@ -1,8 +1,7 @@
 .wrap-tab-scroll {
   position: relative;
-
+  margin-top: 4rem;
   padding: 0 2rem;
-  width: 100%;
   box-sizing: border-box;
   &:before {
     content: "";
@@ -39,6 +38,7 @@
       }
       button {
         padding: 0 0 1rem;
+        color: $fc1;
       }
     }
   }
