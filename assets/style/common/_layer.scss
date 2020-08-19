@@ -317,15 +317,18 @@
   background-color: $fcF;
   border-radius: 0.2rem;
 
-  p {
+  .desc {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 8rem;
-    margin: 1.9rem 2rem;
+    margin: 3.9rem 2rem;
     font-size: 1.5rem;
     text-align: center;
     color: $fc1;
+
+    strong {
+      font-size: 1.8rem;
+    }
   }
   .wrap-btn {
     display: flex;
