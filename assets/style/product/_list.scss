@@ -962,15 +962,29 @@
     }
   }
 
-  .list-date {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2rem 3rem;
-    box-sizing: border-box;
+  .date-area {
+    height: 11rem;
     background-color: $fcF9;
     border-top: 0.1rem solid $fcF0;
     border-bottom: 0.1rem solid $fcF0;
+  }
+
+  .list-date {
+    position: relative;
+    overflow-x: visible;
+    overflow-y: hidden;
+    margin: 2rem 2.5rem 0;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
+    li {
+      display: inline-block;
+      scroll-snap-align: start;
+
+      &:not(:first-child) {
+        margin-left: 0.3rem;
+      }
+    }
 
     .sat {
       color: #2d80de;
