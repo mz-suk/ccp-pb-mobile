@@ -22,6 +22,10 @@ $fcF: #fff;
 $fcF0: #f0f0f0;
 $fcF9: #f9f9f9;
 
+.col-fc6 {
+  color: $fc6;
+}
+
 // 믹스인 - 스크롤
 @mixin scroll($axis, $_max-height: null) {
   @if $axis==x {
