@@ -364,3 +364,205 @@
     }
   }
 }
+
+.expected-d {
+  position: relative;
+  &:before {
+    content: "디자인 확정 안됨";
+    display: block;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem 1.5rem;
+    background: red;
+    border-radius: 0 0 1.5rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+
+.row-section {
+  .top-info {
+    margin: -4rem -2rem 0;
+    padding: 0 2rem 2rem;
+  }
+}
+
+.top-info {
+  & + .wrap-tab-scroll {
+    margin-top: 3rem;
+  }
+  .main-info {
+    position: relative;
+    padding-top: 4rem;
+    .title {
+      font-size: 1.5rem;
+    }
+    .num {
+      font-size: 2rem;
+      font-weight: bold;
+      strong {
+        font-size: 3rem;
+      }
+    }
+    .more {
+      position: absolute;
+      bottom: 0.7rem;
+      right: 0;
+      font-size: 1.3rem;
+      span {
+        text-decoration: underline;
+      }
+      .bg-icon {
+        margin: -0.3rem 0.3rem 0 0;
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+  .sub-info {
+    position: relative;
+    .title {
+      font-size: 1.3rem;
+    }
+    .num {
+      font-size: 1.5rem;
+      strong {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &.type-point {
+    color: $fcF;
+    background: $pc3 url(~assets/img/layout/bg-top-info-point.png) 1.2rem 2.1rem / 4.75rem 4.99rem no-repeat;
+    .main-info {
+      padding-left: 4rem;
+      .num {
+        color: $pc2;
+      }
+      .more {
+        color: $pc2;
+      }
+    }
+    .sub-info {
+      margin-top: 2.1rem;
+      padding: 1.3rem 1.5rem;
+      border: 0.1rem solid #1a56ce;
+      background: #1b5cde;
+      .num {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &.type-down,
+  &.type-up {
+    color: $fc1;
+    margin: -4rem 0 0;
+    padding: 4rem 0 3rem;
+    border-bottom: 0.1rem solid $fc1;
+    .main-info {
+      padding-top: 0;
+      .title {
+        padding-left: 2.5rem;
+      }
+      .num {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &.type-down {
+    .main-info {
+      .title {
+        background: url(~assets/img/layout/icon-point-down.png) 0 0 / 2rem 2rem no-repeat;
+      }
+    }
+  }
+  &.type-up {
+    .main-info {
+      .title {
+        background: url(~assets/img/layout/icon-point-up.png) 0 0 / 2rem 2rem no-repeat;
+      }
+    }
+  }
+  .up {
+    color: $pc3;
+  }
+  .down {
+    color: $gc3;
+  }
+}
+
+.statement-list-wrap {
+  .wrap-tab-scroll {
+    margin-top: 3rem;
+    .tab-scroll-menu {
+      background: linear-gradient(to bottom, $fcF, $fcF calc(100% - 0.1rem), $fcE4 calc(100% - 0.1rem), $fcE4 100%);
+    }
+  }
+  .statement-list {
+    li {
+      position: relative;
+      padding: 3rem 1rem;
+      border-bottom: 0.1rem solid $fcE4;
+      .title,
+      .price {
+        font-size: 1.5rem;
+        .num {
+          font-size: 1.6rem;
+        }
+      }
+      .desc {
+        font-size: 1.1rem;
+        color: $fc9;
+      }
+      .title-area {
+        .title {
+          color: $fc1;
+        }
+        .desc {
+          font-size: 1.2rem;
+          span {
+            position: relative;
+            padding-left: 1.5rem;
+            &:first-child {
+              padding-left: 0;
+              &:before {
+                display: none;
+              }
+            }
+            &:before {
+              content: "";
+              display: block;
+              position: absolute;
+              left: 0.6rem;
+              top: 50%;
+              transform: translateY(-50%);
+              height: 0.8rem;
+              border-left: 0.1rem dotted $fcD7;
+            }
+          }
+        }
+      }
+      .price-area {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: right;
+      }
+    }
+    .up {
+      color: $pc3;
+    }
+    .down {
+      color: $gc3;
+    }
+  }
+}

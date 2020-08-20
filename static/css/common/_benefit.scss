@@ -195,3 +195,158 @@
     }
   }
 }
+
+.event-list-wrap {
+  li {
+    position: relative;
+    margin-top: 3rem;
+    &.end-event {
+      &:before,
+      &:after {
+        z-index: 10;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      &:after {
+        background: transparent;
+        width: 100%;
+        height: 100%;
+      }
+      &:before {
+        content: "종료된 이벤트 입니다";
+        box-sizing: border-box;
+        height: 15.6rem;
+        width: 100%;
+        padding-top: 7rem;
+        color: $fcF;
+        font-size: 1.5rem;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 1.6rem 1.6rem 0 0;
+      }
+      .state-label {
+        display: none;
+      }
+    }
+  }
+  .evnet-box {
+    position: relative;
+    display: block;
+    border-radius: 1.6rem;
+    &.theme-ligth {
+      .box-top {
+        .title,
+        .desc {
+          color: $fc1;
+        }
+      }
+    }
+    &.theme-dark {
+      .box-top {
+        .title,
+        .desc {
+          color: $fcF;
+        }
+      }
+    }
+    .box-top {
+      position: relative;
+      height: 15.6rem;
+      img {
+        border-radius: 1.6rem 1.6rem 0 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
+        -webkit-object-fit: cover;
+      }
+      .event-label {
+        position: absolute;
+        top: -0.1rem;
+        right: -0.1rem;
+        font-size: 1.1rem;
+        padding: 0.7rem 1.5rem 1rem;
+        border-radius: 0 0 0 1.6rem;
+        color: $fc1;
+        background: $fcF;
+      }
+      .msg-box {
+        position: absolute;
+        bottom: 3.5rem;
+        left: 2rem;
+      }
+      .title {
+        font-size: 1.5rem;
+        color: $fc1;
+      }
+      .desc {
+        color: $fc1;
+        margin: 0.5rem 0 -1.5rem;
+        font-size: 1.2rem;
+      }
+    }
+    .box-bottom {
+      position: relative;
+      padding: 1.4rem 2rem 1.4rem;
+      border: 0.1rem solid $fcE4;
+      border-top: 0 none;
+      border-radius: 0 0 1.6rem 1.6rem;
+      .date {
+        font-size: 1.2rem;
+        color: $fc6;
+      }
+      .state-label {
+        font-size: 1.1rem;
+        position: absolute;
+        right: 2rem;
+        top: 1.4rem;
+        .bg-icon {
+          width: 2.516rem;
+          height: 0.85rem;
+        }
+        strong {
+          font-weight: normal;
+          font-size: 1.2rem;
+          color: $gc3;
+        }
+      }
+    }
+  }
+  .box-result {
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    text-align: center;
+    width: 100%;
+    font-size: 0;
+    .result-label {
+      box-sizing: border-box;
+      display: inline-block;
+      border: 0 none;
+      background: rgba(0, 0, 0, 0.8);
+      color: $fcF;
+      height: 4rem;
+      padding: 0 1.9rem;
+      margin: 0 0.5rem;
+      line-height: 4rem;
+      border-radius: 2rem;
+      font-size: 1.3rem;
+    }
+    .bg-icon {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+  .go-winning {
+    font-size: 1.3rem;
+    color: #999;
+    margin-top: 4rem;
+    text-align: center;
+  }
+}
