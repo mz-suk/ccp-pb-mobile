@@ -1,0 +1,213 @@
+.mx-icon-left:before,
+.mx-icon-right:before {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(~assets/img/layout/icon-next.png) 50% 50% / 100% auto no-repeat;
+  content: "";
+}
+.mx-icon-left:before {
+  transform: rotate(180deg);
+}
+.mx-btn-text {
+  padding: 0;
+  border: 0;
+  color: $fc1;
+  font-size: 1.8rem;
+}
+.mx-btn-current-year:after {
+  display: inline-block;
+  content: ".";
+}
+// .mx-scrollbar {
+//   height: 100%;
+// }
+// .mx-scrollbar:hover .mx-scrollbar-track {
+//   opacity: 1;
+// }
+// .mx-scrollbar-wrap {
+//   height: 100%;
+//   overflow-x: hidden;
+//   overflow-y: auto;
+// }
+// .mx-scrollbar-track {
+//   position: absolute;
+//   top: 2px;
+//   right: 2px;
+//   bottom: 2px;
+//   width: 6px;
+//   z-index: 1;
+//   border-radius: 4px;
+//   opacity: 0;
+//   -webkit-transition: opacity 0.24s ease-out;
+//   transition: opacity 0.24s ease-out;
+// }
+// .mx-scrollbar-track .mx-scrollbar-thumb {
+//   position: absolute;
+//   width: 100%;
+//   height: 0;
+//   cursor: pointer;
+//   border-radius: inherit;
+//   background-color: rgba(144, 147, 153, 0.3);
+//   -webkit-transition: background-color 0.3s;
+//   transition: background-color 0.3s;
+// }
+// .mx-datepicker {
+//   position: relative;
+//   display: inline-block;
+// }
+// .mx-datepicker-main {
+//   background-color: #fff;
+// }
+// .mx-datepicker-popup {
+//   position: absolute;
+//   margin-top: 1px;
+//   margin-bottom: 1px;
+//   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+//   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+//   z-index: 2001;
+// }
+// .mx-datepicker-sidebar {
+//   float: left;
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+//   width: 100px;
+//   padding: 6px;
+//   overflow: auto;
+// }
+// .mx-datepicker-sidebar + .mx-datepicker-content {
+//   margin-left: 100px;
+//   border-left: 1px solid #e8e8e8;
+// }
+// .mx-datepicker-body {
+//   position: relative;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+// }
+// .mx-range-wrapper {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+// }
+// .mx-datepicker-header {
+//   padding: 6px 8px;
+//   border-bottom: 1px solid #e8e8e8;
+// }
+// .mx-datepicker-footer {
+//   padding: 6px 8px;
+//   text-align: right;
+//   border-top: 1px solid #e8e8e8;
+// }
+.mx-calendar-header,
+.mx-time-header {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 2.5rem;
+  margin: 0 1rem 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+.mx-btn-icon-left,
+.mx-btn-icon-double-left {
+  float: left;
+}
+.mx-btn-icon-right,
+.mx-btn-icon-double-right {
+  float: right;
+}
+.mx-calendar-content {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.mx-calendar-content .cell {
+  padding: 0.8rem 0;
+  box-sizing: border-box;
+  color: $fcD7;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.mx-calendar-content .cell.active {
+  color: $fc1;
+}
+// .mx-calendar-week-mode .mx-date-row {
+//   cursor: pointer;
+// }
+// .mx-calendar-week-mode .mx-date-row:hover {
+//   background-color: #f3f9fe;
+// }
+// .mx-calendar-week-mode .mx-date-row.mx-active-week {
+//   background-color: #dbedfb;
+// }
+// .mx-calendar-week-mode .mx-date-row .cell:hover {
+//   color: inherit;
+//   background-color: transparent;
+// }
+// .mx-calendar-week-mode .mx-date-row .cell.active {
+//   color: inherit;
+//   background-color: transparent;
+// }
+// .mx-week-number {
+//   opacity: 0.5;
+// }
+.mx-table {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+}
+.mx-table-date td,
+.mx-table-date th {
+  height: 2.5rem;
+  font-size: 1.8rem;
+}
+.mx-table th {
+  padding: 0 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  &:after {
+    display: block;
+    margin: 0.5rem auto 0;
+    width: 1.1rem;
+    height: 0.1rem;
+    border-top: 0.1rem dotted $fc9;
+    content: "";
+  }
+
+  &:first-child {
+    color: $pc1;
+  }
+
+  &:last-child {
+    color: #2d80de;
+  }
+}
+.mx-table td {
+  padding: 0;
+}
+.mx-table-date .today {
+  position: relative;
+  color: $fc1;
+
+  &:after {
+    position: absolute;
+    left: 50%;
+    bottom: -0.4rem;
+    color: $fc1;
+    font-size: 0.9rem;
+    transform: translateX(-50%);
+    content: "오늘";
+  }
+}
+.mx-table-date .cell.not-current-month {
+  color: transparent;
+}

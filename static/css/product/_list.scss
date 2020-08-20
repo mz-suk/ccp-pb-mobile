@@ -962,15 +962,29 @@
     }
   }
 
-  .list-date {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2rem 3rem;
-    box-sizing: border-box;
+  .date-area {
+    height: 11rem;
     background-color: $fcF9;
     border-top: 0.1rem solid $fcF0;
     border-bottom: 0.1rem solid $fcF0;
+  }
+
+  .list-date {
+    position: relative;
+    overflow-x: visible;
+    overflow-y: hidden;
+    margin: 2rem 2.5rem 0;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
+    li {
+      display: inline-block;
+      scroll-snap-align: start;
+
+      &:not(:first-child) {
+        margin-left: 0.3rem;
+      }
+    }
 
     .sat {
       color: #2d80de;
@@ -1063,7 +1077,6 @@
   }
 
   .tooltip-box {
-    display: none;
     position: absolute;
     top: 3rem;
     left: -7.3rem;
@@ -1074,8 +1087,8 @@
     background: linear-gradient(to right, $gc1 0%, $gc2 100%);
     border-radius: 0.6rem;
     box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.08);
-    &.active {
-      display: block;
+    &:not(.active) {
+      display: none;
     }
     p {
       color: $fcF;
@@ -1089,8 +1102,8 @@
       left: 8rem;
       width: 0;
       height: 0;
-      border: 0.6rem solid;
-      border-color: transparent transparent #10a9e3 transparent;
+      border: 0.6rem solid transparent;
+      border-bottom-color: #10a9e3;
       content: "";
     }
   }

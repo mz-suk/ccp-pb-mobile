@@ -174,7 +174,8 @@ span {
 
 @font-face {
   font-family: "Moebius";
-  src: local("MoebiusKorea"), url("~assets/font/MoebiusKorea-Regular.woff2") format("woff2"), url("~assets/font/MoebiusKorea-Regular.woff") format("woff");
+  src: local("MoebiusKorea"), url("~assets/font/MoebiusKorea-Regular.woff2") format("woff2"),
+    url("~assets/font/MoebiusKorea-Regular.woff") format("woff");
 }
 
 @font-face {

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">이벤트</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="row-section-wrap">
+          <div class="row-section">
+            <div class="wrap-tab type3">
+              <ul class="tab-menu">
+                <li class="active">
+                  <button type="button">텍스트</button>
+                </li>
+                <li>
+                  <button type="button">텍스트</button>
+                </li>
+                <li>
+                  <button type="button">텍스트</button>
+                </li>
+              </ul>
+            </div>
+            <div class="event-list-wrap">
+              <ul class="event-list">
+                <!-- 이벤트 종료시 end-event 클래스 추가 -->
+                <li>
+                  <!-- 밝은 배경 theme-ligth  / 어두운 배경 theme-dark -->
+                  <a href="#" class="evnet-box theme-dark">
+                    <div class="box-top">
+                      <img src="../../assets/img/temp/list-thumb-1.png" alt="" />
+                      <div class="box-info">
+                        <p class="event-label">댓글 이벤트</p>
+                        <div class="msg-box">
+                          <p class="title">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p>
+                          <!-- <p class="desc">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p> -->
+                        </div>
+                        <!-- 당첨된 이벤트 & 참여한 이벤트 표시 -->
+                        <!-- <div class="box-result">
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 당첨된 이벤트</span>
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 참여한 이벤트</span>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="date">2020.07.31 ~ 2020.08.31</p>
+                      <p class="state-label"><i class="bg-icon new-label">NEW</i></p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 이벤트 종료시 end-event 클래스 추가 -->
+                <li>
+                  <!-- 밝은 배경 theme-ligth  / 어두운 배경 theme-dark -->
+                  <a href="#" class="evnet-box theme-ligth">
+                    <div class="box-top">
+                      <img src="../../assets/img/temp/@event-list-light.png" alt="" />
+                      <div class="box-info">
+                        <p class="event-label">댓글 이벤트</p>
+                        <div class="msg-box">
+                          <p class="title">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p>
+                          <!-- <p class="desc">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p> -->
+                        </div>
+                        <!-- 당첨된 이벤트 & 참여한 이벤트 표시 -->
+                        <!-- <div class="box-result">
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 당첨된 이벤트</span>
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 참여한 이벤트</span>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="date">2020.07.31 ~ 2020.08.31</p>
+                      <p class="state-label">D day - <strong>3</strong></p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 이벤트 종료시 end-event 클래스 추가 -->
+                <li>
+                  <!-- 밝은 배경 theme-ligth  / 어두운 배경 theme-dark -->
+                  <a href="#" class="evnet-box theme-dark">
+                    <div class="box-top">
+                      <img src="../../assets/img/temp/list-thumb-1.png" alt="" />
+                      <div class="box-info">
+                        <p class="event-label">댓글 이벤트</p>
+                        <div class="msg-box">
+                          <p class="title">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p>
+                          <!-- <p class="desc">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p> -->
+                        </div>
+                        <!-- 당첨된 이벤트 & 참여한 이벤트 표시 -->
+                        <div class="box-result">
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 당첨된 이벤트</span>
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 참여한 이벤트</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="date">2020.07.31 ~ 2020.08.31</p>
+                      <p class="state-label"><i class="bg-icon new-label">NEW</i></p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 이벤트 종료시 end-event 클래스 추가 -->
+                <li>
+                  <!-- 밝은 배경 theme-ligth  / 어두운 배경 theme-dark -->
+                  <a href="#" class="evnet-box theme-ligth">
+                    <div class="box-top">
+                      <img src="../../assets/img/temp/@event-list-light.png" alt="" />
+                      <div class="box-info">
+                        <p class="event-label">안내 이벤트</p>
+                        <div class="msg-box">
+                          <p class="title">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p>
+                          <!-- <p class="desc">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p> -->
+                        </div>
+                        <!-- 당첨된 이벤트 & 참여한 이벤트 표시 -->
+                        <div class="box-result">
+                          <!-- <span class="result-label"><i class="bg-icon chk-white"></i> 당첨된 이벤트</span> -->
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 참여한 이벤트</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="date">2020.07.31 ~ 2020.08.31</p>
+                      <p class="state-label">D day - <strong>3</strong></p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 이벤트 종료시 end-event 클래스 추가 -->
+                <li class="end-event">
+                  <!-- 밝은 배경 theme-ligth  / 어두운 배경 theme-dark -->
+                  <a href="#" class="evnet-box theme-dark">
+                    <div class="box-top">
+                      <img src="../../assets/img/temp/list-thumb-1.png" alt="" />
+                      <div class="box-info">
+                        <p class="event-label">응모 이벤트</p>
+                        <div class="msg-box">
+                          <p class="title">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p>
+                          <!-- <p class="desc">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p> -->
+                        </div>
+                        <!-- 당첨된 이벤트 & 참여한 이벤트 표시 -->
+                        <!-- <div class="box-result">
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 당첨된 이벤트</span>
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 참여한 이벤트</span>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="date">2020.07.31 ~ 2020.08.31</p>
+                      <p class="state-label">D day - <strong>3</strong></p>
+                    </div>
+                  </a>
+                </li>
+                <!-- 이벤트 종료시 end-event 클래스 추가 -->
+                <li class="end-event">
+                  <!-- 밝은 배경 theme-ligth  / 어두운 배경 theme-dark -->
+                  <a href="#" class="evnet-box theme-ligth">
+                    <div class="box-top">
+                      <img src="../../assets/img/temp/@event-list-light.png" alt="" />
+                      <div class="box-info">
+                        <p class="event-label">응모 이벤트</p>
+                        <div class="msg-box">
+                          <p class="title">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p>
+                          <!-- <p class="desc">코로나 위기극복 지원<br />댓글 달고, 할인권 받자</p> -->
+                        </div>
+                        <!-- 당첨된 이벤트 & 참여한 이벤트 표시 -->
+                        <!-- <div class="box-result">
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 당첨된 이벤트</span>
+                          <span class="result-label"><i class="bg-icon chk-white"></i> 참여한 이벤트</span>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="box-bottom">
+                      <p class="date">2020.07.31 ~ 2020.08.31</p>
+                      <p class="state-label">D day - <strong>3</strong></p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="go-winning">
+                <a href="#">당첨자 발표</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>

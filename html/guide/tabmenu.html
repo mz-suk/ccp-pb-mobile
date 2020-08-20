@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrap-guide">
+        <br />
+        <br />
+        <p>탭 메뉴 - 기본</p>
+        <br />
+        <div class="wrap-tab">
+          <ul class="tab-menu">
+            <li class="active">
+              <button type="button">탭메뉴1</button>
+            </li>
+            <li>
+              <button type="button">탭메뉴2</button>
+            </li>
+          </ul>
+        </div>
+        <br />
+        <br />
+        <p>탭 메뉴 - type1</p>
+        <br />
+        <div class="wrap-tab type1">
+          <ul class="tab-menu">
+            <li class="active">
+              <button type="button">탭메뉴1</button>
+            </li>
+            <li>
+              <button type="button">탭메뉴2</button>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <br />
+        <p>탭 메뉴 - type2</p>
+        <br />
+        <div class="wrap-tab type2">
+          <ul class="tab-menu">
+            <li class="active">
+              <button type="button">탭메뉴1</button>
+            </li>
+            <li>
+              <button type="button">탭메뉴2</button>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <br />
+        <p>탭 메뉴 - type3</p>
+        <br />
+        <div class="wrap-tab type3">
+          <ul class="tab-menu">
+            <li class="active">
+              <button type="button">탭메뉴1</button>
+            </li>
+            <li>
+              <button type="button">탭메뉴2</button>
+            </li>
+            <li>
+              <button type="button">탭메뉴3</button>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <br />
+        <p>탭 메뉴 - type4</p>
+        <br />
+        <div class="wrap-tab type4">
+          <ul class="tab-menu">
+            <li class="active">
+              <button type="button">탭메뉴1</button>
+            </li>
+            <li>
+              <button type="button">탭메뉴2</button>
+            </li>
+            <li>
+              <button type="button">탭메뉴3</button>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <br />
+        <p>탭 메뉴 - center (type3, type4 타입을 가운데로)</p>
+        <br />
+        <div class="wrap-tab type3 center">
+          <ul class="tab-menu">
+            <li class="active">
+              <button type="button">탭메뉴1</button>
+            </li>
+            <li>
+              <button type="button">탭메뉴2</button>
+            </li>
+            <li>
+              <button type="button">탭메뉴3</button>
+            </li>
+          </ul>
+        </div>
+        <br />
+        <br />
+        <p>스크롤탭 - 기본</p>
+        <div class="wrap-tab-scroll">
+          <ul class="tab-scroll-menu">
+            <li class="active"><button type="button">탭메뉴1</button></li>
+            <li><button type="button">탭메뉴2</button></li>
+            <li><button type="button">탭메뉴3</button></li>
+            <li><button type="button">탭메뉴4</button></li>
+            <li><button type="button">탭메뉴5</button></li>
+            <li><button type="button">탭메뉴6</button></li>
+          </ul>
+        </div>
+        <br />
+        <br />
+        <p>스크롤탭 - type1</p>
+        <div class="wrap-tab-scroll type1">
+          <ul class="tab-scroll-menu">
+            <li class="active"><button type="button">탭메뉴1</button></li>
+            <li><button type="button">탭메뉴2</button></li>
+            <li><button type="button">탭메뉴3</button></li>
+            <li><button type="button">탭메뉴4</button></li>
+            <li><button type="button">탭메뉴5</button></li>
+            <li><button type="button">탭메뉴6</button></li>
+          </ul>
+        </div>
+
+        <br />
+        <br />
+      </div>
+    </div>
+  </body>
+</html>

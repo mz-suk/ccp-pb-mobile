@@ -279,6 +279,10 @@
     background-image: url(../../assets/img/layout/icon-board-new.png);
   }
 
+  &.chk-white {
+    background-image: url(../../assets/img/layout/icon-chk-white.png);
+  }
+
   &.shinhan {
     background-image: url(../../assets/img/layout/icon-card-shinhan.png);
   }
@@ -337,6 +341,9 @@
 
   &.refresh2 {
     background-image: url(../../assets/img/layout/icon-refresh-type2.png);
+  }
+  &.refresh3 {
+    background-image: url(../../assets/img/layout/icon-refresh-yellow.png);
   }
 
   &.creditcard {
