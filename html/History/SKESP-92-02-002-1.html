@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Quick-menu -->
+    <!-- <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+    <!-- //Quick-menu -->
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">소멸예정 포인트</h1>
+          <div class="left">
+            <a href="javascript:;" class="bg-icon prev">이전페이지</a>
+          </div>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="row-section-wrap">
+            <div class="row-section">
+              <div class="top-info type-down expected-d">
+                <div class="main-info">
+                  <p class="title">이번달 소멸/소멸예정<br />머핀 포인트</p>
+                  <p class="num down"><strong>- 7,000</strong> P</p>
+                  <!-- <button type="button" class="more"><i class="bg-icon refresh3"></i><span>새로고침</span></button> -->
+                </div>
+                <!-- <div class="sub-info">
+                  <a href="#">
+                    <p class="title">이번달 소멸/소멸예정 머핀 포인트</p>
+                    <p class="num"><strong>-150</strong>P</p>
+                  </a>
+                </div> -->
+              </div>
+              <div class="statement-list-wrap">
+                <ul class="statement-list">
+                  <li>
+                    <div class="title-area">
+                      <p class="title">포인트 소멸</p>
+                      <p class="desc">
+                        <span>2020.07.03</span>
+                        <span>기간만료</span>
+                      </p>
+                    </div>
+                    <div class="price-area">
+                      <!-- +일때 : up / -일때 : down -->
+                      <p class="price down"><strong class="num">- 3,000</strong>P</p>
+                      <!-- <p class="desc">잔액 <strong>150</strong>P</p> -->
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title-area">
+                      <p class="title">포인트 소멸</p>
+                      <p class="desc">
+                        <span>2020.07.03</span>
+                        <span>기간만료</span>
+                      </p>
+                    </div>
+                    <div class="price-area">
+                      <!-- +일때 : up / -일때 : down -->
+                      <p class="price down"><strong class="num">- 3,000</strong>P</p>
+                      <!-- <p class="desc">잔액 <strong>150</strong>P</p> -->
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title-area">
+                      <p class="title">포인트 소멸</p>
+                      <p class="desc">
+                        <span>2020.07.03</span>
+                        <span>기간만료</span>
+                      </p>
+                    </div>
+                    <div class="price-area">
+                      <!-- +일때 : up / -일때 : down -->
+                      <p class="price down"><strong class="num">- 3,000</strong>P</p>
+                      <!-- <p class="desc">잔액 <strong>150</strong>P</p> -->
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
