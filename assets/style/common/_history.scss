@@ -365,6 +365,23 @@
   }
 }
 
+.expected-d {
+  position: relative;
+  &:before {
+    content: "디자인 확정 안됨";
+    display: block;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem 1.5rem;
+    background: red;
+    border-radius: 0 0 0 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
 .row-section {
   .top-info {
     margin: -4rem -2rem 0;
@@ -438,6 +455,70 @@
         right: 1.5rem;
         top: 50%;
         transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.statement-list-wrap {
+  .wrap-tab-scroll {
+    margin-top: 3rem;
+  }
+  .statement-list {
+    li {
+      position: relative;
+      padding: 3rem 1rem;
+      border-bottom: 0.1rem solid $fcE4;
+      .title,
+      .price {
+        font-size: 1.5rem;
+        .num {
+          font-size: 1.6rem;
+        }
+      }
+      .desc {
+        font-size: 1.1rem;
+        color: $fc9;
+      }
+      .title-area {
+        .title {
+          color: $fc1;
+        }
+        .desc {
+          font-size: 1.2rem;
+          span {
+            position: relative;
+            padding-left: 1.5rem;
+            &:first-child {
+              padding-left: 0;
+              &:before {
+                display: none;
+              }
+            }
+            &:before {
+              content: "";
+              display: block;
+              position: absolute;
+              left: 0.6rem;
+              top: 50%;
+              transform: translateY(-50%);
+              height: 0.8rem;
+              border-left: 0.1rem dotted $fcD7;
+            }
+          }
+        }
+      }
+      .price-area {
+        position: absolute;
+        right: 1rem;
+        top: 3rem;
+        text-align: right;
+        .up {
+          color: $pc3;
+        }
+        .down {
+          color: $gc3;
+        }
       }
     }
   }
