@@ -10,7 +10,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     box-sizing: border-box;
-    background: linear-gradient(to bottom, $fcF, $fcF calc(100% - 0.1rem), $fcF0 100%);
+    background: linear-gradient(to bottom, $fcF, $fcF calc(100% - 0.1rem), $fcF0 calc(100% - 0.1rem), $fcF0 100%);
     background-attachment: local;
 
     // &:after {
