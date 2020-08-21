@@ -399,7 +399,7 @@
         .more-comment-wrap {
           .more-comment {
             &:after {
-              margin-top: 0.3rem;
+              margin-top: 0.2rem;
               transform: rotate(-180deg);
             }
           }
@@ -465,7 +465,7 @@
             vertical-align: top;
             width: 1rem;
             height: 1rem;
-            margin: 0 0 0 0.3rem;
+            margin: 0.1rem 0 0 0.3rem;
             background: url(../../assets/img/layout/icon-toggle-type3.png) no-repeat 100% 50% / 1rem 1rem;
           }
         }
