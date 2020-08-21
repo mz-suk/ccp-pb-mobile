@@ -188,6 +188,18 @@
     background-image: url(../../assets/img/layout/icon-vacuum.png);
   }
 
+  &.sink {
+    background-image: url(../../assets/img/layout/icon-sink.png);
+  }
+
+  &.sterilizer {
+    background-image: url(../../assets/img/layout/icon-sterilizer.png);
+  }
+
+  &.mat-cleaner {
+    background-image: url(../../assets/img/layout/icon-mat-cleaner.png);
+  }
+
   &.share-url {
     background-image: url(../../assets/img/layout/icon-share-url.png);
   }
@@ -359,6 +371,15 @@
   }
   &.coupon-label {
     background-image: url(../../assets/img/layout/icon-coupon-label.png);
+  }
+  &.black-x {
+    background-image: url(../../assets/img/layout/icon-x-black.png);
+  }
+  &.filter-cash {
+    background-image: url(../../assets/img/layout/icon-filter-cash.png);
+  }
+  &.plus-black {
+    background-image: url(../../assets/img/layout/icon-plus-black.png);
   }
 }
 // 뱃지
