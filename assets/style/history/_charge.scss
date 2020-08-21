@@ -1,0 +1,44 @@
+.wrap-charge {
+  padding: 2.5rem 2rem;
+  .wrap-list {
+    margin-top: 2.5rem;
+  }
+}
+
+.wrap-list {
+  .h-title {
+    padding-bottom: 1.1rem;
+    display: flex;
+    color: $fc1;
+    border-bottom: 0.1rem solid $fc1;
+    border-radius: 0.1rem;
+    .right {
+      margin-left: auto;
+    }
+  }
+
+  .btn-more {
+    margin-top: 1rem;
+  }
+}
+.list-item {
+  li {
+    padding: 2.7rem 0 2.5rem;
+    color: $fc1;
+    border-bottom: 0.1rem solid $fcE4;
+    .title {
+      font-size: 1.5rem;
+    }
+    .sub-info {
+      margin-top: 0.35rem;
+      display: flex;
+    }
+    .date {
+      font-size: 1.2rem;
+      color: $fc9;
+    }
+    .right {
+      margin-left: auto;
+    }
+  }
+}
