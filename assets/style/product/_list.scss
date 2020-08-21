@@ -71,6 +71,10 @@
         vertical-align: middle;
         content: "";
       }
+
+      &.type2:before {
+        background-image: url(../../assets/img/layout/icon-ticket.png);
+      }
     }
 
     .wrap-badge {
