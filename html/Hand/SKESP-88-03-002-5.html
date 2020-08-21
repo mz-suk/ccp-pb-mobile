@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">세차상품 상세</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="block-layout">
+          <div class="detail-option-top">
+            <p class="title">프리미엄 세차</p>
+            <p class="txt">99.9% 살균 인증 받은 스팀 세차기로 차량 내부 / 외부스팀 세차 입니다. (트렁크포함)</p>
+            <div class="price-box">
+              <span class="wash-time"><i class="bg-icon time"></i> 약 60분 소요</span>
+              <span>
+                <span class="price-unit"><span>63,000</span>원</span>
+                <span class="discount"><span>60,000</span>원</span>
+              </span>
+            </div>
+            <p class="noti-box gray-box">※ 본 상품은 8회 (주 2회) 정기 세차상품입니다.</p>
+            <button type="button"><img src="../../assets/img/temp/coupon.png" alt="" /></button>
+          </div>
+        </div>
+        <div class="block-layout">
+          <div class="wrap-tab type3">
+            <ul class="tab-menu">
+              <li>
+                <button type="button">상품정보</button>
+              </li>
+              <li>
+                <button type="button">가격표</button>
+              </li>
+              <li class="active">
+                <button type="button">리뷰(17)</button>
+              </li>
+              <li>
+                <button type="button">유의사항</button>
+              </li>
+            </ul>
+          </div>
+          <!--tab content-->
+          <!-- 상품정보 -->
+          <div class="tab-content">
+            <p class="blind">상품정보</p>
+          </div>
+          <!--// 상품정보 -->
+          <!-- 가격표 -->
+          <div class="tab-content">
+            <p class="blind">가격표</p>
+          </div>
+          <!-- // 가격표 -->
+          <!-- 리뷰 -->
+          <div class="tab-content">
+            <p class="blind">리뷰</p>
+            <div class="row-area">
+              <h2 class="row-title">사용자 리뷰 1,571건</h2>
+              <div class="review-info-box">
+                <p class="">총 평점(1,530 참여)</p>
+                <div class="rating-box">
+                  <div class="rating">
+                    <span class="percent" style="width: 70%;">4.7</span>
+                  </div>
+                  <span class="num">4.7</span>
+                </div>
+              </div>
+              <div class="review-wrap">
+                <div class="review-row">
+                  <div class="user-area">
+                    <div class="rating-box type-small">
+                      <div class="rating">
+                        <span class="percent" style="width: 70%;">4.7</span>
+                      </div>
+                      <span class="num">4.7</span>
+                    </div>
+                    <p class="user">
+                      art ***
+                      <span class="label">내 리뷰</span>
+                    </p>
+                  </div>
+                  <div class="comment-area">
+                    <div class="comment">
+                      <p class="title">[상품] SK스페셜 미세먼지 케어</p>
+                      <p class="option">[옵션] 전면 유리 유막 제거 및 발수코팅 외 3건</p>
+                      <p class="desc">
+                        사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나 믿음이 갑니다.사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나
+                        믿음이 갑니다.사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나 믿음이 갑니다.사장님 너무 친절하시고, 항상 잘 이용하고
+                        있어요.
+                      </p>
+                    </div>
+                    <p class="date">2020.06.14</p>
+                    <ul class="comment-img">
+                      <li>
+                        <button type="button">
+                          <img src="../../assets/img/temp/list-thumb-1.png" alt="" />
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button">
+                          <img src="../../assets/img/temp/list-thumb-1.png" alt="" />
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button">
+                          <img src="../../assets/img/temp/list-thumb-1.png" alt="" />
+                        </button>
+                      </li>
+                      <li>
+                        <!-- 추가 이미지 있을때  class="more-img" 추가 -->
+                        <button type="button" class="more-img">
+                          <span class="more-num">+ 4</span>
+                          <img src="../../assets/img/temp/list-thumb-1.png" alt="" />
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="review-row">
+                  <div class="user-area">
+                    <div class="rating-box type-small">
+                      <div class="rating">
+                        <span class="percent" style="width: 70%;">4.7</span>
+                      </div>
+                      <span class="num">4.7</span>
+                    </div>
+                    <p class="user">
+                      art ***
+                      <span class="label">내 리뷰</span>
+                    </p>
+                  </div>
+                  <div class="comment-area">
+                    <div class="comment">
+                      <p class="title">[상품] SK스페셜 미세먼지 케어</p>
+                      <p class="option">[옵션] 전면 유리 유막 제거 및 발수코팅 외 3건</p>
+                      <p class="desc">
+                        사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 언제나 믿음이 갑니다.사장님 너무 친절하시고, 항상 잘 이용하고 있어요. 사장님 너무 친절하시고
+                      </p>
+                    </div>
+                    <!-- <div class="more-comment-wrap">
+                      <button type="button" class="more-comment">더보기</button>
+                    </div> -->
+                    <p class="date">2020.06.14</p>
+                  </div>
+                </div>
+                <div>
+                  <button type="button" class="btn-more">
+                    <span class="more-text">더보기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // 리뷰 -->
+          <!-- 유의사항 -->
+          <div class="tab-content">
+            <p class="blind">유의사항</p>
+          </div>
+          <!-- // 유의사항 -->
+          <!--// tab content-->
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4">60,000원 다음으로</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
