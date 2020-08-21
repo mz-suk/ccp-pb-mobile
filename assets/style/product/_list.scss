@@ -641,6 +641,9 @@
   &.color1 {
     @include listdot(0.8rem, 1.1rem, $pc3, 0, $pc3);
   }
+  &.color2 {
+    @include listdot(0.8rem, 1.1rem, $fc1, 0);
+  }
   &.type1 {
     @include listdot(0.8rem, 1.3rem, $fc1, 0, $fc1);
   }
