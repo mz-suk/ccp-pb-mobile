@@ -341,3 +341,69 @@
     }
   }
 }
+
+.wrap-layer-float {
+  flex: 0 1 calc(100% - 4rem);
+  position: relative;
+  z-index: 51;
+  .layer-float-cont {
+    padding: 4rem 3rem 3.5rem;
+    overflow: hidden;
+    background: $fcF;
+    border-radius: 2rem;
+  }
+  .float-top {
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid $fcF0;
+    .title {
+      font-size: 1.5rem;
+      color: $fc1;
+      .bg-icon {
+        margin-right: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  .float-cont {
+    padding-top: 2.5rem;
+    .barcode-box {
+      position: relative;
+      margin-top: 2rem;
+      padding-right: 3.1rem;
+      .btn-add {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+    .gray-box {
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
+      margin-top: 2rem;
+      color: $fc1;
+      text-align: center;
+      .sum {
+        margin-left: 1rem;
+        color: $pc3;
+        strong {
+          font-size: 2rem;
+        }
+      }
+    }
+    .btn-area {
+      margin-top: 3rem;
+      &.line-st {
+        font-size: 1.5rem;
+        color: $fc1;
+        line-height: 1.9rem;
+      }
+    }
+  }
+  .btn-x-black {
+    position: absolute;
+    top: -5.6rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

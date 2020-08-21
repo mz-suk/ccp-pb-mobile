@@ -430,8 +430,39 @@ input[type="checkbox"] {
     display: flex;
     justify-content: space-between;
   }
+  input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  input[type="radio"] + label {
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    &:before {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 0.6rem;
+      height: 0.6rem;
+      margin-right: 0.9rem;
+      background-color: $fcF;
+      border: 0.7rem solid $fcE4;
+      border-radius: 50%;
+      transition: all 0.2s ease;
+      content: "";
+    }
+  }
+
+  input[type="radio"]:checked + label {
+    &:before {
+      border-color: $fc1;
+    }
+  }
 
   .label-tit {
+    color: $fc1;
     button {
       margin-left: 0.6rem;
       vertical-align: top;
