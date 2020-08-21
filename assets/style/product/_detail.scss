@@ -86,10 +86,6 @@
     width: 2.4rem;
     height: 2.4rem;
   }
-  .like {
-    &.active {
-    }
-  }
 }
 
 .item-bottom {
@@ -504,6 +500,28 @@
   &.active {
     .more-text:after {
       background-image: url(../../assets/img/layout/icon-more-txt-active.png);
+    }
+  }
+
+  &.type2 {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+
+    .more-text {
+      color: $fc6;
+      border-bottom-color: $fc6;
+
+      &:after {
+        margin-top: -0.3rem;
+        background-image: url(../../assets/img/layout/icon-more-txt-type2.png);
+      }
+    }
+
+    &.active {
+      .more-text:after {
+        background-image: url(../../assets/img/layout/icon-more-txt-type2-active.png);
+      }
     }
   }
 }
