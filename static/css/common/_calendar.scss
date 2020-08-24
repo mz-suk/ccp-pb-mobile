@@ -131,7 +131,15 @@
   cursor: pointer;
 }
 .mx-calendar-content .cell.active {
-  color: $fc1;
+  color: $fcF;
+
+  > div {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: auto;
+    background-color: $pc3;
+    border-radius: 50%;
+  }
 }
 // .mx-calendar-week-mode .mx-date-row {
 //   cursor: pointer;

@@ -149,6 +149,12 @@
     height: 1.6rem;
   }
 }
+.btn-add {
+  .bg-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 
 .btn-arrow {
   font-size: 1.1rem;
@@ -244,6 +250,12 @@
   color: $fc9;
   border-bottom: 0.1rem solid $fc9;
 }
+.btn-x-black {
+  .bg-icon {
+    width: 5.4rem;
+    height: 5.4rem;
+  }
+}
 //버튼 레이아웃
 .btn-area {
   margin-top: 4rem;
@@ -251,6 +263,17 @@
     display: flex;
     button {
       flex: 1;
+    }
+  }
+
+  &.line-st {
+    button {
+      &:nth-child(odd) {
+        border-right: 0.1rem dotted $fc70;
+      }
+      &:nth-child(even) {
+        border-left: 0.1rem solid $fc70;
+      }
     }
   }
 }

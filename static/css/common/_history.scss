@@ -566,3 +566,56 @@
     }
   }
 }
+
+.bookmark-cont {
+  padding: 4rem 0;
+
+  .wrap-tab {
+    margin: 0 2rem;
+  }
+
+  .list-item {
+    &:not(:last-of-type):after {
+      display: block;
+      width: calc(100% - 4rem);
+      height: 0.1rem;
+      margin: 4rem auto 0;
+      background-color: $fcF0;
+      content: "";
+    }
+
+    .thumbnail {
+      min-height: 17.8rem;
+    }
+
+    &.business,
+    &.dawn {
+      img {
+        width: 12.4rem;
+        min-height: auto;
+      }
+
+      .item-bottom {
+        padding-top: 0;
+      }
+
+      .wrap-btn {
+        margin: 0;
+      }
+    }
+
+    &.business {
+      img {
+        width: 15.3rem;
+      }
+    }
+  }
+
+  .item-top {
+    margin: 0 2rem;
+
+    .label {
+      left: -0.5rem;
+    }
+  }
+}
