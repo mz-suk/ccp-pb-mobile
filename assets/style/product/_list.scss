@@ -638,6 +638,10 @@
       float: right;
     }
   }
+
+  & + .define-list {
+    margin-top: 2rem;
+  }
 }
 
 .define-list {
@@ -647,6 +651,10 @@
   dd {
     float: left;
     margin-top: 2rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
 
   dt {

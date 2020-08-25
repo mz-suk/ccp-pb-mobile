@@ -169,19 +169,34 @@
   .qna-list {
     margin-top: 2.65rem;
     .accordion {
-      &:not(:first-child) {
-        margin-top: 1.65rem;
-      }
       .accordion-title {
-        padding-bottom: 1.65rem;
+        padding: 2rem 0;
+        background-color: $fcF;
+        font-size: 1.3rem;
+        .toggle {
+          right: 0;
+        }
+        .title {
+          padding: 0 2.6rem 0 1rem;
+        }
       }
       .accordion-cont {
+        padding: 0;
+
         .txt-row {
           &:not(:first-child) {
             margin-top: 2.5rem;
           }
         }
+
+        .gray-box {
+          display: block;
+        }
       }
+    }
+
+    li:last-child {
+      margin-bottom: -0.1rem;
     }
   }
 }

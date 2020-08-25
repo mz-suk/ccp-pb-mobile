@@ -245,6 +245,9 @@
 
   &.info {
     background-image: url(../../assets/img/layout/icon-info.png);
+    &.white {
+      background-image: url(../../assets/img/layout/icon-info-white.png);
+    }
   }
 
   &.link {
