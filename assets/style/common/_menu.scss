@@ -1,0 +1,35 @@
+.header-menu {
+  height: 9.8rem;
+  background-color: $fcF0;
+}
+
+.wrap-menu {
+  .menu-item {
+    padding: 4rem 2rem 3.5rem;
+    box-sizing: border-box;
+    border-top: 0.8rem solid $fcF9;
+    border-bottom: 0.1rem solid $fcF0;
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .text-link {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .title-sub {
+    border-color: $fc1;
+
+    .bg-icon {
+      width: 2rem;
+      height: 2rem;
+      margin-top: -0.3rem;
+    }
+  }
+}
