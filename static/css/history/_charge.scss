@@ -61,11 +61,15 @@
   }
 }
 
+.accordion.active.type2 {
+  + .charge-btm {
+    .btn-area {
+      margin-top: 0.5rem;
+    }
+  }
+}
 .charge-btm {
   padding: 0 2rem;
-  .btn-area {
-    margin-top: 0.5rem;
-  }
 }
 .charge-layer-cont {
   .gray-box {
