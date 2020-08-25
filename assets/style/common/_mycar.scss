@@ -52,6 +52,36 @@
     line-height: 1.4;
   }
 }
+.asterisk-mark {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: $fc9;
+  &.type1 {
+    position: relative;
+    padding-left: 1.2rem;
+    &:before {
+      content: "*";
+      position: absolute;
+      top: 0.25rem;
+      left: 0.35rem;
+      font-size: 0.9rem;
+    }
+  }
+  > li {
+    position: relative;
+    padding-left: 1.2rem;
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+    &:before {
+      content: "*";
+      position: absolute;
+      top: 0.25rem;
+      left: 0.35rem;
+      font-size: 0.9rem;
+    }
+  }
+}
 // 레이아웃
 // .wrap-mycar {
 //   padding: 4rem 2rem;
@@ -179,6 +209,7 @@
 }
 .gray-box {
   padding: 1.5rem 1.5rem 1.5rem 1.7rem;
+  display: flex;
   background: $fcF9;
   border: 1px solid $fcF0;
   &.round {
@@ -189,6 +220,12 @@
     text-align: center;
     border: none;
     border-radius: 2.1rem;
+  }
+  .right {
+    margin-left: auto;
+    strong {
+      font-size: 1.8rem;
+    }
   }
 }
 
