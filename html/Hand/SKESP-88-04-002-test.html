@@ -162,8 +162,8 @@
     </div>
     <!-- //Layer Pop -->
     <style>
+      .map-wrap{height:calc(100% - 5.5rem);}
       .wrapper-layer.pos-drag {
-        min-height: 100%;
         bottom: auto;
         top: 0;
       }
@@ -173,27 +173,25 @@
     </style>
     <script>
       let el = document.querySelector(".layer-touch");
-      let layer = document.querySelector(".wrapper-layer");
+      let layer = document.querySelector(".wrapper-layer").style;
       let init = {
         default: 68,
-        max: 88,
+        max: 85,
+        win_height: window.screen.availHeight,
       };
-      layer.style.transform = "translateY(" + (window.screen.availHeight - (window.screen.availHeight * init.default) / 100) + "px)";
-      layer.style.minHeight = init.default + "%";
+      layer.transform = "translateY(" + (init.win_height - (init.win_height * init.default) / 100) + "px)";
+      layer.minHeight = (init.win_height * init.default) / 100 + "px";
 
       el.addEventListener("touchmove", function (e) {
         let touch = e.touches[0];
-        //layer.style.transform = "translateY(" + Math.floor(touch.pageY) + "px)";
-        if (window.screen.availHeight - Math.floor(touch.pageY) < el.clientHeight) {
-          layer.style.transform = "translateY(" + Math.floor(window.screen.availHeight - el.clientHeight) + "px)";
-        } else if (window.screen.availHeight - Math.floor(touch.pageY) > (window.screen.availHeight * init.max) / 100) {
-          layer.style.minHeight = (window.screen.availHeight * init.max) / 100 + "px";
+        if (init.win_height - Math.floor(touch.pageY - el.clientHeight / 2) < el.clientHeight) {
+          layer.transform = "translateY(" + Math.floor(init.win_height - el.clientHeight) + "px)";
+        } else if (init.win_height - Math.floor(touch.pageY - el.clientHeight / 2) > (init.win_height * init.max) / 100) {
+          layer.minHeight = (init.win_height * init.max) / 100 + "px";
         } else {
-          layer.style.transform = "translateY(" + Math.floor(touch.pageY) + "px)";
-          layer.style.minHeight = window.screen.availHeight - Math.floor(touch.pageY) + "px";
+          layer.transform = "translateY(" + Math.floor(touch.pageY - el.clientHeight / 2) + "px)";
+          layer.minHeight = init.win_height - Math.floor(touch.pageY - el.clientHeight / 2) + "px";
         }
-
-        console.log(window.screen.availHeight - Math.floor(touch.pageY), Math.floor(touch.pageY), el.clientHeight);
       });
       el.addEventListener("touchend", function (e) {
         console.log("==========DONE===========");
