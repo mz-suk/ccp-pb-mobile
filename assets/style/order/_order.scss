@@ -90,6 +90,12 @@
       background: rgba(234, 0, 44, 0.06);
       border: 0;
     }
+    &.charge {
+      margin-top: 1rem;
+      padding: 1rem 1.5rem;
+      background: rgba(54, 115, 238, 0.06);
+      border: 0;
+    }
   }
 
   .define-list {
@@ -302,6 +308,9 @@
       height: 3.4rem;
     }
   }
+  .asterisk-mark {
+    margin-top: 2rem;
+  }
 }
 
 .text-box {
@@ -356,6 +365,31 @@
 
     .accordion-title {
       border-color: $fc1;
+    }
+  }
+
+  &.type2 {
+    &.active {
+      .toggle-black {
+        transform: rotate(-90deg);
+      }
+    }
+    .accordion-title {
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      height: 5rem;
+      background: $fcF9;
+      border-top: 0.1rem solid $fcF0;
+      .toggle-black {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        margin-top: -0.8rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        transform: rotate(90deg);
+      }
     }
   }
 

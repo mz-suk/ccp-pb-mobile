@@ -651,10 +651,28 @@
 
   dt {
     clear: both;
+    &.replay-txt {
+      .bg-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
   }
 
   dd {
     float: right;
+    text-align: right;
+  }
+  .replay-txt {
+    margin-top: 0.9rem;
+    font-size: 1.1rem;
+    color: $fc9;
+  }
+
+  .sub-point {
+    display: block;
+    font-size: 1.1rem;
+    color: $pc3;
   }
 }
 
