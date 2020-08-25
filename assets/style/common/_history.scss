@@ -618,4 +618,15 @@
       left: -0.5rem;
     }
   }
+
+  .wrap-tab-scroll {
+    &:after {
+      width: calc(100% - 2rem);
+      margin: 2.5rem 0 0 2rem;
+    }
+
+    li:first-child {
+      margin-left: 2rem;
+    }
+  }
 }

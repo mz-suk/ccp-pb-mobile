@@ -78,6 +78,33 @@
       }
     }
   }
+
+  &.type2 {
+    margin-top: 2.5rem;
+
+    &:after {
+      display: block;
+      width: 100%;
+      height: 0.1rem;
+      margin-top: 2.5rem;
+      background-color: $fcF0;
+      content: "";
+    }
+
+    .tab-scroll-menu {
+      background: none;
+
+      li {
+        &:not(:first-child) {
+          margin-left: 0.8rem;
+        }
+
+        &.active {
+          border: 0;
+        }
+      }
+    }
+  }
 }
 
 .wrap-tab {

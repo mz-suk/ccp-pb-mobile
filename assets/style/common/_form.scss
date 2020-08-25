@@ -179,6 +179,12 @@ textarea {
     clip: rect(0 0 0 0);
   }
 
+  label {
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+  }
+
   &.type1 {
     display: inline-block;
     position: relative;
@@ -188,16 +194,13 @@ textarea {
     }
 
     label {
-      display: inline-block;
       height: 4rem;
       padding: 0 1.9rem;
-      box-sizing: border-box;
       background: $fcF0;
       border: 0.1rem solid $fcE4;
       border-radius: 10rem;
       line-height: 4rem;
       text-align: center;
-      transition: all 0.2s ease;
     }
 
     input[type="checkbox"]:checked + label,
@@ -221,12 +224,10 @@ textarea {
       align-items: center;
       height: 5.5rem;
       padding: 0 3rem;
-      box-sizing: border-box;
       background-color: $fcF9;
       border: 0.1rem solid $fcE4;
       border-radius: 5rem;
       color: $fc9;
-      transition: all 0.2s ease;
 
       .left {
         display: flex;
@@ -295,11 +296,9 @@ textarea {
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      box-sizing: border-box;
       background-color: $fcF;
       border: 0 none;
       color: $fc9;
-      transition: all 0.2s ease;
 
       .left {
         display: flex;
@@ -330,6 +329,42 @@ textarea {
         &:before {
           border-color: $fc1;
         }
+      }
+    }
+  }
+
+  &.type5 {
+    display: inline-block;
+
+    label {
+      position: relative;
+      height: 3rem;
+      margin: 0;
+      padding: 0 1.5rem 0 2.4rem;
+      background-color: $fcF;
+      border: 0.1rem solid $fcE4;
+      border-radius: 10rem;
+      color: $fc9;
+      line-height: 3rem;
+
+      &:before {
+        position: absolute;
+        top: 0.8rem;
+        left: 0.8rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url(../../assets/img/layout/icon-chk-off.png) 0 0 / 100% auto no-repeat;
+        content: "";
+      }
+    }
+
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
+      background-color: $fc1;
+      color: $fcF;
+
+      &:before {
+        filter: brightness(10);
       }
     }
   }
@@ -404,6 +439,7 @@ input[type="checkbox"] {
   width: 2rem;
   height: 2rem;
   background: url(../../assets/img/layout/icon-checkbox.png) 0 0 / 100% auto no-repeat;
+  transition: all 0.2s ease;
 
   &:checked {
     background: url(../../assets/img/layout/icon-checkbox-on.png) 0 0 / 100% auto no-repeat;
