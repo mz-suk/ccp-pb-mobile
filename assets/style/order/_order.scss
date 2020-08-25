@@ -372,11 +372,6 @@
   }
 
   &.type2 {
-    &.active {
-      .toggle-black {
-        transform: rotate(-90deg);
-      }
-    }
     .accordion-title {
       padding: 0 2rem;
       display: flex;
@@ -384,14 +379,13 @@
       height: 5rem;
       background: $fcF9;
       border-top: 0.1rem solid $fcF0;
-      .toggle-black {
+      .toggle {
         position: absolute;
         top: 50%;
         right: 2rem;
         margin-top: -0.8rem;
         width: 1.6rem;
         height: 1.6rem;
-        transform: rotate(90deg);
       }
     }
   }
