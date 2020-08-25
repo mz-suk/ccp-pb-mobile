@@ -378,9 +378,13 @@
     margin-top: 1.5rem;
   }
   .accordion-title {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
+    background-color: $fcF;
     border-color: $fc1;
+
+    .toggle {
+      right: 1rem;
+    }
   }
   .accordion-cont {
     padding: 0 1rem 0;

@@ -1,5 +1,8 @@
 .wrap-charge {
-  padding: 2.5rem 2rem;
+  padding: 0 2rem;
+  .wrap-tab-scroll {
+    margin-top: 2.5rem;
+  }
   .wrap-list {
     margin-top: 2.5rem;
   }
@@ -108,5 +111,22 @@
   + .charge-cancel-box {
     margin-top: 0;
     border-top: none;
+  }
+}
+.charge-top-box {
+  padding: 2.9rem 3rem 0;
+  color: $fc1;
+  background: $fcF9 url(../../../assets/img/layout/icon-charge-bg.png) no-repeat calc(100% - 3.54rem) center;
+  background-size: 4.756rem 4.99rem;
+  border-bottom: 0.1rem solid $fcEB;
+  .tit {
+    font-size: 1.5rem;
+  }
+  .sum {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    strong {
+      font-size: 2.4rem;
+    }
   }
 }
