@@ -71,6 +71,10 @@
         vertical-align: middle;
         content: "";
       }
+
+      &.type2:before {
+        background-image: url(~assets/img/layout/icon-ticket.png);
+      }
     }
 
     .wrap-badge {
@@ -647,10 +651,33 @@
 
   dt {
     clear: both;
+    &.replay-txt {
+      .bg-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
   }
 
   dd {
     float: right;
+    text-align: right;
+  }
+  .replay-txt {
+    margin-top: 0.9rem;
+    font-size: 1.1rem;
+    color: $fc9;
+  }
+
+  .sub-point {
+    display: block;
+    font-size: 1.1rem;
+    color: $pc3;
+  }
+  .date {
+    display: block;
+    font-size: 1.2rem;
+    color: $fc9;
   }
 }
 
