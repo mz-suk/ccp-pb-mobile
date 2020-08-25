@@ -114,7 +114,7 @@
   }
 }
 .charge-top-box {
-  padding: 2.9rem 3rem 0;
+  padding: 2.9rem 3rem 2.5rem;
   color: $fc1;
   background: $fcF9 url(../../../assets/img/layout/icon-charge-bg.png) no-repeat calc(100% - 3.54rem) center;
   background-size: 4.756rem 4.99rem;
@@ -123,7 +123,6 @@
     font-size: 1.5rem;
   }
   .sum {
-    margin-bottom: 2.5rem;
     font-size: 1.5rem;
     strong {
       font-size: 2.4rem;
