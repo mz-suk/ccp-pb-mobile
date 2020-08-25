@@ -430,4 +430,19 @@
     border: none;
     background: linear-gradient(to right, $gc3 0%, $gc4 100%);
   }
+
+  &.num {
+    display: inline-block;
+    min-width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 0.5rem;
+    padding: 0 0.4rem;
+    background-color: $gc3;
+    border: 0;
+    color: $fcF;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6rem;
+    vertical-align: middle;
+  }
 }

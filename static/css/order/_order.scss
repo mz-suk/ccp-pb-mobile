@@ -106,23 +106,6 @@
     padding: 0 1rem;
   }
 
-  .wrap-text-link {
-    margin-top: 2.5rem;
-    padding: 0 1rem;
-
-    .text-link {
-      display: block;
-      margin-bottom: 2rem;
-      padding-right: 1.5rem;
-      background: url(~assets/img/layout/icon-more-type2.png) 100% 50% / 1.2rem 1.2rem no-repeat;
-      color: $fc1;
-
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
-  }
-
   .text-link {
     display: inline-block;
     color: $fc6;
@@ -313,6 +296,23 @@
   }
   .asterisk-mark {
     margin-top: 2rem;
+  }
+}
+
+.wrap-text-link {
+  margin-top: 2.5rem;
+  padding: 0 1rem;
+
+  .text-link {
+    display: block;
+    margin-bottom: 2rem;
+    padding-right: 1.5rem;
+    background: url(~assets/img/layout/icon-more-type2.png) 100% 50% / 1.2rem 1.2rem no-repeat;
+    color: $fc1;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 
