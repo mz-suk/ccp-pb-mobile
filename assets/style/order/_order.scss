@@ -395,25 +395,11 @@
   }
 
   &.type2 {
-    .accordion-title {
-      padding: 0 2rem;
-      display: flex;
-      align-items: center;
-      height: 5rem;
-      background: $fcF9;
-      border-top: 0.1rem solid $fcF0;
-      .toggle {
-        position: absolute;
-        top: 50%;
-        right: 2rem;
-        margin-top: -0.8rem;
-        width: 1.6rem;
-        height: 1.6rem;
-      }
-    }
-
     .accordion-cont {
       padding: 0;
+      .define-list {
+        margin-top: 2.5rem;
+      }
     }
   }
 
