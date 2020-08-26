@@ -715,6 +715,7 @@
 .wrap-filter-result {
   padding: 1.3rem 0;
   background: $fcF9;
+  border-top: 0.1rem solid $fcF0;
   .filter-list {
     &::-webkit-scrollbar {
       display: none;
@@ -763,6 +764,7 @@
 
 .history-list-wrap {
   margin-bottom: -3rem;
+  border-top: 0.1rem solid $fcF0;
   .history-list {
     padding: 3rem 2rem 0;
     li {
