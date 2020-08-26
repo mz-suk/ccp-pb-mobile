@@ -433,31 +433,86 @@
       }
     }
   }
+
   &.type-point {
-    color: $fcF;
-    background: $pc3 url(../../assets/img/layout/bg-top-info-point.png) 1.2rem 2.1rem / 4.75rem 4.99rem no-repeat;
+    padding: 3.9rem 2rem 2.5rem;
+    color: $fc1;
+    text-align: center;
+    background: $fcF9;
+    border-bottom: 0.1rem solid $fcEB;
+    &.type1 {
+      padding: 2.9rem 3.54rem 2.5rem 3rem;
+      .main-info {
+        padding: 0;
+        display: block;
+        text-align: left;
+        background: url(../../assets/img/layout/bg-top-info-point.png) right center / 4.75rem 4.99rem no-repeat;
+        .num {
+          font-size: 1.7rem;
+          strong {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
     .main-info {
-      padding-left: 4rem;
+      padding: 0 0 1rem 4.7rem;
+      display: inline-block;
+      text-align: center;
+      background: url(../../assets/img/layout/bg-top-info-point.png) 0 1.6rem / 4.75rem 4.99rem no-repeat;
       .num {
-        color: $pc2;
+        margin-top: 0.4rem;
+        line-height: 1;
       }
       .more {
         color: $pc2;
       }
     }
     .sub-info {
-      margin-top: 2.1rem;
-      padding: 1.3rem 1.5rem;
-      border: 0.1rem solid #1a56ce;
-      background: #1b5cde;
-      .num {
-        position: absolute;
-        right: 1.5rem;
-        top: 50%;
-        transform: translateY(-50%);
+      margin-top: 1.2rem;
+      padding: 2rem 0;
+      display: flex;
+      color: $fc1;
+      text-align: left;
+      border: 0.1rem solid $fcF0;
+      background: $fcF;
+      .sub-point-box {
+        width: 50%;
+        box-sizing: border-box;
+        &.point-up {
+          padding-left: 2rem;
+          .title {
+            padding: 0.4rem 0 0 2.5rem;
+            background: url(../../assets/img/layout/icon-point-up.png) 0 0.1rem / 2rem 2rem no-repeat;
+          }
+          .num {
+            padding-left: 0.7rem;
+            color: $pc3;
+          }
+        }
+        &.point-down {
+          padding-left: 2.5rem;
+          border-left: 0.1rem dotted $fcE4;
+          .title {
+            padding: 0.4rem 0 0 2.5rem;
+            background: url(../../assets/img/layout/icon-point-down.png) 0 0.1rem / 2rem 2rem no-repeat;
+          }
+          .num {
+            color: $gc3;
+          }
+        }
+        .num {
+          margin-top: 1rem;
+          font-size: 1.7rem;
+          font-weight: 700;
+          strong {
+            font-size: 1.8rem;
+          }
+        }
       }
     }
   }
+
   &.type-down,
   &.type-up {
     color: $fc1;
