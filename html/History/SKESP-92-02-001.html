@@ -24,14 +24,10 @@
       <header class="header header-sub">
         <h1 class="title">{{ title }}</h1>
         <div class="left">
-          <button type="button" class="bg-icon prev">
-            이전페이지
-          </button>
+          <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
         <div class="right">
-          <button type="button" class="bg-icon menu">
-            메뉴
-          </button>
+          <button type="button" class="bg-icon menu">메뉴</button>
         </div>
       </header>
       <!-- //Header -->
@@ -40,16 +36,19 @@
       <div class="wrap-contents">
         <div class="row-section-wrap">
           <div class="row-section">
-            <div class="top-info type-point expected-d">
+            <div class="top-info type-point">
               <div class="main-info">
-                <p class="title">내가 보유한 머핀 포인트</p>
+                <p class="title">내 머핀 포인트</p>
                 <p class="num"><strong>7,000</strong> P</p>
-                <button type="button" class="more"><i class="bg-icon refresh3"></i><span>새로고침</span></button>
               </div>
               <div class="sub-info">
-                <a href="#">
-                  <p class="title">이번달 소멸/소멸예정 머핀 포인트</p>
-                  <p class="num"><strong>-150</strong>P</p>
+                <a href="javascript:void(0)" class="sub-point-box point-up">
+                  <p class="title">이번달 적립예정<br />머핀 포인트</p>
+                  <p class="num"><strong>+ 150</strong> P</p>
+                </a>
+                <a href="javascript:void(0)" class="sub-point-box point-down">
+                  <p class="title">이번달 소멸예정<br />머핀 포인트</p>
+                  <p class="num"><strong>- 150</strong> P</p>
                 </a>
               </div>
             </div>
