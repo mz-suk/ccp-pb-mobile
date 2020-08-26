@@ -322,10 +322,10 @@
     color: $fc1;
     input[type="file"] {
       position: absolute;
-      width: 1px;
-      height: 1px;
+      width: 0.1rem;
+      height: 0.1rem;
       padding: 0;
-      margin: -1px;
+      margin: -0.1rem;
       overflow: hidden;
       clip: rect(0, 0, 0, 0);
       border: 0;
@@ -378,7 +378,7 @@
     background: red;
     border-radius: 0 0 1.5rem 1.5rem;
     font-size: 1rem;
-    color: #fff;
+    color: $fcF;
   }
 }
 
@@ -743,7 +743,7 @@
     display: inline-block;
     box-sizing: border-box;
     line-height: 3rem;
-    border: 1px solid $fcE4;
+    border: 0.1rem solid $fcE4;
     border-radius: 1.5rem;
     padding: 0 2.7rem 0 1.5rem;
     color: $fc1;
@@ -779,8 +779,8 @@
     .label {
       background-image: url(../../assets/img/layout/img_yellow_balloon_box.png);
       span {
-        background: #fddb2b;
-        border-color: #fccb3a;
+        background: $pc2;
+        border-color: $pc6;
       }
     }
     .date {
@@ -797,7 +797,7 @@
     height: 4.6rem;
     padding: 0 0 0 2.5rem;
     box-sizing: border-box;
-    background: url(../../assets/img/layout/img_default_balloon_box.png) 0 0 / 2.5rem 4.6rem no-repeat;
+    background: url(../../assets/img/layout/img_default_balloon_box.png) 0 0 / 2.6rem 4.6rem no-repeat;
     span {
       display: inline-block;
       height: 3.2rem;
