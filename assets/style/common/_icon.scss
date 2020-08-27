@@ -245,6 +245,9 @@
 
   &.info {
     background-image: url(../../assets/img/layout/icon-info.png);
+    &.white {
+      background-image: url(../../assets/img/layout/icon-info-white.png);
+    }
   }
 
   &.link {
@@ -386,6 +389,45 @@
   }
   &.reply-arrow {
     background-image: url(../../assets/img/layout/icon-reply.png);
+  }
+  &.view-detail {
+    background-image: url(../../assets/img/layout/icon-view-detail.png);
+  }
+  &.attention-info {
+    background-image: url(../../assets/img/layout/icon-attention-info.png);
+  }
+  &.check-used {
+    background-image: url(../../assets/img/layout/icon-check-used.png);
+  }
+  &.reservation {
+    background-image: url(../../assets/img/layout/icon-reservation.png);
+  }
+  &.find-direction {
+    background-image: url(../../assets/img/layout/icon-find-direction.png);
+  }
+  &.order-cancel {
+    background-image: url(../../assets/img/layout/icon-order-cancel.png);
+  }
+  &.not-check-used {
+    background-image: url(../../assets/img/layout/icon-not-check-used.png);
+  }
+  &.re-booking {
+    background-image: url(../../assets/img/layout/icon-re-booking.png);
+  }
+  &.refund {
+    background-image: url(../../assets/img/layout/icon-refund.png);
+  }
+  &.talk-service {
+    background-image: url(../../assets/img/layout/icon-talk-service.png);
+  }
+  &.service-type {
+    background-image: url(../../assets/img/layout/icon-service-type.png);
+  }
+  &.calendar-type-2 {
+    background-image: url(../../assets/img/layout/icon-calendar-type-2.png);
+  }
+  &.car-apply {
+    background-image: url(../../assets/img/layout/icon-car-apply.png);
   }
 }
 // 뱃지

@@ -2,6 +2,17 @@
   position: relative;
   margin-top: 4rem;
   box-sizing: border-box;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0.1rem;
+    background: $fcF0;
+  }
+
   .tab-scroll-menu {
     position: relative;
     display: flex;
@@ -10,28 +21,14 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     box-sizing: border-box;
-    background: linear-gradient(to bottom, $fcF, $fcF calc(100% - 0.1rem), $fcF0 calc(100% - 0.1rem), $fcF0 100%);
-    background-attachment: local;
-
-    // &:after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 0;
-    //   bottom: 0;
-    //   left: 0;
-    //   right: 0;
-    //   display: block;
-    //   width: 100%;
-    //   height: 100%;
-
-    //   z-index: -1;
-    // }
+    z-index: 1;
 
     &::-webkit-scrollbar {
       display: none;
       width: 0;
       height: 0;
     }
+
     li {
       &:not(:first-child) {
         margin-left: 5rem;
@@ -80,23 +77,14 @@
   }
 
   &.type2 {
-    margin-top: 2.5rem;
-
-    &:after {
-      display: block;
-      width: 100%;
-      height: 0.1rem;
-      margin-top: 2.5rem;
-      background-color: $fcF0;
-      content: "";
-    }
-
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
     .tab-scroll-menu {
       background: none;
 
       li {
         &:not(:first-child) {
-          margin-left: 0.8rem;
+          margin-left: 0.7rem;
         }
 
         &.active {
