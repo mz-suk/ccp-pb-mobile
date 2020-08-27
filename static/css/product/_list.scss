@@ -415,6 +415,7 @@
     .bg-icon {
       width: 2rem;
       height: 2rem;
+      margin-top: -0.3rem;
       margin-right: 0.5rem;
     }
   }
@@ -638,6 +639,10 @@
       float: right;
     }
   }
+
+  // & + .define-list {
+  //   margin-top: 2rem;
+  // }
 }
 
 .define-list {
@@ -647,6 +652,10 @@
   dd {
     float: left;
     margin-top: 2rem;
+
+    &.bold {
+      color: $fc1;
+    }
   }
 
   dt {
@@ -678,6 +687,12 @@
     display: block;
     font-size: 1.2rem;
     color: $fc9;
+  }
+
+  .bg-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -1142,6 +1157,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 0 1rem 1rem;
+      background-color: $fcF;
       border: 0;
       font-size: 1.3rem;
       color: $fc6;

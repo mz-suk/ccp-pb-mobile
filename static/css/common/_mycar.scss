@@ -168,6 +168,9 @@
     &:not(:first-child) {
       margin-top: 4rem;
     }
+    .accordion-cont {
+      padding: 0 1rem;
+    }
   }
   .checkbox-st {
     margin-top: 2.5rem;
