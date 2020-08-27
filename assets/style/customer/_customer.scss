@@ -144,6 +144,10 @@
       button:not(:first-of-type) {
         margin-left: 1.5rem;
       }
+      .sm-txt {
+        font-size: 1.1rem;
+        color: $pc3;
+      }
     }
   }
 }

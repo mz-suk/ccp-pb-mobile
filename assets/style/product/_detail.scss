@@ -474,7 +474,37 @@
     }
   }
 }
-
+.more-comment-wrap {
+  margin-top: 1rem;
+  text-align: center;
+  .more-comment {
+    position: relative;
+    display: inline-block;
+    padding-right: 1.2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: $fc9;
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0.2rem;
+      width: 1rem;
+      height: 1rem;
+      background: url(../../assets/img/layout/icon-toggle-type3.png) no-repeat 50% 50% / 1rem 1rem;
+    }
+  }
+  .comment-area.active &,
+  .reply-area.active & {
+    & > .more-comment {
+      &:after {
+        top: 0.2rem;
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
 .btn-more {
   display: block;
   width: 100%;
