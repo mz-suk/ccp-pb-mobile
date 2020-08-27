@@ -163,7 +163,6 @@
 .board-list {
   .title {
     color: $fc1;
-    @include clamp(1);
   }
   .info {
     margin-top: 0.3rem;
@@ -377,53 +376,73 @@
   .form-input {
     margin-top: 1.5rem;
   }
-  .accordion-title {
-    padding: 1rem;
-    background-color: $fcF;
-    border-color: $fc1;
+  // .accordion-title {
+  //   padding: 1rem;
+  //   background-color: $fcF;
+  //   border-color: $fc1;
 
-    .toggle {
-      right: 1rem;
+  //   .toggle {
+  //     right: 1rem;
+  //   }
+  // }
+  // .accordion-cont {
+  //   padding: 0 1rem 0;
+  //   border-bottom: 0 none;
+
+  //   .checkbox {
+  //     position: relative;
+  //     width: 100%;
+  //     .right {
+  //       position: absolute;
+  //       right: 0;
+  //       top: 0;
+  //       font-size: 1.3rem;
+  //     }
+  //     input:checked + label {
+  //       .pont {
+  //         color: $pc3;
+  //       }
+  //     }
+  //   }
+  //
+  // }
+
+  .cont-row {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 0.1rem solid $fcF0;
+    &:first-child {
+      padding-top: 0;
+      border-top: 0 none;
     }
-  }
-  .accordion-cont {
-    padding: 0 1rem 0;
-    border-bottom: 0 none;
-    .cont-row {
-      margin-top: 2.5rem;
-      padding-top: 2.5rem;
-      border-top: 0.1rem solid $fcF0;
-      &:first-child {
-        padding-top: 0;
-        border-top: 0 none;
-      }
-    }
+
     .checkbox {
       position: relative;
       width: 100%;
+      &.type4 label {
+        color: $fc1;
+      }
       .right {
         position: absolute;
         right: 0;
         top: 0;
         font-size: 1.3rem;
-      }
-      input:checked + label {
         .pont {
           color: $pc3;
         }
       }
     }
-    .btn-list {
-      text-align: center;
-      li {
-        margin-top: 2rem;
-        &:first-child {
-          margin-top: 0;
-        }
+  }
+  .btn-list {
+    text-align: center;
+    li {
+      margin-top: 2rem;
+      &:first-child {
+        margin-top: 0;
       }
-      .btn {
-        min-width: 24.4rem;
-      }
+    }
+    .btn {
+      min-width: 24.4rem;
     }
   }
 }

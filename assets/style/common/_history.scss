@@ -343,6 +343,15 @@
   }
 }
 .dotted-list {
+  &.error-msg {
+    li {
+      color: $gc3;
+      &::before {
+        background: $gc3;
+      }
+    }
+  }
+
   li {
     position: relative;
     padding-left: 1.2rem;

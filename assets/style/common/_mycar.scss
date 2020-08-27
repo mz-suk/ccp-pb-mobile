@@ -152,6 +152,11 @@
   font-size: 1.5rem;
   color: $fc1;
   border-bottom: 1px solid $fcF0;
+
+  &.type1 {
+    border-bottom: 1px solid $fc1;
+  }
+
   .right {
     margin-left: auto;
   }
