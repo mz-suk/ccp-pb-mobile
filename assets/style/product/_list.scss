@@ -415,6 +415,7 @@
     .bg-icon {
       width: 2rem;
       height: 2rem;
+      margin-top: -0.3rem;
       margin-right: 0.5rem;
     }
   }
@@ -639,9 +640,9 @@
     }
   }
 
-  & + .define-list {
-    margin-top: 2rem;
-  }
+  // & + .define-list {
+  //   margin-top: 2rem;
+  // }
 }
 
 .define-list {
@@ -652,8 +653,8 @@
     float: left;
     margin-top: 2rem;
 
-    &:first-of-type {
-      margin-top: 0;
+    &.bold {
+      color: $fc1;
     }
   }
 
@@ -686,6 +687,12 @@
     display: block;
     font-size: 1.2rem;
     color: $fc9;
+  }
+
+  .bg-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 0.5rem;
   }
 }
 

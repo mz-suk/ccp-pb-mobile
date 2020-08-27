@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">예약일시 변경</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-reservation">
+          <div class="reservation-cont">
+            <div class="wrap-title">
+              <p class="title"><i class="bg-icon store"></i>기존 예약 일시</p>
+            </div>
+            <p>2020.7.8 (수) 오전 11시 40분 부터</p>
+          </div>
+
+          <div class="reservation-cont">
+            <div class="wrap-title">
+              <p class="title"><i class="bg-icon calendar"></i>변경 예약날짜</p>
+            </div>
+            <div class="wrap-calendar">
+              <div class="calendar">//달력영역</div>
+            </div>
+          </div>
+
+          <div class="reservation-cont">
+            <p class="title"><i class="bg-icon calendar"></i>예약시간</p>
+            <div class="wrap-info">
+              <div class="wrap-btn">
+                <a href="javascript:;" class="btn">시작시간 설정</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4" disabled>변경 완료</button>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

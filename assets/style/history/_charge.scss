@@ -58,9 +58,25 @@
     margin-top: 2rem;
     font-size: 1.8rem;
     color: $fc1;
+
+    &.type1 {
+      margin-top: 1rem;
+      color: $fc6;
+      font-size: 1.5rem;
+
+      a {
+        color: $pc3;
+        text-decoration: underline;
+      }
+    }
   }
   .btn-area {
     margin-top: 2rem;
+  }
+  .text-box {
+    margin: 2rem 2rem 0;
+    padding: 1.5rem;
+    color: $fc1;
   }
 }
 
@@ -73,6 +89,13 @@
 }
 .charge-btm {
   padding: 0 2rem;
+
+  .btn-area {
+    &.center {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+  }
 }
 .charge-layer-cont {
   .gray-box {
