@@ -506,6 +506,7 @@
           font-size: 1.7rem;
           font-weight: 700;
           strong {
+            margin-right: 0.2rem;
             font-size: 1.8rem;
           }
         }
@@ -570,6 +571,7 @@
       .price {
         font-size: 1.5rem;
         .num {
+          margin-right: 0.2rem;
           font-size: 1.6rem;
         }
       }
@@ -579,6 +581,12 @@
       }
       .title-area {
         .title {
+          .t-logo {
+            margin-top: -0.5rem;
+            margin-right: 0.5rem;
+            width: 1.6rem;
+            height: 1.6rem;
+          }
           color: $fc1;
         }
         .desc {

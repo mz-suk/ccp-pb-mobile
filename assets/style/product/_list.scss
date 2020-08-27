@@ -1007,11 +1007,21 @@
       color: $fc1;
       text-align: center;
       border-top: 0.1rem dotted $fcD7;
-      .car-id-number {
-        margin-top: 1.5rem;
-        width: 100%;
-        height: 2.8rem;
-        line-height: 2.8rem;
+    }
+    .car-info-box {
+      margin-top: 1.5rem;
+      display: flex;
+      span {
+        &:first-child {
+          margin-left: 0;
+          color: $pc3;
+        }
+        margin-left: 0.5rem;
+        padding: 0 1.2rem;
+        display: block;
+        height: 3rem;
+        font-size: 1.1rem;
+        line-height: 3rem;
         background: $fcF;
         border: 0.1rem solid $fcE4;
       }
