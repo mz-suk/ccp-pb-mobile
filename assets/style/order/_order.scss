@@ -538,8 +538,16 @@
     margin-top: 3rem;
   }
 
-  .wrap-tab-scroll {
+  .wrap-tab-scroll.type1 {
     margin-top: 3rem;
+  }
+
+  .wrap-tab-scroll.type2 {
+    margin-top: 2.5rem;
+    padding-bottom: 0;
+    &:after {
+      display: none;
+    }
   }
 
   .coupon-top-select {
