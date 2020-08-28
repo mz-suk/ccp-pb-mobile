@@ -24,14 +24,10 @@
       <header class="header header-sub">
         <h1 class="title">이벤트 상세</h1>
         <div class="left">
-          <button type="button" class="bg-icon prev">
-            이전페이지
-          </button>
+          <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
         <div class="right">
-          <button type="button" class="bg-icon share">
-            공유하기
-          </button>
+          <button type="button" class="bg-icon share">공유하기</button>
         </div>
       </header>
       <!-- //Header -->
@@ -69,12 +65,14 @@
             <div class="wrap-comment">
               <div class="wrap-write">
                 <strong class="name">김정수</strong>
+                <!-- textarea 탭시 active 클래스 추가 및 placeholder 내용 아래 주석으로 변경-->
                 <div class="write-box">
-                  <textarea placeholder="주제와 무관한 댓글과 욕설 또는 특정 대상을 비방하는 악플은 삭제될 수 있습니다."></textarea>
+                  <textarea placeholder="댓글을 입력해 주세요."></textarea>
+                  <!-- <textarea placeholder="주제와 무관한 댓글과 욕설 또는 특정 대상을 비방하는 악플은 삭제될 수 있습니다."></textarea> -->
                   <div class="letter"><em>0</em>/200자</div>
                 </div>
                 <div class="wrap-btn">
-                  <button type="button" class="btn color1">등록</button>
+                  <button type="button" class="btn color1">등록하기</button>
                 </div>
               </div>
 
@@ -100,6 +98,21 @@
                     </div>
                   </li>
                   <!-- //내 댓글 -->
+                  <!-- [D] 내 댓글 수정 -->
+                  <li class="comment-item">
+                    <div class="top">
+                      <strong class="name">김정수</strong>
+                      <span class="badge red">내 댓글</span>
+                    </div>
+                    <div class="write-box active">
+                      <textarea>이벤트 참여 하겠습니다. 머핀에서 주는 적립금이 많아서 요번에 다른사람에게도 추천했어요.</textarea>
+                      <div class="letter"><em>0</em>/200자</div>
+                    </div>
+                    <div class="wrap-btn">
+                      <button type="button" class="btn color1">등록하기</button>
+                    </div>
+                  </li>
+                  <!-- //내 댓글  수정-->
 
                   <!-- [D] 일반 댓글 -->
                   <li class="comment-item">
@@ -118,8 +131,8 @@
                       <strong class="name">이정아</strong>
                     </div>
                     <div class="comment">
-                      앱 다운 받은지 한달정도 된거 같아요. 처음에는 이게 편할까 했는데 지금은 머핀 앱 없으면, 불편해서 큰일날것 같아여 세차 주차 다 이걸로
-                      사용하고 있고, 남편한테도 넘 편하다구 추천 했어염. 응원합니다 머핀!!
+                      앱 다운 받은지 한달정도 된거 같아요. 처음에는 이게 편할까 했는데 지금은 머핀 앱 없으면, 불편해서 큰일날것 같아여 세차 주차 다 이걸로 사용하고 있고, 남편한테도 넘 편하다구 추천
+                      했어염. 응원합니다 머핀!!
                     </div>
                     <div class="bottom">
                       <p class="date">2020.07.20</p>

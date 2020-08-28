@@ -66,7 +66,7 @@
 
   .view-terms {
     position: relative;
-    padding: 4.8rem 2rem;
+    padding: 4rem 2rem 3rem;
     border-top: 0.1rem solid $fcF0;
 
     &:before {
@@ -129,14 +129,25 @@
     margin-top: 1rem;
     border: 0.1rem solid $fcE4;
 
+    &.active {
+      textarea {
+        min-height: 8.2rem;
+        transition: min-height 0.2s ease;
+      }
+      .letter {
+        display: block;
+      }
+    }
+
     textarea {
-      min-height: 8.2rem;
+      min-height: 4.5rem;
       background-color: $fcF;
       border: 0;
     }
 
     .letter {
       padding: 1.2rem 1rem 1.5rem;
+      display: none;
       background-color: $fcF;
       color: $fc9;
       text-align: right;
@@ -144,7 +155,7 @@
   }
 
   .wrap-btn {
-    margin: 2rem 0 3.5rem;
+    margin: 2rem 0 4rem;
   }
 
   .name {
@@ -193,42 +204,50 @@
         text-decoration: underline;
       }
     }
+    .write-box {
+      margin-top: 2rem;
+    }
+    .wrap-btn {
+      margin-bottom: 0;
+    }
   }
 }
 
 .event-list-wrap {
-  li {
-    position: relative;
-    margin-top: 3rem;
-    &.end-event {
-      &:before,
-      &:after {
-        z-index: 10;
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-      &:after {
-        background: transparent;
-        width: 100%;
-        height: 100%;
-      }
-      &:before {
-        content: "종료된 이벤트 입니다";
-        box-sizing: border-box;
-        height: 15.6rem;
-        width: 100%;
-        padding-top: 7rem;
-        color: $fcF;
-        font-size: 1.5rem;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.6);
-        border-radius: 1.6rem 1.6rem 0 0;
-      }
-      .state-label {
-        display: none;
+  .event-list {
+    li {
+      position: relative;
+      margin-top: 3rem;
+      &.end-event {
+        &:before,
+        &:after {
+          z-index: 10;
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        &:after {
+          background: transparent;
+          width: 100%;
+          height: 100%;
+        }
+        &:before {
+          content: "종료된 이벤트 입니다";
+          box-sizing: border-box;
+          height: 15.6rem;
+          width: 100%;
+          padding-top: 7rem;
+          color: $fcF;
+          font-size: 1.5rem;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.7);
+          border-radius: 1.6rem 1.6rem 0 0;
+        }
+        .state-label {
+          display: none;
+        }
       }
     }
   }
@@ -257,9 +276,9 @@
       height: 15.6rem;
       img {
         border-radius: 1.6rem 1.6rem 0 0;
-        position: absolute;
-        left: 0;
-        bottom: 0;
+        // position: absolute;
+        // left: 0;
+        // bottom: 0;
         width: 100%;
         height: 100%;
         box-sizing: border-box;
@@ -276,15 +295,6 @@
         color: $fc1;
         background: $fcF;
       }
-      .msg-box {
-        position: absolute;
-        bottom: 3.5rem;
-        left: 2rem;
-      }
-      .title {
-        font-size: 1.5rem;
-        color: $fc1;
-      }
       .desc {
         color: $fc1;
         margin: 0.5rem 0 -1.5rem;
@@ -293,11 +303,17 @@
     }
     .box-bottom {
       position: relative;
-      padding: 1.4rem 2rem 1.4rem;
+      padding: 2rem 2.5rem;
       border: 0.1rem solid $fcE4;
       border-top: 0 none;
       border-radius: 0 0 1.6rem 1.6rem;
+
+      .title {
+        font-size: 1.5rem;
+        color: $fc1;
+      }
       .date {
+        margin-top: 1rem;
         font-size: 1.2rem;
         color: $fc6;
       }
@@ -321,10 +337,11 @@
   .box-result {
     position: absolute;
     left: 0;
-    top: 6rem;
+    top: 50%;
     text-align: center;
     width: 100%;
     font-size: 0;
+    transform: translate(0, -50%);
     .result-label {
       box-sizing: border-box;
       display: inline-block;
@@ -348,5 +365,11 @@
     color: #999;
     margin-top: 4rem;
     text-align: center;
+  }
+  .wrap-tab-scroll {
+    padding-bottom: 0;
+    &:after {
+      display: none;
+    }
   }
 }
