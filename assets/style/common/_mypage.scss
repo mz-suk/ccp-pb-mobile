@@ -369,6 +369,15 @@
   .wrap-form {
     padding: 0 1rem 4rem;
   }
+  .head-title {
+    &.type1 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  .auto-select-list {
+    padding: 0 1rem;
+  }
   .label-tit,
   .checkbox {
     font-size: 1.5rem;
@@ -421,6 +430,7 @@
       width: 100%;
       &.type4 label {
         color: $fc1;
+        margin-left: 0;
       }
       .right {
         position: absolute;
