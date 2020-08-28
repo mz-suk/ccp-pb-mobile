@@ -681,37 +681,53 @@
       z-index: 10;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
       border-radius: 2rem;
       text-align: center;
 
       .text {
         margin-top: 6.9rem;
         color: $fcF;
-
+        font-size: 1.3rem;
         strong {
           display: block;
           margin-bottom: 0.5rem;
-          font-size: 1.5rem;
           font-weight: 400;
         }
       }
 
       button {
         margin-top: 2.5rem;
+        font-size: 1.5rem;
         color: $fcF;
       }
 
       .refresh2 {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.5rem;
+        vertical-align: top;
+      }
+    }
+    .btn-card-del {
+      position: absolute;
+      top: 2.2rem;
+      right: 2.2rem;
+      .bg-icon {
         width: 1.2rem;
         height: 1.2rem;
-        margin-right: 0.5rem;
+        vertical-align: top;
+      }
+      span {
+        display: inline-block;
+        border-bottom: 0.1rem solid $fcF;
       }
     }
   }
 
   .info {
-    padding: 2.2rem 2.2rem 1.4rem;
+    position: relative;
+    padding: 2.2rem 2.2rem 2.1rem;
     border-radius: 2rem 2rem 0 0;
     box-sizing: border-box;
     color: $fcF;
@@ -723,6 +739,11 @@
     .num {
       font-size: 1.4rem;
       line-height: 1.4;
+    }
+    .date {
+      margin-top: 0.9rem;
+      font-size: 1.1rem;
+      opacity: 0.7;
     }
   }
 
@@ -786,15 +807,20 @@
         margin-top: 2rem;
       }
     }
+    .detail {
+      margin-top: 3.5rem;
+    }
 
     .logo-card {
-      height: 2.5rem;
-      margin-bottom: 5.6rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 4.6rem;
+      margin-bottom: 0;
     }
 
     .brand {
       font-size: 1.3rem;
-      margin-bottom: 0.5rem;
     }
 
     .bottom {
