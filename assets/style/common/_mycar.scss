@@ -82,6 +82,9 @@
     }
   }
 }
+.ta-r {
+  text-align: right;
+}
 // 레이아웃
 // .wrap-mycar {
 //   padding: 4rem 2rem;
@@ -124,6 +127,11 @@
   }
   .wrap-tab-scroll {
     margin: 0;
+  }
+  .noti-txt {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: $fc9;
   }
 }
 
