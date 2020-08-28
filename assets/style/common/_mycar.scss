@@ -146,7 +146,7 @@
   display: flex;
   .btn {
     flex: 1;
-    border-left: 1px solid rgba(255, 255, 255, 0.16);
+    border-left: 0.1rem solid rgba(255, 255, 255, 0.16);
     &:first-child {
       border-left: 0 none;
     }
@@ -159,10 +159,10 @@
   display: flex;
   font-size: 1.5rem;
   color: $fc1;
-  border-bottom: 1px solid $fcF0;
+  border-bottom: 0.1rem solid $fcF0;
 
   &.type1 {
-    border-bottom: 1px solid $fc1;
+    border-bottom: 0.1rem solid $fc1;
   }
 
   .right {
@@ -227,7 +227,7 @@
   padding: 1.5rem 1.5rem 1.5rem 1.7rem;
   display: flex;
   background: $fcF9;
-  border: 1px solid $fcF0;
+  border: 0.1rem solid $fcF0;
   &.round {
     padding: 1.2rem 1.5rem 1.1rem;
     font-size: 1.5rem;

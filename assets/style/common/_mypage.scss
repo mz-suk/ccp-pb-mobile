@@ -369,6 +369,15 @@
   .wrap-form {
     padding: 0 1rem 4rem;
   }
+  .head-title {
+    &.type1 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  .auto-select-list {
+    padding: 0 1rem;
+  }
   .label-tit,
   .checkbox {
     font-size: 1.5rem;
@@ -421,6 +430,7 @@
       width: 100%;
       &.type4 label {
         color: $fc1;
+        margin-left: 0;
       }
       .right {
         position: absolute;
@@ -454,7 +464,7 @@
     line-height: 2.4rem;
   }
   .apply-form {
-    margin-top: 30px;
+    margin-top: 3rem;
     .apply-title {
       font-size: 1.5rem;
       padding-bottom: 0.7rem;
@@ -471,7 +481,7 @@
     }
   }
   .apply-form-info {
-    margin-top: 35px;
+    margin-top: 3.5rem;
     color: $fc6;
     .apply-title {
       font-size: 1.3rem;

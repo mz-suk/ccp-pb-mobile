@@ -273,7 +273,7 @@
 
 //empty
 .wrap-empty {
-  padding-top: 8rem;
+  padding: 8rem 0;
   text-align: center;
 
   .empty-img {
@@ -1143,7 +1143,7 @@
             width: 1.1rem;
             height: 0.1rem;
             margin: 0.4rem auto 0.7rem;
-            border-top: 1px dotted $fc9;
+            border-top: 0.1rem dotted $fc9;
             content: "";
           }
         }
