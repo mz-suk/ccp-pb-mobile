@@ -209,6 +209,12 @@
     }
     .wrap-btn {
       margin-bottom: 0;
+      .btn {
+        width: calc(50% - 0.55rem);
+        &:nth-child(odd) {
+          margin-right: 1.1rem;
+        }
+      }
     }
   }
 }
