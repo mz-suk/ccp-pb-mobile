@@ -106,8 +106,9 @@
 .search-address {
   padding-bottom: 2rem;
   .title {
-    padding-bottom: 0.5rem;
-    font-size: 1.5rem;
+    // padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: $fc1;
     .bg-icon {
       width: 1.6rem;
       height: 1.6rem;
@@ -121,6 +122,9 @@
       &:first-child {
         font-size: 1.3rem;
         color: $fc1;
+      }
+      &.new-address {
+        color: $fc6;
       }
     }
   }
