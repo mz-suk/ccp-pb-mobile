@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">즐겨찾기</h1>
+        <h1 class="title">{{ title }}</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
@@ -31,21 +31,35 @@
         </div>
       </header>
       <!-- //Header -->
-
       <!-- Wrap-contents -->
       <div class="wrap-contents">
-        <div class="wrap-empty">
-          <div class="empty-img">
-            <img src="../../assets/img/layout/icon-empty.png" alt />
+        <div class="row-section-wrap">
+          <div class="row-section">
+            <div class="member-apply">
+              <p class="apply-info">결제 비밀번호를 입력해 주세요.</p>
+              <div class="apply-form">
+                <p class="apply-title">비밀번호</p>
+                <div class="form-input">
+                  <input type="tel" maxlength="4" placeholder="숫자 4자리" />
+                </div>
+                <!-- active 클래스 추가 -->
+                <ul class="dotted-list error-msg active">
+                  <li>4자리 모두 입력해주세요.</li>
+                </ul>
+              </div>
+              <div class="wrap-check">
+                <input type="checkbox" id="chk1" />
+                <label for="chk1">원터치 결제 시 비밀번호 입력 없이 자동 결제를 진행합니다.</label>
+              </div>
+            </div>
           </div>
-          <p class="empty-text">
-            <strong>즐겨찾기가 없습니다.</strong>
-          </p>
-          <p class="empty-text">서비스를 이용해 보시고 즐겨찾기를 추가해 주세요.</p>
+        </div>
+        <div class="fix-footer-area">
+          <!-- <button type="button" class="btn type2 color4" disabled>확인</button> -->
+          <button type="button" class="btn type2 color4">확인</button>
         </div>
       </div>
       <!-- //Wrap-contents -->
-
       <!-- Footer -->
     </div>
   </body>

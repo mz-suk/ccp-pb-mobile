@@ -387,7 +387,9 @@
 }
 
 .wrap-reservation {
-  padding-bottom: 8.5rem;
+  .define-box.total {
+    margin-top: 0;
+  }
 }
 
 .reservation-cont {
@@ -468,14 +470,14 @@
     }
 
     .wrap-select {
-      margin-top: 2.5rem;
+      margin: 2.5rem 1rem 0;
       padding-bottom: 2.5rem;
       border-bottom: 0.1rem solid $fcF0;
     }
   }
 
   .wrap-tab {
-    margin-top: 2.5rem;
+    margin: 2.5rem 1rem 0;
   }
 
   .wrap-btn {
@@ -864,6 +866,9 @@
         z-index: 6;
         transform: translate(-50%, -40%);
       }
+      .btn-download {
+        display: none;
+      }
     }
   }
 
@@ -963,7 +968,7 @@
       line-height: 1.8rem;
 
       & + .info-txt2 {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
       }
     }
 

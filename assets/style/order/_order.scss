@@ -1,5 +1,5 @@
 .wrap-order {
-  padding-bottom: 8rem;
+  // padding-bottom: 8rem;
 
   .wrap-btn {
     margin-top: 4rem;
@@ -326,6 +326,20 @@
 
   .text-desc {
     margin: 2.5rem 1rem 0;
+  }
+
+  .wrap-text-link {
+    margin-top: 2.5rem;
+
+    .text-link {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.3rem;
+
+      span {
+        margin-left: auto;
+      }
+    }
   }
 }
 
@@ -715,6 +729,7 @@
         margin-top: 2.5rem;
         font-size: 1.5rem;
         color: $fcF;
+        line-height: 1;
       }
 
       .refresh2 {
@@ -731,11 +746,12 @@
       .bg-icon {
         width: 1.2rem;
         height: 1.2rem;
-        vertical-align: top;
       }
       span {
         display: inline-block;
         border-bottom: 0.1rem solid $fcF;
+        font-size: 1.1rem;
+        line-height: 1;
       }
     }
   }
@@ -828,7 +844,7 @@
 
     .logo-card {
       position: absolute;
-      bottom: 0;
+      bottom: 0.5rem;
       right: 0;
       height: 4.6rem;
       margin-bottom: 0;

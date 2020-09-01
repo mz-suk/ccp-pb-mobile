@@ -206,6 +206,17 @@
       }
     }
   }
+  &.type-order {
+    .wrap-order-card {
+      padding: 3rem 0 4rem;
+      .wrap-card {
+        margin-top: 2.5rem;
+      }
+    }
+    .wrap-order {
+      padding-bottom: 0;
+    }
+  }
   .section-sub-title {
     font-size: 1.3rem;
     margin: 2rem 0 1rem;

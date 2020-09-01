@@ -1,5 +1,9 @@
 .pattern-top-noti {
-  margin-top: 3rem;
+  margin-top: 4rem;
+  &:first-child {
+    margin-top: 3rem;
+  }
+
   .title {
     font-size: 1.5rem;
     color: $fc1;
@@ -17,26 +21,16 @@
 }
 .pattern-add-area {
   margin-top: 4rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  &.type1 {
-    & > div {
-      padding-top: 0;
-      width: 100%;
-      height: 17rem;
-      margin-bottom: 0;
-    }
-  }
 
   & > div {
     position: relative;
-    padding-top: calc((100% - 1.5rem) / 2);
-    margin-bottom: 1.5rem;
-    width: calc((100% - 1.5rem) / 2);
+    height: 10.7rem;
     font-size: 1.5rem;
     border: 0.1rem dotted $fc9;
     border-radius: 1.6rem;
+    &:not(:first-of-type) {
+      margin-top: 2rem;
+    }
 
     button {
       position: absolute;

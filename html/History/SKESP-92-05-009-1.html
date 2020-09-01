@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-alert">
+      <div class="wrap-layer-alert">
+        <div class="desc left-txt">
+          <p>회원님께서 패턴 설정하신<br /><span class="point3">[휘발유][2.000원]</span>이 바로 결제됩니다.<br />원터치 결제는 별도 비밀번호 입력없이<br />한번에 결제가 완료되는 결제 방식입니다.</p>
+        </div>
+        <div class="check-layer">
+          <input type="checkbox" id="checkbox1" />
+          <label for="checkbox1">다시보지않기</label>
+        </div>
+        <div class="wrap-btn"><button class="btn type2 color4">확인</button></div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Layer Pop -->
+  </body>
+</html>
