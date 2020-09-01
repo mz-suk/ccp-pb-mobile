@@ -136,6 +136,7 @@
       &:before {
         left: auto;
         right: 1.75rem;
+        border-bottom-color: #45d49a;
       }
     }
   }
@@ -163,7 +164,6 @@
 .board-list {
   .title {
     color: $fc1;
-    @include clamp(1);
   }
   .info {
     margin-top: 0.3rem;
@@ -370,6 +370,15 @@
   .wrap-form {
     padding: 0 1rem 4rem;
   }
+  .head-title {
+    &.type1 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  .auto-select-list {
+    padding: 0 1rem;
+  }
   .label-tit,
   .checkbox {
     font-size: 1.5rem;
@@ -377,52 +386,74 @@
   .form-input {
     margin-top: 1.5rem;
   }
-  .accordion-title {
-    padding: 1rem;
-    background-color: $fcF;
-    border-color: $fc1;
+  // .accordion-title {
+  //   padding: 1rem;
+  //   background-color: $fcF;
+  //   border-color: $fc1;
 
-    .toggle {
-      right: 1rem;
+  //   .toggle {
+  //     right: 1rem;
+  //   }
+  // }
+  // .accordion-cont {
+  //   padding: 0 1rem 0;
+  //   border-bottom: 0 none;
+
+  //   .checkbox {
+  //     position: relative;
+  //     width: 100%;
+  //     .right {
+  //       position: absolute;
+  //       right: 0;
+  //       top: 0;
+  //       font-size: 1.3rem;
+  //     }
+  //     input:checked + label {
+  //       .pont {
+  //         color: $pc3;
+  //       }
+  //     }
+  //   }
+  //
+  // }
+
+  .cont-row {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 0.1rem solid $fcF0;
+    &:first-child {
+      padding-top: 0;
+      border-top: 0 none;
     }
-  }
-  .accordion-cont {
-    padding: 0 1rem 0;
-    .cont-row {
-      margin-top: 2.5rem;
-      padding-top: 2.5rem;
-      border-top: 0.1rem solid $fcF0;
-      &:first-child {
-        padding-top: 0;
-        border-top: 0 none;
-      }
-    }
+
     .checkbox {
       position: relative;
       width: 100%;
+      &.type4 label {
+        color: $fc1;
+        margin-left: 0;
+      }
       .right {
         position: absolute;
         right: 0;
         top: 0;
         font-size: 1.3rem;
-      }
-      input:checked + label {
         .pont {
           color: $pc3;
         }
       }
     }
-    .btn-list {
-      text-align: center;
-      li {
-        margin-top: 2rem;
-        &:first-child {
-          margin-top: 0;
-        }
+  }
+  .btn-list {
+    text-align: center;
+    li {
+      margin-top: 2rem;
+      &:first-child {
+        margin-top: 0;
       }
-      .btn {
-        min-width: 24.4rem;
-      }
+    }
+    .btn {
+      min-width: 24.4rem;
     }
   }
 }
@@ -434,7 +465,7 @@
     line-height: 2.4rem;
   }
   .apply-form {
-    margin-top: 30px;
+    margin-top: 3rem;
     .apply-title {
       font-size: 1.5rem;
       padding-bottom: 0.7rem;
@@ -451,7 +482,7 @@
     }
   }
   .apply-form-info {
-    margin-top: 35px;
+    margin-top: 3.5rem;
     color: $fc6;
     .apply-title {
       font-size: 1.3rem;

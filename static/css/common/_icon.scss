@@ -426,8 +426,14 @@
   &.calendar-type-2 {
     background-image: url(~assets/img/layout/icon-calendar-type-2.png);
   }
+  &.used-state {
+    background-image: url(~assets/img/layout/icon-used_state.png);
+  }
   &.car-apply {
     background-image: url(~assets/img/layout/icon-car-apply.png);
+  }
+  &.t-logo {
+    background-image: url(~assets/img/layout/icon-logo-t.png);
   }
 }
 // 뱃지

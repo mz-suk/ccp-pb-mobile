@@ -95,6 +95,7 @@
     .blind-row {
       .wrap-empty {
         padding-top: 1rem;
+        padding-bottom: 0;
       }
     }
   }
@@ -343,6 +344,15 @@
   }
 }
 .dotted-list {
+  &.error-msg {
+    li {
+      color: $gc3;
+      &::before {
+        background: $gc3;
+      }
+    }
+  }
+
   li {
     position: relative;
     padding-left: 1.2rem;
@@ -506,6 +516,7 @@
           font-size: 1.7rem;
           font-weight: 700;
           strong {
+            margin-right: 0.2rem;
             font-size: 1.8rem;
           }
         }
@@ -570,6 +581,7 @@
       .price {
         font-size: 1.5rem;
         .num {
+          margin-right: 0.2rem;
           font-size: 1.6rem;
         }
       }
@@ -579,6 +591,12 @@
       }
       .title-area {
         .title {
+          .t-logo {
+            margin-top: -0.5rem;
+            margin-right: 0.5rem;
+            width: 1.6rem;
+            height: 1.6rem;
+          }
           color: $fc1;
         }
         .desc {
@@ -831,7 +849,7 @@
     margin: 1rem 0 0 1.3rem;
     padding: 0 0 2rem 2rem;
     .history-desc {
-      padding: 3rem 2rem 2rem;
+      padding: 3rem 2.5rem 4rem;
       border: 0.1rem solid $fcD7;
       border-radius: 0 1.6rem 1.6rem 1.6rem;
       color: $fc1;
@@ -901,7 +919,7 @@
       }
       .more-detail {
         border-top: 0.1rem solid $fcE4;
-        margin-top: 3rem;
+        margin: 3rem -0.5rem -2rem;
         padding-top: 1.8rem;
         display: flex;
         text-align: center;
