@@ -864,6 +864,9 @@
         z-index: 6;
         transform: translate(-50%, -40%);
       }
+      .btn-download {
+        display: none;
+      }
     }
   }
 
@@ -963,7 +966,7 @@
       line-height: 1.8rem;
 
       & + .info-txt2 {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
       }
     }
 
