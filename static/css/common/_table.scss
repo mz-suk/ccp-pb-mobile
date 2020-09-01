@@ -21,7 +21,7 @@
     padding: 1.2rem 0.5rem;
     color: $fc1;
     background: $fcF9;
-    border: 1px solid $fcE4;
+    border: 0.1rem solid $fcE4;
     &:first-child {
       border-left: none;
     }
@@ -31,7 +31,7 @@
   }
   td {
     padding: 1.2rem 0.5rem;
-    border: 1px solid $fcE4;
+    border: 0.1rem solid $fcE4;
     &:first-child {
       border-left: none;
     }

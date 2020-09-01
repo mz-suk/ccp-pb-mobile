@@ -318,8 +318,26 @@ textarea {
         }
       }
     }
-
-    input[type="checkbox"]:checked + label,
+    input[type="checkbox"] + label {
+      .left {
+        &:before {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 0;
+          border: none;
+          background: $fcE4 url(../~assets/img/layout/icon-checkbox.png) no-repeat center center / 2rem auto;
+          transition: background 0.2s ease;
+        }
+      }
+    }
+    input[type="checkbox"]:checked + label {
+      .left {
+        &:before {
+          background: $fc1 url(../~assets/img/layout/icon-checkbox-on.png) no-repeat center center / 2rem auto;
+          transition: background 0.2s ease;
+        }
+      }
+    }
     input[type="radio"]:checked + label {
       background-color: $fcF;
       border: 0 none;
