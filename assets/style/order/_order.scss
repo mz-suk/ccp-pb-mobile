@@ -1,5 +1,5 @@
 .wrap-order {
-  padding-bottom: 8rem;
+  // padding-bottom: 8rem;
 
   .wrap-btn {
     margin-top: 4rem;
@@ -184,9 +184,9 @@
     margin-top: 2rem;
   }
 
-  .define-box {
-    margin-top: 2rem;
-  }
+  // .define-box {
+  //   margin-top: 2rem;
+  // }
 
   .text-color {
     color: $gc3;
@@ -260,10 +260,10 @@
 }
 
 .define-box {
-  margin-top: 2rem;
+  // margin-top: 2rem;
 
   &.total {
-    margin-top: 2.5rem;
+    margin: 2.5rem 0 0;
     border-color: $pc3;
     color: $pc3;
 
@@ -274,13 +274,13 @@
   }
 
   &.benefit {
-    margin-top: 1rem;
+    margin: 1rem 0 0;
     padding: 1rem 1.5rem;
     background: rgba(234, 0, 44, 0.06);
     border: 0;
   }
   &.charge {
-    margin-top: 1rem;
+    margin: 1rem 0 0;
     padding: 1rem 1.5rem;
     background: rgba(54, 115, 238, 0.06);
     border: 0;
@@ -327,6 +327,19 @@
   .text-desc {
     margin: 2.5rem 1rem 0;
   }
+
+  .wrap-text-link {
+    margin-top: 2.5rem;
+
+    .text-link {
+      display: flex;
+      flex-wrap: wrap;
+
+      span {
+        margin-left: auto;
+      }
+    }
+  }
 }
 
 .point-info {
@@ -354,6 +367,7 @@
     padding-right: 1.5rem;
     background: url(../../assets/img/layout/icon-more-type2.png) 100% 50% / 1.2rem 1.2rem no-repeat;
     color: $fc1;
+    font-size: 1.3rem;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -522,7 +536,7 @@
   }
 
   .wrap-btn {
-    margin-top: 4rem;
+    margin-top: 3rem;
 
     .btn {
       width: 100%;
@@ -715,6 +729,7 @@
         margin-top: 2.5rem;
         font-size: 1.5rem;
         color: $fcF;
+        line-height: 1;
       }
 
       .refresh2 {
@@ -731,11 +746,12 @@
       .bg-icon {
         width: 1.2rem;
         height: 1.2rem;
-        vertical-align: top;
       }
       span {
         display: inline-block;
         border-bottom: 0.1rem solid $fcF;
+        font-size: 1.1rem;
+        line-height: 1;
       }
     }
   }
@@ -828,7 +844,7 @@
 
     .logo-card {
       position: absolute;
-      bottom: 0;
+      bottom: 0.5rem;
       right: 0;
       height: 4.6rem;
       margin-bottom: 0;

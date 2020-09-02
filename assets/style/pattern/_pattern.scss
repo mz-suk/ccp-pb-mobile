@@ -22,12 +22,28 @@
 .pattern-add-area {
   margin-top: 4rem;
 
+  &.type1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > div {
+      margin-bottom: 1.5rem;
+      width: calc((100% - 1.5rem) / 2);
+      height: 14.4rem;
+      &:not(:first-of-type) {
+        margin-top: 0;
+      }
+    }
+  }
+
   & > div {
     position: relative;
     height: 10.7rem;
     font-size: 1.5rem;
     border: 0.1rem dotted $fc9;
     border-radius: 1.6rem;
+    box-sizing: border-box;
     &:not(:first-of-type) {
       margin-top: 2rem;
     }

@@ -387,7 +387,9 @@
 }
 
 .wrap-reservation {
-  padding-bottom: 8.5rem;
+  .define-box.total {
+    margin-top: 0;
+  }
 }
 
 .reservation-cont {
@@ -468,14 +470,14 @@
     }
 
     .wrap-select {
-      margin-top: 2.5rem;
+      margin: 2.5rem 1rem 0;
       padding-bottom: 2.5rem;
       border-bottom: 0.1rem solid $fcF0;
     }
   }
 
   .wrap-tab {
-    margin-top: 2.5rem;
+    margin: 2.5rem 1rem 0;
   }
 
   .wrap-btn {
@@ -503,6 +505,7 @@
     border-bottom: 0.1rem solid $fcF0;
 
     &:last-of-type {
+      padding-bottom: 0;
       border-bottom: 0;
     }
 
@@ -617,6 +620,12 @@
       height: 2rem;
     }
   }
+
+  & + .order-info,
+  & + .define-list,
+  & + .point-info {
+    margin-top: 2.5rem;
+  }
 }
 
 .wrap-time {
@@ -636,11 +645,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 2rem;
   padding: 0 1rem 1rem;
   border-bottom: 0.1rem solid $fc1;
   color: $fc1;
 
-  * {
+  dt,
+  dd {
     display: inline-block;
 
     &.right {
@@ -648,9 +659,9 @@
     }
   }
 
-  // & + .define-list {
-  //   margin-top: 2rem;
-  // }
+  & + .define-list {
+    margin-top: 2rem;
+  }
 }
 
 .define-list {
@@ -659,7 +670,12 @@
   dt,
   dd {
     float: left;
-    margin-top: 2rem;
+    // margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
 
     &.bold {
       color: $fc1;
@@ -681,7 +697,7 @@
     text-align: right;
   }
   .replay-txt {
-    margin-top: 0.9rem;
+    margin-top: -1.2rem;
     font-size: 1.1rem;
     color: $fc9;
   }
@@ -701,6 +717,10 @@
     width: 1.6rem;
     height: 1.6rem;
     margin-left: 0.5rem;
+  }
+
+  & + .define-box {
+    margin-top: 2.5rem;
   }
 }
 
