@@ -173,6 +173,9 @@
 
     .type2 {
       width: auto;
+      min-width: 15rem;
+      height: 5rem;
+      line-height: 5rem;
     }
   }
 
@@ -191,6 +194,10 @@
 
     .wrap-checkbox {
       margin-top: -1rem;
+    }
+
+    .checkbox.type5 {
+      margin-right: 0.5rem;
     }
 
     .wrap-btn {
