@@ -184,9 +184,9 @@
     margin-top: 2rem;
   }
 
-  .define-box {
-    margin-top: 2rem;
-  }
+  // .define-box {
+  //   margin-top: 2rem;
+  // }
 
   .text-color {
     color: $gc3;
@@ -260,10 +260,10 @@
 }
 
 .define-box {
-  margin-top: 2rem;
+  // margin-top: 2rem;
 
   &.total {
-    margin-top: 2.5rem;
+    margin: 2.5rem 0 0;
     border-color: $pc3;
     color: $pc3;
 
@@ -274,13 +274,13 @@
   }
 
   &.benefit {
-    margin-top: 1rem;
+    margin: 1rem 0 0;
     padding: 1rem 1.5rem;
     background: rgba(234, 0, 44, 0.06);
     border: 0;
   }
   &.charge {
-    margin-top: 1rem;
+    margin: 1rem 0 0;
     padding: 1rem 1.5rem;
     background: rgba(54, 115, 238, 0.06);
     border: 0;
@@ -334,7 +334,6 @@
     .text-link {
       display: flex;
       flex-wrap: wrap;
-      font-size: 1.3rem;
 
       span {
         margin-left: auto;
@@ -368,6 +367,7 @@
     padding-right: 1.5rem;
     background: url(~assets/img/layout/icon-more-type2.png) 100% 50% / 1.2rem 1.2rem no-repeat;
     color: $fc1;
+    font-size: 1.3rem;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -536,7 +536,7 @@
   }
 
   .wrap-btn {
-    margin-top: 4rem;
+    margin-top: 3rem;
 
     .btn {
       width: 100%;
