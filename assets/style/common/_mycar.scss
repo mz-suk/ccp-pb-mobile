@@ -1,7 +1,8 @@
 .vartical-bar {
   position: relative;
-
-  &.dotted {
+  text-align: left;
+  font-size: 0;
+  l &.dotted {
     & > span:after {
       border-right: 0.1rem dotted $fc9;
     }
@@ -9,14 +10,17 @@
 
   & > span {
     position: relative;
+    margin: 1rem 1rem 0 0;
+    padding: 0 1.1rem 0 0;
     display: inline-block;
     vertical-align: top;
-    padding: 0 1.1rem 0 1rem;
-    letter-spacing: -0.01rem;
+    letter-spacing: -0.04rem;
+    font-size: 1.3rem;
     &:first-of-type {
       padding-left: 0;
     }
     &:last-of-type {
+      margin-right: 0;
       padding-right: 0;
       &:after {
         display: none;
