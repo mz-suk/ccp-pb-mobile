@@ -493,6 +493,9 @@
     overflow: hidden;
     padding: 2.5rem 2rem 3.5rem;
     border-bottom: 0.1rem solid $fcF0;
+    .gray-box {
+      border-bottom: 0 none;
+    }
   }
 
   .gray-box {

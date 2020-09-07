@@ -164,9 +164,57 @@
     color: $fc1;
     line-height: 1.25;
   }
+  .sub-desc {
+    font-size: 1.3rem;
+    color: $fc6;
+    margin-bottom: 0.7rem;
+  }
+  .more-desc {
+    position: relative;
+    font-size: 1.1rem;
+    color: $fc9;
+    padding-left: 1.1rem;
+    margin-bottom: 0;
+    display: inline-block;
+    .star {
+      position: absolute;
+      left: 0;
+      top: 0.4rem;
+    }
+  }
+  .icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0 0;
+    padding: 0 2.2rem;
+    &.type-yellow {
+      .circle-icon {
+        background-color: $pc2;
+        border-color: $pc6;
+      }
+    }
+    li {
+      padding: 2rem 0 0;
+      flex: 1 0 33.333%;
+      .list-cont {
+        width: auto;
+        .circle-icon {
+          width: 6.4rem;
+        }
+      }
+    }
+  }
 }
 .qna-area {
   padding: 3rem 2rem 0;
+  &.type-none-title {
+    .wrap-tab {
+      margin-top: 0;
+    }
+    .qna-list {
+      margin-top: 0;
+    }
+  }
   .wrap-tab {
     margin-top: 2.5rem;
   }
