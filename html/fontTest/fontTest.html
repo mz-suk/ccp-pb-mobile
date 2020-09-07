@@ -62,10 +62,10 @@
         height: 40vh;
         padding: 1em;
         resize: vertical;
+        line-height: 1.5;
       }
       textarea::placeholder {
         font: inherit;
-        line-height: 1.5;
       }
       button,
       input,
@@ -109,7 +109,9 @@
 
   <body>
     <div class="wrap-test-fonts">
-      <textarea id="testFont" cols="30" rows="10" placeholder="그는 독립문 보수에 지쳐 칼퇴를 표함&#13;&#10;0123456789,%&#13;&#10;ABCDEFG"></textarea>
+      <textarea id="testFont" cols="30" rows="10" placeholder="그는 독립문 보수에 지쳐 칼퇴를 표함&#13;&#10;0123456789,%&#13;&#10;ABCDEFG">
+그는 독립문 보수에 지쳐 칼퇴를 표함&#13;&#10;0123456789,%&#13;&#10;ABCDEFG</textarea
+      >
 
       <div class="change-style">
         <div class="item" data-unit="px">
@@ -117,23 +119,40 @@
           <input type="tel" class="value" data-css="font-size" value="14" data-unit="px" />
         </div>
         <div class="item">
-          <p>line-height:</p>
-          <input type="tel" class="value" data-css="line-height" value="1.5" />
-        </div>
-        <div class="item">
           <p>font-weight:</p>
           <select class="value" data-css="font-weight">
-            <option value="100">100</option>
+            <!-- <option value="100">100</option>
             <option value="200">200</option>
-            <option value="300">300</option>
-            <option value="400" selected>400</option>
-            <option value="500">500</option>
-            <option value="600">600</option>
-            <option value="700">700</option>
-            <option value="800">800</option>
-            <option value="900">900</option>
+            <option value="300">300</option> -->
+            <option value="400" selected>Regular</option>
+            <!-- <option value="500">500</option>
+            <option value="600">600</option> -->
+            <option value="700">Bold</option>
+            <!-- <option value="800">800</option>
+            <option value="900">900</option> -->
           </select>
         </div>
+        <div class="item">
+          <p>line-height:</p>
+          <select class="value" data-css="line-height">
+            <option value="1">1</option>
+            <option value="1.1">1.1</option>
+            <option value="1.2">1.2</option>
+            <option value="1.3">1.3</option>
+            <option value="1.4">1.4</option>
+            <option value="1.5" selected>1.5</option>
+            <option value="1.6">1.6</option>
+            <option value="1.7">1.7</option>
+            <option value="1.8">1.8</option>
+            <option value="1.9">1.9</option>
+            <option value="2">2</option>
+          </select>
+          <!-- <input type="tel" class="value" data-css="line-height" value="1.5" /> -->
+        </div>
+        <!-- <div class="item">
+          <p>letter-spacing:</p>
+          <input type="tel" class="value" data-css="letter-spacing" value="0" />
+        </div> -->
         <div class="item">
           <p>font-smoothing:</p>
           <select class="value" data-css="-webkit-font-smoothing">
@@ -147,17 +166,17 @@
           <select class="value" data-css="font-style">
             <option value="normal">normal</option>
             <option value="italic">italic</option>
-            <option value="oblique">oblique</option>
+            <!-- <option value="oblique">oblique</option> -->
           </select>
         </div>
-        <div class="item">
+        <!-- <div class="item">
           <p>font-variant:</p>
           <select class="value" data-css="font-variant">
             <option value="none">none</option>
             <option value="normal">normal</option>
             <option value="small-caps">small-caps</option>
           </select>
-        </div>
+        </div> -->
       </div>
     </div>
 
