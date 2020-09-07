@@ -199,7 +199,7 @@
         flex: 0;
         height: auto;
         font-size: 1.7rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0.9rem;
         text-align: center;
         white-space: nowrap;
         border: 0 none;
@@ -224,6 +224,16 @@
       position: relative;
       display: flex;
       justify-content: space-between;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-bottom: 0.1rem solid $fcF0;
+        z-index: 0;
+      }
       li {
         position: relative;
         flex: 0;
@@ -235,7 +245,6 @@
         border: 0 none;
         background: $fcF;
         color: $fc1;
-        z-index: 1;
         &:first-child button {
           text-align: left;
         }
@@ -244,6 +253,8 @@
         }
         &.active {
           color: $pc3;
+          z-index: 1;
+          padding-bottom: 0.9rem;
           border-bottom: 0.2rem solid $pc3;
         }
       }
