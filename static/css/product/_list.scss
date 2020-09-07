@@ -670,7 +670,6 @@
   dt,
   dd {
     float: left;
-    // margin-top: 2rem;
     margin-bottom: 2rem;
 
     &:last-of-type {
@@ -1062,7 +1061,7 @@
     }
     .car-info {
       margin: 1.1rem -0.5rem 0;
-      padding-top: 2rem;
+      padding: 1rem 1.5rem 0;
       line-height: 1;
       color: $fc1;
       text-align: center;
