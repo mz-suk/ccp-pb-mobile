@@ -27,9 +27,9 @@
         src: url("./MoebiusBold.woff2") format("woff2"), url("./MoebiusBold.woff") format("woff");
       }
 
-      * {
+      body,
+      p {
         margin: 0;
-        padding: 0;
       }
       html {
         overflow-x: hidden;
@@ -39,15 +39,16 @@
       }
       body {
         width: 100%;
+        margin: 0;
         font: 1.4rem/1.5 "TestFont", sans-serif;
         word-break: break-all;
         background-color: #ccc;
       }
-      button,
       input,
       select,
       textarea {
         box-sizing: border-box;
+        width: 100%;
         font-size: 1em;
         font-family: inherit;
         color: inherit;
@@ -58,7 +59,6 @@
         background-color: #fff;
       }
       textarea {
-        width: 100%;
         height: 40vh;
         padding: 1em;
         resize: vertical;
@@ -67,10 +67,9 @@
       textarea::placeholder {
         font: inherit;
       }
-      button,
       input,
       select {
-        height: 2.6em;
+        height: 2.3em;
         padding: 0.5em;
         border: 1px solid #333;
       }
@@ -84,13 +83,13 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
-        padding: 0.5em;
+        margin-bottom: 1em;
       }
       .change-style .item[data-unit]:after {
         content: attr(data-unit);
         position: absolute;
         top: 50%;
-        right: 1.5em;
+        right: 1em;
         z-index: 2;
         transform: translateY(-50%);
       }
@@ -109,8 +108,8 @@
 
   <body>
     <div class="wrap-test-fonts">
-      <textarea id="testFont" cols="30" rows="10" placeholder="그는 독립문 보수에 지쳐 칼퇴를 표함&#13;&#10;0123456789,%&#13;&#10;ABCDEFG">
-그는 독립문 보수에 지쳐 칼퇴를 표함&#13;&#10;0123456789,%&#13;&#10;ABCDEFG</textarea
+      <textarea id="testFont" cols="30" rows="10" placeholder="그는 독립문 보수에 지쳐 칼퇴 표함&#13;&#10;0123456789,%&#13;&#10;ABCDEFG">
+그는 독립문 보수에 지쳐 칼퇴 표함&#13;&#10;0123456789,%&#13;&#10;ABCDEFG</textarea
       >
 
       <div class="change-style">
@@ -181,22 +180,19 @@
     </div>
 
     <script>
+      const changeStyle = (obj, tgt) =>
+        obj.addEventListener("change", function (e) {
+          const item = e.target;
+          const data = item.dataset;
+          let dataVal = !!data.unit ? item.value + data.unit : item.value;
+
+          tgt.style[data.css] = dataVal;
+        });
+
       const $tgt = document.querySelector("#testFont");
       const $styles = document.querySelectorAll(".change-style .value");
 
-      const changeStyle = ($obj) =>
-        $obj.addEventListener("change", function (e) {
-          let obj = e.target;
-          let dataCss = obj.dataset.css;
-          let dataVal = obj.value;
-
-          if (!!obj.dataset.unit) dataVal += obj.dataset.unit;
-          $tgt.style[dataCss] = dataVal;
-
-          return;
-        });
-
-      $styles.forEach(($obj) => changeStyle($obj));
+      $styles.forEach(($obj) => changeStyle($obj, $tgt));
     </script>
   </body>
 </html>
