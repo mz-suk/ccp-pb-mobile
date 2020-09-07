@@ -1,35 +1,180 @@
-.header-menu {
-  height: 9.8rem;
-  background-color: $fcF0;
-}
-
 .wrap-menu {
-  .menu-item {
-    padding: 4rem 2rem 3.5rem;
-    box-sizing: border-box;
-    border-top: 0.8rem solid $fcF9;
-    border-bottom: 0.1rem solid $fcF0;
+  padding: 0 2rem 0 3rem;
 
-    &:first-child {
-      border-top: 0;
-    }
+  .wrap-member {
+    padding: 1.5rem 0 2.5rem;
+    border-bottom: 0.1rem solid $fc1;
 
-    &:last-child {
-      border-bottom: 0;
-    }
-
-    .text-link {
-      margin-bottom: 3rem;
+    .member-name {
+      color: $fc1;
+      font-size: 1.7rem;
     }
   }
 
-  .title-sub {
-    border-color: $fc1;
+  .member-grade {
+    margin-top: 1.5rem;
 
+    .grade {
+      display: inline-block;
+      height: 2.6rem;
+      padding: 0 0.9rem;
+      box-sizing: border-box;
+      background: #fddb2b;
+      border: 0.1rem solid #fccb3a;
+      border-radius: 2.6rem;
+      color: $fc1;
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 2.6rem;
+      vertical-align: middle;
+    }
+
+    .btn-arrow {
+      margin-left: 0.8rem;
+      color: $fc6;
+    }
+  }
+
+  .menu-list {
+    li {
+      padding: 3.5rem 1rem 1.5rem;
+
+      &:not(:last-child) {
+        border-bottom: 0.1rem dotted #eee;
+      }
+
+      a {
+        color: $fc1;
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      .bg-icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.8rem;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+.wrap-member-info {
+  padding: 0 2rem;
+
+  .title-sub {
     .bg-icon {
       width: 2rem;
       height: 2rem;
-      margin-top: -0.3rem;
+      margin-right: 0.5rem;
+      vertical-align: top;
+    }
+  }
+
+  .member-info {
+    margin-top: 4rem;
+
+    .grade {
+      display: inline-block;
+      float: left;
+      width: 4.6rem;
+      height: 4.6rem;
+      margin-right: 1rem;
+      background: url(../../assets/img/layout/bg-grade-type1.png) 0 0 / 100% 100% no-repeat;
+      border-radius: 50%;
+      color: $fcF;
+      font-weight: 700;
+      text-align: center;
+      line-height: 4.6rem;
+      vertical-align: top;
+    }
+
+    .member {
+      .name {
+        margin-bottom: 0.5rem;
+        color: $fc1;
+        font-size: 1.5rem;
+      }
+    }
+
+    .info-txt {
+      .inner {
+        margin-top: 1rem;
+        padding-left: 0.5rem;
+      }
+
+      .txt {
+        color: $fc1;
+        font-size: 1.5rem;
+      }
+      .sub-txt {
+        margin-top: 0.5rem;
+      }
+
+      &.type2,
+      &.type3 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .num {
+          margin-left: auto;
+          padding-right: 1rem;
+          color: $pc3;
+
+          em {
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      &.type3 {
+        .txt {
+          margin-right: 1.5rem;
+          .num {
+            padding-right: 0;
+            font-size: 1.6rem;
+          }
+        }
+        .desc {
+          margin-left: -0.5rem;
+          color: $fc6;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .info-cont {
+    position: relative;
+    margin-top: 2rem;
+    padding: 0 1rem;
+
+    .btn-link {
+      margin-top: 1rem;
+      color: $pc3;
+      border-color: $pc3;
+    }
+
+    .btn-arrow {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 2rem;
+      height: 2rem;
+      transform: translateY(-50%);
+      @include blind();
+
+      &:after {
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url(../../assets/img/layout/icon-more-type2.png) 50% 50% / 100% 100% no-repeat;
+      }
+    }
+
+    .badge {
+      display: inline-block;
+      line-height: 2rem;
     }
   }
 }

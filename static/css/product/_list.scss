@@ -33,6 +33,13 @@
   + .wrap-more {
     margin-top: 1rem;
   }
+
+  .pattern-comp-list > li {
+    &:first-child {
+      margin-top: 0;
+    }
+    padding: 0 2rem;
+  }
 }
 
 .list-item {
@@ -1008,6 +1015,12 @@
       text-align: center;
       border-top: 0.1rem dotted $fcD7;
     }
+    .wrap-btn {
+      margin-top: 4rem;
+      button {
+        width: 100%;
+      }
+    }
   }
 
   .info-car-cont {
@@ -1136,6 +1149,9 @@
           width: 1.2rem;
           height: 1.2rem;
           transform: translate(0, -50%);
+        }
+        > span {
+          display: block;
         }
       }
     }

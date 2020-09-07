@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">내 정보</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-member-info">
+          <div class="member-info">
+            <div class="title-sub">
+              <p><i class="bg-icon member"></i>회원정보</p>
+            </div>
+            <div class="info-cont">
+              <span class="grade">일반</span>
+              <div class="member">
+                <p class="name"><span>김민국</span> 고객님</p>
+                <p class="email">honggildong@gmail.com</p>
+              </div>
+              <button type="button" class="btn-arrow">더보기</button>
+            </div>
+          </div>
+
+          <div class="member-info">
+            <div class="title-sub">
+              <p><i class="bg-icon car-apply"></i>차량정보</p>
+            </div>
+            <div class="info-cont">
+              <div class="info-txt">
+                <span class="badge gray">주유차량</span>
+                <div class="inner">
+                  <p class="txt">25가 1234</p>
+                  <p class="sub-txt">제네시스 2021 G80</p>
+                </div>
+              </div>
+              <button type="button" class="btn-arrow">더보기</button>
+            </div>
+          </div>
+
+          <div class="member-info">
+            <div class="title-sub">
+              <p><i class="bg-icon card"></i>카드정보</p>
+            </div>
+            <div class="info-cont">
+              <div class="info-txt">
+                <span class="badge gray">대표카드</span>
+                <div class="inner">
+                  <p class="txt">현대카드</p>
+                  <p class="sub-txt">3742 76** ****0927</p>
+                </div>
+              </div>
+              <button type="button" class="btn-arrow">더보기</button>
+            </div>
+          </div>
+
+          <div class="member-info">
+            <div class="title-sub">
+              <p><i class="bg-icon pattern"></i>패턴정보</p>
+            </div>
+            <div class="info-cont">
+              <div class="info-txt">
+                <p class="txt">등록된 패턴</p>
+                <p class="sub-txt">주유, 손세차, 셀프세차, 출장세차, 새벽세차</p>
+              </div>
+              <button type="button" class="btn-arrow">더보기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

@@ -22,85 +22,55 @@
     <div id="container"></div>
 
     <!-- Popup -->
-    <div class="wrapper-layer pos-right">
+    <div class="wrapper-layer pos-menu">
       <div class="wrap-layer">
         <header class="header header-menu">
-          //상단 컨텐츠 영역 (기획 미확정)
           <div class="right">
+            <button type="button" class="bg-icon setting">설정</button>
+            <button type="button" class="bg-icon alarm">
+              알림함
+              <span class="badge num">99</span>
+            </button>
             <button type="button" class="bg-icon close">닫기</button>
           </div>
         </header>
 
         <div class="wrap-contents">
           <div class="wrap-menu">
-            <dl class="menu-item">
-              <dt class="title-sub">
-                <p class="title">
-                  <i class="bg-icon calendar"></i>
-                  내정보
-                </p>
-              </dt>
-              <dd class="wrap-text-link">
-                <a href="javascript:;" class="text-link">회원정보</a>
-                <a href="javascript:;" class="text-link">차량정보</a>
-                <a href="javascript:;" class="text-link">결제관리</a>
-                <a href="javascript:;" class="text-link">패턴관리</a>
-              </dd>
-            </dl>
-
-            <dl class="menu-item">
-              <dt class="title-sub">
-                <p class="title">
-                  <i class="bg-icon calendar"></i>
-                  혜택
-                </p>
-              </dt>
-              <dd class="wrap-text-link">
-                <a href="javascript:;" class="text-link">멤버십</a>
-                <a href="javascript:;" class="text-link">쿠폰함<span class="badge num">9</span></a>
-                <a href="javascript:;" class="text-link">이벤트</a>
-              </dd>
-            </dl>
-
-            <dl class="menu-item">
-              <dt class="title-sub">
-                <p class="title">
-                  <i class="bg-icon calendar"></i>
-                  활동내역
-                </p>
-              </dt>
-              <dd class="wrap-text-link">
-                <a href="javascript:;" class="text-link">예약/이용내역</a>
-                <a href="javascript:;" class="text-link">포인트내역</a>
-                <a href="javascript:;" class="text-link">선불카드 충전/사용내역</a>
-                <a href="javascript:;" class="text-link">리뷰내역</a>
-                <a href="javascript:;" class="text-link">즐겨찾기</a>
-              </dd>
-            </dl>
-
-            <dl class="menu-item">
-              <dt class="title-sub">
-                <p class="title">
-                  <i class="bg-icon calendar"></i>
-                  고객센터
-                </p>
-              </dt>
-              <dd class="wrap-text-link">
-                <a href="javascript:;" class="text-link">공지사항</a>
-                <a href="javascript:;" class="text-link">문의하기</a>
-                <a href="javascript:;" class="text-link">앱이용안내</a>
-                <a href="javascript:;" class="text-link">이용약관</a>
-              </dd>
-            </dl>
-
-            <div class="menu-item">
-              <div class="title-sub">
-                <p class="title">
-                  <i class="bg-icon calendar"></i>
-                  설정
-                </p>
+            <div class="wrap-member">
+              <p class="member-name"><strong>김민국</strong> 고객님</p>
+              <div class="member-grade">
+                <span class="grade">GOLD</span>
+                <button type="button" class="btn-arrow">머핀 등급별 혜택</button>
               </div>
             </div>
+
+            <ul class="menu-list">
+              <li>
+                <i class="bg-icon member"></i>
+                <button type="button">내정보</button>
+              </li>
+              <li>
+                <i class="bg-icon history"></i>
+                <button type="button">활동내역</button>
+              </li>
+              <li>
+                <i class="bg-icon membership"></i>
+                <button type="button">멤버십</button>
+              </li>
+              <li>
+                <i class="bg-icon benefit"></i>
+                <button type="button">쿠폰함<span class="badge num">7</span></button>
+              </li>
+              <li>
+                <i class="bg-icon event"></i>
+                <button type="button">이벤트</button>
+              </li>
+              <li>
+                <i class="bg-icon customer"></i>
+                <button type="button">고객지원</button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
