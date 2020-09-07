@@ -102,6 +102,7 @@
   .label-area {
     display: flex;
     padding-bottom: 1rem;
+    align-items: center;
     .label {
       display: inline-block;
       box-sizing: border-box;
@@ -120,6 +121,14 @@
         border-color: $gc3;
         color: $gc3;
       }
+    }
+    .date {
+      margin-left: 1.2rem;
+      padding-left: 1rem;
+      border-left: 0.1rem solid $fcD7;
+      line-height: 1;
+      font-size: 1.2rem;
+      color: $fc6;
     }
   }
   .title-area {
@@ -158,7 +167,7 @@
   .comment-area {
     margin-top: 1rem;
     .comment {
-      @include clamp(2);
+      // @include clamp(2);
     }
   }
   .reply-area {
@@ -176,7 +185,7 @@
       }
     }
     .comment {
-      @include clamp(2);
+      // @include clamp(2);
     }
     .date {
       text-align: right;
