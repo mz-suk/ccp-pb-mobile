@@ -207,6 +207,14 @@
 }
 .qna-area {
   padding: 3rem 2rem 0;
+  &.type-none-title {
+    .wrap-tab {
+      margin-top: 0;
+    }
+    .qna-list {
+      margin-top: 0;
+    }
+  }
   .wrap-tab {
     margin-top: 2.5rem;
   }
