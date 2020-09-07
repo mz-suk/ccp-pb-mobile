@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">활동 내역</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-member-info">
+          <div class="member-info">
+            <div class="title-sub">
+              <p><i class="bg-icon calendar-type3"></i>예약/이용내역</p>
+            </div>
+            <div class="info-cont">
+              <div class="info-txt type3">
+                <p class="txt">예약 <span class="num">3</span></p>
+                <p class="txt">이용 <span class="num">5</span></p>
+                <p class="txt">취소 <span class="num">0</span></p>
+                <p class="desc">(최근 7일)</p>
+              </div>
+              <button type="button" class="btn-arrow">더보기</button>
+            </div>
+          </div>
+
+          <div class="member-info">
+            <div class="title-sub">
+              <p><i class="bg-icon point"></i>포인트 내역</p>
+            </div>
+            <div class="info-cont">
+              <div class="info-txt type2">
+                <p class="txt">머핀 포인트</p>
+                <p class="num"><em>2,980</em> P</p>
+              </div>
+              <button type="button" class="btn-arrow">더보기</button>
+            </div>
+          </div>
+
+          <div class="member-info">
+            <div class="title-sub">
+              <p><i class="bg-icon prepayment"></i>선불카드 충전/사용내역</p>
+            </div>
+            <div class="info-cont">
+              <div class="info-txt type2">
+                <p class="txt">선불카드 잔액</p>
+                <p class="num"><em>30,000</em> P</p>
+              </div>
+              <button type="button" class="btn-arrow">더보기</button>
+            </div>
+          </div>
+
+          <div class="member-info">
+            <div class="title-sub">
+              <p><i class="bg-icon review-type2"></i>리뷰내역</p>
+            </div>
+            <div class="info-cont">
+              <div class="info-txt type3">
+                <p class="txt">등록 <span class="num">3</span></p>
+                <p class="txt">작성해야 할 리뷰 <span class="num">5</span></p>
+              </div>
+              <button type="button" class="btn-arrow">더보기</button>
+            </div>
+          </div>
+
+          <div class="member-info">
+            <div class="title-sub">
+              <p><i class="bg-icon like"></i>즐겨찾기</p>
+            </div>
+            <div class="info-cont">
+              <div class="info-txt type3">
+                <p class="txt">주유 <span class="num">3</span></p>
+                <p class="txt">세차 <span class="num">5</span></p>
+              </div>
+              <button type="button" class="btn-arrow">더보기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
