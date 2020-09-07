@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">즐겨찾기</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="bookmark-cont">
+          <div class="wrap-tab type2">
+            <ul class="tab-menu">
+              <li>
+                <button type="button">주유소 <em>(6)</em></button>
+              </li>
+              <li class="active">
+                <button type="button">세차장 <em>(17)</em></button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="wrap-tab-scroll type2">
+            <ul class="tab-scroll-menu">
+              <li>
+                <div class="checkbox type5">
+                  <input type="checkbox" id="chk2" checked />
+                  <label for="chk2">손세차</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox type5">
+                  <input type="checkbox" id="chk3" />
+                  <label for="chk3">셀프세차</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox type5">
+                  <input type="checkbox" id="chk4" />
+                  <label for="chk4">출장세차</label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox type5">
+                  <input type="checkbox" id="chk5" />
+                  <label for="chk5">새벽세차</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="wrap-empty">
+            <div class="empty-img">
+              <img src="../../assets/img/layout/icon-empty.png" alt="" />
+            </div>
+            <p class="empty-text">
+              <strong>즐겨찾기가 없습니다.</strong>
+            </p>
+            <p class="empty-text">서비스를 이용해 보시고 즐겨찾기를 추가해 주세요.</p>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>
