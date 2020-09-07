@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "TestFont";
+        src: url("./MoebiusRegular.woff2") format("woff2"), url("./MoebiusRegular.woff") format("woff");
+      }
+      @font-face {
+        font-family: "TestFont";
+        font-weight: 700;
+        src: url("./MoebiusBold.woff2") format("woff2"), url("./MoebiusBold.woff") format("woff");
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+        font-size: 62.5%;
+      }
+      body {
+        width: 100%;
+        font: 1.4rem/1.5 "TestFont", sans-serif;
+        word-break: break-all;
+        background-color: #ccc;
+      }
+      button,
+      input,
+      select,
+      textarea {
+        box-sizing: border-box;
+        font-size: 1em;
+        font-family: inherit;
+        color: inherit;
+        -webkit-appearance: none;
+        vertical-align: middle;
+        border: 0;
+        border-radius: 0;
+        background-color: #fff;
+      }
+      textarea {
+        width: 100%;
+        height: 40vh;
+        padding: 1em;
+        resize: vertical;
+      }
+      textarea::placeholder {
+        font: inherit;
+        line-height: 1.5;
+      }
+      button,
+      input,
+      select {
+        height: 2.6em;
+        padding: 0.5em;
+        border: 1px solid #333;
+      }
+
+      .change-style {
+        padding: 1em;
+      }
+      .change-style .item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0.5em;
+      }
+      .change-style .item[data-unit]:after {
+        content: attr(data-unit);
+        position: absolute;
+        top: 50%;
+        right: 1.5em;
+        z-index: 2;
+        transform: translateY(-50%);
+      }
+      .change-style .item input,
+      .change-style .item select {
+        flex: 1 0 30%;
+        width: 100%;
+        max-width: 35vw;
+      }
+      .change-style .item p {
+        flex: 1 0 50%;
+        font-size: 1.3em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap-test-fonts">
+      <textarea id="testFont" cols="30" rows="10" placeholder="그는 독립문 보수에 지쳐 칼퇴를 표함&#13;&#10;0123456789,%&#13;&#10;ABCDEFG"></textarea>
+
+      <div class="change-style">
+        <div class="item" data-unit="em">
+          <p>font-size:</p>
+          <input type="tel" class="value" data-css="font-size" value="1.4" />
+        </div>
+        <div class="item">
+          <p>line-height:</p>
+          <input type="tel" class="value" data-css="line-height" value="1.5" />
+        </div>
+        <div class="item">
+          <p>font-weight:</p>
+          <select class="value" data-css="font-weight">
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400" selected>400</option>
+            <option value="500">500</option>
+            <option value="600">600</option>
+            <option value="700">700</option>
+            <option value="800">800</option>
+            <option value="900">900</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>font-smoothing:</p>
+          <select class="value" data-css="-webkit-font-smoothing">
+            <option value="initial" selected>initial</option>
+            <option value="antialiased">antialiased</option>
+            <option value="none">none</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>font-style:</p>
+          <select class="value" data-css="font-style">
+            <option value="normal">normal</option>
+            <option value="italic">italic</option>
+            <option value="oblique">oblique</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>font-variant:</p>
+          <select class="value" data-css="font-variant">
+            <option value="none">none</option>
+            <option value="normal">normal</option>
+            <option value="small-caps">small-caps</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const $tgt = document.querySelector("#testFont");
+      const $styles = document.querySelectorAll(".change-style .value");
+
+      const changeStyle = ($obj) =>
+        $obj.addEventListener("change", function (e) {
+          let obj = e.target;
+          let dataCss = obj.dataset.css;
+          let dataVal = obj.value;
+
+          if (!!obj.dataset.unit) dataVal += obj.dataset.unit;
+          $tgt.style[dataCss] = dataVal;
+
+          return;
+        });
+
+      $styles.forEach(($obj) => changeStyle($obj));
+    </script>
+  </body>
+</html>
