@@ -453,6 +453,48 @@
   &.customer-terms {
     background-image: url(~assets/img/layout/icon-customer-terms.png);
   }
+  &.alarm {
+    background-image: url(~assets/img/layout/icon-alarm.png);
+  }
+  &.setting {
+    background-image: url(~assets/img/layout/icon-setting.png);
+  }
+  &.member {
+    background-image: url(~assets/img/layout/icon-member.png);
+  }
+  &.history {
+    background-image: url(~assets/img/layout/icon-history.png);
+  }
+  &.membership {
+    background-image: url(~assets/img/layout/icon-membership.png);
+  }
+  &.benefit {
+    background-image: url(~assets/img/layout/icon-coupon.png);
+  }
+  &.event {
+    background-image: url(~assets/img/layout/icon-event.png);
+  }
+  &.customer {
+    background-image: url(~assets/img/layout/icon-customer.png);
+  }
+  &.card {
+    background-image: url(~assets/img/layout/icon-card.png);
+  }
+  &.pattern {
+    background-image: url(~assets/img/layout/icon-pattern.png);
+  }
+  &.calendar-type3 {
+    background-image: url(~assets/img/layout/icon-calendar-type3.png);
+  }
+  &.point {
+    background-image: url(~assets/img/layout/icon-point.png);
+  }
+  &.prepayment {
+    background-image: url(~assets/img/layout/icon-prepayment.png);
+  }
+  &.review-type2 {
+    background-image: url(~assets/img/layout/icon-review-type2.png);
+  }
 }
 // 뱃지
 
@@ -496,19 +538,24 @@
     border: none;
     background: linear-gradient(to right, $gc3 0%, $gc4 100%);
   }
+  &.gray {
+    border-color: $fcD7;
+    background: #fafafa;
+  }
 
   &.num {
     display: inline-block;
-    min-width: 1.6rem;
-    height: 1.6rem;
-    margin-left: 0.5rem;
+    min-width: 2rem;
+    height: 2rem;
+    margin-left: 0.7rem;
     padding: 0 0.4rem;
     background-color: $gc3;
     border: 0;
     color: $fcF;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
-    line-height: 1.6rem;
-    vertical-align: middle;
+    line-height: 2rem;
+    vertical-align: top;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16%);
   }
 }

@@ -158,6 +158,16 @@
     }
   }
 
+  &.pos-menu {
+    .wrap-layer {
+      top: 0;
+      left: 4rem;
+      right: 0;
+      width: auto;
+      height: 100%;
+    }
+  }
+
   .wrap-layer-btn {
     display: flex;
     flex-wrap: wrap;

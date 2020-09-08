@@ -693,6 +693,9 @@
 
     &.type3 {
       background: url(~assets/img/layout/bg-card.png) 0 0 / 100% 100% no-repeat;
+      .bottom {
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.08);
+      }
     }
 
     .disabled {
