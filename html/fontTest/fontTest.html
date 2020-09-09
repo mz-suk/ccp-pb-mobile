@@ -180,19 +180,19 @@
     </div>
 
     <script>
-      const changeStyle = (obj, tgt) =>
-        obj.addEventListener("change", function (e) {
-          const item = e.target;
-          const data = item.dataset;
-          let dataVal = !!data.unit ? item.value + data.unit : item.value;
+      const changeStyle = (obj, tgt) => {
+        const data = obj.dataset;
+        let dataVal = !!data.unit ? obj.value + data.unit : obj.value;
 
-          tgt.style[data.css] = dataVal;
-        });
+        tgt.style[data.css] = dataVal;
+      };
 
-      const $tgt = document.querySelector("#testFont");
-      const $styles = document.querySelectorAll(".change-style .value");
+      (function () {
+        const $tgt = document.querySelector("#testFont");
+        const $styles = document.querySelectorAll(".change-style .value");
 
-      $styles.forEach(($obj) => changeStyle($obj, $tgt));
+        $styles.forEach(($obj) => $obj.addEventListener("change", (e) => changeStyle(e.target, $tgt)));
+      })();
     </script>
   </body>
 </html>
