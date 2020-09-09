@@ -59,23 +59,29 @@
       left: 2rem;
       z-index: 3;
       height: 4.6rem;
-      padding: 0 1rem;
-      background: url(../../assets/img/layout/bg-label.png) 0 0 / 100% 100% no-repeat;
+      padding-left: 2.6rem;
+      background: url(../../assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem no-repeat;
       color: $fc1;
       font-size: 1.1rem;
       line-height: 3.4rem;
 
       span {
-        border-bottom: 0.1rem solid $fc1;
+        padding: 0.8rem 1rem 0.8rem 1.4rem;
+        background: $fcF;
+        box-sizing: border-box;
+        border-radius: 0 5rem 5rem 0;
+        border: 0.1rem solid rgba($fcD7, 0.6);
+        border-left: 0;
+        text-decoration: underline;
       }
 
       &:before {
-        display: inline-block;
+        position: absolute;
+        top: 0.2rem;
+        left: 0.8rem;
         width: 2.8rem;
         height: 2.8rem;
-        margin-right: 0.3rem;
         background: url(../../assets/img/layout/icon-confusion-off.png) 0 0 / 100% auto no-repeat;
-        vertical-align: middle;
         content: "";
       }
 
@@ -197,7 +203,7 @@
 
   .favorite {
     position: absolute;
-    top: 3rem;
+    top: 3.2rem;
     right: 2rem;
     width: 1.6rem;
     height: 1.6rem;
@@ -325,6 +331,7 @@
 
     .desc {
       flex: 1 1 auto;
+      color: $fc1;
     }
   }
 
@@ -340,12 +347,14 @@
 
     ul {
       min-height: 100%;
+      padding-top: 2.2rem;
+      padding-bottom: 9rem;
       border-right: 0.1rem solid $fcE4;
     }
 
     li {
-      height: 5.4rem;
-      line-height: 5.4rem;
+      height: 5.2rem;
+      line-height: 5.2rem;
       text-align: center;
 
       a {
@@ -375,10 +384,13 @@
   }
 
   .filter-list-item {
+    padding-top: 2.2rem;
+    padding-bottom: 9rem;
+
     li {
       padding-left: 3.5rem;
-      height: 5.4rem;
-      line-height: 5.4rem;
+      height: 5.2rem;
+      line-height: 5.2rem;
 
       a {
         color: $fc1;
@@ -898,7 +910,7 @@
 
   .info-type-cont {
     position: relative;
-    padding: 3rem 2.5rem;
+    padding: 2.5rem 2.5rem 3rem;
     display: block;
     line-height: 1;
     background: $fcF9;
@@ -976,7 +988,7 @@
     }
 
     .big-title {
-      margin-top: 0.85rem;
+      margin-top: 1rem;
       font-size: 1.5rem;
       color: $fc1;
 
@@ -987,7 +999,8 @@
     }
 
     .info-txt {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+      color: $fc6;
       font-size: 1.3rem;
       line-height: 1.8rem;
 
@@ -998,7 +1011,6 @@
 
     .info-txt2 {
       margin-top: 0.2rem;
-      font-size: 1.2rem;
       color: $fc9;
     }
 
@@ -1025,7 +1037,7 @@
 
   .info-car-cont {
     position: relative;
-    padding: 2.5rem;
+    padding: 2.5rem 2.5rem 3rem;
     display: block;
     line-height: 1;
     background: $fcF9;

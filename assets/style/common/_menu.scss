@@ -76,7 +76,6 @@
 
     .grade {
       display: inline-block;
-      float: left;
       width: 4.6rem;
       height: 4.6rem;
       margin-right: 1rem;
@@ -87,6 +86,10 @@
       text-align: center;
       line-height: 4.6rem;
       vertical-align: top;
+
+      & + .member {
+        display: inline-block;
+      }
     }
 
     .member {

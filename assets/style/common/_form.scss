@@ -96,6 +96,7 @@ textarea {
   padding: 0 3rem 0 0.9rem;
   background: url(../../assets/img/layout/icon-toggle.png) right 1rem center / 1.2rem 1.2rem no-repeat;
   border: 0.1rem solid $fcE4;
+  color: $fc1;
 
   &.type1 {
     padding: 0 1rem;
@@ -390,7 +391,7 @@ textarea {
 
 .input-spinner {
   position: relative;
-  height: 5.6rem;
+  height: 5.8rem;
   margin-bottom: 2rem;
   padding: 0 5.6rem;
   background: $fcF9;
@@ -399,7 +400,7 @@ textarea {
 
   button {
     position: absolute;
-    top: 0;
+    top: 0.05rem;
     width: 5.6rem;
     height: 5.6rem;
     border-radius: 50%;
@@ -425,11 +426,10 @@ textarea {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 5.6rem;
+    height: 5.8rem;
 
     input[type="number"] {
-      display: inline-block;
-      width: 4.5rem;
+      width: 5rem;
       padding: 0;
       border: 0;
       color: $fc1;
@@ -438,7 +438,6 @@ textarea {
     }
 
     p {
-      display: inline-block;
       font-size: 1.5rem;
       font-weight: 700;
       color: $fc1;
@@ -446,7 +445,6 @@ textarea {
       span {
         padding-left: 0.5rem;
         font-size: 1.3rem;
-        font-weight: 400;
         color: $fc9;
       }
     }
