@@ -88,7 +88,6 @@
         flex-direction: column;
         height: 100%;
         .layer-cont {
-          flex: 1 1 auto; /* flex: 1 1 0 */
           &.scroll-cont {
             margin-top: -6.6rem;
             @include scroll(y);
