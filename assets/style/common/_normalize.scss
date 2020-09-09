@@ -174,25 +174,13 @@ span {
 
 @font-face {
   font-family: "Moebius";
-  src: local("MoebiusKorea"), url("../../assets/font/MoebiusKorea-Regular.woff2") format("woff2"),
-    url("../../assets/font/MoebiusKorea-Regular.woff") format("woff");
+  src: url("../../assets/font/MoebiusRegular.woff2") format("woff2"), url("../../assets/font/MoebiusRegular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Moebius";
   font-weight: 700;
-  src: local("MoebiusKorea"), url("../../assets/font/MoebiusKorea-Bold.woff2") format("woff2"), url("../../assets/font/MoebiusKorea-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Moebius";
-  src: local("Jost-Medium"), url("../../assets/font/jostMedium.woff2") format("woff2"), url("../../assets/font/jostMedium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Moebius";
-  font-weight: 700;
-  src: local("Jost-Medium"), url("../../assets/font/jostMedium.woff2") format("woff2"), url("../../assets/font/jostMedium.woff") format("woff");
+  src: url("../../assets/font/MoebiusBold.woff2") format("woff2"), url("../../assets/font/MoebiusBold.woff") format("woff");
 }
 
 html {
