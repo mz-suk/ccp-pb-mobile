@@ -167,6 +167,7 @@
         color: $fc1;
 
         &.active {
+          padding-bottom: 0.9rem;
           border-bottom: 0.2rem solid $fc1;
         }
 
@@ -214,6 +215,7 @@
           text-align: right;
         }
         &.active {
+          padding-bottom: 0.8rem;
           border-bottom: 0.2rem solid $fc1;
         }
       }
