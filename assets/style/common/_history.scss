@@ -829,7 +829,8 @@
     background: url(../../assets/img/layout/img_default_balloon_box.png) 0 0 / 2.6rem 4.6rem no-repeat;
     span {
       display: inline-block;
-      height: 3.2rem;
+      vertical-align: top;
+      height: 3.24rem;
       line-height: 3.2rem;
       padding: 0 1.5rem 0 1.2rem;
       border: 0.1rem solid $fcD7;
