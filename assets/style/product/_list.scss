@@ -96,10 +96,6 @@
       top: 1.5rem;
       left: 1.5rem;
       z-index: 10;
-
-      .badge {
-        height: 2.5rem;
-      }
     }
   }
 
@@ -1182,26 +1178,30 @@
   }
 
   .date-area {
+    display: flex;
+    align-items: center;
     height: 11rem;
+    padding: 0 2.9rem;
     background-color: $fcF9;
     border-top: 0.1rem solid $fcF0;
     border-bottom: 0.1rem solid $fcF0;
   }
 
   .list-date {
+    display: flex;
     position: relative;
     overflow-x: visible;
     overflow-y: hidden;
-    margin: 2rem 2.5rem 0;
+
     white-space: nowrap;
     scroll-snap-type: x mandatory;
 
     li {
-      display: inline-block;
       scroll-snap-align: start;
+      box-sizing: border-box;
 
       &:not(:first-child) {
-        margin-left: 0.3rem;
+        margin-left: 0.6rem;
       }
     }
 
