@@ -249,6 +249,9 @@
 
     li:last-child {
       margin-bottom: -0.1rem;
+      .accordion-cont {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
