@@ -59,19 +59,20 @@
       left: 2rem;
       z-index: 3;
       height: 4.6rem;
-      padding-left: 2.6rem;
+      padding-left: 2.5rem;
       background: url(../../assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem no-repeat;
       color: $fc1;
       font-size: 1.1rem;
       line-height: 3.4rem;
 
       span {
-        padding: 0.8rem 1rem 0.8rem 1.4rem;
-        background: $fcF;
+        display: inline-block;
+        vertical-align: top;
+        height: 4.6rem;
+        padding: 0.8rem 1rem 0 1.4rem;
+        line-height: 1.35rem;
+        background: url(../../assets/img/layout/bg-label-right.png) 100% 0 / auto 4.6rem no-repeat;
         box-sizing: border-box;
-        border-radius: 0 5rem 5rem 0;
-        border: 0.1rem solid rgba($fcD7, 0.6);
-        border-left: 0;
         text-decoration: underline;
       }
 
