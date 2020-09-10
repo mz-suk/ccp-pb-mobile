@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   top: 5.5rem;
-  height: calc(38% - 5.5rem);
+  height: calc(100% - 5.5rem);
   width: 100%;
   background: $fc1;
   color: $fcF;
@@ -192,7 +192,7 @@
     left: 0;
     top: 5.5rem;
     width: 100%;
-    min-height: calc(38% - 5.5rem);
+    min-height: calc(100% - 5.5rem);
     box-sizing: border-box;
     padding: 2.8rem 2rem 0 12.2rem;
     background: $fcF9 url(~assets/img/layout/icon-info-dawn-map.png) 1.23rem 2.6rem / 11.1rem 12.8rem no-repeat;

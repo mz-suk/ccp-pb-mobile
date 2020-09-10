@@ -502,21 +502,21 @@
   &:not(:first-child) {
     margin-left: 0.5rem;
   }
-  padding: 0 1rem;
+  padding: 0 1.2rem;
   display: flex;
   align-items: center;
-  height: 2rem;
-  font-size: 0.9rem;
+  height: 2.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
   background: $fcF;
   border: 0.1rem solid;
   border-radius: 10rem;
   box-sizing: border-box;
 
-  &.lg {
-    height: 2.5rem;
-    font-size: 1.1rem;
-  }
+  // &.lg {
+  //   height: 2.5rem;
+  //   font-size: 1.1rem;
+  // }
 
   &.blue {
     color: $pc3;

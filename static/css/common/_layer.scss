@@ -88,7 +88,6 @@
         flex-direction: column;
         height: 100%;
         .layer-cont {
-          flex: 1 1 auto; /* flex: 1 1 0 */
           &.scroll-cont {
             margin-top: -6.6rem;
             @include scroll(y);
@@ -107,6 +106,7 @@
   &.pos-bottom {
     .wrap-layer {
       bottom: 0;
+      overflow-y: hidden;
       border-radius: 3rem 3rem 0 0;
       //padding-top: 4rem;
     }
@@ -191,6 +191,11 @@
 
   .layer-cont {
     padding: 0 2rem 4rem;
+
+    &.scroll-cont {
+      max-height: 41rem;
+      @include scroll(y);
+    }
 
     .title-sub {
       margin-bottom: 2.5rem;
