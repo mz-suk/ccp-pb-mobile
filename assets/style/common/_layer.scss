@@ -419,11 +419,12 @@
       }
     }
     .gray-box {
+      align-items: center;
+      justify-content: center;
       padding-top: 0.9rem;
       padding-bottom: 0.9rem;
       margin-top: 2rem;
       color: $fc1;
-      text-align: center;
       .sum {
         margin-left: 1rem;
         color: $pc3;
@@ -438,6 +439,9 @@
         font-size: 1.5rem;
         color: $fc1;
         line-height: 1.9rem;
+        button {
+          margin-left: 0;
+        }
       }
     }
   }

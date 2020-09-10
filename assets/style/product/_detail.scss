@@ -195,6 +195,9 @@
     }
     .form-text-area {
       margin-bottom: 6.5rem;
+      textarea {
+        min-height: 6rem;
+      }
     }
     .wrap-check {
       margin-top: 1rem;
@@ -204,6 +207,9 @@
         color: $fc9;
         padding: 0.3rem 0 0 3.3rem;
       }
+    }
+    .title {
+      font-weight: 400;
     }
   }
   &.type-order {
@@ -361,9 +367,6 @@
   text-align: center;
   font-size: 1.3rem;
   color: $fc1;
-  .rating-box {
-    margin-top: 0.4rem;
-  }
 }
 
 .review-wrap {
@@ -396,11 +399,13 @@
         margin-left: 1rem;
         text-align: center;
         min-width: 4.6rem;
+        height: 2rem;
         line-height: 2rem;
         font-size: 0.9rem;
         color: $gc3;
         border: 0.1rem solid $gc3;
         border-radius: 1rem;
+        box-sizing: border-box;
       }
     }
     .comment-area {
@@ -426,7 +431,7 @@
         }
         .option {
           color: $fc1;
-          padding-bottom: 1.2rem;
+          padding-bottom: 1.5rem;
         }
         .desc {
           //@include clamp(3);
@@ -435,6 +440,7 @@
       .date {
         margin: 1rem 0 0;
         font-size: 1.2rem;
+        color: $fc9;
       }
       .comment-img {
         display: flex;
