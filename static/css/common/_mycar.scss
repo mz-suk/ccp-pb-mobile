@@ -190,9 +190,9 @@
     }
   }
   .checkbox-st {
-    margin-top: 2.5rem;
-    &:last-child {
-      margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    &:first-child {
+      margin-top: 2.5rem;
     }
   }
 }
@@ -258,10 +258,9 @@
     color: $fc1;
   }
   .txt {
-    margin-top: 0.75rem;
+    margin-top: 1.4rem;
     font-size: 1.3rem;
-    line-height: 1.8rem;
-    color: $fc1;
+    line-height: 1.5;
   }
   .noti-box {
     margin-top: 2rem;
