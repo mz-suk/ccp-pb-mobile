@@ -2,7 +2,7 @@
   position: relative;
   text-align: left;
   font-size: 0;
-  l &.dotted {
+  &.dotted {
     & > span:after {
       border-right: 0.1rem dotted $fc9;
     }

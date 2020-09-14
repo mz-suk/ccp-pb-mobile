@@ -69,7 +69,7 @@
         display: inline-block;
         vertical-align: top;
         height: 4.6rem;
-        padding: 0.8rem 1rem 0 1.4rem;
+        padding: 1rem 1rem 0 1.4rem;
         line-height: 1.35rem;
         background: url(../../assets/img/layout/bg-label-right.png) 100% 0 / auto 4.6rem no-repeat;
         box-sizing: border-box;
@@ -711,9 +711,6 @@
     float: right;
     text-align: right;
   }
-  .replay-txt {
-    margin-top: -1.2rem;
-  }
 
   .sub-point {
     display: block;
@@ -1032,7 +1029,7 @@
 
   .info-car-cont {
     position: relative;
-    padding: 2.5rem 2.5rem 3rem;
+    padding: 2.5rem;
     display: block;
     line-height: 1;
     background: $fcF9;
@@ -1080,7 +1077,7 @@
       color: $fc1;
     }
     .car-info {
-      margin: 1.1rem -0.5rem 0;
+      margin: 1.5rem -0.5rem 0;
       padding: 1rem 1.5rem 0;
       line-height: 1;
       color: $fc1;
@@ -1093,11 +1090,13 @@
       span {
         &:first-child {
           margin-left: 0;
+          padding: 0.6rem 1.2rem;
           color: $pc3;
         }
         margin-left: 0.5rem;
-        padding: 0.6rem 1.2rem 0.6rem;
+        padding: 0.6rem 1rem;
         display: block;
+        color: $fc1;
         font-size: 1.1rem;
         line-height: 1.6rem;
         background: $fcF;
@@ -1110,6 +1109,9 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
+    .edite-more {
+      background-size: 1.6rem 1.6rem;
+    }
   }
 
   .list-btn {
