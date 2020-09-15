@@ -24,6 +24,9 @@
     padding-bottom: 2rem;
     margin-bottom: 3rem;
     border-bottom: 0.1rem dotted $fcD7;
+    .btn-delete {
+      color: $fc6;
+    }
   }
   .alarm-date {
     position: relative;
@@ -157,12 +160,12 @@
   padding: 3rem 0;
   text-align: center;
   background: $fcF9;
-  border-bottom: 0.1rem solid $fcE4;
+  border-bottom: 0.1rem solid $fcF0;
   p {
     margin-bottom: 1.5rem;
     font-size: 1.7rem;
     color: $fc1;
-    line-height: 1.25;
+    line-height: 1.4;
   }
   .sub-desc {
     font-size: 1.3rem;
@@ -219,14 +222,16 @@
     margin-top: 2.5rem;
   }
   .qna-list {
-    margin-top: 2.65rem;
     .accordion {
       .accordion-title {
-        padding: 2rem 0;
+        padding: 1.8rem 0;
         background-color: $fcF;
         font-size: 1.3rem;
         .toggle {
-          right: 0;
+          right: 1rem;
+          width: 1.2rem;
+          height: 1.2rem;
+          margin-top: -0.6rem;
         }
         .title {
           padding: 0 2.6rem 0 1rem;
@@ -249,6 +254,9 @@
 
     li:last-child {
       margin-bottom: -0.1rem;
+      .accordion-cont {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
@@ -375,5 +383,8 @@
   padding: 4rem 2rem;
   .form-text-area {
     margin-top: 1.5rem;
+    textarea {
+      min-height: 20rem;
+    }
   }
 }
