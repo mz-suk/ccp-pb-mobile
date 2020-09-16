@@ -257,9 +257,26 @@
   .row-desc {
     margin: 1.5rem 0 0;
     @include clamp(2);
+
+    & + .btn-more {
+      .more-text {
+        &:before {
+          content: '더보기';
+        }
+      }
+    }
     &.active {
       display: block;
       -webkit-line-clamp: inherit;
+
+      & + .btn-more {
+        .more-text:after {
+          background-image: url(~assets/img/layout/icon-more-txt-active.png);
+        }
+        .more-text:before {
+          content: '접기';
+        }
+      }
     }
   }
   .icon-list-wrap {
