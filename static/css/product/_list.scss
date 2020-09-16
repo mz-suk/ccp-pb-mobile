@@ -59,19 +59,20 @@
       left: 2rem;
       z-index: 3;
       height: 4.6rem;
-      padding-left: 2.6rem;
+      padding-left: 2.5rem;
       background: url(~assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem no-repeat;
       color: $fc1;
       font-size: 1.1rem;
       line-height: 3.4rem;
 
       span {
-        padding: 0.8rem 1rem 0.8rem 1.4rem;
-        background: $fcF;
+        display: inline-block;
+        vertical-align: top;
+        height: 4.6rem;
+        padding: 1rem 1rem 0 1.4rem;
+        line-height: 1.35rem;
+        background: url(~assets/img/layout/bg-label-right.png) 100% 0 / auto 4.6rem no-repeat;
         box-sizing: border-box;
-        border-radius: 0 5rem 5rem 0;
-        border: 0.1rem solid rgba($fcD7, 0.6);
-        border-left: 0;
         text-decoration: underline;
       }
 
@@ -96,10 +97,6 @@
       top: 1.5rem;
       left: 1.5rem;
       z-index: 10;
-
-      .badge {
-        height: 2.5rem;
-      }
     }
   }
 
@@ -714,11 +711,6 @@
     float: right;
     text-align: right;
   }
-  .replay-txt {
-    margin-top: -1.2rem;
-    font-size: 1.1rem;
-    color: $fc9;
-  }
 
   .sub-point {
     display: block;
@@ -738,7 +730,7 @@
   }
 
   & + .define-box {
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
   }
 }
 
@@ -1037,7 +1029,7 @@
 
   .info-car-cont {
     position: relative;
-    padding: 2.5rem 2.5rem 3rem;
+    padding: 2.5rem;
     display: block;
     line-height: 1;
     background: $fcF9;
@@ -1085,7 +1077,7 @@
       color: $fc1;
     }
     .car-info {
-      margin: 1.1rem -0.5rem 0;
+      margin: 1.5rem -0.5rem 0;
       padding: 1rem 1.5rem 0;
       line-height: 1;
       color: $fc1;
@@ -1098,11 +1090,13 @@
       span {
         &:first-child {
           margin-left: 0;
+          padding: 0.6rem 1.2rem;
           color: $pc3;
         }
         margin-left: 0.5rem;
-        padding: 0.6rem 1.2rem 0.6rem;
+        padding: 0.6rem 1rem;
         display: block;
+        color: $fc1;
         font-size: 1.1rem;
         line-height: 1.6rem;
         background: $fcF;
@@ -1115,6 +1109,9 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
+    .edite-more {
+      background-size: 1.6rem 1.6rem;
+    }
   }
 
   .list-btn {
@@ -1184,26 +1181,30 @@
   }
 
   .date-area {
+    display: flex;
+    align-items: center;
     height: 11rem;
+    padding: 0 2.9rem;
     background-color: $fcF9;
     border-top: 0.1rem solid $fcF0;
     border-bottom: 0.1rem solid $fcF0;
   }
 
   .list-date {
+    display: flex;
     position: relative;
     overflow-x: visible;
     overflow-y: hidden;
-    margin: 2rem 2.5rem 0;
+
     white-space: nowrap;
     scroll-snap-type: x mandatory;
 
     li {
-      display: inline-block;
       scroll-snap-align: start;
+      box-sizing: border-box;
 
       &:not(:first-child) {
-        margin-left: 0.3rem;
+        margin-left: 0.6rem;
       }
     }
 
