@@ -757,7 +757,7 @@
 
   .info {
     position: relative;
-    padding: 2.2rem 2.2rem 2.1rem;
+    padding: 2.5rem 2.5rem 2rem;
     border-radius: 2rem 2rem 0 0;
     box-sizing: border-box;
     color: $fcF;
@@ -791,14 +791,15 @@
       font-size: 1.3rem;
       color: $fcF;
       opacity: 0.7;
+      line-height: 1;
 
       &:after {
         display: inline-block;
         width: 1.2rem;
         height: 1.2rem;
-        margin: -0.3rem 0 0 0.3rem;
+        margin: 0 0 0 0.3rem;
         background: url(~assets/img/layout/icon-more-type4.png) 0 0 / 100% auto no-repeat;
-        vertical-align: middle;
+        vertical-align: top;
         content: "";
       }
     }
@@ -806,7 +807,7 @@
 
   .detail {
     position: relative;
-    padding-right: 9rem;
+    padding-right: 6rem;
 
     .checkbox-btn {
       position: absolute;
@@ -839,6 +840,7 @@
     }
     .detail {
       margin-top: 3.5rem;
+      padding-left: 0.5rem;
     }
 
     .logo-card {
