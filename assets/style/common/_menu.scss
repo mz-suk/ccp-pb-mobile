@@ -94,7 +94,6 @@
 
     .member {
       .name {
-        margin-bottom: 0.5rem;
         color: $fc1;
         font-size: 1.5rem;
       }
@@ -177,6 +176,9 @@
 
     .badge {
       display: inline-block;
+      height: 2rem;
+      padding: 0 0.8rem;
+      font-size: 0.9rem;
       line-height: 2rem;
     }
   }

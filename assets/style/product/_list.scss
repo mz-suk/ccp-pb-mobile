@@ -703,6 +703,7 @@
       .bg-icon {
         width: 1.2rem;
         height: 1.2rem;
+        margin-left: 0;
       }
     }
   }
@@ -1144,6 +1145,15 @@
           height: 0.3rem;
           background: $fc6;
           border-radius: 50%;
+        }
+        &.vartical-bar {
+          > span {
+            display: inline-block;
+            margin-top: 0;
+            &:after {
+              border-color: $fcD7;
+            }
+          }
         }
         .sub-txt {
           margin-top: 0.3rem;
