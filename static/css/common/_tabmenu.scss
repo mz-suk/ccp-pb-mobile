@@ -35,6 +35,9 @@
       }
       &.active {
         border-bottom: 0.2rem solid $fc1;
+        button {
+          padding-bottom: 0.8rem;
+        }
       }
       button {
         padding: 0 0 1rem;

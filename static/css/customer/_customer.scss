@@ -161,6 +161,9 @@
   text-align: center;
   background: $fcF9;
   border-bottom: 0.1rem solid $fcF0;
+  &.type-fcf {
+    background: $fcF;
+  }
   p {
     margin-bottom: 1.5rem;
     font-size: 1.7rem;
