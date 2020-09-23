@@ -195,13 +195,13 @@
     }
     & > a {
       display: block;
-      padding: 2rem 2rem 2rem 1rem;
+      padding: 1.8rem 2rem 1.8rem 1rem;
       position: relative;
     }
     .bg-icon {
       &.more {
         position: absolute;
-        right: 0.7rem;
+        right: 0.9rem;
         top: 2.3rem;
         width: 1.2rem;
         height: 1.2rem;
@@ -216,7 +216,7 @@
   }
   .detail-title {
     .title {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       color: $fc1;
       .new-label {
         margin: -0.6rem 0 0 0.3rem;
@@ -231,7 +231,7 @@
     }
   }
   .attach-box {
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
     padding: 1.2rem 1.5rem;
     border: 0.1rem solid $fcF0;
     button {
@@ -247,7 +247,7 @@
   }
   .detail-body {
     padding-top: 2.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2.5rem;
     p {
       &:first-child img {
         margin-top: 0;

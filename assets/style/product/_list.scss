@@ -413,7 +413,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 3.9rem 2rem 3rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
@@ -512,7 +512,7 @@
     }
 
     .wrap-car-info {
-      padding: 2.5rem 0;
+      padding: 3.2rem 0 2.5rem;
     }
   }
 
@@ -1067,18 +1067,18 @@
     }
 
     .car-name {
-      margin-top: 1.9rem;
+      margin-top: 2rem;
       font-size: 1.5rem;
       color: $fc1;
     }
 
     .car-number {
-      margin: 0.4rem 0;
+      margin: 0.8rem 0 0.4rem;
       font-size: 1.8rem;
       color: $fc1;
     }
     .car-info {
-      margin: 1.5rem -0.5rem 0;
+      margin: 1.7rem -0.5rem 0;
       padding: 1rem 1.5rem 0;
       line-height: 1;
       color: $fc1;
