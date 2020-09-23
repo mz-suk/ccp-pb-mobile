@@ -702,6 +702,14 @@
       }
     }
 
+    &.type4 {
+      background: linear-gradient(55deg, #2d55a5 0%, #573994 78%, #682c8d 100%);
+      border-radius: 2rem;
+      .bottom {
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.08);
+      }
+    }
+
     .disabled {
       position: absolute;
       top: 0;
