@@ -79,12 +79,10 @@
       width: 4.6rem;
       height: 4.6rem;
       margin-right: 1rem;
-      background: url(../../assets/img/layout/bg-grade-type1.png) 0 0 / 100% 100% no-repeat;
+      background: url(../../assets/img/layout/bg-grade-type1.svg) 0 0 / 100% 100% no-repeat;
       border-radius: 50%;
       color: $fcF;
-      font-weight: 700;
-      text-align: center;
-      line-height: 4.6rem;
+      font-size: 0;
       vertical-align: top;
 
       & + .member {
@@ -170,7 +168,7 @@
       &:after {
         width: 1.2rem;
         height: 1.2rem;
-        background: url(../../assets/img/layout/icon-more-type2.png) 50% 50% / 100% 100% no-repeat;
+        background: url(../../assets/img/layout/icon-more-type2.svg) 50% 50% / 100% 100% no-repeat;
       }
     }
 
