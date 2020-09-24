@@ -214,9 +214,9 @@
           width: 3rem;
           height: 3rem;
           display: inline-block;
-          background: url(../../assets/img/layout/icon-review-apply-star.png) 0 0.2rem / 3rem 3rem no-repeat;
+          background: url(../../assets/img/layout/icon-review-apply-star.svg) 0 0.2rem / 3rem 3rem no-repeat;
           &.active {
-            background-image: url(../../assets/img/layout/icon-review-apply-star-active.png);
+            background-image: url(../../assets/img/layout/icon-review-apply-star-active.svg);
           }
         }
       }
@@ -314,7 +314,7 @@
           display: block;
           width: 2rem;
           height: 2rem;
-          background: url(../../assets/img/layout/icon-plus02.png) no-repeat 0 0;
+          background: url(../../assets/img/layout/icon-plus02.svg) no-repeat 0 0;
           background-size: 100% auto;
           transform: translate(-50%, -50%);
         }
@@ -468,7 +468,7 @@
         padding: 0;
         display: block;
         text-align: left;
-        background: url(../../assets/img/layout/bg-top-info-point.png) right center / 4.75rem 4.99rem no-repeat;
+        background: url(../../assets/img/layout/bg-top-info-point.svg) right center / 4.75rem 4.99rem no-repeat;
         .num {
           font-size: 1.7rem;
           strong {
@@ -481,7 +481,7 @@
       padding: 0 0 1rem 4.7rem;
       display: inline-block;
       text-align: center;
-      background: url(../../assets/img/layout/bg-top-info-point.png) 0 1.6rem / 4.75rem 4.99rem no-repeat;
+      background: url(../../assets/img/layout/bg-top-info-point.svg) 0 1.6rem / 4.75rem 4.99rem no-repeat;
       .num {
         margin-top: 0.4rem;
         line-height: 1;
@@ -505,7 +505,7 @@
           padding-left: 2rem;
           .title {
             padding: 0.4rem 0 0 2.5rem;
-            background: url(../../assets/img/layout/icon-point-up.png) 0 0.1rem / 2rem 2rem no-repeat;
+            background: url(../../assets/img/layout/icon-point-up.svg) 0 0.1rem / 2rem 2rem no-repeat;
           }
           .num {
             padding-left: 0.7rem;
@@ -517,7 +517,7 @@
           border-left: 0.1rem dotted $fcE4;
           .title {
             padding: 0.4rem 0 0 2.5rem;
-            background: url(../../assets/img/layout/icon-point-down.png) 0 0.1rem / 2rem 2rem no-repeat;
+            background: url(../../assets/img/layout/icon-point-down.svg) 0 0.1rem / 2rem 2rem no-repeat;
           }
           .num {
             color: $gc3;
@@ -558,14 +558,14 @@
   &.type-down {
     .main-info {
       .title {
-        background: url(../../assets/img/layout/icon-point-down.png) 0 0 / 2rem 2rem no-repeat;
+        background: url(../../assets/img/layout/icon-point-down.svg) 0 0 / 2rem 2rem no-repeat;
       }
     }
   }
   &.type-up {
     .main-info {
       .title {
-        background: url(../../assets/img/layout/icon-point-up.png) 0 0 / 2rem 2rem no-repeat;
+        background: url(../../assets/img/layout/icon-point-up.svg) 0 0 / 2rem 2rem no-repeat;
       }
     }
   }
@@ -723,8 +723,8 @@
   background: $pc3;
   .msg {
     position: relative;
-    a{
-      display:block;
+    a {
+      display: block;
       &:after {
         position: absolute;
         right: 0;
@@ -733,7 +733,7 @@
         display: inline-block;
         width: 1.2rem;
         height: 1.2rem;
-        background: url(../../assets/img/layout/icon-more-type4.png) 0 0 / 100% auto no-repeat;
+        background: url(../../assets/img/layout/icon-more-type4.svg) 0 0 / 100% auto no-repeat;
         vertical-align: middle;
         content: "";
       }
@@ -911,7 +911,7 @@
         color: $pc3;
         &.link {
           padding-right: 1rem;
-          background: url(../../assets/img/layout/icon-more-type-blue.png) 100% 50% / 1rem 1rem no-repeat;
+          background: url(../../assets/img/layout/icon-more-type-blue.svg) 100% 50% / 1rem 1rem no-repeat;
         }
       }
       .red {

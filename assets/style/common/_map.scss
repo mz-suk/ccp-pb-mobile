@@ -45,7 +45,7 @@
         color: $pc3;
       }
       .location-small {
-        background-image: url(../../assets/img/layout/icon-location-small-active.png);
+        background-image: url(../../assets/img/layout/icon-location-small-active.svg);
       }
     }
     .title {
@@ -177,7 +177,7 @@
     margin: 0.5rem 0 0 -1.2rem;
     padding-left: 1.2rem;
     font-size: 1.1rem;
-    background: url(../../assets/img/layout/icon-attention.png) 0 0.2rem / 1.2rem 1.2rem no-repeat;
+    background: url(../../assets/img/layout/icon-attention.svg) 0 0.2rem / 1.2rem 1.2rem no-repeat;
     .under-line {
       color: $pc3;
       text-decoration: underline;
@@ -185,7 +185,7 @@
   }
   &.type-business {
     padding-left: 12rem;
-    background: url(../../assets/img/layout/icon-info-business-map.png) 0 0 / 11rem 9rem no-repeat;
+    background: url(../../assets/img/layout/icon-info-business-map.svg) 0 0 / 11rem 9rem no-repeat;
     .title {
       color: $pc3;
     }
@@ -198,6 +198,6 @@
     min-height: calc(100% - 5.5rem);
     box-sizing: border-box;
     padding: 2.8rem 2rem 0 12.2rem;
-    background: $fcF9 url(../../assets/img/layout/icon-info-dawn-map.png) 1.23rem 2.6rem / 11.1rem 12.8rem no-repeat;
+    background: $fcF9 url(../../assets/img/layout/icon-info-dawn-map.svg) 1.23rem 2.6rem / 11.1rem 12.8rem no-repeat;
   }
 }
