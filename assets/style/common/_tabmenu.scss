@@ -112,6 +112,7 @@
       border: 0.1rem solid $fcD7;
       color: $fc9;
       transition: all 0.2s ease;
+      box-sizing: border-box;
 
       & + li {
         margin-left: -0.1rem;
@@ -127,6 +128,9 @@
         display: block;
         width: 100%;
         height: 100%;
+        .sm-txt {
+          font-size: 1.4rem;
+        }
       }
     }
   }
@@ -138,7 +142,8 @@
       li {
         background-color: $fcF9;
         border-bottom-color: $fc1;
-        color: $fc6;
+        color: $fc9;
+        font-size: 1.5rem;
 
         &.active {
           background-color: $fcF;
@@ -170,13 +175,14 @@
         color: $fc1;
 
         &.active {
-          padding-bottom: 0.9rem;
+          padding-bottom: 1rem;
           border-bottom: 0.2rem solid $fc1;
         }
 
         .num {
           display: inline-block;
           font-size: 1.4rem;
+          vertical-align: top;
         }
       }
     }
@@ -218,7 +224,7 @@
           text-align: right;
         }
         &.active {
-          padding-bottom: 0.8rem;
+          padding-bottom: 1rem;
           border-bottom: 0.2rem solid $fc1;
         }
       }

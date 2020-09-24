@@ -446,6 +446,7 @@ textarea {
         padding-left: 0.5rem;
         font-size: 1.3rem;
         color: $fc9;
+        font-weight: normal;
       }
     }
   }
@@ -462,7 +463,7 @@ input[type="checkbox"] {
   }
 
   & + label {
-    margin-left: 0.8rem;
+    margin-left: 0.6rem;
     color: $fc1;
     line-height: 1.5;
   }
@@ -601,7 +602,7 @@ input[type="checkbox"] {
     font-size: 1.1rem;
     line-height: 1;
     color: $fc9;
-    background: $fcF;
+    background: $fcF9;
     border: 0.1rem solid $fcD7;
     border-radius: 1.25rem;
     transition: color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
@@ -644,7 +645,7 @@ input[type="checkbox"] {
 .form-div {
   .title {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: $fc1;
     line-height: 1;
   }
@@ -666,7 +667,7 @@ input[type="checkbox"] {
     width: 100%;
     height: 4.5rem;
     line-height: 1;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: $fc1;
     background-color: $fcF;
     border: 0;

@@ -31,7 +31,7 @@
   }
 
   &.type1 {
-    border-style: dotted;
+    border-style: dashed;
     border-color: $fc9;
     font-size: 1.3rem;
 
@@ -78,6 +78,7 @@
     color: $fc1;
     border-color: $fcE4;
     background-color: $fcF;
+    font-size: 1.3rem;
   }
 
   &.color4 {
@@ -261,6 +262,10 @@
     width: 5.4rem;
     height: 5.4rem;
   }
+}
+.btn-refresh {
+  font-size: 1.5rem;
+  color: $fc1;
 }
 //버튼 레이아웃
 .btn-area {

@@ -13,11 +13,14 @@
   padding: 0;
   border: 0;
   color: $fc1;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 .mx-btn-current-year:after {
   display: inline-block;
   content: ".";
+}
+.mx-calendar-header-label button {
+  margin-top: -0.3rem;
 }
 // .mx-scrollbar {
 //   height: 100%;
@@ -105,7 +108,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 2.5rem;
-  margin: 0 1rem 2rem;
+  margin: 0 1rem 1.8rem;
   text-align: center;
   overflow: hidden;
 }
@@ -123,7 +126,7 @@
   box-sizing: border-box;
 }
 .mx-calendar-content .cell {
-  padding: 0.8rem 0;
+  padding: 1rem 0;
   box-sizing: border-box;
   color: $fcD7;
   vertical-align: middle;
@@ -174,7 +177,7 @@
 .mx-table-date td,
 .mx-table-date th {
   height: 2.5rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 .mx-table th {
   padding: 0 0 1rem;

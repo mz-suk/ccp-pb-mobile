@@ -112,7 +112,7 @@
     }
 
     .layer-header {
-      padding: 1.7rem 4.5rem;
+      padding: 1.7rem 4.5rem 3.4rem;
       color: $fc1;
       font-size: 1.8rem;
       text-align: center;
@@ -143,10 +143,11 @@
     .wrap-layer {
       bottom: 0;
       background-color: transparent;
+      box-shadow: none;
     }
 
     .layer-close {
-      bottom: 3rem;
+      bottom: 3.2rem;
       left: 50%;
       width: 3.6rem;
       height: 3.6rem;
@@ -191,6 +192,9 @@
 
   .layer-cont {
     padding: 0 2rem 3.8rem;
+    &:first-child:last-child {
+      padding-bottom: 4rem;
+    }
 
     &.scroll-cont {
       max-height: 41rem;
@@ -212,7 +216,7 @@
     }
 
     .checkbox.type5 {
-      margin-top: 1.1rem;
+      margin-top: 1.5rem;
       margin-right: 0.7rem;
     }
 
@@ -240,9 +244,15 @@
           font-size: 1.6rem;
         }
       }
+      .right {
+        em {
+          margin-right: 0.1rem;
+          font-size: 1.4rem;
+        }
+      }
 
       .text-guide {
-        margin-top: 2rem;
+        margin-top: 1.8rem;
         color: $fc1;
         font-size: 1.1rem;
       }
@@ -262,12 +272,14 @@
           min-width: 7.1rem;
           margin-left: 0;
           padding: 0 1.6rem;
+          color: $fc1;
         }
       }
     }
 
     .define-box {
       .right {
+        font-size: 1.4rem;
         color: $gc3;
       }
     }
@@ -296,7 +308,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 11rem 0;
+  padding: 11rem 0 11.2rem;
   text-align: center;
 
   .bg-icon {
