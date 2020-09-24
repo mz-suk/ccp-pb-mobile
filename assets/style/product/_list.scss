@@ -293,7 +293,7 @@
   }
 
   .empty-text {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     line-height: 1.5;
 
     strong {
@@ -303,7 +303,7 @@
     }
 
     &:first-of-type {
-      margin-top: 2rem;
+      margin-top: 1.8rem;
     }
   }
 
@@ -775,7 +775,6 @@
   &:not(:first-child) {
     margin-top: 2rem;
   }
-
   //check-box
   &.chk-type {
     padding: 0;
@@ -863,7 +862,7 @@
 
   &.type1 {
     .info-type-cont {
-      padding: 3rem 2.5rem 4rem;
+      padding: 2.5rem 2.5rem 4rem;
       background: $fcF;
       border-color: $fc1;
     }
@@ -903,7 +902,7 @@
 
   .info-type-cont {
     position: relative;
-    padding: 2.5rem 2.5rem 3rem;
+    padding: 2.5rem 2.5rem 3.8rem;
     display: block;
     line-height: 1;
     background: $fcF9;
@@ -917,7 +916,7 @@
         top: calc(50% + 2.7rem);
       }
       .big-title {
-        margin-top: 2rem;
+        margin-top: 2.7rem;
       }
     }
 
@@ -981,7 +980,7 @@
     }
 
     .big-title {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       font-size: 1.5rem;
       color: $fc1;
 
@@ -992,10 +991,10 @@
     }
 
     .info-txt {
-      margin-top: 1.5rem;
+      margin-top: 1.2rem;
       color: $fc6;
       font-size: 1.3rem;
-      line-height: 1.8rem;
+      line-height: 1.9rem;
 
       & + .info-txt2 {
         margin-top: 0.5rem;
@@ -1015,8 +1014,9 @@
     }
 
     .btn-area {
-      margin-top: 2rem;
-      padding-top: 1.9rem;
+      margin-top: 2.4rem;
+      margin-bottom: -1.2rem;
+      padding-top: 2.2rem;
       text-align: center;
       border-top: 0.1rem dotted $fcD7;
     }
@@ -1119,7 +1119,7 @@
     margin-top: 2.6rem;
     li {
       position: relative;
-      padding: 1.8rem 0;
+      padding: 1.9rem 0 1.8rem;
       border-top: 0.1rem solid $fcF0;
       &:first-of-type {
         padding-top: 0;
@@ -1139,7 +1139,7 @@
           content: "";
           position: absolute;
           top: 0.5rem;
-          left: 0.45rem;
+          left: 0.4rem;
           display: block;
           width: 0.3rem;
           height: 0.3rem;
@@ -1156,7 +1156,7 @@
           }
         }
         .sub-txt {
-          margin-top: 0.3rem;
+          margin-top: 0.8rem;
           display: block;
           color: $fc6;
         }

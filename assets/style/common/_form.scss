@@ -123,7 +123,7 @@ textarea {
 
 .tab-checkbox {
   font-size: 0;
-  padding: 2.5rem 0 1.5rem;
+  padding: 2.5rem 1rem 1.5rem;
   .checkbox {
     margin-left: 2rem;
     font-size: 1.5rem;
@@ -133,6 +133,7 @@ textarea {
   }
 }
 .tab-checkbox-cont {
+  padding: 0 1rem;
   .checkbox-cont {
     &.active {
       display: block;
@@ -647,6 +648,9 @@ input[type="checkbox"] {
     font-size: 1.5rem;
     color: $fc1;
     line-height: 1;
+    & + .form-search {
+      padding-top: 0.4rem;
+    }
   }
   .title-sm {
     margin-bottom: 1rem;

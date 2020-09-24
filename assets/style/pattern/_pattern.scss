@@ -74,7 +74,8 @@
   }
 }
 .pattern-comp-list {
-  & > li {
+  & > li,
+  & > li:not(:first-child) {
     margin-top: 3rem;
   }
 }
