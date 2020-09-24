@@ -403,7 +403,7 @@
       left: -0.4rem;
       width: 0.5rem;
       height: 1rem;
-      background: url(../../assets/img/layout/icon-tag-arrow.png) 0 0 / 100% auto no-repeat;
+      background: url(../../assets/img/layout/icon-tag-arrow.svg) 0 0 / 100% auto no-repeat;
       transform: translateY(-50%);
       content: "";
     }
@@ -696,7 +696,7 @@
     }
 
     &.type3 {
-      background: url(../../assets/img/layout/bg-card.png) 0 0 / 100% 100% no-repeat;
+      background: url(../../assets/img/layout/bg-card.svg) 0 0 / 100% 100% no-repeat;
       .bottom {
         border-top: 0.1rem solid rgba(0, 0, 0, 0.08);
       }
@@ -806,7 +806,7 @@
         width: 1.2rem;
         height: 1.2rem;
         margin: 0 0 0 0.3rem;
-        background: url(../../assets/img/layout/icon-more-type4.png) 0 0 / 100% auto no-repeat;
+        background: url(../../assets/img/layout/icon-more-type4.svg) 0 0 / 100% auto no-repeat;
         vertical-align: top;
         content: "";
       }
