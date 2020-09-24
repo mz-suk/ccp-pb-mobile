@@ -13,7 +13,7 @@
   vertical-align: middle;
   white-space: nowrap;
   color: $fc1;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 
   .bg-icon {
     width: 2rem;
@@ -41,7 +41,7 @@
       width: 0.6rem;
       height: 0.6rem;
       margin: 0 0.6rem;
-      background: url(~assets/img/layout/icon-more-type1.png) 0 0 / 100% auto no-repeat;
+      background: url(~assets/img/layout/icon-more-type1.svg) 0 0 / 100% auto no-repeat;
       vertical-align: 0.2rem;
     }
   }
@@ -165,14 +165,14 @@
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    background: url(~assets/img/layout/icon-arrow-left.png) no-repeat 0 0;
+    background: url(~assets/img/layout/icon-arrow-left.svg) no-repeat 0 0;
     background-size: 1rem auto;
     vertical-align: top;
   }
   &.blue {
     color: $pc3;
     &:after {
-      background: url(~assets/img/layout/icon-arrow-left-blue.png) no-repeat 0 0;
+      background: url(~assets/img/layout/icon-arrow-left-blue.svg) no-repeat 0 0;
       background-size: 1rem auto;
     }
   }
@@ -200,7 +200,7 @@
     display: inline-block;
     width: 1.2rem;
     height: 1.2rem;
-    background: url(~assets/img/layout/icon-trashcan.png) no-repeat 0 0;
+    background: url(~assets/img/layout/icon-trashcan.svg) no-repeat 0 0;
     background-size: 1.2rem auto;
     vertical-align: top;
   }
@@ -212,7 +212,7 @@
       margin-right: 0.3rem;
       width: 1.6rem;
       height: 1.6rem;
-      background: url(~assets/img/layout/icon-review-del.png) no-repeat 0 0;
+      background: url(~assets/img/layout/icon-review-del.svg) no-repeat 0 0;
       background-size: 1.6rem auto;
       vertical-align: top;
     }
@@ -227,7 +227,7 @@
     display: inline-block;
     width: 1.2rem;
     height: 1.2rem;
-    background: url(~assets/img/layout/icon-chk-blue.png) no-repeat 0 0;
+    background: url(~assets/img/layout/icon-chk-blue.svg) no-repeat 0 0;
     background-size: 1.2rem auto;
     vertical-align: top;
   }
@@ -264,7 +264,7 @@
 }
 //버튼 레이아웃
 .btn-area {
-  margin-top: 4rem;
+  margin-top: 3.5rem;
   &.grid {
     display: flex;
     button {

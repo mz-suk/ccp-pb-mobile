@@ -1,7 +1,7 @@
 .wrap-filter {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 3rem 2rem 2rem;
 
   .left {
     .desc {
@@ -82,12 +82,12 @@
         left: 0.8rem;
         width: 2.8rem;
         height: 2.8rem;
-        background: url(~assets/img/layout/icon-confusion-off.png) 0 0 / 100% auto no-repeat;
+        background: url(~assets/img/layout/icon-confusion-off.svg) 0 0 / 100% auto no-repeat;
         content: "";
       }
 
       &.type2:before {
-        background-image: url(~assets/img/layout/icon-ticket.png);
+        background-image: url(~assets/img/layout/icon-ticket.svg);
       }
     }
 
@@ -102,7 +102,7 @@
 
   .item-bottom {
     position: relative;
-    padding: 3rem 2rem 0;
+    padding: 2.8rem 2rem 0;
     box-sizing: border-box;
 
     .wrap-btn {
@@ -134,7 +134,7 @@
 
     .title {
       display: block;
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.4rem;
       font-size: 1.5rem;
       color: $fc1;
       word-break: break-all;
@@ -147,7 +147,7 @@
   }
 
   .etc {
-    margin-top: 2rem;
+    margin-top: 1.6rem;
 
     .bg-icon {
       width: 1.6rem;
@@ -179,13 +179,15 @@
         text-decoration: underline;
 
         .location {
-          background-image: url(~assets/img/layout/icon-location-active.png);
+          background-image: url(~assets/img/layout/icon-location-active.svg);
         }
       }
     }
   }
 
   .wrap-tag {
+    font-size: 0;
+    vertical-align: top;
     .bg-icon {
       width: 2.8rem;
       height: 2.8rem;
@@ -195,12 +197,13 @@
     .tag {
       display: inline-block;
       margin: 1.5rem 1.5rem 0 0;
+      font-size: 1.3rem;
     }
   }
 
   .favorite {
     position: absolute;
-    top: 3.2rem;
+    top: 3.1rem;
     right: 2rem;
     width: 1.6rem;
     height: 1.6rem;
@@ -293,7 +296,7 @@
   }
 
   .empty-text {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     line-height: 1.5;
 
     strong {
@@ -303,7 +306,7 @@
     }
 
     &:first-of-type {
-      margin-top: 2rem;
+      margin-top: 1.8rem;
     }
   }
 
@@ -323,10 +326,11 @@
     display: flex;
     box-sizing: border-box;
     width: 100%;
-    padding: 3rem;
+    padding: 3rem 3rem 3rem 4rem;
     border-bottom: 0.1rem solid $fcE4;
 
     .desc {
+      margin-top: 0.2rem;
       flex: 1 1 auto;
       color: $fc1;
     }
@@ -344,25 +348,30 @@
 
     ul {
       min-height: 100%;
-      padding-top: 2.2rem;
+      padding-top: 2.05rem;
       padding-bottom: 9rem;
       border-right: 0.1rem solid $fcE4;
     }
 
     li {
-      height: 5.2rem;
-      line-height: 5.2rem;
+      height: 5rem;
+      line-height: 5rem;
       text-align: center;
+      box-sizing: border-box;
+      overflow: hidden;
 
       a {
         display: block;
         background: $fcF9;
         color: $fc9;
         font-size: 1.5rem;
+        box-sizing: border-box;
       }
 
       &.active {
         margin-right: -0.1rem;
+        height: 5.1rem;
+        line-height: 5.1rem;
         border-top: 0.1rem solid $fcE4;
         border-bottom: 0.1rem solid $fcE4;
         border-right: 0.1rem solid $fcF;
@@ -413,7 +422,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 3.9rem 2rem 3rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
@@ -512,7 +521,7 @@
     }
 
     .wrap-car-info {
-      padding: 2.5rem 0;
+      padding: 3.2rem 0 2.5rem;
     }
   }
 
@@ -617,7 +626,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 1rem;
+  padding-bottom: 0.9rem;
   border-bottom: 0.1rem solid $fcF0;
   font-size: 1.5rem;
   color: $fc1;
@@ -775,7 +784,6 @@
   &:not(:first-child) {
     margin-top: 2rem;
   }
-
   //check-box
   &.chk-type {
     padding: 0;
@@ -796,7 +804,7 @@
       }
 
       &:after {
-        background: url("~assets/img/layout/icon-chk-on.png") no-repeat center center;
+        background: url("~assets/img/layout/icon-chk-on.svg") no-repeat center center;
         background-size: 100% auto;
       }
     }
@@ -813,7 +821,7 @@
         display: block;
         width: 2rem;
         height: 2rem;
-        background: url("~assets/img/layout/icon-chk-off.png") no-repeat center center;
+        background: url("~assets/img/layout/icon-chk-off.svg") no-repeat center center;
         background-size: 100% auto;
         transform: translate(0, -50%);
       }
@@ -863,7 +871,7 @@
 
   &.type1 {
     .info-type-cont {
-      padding: 3rem 2.5rem 4rem;
+      padding: 2.5rem 2.5rem 4rem;
       background: $fcF;
       border-color: $fc1;
     }
@@ -903,7 +911,7 @@
 
   .info-type-cont {
     position: relative;
-    padding: 2.5rem 2.5rem 3rem;
+    padding: 2.5rem 2.5rem 3.8rem;
     display: block;
     line-height: 1;
     background: $fcF9;
@@ -917,14 +925,13 @@
         top: calc(50% + 2.7rem);
       }
       .big-title {
-        margin-top: 2rem;
+        margin-top: 2.7rem;
       }
     }
 
     .top {
       display: flex;
       align-items: center;
-
       .title {
         font-size: 1.5rem;
         font-weight: 700;
@@ -939,6 +946,7 @@
       }
 
       button {
+        margin-top: -0.2rem;
         margin-left: auto;
       }
       .date {
@@ -981,7 +989,7 @@
     }
 
     .big-title {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       font-size: 1.5rem;
       color: $fc1;
 
@@ -992,10 +1000,10 @@
     }
 
     .info-txt {
-      margin-top: 1.5rem;
+      margin-top: 1.2rem;
       color: $fc6;
       font-size: 1.3rem;
-      line-height: 1.8rem;
+      line-height: 1.9rem;
 
       & + .info-txt2 {
         margin-top: 0.5rem;
@@ -1015,8 +1023,9 @@
     }
 
     .btn-area {
-      margin-top: 2rem;
-      padding-top: 1.9rem;
+      margin-top: 2.4rem;
+      margin-bottom: -1.2rem;
+      padding-top: 2.2rem;
       text-align: center;
       border-top: 0.1rem dotted $fcD7;
     }
@@ -1067,18 +1076,18 @@
     }
 
     .car-name {
-      margin-top: 1.9rem;
+      margin-top: 2rem;
       font-size: 1.5rem;
       color: $fc1;
     }
 
     .car-number {
-      margin: 0.4rem 0;
+      margin: 0.8rem 0 0.4rem;
       font-size: 1.8rem;
       color: $fc1;
     }
     .car-info {
-      margin: 1.5rem -0.5rem 0;
+      margin: 1.7rem -0.5rem 0;
       padding: 1rem 1.5rem 0;
       line-height: 1;
       color: $fc1;
@@ -1119,7 +1128,7 @@
     margin-top: 2.6rem;
     li {
       position: relative;
-      padding: 1.8rem 0;
+      padding: 1.9rem 0 1.8rem;
       border-top: 0.1rem solid $fcF0;
       &:first-of-type {
         padding-top: 0;
@@ -1139,7 +1148,7 @@
           content: "";
           position: absolute;
           top: 0.5rem;
-          left: 0.45rem;
+          left: 0.4rem;
           display: block;
           width: 0.3rem;
           height: 0.3rem;
@@ -1156,7 +1165,7 @@
           }
         }
         .sub-txt {
-          margin-top: 0.3rem;
+          margin-top: 0.8rem;
           display: block;
           color: $fc6;
         }
