@@ -34,7 +34,7 @@
   }
   li {
     position: relative;
-    padding: 2.3rem 0;
+    padding: 2.3rem 1rem;
     color: $fc1;
     border-bottom: 0.1rem solid $fcF0;
     .active {
@@ -100,6 +100,9 @@
     margin-top: 0;
     font-size: 1.7rem;
     color: $fc1;
+  }
+  .btn-area {
+    margin-top: 1.5rem;
   }
 }
 
