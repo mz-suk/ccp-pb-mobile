@@ -162,13 +162,14 @@
   background: $fcF9;
   border-bottom: 0.1rem solid $fcF0;
   &.type-fcf {
+    padding: 4rem 0 3.5rem;
     background: $fcF;
   }
   p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.2rem;
     font-size: 1.7rem;
     color: $fc1;
-    line-height: 1.4;
+    line-height: 1.5;
   }
   .sub-desc {
     font-size: 1.3rem;
@@ -261,6 +262,10 @@
         margin-bottom: 2rem;
       }
     }
+  }
+
+  &.type-none-title {
+    padding-top: 4rem;
   }
 }
 .customer-call {

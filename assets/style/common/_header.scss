@@ -10,11 +10,9 @@
     .right {
       top: 0;
       transform: translateY(0);
-      .prev {
-        background-image: url(../../assets/img/layout/icon-prev-white.png);
-      }
+      .prev,
       .menu {
-        background-image: url(../../assets/img/layout/icon-hamburg-white.png);
+        filter: brightness(30);
       }
     }
   }
@@ -37,11 +35,9 @@
     .title {
       display: none;
     }
-    .prev {
-      background-image: url(../../assets/img/layout/icon-prev-white.png);
-    }
+    .prev,
     .menu {
-      background-image: url(../../assets/img/layout/icon-hamburg-white.png);
+      filter: brightness(30);
     }
   }
 

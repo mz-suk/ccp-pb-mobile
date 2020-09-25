@@ -11,12 +11,12 @@
     }
 
     .sub-txt {
-      margin-top: 0.5rem;
+      margin-top: 0.2rem;
       font-size: 1.5rem;
     }
 
     .date {
-      margin-top: 1.5rem;
+      margin-top: 1.2rem;
       font-size: 1.2rem;
     }
   }
@@ -29,18 +29,18 @@
       font-size: 1.5rem;
 
       &:not(:first-child) {
-        margin-top: 2rem;
+        margin-top: 1.8rem;
       }
     }
 
     dd {
       position: relative;
-      margin-top: 1rem;
+      margin-top: 0.8rem;
       padding-left: 1.2rem;
 
       &:before {
         position: absolute;
-        top: 0.6rem;
+        top: 0.7rem;
         left: 0.4rem;
         width: 0.3rem;
         height: 0.3rem;
@@ -190,7 +190,7 @@
 
     .date {
       display: inline-block;
-      margin-top: 1rem;
+      margin-top: 0.8rem;
       font-size: 1.2rem;
     }
 
@@ -221,6 +221,7 @@
 }
 
 .event-list-wrap {
+  margin-top: 3rem;
   .event-list {
     li {
       position: relative;
@@ -255,6 +256,10 @@
         .state-label {
           display: none;
         }
+      }
+
+      &:first-child {
+        margin-top: 0;
       }
     }
   }
@@ -369,12 +374,14 @@
   }
   .go-winning {
     font-size: 1.3rem;
-    color: #999;
+    color: $fc6;
     margin-top: 4rem;
     text-align: center;
+    text-decoration: underline;
   }
   .wrap-tab-scroll {
-    padding-bottom: 0;
+    margin: 0 0 2.5rem;
+    padding: 0;
     &:after {
       display: none;
     }
