@@ -94,7 +94,7 @@ textarea {
   width: 100%;
   height: 4.5rem;
   padding: 0 3rem 0 0.9rem;
-  background: url(~assets/img/layout/icon-toggle.png) right 1rem center / 1.2rem 1.2rem no-repeat;
+  background: url(~assets/img/layout/icon-toggle.svg) right 1rem center / 1.2rem 1.2rem no-repeat;
   border: 0.1rem solid $fcE4;
   color: $fc1;
   &:not(:focus):invalid {
@@ -123,7 +123,7 @@ textarea {
 
 .tab-checkbox {
   font-size: 0;
-  padding: 2.5rem 0 1.5rem;
+  padding: 2.5rem 1rem 1.5rem;
   .checkbox {
     margin-left: 2rem;
     font-size: 1.5rem;
@@ -133,6 +133,7 @@ textarea {
   }
 }
 .tab-checkbox-cont {
+  padding: 0 1rem;
   .checkbox-cont {
     &.active {
       display: block;
@@ -326,7 +327,7 @@ textarea {
           height: 2rem;
           border-radius: 0;
           border: none;
-          background: $fcE4 url(../~assets/img/layout/icon-checkbox.png) no-repeat center center / 2rem auto;
+          background: $fcE4 url(../~assets/img/layout/icon-checkbox.svg) no-repeat center center / 2rem auto;
           transition: background 0.2s ease;
         }
       }
@@ -334,7 +335,7 @@ textarea {
     input[type="checkbox"]:checked + label {
       .left {
         &:before {
-          background: $fc1 url(../~assets/img/layout/icon-checkbox-on.png) no-repeat center center / 2rem auto;
+          background: $fc1 url(../~assets/img/layout/icon-checkbox-on.svg) no-repeat center center / 2rem auto;
           transition: background 0.2s ease;
         }
       }
@@ -357,9 +358,9 @@ textarea {
 
     label {
       position: relative;
-      height: 3rem;
+      height: 3.2rem;
       margin: 0;
-      padding: 0 1.5rem 0 2.4rem;
+      padding: 0 1.6rem 0 2.4rem;
       background-color: $fcF;
       border: 0.1rem solid $fcE4;
       border-radius: 10rem;
@@ -372,7 +373,7 @@ textarea {
         left: 0.8rem;
         width: 1.2rem;
         height: 1.2rem;
-        background: url(~assets/img/layout/icon-chk-off.png) 0 0 / 100% auto no-repeat;
+        background: url(~assets/img/layout/icon-chk-off.svg) 0 0 / 100% auto no-repeat;
         content: "";
       }
     }
@@ -409,12 +410,12 @@ textarea {
 
     &.minus {
       left: 0;
-      background: $fc1 url(~assets/img/layout/icon-minus.png) 50% 50% / 1.2rem no-repeat;
+      background: $fc1 url(~assets/img/layout/icon-minus.svg) 50% 50% / 1.2rem no-repeat;
     }
 
     &.plus {
       right: 0;
-      background: $fc1 url(~assets/img/layout/icon-plus.png) 50% 50% / 1.2rem no-repeat;
+      background: $fc1 url(~assets/img/layout/icon-plus.svg) 50% 50% / 1.2rem no-repeat;
     }
     &:disabled {
       background-color: $fcF0;
@@ -454,11 +455,11 @@ textarea {
 input[type="checkbox"] {
   width: 2rem;
   height: 2rem;
-  background: url(~assets/img/layout/icon-checkbox.png) 0 0 / 100% auto no-repeat;
+  background: url(~assets/img/layout/icon-checkbox.svg) 0 0 / 100% auto no-repeat;
   transition: all 0.2s ease;
 
   &:checked {
-    background: url(~assets/img/layout/icon-checkbox-on.png) 0 0 / 100% auto no-repeat;
+    background: url(~assets/img/layout/icon-checkbox-on.svg) 0 0 / 100% auto no-repeat;
   }
 
   & + label {
@@ -614,7 +615,7 @@ input[type="checkbox"] {
       width: 2.3rem;
       height: 2.3rem;
       z-index: 1;
-      background: $fcF url(../~assets/img/layout/icon-chk-off.png) no-repeat center center;
+      background: $fcF url(../~assets/img/layout/icon-chk-off.svg) no-repeat center center;
       background-size: 1.2rem auto;
       border: 0.1rem solid $fcD7;
       border-radius: 50%;
@@ -628,7 +629,7 @@ input[type="checkbox"] {
     border-color: $pc6;
     transition: color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
     &:before {
-      background: $fcF url(../~assets/img/layout/icon-chk-on.png) no-repeat center center;
+      background: $fcF url(../~assets/img/layout/icon-chk-on.svg) no-repeat center center;
       background-size: 1.2rem auto;
       border-color: $pc6;
       box-shadow: 0.1rem 0 0.2rem 0 rgba(252, 203, 58, 1);
@@ -647,6 +648,9 @@ input[type="checkbox"] {
     font-size: 1.5rem;
     color: $fc1;
     line-height: 1;
+    & + .form-search {
+      padding-top: 0.4rem;
+    }
   }
   .title-sm {
     margin-bottom: 1rem;
