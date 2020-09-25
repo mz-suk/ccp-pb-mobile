@@ -99,7 +99,7 @@
   overflow: hidden;
   width: 33.5rem;
   height: 11.8rem;
-  background: url(~assets/img/layout/img-coupon-purple.png) 0 0 / 33.5rem 11.8rem no-repeat;
+  background: url(~assets/img/layout/img-coupon-purple.svg) 0 0 / 33.5rem 11.8rem no-repeat;
   background-size: contain;
   color: $fcF;
   .left {
@@ -179,7 +179,7 @@
 }
 
 .row-section {
-  padding: 3.8rem 2rem 3.5rem;
+  padding: 4rem 2rem 3.5rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
@@ -338,7 +338,9 @@
 }
 
 .rating-box {
+  margin-top: 0.2rem;
   &.type-small {
+    margin-top: 0;
     .rating {
       width: 6.4rem;
     }
@@ -378,7 +380,7 @@
 
 .review-info-box {
   margin-top: 1.5rem;
-  padding: 1.8rem 0;
+  padding: 2rem 0 1.9rem;
   border: 0.1rem solid $fcF0;
   background: $fcF9;
   text-align: center;
@@ -424,6 +426,10 @@
         border-radius: 1rem;
         box-sizing: border-box;
       }
+      .star {
+        line-height: 1;
+        vertical-align: bottom;
+      }
     }
     .comment-area {
       margin: 0.8rem 0 0;
@@ -432,6 +438,7 @@
           .desc {
             display: block;
             -webkit-line-clamp: inherit;
+            line-height: 1.65;
           }
         }
         .more-comment {
@@ -444,11 +451,11 @@
       .comment {
         .title {
           color: $fc1;
-          padding-bottom: 0.7rem;
+          padding-bottom: 0.5rem;
         }
         .option {
           color: $fc1;
-          padding-bottom: 1.5rem;
+          padding-bottom: 1.1rem;
         }
         .desc {
           //@include clamp(3);
@@ -457,6 +464,7 @@
       .date {
         margin: 1rem 0 0;
         font-size: 1.2rem;
+        line-height: 1;
         color: $fc9;
       }
       .comment-img {
