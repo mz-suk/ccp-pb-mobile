@@ -259,6 +259,8 @@
       margin: 1rem 0.5rem 0;
       padding: 1.2rem 0;
       color: $fc1;
+      border: none;
+      background: $fcF0;
     }
 
     .wrap-more {
@@ -654,7 +656,7 @@
   & + .order-info,
   & + .define-list,
   & + .point-info {
-    margin-top: 2.8rem;
+    margin-top: 2.85rem;
   }
 }
 
@@ -1324,6 +1326,7 @@
     width: 1.6rem;
     height: 1.6rem;
     margin-left: 0.5rem;
+    vertical-align: top;
   }
 
   .tooltip-box {

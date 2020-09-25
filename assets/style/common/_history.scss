@@ -68,7 +68,7 @@
 .review-cont {
   background: $fcF;
   .review-row {
-    padding: 4rem 2rem 3.5rem;
+    padding: 3rem 2rem;
     box-sizing: border-box;
     border-top: 0.8rem solid $fcF9;
     border-bottom: 0.1rem solid $fcF0;
@@ -98,6 +98,13 @@
       .wrap-empty {
         padding-top: 1rem;
         padding-bottom: 0;
+        .empty-img {
+          width: 7rem;
+          height: 7rem;
+        }
+        .empty-text strong {
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -174,7 +181,7 @@
   }
   .reply-area {
     margin-top: 1.5rem;
-    padding: 2rem;
+    padding: 1.7rem 2rem;
     border: 0.1rem solid $fcF0;
     background: $fcF9;
     .title {

@@ -21,8 +21,8 @@
 .alarm-content {
   padding: 3rem 0;
   .alarm-top {
-    padding-bottom: 2rem;
-    margin-bottom: 3rem;
+    padding: 0 0.5rem 2rem;
+    margin-bottom: 3.3rem;
     border-bottom: 0.1rem dotted $fcD7;
     .btn-delete {
       color: $fc6;
@@ -93,6 +93,7 @@
     }
     .btn-clear-x {
       margin-left: auto;
+      margin-right: 1rem;
     }
   }
   .alarm-info {
@@ -121,7 +122,7 @@
       }
     }
     .txt-box {
-      margin-top: 0.4rem;
+      margin-top: 0.8rem;
       line-height: 1.4;
     }
     .reserve-title {
@@ -137,7 +138,7 @@
       }
     }
     .list-dot {
-      margin-top: 0.65rem;
+      margin-top: 0.95rem;
       li:not(:first-child) {
         margin-top: 0.1rem;
       }
@@ -210,6 +211,9 @@
         }
       }
     }
+  }
+  .btn {
+    font-size: 1.3rem;
   }
 }
 .qna-area {
@@ -294,6 +298,10 @@
   }
 }
 .onetoone-list {
+  border-bottom: 0.8rem solid $fcF9;
+  > li:last-child {
+    border-bottom: 0.1rem solid $fcF0;
+  }
   .q-txt {
     @include clamp(2);
   }
@@ -303,7 +311,7 @@
 }
 .question-cont {
   position: relative;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 2.5rem;
   &:not(:first-of-type) {
     border-top: 0.9rem solid $fcF9;
   }
@@ -346,7 +354,7 @@
   .a-txt {
     position: relative;
     margin-top: 1.5rem;
-    padding: 2rem 2rem 2rem 3.5rem;
+    padding: 1.7rem 2rem 1.7rem 3.5rem;
     background: $fcF9;
     border: 0.1rem solid $fcF0;
     &:before {
@@ -371,7 +379,23 @@
     }
   }
   .thumb-swiper {
+    position: relative;
     margin-top: 2rem;
+    .swiper-pagination {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 0;
+      z-index: 5;
+      .swiper-pagination-bullet {
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 50%;
+      }
+    }
   }
   .attach-box {
     margin-top: 1rem;
