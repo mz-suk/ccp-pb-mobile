@@ -1,1 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a{fill:#fff;opacity:0;}.b{fill:none;stroke:#111;stroke-linecap:round;stroke-width:1.5px;}.c{fill:#111;}</style></defs><g transform="translate(0 0)"><rect class="a" width="20" height="20" transform="translate(0 0)"/><path class="b" d="M6.938,0h7.047a1.176,1.176,0,0,1,1.076,1.255V15.061a1.176,1.176,0,0,1-1.076,1.255H1.076A1.176,1.176,0,0,1,0,15.061V8.847" transform="translate(2.51 1.882)"/><line class="b" y2="5.648" transform="translate(4.195 1.255)"/><path class="b" d="M-3689.843-4996.9l3.094,2.167,2.823-2.167" transform="translate(3691.098 5002.044)"/><rect class="c" width="7" height="1.5" rx="0.75" transform="translate(8 7)"/><rect class="c" width="10.04" height="1.5" rx="0.75" transform="translate(5 12)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-5, .cls-6, .cls-7 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        opacity: 0;
+      }
+
+      .cls-4 {
+        fill: #f0f;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        stroke: #111;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-5 {
+        stroke-linecap: square;
+      }
+
+      .cls-6 {
+        stroke-linecap: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_238173" data-name="사각형 238173" class="cls-1" width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="리뷰내역_20x20" transform="translate(10 10)">
+    <g id="그룹_307353" data-name="그룹 307353" class="cls-2" transform="translate(-10 -10)">
+      <g id="그룹_307352" data-name="그룹 307352" class="cls-2">
+        <g id="그룹_307351" data-name="그룹 307351" class="cls-3">
+          <g id="그룹_307350" data-name="그룹 307350" class="cls-2">
+            <rect id="사각형_238170" data-name="사각형 238170" class="cls-4" width="20" height="20"/>
+          </g>
+        </g>
+        <path id="패스_636056" data-name="패스 636056" class="cls-5" d="M11.1.9h-8v9.3"/>
+        <path id="패스_636057" data-name="패스 636057" class="cls-6" d="M10.1,18.2h5a2.8,2.8,0,0,0,2.8-2.8h0V.9H11.1"/>
+        <path id="패스_636058" data-name="패스 636058" class="cls-6" d="M2.7,16.2,2.2,19l2.5-1.3,2.6,1.4-.5-2.8,2.1-1.9-2.8-.5L5,11.2,3.6,13.8l-2.8.4Z"/>
+        <line id="선_87169" data-name="선 87169" class="cls-6" x2="1.5" transform="translate(10.3 4.4)"/>
+        <line id="선_87170" data-name="선 87170" class="cls-7" x2="4.6" transform="translate(6.6 4.4)"/>
+        <line id="선_87171" data-name="선 87171" class="cls-6" x2="2.1" transform="translate(8 7.4)"/>
+        <line id="선_87172" data-name="선 87172" class="cls-7" x2="2.3" transform="translate(6.6 7.4)"/>
+      </g>
+    </g>
+  </g>
+</svg>

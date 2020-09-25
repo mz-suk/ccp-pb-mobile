@@ -79,8 +79,8 @@
 
     .grade {
       display: inline-block;
-      width: 4.6rem;
-      height: 4.6rem;
+      width: 3.9rem;
+      height: 3.8rem;
       margin-right: 1rem;
       background: url(../../assets/img/layout/bg-grade-type1.svg) 0 0 / 100% 100% no-repeat;
       border-radius: 50%;
@@ -95,9 +95,9 @@
 
     .member {
       .name {
-        margin-bottom: 0.3rem;
         color: $fc1;
         font-size: 1.5rem;
+        line-height: 1.3;
       }
     }
 
