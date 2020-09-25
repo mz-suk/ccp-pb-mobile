@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a{fill:none;}.b,.c{fill:#fff;stroke:#111;stroke-width:1.5px;}.c{stroke-linecap:round;}.d{stroke:none;}</style></defs><rect class="a" width="20" height="20"/><g class="b" transform="translate(6 1)"><circle class="d" cx="4" cy="4" r="4"/><circle class="a" cx="4" cy="4" r="3.25"/></g><path class="c" d="M4.775,0H8.582C11.21,0,13.34,1.791,13.34,4V8H.34" transform="translate(3.66 11)"/><path class="c" d="M11,0H10A4.757,4.757,0,0,0,5,4.469V5" transform="translate(-2 11)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        opacity: 0;
+      }
+
+      .cls-4 {
+        fill: #ff00f3;
+      }
+
+      .cls-5 {
+        stroke: #111;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_226304" data-name="사각형 226304" class="cls-1" width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="내_정보_사본_20x20" data-name="내 정보_사본_20x20" transform="translate(10 10)">
+    <g id="그룹_294436" data-name="그룹 294436" class="cls-2" transform="translate(-10 -10)">
+      <g id="그룹_294435" data-name="그룹 294435" class="cls-2">
+        <g id="그룹_294434" data-name="그룹 294434" class="cls-3">
+          <g id="그룹_294433" data-name="그룹 294433" class="cls-2">
+            <rect id="사각형_226301" data-name="사각형 226301" class="cls-4" width="20" height="20"/>
+          </g>
+        </g>
+        <path id="패스_596884" data-name="패스 596884" class="cls-5" d="M9.6,10.9A4.5,4.5,0,0,1,5.5,6.5,4.6,4.6,0,0,1,9.9,1.9a4.5,4.5,0,0,1,2.3,8.4A8,8,0,0,1,18,16.8a1,1,0,0,1-1,1.1H3.1a1,1,0,0,1-1-1.1,8,8,0,0,1,5.6-6.6"/>
+      </g>
+    </g>
+  </g>
+</svg>

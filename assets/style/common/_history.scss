@@ -175,9 +175,6 @@
   }
   .comment-area {
     margin-top: 1rem;
-    .comment {
-      // @include clamp(2);
-    }
   }
   .reply-area {
     margin-top: 1.5rem;
@@ -192,9 +189,6 @@
         height: 1.2rem;
         margin-right: 0.3rem;
       }
-    }
-    .comment {
-      // @include clamp(2);
     }
     .date {
       text-align: right;

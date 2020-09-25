@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a,.c{fill:#fff;}.a{stroke:#707070;}.b{clip-path:url(#a);}.c{stroke:#111;stroke-linecap:round;stroke-width:1.5px;}.d{fill:#111;font-size:10px;font-family:MoebiusKorea-Bold, Moebius Korea;font-weight:700;letter-spacing:-0.03em;}</style><clipPath id="a"><rect class="a" width="20" height="20" transform="translate(100 94)"/></clipPath></defs><g class="b" transform="translate(-100 -94)"><g transform="translate(100 94)"><path class="c" d="M7.114,18H4.972a.9.9,0,0,1-.8-.514l-4.058-8a1.084,1.084,0,0,1,0-.971l4.058-8A.9.9,0,0,1,4.972,0h8.057a.9.9,0,0,1,.8.514l4.058,8a1.084,1.084,0,0,1,0,.971l-4.058,8a.9.9,0,0,1-.8.514H11.675" transform="translate(19 1) rotate(90)"/><text class="d" transform="translate(7 14)"><tspan x="0" y="0">P</tspan></text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20.145" viewBox="0 0 20 20.145">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0f;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 0.15px;
+        font-size: 9.842px;
+        font-family: MoebiusKorea-Bold, Moebius Korea;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #111;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="그룹_290221" data-name="그룹 290221" transform="translate(18204 20816.145)">
+    <g id="그룹_290209" data-name="그룹 290209" transform="translate(-18204 -20816)">
+      <rect id="사각형_222411" data-name="사각형 222411" class="cls-1" width="20" height="20" transform="translate(0 0)"/>
+      <text id="m" class="cls-2" transform="translate(5.563 13.274)"><tspan x="0" y="0">m</tspan></text>
+      <path id="패스_590376" data-name="패스 590376" class="cls-3" d="M9.992.877l-8.1,4.562v9.123l8.1,4.562,8.1-4.562V5.438L9.992.877"/>
+    </g>
+  </g>
+</svg>
