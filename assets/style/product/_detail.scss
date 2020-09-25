@@ -256,6 +256,7 @@
   }
   .row-desc {
     margin: 1.5rem 0 0;
+    line-height: 1.6;
     @include clamp(2);
 
     & + .btn-more {
