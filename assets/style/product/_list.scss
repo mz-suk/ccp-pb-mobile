@@ -245,11 +245,11 @@
     display: flex;
     align-items: center;
     margin-top: 2.5rem;
-    padding-top: 1rem;
+    padding: 1rem 0.5rem 0;
     border-top: 0.1rem solid $fcE4;
 
     label {
-      width: 5.8rem;
+      width: 5.6rem;
       height: 3rem;
       margin: 0;
       padding: 0;
@@ -268,7 +268,7 @@
 
     .wrap-more {
       flex: 1;
-      margin: 1rem 1.5rem 0 0;
+      margin: 1rem 1.1rem 0 0;
       text-align: right;
     }
 
@@ -659,7 +659,7 @@
   & + .order-info,
   & + .define-list,
   & + .point-info {
-    margin-top: 2.85rem;
+    margin-top: 2.3rem;
   }
 }
 
@@ -1261,13 +1261,16 @@
             display: block;
             width: 1.1rem;
             height: 0.1rem;
-            margin: 0.4rem auto 0.7rem;
+            margin: 0.2rem auto 0.5rem;
             border-top: 0.1rem dotted $fc9;
             content: "";
           }
         }
       }
     }
+  }
+  & + .wrap-filter {
+    padding-top: 2rem;
   }
 }
 
