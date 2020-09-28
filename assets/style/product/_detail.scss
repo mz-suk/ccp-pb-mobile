@@ -233,6 +233,9 @@
       margin-top: 1rem;
     }
   }
+  & > .wrap-empty:first-child {
+    padding-top: 4rem;
+  }
 }
 
 .row-area {
