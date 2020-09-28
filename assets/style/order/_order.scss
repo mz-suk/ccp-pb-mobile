@@ -161,7 +161,7 @@
 }
 
 .order-cont {
-  padding: 4rem 2rem 3.5rem;
+  padding: 3.8rem 2rem 3.5rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
@@ -320,6 +320,11 @@
   .total {
     border-color: $gc3;
     color: $gc3;
+  }
+
+  .total.type_pc3 {
+    border-color: $pc3;
+    color: $pc3;
   }
 
   .text-desc {
