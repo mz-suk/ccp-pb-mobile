@@ -267,6 +267,9 @@
   }
 
   &.benefit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     margin: 1rem 0 0;
     padding: 1rem 1.5rem;
     background: rgba(234, 0, 44, 0.06);
