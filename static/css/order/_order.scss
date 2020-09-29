@@ -161,7 +161,7 @@
 }
 
 .order-cont {
-  padding: 4rem 2rem 3.5rem;
+  padding: 3.8rem 2rem 3.5rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
@@ -267,6 +267,9 @@
   }
 
   &.benefit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     margin: 1rem 0 0;
     padding: 1rem 1.5rem;
     background: rgba(234, 0, 44, 0.06);
@@ -320,6 +323,11 @@
   .total {
     border-color: $gc3;
     color: $gc3;
+  }
+
+  .total.type_pc3 {
+    border-color: $pc3;
+    color: $pc3;
   }
 
   .text-desc {
@@ -679,6 +687,7 @@
 
   .card {
     position: relative;
+    border-radius: 2rem;
 
     &.type1 {
       .info {
@@ -702,7 +711,7 @@
     }
 
     &.type3 {
-      background: url(~assets/img/layout/bg-card.svg) 0 0 / 100% 100% no-repeat;
+      background: linear-gradient(to right, #2d55a5 0%, #682c8d 100%);
       .bottom {
         border-top: 0.1rem solid rgba(0, 0, 0, 0.08);
       }
@@ -787,7 +796,7 @@
     .date {
       margin-top: 0.9rem;
       font-size: 1.1rem;
-      opacity: 0.7;
+      color: rgba($fcF, 0.7);
     }
   }
 
@@ -866,7 +875,7 @@
     }
 
     .brand {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
 
     .bottom {
@@ -901,5 +910,12 @@
   .top-wrap-btn {
     margin-bottom: 2rem;
     text-align: right;
+    .btn-arrow {
+      line-height: 1.3;
+      &:after {
+        margin: 0.3rem 0 0 0.3rem;
+        background: url(~assets/img/layout/icon-arrow-left-black.svg) 0 0 / 100% 100% no-repeat;
+      }
+    }
   }
 }

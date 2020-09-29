@@ -2,7 +2,7 @@
   padding: 0 2rem 0 3rem;
 
   .wrap-member {
-    padding: 1.5rem 0 2.5rem;
+    padding: 1.2rem 0 2.5rem;
     border-bottom: 0.1rem solid $fc1;
 
     .member-name {
@@ -12,7 +12,7 @@
   }
 
   .member-grade {
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
 
     .grade {
       display: inline-block;
@@ -46,14 +46,17 @@
       button {
         color: $fc1;
         font-size: 1.5rem;
-        line-height: 2rem;
       }
 
       .bg-icon {
         width: 2rem;
         height: 2rem;
-        margin-right: 0.8rem;
+        margin-right: 0.6rem;
         vertical-align: top;
+      }
+
+      .badge {
+        margin-top: -0.2rem;
       }
     }
   }
@@ -76,8 +79,8 @@
 
     .grade {
       display: inline-block;
-      width: 4.6rem;
-      height: 4.6rem;
+      width: 3.9rem;
+      height: 3.8rem;
       margin-right: 1rem;
       background: url(~assets/img/layout/bg-grade-type1.svg) 0 0 / 100% 100% no-repeat;
       border-radius: 50%;
@@ -94,6 +97,7 @@
       .name {
         color: $fc1;
         font-size: 1.5rem;
+        line-height: 1.3;
       }
     }
 
@@ -108,7 +112,16 @@
         font-size: 1.5rem;
       }
       .sub-txt {
-        margin-top: 0.5rem;
+        margin-top: 0.1rem;
+      }
+
+      &.type2 {
+        .num {
+          font-weight: 700;
+          em {
+            font-weight: 400;
+          }
+        }
       }
 
       &.type2,
@@ -119,9 +132,8 @@
 
         .num {
           margin-left: auto;
-          padding-right: 1rem;
+          padding-right: 1.5rem;
           color: $pc3;
-
           em {
             font-size: 1.6rem;
           }
@@ -159,7 +171,7 @@
     .btn-arrow {
       position: absolute;
       top: 50%;
-      right: 0;
+      right: 0.5rem;
       width: 2rem;
       height: 2rem;
       transform: translateY(-50%);

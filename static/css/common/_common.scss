@@ -126,9 +126,9 @@ $fcEB: #ebebeb;
     }
     @if $dotSt==0 {
       &:before {
-        left: calc((1.4rem - 0.2rem) / 2);
-        width: 0.2rem;
-        height: 0.2rem;
+        left: calc((1.4rem - 0.25rem) / 2);
+        width: 0.25rem;
+        height: 0.25rem;
         background: $fc6;
         border-radius: 50%;
       }

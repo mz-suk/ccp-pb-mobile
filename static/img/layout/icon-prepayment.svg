@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a{fill:#fff;opacity:0;}.b{fill:#111;font-size:10px;font-family:MoebiusKorea-Bold, Moebius Korea;font-weight:700;}.c,.e{fill:none;}.c{stroke:#111;stroke-miterlimit:10;stroke-width:1.5px;}.d{stroke:none;}</style></defs><rect class="a" width="20" height="20" transform="translate(0 0)"/><text class="b" transform="translate(5 14)"><tspan x="0" y="0">\</tspan></text><g class="c"><circle class="d" cx="10" cy="10" r="10"/><circle class="e" cx="10" cy="10" r="9.25"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3, .cls-4 {
+        fill: #111;
+      }
+
+      .cls-4 {
+        font-size: 9.36px;
+        font-family: MoebiusKorea-Bold, Moebius Korea;
+        font-weight: 700;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_226315" data-name="사각형 226315" class="cls-1" width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="선불카드_충전_사용내역_20x20" data-name="선불카드 충전/사용내역_20x20" transform="translate(10 10)">
+    <g id="그룹_294448" data-name="그룹 294448" transform="translate(-10 -10)">
+      <g id="그룹_294447" data-name="그룹 294447" class="cls-2">
+        <path id="패스_596891" data-name="패스 596891" class="cls-3" d="M10,1.5A8.5,8.5,0,1,1,1.5,10,8.5,8.5,0,0,1,10,1.5M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0"/>
+      </g>
+      <text id="_" data-name="\" class="cls-4" transform="translate(5.4 13.8)"><tspan x="0" y="0">\</tspan></text>
+    </g>
+  </g>
+</svg>
