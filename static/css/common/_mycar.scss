@@ -176,6 +176,12 @@
   .right {
     margin-left: auto;
   }
+
+  strong {
+    padding-left: 0.4rem;
+    em {
+    }
+  }
 }
 .new-add-noti {
   padding: 2.3rem 0 0;
@@ -217,9 +223,9 @@
   }
   .price-unit {
     color: $fc9;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     span {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       text-decoration: line-through;
     }
   }
@@ -288,6 +294,12 @@
   .price-box {
     .discount {
       color: $gc3;
+    }
+    .price-unit {
+      font-size: 1.3rem;
+      span {
+        font-size: 1.4rem;
+      }
     }
   }
 }

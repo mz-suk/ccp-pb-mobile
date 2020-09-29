@@ -212,9 +212,6 @@
     background-image: url(~assets/img/layout/icon-share-kakao.svg);
   }
 
-  // &.oil {
-  //   background-image: url(~assets/img/layout/icon-oil.png);
-  // }
   &.locator {
     background-image: url(~assets/img/layout/icon-locator.svg);
   }
@@ -251,7 +248,7 @@
   }
 
   &.link {
-    background-image: url(~assets/img/layout/icon-more-type3.png);
+    background-image: url(~assets/img/layout/icon-more-type3.svg);
   }
 
   &.trash-del {
@@ -339,9 +336,6 @@
     background-image: url(~assets/img/layout/icon-keypad-shield.png);
   }
 
-  &.car-oil {
-    background-image: url(~assets/img/layout/icon-car-oil.png);
-  }
   &.tooltip2 {
     background-image: url(~assets/img/layout/icon-tooltip-type1.svg);
   }
@@ -357,20 +351,13 @@
   &.refresh2 {
     background-image: url(~assets/img/layout/icon-refresh-type2.svg);
   }
-  &.refresh3 {
-    background-image: url(~assets/img/layout/icon-refresh-yellow.png);
-  }
-
-  &.creditcard {
-    background-image: url(~assets/img/layout/icon-creditcard.png);
-  }
 
   &.plus {
     background-image: url(~assets/img/layout/icon-more-type1.svg);
   }
 
   &.meter {
-    background-image: url(~assets/img/layout/icon-meter.png);
+    background-image: url(~assets/img/layout/icon-meter.svg);
   }
   &.coupon-label {
     background-image: url(~assets/img/layout/icon-coupon-label.svg);
@@ -459,6 +446,9 @@
   &.member {
     background-image: url(~assets/img/layout/icon-member.svg);
   }
+  &.member-type2 {
+    background-image: url(~assets/img/layout/icon-member-type2.svg);
+  }
   &.history {
     background-image: url(~assets/img/layout/icon-history.svg);
   }
@@ -509,6 +499,7 @@
   border: 0.1rem solid;
   border-radius: 10rem;
   box-sizing: border-box;
+  line-height: 1;
 
   // &.lg {
   //   height: 2.5rem;

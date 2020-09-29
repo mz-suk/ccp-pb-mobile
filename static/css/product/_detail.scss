@@ -191,7 +191,7 @@
   }
   &.type-address {
     .wrap-form {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
     }
     .form-text-area {
       margin-bottom: 6.5rem;
@@ -233,6 +233,9 @@
       margin-top: 1rem;
     }
   }
+  & > .wrap-empty:first-child {
+    padding-top: 4rem;
+  }
 }
 
 .row-area {
@@ -256,6 +259,7 @@
   }
   .row-desc {
     margin: 1.5rem 0 0;
+    line-height: 1.6;
     @include clamp(2);
 
     & + .btn-more {

@@ -208,7 +208,9 @@ textarea {
     input[type="checkbox"]:checked + label,
     input[type="radio"]:checked + label {
       background: $fc1;
+      border-color: $fc1;
       color: $fcF;
+      border-color: $fc1;
     }
   }
 
@@ -381,6 +383,7 @@ textarea {
     input[type="checkbox"]:checked + label,
     input[type="radio"]:checked + label {
       background-color: $fc1;
+      border-color: $fc1;
       color: $fcF;
 
       &:before {
