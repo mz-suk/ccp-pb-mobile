@@ -157,7 +157,7 @@
 
 // 문의하기
 .customer-top {
-  padding: 3rem 0;
+  padding: 2.7rem 0 3rem;
   text-align: center;
   background: $fcF9;
   border-bottom: 0.1rem solid $fcF0;
@@ -166,10 +166,13 @@
     background: $fcF;
   }
   p {
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.8rem;
     font-size: 1.7rem;
     color: $fc1;
     line-height: 1.5;
+    & + .btn {
+      margin-top: -0.8rem;
+    }
   }
   .sub-desc {
     font-size: 1.3rem;
@@ -310,7 +313,7 @@
 }
 .question-cont {
   position: relative;
-  padding: 3rem 2rem 2.5rem;
+  padding: 2.8rem 2rem 2.5rem;
   &:not(:first-of-type) {
     border-top: 0.9rem solid $fcF9;
   }
@@ -352,7 +355,7 @@
   }
   .a-txt {
     position: relative;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
     padding: 1.7rem 2rem 1.7rem 3.5rem;
     background: $fcF9;
     border: 0.1rem solid $fcF0;
@@ -402,7 +405,7 @@
     border: 0.1rem solid $fcF0;
   }
   .btn-area {
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
     text-align: right;
     button {
       vertical-align: top;
