@@ -667,10 +667,34 @@
 
 .terms-box {
   overflow: hidden;
+  position: relative;
   margin: 2rem 1rem 0;
 
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    & + label {
+      display: inline-block;
+      margin: 0;
+      padding: 0 2rem 0 3rem;
+
+      span {
+        font-size: 1.1rem;
+        color: $fc6;
+
+        &.req {
+          color: $pc3;
+        }
+      }
+    }
+  }
+
   .more {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 2rem;
     height: 2rem;
     background-size: 1.2rem 1.2rem;

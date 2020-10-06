@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">휴대폰 본인인증</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="account-area">
+            <div class="member-apply">
+              <p class="apply-info">입력한 정보가 맞는지 확인 하신 후<br />[확인] 버튼을 눌러주세요.</p>
+              <div class="apply-form">
+                <p class="apply-title">휴대폰 번호</p>
+                <div class="form-input">
+                  <input type="tel" placeholder="010 - 1234 - 1234" />
+                </div>
+              </div>
+              <div class="apply-form">
+                <p class="apply-title">통신사</p>
+                <div class="form-input">
+                  <select class="select">
+                    <option>KT</option>
+                  </select>
+                </div>
+              </div>
+              <div class="apply-form">
+                <p class="apply-title">생년월일</p>
+                <div class="form-input">
+                  <div class="input-box">
+                    <input type="number" placeholder="YYMMDD" />
+                  </div>
+                  <div class="input-box">
+                    <input type="password" placeholder="●" />
+                    <span>● ● ● ● ● ●</span>
+                  </div>
+                </div>
+              </div>
+              <div class="apply-form">
+                <p class="apply-title">이름</p>
+                <div class="form-input">
+                  <input type="text" placeholder="이름을 입력하세요." />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fix-footer-area">
+            <button type="button" class="btn type2 color4">확인</button>
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>

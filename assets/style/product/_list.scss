@@ -322,6 +322,19 @@
       font-size: 1.3rem;
     }
   }
+
+  .text-box {
+    margin: 3rem 2rem 0;
+    .text-color {
+      color: $pc3;
+    }
+    + .btn-area {
+      margin: 4rem 2rem 0;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .filter-layer {

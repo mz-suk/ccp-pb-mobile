@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">머핀 회원가입 약관동의</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="account-area">
+          <div class="accordion type3 active">
+            <div class="accordion-title">
+              <p class="title">
+                <input type="checkbox" id="allChk" />
+                <label for="allChk">모든 약관 동의</label>
+              </p>
+              <button type="button" class="bg-icon toggle">펼침</button>
+            </div>
+            <div class="accordion-cont">
+              <div class="wrap-terms">
+                <div class="terms-box">
+                  <input type="checkbox" id="terms1" />
+                  <label for="terms1">머핀 서비스 이용약관 동의 <span class="req">(필수)</span></label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+                <div class="terms-box">
+                  <input type="checkbox" id="terms2" />
+                  <label for="terms2">개인정보 처리 방침 (머핀 서비스) <span class="req">(필수)</span></label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+                <div class="terms-box">
+                  <input type="checkbox" id="terms3" />
+                  <label for="terms3">위치정보기반서비스 이용약관 (머핀 서비스) <span class="req">(필수)</span></label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+                <div class="terms-box">
+                  <input type="checkbox" id="terms4" />
+                  <label for="terms4">Enclean Bonus Card 서비스약관 <span class="req">(필수)</span></label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+                <div class="terms-box">
+                  <input type="checkbox" id="terms5" />
+                  <label for="terms5">위치정보 수집/이용 및 위치 기반 서비스<br />사용 동의서 (머핀 서비스) <span class="req">(필수)</span></label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+                <div class="terms-box">
+                  <input type="checkbox" id="terms6" />
+                  <label for="terms6">개인정보 수집이용 동의서<br />(Enclean Bonus Card) <span class="req">(필수)</span></label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+              </div>
+              <div class="wrap-terms">
+                <div class="terms-box">
+                  <input type="checkbox" id="terms7" />
+                  <label for="terms7">OK캐쉬백 카드서비스 이용약관 <span>(선택)</span></label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+                <div class="terms-box">
+                  <input type="checkbox" id="terms8" />
+                  <label for="terms8">OK캐쉬백 카드발급 신청을 위한 개인정보<br />제3자 제공 동의 <span>(선택)</span></label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+                <div class="terms-box">
+                  <input type="checkbox" id="terms9" />
+                  <label for="terms9">마케팅 정보 활용 동의<br />(Enclean BonusCard) <span>(선택)</span></label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+                <div class="terms-box">
+                  <input type="checkbox" id="terms10" />
+                  <label for="terms10">OK캐쉬백 마케팅 활용을 위한 개인정보<br />제3자 제공 동의 <span>(선택)</span></label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4" disabled>다음</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
