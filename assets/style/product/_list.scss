@@ -846,6 +846,39 @@
     }
   }
 
+  &.chk-box-type {
+    input[type="checkbox"] {
+      position: absolute;
+      top: 2.5rem;
+      left: 2.5rem;
+      z-index: 2;
+    }
+    input[type="checkbox"]:checked + label {
+      &.info-type-cont,
+      &.info-car-cont {
+        background: $fcF;
+        border-color: $fc1;
+        // box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.08);
+        transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+      }
+
+      &:after {
+        background: url("../../assets/img/layout/icon-chk-on.svg") no-repeat center center;
+        background-size: 100% auto;
+      }
+    }
+    label {
+      margin: 0;
+    }
+
+    .info-type-cont {
+      padding-top: 3rem;
+      .sc-title {
+        margin-top: 2rem;
+      }
+    }
+  }
+
   //radio
   &.radio-type {
     padding: 0;
@@ -1051,6 +1084,30 @@
       margin-top: 4rem;
       button {
         width: 100%;
+      }
+    }
+
+    // 오일선택스타일
+    .sc-title {
+      margin-top: 1.5rem;
+      font-size: 1.7rem;
+      color: $fc1;
+      font-weight: 700;
+    }
+    .thumb-box {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      .thumb-img {
+        margin-right: 2.5rem;
+        width: 6rem;
+        height: 6rem;
+        border: 0.1rem solid $fcE4;
+        background: $fcF;
+      }
+      .thumb-txt {
+        flex: 1;
+        line-height: 1.5;
       }
     }
   }
