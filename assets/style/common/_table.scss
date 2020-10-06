@@ -17,6 +17,18 @@
     }
   }
 
+  &.type2 {
+    td {
+      padding: 1.5rem 2rem;
+      vertical-align: middle;
+      text-align: left;
+      &:first-child {
+        color: $fc1;
+        text-align: center;
+      }
+    }
+  }
+
   th {
     padding: 1.3rem 0.5rem;
     color: $fc1;

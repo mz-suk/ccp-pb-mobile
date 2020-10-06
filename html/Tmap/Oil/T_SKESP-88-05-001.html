@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">차량 선택</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="block-layout">
+          <ul class="car-select-list">
+            <li class="info-type-box radio-type">
+              <input type="radio" id="radio1" name="radiotype" />
+              <label class="info-car-cont type2" for="radio1">
+                <div class="logo">
+                  <img src="../../../assets/img/layout/logo-jaguar.png" alt="" />
+                  <p class="car-barnd">재규어</p>
+                </div>
+                <p class="car-name">2021 재규어 F-타입</p>
+                <p class="car-number">28저 8617</p>
+              </label>
+            </li>
+            <li class="info-type-box radio-type">
+              <input type="radio" id="radio2" name="radiotype" checked />
+              <label class="info-car-cont type2" for="radio2">
+                <div class="logo">
+                  <img src="../../../assets/img/layout/logo-mini.png" alt="" />
+                  <p class="car-barnd">BMW</p>
+                </div>
+                <p class="car-name">2020 미니 컨버터블 쿠퍼S</p>
+                <p class="car-number">28저 8617</p>
+              </label>
+            </li>
+            <li class="info-type-box radio-type">
+              <input type="radio" id="radio3" name="radiotype" />
+              <label class="info-car-cont type2" for="radio3">
+                <div class="logo">
+                  <img src="../../../assets/img/layout/logo-hyundai.png" alt="" />
+                  <p class="car-barnd">현대</p>
+                </div>
+                <p class="car-name">2020 그랜저 하이브리드</p>
+                <p class="car-number">28저 8617</p>
+              </label>
+            </li>
+          </ul>
+          <div class="btn-area grid">
+            <button type="button" class="btn type1">새로운 차량 등록</button>
+          </div>
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4">다음으로</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

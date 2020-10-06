@@ -521,6 +521,36 @@
         }
       }
     }
+
+    .user-review {
+      padding: 0 0 0 1.6rem;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      line-height: 2rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: $pc3;
+      .logo {
+        margin-right: 0.2rem;
+        display: inline-block;
+        height: 1rem;
+        img {
+          height: 100%;
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 0.9rem;
+        display: block;
+        border-left: 0.1rem dotted $fcD7;
+      }
+    }
   }
 }
 .more-comment-wrap {

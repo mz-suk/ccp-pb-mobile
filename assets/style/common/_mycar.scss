@@ -278,6 +278,12 @@
     display: block;
     color: $fc1;
     text-align: center;
+
+    &.type1 {
+      padding: 3rem 2rem;
+      font-size: 1.7rem;
+      color: $pc3;
+    }
   }
   button {
     margin-top: 2.5rem;
@@ -378,3 +384,112 @@
     }
   }
 }
+
+// 오일/배터리
+.tbl-layout {
+  padding: 4rem 2rem 6rem;
+  .title {
+    font-size: 1.5rem;
+    color: $fc1;
+    &:not(:first-child) {
+      margin-top: 3.5rem;
+    }
+  }
+  .tbl {
+    margin-top: 2rem;
+  }
+  .list-dot {
+    margin-top: 2.5rem;
+  }
+}
+.quo-marks-cont {
+  padding-top: 4rem;
+  text-align: center;
+  color: $fc1;
+  .main-txt {
+    font-size: 1.7rem;
+    &:before,
+    &:after {
+      content: '"';
+      margin: auto;
+      display: block;
+      line-height: 1;
+      font-size: 3rem;
+      height: 1rem;
+    }
+    &:before {
+      margin-bottom: 0.5rem;
+    }
+    &:after {
+      margin-top: 0.5rem;
+    }
+  }
+  .sub-txt {
+    margin-top: 3.5rem;
+    font-size: 1.2rem;
+
+    &:after {
+      content: "";
+      margin: 2rem auto 3rem;
+      display: block;
+      width: 0.1rem;
+      height: 5rem;
+      background: $fc1;
+    }
+    em {
+      text-decoration: underline;
+      color: $pc3;
+    }
+  }
+}
+
+.tmap-layout {
+  .review-top {
+    position: relative;
+    border-bottom: none;
+    &.type1 {
+      padding: 1.5rem 3.5rem 1.5rem 2rem;
+    }
+    & + .order-cont {
+      border-top: none;
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      transform: translate(0, -50%);
+      .bg-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+  }
+}
+// .step-detail-cont {
+//   color: $fc1;
+//   .title {
+//     .point {
+//       color: $pc3;
+//       border-bottom: 0.1rem solid $pc3;
+//     }
+//   }
+//   .thumb {
+//     margin-top: 1rem;
+//   }
+//   .txt-box {
+//     margin-top: 0.5rem;
+//     font-size: 1.1rem;
+//     color: $fc6;
+//     .under {
+//       text-decoration: underline;
+//       font-weight: 700;
+//     }
+//     & + .txt-box {
+//       margin-top: 1.5rem;
+//     }
+//   }
+
+//   & + .step-detail-cont {
+//     margin-top: 3rem;
+//   }
+// }
