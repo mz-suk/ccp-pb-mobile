@@ -301,6 +301,9 @@
 
 .define-list {
   padding: 0 1rem;
+  &.type1 {
+    color: $fc1;
+  }
 }
 
 .text-link {

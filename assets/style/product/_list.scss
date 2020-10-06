@@ -654,6 +654,11 @@
       width: 2rem;
       height: 2rem;
     }
+
+    &.tooltip2 {
+      margin-top: -0.4rem;
+      margin-left: 0.6rem;
+    }
   }
 
   & + .order-info,
@@ -1062,6 +1067,12 @@
       .logo {
         top: 4.8rem;
         transform: inherit;
+      }
+    }
+    &.type2 {
+      padding: 4.9rem 3rem 5.1rem;
+      .car-name {
+        margin-top: 0;
       }
     }
     .logo {
