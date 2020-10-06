@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">휴대폰 본인인증</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="account-area">
+            <div class="member-apply">
+              <p class="apply-info">인증번호를 입력해주세요.</p>
+              <div class="apply-form">
+                <p class="apply-title">인증번호</p>
+                <div class="form-input number">
+                  <input type="number" placeholder="인증번호 6자리" />
+                  <span class="time">02 : 57</span>
+                  <button type="button"><i class="bg-icon refresh"></i>인증번호 재발송</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fix-footer-area">
+            <button type="button" class="btn type2 color4">확인</button>
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
