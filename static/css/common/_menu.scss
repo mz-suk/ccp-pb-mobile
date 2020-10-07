@@ -2,38 +2,69 @@
   padding: 0 2rem 0 3rem;
 
   .wrap-member {
-    padding: 1.2rem 0 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 2.5rem;
     border-bottom: 0.1rem solid $fc1;
-
-    .member-name {
-      color: $fc1;
-      font-size: 1.7rem;
-    }
-  }
-
-  .member-grade {
-    margin-top: 1.2rem;
 
     .grade {
       display: inline-block;
-      height: 2.6rem;
-      padding: 0 0.9rem;
-      box-sizing: border-box;
-      background: #fddb2b;
-      border: 0.1rem solid #fccb3a;
-      border-radius: 2.6rem;
-      color: $fc1;
-      font-size: 1.1rem;
-      font-weight: 700;
-      line-height: 2.6rem;
-      vertical-align: middle;
+      width: 5.1rem;
+      height: 6.9rem;
+    }
+
+    .member {
+      margin: 1rem 0 0 1.2rem;
+
+      p {
+        color: $fc1;
+        font-size: 1.1rem;
+        &.name {
+          font-size: 1.7rem;
+        }
+      }
     }
 
     .btn-arrow {
-      margin-left: 0.8rem;
-      color: $fc6;
+      align-self: flex-end;
+      height: 1.3rem;
+      margin-left: auto;
+      border-bottom: 0.1rem solid $pc3;
+      color: $pc3;
+      &:after {
+        background: url(~assets/img/layout/icon-arrow-left-blue.svg) 0 0 / 100% auto no-repeat;
+      }
     }
+
+    // .member-name {
+    //   color: $fc1;
+    //   font-size: 1.7rem;
+    // }
   }
+
+  // .member-grade {
+  //   margin-top: 1.2rem;
+
+  //   .grade {
+  //     display: inline-block;
+  //     height: 2.6rem;
+  //     padding: 0 0.9rem;
+  //     box-sizing: border-box;
+  //     background: #fddb2b;
+  //     border: 0.1rem solid #fccb3a;
+  //     border-radius: 2.6rem;
+  //     color: $fc1;
+  //     font-size: 1.1rem;
+  //     font-weight: 700;
+  //     line-height: 2.6rem;
+  //     vertical-align: middle;
+  //   }
+
+  //   .btn-arrow {
+  //     margin-left: 0.8rem;
+  //     color: $fc6;
+  //   }
+  // }
 
   .menu-list {
     li {
@@ -79,17 +110,14 @@
 
     .grade {
       display: inline-block;
-      width: 3.9rem;
-      height: 3.8rem;
+      width: 3.7rem;
+      height: 4.8rem;
       margin-right: 1rem;
-      background: url(~assets/img/layout/bg-grade-type1.svg) 0 0 / 100% 100% no-repeat;
-      border-radius: 50%;
-      color: $fcF;
-      font-size: 0;
       vertical-align: top;
 
       & + .member {
         display: inline-block;
+        margin-top: 0.5rem;
       }
     }
 
