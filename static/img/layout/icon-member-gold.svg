@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="69" viewBox="0 0 51 69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #fddb2b;
+      }
+
+      .cls-10, .cls-11, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #fccb3a;
+      }
+
+      .cls-11, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4, .cls-6 {
+        stroke-width: 1.554px;
+      }
+
+      .cls-10, .cls-11, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke: #111;
+      }
+
+      .cls-5, .cls-8 {
+        stroke-linecap: square;
+      }
+
+      .cls-5 {
+        stroke-width: 1.554px;
+      }
+
+      .cls-6, .cls-7, .cls-9 {
+        stroke-linecap: round;
+      }
+
+      .cls-7 {
+        stroke-width: 1.554px;
+      }
+
+      .cls-8 {
+        stroke-miterlimit: 10;
+        stroke-width: 1.554px;
+      }
+
+      .cls-10, .cls-9 {
+        stroke-width: 1.554px;
+      }
+
+      .cls-11 {
+        stroke-width: 1.554px;
+      }
+
+      .cls-12 {
+        fill: #111;
+        font-size: 10px;
+        font-family: MoebiusKorea-Bold, Moebius Korea;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="그룹_322330" data-name="그룹 322330" transform="translate(-70 -62)">
+    <rect id="사각형_245818" data-name="사각형 245818" class="cls-1" width="51" height="69" transform="translate(70 62)"/>
+    <g id="그룹_322329" data-name="그룹 322329">
+      <path id="패스_590790" data-name="패스 590790" class="cls-2" d="M.9,2.3V37.256a6.214,6.214,0,0,0,3.107,5.438L21.719,52.948a6.214,6.214,0,0,0,6.214,0L45.644,42.694a6.214,6.214,0,0,0,3.107-5.438V2.3Z" transform="translate(70.498 61.273)"/>
+      <path id="패스_590791" data-name="패스 590791" class="cls-3" d="M3.1,5.9V52.748A6.214,6.214,0,0,0,6.207,58.03l17.711,10.1a6.37,6.37,0,0,0,6.214,0l17.711-10.1a6.214,6.214,0,0,0,3.107-5.282V5.9a1.4,1.4,0,0,0-1.4-1.4H4.5A1.4,1.4,0,0,0,3.1,5.9Z" transform="translate(69.717 60.492)"/>
+      <path id="패스_590792" data-name="패스 590792" class="cls-4" d="M.9,2.3V52.256a6.214,6.214,0,0,0,3.107,5.438L21.719,67.948a6.214,6.214,0,0,0,6.214,0L45.644,57.694a6.214,6.214,0,0,0,3.107-5.438V2.3Z" transform="translate(70.498 61.273)"/>
+      <path id="패스_590793" data-name="패스 590793" class="cls-2" d="M21.608,10.8A11.808,11.808,0,1,1,9.8,22.763h0A11.808,11.808,0,0,1,21.608,10.955" transform="translate(75.426 65.979)"/>
+      <path id="패스_590794" data-name="패스 590794" class="cls-5" d="M10.3,16.307A11.5,11.5,0,0,1,12.475,13.2" transform="translate(75.703 67.309)"/>
+      <path id="패스_590795" data-name="패스 590795" class="cls-6" d="M12.766,8.7s0,4.661,2.8,4.661h.155A11.808,11.808,0,1,1,10.59,18.8" transform="translate(75.256 64.816)"/>
+      <path id="패스_590796" data-name="패스 590796" class="cls-7" d="M14.163,9.3s-.777,2.641.932,2.952" transform="translate(77.742 65.148)"/>
+      <path id="패스_590797" data-name="패스 590797" class="cls-8" d="M19.006,19.3a2.33,2.33,0,0,1-4.506,0" transform="translate(78.027 70.686)"/>
+      <line id="선_76302" data-name="선 76302" class="cls-9" y2="0.466" transform="translate(98.432 85.635)"/>
+      <line id="선_76303" data-name="선 76303" class="cls-10" y2="2.02" transform="translate(98.432 83.615)"/>
+      <line id="선_76304" data-name="선 76304" class="cls-9" y2="0.621" transform="translate(91.439 85.479)"/>
+      <line id="선_76305" data-name="선 76305" class="cls-10" y2="1.864" transform="translate(91.439 83.615)"/>
+      <path id="패스_590798" data-name="패스 590798" class="cls-2" d="M23.639,11.118,19.6,10.186l2.33,3.729L19.6,17.643l4.195-1.554L26.9,19.663l-.155-4.506,3.729-2.02L26.591,12.05,26.125,7.7Z" transform="translate(80.852 64.264)"/>
+      <path id="패스_590799" data-name="패스 590799" class="cls-11" d="M23.639,11.118,19.6,10.186l2.33,3.729L19.6,17.643l4.195-1.554L26.9,19.663l-.155-4.506,3.729-2.02L26.591,12.05,26.125,7.7Z" transform="translate(80.852 64.264)"/>
+      <text id="Gold" class="cls-12" transform="translate(84.494 115.17)"><tspan x="0" y="0">GOLD</tspan></text>
+    </g>
+  </g>
+</svg>

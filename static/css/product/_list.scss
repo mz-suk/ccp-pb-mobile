@@ -322,6 +322,19 @@
       font-size: 1.3rem;
     }
   }
+
+  .text-box {
+    margin: 3rem 2rem 0;
+    .text-color {
+      color: $pc3;
+    }
+    + .btn-area {
+      margin: 4rem 2rem 0;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .filter-layer {
@@ -654,6 +667,11 @@
       width: 2rem;
       height: 2rem;
     }
+
+    &.tooltip2 {
+      margin-top: -0.4rem;
+      margin-left: 0.6rem;
+    }
   }
 
   & + .order-info,
@@ -837,6 +855,39 @@
         background: url("~assets/img/layout/icon-chk-off.svg") no-repeat center center;
         background-size: 100% auto;
         transform: translate(0, -50%);
+      }
+    }
+  }
+
+  &.chk-box-type {
+    input[type="checkbox"] {
+      position: absolute;
+      top: 2.5rem;
+      left: 2.5rem;
+      z-index: 2;
+    }
+    input[type="checkbox"]:checked + label {
+      &.info-type-cont,
+      &.info-car-cont {
+        background: $fcF;
+        border-color: $fc1;
+        // box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.08);
+        transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+      }
+
+      &:after {
+        background: url("~assets/img/layout/icon-chk-on.svg") no-repeat center center;
+        background-size: 100% auto;
+      }
+    }
+    label {
+      margin: 0;
+    }
+
+    .info-type-cont {
+      padding-top: 3rem;
+      .sc-title {
+        margin-top: 2rem;
       }
     }
   }
@@ -1048,6 +1099,30 @@
         width: 100%;
       }
     }
+
+    // 오일선택스타일
+    .sc-title {
+      margin-top: 1.5rem;
+      font-size: 1.7rem;
+      color: $fc1;
+      font-weight: 700;
+    }
+    .thumb-box {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      .thumb-img {
+        margin-right: 2.5rem;
+        width: 6rem;
+        height: 6rem;
+        border: 0.1rem solid $fcE4;
+        background: $fcF;
+      }
+      .thumb-txt {
+        flex: 1;
+        line-height: 1.5;
+      }
+    }
   }
 
   .info-car-cont {
@@ -1062,6 +1137,12 @@
       .logo {
         top: 4.8rem;
         transform: inherit;
+      }
+    }
+    &.type2 {
+      padding: 4.9rem 3rem 5.1rem;
+      .car-name {
+        margin-top: 0;
       }
     }
     .logo {
