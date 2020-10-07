@@ -176,6 +176,10 @@
 
   .customer-info {
     margin-top: 2.5rem;
+    a[href^="tel:"] {
+      color: $pc3;
+      text-decoration: underline;
+    }
   }
 
   .asterisk-mark {

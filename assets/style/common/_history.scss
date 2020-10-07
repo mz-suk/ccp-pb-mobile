@@ -808,6 +808,38 @@
         margin-top: 0;
       }
     }
+
+    &.type1 {
+      padding-top: 0;
+    }
+  }
+
+  .car-number-info {
+    padding: 2.3rem 0 2.1rem;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: $fc1;
+    text-align: center;
+    border-bottom: 0.1rem solid $fcF0;
+  }
+  .wrap-tab-content {
+    padding: 2rem 2rem 0;
+    border-top: 0.8rem solid $fcF9;
+
+    .wrap-tab-scroll:after {
+      height: 0;
+      border-bottom: 0.1rem dotted $fcD7;
+      background: none;
+    }
+    input[type="checkbox"] + label {
+      margin-left: 0;
+    }
+  }
+
+  .history-count {
+    padding: 2.1rem 2rem 0.9rem;
+    text-align: right;
+    color: $fc1;
   }
 }
 

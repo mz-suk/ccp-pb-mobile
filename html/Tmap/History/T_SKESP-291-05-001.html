@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="">
+          <div class="alert-box">
+            <p class="msg">
+              <a href="#"> <i class="bg-icon info white"></i> 오늘 변경된 예약정보가 있습니다 </a>
+            </p>
+          </div>
+          <div class="history-list-wrap">
+            <div class="car-number-info">28저 8617</div>
+            <div class="wrap-tab-content">
+              <div class="wrap-tab type2">
+                <ul class="tab-menu">
+                  <li>
+                    <button type="button">출장세차</button>
+                  </li>
+                  <li class="active">
+                    <button type="button">오일,배터리 교환</button>
+                  </li>
+                  <li>
+                    <button type="button">수리견적</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content"></div>
+              <div class="tab-content">
+                <div class="wrap-tab-scroll type2">
+                  <ul class="tab-scroll-menu">
+                    <li>
+                      <div class="checkbox type1">
+                        <input type="checkbox" id="chk2" />
+                        <label for="chk2">전체</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox type1">
+                        <input type="checkbox" id="chk3" />
+                        <label for="chk3">요청</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox type1">
+                        <input type="checkbox" id="chk4" checked="" />
+                        <label for="chk4">예약</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox type1">
+                        <input type="checkbox" id="chk5" />
+                        <label for="chk5">완료</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="checkbox type1">
+                        <input type="checkbox" id="chk5" />
+                        <label for="chk5">미사용</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-content"></div>
+            </div>
+            <p class="history-count">총 10건</p>
+            <ul class="history-list type1">
+              <li>
+                <!-- 예약 일때만 type-reservation 클래스 추가 -->
+                <div class="history-box type-reservation">
+                  <div class="box-top">
+                    <p class="label">
+                      <span class="label-inner"><i class="bg-icon reservation"></i>예약</span>
+                    </p>
+                    <p class="date"><strong>2020.05.23 (목요일) 오전</strong></p>
+                  </div>
+                  <div class="box-body">
+                    <div class="history-desc">
+                      <div class="title-area">
+                        <p class="title">
+                          <strong>[손세차]</strong>
+                        </p>
+                        <div class="state">
+                          <button class="state-item blue under-line">취소</button>
+                        </div>
+                      </div>
+
+                      <ul class="list">
+                        <li>2020.12.23 (목) 오전 11: 30</li>
+                        <li>루페스 디테일링 손세차장 일산점</li>
+                        <li>128저 8617</li>
+                        <li>66,000원</li>
+                      </ul>
+                      <div class="more-detail">
+                        <a href="#" class="more-item"><i class="bg-icon view-detail"></i> 상세보기</a>
+                        <!-- <span>6,000원 추가결제가 필요합니다!</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="history-box">
+                  <div class="box-top">
+                    <p class="label">
+                      <span class="label-inner"><i class="bg-icon order-cancel"></i>취소 </span>
+                    </p>
+                    <p class="date"><strong>2020.05.23 (목요일) 오전 11:30</strong></p>
+                  </div>
+                  <div class="box-body">
+                    <div class="history-desc">
+                      <div class="title-area">
+                        <p class="title">
+                          <strong>[손세차]</strong>
+                        </p>
+                        <div class="state">
+                          <span class="state-item red"> 취소</span>
+                        </div>
+                      </div>
+
+                      <ul class="list">
+                        <li>2020.12.23 (목) 오전 11: 30</li>
+                        <li>루페스 디테일링 손세차장 일산점</li>
+                        <li>128저 8617</li>
+                        <li>66,000원</li>
+                      </ul>
+                      <div class="more-detail">
+                        <a href="#" class="more-item"><i class="bg-icon view-detail"></i> 상세보기</a>
+                        <a href="#" class="more-item"><i class="bg-icon re-booking"></i> 다시 예약하기</a>
+                        <!-- <span>6,000원 추가결제가 필요합니다!</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="history-box">
+                  <div class="box-top">
+                    <p class="label">
+                      <span class="label-inner"><i class="bg-icon not-check-used"></i>미사용 </span>
+                    </p>
+                    <p class="date"><strong>2020.05.23 (목요일) 오전 11:30</strong></p>
+                  </div>
+                  <div class="box-body">
+                    <div class="history-desc">
+                      <div class="title-area">
+                        <p class="title">
+                          <strong>[손세차]</strong>
+                        </p>
+                        <div class="state">
+                          <span class="state-item red">환불완료</span>
+                        </div>
+                      </div>
+
+                      <ul class="list">
+                        <li>2020.12.23 (목) 오전 11: 30</li>
+                        <li>루페스 디테일링 손세차장 일산점</li>
+                        <li>128저 8617</li>
+                        <li>66,000원</li>
+                      </ul>
+                      <div class="more-detail">
+                        <a href="#" class="more-item"><i class="bg-icon view-detail"></i> 상세보기</a>
+                        <a href="#" class="more-item"><i class="bg-icon write"></i> 리뷰 등록하기</a>
+                        <!-- <span>6,000원 추가결제가 필요합니다!</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="history-box">
+                  <div class="box-top">
+                    <p class="label">
+                      <span class="label-inner"><i class="bg-icon refund"></i>환불</span>
+                    </p>
+                    <p class="date"><strong>2020.05.23 (목요일) 오전 11:30</strong></p>
+                  </div>
+                  <div class="box-body">
+                    <div class="history-desc">
+                      <div class="title-area">
+                        <p class="title">
+                          <strong>[손세차]</strong>
+                        </p>
+                        <div class="state">
+                          <!-- <span class="state-item red">환불완료</span> -->
+                        </div>
+                      </div>
+
+                      <ul class="list">
+                        <li>2020.12.23 (목) 오전 11: 30</li>
+                        <li>루페스 디테일링 손세차장 일산점</li>
+                        <li>128저 8617</li>
+                        <li>66,000원</li>
+                      </ul>
+                      <div class="more-detail">
+                        <a href="#" class="more-item"><i class="bg-icon view-detail"></i> 상세보기</a>
+                        <a href="#" class="more-item"><i class="bg-icon telphone"></i> 전화걸기</a>
+                        <!-- <span>6,000원 추가결제가 필요합니다!</span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="history-box">
+                  <div class="box-top">
+                    <p class="label">
+                      <span class="label-inner"><i class="bg-icon check-used"></i>사용 </span>
+                    </p>
+                    <p class="date"><strong>2020.05.23 (목요일) 오전 11:30</strong></p>
+                  </div>
+                  <div class="box-body">
+                    <div class="history-desc">
+                      <div class="title-area">
+                        <p class="title">
+                          <strong>[손세차]</strong>
+                        </p>
+                        <div class="state">
+                          <!-- <span class="state-item blue">예약취소</span> -->
+                        </div>
+                      </div>
+
+                      <ul class="list">
+                        <li>2020.12.23 (목) 오전 11: 30</li>
+                        <li>루페스 디테일링 손세차장 일산점</li>
+                        <li>128저 8617</li>
+                        <li>66,000원</li>
+                      </ul>
+                      <div class="more-detail">
+                        <a href="#" class="more-item"><i class="bg-icon view-detail"></i> 상세보기</a>
+                        <a href="#" class="more-item"><i class="bg-icon loc"></i> 길찾기</a>
+                        <!-- <span>6,000원 추가결제가 필요합니다!</span> -->
+                      </div>
+                    </div>
+                    <!-- 더보기 버튼 노출 -->
+                    <button type="button" class="btn-more">
+                      <span class="more-text">더보기</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>
