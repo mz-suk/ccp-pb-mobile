@@ -278,6 +278,7 @@
     display: block;
     color: $fc1;
     text-align: center;
+    font-size: 1.1rem;
 
     &.type1 {
       padding: 3rem 2rem;
@@ -285,8 +286,8 @@
       color: $pc3;
     }
   }
-  button {
-    margin-top: 2.5rem;
+  .coupon {
+    margin-top: 2rem;
   }
 }
 .detail-introduce {
