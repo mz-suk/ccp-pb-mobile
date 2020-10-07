@@ -190,6 +190,18 @@
       color: $pc3;
     }
   }
+  &.type-oilservice {
+    padding-left: 12rem;
+    background: url(~assets/img/layout/icon-oliservice.svg) 0 0 / 11rem 9rem no-repeat;
+    .title {
+      color: $pc3;
+    }
+    .btn-arrow {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      color: $fc6;
+    }
+  }
   &.type-dawn {
     position: absolute;
     left: 0;
