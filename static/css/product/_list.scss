@@ -521,6 +521,12 @@
       padding-bottom: 2.5rem;
       border-bottom: 0.1rem solid $fcF0;
     }
+
+    .wrap-checkbox {
+      .checkbox {
+        margin-top: 2.5rem;
+      }
+    }
   }
 
   .wrap-tab {

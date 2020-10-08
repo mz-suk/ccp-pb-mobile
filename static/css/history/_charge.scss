@@ -69,9 +69,16 @@
         text-decoration: underline;
       }
     }
+    &.color1 {
+      color: $pc3;
+    }
   }
   .btn-area {
     margin-top: 2rem;
+    .bg-icon {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
   }
   .text-box {
     margin: 1.8rem 2rem 0;
@@ -88,12 +95,29 @@
   }
 }
 .charge-btm {
-  padding: 0 2rem;
+  padding: 0.5rem 2rem 0;
 
   .btn-area {
     &.center {
       margin-bottom: 2.5rem;
       text-align: center;
+    }
+  }
+
+  .gray-box {
+    padding: 2.5rem 2rem;
+    display: block;
+    text-align: center;
+    color: $fc1;
+
+    .txt-row {
+      margin-top: 1.2rem;
+      color: $fc6;
+    }
+
+    a[href^="tel:"] {
+      color: $pc3;
+      text-decoration: underline;
     }
   }
 }
@@ -149,6 +173,24 @@
     font-size: 1.5rem;
     strong {
       font-size: 2.4rem;
+    }
+  }
+}
+
+.swiper-num-st {
+  .swiper-container {
+    position: relative;
+  }
+  .page-number-type {
+    position: absolute;
+    left: 50%;
+    bottom: 1.3rem;
+    color: $fcF;
+    text-align: center;
+    transform: translate(-50%, 0);
+
+    .swiper-pagination-total {
+      opacity: 1;
     }
   }
 }

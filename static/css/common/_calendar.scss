@@ -128,9 +128,13 @@
 .mx-calendar-content .cell {
   padding: 1rem 0;
   box-sizing: border-box;
-  color: $fcD7;
+  // color: $fc3;
   vertical-align: middle;
   cursor: pointer;
+
+  &.disabled {
+    color: $fcD7;
+  }
 }
 .mx-calendar-content .cell.active {
   color: $fcF;
