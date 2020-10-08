@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">스피드메이트 정비혜택 (기본형)</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="tbl-layout">
+            <p class="title">
+              국산차 정비혜택
+              <span class="asterisk-mark type1">서비스 횟수 <span class="col-pc3">1</span> 회 기준</span>
+            </p>
+            <table class="tbl type2">
+              <colgroup>
+                <col width="30%" />
+                <col width="auto" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>지역</th>
+                  <th>서비스 가능</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>서울</td>
+                  <td>전지역</td>
+                </tr>
+                <tr>
+                  <td>경기</td>
+                  <td>
+                    과천시, 광명시, 고양시, 군포시, 구리시, 김포시, 부천시, 성남시, 수원시, 시흥시, 파주 (운정신도시, 금촌동), 안산시 (대 부도 제외), 안양시, 의왕시, 용인시 (기 흥구, 수지구) 하남시,
+                    동탄신도시, 다산 신도시, 별내신도시
+                  </td>
+                </tr>
+                <tr>
+                  <td>인천</td>
+                  <td>계양구, 남구, 남동구, 동구, 부평구, 서 구, 연수구, 중구 (영종도 제외)</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="list-dot color1">
+              <li>수도권 외 지역은 차량 점검 서비스가 제공되지 않습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
