@@ -252,12 +252,15 @@
 
         .txt-row {
           &:not(:first-child) {
-            margin-top: 2.5rem;
+            margin-top: 1.5rem;
           }
         }
 
         .gray-box {
           display: block;
+          ul {
+            margin: 1rem 0 0 0.65rem;
+          }
         }
       }
     }
