@@ -1,5 +1,5 @@
 .wrap-policy {
-  padding: 4rem 2rem 0;
+  padding: 4rem 2rem;
   .wrap-select {
     margin-bottom: 2.3rem;
   }
@@ -17,15 +17,28 @@
     margin-top: 0.7rem;
     line-height: 1.6;
   }
+  .txt-row2 {
+    margin-top: 0.7rem;
+    color: $fc9;
+  }
   .list-dot {
     margin-top: 1.5rem;
   }
   .tbl {
     margin-top: 1.95rem;
+    .list-dot {
+      margin-top: 0;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      li {
+        margin-top: 0;
+      }
+    }
   }
   .list-number {
     margin-top: 1rem;
-    li {
+    & > li {
       position: relative;
       padding-left: 2rem;
       &:not(:first-child) {
@@ -33,22 +46,47 @@
       }
       .num-cycle {
         position: absolute;
-        top: 0;
+        top: 0.3rem;
         left: 0;
-        padding-top: 0.2rem;
+        padding-top: 0.1rem;
         display: block;
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1.4rem;
+        height: 1.4rem;
         font-size: 1.1rem;
         line-height: 1;
         color: $fc6;
         text-align: center;
         border: 0.1rem solid $fc6;
         border-radius: 50%;
+        box-sizing: border-box;
+      }
+      ol {
+        padding-left: 2rem;
       }
     }
   }
   .list-roman {
     list-style-type: upper-roman;
+    &.color1 {
+      color: $fc9;
+    }
+    .tbl {
+      margin: 1.7rem -4rem;
+      width: calc(100% + 4rem);
+    }
+  }
+
+  .tbl-layout {
+    margin: 0;
+    padding: 3rem 0;
+    .title {
+      &:not(:first-child) {
+        margin-top: 4rem;
+      }
+      margin-top: 0;
+    }
+    .tbl {
+      margin-bottom: 1rem;
+    }
   }
 }

@@ -295,6 +295,14 @@
   padding: 8rem 0;
   text-align: center;
 
+  &.type1 {
+    .empty-text {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
   .empty-img {
     width: 10rem;
     height: 10rem;
@@ -743,6 +751,10 @@
   padding: 0 1rem 1rem;
   border-bottom: 0.1rem solid $fc1;
   color: $fc1;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   dt,
   dd {

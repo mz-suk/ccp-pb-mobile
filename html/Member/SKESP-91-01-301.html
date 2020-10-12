@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">멤버십 해지하기</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-order">
+          <div class="order-cont">
+            <div class="wrap-empty type1">
+              <p class="empty-text">
+                <strong>송헌호님이 받고 계시는 혜택입니다.</strong>
+              </p>
+              <p class="empty-text">멤버십 해지하시기 전<br />혜택정보를 확인해주세요.</p>
+            </div>
+          </div>
+
+          <div class="order-cont">
+            <div class="stage-info">
+              <p class="stage-num">혜택 01</p>
+              <p class="stage-name">
+                주유 20원/L 할인
+                <span>연간<em>0</em>원 할인</span>
+              </p>
+            </div>
+            <div class="stage-info">
+              <p class="stage-num">혜택 02</p>
+              <p class="stage-name">
+                외부 기계세차 4회 무료
+                <span>잔여<em>4</em>회</span>
+              </p>
+            </div>
+            <div class="stage-info">
+              <p class="stage-num">혜택 03</p>
+              <p class="stage-name">스피드메이트 정비혜택</p>
+            </div>
+            <div class="stage-info">
+              <p class="stage-num">혜택 04</p>
+              <p class="stage-name">
+                DB손해보험 운전자보험 무료가입(1년)
+                <span class="point">미가입</span>
+              </p>
+            </div>
+            <div class="stage-info">
+              <p class="stage-num">혜택 05</p>
+              <p class="stage-name">SK렌터카 할인</p>
+            </div>
+
+            <div class="btn-area grid">
+              <button type="button" class="btn">혜택유지</button>
+              <button type="button" class="btn color1">혜택포기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>

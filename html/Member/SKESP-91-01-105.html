@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">멤버십카드 등록</h1>
+          <div class="left">
+            <a href="javascript:;" class="bg-icon prev">이전페이지</a>
+          </div>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="block-layout">
+            <div class="member-apply">
+              <p class="apply-info">구매한 멤버십카드를 등록해주세요..</p>
+              <div class="apply-form">
+                <p class="apply-title">카드번호</p>
+                <div class="form-cardnumber">
+                  <input type="tel" maxlength="4" />
+                  <span>-</span>
+                  <input type="tel" maxlength="4" />
+                  <span>-</span>
+                  <input type="password" maxlength="4" />
+                  <span>-</span>
+                  <input type="password" maxlength="4" />
+                </div>
+                <ul class="list-dot color3">
+                  <li>카드번호를 모두 입력해주세요.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="fix-footer-area">
+            <button type="button" class="btn type2 color4">확인</button>
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
