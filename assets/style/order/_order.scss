@@ -176,6 +176,17 @@
 
   .customer-info {
     margin-top: 2.5rem;
+    &.type1 {
+      dd {
+        text-align: right;
+      }
+      .point {
+        color: $gc3;
+        em {
+          font-size: 2rem;
+        }
+      }
+    }
     a[href^="tel:"] {
       color: $pc3;
       text-decoration: underline;

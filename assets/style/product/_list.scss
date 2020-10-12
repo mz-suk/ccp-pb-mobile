@@ -703,6 +703,16 @@
   font-size: 1.5rem;
   color: $fc1;
 
+  &.type1 {
+    display: block;
+    border-bottom-color: $fc1;
+    .sub-tit {
+      display: block;
+      font-size: 1.2rem;
+      color: $fc9;
+    }
+  }
+
   .title {
     .bg-icon {
       margin-right: 0.5rem;

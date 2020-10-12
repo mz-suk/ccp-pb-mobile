@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">멤버십 구매/해지내역</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="block-layout">
+          <div class="wrap-tab type1">
+            <ul class="tab-menu">
+              <li class="active"><button type="button">구매내역</button></li>
+              <li><button type="button">해지내역</button></li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="order-cont">
+                <p class="title-sub type1">
+                  머핀 겟챠
+                  <span class="sub-tit">No. MP2C-1234-1234-1234</span>
+                </p>
+                <dl class="customer-info type1">
+                  <dt>구매 일시</dt>
+                  <dd>2020.05.10 (화)</dd>
+                  <dt>유효 기간</dt>
+                  <dd>2020.05.10 (화)</dd>
+                  <dt>실 결제금액</dt>
+                  <dd class="point"><em>30,000</em>원</dd>
+                </dl>
+                <div class="">
+                  <dl class="define-list">
+                    <dt>쿠폰할인</dt>
+                    <dd>-20,000원</dd>
+                    <dt>포인트 차감 (머핀)</dt>
+                    <dd>0원</dd>
+                    <dt>포인트 차감 (OK 캐시백)</dt>
+                    <dd>-1,150원</dd>
+                  </dl>
+                  <dl class="define-list">
+                    <dt>결제방법</dt>
+                    <dd>간편결제카드</dd>
+                    <dt>결제정보</dt>
+                    <dd>비씨 9490 88** **** 5200 / 일시불</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="order-cont">
+                <p class="title-sub">title-sub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>

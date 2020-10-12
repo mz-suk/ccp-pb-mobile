@@ -93,6 +93,10 @@
 .ta-r {
   text-align: right;
 }
+
+.txt-under {
+  text-decoration: underline;
+}
 // 레이아웃
 // .wrap-mycar {
 //   padding: 4rem 2rem;
@@ -140,6 +144,14 @@
     margin-top: 1.5rem;
     font-size: 1.1rem;
     color: $fc9;
+  }
+
+  .order-cont {
+    margin: 0 -2rem;
+    padding: 4rem 2rem 3.5rem;
+    .gray-box + .title-sub {
+      margin-top: 3.4rem;
+    }
   }
 }
 
@@ -282,6 +294,11 @@
     text-align: center;
     border: none;
     border-radius: 2.1rem;
+  }
+  &.type1 {
+    display: block;
+    text-align: center;
+    color: $fc1;
   }
   .right {
     margin-left: auto;

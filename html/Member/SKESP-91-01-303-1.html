@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">멤버십 구매/해지내역</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="block-layout">
+          <div class="wrap-tab type1">
+            <ul class="tab-menu">
+              <li><button type="button">구매내역</button></li>
+              <li class="active"><button type="button">해지내역</button></li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="order-cont">
+                <div class="gray-box type1">
+                  멤버십 해지 시의 차감내역과<br />
+                  자세한 사항은 <span class="point3 txt-under">고객센터</span>로 문의해주세요.
+                </div>
+                <p class="title-sub type1">
+                  머핀 겟챠
+                  <span class="sub-tit">No. MP2C-1234-1234-1234</span>
+                </p>
+                <dl class="customer-info">
+                  <dt>구매일</dt>
+                  <dd>2020.05.10 (화)</dd>
+                  <dt>해지일</dt>
+                  <dd>2020.05.10 (화)</dd>
+                  <dt>환불방법</dt>
+                  <dd>계좌이체</dd>
+                </dl>
+              </div>
+
+              <div class="order-cont">
+                <p class="title-sub type1">
+                  머핀 겟챠
+                  <span class="sub-tit">No. MP2C-1234-1234-1234</span>
+                </p>
+                <dl class="customer-info">
+                  <dt>구매일</dt>
+                  <dd>2020.05.10 (화)</dd>
+                  <dt>해지일</dt>
+                  <dd>2020.05.10 (화)</dd>
+                  <dt>환불방법</dt>
+                  <dd>계좌이체</dd>
+                </dl>
+              </div>
+
+              <div class="order-cont">
+                <p class="title-sub type1">
+                  머핀 겟챠
+                  <span class="sub-tit">No. MP2C-1234-1234-1234</span>
+                </p>
+                <dl class="customer-info">
+                  <dt>구매일</dt>
+                  <dd>2020.05.10 (화)</dd>
+                  <dt>해지일</dt>
+                  <dd>2020.05.10 (화)</dd>
+                  <dt>환불방법</dt>
+                  <dd>계좌이체</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>
