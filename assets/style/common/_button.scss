@@ -186,6 +186,14 @@
       background-size: 1.3rem auto;
     }
   }
+  &.type2 {
+    font-size: 1.3rem;
+    &:after {
+      width: 1.3rem;
+      height: 1.3rem;
+      background: url(../../assets/img/layout/icon-arrow-left-black.svg) 0 0 / 100% auto no-repeat;
+    }
+  }
   &.size1 {
     font-size: 1.3rem;
   }

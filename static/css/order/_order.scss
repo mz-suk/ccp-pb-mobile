@@ -756,6 +756,38 @@
       }
     }
 
+    &.muffin {
+      background: linear-gradient(138deg, rgba(4, 160, 243, 1) 0%, rgba(69, 212, 154, 1) 100%);
+      .info {
+        padding-bottom: 3rem;
+      }
+      .rep-card {
+        padding-left: 2.9rem;
+        line-height: 2.4rem;
+        background: url(../~assets/img/layout/icon-rep-card.svg) no-repeat 0 center;
+        background-size: 2.4rem auto;
+      }
+      .logo-card {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 0;
+        height: 3rem;
+      }
+
+      .detail {
+        margin-top: 3rem;
+        padding-left: 0.5rem;
+        .brand {
+          font-size: 1.7rem;
+          font-weight: 700;
+        }
+        .num {
+          margin-top: 0.7rem;
+        }
+      }
+    }
+
     .disabled {
       position: absolute;
       top: 0;

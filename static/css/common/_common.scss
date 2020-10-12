@@ -30,6 +30,9 @@ $fcEB: #ebebeb;
 .col-fc6 {
   color: $fc6;
 }
+.col-pc3 {
+  color: $pc3;
+}
 
 // 믹스인 - 스크롤
 @mixin scroll($axis, $_max-height: null) {
