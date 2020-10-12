@@ -302,6 +302,51 @@
   }
 }
 
+.stage-info {
+  padding-bottom: 2.4rem;
+  border-bottom: 0.1rem solid $fcE4;
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+  .stage-num {
+    font-size: 1.1rem;
+    color: $pc3;
+  }
+  .stage-name {
+    margin-top: 0.8rem;
+    display: flex;
+    font-size: 1.5rem;
+    color: $fc1;
+
+    & > span {
+      margin-left: auto;
+      color: $fc6;
+      &.point {
+        color: $fc9;
+      }
+      em {
+        margin: 0 0.3rem;
+        color: $pc3;
+      }
+    }
+  }
+
+  & + .btn-area {
+    margin-top: 4rem;
+  }
+}
+
+.form-box {
+  padding: 2.5rem 1rem 2rem;
+  border-bottom: 0.1rem solid $fcF0;
+  .checkbox {
+    display: block;
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+}
+
 .member-layout {
   padding-bottom: 9rem;
 

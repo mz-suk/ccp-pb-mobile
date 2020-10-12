@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">멤버십 해지하기</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-order">
+          <div class="order-cont">
+            <div class="wrap-empty type1">
+              <p class="empty-text">
+                <strong>멤버십 해지 이유가 무엇인가요?</strong>
+              </p>
+              <p class="empty-text">고객님의 개인정보를<br />다시 한번 확인해주세요.</p>
+            </div>
+          </div>
+
+          <div class="order-cont">
+            <div class="title-sub">
+              <p>가입자 정보</p>
+            </div>
+            <dl class="customer-info">
+              <dt>예약자명</dt>
+              <dd>송헌호</dd>
+              <dt>연락처</dt>
+              <dd>010 - 1234 -5678</dd>
+            </dl>
+          </div>
+
+          <div class="order-cont">
+            <div class="title-sub">
+              <p>멤버십 해지사유</p>
+            </div>
+            <div class="form-box">
+              <div class="checkbox type4">
+                <input type="radio" id="chk7-3" name="group1" checked />
+                <label for="chk7-3">
+                  <p class="left">연회비가 부담됨</p>
+                </label>
+              </div>
+              <div class="checkbox type4">
+                <input type="radio" id="chk7-1" name="group1" />
+                <label for="chk7-1">
+                  <p class="left">의도치 않게 가입함</p>
+                </label>
+              </div>
+              <div class="checkbox type4">
+                <input type="radio" id="chk7-2" name="group1" />
+                <label for="chk7-2">
+                  <p class="left">혜택이 유용하지 않음</p>
+                </label>
+              </div>
+              <div class="checkbox type4">
+                <input type="radio" id="chk7-4" name="group1" />
+                <label for="chk7-4">
+                  <p class="left">타사 서비스가 더 좋음</p>
+                </label>
+              </div>
+              <div class="checkbox type4">
+                <input type="radio" id="chk7-5" name="group1" />
+                <label for="chk7-5">
+                  <p class="left">기타</p>
+                </label>
+              </div>
+            </div>
+
+            <div class="btn-area grid">
+              <button type="button" class="btn">취소</button>
+              <button type="button" class="btn color1">해지신청</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>
