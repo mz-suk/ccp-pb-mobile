@@ -205,6 +205,30 @@
     &:first-child {
       margin-top: 2.5rem;
     }
+    label {
+      align-items: flex-start;
+    }
+    .btn-arrow {
+      margin-top: 0.5rem;
+    }
+  }
+  .option-box {
+    margin: 1.5rem 0 0.4rem -3rem;
+    padding: 2rem 0 3rem;
+    background: $fcF9;
+    border: 0.1rem solid $fcF0;
+    .wrap-checkbox {
+      justify-content: center;
+      margin-right: -1rem;
+      label {
+        height: 3rem;
+      }
+    }
+    p {
+      margin-bottom: 1rem;
+      color: $fc1;
+      text-align: center;
+    }
   }
 }
 .price-box {
@@ -282,7 +306,6 @@
     display: block;
     color: $fc1;
     text-align: center;
-    font-size: 1.1rem;
 
     &.type1 {
       padding: 3rem 2rem;
@@ -292,6 +315,12 @@
   }
   .coupon {
     margin-top: 2rem;
+  }
+  .list-dot {
+    margin-top: 3rem;
+    li {
+      line-height: 1.4;
+    }
   }
 }
 .detail-introduce {

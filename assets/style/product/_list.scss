@@ -546,6 +546,17 @@
         margin-top: 2.5rem;
       }
     }
+
+    .gray-box {
+      margin: 2rem -1rem 0;
+      padding: 2rem 2.5rem;
+      dl {
+        width: 100%;
+      }
+      dd {
+        color: $fc1;
+      }
+    }
   }
 
   .wrap-tab {
@@ -554,6 +565,7 @@
 
   .wrap-btn {
     margin-top: 4rem;
+    margin-bottom: 1.2rem;
     text-align: center;
   }
   .wrap-car-info {
@@ -610,6 +622,10 @@
       content: "*";
     }
   }
+}
+
+.wrap-desc {
+  padding: 4rem 2rem 1rem;
 }
 
 .wrap-setting {
@@ -824,6 +840,9 @@
   }
   &.color2 {
     @include listdot(0.8rem, 1.1rem, $fc1, 0);
+  }
+  &.color3 {
+    @include listdot(1.2rem, 1.1rem, $gc3, 0, $gc3);
   }
   &.type1 {
     @include listdot(0.8rem, 1.3rem, $fc1, 0, $fc1);
