@@ -194,14 +194,18 @@
 
   strong {
     padding-left: 0.4rem;
-    em {
-    }
   }
 }
 .new-add-noti {
   padding: 2.3rem 0 0;
   .list-dot > li {
     color: $fc1;
+    .col-pc3 {
+      color: $pc3;
+    }
+    .tel {
+      text-decoration: underline;
+    }
   }
 }
 .acc-list {

@@ -302,42 +302,48 @@
       }
     }
   }
-
+  .logo-img {
+    margin: 3rem auto 2.5rem;
+    width: 14.6rem;
+    height: 2.5rem;
+  }
   .empty-img {
     width: 10rem;
     height: 10rem;
     margin: 0 auto;
-    img {
-      width: 100%;
-    }
   }
-
+  img {
+    width: 100%;
+  }
   .empty-text {
     margin-top: 0.5rem;
     line-height: 1.5;
-
     strong {
       font-size: 1.7rem;
       font-weight: 400;
       color: $fc1;
     }
-
     &:first-of-type {
       margin-top: 1.8rem;
     }
-
     .text-color {
       color: $pc3;
     }
+    &.type2 {
+      margin-top: 1.5rem;
+      color: $fc9;
+    }
+    &.type3 {
+      margin-top: 5rem;
+      color: $fc1;
+    }
   }
-
   .btn-area {
     margin-top: 5.2rem;
     button {
       font-size: 1.3rem;
     }
   }
-
   .text-box {
     margin: 3rem 2rem 0;
     .text-color {
@@ -350,7 +356,6 @@
       }
     }
   }
-
   &.member {
     .text-box {
       margin-top: 2rem;
@@ -359,6 +364,18 @@
         .btn {
           font-size: 1.5rem;
         }
+      }
+    }
+  }
+  & + .wrap-noti {
+    margin-top: 4rem;
+  }
+  .gray-box {
+    margin: 3rem 2rem 0;
+    padding: 3rem 2rem;
+    .list-dot {
+      li {
+        font-size: 1.3rem;
       }
     }
   }
