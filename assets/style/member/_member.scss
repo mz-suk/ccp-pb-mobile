@@ -121,6 +121,13 @@
       margin-top: 2rem;
     }
   }
+
+  .block-layout {
+    padding: 4rem 0 3.5rem;
+    .wrap-empty {
+      padding: 0;
+    }
+  }
 }
 
 //머핀클럽 멤법쉽
@@ -291,6 +298,39 @@
     }
     .btn-arrow {
       margin: 2rem 0 0 1.7rem;
+    }
+  }
+}
+
+.member-layout {
+  padding-bottom: 9rem;
+
+  .block-layout {
+    .wrap-empty {
+      padding: 0;
+    }
+    .customer-info {
+      margin-top: 2.5rem;
+    }
+  }
+
+  .form-list {
+    .title {
+      font-size: 1.5rem;
+      .req {
+        padding-left: 0.3rem;
+        font-size: 1.1rem;
+        color: $pc3;
+      }
+    }
+    .wrap-check {
+      margin: 2rem 0 0 1rem;
+    }
+    .checkbox {
+      margin-right: 2rem;
+      label {
+        font-size: 1.5rem;
+      }
     }
   }
 }
