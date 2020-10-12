@@ -3,6 +3,10 @@
 
   .terms-box {
     margin: 2.5rem 0 0;
+
+    .more {
+      right: -0.6rem;
+    }
   }
 
   .wrap-terms {
@@ -260,5 +264,33 @@
   }
   .btn-area {
     text-align: center;
+  }
+}
+
+.wrap-noti {
+  margin: 0 2rem;
+  border-top: 0.1rem solid $fc1;
+  .noti-title {
+    display: block;
+    padding: 1.6rem 1rem;
+    border-bottom: 0.1rem solid $fcE4;
+    color: $fc1;
+  }
+  .noti-cont {
+    padding: 2rem 1rem;
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: $fc1;
+    }
+    .list-dot {
+      margin-left: 0.3rem;
+      ul {
+        margin: 0;
+      }
+    }
+    .btn-arrow {
+      margin: 2rem 0 0 1.7rem;
+    }
   }
 }

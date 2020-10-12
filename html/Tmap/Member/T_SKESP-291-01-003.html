@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">T map X muffin 간편회원가입</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-empty">
+          <div class="empty-img">
+            <img src="../../../assets/img/layout/icon-empty-charge3.png" alt="" />
+          </div>
+          <p class="empty-text">
+            <strong>회원가입을 축하합니다.</strong>
+          </p>
+          <p class="empty-text">현재 회원님의 회원등급은 <span class="text-color">준회원</span> 입니다.<br />홈으로 이동 후 머핀 서비스를 즐겨보세요!</p>
+          <div class="btn-area">
+            <button type="button" class="btn color1">머핀 홈</button>
+          </div>
+        </div>
+        <div class="wrap-noti">
+          <strong class="noti-title">머핀 아이디 전환 가입 혜택 안내</strong>
+          <div class="noti-cont">
+            <p>머핀 아이디 전환 가입 하시고 다양한 정회원 혜택을 받아보세요.</p>
+            <ul class="list-dot">
+              <li>
+                서비스 이용 연간 실적에 따라 승급
+                <ul class="list-dot type2">
+                  <li>일반 / 골드 / 플래티넘</li>
+                </ul>
+              </li>
+              <li>서비스 이용 결제 시 머핀포인트 적립/사용 가능</li>
+              <li>플래티넘 등급 승급 시 세차 관련 서비스 할인 쿠폰 제공</li>
+            </ul>
+            <button type="button" class="btn-arrow blue">머핀 아이디 전환가입</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

@@ -299,6 +299,9 @@
     width: 10rem;
     height: 10rem;
     margin: 0 auto;
+    img {
+      width: 100%;
+    }
   }
 
   .empty-text {
@@ -313,6 +316,10 @@
 
     &:first-of-type {
       margin-top: 1.8rem;
+    }
+
+    .text-color {
+      color: $pc3;
     }
   }
 
@@ -332,6 +339,18 @@
       margin: 4rem 2rem 0;
       .btn {
         width: 100%;
+      }
+    }
+  }
+
+  &.member {
+    .text-box {
+      margin-top: 2rem;
+      + .btn-area {
+        margin-top: 3rem;
+        .btn {
+          font-size: 1.5rem;
+        }
       }
     }
   }
