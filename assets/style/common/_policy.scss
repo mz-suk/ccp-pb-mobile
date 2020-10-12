@@ -3,6 +3,11 @@
   .wrap-select {
     margin-bottom: 2.3rem;
   }
+  .big-title {
+    margin-bottom: 3.5rem;
+    font-size: 1.5rem;
+    color: $fc1;
+  }
   .title {
     margin-top: 1.7rem;
     font-weight: 700;
@@ -17,5 +22,33 @@
   }
   .tbl {
     margin-top: 1.95rem;
+  }
+  .list-number {
+    margin-top: 1rem;
+    li {
+      position: relative;
+      padding-left: 2rem;
+      &:not(:first-child) {
+        margin-top: 1rem;
+      }
+      .num-cycle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 0.2rem;
+        display: block;
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 1.1rem;
+        line-height: 1;
+        color: $fc6;
+        text-align: center;
+        border: 0.1rem solid $fc6;
+        border-radius: 50%;
+      }
+    }
+  }
+  .list-roman {
+    list-style-type: upper-roman;
   }
 }

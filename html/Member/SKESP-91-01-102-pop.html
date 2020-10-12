@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">멤버십 서비스 이용약관 동의</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="wrap-policy">
+            <p class="big-title">머핀 멤버십 서비스 이용약관</p>
+            <div class="title">제 1조 (목적)</div>
+            <div class="txt-row">
+              본 약관은 머핀 멤버십 회원이 SK에너지 주식회사(이하 “회사”) 가 제공하는 머핀 멤버십 서비스를 이용함에 있어 머핀 멤버십 회 원 및 회사의 제반 권리, 의무 및 관련 절차 등을 규정하는데 그 목
+              적이 있습니다.
+            </div>
+
+            <div class="title">제 2조 (용어의 정의)</div>
+            <ol class="list-number">
+              <li><span class="num-cycle">1</span>“멤버십 회원”(이하 “회원”)이란 회사가 정한 절차에 따라 회원가입신청 및 연회비를 납부하고 회사의 가입승인을 받은 자를 말합니다.</li>
+            </ol>
+
+            <ul class="list-dot type1">
+              <li>
+                <strong>이용자 권리</strong>
+                <ul class="list-dot type2">
+                  <li>
+                    1 언제든지 자신의 개인정보를 조회하고 수정할 수 있습니다. <br />
+                    <button type="button">[회원정보수정] 클릭</button>
+                  </li>
+                  <li>
+                    언제든지 자신의 개인정보를 조회하고 수정할 수 있습니다.<br />
+                    <button type="button">[회원정보수정] 클릭</button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <table class="tbl type1">
+              <!-- 0923 간격 수정  -->
+              <colgroup>
+                <col width="36%" />
+                <col />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>구분</th>
+                  <td>고객행복센터</td>
+                </tr>
+                <tr>
+                  <th>전화</th>
+                  <td>1670-1234</td>
+                </tr>
+                <tr>
+                  <th>이메일</th>
+                  <td>privacy@sk.com</td>
+                </tr>
+                <tr>
+                  <th>기타</th>
+                  <td>머핀 어플리케이션 내 1:1상담</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
