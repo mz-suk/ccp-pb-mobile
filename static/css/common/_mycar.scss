@@ -66,11 +66,14 @@
     &:before {
       content: "*";
       position: absolute;
-      top: 0.35rem;
+      top: 0.5rem;
       left: 0.35rem;
       font-size: 0.9rem;
       line-height: 1;
     }
+  }
+  &.color1 {
+    color: $fc1;
   }
   > li {
     position: relative;
@@ -89,6 +92,10 @@
 }
 .ta-r {
   text-align: right;
+}
+
+.txt-under {
+  text-decoration: underline;
 }
 // 레이아웃
 // .wrap-mycar {
@@ -138,6 +145,14 @@
     font-size: 1.1rem;
     color: $fc9;
   }
+
+  .order-cont {
+    margin: 0 -2rem;
+    padding: 4rem 2rem 3.5rem;
+    .gray-box + .title-sub {
+      margin-top: 3.4rem;
+    }
+  }
 }
 
 //fix-footer
@@ -179,14 +194,18 @@
 
   strong {
     padding-left: 0.4rem;
-    em {
-    }
   }
 }
 .new-add-noti {
   padding: 2.3rem 0 0;
   .list-dot > li {
     color: $fc1;
+    .col-pc3 {
+      color: $pc3;
+    }
+    .tel {
+      text-decoration: underline;
+    }
   }
 }
 .acc-list {
@@ -204,6 +223,30 @@
     color: $fc1;
     &:first-child {
       margin-top: 2.5rem;
+    }
+    label {
+      align-items: flex-start;
+    }
+    .btn-arrow {
+      margin-top: 0.5rem;
+    }
+  }
+  .option-box {
+    margin: 1.5rem 0 0.4rem -3rem;
+    padding: 2rem 0 3rem;
+    background: $fcF9;
+    border: 0.1rem solid $fcF0;
+    .wrap-checkbox {
+      justify-content: center;
+      margin-right: -1rem;
+      label {
+        height: 3rem;
+      }
+    }
+    p {
+      margin-bottom: 1rem;
+      color: $fc1;
+      text-align: center;
     }
   }
 }
@@ -256,6 +299,11 @@
     border: none;
     border-radius: 2.1rem;
   }
+  &.type1 {
+    display: block;
+    text-align: center;
+    color: $fc1;
+  }
   .right {
     margin-left: auto;
     strong {
@@ -282,7 +330,6 @@
     display: block;
     color: $fc1;
     text-align: center;
-    font-size: 1.1rem;
 
     &.type1 {
       padding: 3rem 2rem;
@@ -292,6 +339,12 @@
   }
   .coupon {
     margin-top: 2rem;
+  }
+  .list-dot {
+    margin-top: 3rem;
+    li {
+      line-height: 1.4;
+    }
   }
 }
 .detail-introduce {
@@ -393,11 +446,21 @@
 // 오일/배터리
 .tbl-layout {
   padding: 4rem 2rem 6rem;
+  &.type1 {
+    .tbl {
+      margin-top: 0.8rem;
+    }
+  }
   .title {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     color: $fc1;
     &:not(:first-child) {
       margin-top: 3.5rem;
+    }
+    & > span {
+      margin-left: auto;
     }
   }
   .tbl {

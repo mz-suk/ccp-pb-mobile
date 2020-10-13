@@ -3,6 +3,10 @@
 
   .terms-box {
     margin: 2.5rem 0 0;
+
+    .more {
+      right: -0.6rem;
+    }
   }
 
   .wrap-terms {
@@ -115,6 +119,13 @@
   .member-apply {
     .terms-box {
       margin-top: 2rem;
+    }
+  }
+
+  .block-layout {
+    padding: 4rem 0 3.5rem;
+    .wrap-empty {
+      padding: 0;
     }
   }
 }
@@ -260,5 +271,111 @@
   }
   .btn-area {
     text-align: center;
+  }
+}
+
+.wrap-noti {
+  margin: 0 2rem;
+  border-top: 0.1rem solid $fc1;
+  .noti-title {
+    display: block;
+    padding: 1.6rem 1rem;
+    border-bottom: 0.1rem solid $fcE4;
+    color: $fc1;
+  }
+  .noti-cont {
+    padding: 2rem 1rem;
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: $fc1;
+    }
+    .list-dot {
+      margin-left: 0.3rem;
+      ul {
+        margin: 0;
+      }
+    }
+    .btn-arrow {
+      margin: 2rem 0 0 1.7rem;
+    }
+  }
+}
+
+.stage-info {
+  padding-bottom: 2.4rem;
+  border-bottom: 0.1rem solid $fcE4;
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+  .stage-num {
+    font-size: 1.1rem;
+    color: $pc3;
+  }
+  .stage-name {
+    margin-top: 0.8rem;
+    display: flex;
+    font-size: 1.5rem;
+    color: $fc1;
+
+    & > span {
+      margin-left: auto;
+      color: $fc6;
+      &.point {
+        color: $fc9;
+      }
+      em {
+        margin: 0 0.3rem;
+        color: $pc3;
+      }
+    }
+  }
+
+  & + .btn-area {
+    margin-top: 4rem;
+  }
+}
+
+.form-box {
+  padding: 2.5rem 1rem 2rem;
+  border-bottom: 0.1rem solid $fcF0;
+  .checkbox {
+    display: block;
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.member-layout {
+  padding-bottom: 9rem;
+
+  .block-layout {
+    .wrap-empty {
+      padding: 0;
+    }
+    .customer-info {
+      margin-top: 2.5rem;
+    }
+  }
+
+  .form-list {
+    .title {
+      font-size: 1.5rem;
+      .req {
+        padding-left: 0.3rem;
+        font-size: 1.1rem;
+        color: $pc3;
+      }
+    }
+    .wrap-check {
+      margin: 2rem 0 0 1rem;
+    }
+    .checkbox {
+      margin-right: 2rem;
+      label {
+        font-size: 1.5rem;
+      }
+    }
   }
 }

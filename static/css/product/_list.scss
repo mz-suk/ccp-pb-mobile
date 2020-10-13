@@ -295,34 +295,55 @@
   padding: 8rem 0;
   text-align: center;
 
+  &.type1 {
+    .empty-text {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  .logo-img {
+    margin: 3rem auto 2.5rem;
+    width: 14.6rem;
+    height: 2.5rem;
+  }
   .empty-img {
     width: 10rem;
     height: 10rem;
     margin: 0 auto;
   }
-
+  img {
+    width: 100%;
+  }
   .empty-text {
     margin-top: 0.5rem;
     line-height: 1.5;
-
     strong {
       font-size: 1.7rem;
       font-weight: 400;
       color: $fc1;
     }
-
     &:first-of-type {
       margin-top: 1.8rem;
     }
+    .text-color {
+      color: $pc3;
+    }
+    &.type2 {
+      margin-top: 1.5rem;
+      color: $fc9;
+    }
+    &.type3 {
+      margin-top: 5rem;
+      color: $fc1;
+    }
   }
-
   .btn-area {
     margin-top: 5.2rem;
     button {
       font-size: 1.3rem;
     }
   }
-
   .text-box {
     margin: 3rem 2rem 0;
     .text-color {
@@ -332,6 +353,29 @@
       margin: 4rem 2rem 0;
       .btn {
         width: 100%;
+      }
+    }
+  }
+  &.member {
+    .text-box {
+      margin-top: 2rem;
+      + .btn-area {
+        margin-top: 3rem;
+        .btn {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  & + .wrap-noti {
+    margin-top: 4rem;
+  }
+  .gray-box {
+    margin: 3rem 2rem 0;
+    padding: 3rem 2rem;
+    .list-dot {
+      li {
+        font-size: 1.3rem;
       }
     }
   }
@@ -527,6 +571,17 @@
         margin-top: 2.5rem;
       }
     }
+
+    .gray-box {
+      margin: 2rem -1rem 0;
+      padding: 2rem 2.5rem;
+      dl {
+        width: 100%;
+      }
+      dd {
+        color: $fc1;
+      }
+    }
   }
 
   .wrap-tab {
@@ -535,6 +590,7 @@
 
   .wrap-btn {
     margin-top: 4rem;
+    margin-bottom: 1.2rem;
     text-align: center;
   }
   .wrap-car-info {
@@ -591,6 +647,10 @@
       content: "*";
     }
   }
+}
+
+.wrap-desc {
+  padding: 4rem 2rem 1rem;
 }
 
 .wrap-setting {
@@ -660,6 +720,16 @@
   font-size: 1.5rem;
   color: $fc1;
 
+  &.type1 {
+    display: block;
+    border-bottom-color: $fc1;
+    .sub-tit {
+      display: block;
+      font-size: 1.2rem;
+      color: $fc9;
+    }
+  }
+
   .title {
     .bg-icon {
       margin-right: 0.5rem;
@@ -708,6 +778,10 @@
   padding: 0 1rem 1rem;
   border-bottom: 0.1rem solid $fc1;
   color: $fc1;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   dt,
   dd {
@@ -805,6 +879,9 @@
   }
   &.color2 {
     @include listdot(0.8rem, 1.1rem, $fc1, 0);
+  }
+  &.color3 {
+    @include listdot(1.2rem, 1.1rem, $gc3, 0, $gc3);
   }
   &.type1 {
     @include listdot(0.8rem, 1.3rem, $fc1, 0, $fc1);
