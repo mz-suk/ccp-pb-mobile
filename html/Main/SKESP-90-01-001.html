@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">회원정보</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-myinfo">
+          <div class="myinfo-top">
+            <div class="thumb"><span class="no-img"></span></div>
+            <div class="name">고객님</div>
+          </div>
+          <div class="join-box">
+            <button type="button">간편가입 계정</button>
+            <button type="button">카카오</button>
+          </div>
+          <div class="gray-box">
+            <p class="txt-row">
+              고객님은 머핀 간편 회원입니다.<br/>
+              <span class="point3">머핀 아이디 전환 가입</span> 하시고 다양한 정회원 혜택을 받아 보세요.
+            </p>
+            <div class="title">머핀 아이디 전환 가입 혜택 안내</div>
+            <ul class="list-dot">
+              <li>
+                서비스 이용 연간 실적에 따라 승급
+                <p>- 일반 / 골드 / 플래티넘</p>
+              </li>
+              <li>서비스 이용 결제 시 머핀포인트 적립/사용 가능</li>
+              <li>플래티넘 등급 승급 시 세차 관련 서비스 할인 쿠폰 제공</li>
+            </ul>
+            <div class="btn-area">
+              <button type="button" class="btn color1">머핀 아이디 전환가입</button>
+            </div>
+          </div>
+          <ul class="info-list">
+            <li>
+              <span class="tit">휴대전화번호</span>
+              <span >010 - 1234 - 1234</span>
+              <button type="button" class="bg-icon more"></button>
+            </li>
+            <li>
+              <span class="tit">이메일</span>
+              <span>
+                Eunkyoung7375@gmail.com
+                <span class="asterisk-mark type1">이용 목적 : 이벤트, 정보 등 소식 발송</span>
+              </span>
+              <button type="button" class="bg-icon more"></button>
+            </li>
+            <li>
+              <span class="tit">닉네임</span>
+              <span >머핀앓이</span>
+              <button type="button" class="bg-icon more"></button>
+            </li>
+            <li>
+              <span class="tit">추천코드</span>
+              <span >ogr6645</span>
+            </li>
+          </ul>
+          <div class="btn-area">
+            <button type="button" class="btn-link type1">회원탈퇴</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

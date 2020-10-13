@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">이메일 변경</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-myinfo">
+          <div class="member-apply">
+            <div class="apply-form">
+              <p class="apply-title">이메일</p>
+                <!-- [D] 오류 .has-error 추가 -->
+              <div class="form-input number ">
+                <input type="text" placeholder="muffin2020@naver.com">
+                <p class="error-text">이메일 형식이 올바르지 않습니다.</p>
+                <button type="button"><i class="bg-icon send"></i>인증메일 발송</button>
+              </div>
+            </div>
+
+
+            <div class="apply-form">
+              <p class="apply-title">인증번호</p>
+                <!-- [D] 오류 .has-error 추가 -->
+              <div class="form-input number ">
+                <input type="number" placeholder="인증번호 6자리">
+                <p class="error-text">인증번호가 일치하지 않습니다.</p>
+                <span class="time">02 : 57</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fix-footer-area">
+        <button type="button" class="btn type2 color4" disabled>확인</button>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

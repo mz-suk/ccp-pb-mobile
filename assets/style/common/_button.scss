@@ -264,6 +264,11 @@
   font-size: 1.1rem;
   color: $fc9;
   border-bottom: 0.1rem solid $fc9;
+  &.type1 {
+    font-size: 1.3rem;
+    color: $fc1;
+    border-bottom-color: $fc1;
+  }
 }
 .btn-x-black {
   .bg-icon {
