@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents"></div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-bottom">
+      <div class="wrap-layer">
+        <div class="inner-layer">
+          <div class="layer-cont">
+            <div class="title-sub">
+              <p class="title">통신사 선택</p>
+            </div>
+            <ul class="list-btn">
+              <li><button type="button">SKT</button></li>
+              <li><button type="button">KT</button></li>
+              <li><button type="button">LG U+</button></li>
+              <li><button type="button">SKT 알뜰폰</button></li>
+              <li><button type="button">KT 알뜰폰</button></li>
+              <li><button type="button">LG U+ 알뜰폰</button></li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="bg-icon layer-close">레이어팝업 닫기</button>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Layer Pop -->
+  </body>
+</html>
