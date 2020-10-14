@@ -141,17 +141,20 @@
   }
 
   .event-list-wrap {
+    position: relative;
     margin: 3rem -2.5rem;
-    .event-list {
-      margin-left: 2.5rem;
-    }
     li {
-      margin-right: 2.5rem;
+      margin-top: 0;
+      margin: 0 0 0 2.5rem;
       width: 29rem;
+      &:last-child {
+        margin-right: 2.5rem;
+      }
     }
     .swiper-pagination {
-      margin-top: 1.3rem;
-      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 1.2rem;
     }
     .swiper-pagination-bullet {
       display: inline-block;
