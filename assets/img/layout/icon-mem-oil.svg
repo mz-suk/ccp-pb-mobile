@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="71" viewBox="0 0 100 71">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.175" y1="0.888" x2="1" y2="0.186" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#45d49a"/>
+      <stop offset="1" stop-color="#04a0f3"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_331074" data-name="그룹 331074" transform="translate(-22 -155)">
+    <g id="현대카드" transform="translate(252.404 131) rotate(90)">
+      <g id="사각형_37251" data-name="사각형 37251" transform="translate(95 230.404) rotate(180)" stroke="rgba(4,160,243,0.15)" stroke-width="1" fill="url(#linear-gradient)">
+        <rect width="71" height="100" rx="8" stroke="none"/>
+        <rect x="0.5" y="0.5" width="70" height="99" rx="7.5" fill="none"/>
+      </g>
+      <g id="그룹_326248" data-name="그룹 326248" transform="translate(25 276.404) rotate(-90)">
+        <g id="그룹_238213" data-name="그룹 238213">
+          <text id="muffin_club_" data-name="muffin club " transform="translate(61 13)" fill="#fff" font-size="6" font-family="MoebiusKorea-Bold, Moebius Korea" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">MUFFIN CLUB </tspan></text>
+        </g>
+      </g>
+      <g id="그룹_327778" data-name="그룹 327778" transform="translate(56.602 277.404) rotate(-90)">
+        <g id="그룹_238213-2" data-name="그룹 238213" transform="translate(62 16)">
+          <text id="membership_card_Muffin_club" data-name="membership card
+Muffin club" transform="translate(0 5.398)" fill="#fff" font-size="4" font-family="Jost-Bold, 'Jost*'" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">MEMBERSHIP CARD</tspan><tspan x="0" y="5">MUFFIN CLUB</tspan></text>
+        </g>
+      </g>
+      <g id="그룹_328348" data-name="그룹 328348" transform="translate(-134 232.404) rotate(-90)">
+        <circle id="타원_8548" data-name="타원 8548" cx="4.5" cy="4.5" r="4.5" transform="translate(86.2 209)" fill="#fff"/>
+        <circle id="타원_8549" data-name="타원 8549" cx="4.5" cy="4.5" r="4.5" transform="translate(79.2 209)" fill="#fff"/>
+        <path id="패스_657455" data-name="패스 657455" d="M1289.759,116.823a3.574,3.574,0,0,1,6.115.113,7.876,7.876,0,1,0-8.46-.2" transform="translate(-1205.252 101.063)" fill="none" stroke="#21b7cc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="그룹_238213-3" data-name="그룹 238213" transform="translate(38 273.404) rotate(-90)">
+        <text id="OIL" transform="translate(58 17)" fill="#fff" font-size="15" font-family="Jost-Bold, 'Jost*'" font-weight="700"><tspan x="0" y="0">OIL</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
