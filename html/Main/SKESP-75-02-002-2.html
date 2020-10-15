@@ -24,24 +24,28 @@
     <!-- Popup -->
     <div class="wrapper-layer pos-right">
       <div class="wrap-layer">
-        <header class="header header-sub">
-          <h1 class="title">비밀번호 재설정</h1>
-          <div class="left">
-            <button type="button" class="bg-icon prev">이전페이지</button>
+        <header class="header header-popup">
+          <h1 class="title">휴대폰 본인인증</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
           </div>
         </header>
         <div class="wrap-contents">
-          <div class="wrap-empty">
-            <div class="empty-img">
-              <img src="../../../assets/img/layout/icon-empty-pw.svg" alt="" />
+          <div class="account-area">
+            <div class="member-apply">
+              <p class="apply-info">인증번호를 입력해주세요.</p>
+              <div class="apply-form">
+                <p class="apply-title">인증번호</p>
+                <div class="form-input number">
+                  <input type="number" placeholder="인증번호 6자리" />
+                  <span class="time">02 : 57</span>
+                  <button type="button"><i class="bg-icon refresh"></i>인증번호 재발송</button>
+                </div>
+              </div>
             </div>
-            <p class="empty-text">
-              <strong>비밀번호가 변경 되었습니다.</strong>
-            </p>
-            <p class="empty-text">변경된 비밀번호로 로그인 해 주세요.</p>
-            <div class="btn-area">
-              <button type="button" class="btn color1">머핀 로그인</button>
-            </div>
+          </div>
+          <div class="fix-footer-area">
+            <button type="button" class="btn type2 color4">확인</button>
           </div>
         </div>
       </div>

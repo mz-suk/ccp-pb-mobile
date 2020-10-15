@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">패턴 관리</h1>
+        <h1 class="title">{{ title }}</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
@@ -31,25 +31,36 @@
         </div>
       </header>
       <!-- //Header -->
+
       <!-- Wrap-contents -->
-      <div class="wrap-contents">
-        <div class="row-section-wrap">
-          <div class="row-section">
-            <!-- 0923 간격 수정  -->
-            <div class="pattern-top-noti">
-              <p class="title"><i class="bg-icon plus"></i> 패턴등록</p>
-              <p class="txt-row">패턴을 미리 등록해 두시면 서비스 이용 시간이 단축됩니다.</p>
-            </div>
-            <div class="pattern-add-area">
-              <div>
-                <button type="button"><i class="bg-icon add"></i>주유 패턴 등록하기</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="wrap-contents"></div>
       <!-- //Wrap-contents -->
+
       <!-- Footer -->
     </div>
+
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-bottom">
+      <div class="wrap-layer">
+        <div class="inner-layer">
+          <div class="layer-cont">
+            <div class="title-sub">
+              <p class="title">통신사 선택</p>
+            </div>
+            <ul class="list-btn">
+              <li><button type="button">SKT</button></li>
+              <li><button type="button">KT</button></li>
+              <li><button type="button">LG U+</button></li>
+              <li><button type="button">SKT 알뜰폰</button></li>
+              <li><button type="button">KT 알뜰폰</button></li>
+              <li><button type="button">LG U+ 알뜰폰</button></li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="bg-icon layer-close">레이어팝업 닫기</button>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Layer Pop -->
   </body>
 </html>

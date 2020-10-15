@@ -685,6 +685,18 @@
   position: relative;
   margin: 2rem 1rem 0;
 
+  &.top-line {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 0.1rem dotted $fcD7;
+    input[type="checkbox"] {
+      top: 2.5rem;
+    }
+    .more {
+      top: 2.5rem;
+    }
+  }
+
   input[type="checkbox"] {
     position: absolute;
     top: 0;

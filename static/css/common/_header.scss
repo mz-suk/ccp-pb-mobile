@@ -98,10 +98,36 @@
   }
 
   .bg-icon {
+    position: relative;
     width: 4rem;
     height: 4rem;
     background-size: 2rem 2rem;
     @include blind();
+  }
+
+  .badge {
+    &.num {
+      position: absolute;
+      top: 0.9rem;
+      left: 0.4rem;
+      min-width: 1.6rem;
+      height: 1.6rem;
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.6rem;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 2.5rem;
+    transform: translateY(-50%);
+    img {
+      height: 2.5rem;
+    }
   }
 
   &.header-popup {
@@ -117,28 +143,12 @@
     }
   }
 
-  &.header-menu {
+  &.header-menu,
+  &.header-main {
     border: 0;
+  }
 
-    .right {
-      right: 1rem;
-    }
-
-    button {
-      position: relative;
-    }
-
-    .badge {
-      position: absolute;
-      top: 0.9rem;
-      left: 0.4rem;
-      min-width: 1.6rem;
-      height: 1.6rem;
-      margin: 0;
-      padding: 0;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.6rem;
-    }
+  &.header-main {
+    background-color: $fcF9;
   }
 }
