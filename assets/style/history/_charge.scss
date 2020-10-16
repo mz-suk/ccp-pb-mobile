@@ -194,3 +194,33 @@
     }
   }
 }
+
+.tag-area {
+  display: flex;
+  justify-content: center;
+  .tag {
+    display: block;
+    padding: 0 1.5rem;
+    height: 3.5rem;
+    line-height: 3.3rem;
+    text-align: center;
+    color: $fc1;
+    background: $pc2;
+    border: 0.1rem solid $pc6;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+    &.type1 {
+      color: $pc3;
+      background: $pc7;
+      border: 0.1rem solid $pc8;
+    }
+    .bg-icon {
+      margin-right: 0.3rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

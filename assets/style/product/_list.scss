@@ -27,6 +27,14 @@
       }
     }
   }
+
+  .row-section-wrap & {
+    padding-bottom: 3rem;
+
+    & + .row-section {
+      border-top: 0.1rem solid $fcF0;
+    }
+  }
 }
 
 .list-content {
@@ -719,6 +727,9 @@
   border-bottom: 0.1rem solid $fcF0;
   font-size: 1.5rem;
   color: $fc1;
+  &:not(:first-child) {
+    margin-top: 3rem;
+  }
 
   &.type1 {
     display: block;
@@ -897,6 +908,9 @@
   }
   &.type3 {
     @include listdot(0.8rem, 1.3rem, $fc6, 0, $fc6);
+  }
+  &.type4 {
+    @include listdot(0.8rem, 1.3rem, $gc3, 0, $gc3);
   }
 }
 

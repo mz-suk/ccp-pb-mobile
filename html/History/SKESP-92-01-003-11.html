@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">손세차 이용내역</h1>
+        <h1 class="title">출장세차 이용내역</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
@@ -36,17 +36,19 @@
       <div class="wrap-contents">
         <div class="charge-top">
           <div class="tag-area">
-            <span class="tag"><i class="bg-icon unused"></i> 미사용</span>
+            <span class="tag"><i class="bg-icon reservation"></i> 예약</span>
+            <span class="tag type1">정기결제</span>
           </div>
-          <p class="txt-row">본 서비스는 이용시간이 지나<br/>
-            <span class="point3">미사용 자동 환불</span> 처리될 예정입니다.</p>
-          <div class="text-box">다음에 다시 이용해주시기 바랍니다.</div>
+          <p class="txt-row">2020.05.12 (목) 오전 11시 40분</p>
+          <!-- <p class="txt-row">2020.05.12 (목)<br />오전 11시 40분 ~ 오후 2시 30분</p> -->
+          <p class="txt-row type1"><a href="javascript:;">지정하신 위치</a>로 찾아뵙겠습니다.</p>
+          <div class="text-box">129디 8189 차량으로 방문해주세요.</div>
         </div>
 
         <div class="accordion active type2">
           <!-- [D] accordion 펼침 상태 : .active 추가 -->
           <div class="accordion-title">
-            <p class="title">예약 정보</p>
+            <p class="title">예약 정보 (1/8회차)</p>
             <button type="button" class="bg-icon toggle">펼침</button>
           </div>
           <div class="accordion-cont">
@@ -69,9 +71,14 @@
               </div>
               <dl class="customer-info">
                 <dt>요청 일시</dt>
-                <dd>2020.05.10 (화)<br/>오전 11:30 ~ 오후 3:30  </dd>
+                <dd>2020.05.10 (화) 15:07:12 부터</dd>
                 <dt>확정 일시</dt>
-                <dd>2020.05.10 (화)<br/>오전 11:30 ~ 오후 3:30  </dd>
+                <dd>2020.05.10 (화) 15:07:12 부터</dd>
+                <!-- <dd><p class="text-color">확인중</p></dd> -->
+                <!-- <dd>
+                  2020.05.10 (화) 15:07:12 부터
+                  <p class="text-color">변경요청일시 확인중</p>
+                </dd> -->
               </dl>
             </div>
 
@@ -90,6 +97,19 @@
                 <dd>SUV 준중형</dd>
                 <dt>색상</dt>
                 <dd>퓨어 화이트</dd>
+              </dl>
+            </div>
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>내 차량 위치</p>
+              </div>
+              <dl class="customer-info">
+                <dt>기본주소</dt>
+                <dd>서울 강남구 역삼동 테헤란로16 금정빌딩</dd>
+                <dt>상세주소</dt>
+                <dd>건너편 스타벅스 지하 주차장 1층</dd>
+                <dt>주소</dt>
+                <dd>경기도 고양시 일산서구 덕산로 104번길 12 일산서구 가좌동 648-4</dd>
               </dl>
             </div>
             <div class="order-cont">
@@ -127,20 +147,12 @@
                 <dd>딥디크 차량용 방향제
                   <button type="button" class="bg-icon info">상세</button>
                 </dd>
-                <dt>옵션명</dt>
-                <dd>에탄올 워셔액
-                  <button type="button" class="bg-icon info">상세</button>
-                </dd>
-                <dt>옵션명</dt>
-                <dd>양키캔들 차량용 방향제
-                  <button type="button" class="bg-icon info">상세</button>
-                </dd>
               </dl>
             </div>
           </div>
         </div>
 
-        <div class="accordion  type2">
+        <div class="accordion active type2">
           <!-- [D] accordion 펼침 상태 : .active 추가 -->
           <div class="accordion-title">
             <p class="title">최초 구매정보</p>
@@ -148,6 +160,9 @@
           </div>
           <div class="accordion-cont">
             <div class="order-cont">
+              <ul class="list-dot type4">
+                <li>각 회차별 이용에 대한 정보가 아닌 전체 구매정보입니다.</li>
+              </ul>
               <div class="title-sub">
                 <p>구매자 정보</p>
               </div>
@@ -261,8 +276,6 @@
             </div>
           </div>
         </div>
-
-
         <div class="charge-btm">
           <div class="btn-area grid">
             <button type="button" class="btn">예약취소</button>

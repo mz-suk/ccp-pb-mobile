@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">손세차 예약/사용내역</h1>
+        <h1 class="title">손세차 이용내역</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
@@ -35,11 +35,17 @@
       <!-- Wrap-contents -->
       <div class="wrap-contents">
         <div class="charge-top">
-          <div class="img"><img src="../../assets/img/layout/icon-empty-charge.png" alt="" /></div>
-          <p class="txt-row">본 예약 서비스는 사용된 정보입니다.</p>
+          <div class="tag-area">
+            <span class="tag"><i class="bg-icon use"></i> 사용</span>
+          </div>
+          <p class="txt-row">이용해주셔서 감사합니다.</p>
+          <!-- <p class="txt-row">2020.05.12 (목)<br />오전 11시 40분 ~ 오후 2시 30분</p> -->
+          <p class="txt-row type1">깨끗하고 쾌적한 운행되시길 바라<br/>
+            다음 서비스 이용 시 찾아뵙겠습니다.</p>
+          <div class="text-box">129디 8189 서비스 완료</div>
         </div>
 
-        <div class="accordion type2">
+        <div class="accordion active type2">
           <!-- [D] accordion 펼침 상태 : .active 추가 -->
           <div class="accordion-title">
             <p class="title">예약 정보</p>
@@ -48,34 +54,29 @@
           <div class="accordion-cont">
             <div class="order-cont">
               <div class="title-sub">
-                <p>예약일시 정보</p>
-              </div>
-              <dl class="customer-info">
-                <dt>요청 일시</dt>
-                <dd>2020.05.10 (화) 15:07:12 부터</dd>
-                <dt>확정 일시</dt>
-                <dd>2020.05.10 (화) 15:07:12 부터</dd>
-                <!-- <dd><p class="text-color">확인중</p></dd> -->
-                <!-- <dd>
-                  2020.05.10 (화) 15:07:12 부터
-                  <p class="text-color">변경요청일시 확인중</p>
-                </dd> -->
-              </dl>
-            </div>
-            <div class="order-cont">
-              <div class="title-sub">
-                <p>주문자 (예약자)</p>
+                <p>예약자 정보</p>
               </div>
               <dl class="customer-info">
                 <dt>예약자명</dt>
                 <dd>송헌호</dd>
                 <dt>연락처</dt>
-                <dd>
-                  010 - 1234 -5678 (안심번호 사용)
-                  <p class="desc">가급적 전화통화는 원치 않습니다.</p>
-                </dd>
+                <dd>010 - 1234 - 5678</dd>
+                <dt>연락수단</dt>
+                <dd>전화, 1:1문의</dd>
               </dl>
             </div>
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>예약 일시 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>요청 일시</dt>
+                <dd>2020.05.10 (화)<br/>오전 11:30 ~ 오후 3:30  </dd>
+                <dt>확정 일시</dt>
+                <dd>2020.05.10 (화)<br/>오전 11:30 ~ 오후 3:30  </dd>
+              </dl>
+            </div>
+
             <div class="order-cont">
               <div class="title-sub">
                 <p>차량 정보</p>
@@ -83,8 +84,14 @@
               <dl class="customer-info">
                 <dt>차량 번호</dt>
                 <dd>123디 1234</dd>
-                <dt>차량 종류</dt>
-                <dd>[랜드로버]<br />레인지로버 스포트 슈퍼차지드 HSE</dd>
+                <dt>모델명</dt>
+                <dd>싼타페</dd>
+                <dt>세부모델명</dt>
+                <dd>싼타페 TM (18.02.21 ~ 현재)</dd>
+                <dt>등급</dt>
+                <dd>SUV 준중형</dd>
+                <dt>색상</dt>
+                <dd>퓨어 화이트</dd>
               </dl>
             </div>
             <div class="order-cont">
@@ -101,24 +108,75 @@
                 <dd>경기도 고양시 일산서구 덕산로 104번길 12 일산서구 가좌동 648-4</dd>
               </dl>
             </div>
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>상품 및 옵션 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>상품명</dt>
+                <dd>PREMIUM 세차
+                  <button type="button" class="bg-icon info">상세</button>
+                </dd>
+                <dt>옵션명</dt>
+                <dd>발수코딩 옵션
+                  <button type="button" class="bg-icon info">상세</button>
+                </dd>
+                <dt>옵션명</dt>
+                <dd>카나우바 왁스
+                  <button type="button" class="bg-icon info">상세</button>
+                </dd>
+                <dt>옵션명</dt>
+                <dd>딥디크 차량용 방향제
+                  <button type="button" class="bg-icon info">상세</button>
+                </dd>
+                <dt>옵션명</dt>
+                <dd>에탄올 워셔액
+                  <button type="button" class="bg-icon info">상세</button>
+                </dd>
+                <dt>옵션명</dt>
+                <dd>양키캔들 차량용 방향제
+                  <button type="button" class="bg-icon info">상세</button>
+                </dd>
+              </dl>
+            </div>
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>서비스 전후 사진</p>
+              </div>
+              <div class="service-photo">
+                <span><img src="../../assets/img/temp/step04.png" alt=""></span>
+                <button type="button">+ <span>크게보기 (30장)</span></button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="accordion type2">
+        <div class="accordion active type2">
           <!-- [D] accordion 펼침 상태 : .active 추가 -->
           <div class="accordion-title">
-            <p class="title">최초 주문<em>2020.04.22 (수)</em></p>
+            <p class="title">최초 구매정보</p>
             <button type="button" class="bg-icon toggle">펼침</button>
           </div>
           <div class="accordion-cont">
             <div class="order-cont">
               <div class="title-sub">
-                <p>주문 정보</p>
+                <p>구매자 정보</p>
               </div>
               <dl class="customer-info">
-                <dt>주문 번호</dt>
+                <dt>구매자명</dt>
+                <dd>송헌호</dd>
+                <dt>연락처</dt>
+                <dd>010 - 1234 - 5678</dd>
+              </dl>
+            </div>
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>구매 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>구매 번호</dt>
                 <dd>20200622-AW22A</dd>
-                <dt>주문 일시</dt>
+                <dt>구매 일시</dt>
                 <dd>2020.05.10 (화) 15:07:12</dd>
               </dl>
             </div>
@@ -127,10 +185,10 @@
                 <p>상품 정보</p>
               </div>
               <dl class="define-list">
-                <dt class="bold">BASIC 세차 (9회)<button type="button" class="bg-icon info"></button></dt>
+                <dt class="bold">PREMIUM 세차</dt>
                 <dd class="bold">40,000원</dd>
-                <dt>쿠폰적용</dt>
-                <dd>-5,000원</dd>
+                <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 손세차 제휴사 프로모션 쿠폰</dt>
+                <dd class="replay-txt">-5,000원</dd>
               </dl>
               <dl class="define-box total">
                 <dt class="left">총 상품금액</dt>
@@ -142,10 +200,18 @@
                 <p>옵션 정보</p>
               </div>
               <dl class="define-list">
-                <dt class="bold">BASIC 세차 (9회)<button type="button" class="bg-icon info"></button></dt>
+                <dt class="bold">발수코팅 옵션</dt>
                 <dd class="bold">40,000원</dd>
-                <dt>쿠폰적용</dt>
-                <dd>-5,000원</dd>
+                <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> SK 엔크린 고객 감사쿠폰</dt>
+                <dd class="replay-txt">-5,000원</dd>
+                <dt class="bold">카나우바 왁스</dt>
+                <dd class="bold">40,000원</dd>
+                <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 코로나 극복 기원 프로모션쿠폰</dt>
+                <dd class="replay-txt">-5,000원</dd>
+                <dt class="bold">딥디크 차량용 방향제</dt>
+                <dd class="bold">40,000원</dd>
+                <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 적용쿠폰 없음</dt>
+                <dd class="replay-txt">-5,000원</dd>
               </dl>
               <dl class="define-box total">
                 <dt class="left">총 옵션금액</dt>
@@ -166,8 +232,6 @@
                   <dd>0원</dd>
                   <dt>포인트 차감 (OK 캐시백)</dt>
                   <dd>-1,150원</dd>
-                  <dt>포인트 차감 (현대 블루 포인트)</dt>
-                  <dd>0원</dd>
                 </dl>
                 <dl class="define-box total">
                   <dt class="left">총 결제금액</dt>
@@ -180,8 +244,8 @@
                 <p>결제 수단</p>
               </div>
               <dl class="customer-info">
-                <dt>결제방법</dt>
-                <dd>간편결제카드</dd>
+                <dt>결제유형</dt>
+                <dd>등록한 카드결제</dd>
                 <dt>결제정보</dt>
                 <dd>비씨 9490 88** **** 5200 / 일시불</dd>
               </dl>
@@ -196,7 +260,7 @@
                   <dd>1,680원</dd>
                   <dt>OK 캐시백 포인트 <span class="desc">(0.1% 적립)</span></dt>
                   <dd>56원</dd>
-                  <dt>[추가] 루패스 세차장 전용 6월 포인트 프로모션<br /><span class="desc">(0.1% 적립)</span></dt>
+                  <dt>루패스 제휴사 전용 9월 포인트 프로모션<br /><span class="desc">(0.1% 적립)</span></dt>
                   <dd>56원</dd>
                 </dl>
                 <dl class="define-box total">
@@ -212,32 +276,55 @@
         <div class="accordion active type2">
           <!-- [D] accordion 펼침 상태 : .active 추가 -->
           <div class="accordion-title">
-            <p class="title">패널티 결제<em>2020.04.22 (수)</em></p>
+            <p class="title">옵션 추가 주문<em>2020.04.22 (수)</em></p>
             <button type="button" class="bg-icon toggle">펼침</button>
           </div>
           <div class="accordion-cont">
             <div class="order-cont">
               <div class="title-sub">
-                <p>결제 정보</p>
+                <p>구매  정보</p>
               </div>
               <dl class="customer-info">
-                <dt>결제 번호</dt>
+                <dt>구매  번호</dt>
                 <dd>20200622-AW22A</dd>
-                <dt>결제 일시</dt>
+                <dt>구매  일시</dt>
                 <dd>2020.05.10 (화) 15:07:12</dd>
               </dl>
             </div>
             <div class="order-cont">
               <div class="title-sub">
-                <p>패널티 사유 및 결제금액 정보</p>
+                <p>옵션 정보</p>
+              </div>
+              <dl class="define-list">
+                <dt class="bold">에탄올 워셔액</dt>
+                <dd class="bold">40,000원</dd>
+                <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> SK 엔크린 고객 감사쿠폰</dt>
+                <dd class="replay-txt">-5,000원</dd>
+                <dt class="bold">양키캔들 차량용 방향제</dt>
+                <dd class="bold">40,000원</dd>
+                <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 적용쿠폰 없음</dt>
+                <dd class="replay-txt">-5,000원</dd>
+              </dl>
+              <dl class="define-box total">
+                <dt class="left">총 옵션금액</dt>
+                <dd class="right"><span>35,000</span>원</dd>
+              </dl>
+            </div>
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>결제 금액 정보</p>
               </div>
               <div class="order-info">
-                <p class="text-desc">
-                  고객님께서 입차하신 8189차량은 중형 승용차가 아닌 준중형 SUV였습니다. 앱에 잘못 설정하셨음을 인지하셨고 추가요금 부과에 대해 현장에서
-                  안내드렸습니다.
-                </p>
+                <dl class="define-list">
+                  <dt>총 옵션금액 (쿠폰적용)</dt>
+                  <dd>19,000원</dd>
+                  <dt>포인트 차감 (머핀)</dt>
+                  <dd>0원</dd>
+                  <dt>포인트 차감 (OK 캐시백)</dt>
+                  <dd>-1,150원</dd>
+                </dl>
                 <dl class="define-box total">
-                  <dt class="left">총 패널티 결제금액</dt>
+                  <dt class="left">총 결제금액</dt>
                   <dd class="right"><span>56,000</span>원</dd>
                 </dl>
               </div>
@@ -247,18 +334,76 @@
                 <p>결제 수단</p>
               </div>
               <dl class="customer-info">
-                <dt>결제방법</dt>
-                <dd>간편결제카드</dd>
+                <dt>결제유형</dt>
+                <dd>등록한 카드결제</dd>
                 <dt>결제정보</dt>
                 <dd>비씨 9490 88** **** 5200 / 일시불</dd>
               </dl>
+            </div>
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>적립 예정 포인트</p>
+              </div>
+              <div class="point-info">
+                <dl class="define-list">
+                  <dt>머핀 포인트 <span class="desc">(플래티넘)</span><span class="tag point">3% 적립</span></dt>
+                  <dd>1,680원</dd>
+                  <dt>OK 캐시백 포인트 <span class="desc">(0.1% 적립)</span></dt>
+                  <dd>56원</dd>
+                </dl>
+                <dl class="define-box total">
+                  <dt class="left">총 예상 적립 포인트</dt>
+                  <dd class="right"><span>1,736</span>원</dd>
+                </dl>
+                <p class="text-guide">포인트는 1P당 1원으로 환산됩니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion active type2">
+          <!-- [D] accordion 펼침 상태 : .active 추가 -->
+          <div class="accordion-title">
+            <p class="title">패널티 결제</p>
+            <button type="button" class="bg-icon toggle">펼침</button>
+          </div>
+          <div class="accordion-cont">
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>결제 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>결제상태</dt>
+                <dd>결제완료</dd>
+                <dt>결제번호</dt>
+                <dd>20200508-FB04L</dd>
+                <dt>결제일시</dt>
+                <dd>2020.05.10 (화) 15:07:12</dd>
+                <dt>결제유형</dt>
+                <dd>등록한 카드결제</dd>
+                <dt>결제정보</dt>
+                <dd>비씨 9490 88** **** 5200 / 일시불</dd>
+                <dt>발생사유</dt>
+                <dd class="text-desc">고객님 바쁘신 중에 죄송합니다. 예약하신 차량의 등급은
+                  소형으로 되어 있으나 실제 중형에 해당되어 추가요금이
+                  발생됨을 알려드립니다. 아래 추가결제하기 버튼을 눌러
+                  차액을 결제처리 해주시면 최대한 빠르고 깨끗한 서비스로
+                  보답해드리도록 하겠습니다.</dd>
+              </dl>
+              <div class="order-info">
+                <dl class="define-box total">
+                  <dt class="left">총 패널티 결제금액</dt>
+                  <dd class="right"><span>56,000</span>원</dd>
+                </dl>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="charge-btm">
           <div class="btn-area grid">
-            <button type="button" class="btn color1">리뷰 등록하기</button>
+            <button type="button" class="btn">리뷰 등록하기</button>
+            <button type="button" class="btn color1">다시예약하기</button>
           </div>
         </div>
       </div>

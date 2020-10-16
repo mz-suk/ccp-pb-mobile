@@ -501,6 +501,16 @@
   &.send {
     background-image: url(../../assets/img/layout/icon-send.svg);
   }
+
+  &.refund-bg {
+    background-image: url(../../assets/img/layout/icon-refund2.svg);
+  }
+  &.unused {
+    background-image: url(../../assets/img/layout/icon-unused.svg);
+  }
+  &.use {
+    background-image: url(../../assets/img/layout/icon-use.svg);
+  }
 }
 // 뱃지
 

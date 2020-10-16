@@ -193,6 +193,12 @@
       color: $pc3;
       text-decoration: underline;
     }
+
+    .text-desc {
+      margin-top: 1.5rem;
+      margin-left: 1.2rem;
+      width: calc(100% - 1.2rem);
+    }
   }
 
   .asterisk-mark {
@@ -201,6 +207,22 @@
 
   .text-color {
     color: $gc3;
+  }
+
+  .service-photo {
+    padding-top: 2.5rem;
+    text-align: right;
+    & > span {
+      text-align: left;
+    }
+
+    button {
+      margin-top: 1.3rem;
+      span {
+        padding-bottom: 0.1rem;
+        border-bottom: 0.1rem solid $fc6;
+      }
+    }
   }
 }
 
