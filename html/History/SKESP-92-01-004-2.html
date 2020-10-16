@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">손세차 추가금액 결제</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-order">
+          <div class="order-cont">
+            <p class="title-sub type2">본 서비스 이용을 완료하기 위해서는<br />반드시 추가결제를 완료해주셔야 합니다.</p>
+            <ul class="list-dot color1">
+              <li>최초 구매정보를 참고하여 옵션이 잘못 추가된 경우 유선으로 문의해 주시기 바랍니다.</li>
+              <li>요청 일시로부터 1시간 후 자동으로 결제 요청이 취소되며, 페널티가 부과될 수 있으니 유의해 주시기 바랍니다.</li>
+            </ul>
+            <div class="title-sub">
+              <p>기존 구매 정보</p>
+            </div>
+            <dl class="customer-info">
+              <dt>상품명</dt>
+              <dd>PREMIUM 세차 <button type="button" class="bg-icon info"></button></dd>
+              <dt>옵션명</dt>
+              <dd>발수코딩 옵션 <button type="button" class="bg-icon info"></button></dd>
+              <dt>옵션명</dt>
+              <dd>카나우바 왁스 <button type="button" class="bg-icon info"></button></dd>
+              <dt>옵션명</dt>
+              <dd>딥디크 차량용 방향제 <button type="button" class="bg-icon info"></button></dd>
+            </dl>
+          </div>
+          <div class="order-cont">
+            <div class="title-sub">
+              <p>옵션 추가 구매 정보</p>
+            </div>
+            <dl class="define-list type2">
+              <dt>에탄올 워셔액 <button type="button" class="bg-icon info"></button></dt>
+              <dd>30분</dd>
+              <dd>5,000원</dd>
+            </dl>
+            <dl class="define-list type2">
+              <dt>양키캔들 차량용 방향제 <button type="button" class="bg-icon info"></button></dt>
+              <dd>0분</dd>
+              <dd>4,000원</dd>
+            </dl>
+          </div>
+          <div class="order-cont">
+            <div class="title-sub">
+              <p>예약 일시 변경 정보</p>
+            </div>
+            <dl class="customer-info">
+              <dt>기존 일시</dt>
+              <dd>2020.05.10<br/>(화) 오전 11:30 ~ 오후 3:30</dd>
+              <dt>변경 일시</dt>
+              <dd>2020.05.10<br/>(화) 오전 11:30 ~ 오후 3:30</dd>
+            </dl>
+            <div class="btn-area grid">
+              <button type="button" class="btn color1"><em>9,000</em>원 추가 결제하기</button>
+              <button type="button" class="btn-arrow">전화 문의하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>

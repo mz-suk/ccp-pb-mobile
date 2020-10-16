@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">결제하기</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-order">
+          <div class="accordion active">
+            <div class="accordion-title">
+              <p class="title">결제 수단</p>
+              <button type="button" class="bg-icon toggle">펼침</button>
+            </div>
+            <div class="accordion-cont">
+              <div class="wrap-tab">
+                <ul class="tab-menu">
+                  <li class="active"><button type="button">등록한 카드결제</button></li>
+                  <li><button type="button">일반/간편결제</button></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="pay-method">
+                    <div class="wrap-card">
+                      <div class="card type1">
+                        <div class="info">
+                          <span class="logo-card"><img src="../../assets/img/layout/logo-card1.png" alt="현대카드" /></span>
+                          <p class="brand">현대카드</p>
+                          <p class="num">3742 76** ****0927</p>
+                        </div>
+                        <div class="bottom">
+                          <p>등록일</p>
+                          <p>2020.06.22</p>
+                        </div>
+                        <div class="bg-icon card-tag">기본 결제수단</div>
+                      </div>
+                      <div class="card type2">
+                        <div class="info">
+                          <span class="logo-card"><img src="../../assets/img/layout/logo-card1.png" alt="KB국민카드" /></span>
+                          <p class="brand">KB국민카드</p>
+                          <p class="num">3742 76** ****0927</p>
+                        </div>
+                        <div class="bottom">
+                          <p>등록일</p>
+                          <p>2020.06.22</p>
+                        </div>
+                      </div>
+                      <div class="card type1">
+                        <div class="info">
+                          <span class="logo-card"><img src="../../assets/img/layout/logo-card1.png" alt="현대카드" /></span>
+                          <p class="brand">현대카드</p>
+                          <p class="num">3742 76** ****0927</p>
+                        </div>
+                        <div class="bottom">
+                          <p>등록일</p>
+                          <p>2020.06.22</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrap-select">
+                      <select class="select">
+                        <option>일시불</option>
+                      </select>
+                    </div>
+                    <p class="text-guide">카드는 [결제관리] 메뉴에서 관리하실 수 있습니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-cont">
+            <div class="accordion type3 active">
+              <div class="accordion-title">
+                <p class="title">
+                  <input type="checkbox" id="allChk" />
+                  <label for="allChk">전체 동의하기</label>
+                </p>
+                <button type="button" class="bg-icon toggle">펼침</button>
+              </div>
+              <div class="accordion-cont">
+                <div class="terms-box">
+                  <input type="checkbox" id="terms1" />
+                  <label for="terms1">개인정보 수집 이용 및 제 3자 제공 동의</label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+                <div class="terms-box">
+                  <input type="checkbox" id="terms2" />
+                  <label for="terms2">환불/취소규정에 대한 유의사항 동의</label>
+                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-cont">
+            <ul class="list-dot type5">
+              <li>㈜ SK에너지는 통신판매중개자로서 통신판매의 당사자가 아니며,<br />입점판매자가 등록한 상품에 대한 거래인 경우 책임을 지지 않습니다.</li>
+            </ul>
+            <div class="wrap-btn">
+              <button type="button" class="btn">결제 취소하기</button>
+            </div>
+          </div>
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color5"><em>30,000</em>원 최종 결제하기</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+    </div>
+  </body>
+</html>

@@ -291,6 +291,7 @@
   margin-top: 3.5rem;
   &.grid {
     display: flex;
+    flex-wrap: wrap;
     button {
       flex: 1;
 

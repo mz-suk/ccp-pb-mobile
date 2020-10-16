@@ -143,6 +143,14 @@ $fcEB: #ebebeb;
         background: $fc6;
         border-radius: none;
       }
+    } @else if $dotSt == 2 {
+      &:before {
+        top: 0.3rem;
+        left: 0.4rem;
+        width: 0;
+        height: 0;
+        content: "*";
+      }
     }
     // dot color
     @if $dotCol != null {
