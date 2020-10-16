@@ -290,13 +290,16 @@
   }
   &.type-order {
     .wrap-order-card {
-      padding: 3rem 0 4rem;
+      padding: 0 0 4rem;
       .wrap-card {
         margin-top: 2.5rem;
       }
     }
     .wrap-order {
       padding-bottom: 0;
+    }
+    .wrap-btn-pay {
+      margin: 2.5rem 0.5rem 0;
     }
   }
   .section-sub-title {
