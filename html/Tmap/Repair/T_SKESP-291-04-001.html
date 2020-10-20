@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">견적 정보 입력</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="tmap-layout">
+          <div class="review-top">
+            <ul class="dotted-list">
+              <li>손상부위 사진과 설명을 등록해 주시면 수리 업체로 부터 견적을 받아볼 수 있습니다. </li>
+            </ul>
+          </div>
+          <div class="order-cont">
+            <div class="title-sub type2">
+              <p class="title">손상부위 사진, 설명 등록</p>
+            </div>
+            <div class="review-add-img">
+              <ul class="img-list">
+                <li>
+                  <label class="btn-add-photo">
+                    <input type="file" />
+                    <span>
+                      <i class="bg-icon photo"></i>
+                      <span class="num">사진 0/20</span>
+                    </span>
+                  </label>
+                </li>
+                <li><span class="no-add-img"></span></li>
+                <li><span class="no-add-img"></span></li>
+                <li><span class="no-add-img"></span></li>
+              </ul>
+              <!--
+              <ul class="img-list">
+                <li>
+                  <label class="btn-add-photo">
+                    <input type="file" />
+                    <span>
+                      <i class="bg-icon photo"></i>
+                      <span class="num">사진 6/20</span>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <img src="../../../assets/img/temp/list-thumb-1.png" alt="" />
+                  <button type="button"><i class="bg-icon remove"></i></button>
+                </li>
+                <li>
+                  <img src="../../../assets/img/temp/list-thumb-1.png" alt="" />
+                  <button type="button"><i class="bg-icon remove"></i></button>
+                </li>
+                <li>
+                  <img src="../../../assets/img/temp/list-thumb-1.png" alt="" />
+                  <span class="more-num">+ 4</span>
+                </li>
+              </ul>
+              -->
+            </div>
+            <div class="form-text-area">
+              <textarea placeholder="손상된 부위를 알려 주세요.&#13;&#10;(예 : 운전석 앞 문이 내부까지 찌그러졌습니다.) "></textarea>
+              <span class="text-length">
+                <span>0</span>
+                <span>/1,000자</span>
+              </span>
+            </div>
+          </div>
+          <div class="order-cont">
+            <div class="title-sub">
+              <p class="title">요청사항 (선택)</p>
+            </div>
+            <div class="wrap-form">
+              <ul class="list-check">
+                <li class="checkbox type4">
+                  <input type="checkbox" id="chk1-1" name="group1" checked>
+                  <label for="chk1-1">
+                    <p class="left">보험수리</p>
+                  </label>
+                  <div class="option-box">
+                    <div class="wrap-check">
+                      <div class="checkbox type4">
+                        <input type="radio" id="chk2-1" name="group2" checked>
+                        <label for="chk2-1">
+                          <p class="left">자차보험 수리</p>
+                        </label>
+                      </div>
+                      <div class="checkbox type4">
+                        <input type="radio" id="chk2-2" name="group2">
+                        <label for="chk2-2">
+                          <p class="left">피해자</p>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="wrap-check">
+                      <div class="checkbox type4">
+                        <input type="checkbox" id="chk3-1">
+                        <label for="chk3-1">
+                          <p class="left">비보험 수리 견적도 함께 받기</p>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="checkbox type4">
+                  <input type="checkbox" id="chk1-2" name="group1">
+                  <label for="chk1-2">
+                    <p class="left">렌터카</p>
+                  </label>
+                </li>
+                <li class="checkbox type4">
+                  <input type="checkbox" id="chk1-3" name="group1">
+                  <label for="chk1-3">
+                    <p class="left">픽업 서비스</p>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4">다음으로</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

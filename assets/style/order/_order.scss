@@ -1084,12 +1084,14 @@
   }
 }
 
-.list-radio {
-  .checkbox {
+.list-radio,
+.list-check {
+  > .checkbox {
     display: block;
     margin-bottom: 2rem;
     label {
       color: $fc1;
+      margin-left: 0;
     }
   }
 }
