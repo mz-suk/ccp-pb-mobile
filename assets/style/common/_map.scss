@@ -183,6 +183,12 @@
       text-decoration: underline;
     }
   }
+  .btn-area {
+    margin-top: 1.5rem;
+    button {
+      color: $fc6;
+    }
+  }
   &.type-business {
     padding-left: 12rem;
     background: url(../../assets/img/layout/icon-info-business-map.svg) 0 0 / 11rem 9rem no-repeat;
@@ -211,5 +217,12 @@
     box-sizing: border-box;
     padding: 3.5rem 2rem 0 12.2rem;
     background: $fcF9 url(../../assets/img/layout/icon-info-dawn-map.svg) 1.23rem 2.6rem / 11.1rem 12.8rem no-repeat;
+  }
+  &.type-repairservice {
+    padding-left: 12rem;
+    background: url(../../assets/img/layout/icon-repairservice.svg) 0 0 / 11rem 9rem no-repeat;
+    .title {
+      color: $pc3;
+    }
   }
 }
