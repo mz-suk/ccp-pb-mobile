@@ -74,6 +74,9 @@
   }
 }
 .pattern-comp-list {
+  .tab-content > & {
+    margin-top: 3.5rem;
+  }
   & > li:not(:first-child) {
     margin-top: 3rem;
   }

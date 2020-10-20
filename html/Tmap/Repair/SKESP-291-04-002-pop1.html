@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-alert">
+      <div class="wrap-layer-alert">
+        <div class="desc type1">
+          <p>주변업체가 적습니다.<br/><span class="point3">지역을 넓혀서 요청할까요?</span></p>
+          <p class="txt-row">카닥이 추천한 지역을 포함하면<br/>더 많은 견적서를 받을 수 있습니다.</p>
+          <div class="gray-box loc-box">
+            <p class="title">추천지역</p>
+            <ul>
+              <li>01 서울특별시 강남구</li>
+              <li>02 경기도 성남</li>
+              <li>03 서울특별시 서초구</li>
+              <li>04 서울특별시 용산구</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrap-btn"><button class="btn type2 color2">그대로 요청</button><button class="btn type2 color4">넓혀서 요청</button></div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Layer Pop -->
+  </body>
+</html>

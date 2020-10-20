@@ -756,6 +756,10 @@
     }
   }
 
+  &.type1 {
+    margin: 0;
+  }
+
   input[type="checkbox"] {
     position: absolute;
     top: 0;
