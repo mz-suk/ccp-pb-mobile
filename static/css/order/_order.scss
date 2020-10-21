@@ -156,10 +156,6 @@
   .wrap-text-link {
     margin-top: 0;
   }
-
-  // .define-box:first-of-type {
-  //   margin-top: 0;
-  // }
 }
 
 .order-cont {
@@ -193,6 +189,12 @@
       color: $pc3;
       text-decoration: underline;
     }
+
+    .text-desc {
+      margin-top: 1.5rem;
+      margin-left: 1.2rem;
+      width: calc(100% - 1.2rem);
+    }
   }
 
   .asterisk-mark {
@@ -201,6 +203,62 @@
 
   .text-color {
     color: $gc3;
+  }
+
+  .service-photo {
+    padding-top: 2.5rem;
+    text-align: right;
+    & > span {
+      text-align: left;
+    }
+
+    button {
+      margin-top: 1.3rem;
+      span {
+        padding-bottom: 0.1rem;
+        border-bottom: 0.1rem solid $fc6;
+      }
+    }
+  }
+  .wrap-form {
+    margin-top: 4rem;
+    .title-sub {
+      margin-bottom: 2.5rem;
+    }
+    .form-text-area {
+      margin-top: -0.5rem;
+      textarea {
+        min-height: 6rem;
+      }
+    }
+  }
+  .wrap-calendar {
+    margin: 0;
+    padding-top: 2.5rem;
+    border: 0;
+  }
+  .list-dot {
+    margin-bottom: 3.8rem;
+    li {
+      font-size: 1.3rem;
+    }
+    &.type5 {
+      margin: 0 1rem;
+      li {
+        font-size: 1.1rem;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .btn-area.grid {
+    .btn-arrow {
+      flex: 1 1 100%;
+      margin: 2.5rem 0 0 0;
+      font-size: 1.3rem;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -288,7 +346,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin: 1rem 0 0;
-    padding: 1rem 1.5rem;
+    padding: 1.3rem 1.5rem;
     background: rgba(234, 0, 44, 0.06);
     border: 0;
     .right span {
@@ -298,7 +356,7 @@
   }
   &.charge {
     margin: 1rem 0 0;
-    padding: 1rem 1.5rem;
+    padding: 1.3rem 1.5rem;
     background: rgba(54, 115, 238, 0.06);
     border: 0;
     strong {
@@ -313,13 +371,6 @@
 
   .tooltip {
     margin-left: 0.3rem;
-  }
-}
-
-.define-list {
-  padding: 0 1rem;
-  &.type1 {
-    color: $fc1;
   }
 }
 
@@ -381,6 +432,10 @@
     margin: 1.2rem 0 0 1rem;
     font-size: 1.1rem;
   }
+
+  .list-dot {
+    margin: 2.5rem 1rem 0;
+  }
 }
 
 .wrap-text-link {
@@ -389,11 +444,13 @@
 
   .text-link {
     display: block;
+    width: 100%;
     margin-bottom: 2rem;
     padding-right: 1.5rem;
     background: url(~assets/img/layout/icon-more-type2.svg) 100% 50% / 1.2rem 1.2rem no-repeat;
     color: $fc1;
     font-size: 1.3rem;
+    text-align: left;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -697,6 +754,10 @@
     .more {
       top: 2.5rem;
     }
+  }
+
+  &.type1 {
+    margin: 0;
   }
 
   input[type="checkbox"] {
@@ -1019,6 +1080,18 @@
       margin-top: 1.5rem;
       padding-top: 1.5rem;
       border-top: 0.1rem solid $fcF0;
+    }
+  }
+}
+
+.list-radio,
+.list-check {
+  > .checkbox {
+    display: block;
+    margin-bottom: 2rem;
+    label {
+      color: $fc1;
+      margin-left: 0;
     }
   }
 }

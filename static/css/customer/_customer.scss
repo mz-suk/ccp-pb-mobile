@@ -276,6 +276,16 @@
   &.type-none-title {
     padding-top: 4rem;
   }
+
+  .wrap-tab-scroll {
+    margin: 0 -2rem;
+    li:first-child {
+      margin-left: 2rem;
+    }
+    li:last-child {
+      margin-right: 2rem;
+    }
+  }
 }
 .customer-call {
   position: relative;

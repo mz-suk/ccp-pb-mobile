@@ -532,6 +532,53 @@
       }
     }
   }
+  .order-cont {
+    .wrap-form {
+      overflow: hidden;
+      margin-top: 1.5rem;
+      .wrap-input {
+        margin-top: 0.5rem;
+      }
+      .list-dot li {
+        font-size: 1.1rem;
+      }
+      .list-check {
+        margin: 1rem 1rem 0;
+      }
+    }
+    .title-sub:not(:first-child) {
+      margin-top: 4rem;
+    }
+    .title-sub.type2 {
+      margin-bottom: 0rem;
+    }
+    .review-add-img {
+      margin-top: 2rem;
+    }
+    .form-text-area {
+      margin-top: 1.5rem;
+      textarea {
+        height: 20rem;
+      }
+    }
+  }
+  .option-box {
+    margin-top: 1.4rem;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border: 0.1rem solid $fcE4;
+    .wrap-check {
+      height: 2rem;
+      &:not(:first-child) {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 0.1rem dotted $fcD7;
+      }
+      .checkbox:not(:first-child) {
+        margin-left: 3rem;
+      }
+    }
+  }
 }
 .sel-layout {
   padding: 3rem 2rem 0;
