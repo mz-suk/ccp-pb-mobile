@@ -27,6 +27,14 @@
       }
     }
   }
+
+  .row-section-wrap & {
+    padding-bottom: 3rem;
+
+    & + .row-section {
+      border-top: 0.1rem solid $fcF0;
+    }
+  }
 }
 
 .list-content {
@@ -719,6 +727,9 @@
   border-bottom: 0.1rem solid $fcF0;
   font-size: 1.5rem;
   color: $fc1;
+  &:not(:first-child) {
+    margin-top: 3rem;
+  }
 
   &.type1 {
     display: block;
@@ -728,6 +739,14 @@
       font-size: 1.2rem;
       color: $fc9;
     }
+  }
+
+  &.type2 {
+    display: block;
+    margin-bottom: 2.8rem;
+    padding: 0;
+    border: 0;
+    font-size: 1.7rem;
   }
 
   .title {
@@ -748,6 +767,9 @@
       margin-top: -0.4rem;
       margin-left: 0.6rem;
     }
+  }
+  .btn-arrow {
+    color: $fc6;
   }
 
   & + .order-info,
@@ -802,7 +824,7 @@
 
 .define-list {
   overflow: hidden;
-
+  padding: 0 1rem;
   dt,
   dd {
     float: left;
@@ -816,7 +838,6 @@
       color: $fc1;
     }
   }
-
   dt {
     clear: both;
     &.replay-txt {
@@ -827,12 +848,10 @@
       }
     }
   }
-
   dd {
     float: right;
     text-align: right;
   }
-
   .sub-point {
     display: block;
     font-size: 1.1rem;
@@ -843,15 +862,63 @@
     font-size: 1.2rem;
     color: $fc9;
   }
-
   .bg-icon {
     width: 1.6rem;
     height: 1.6rem;
     margin-left: 0.5rem;
   }
-
   & + .define-box {
     margin-top: 3.5rem;
+  }
+  &.type1 {
+    color: $fc1;
+  }
+  &.type2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0;
+    color: $fc1;
+    dt,
+    dd {
+      float: none;
+      margin-bottom: 0;
+      margin-top: 2rem;
+    }
+    dt {
+      margin-right: auto;
+    }
+    dd {
+      margin-left: 3rem;
+    }
+    & + & {
+      margin-top: 0;
+    }
+    .replay-txt {
+      flex: 1 1 100%;
+      margin-left: 0;
+      text-align: left;
+      color: $fc6;
+      span {
+        border-bottom: 0.1rem solid $fc6;
+      }
+      .bg-icon {
+        margin-left: 0;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  & + & {
+    margin-top: 2.5rem;
+  }
+}
+
+.wrap-define-list {
+  margin-top: -2rem;
+  .define-list.type2:not(:first-child) {
+    margin-top: 2.5rem;
+    padding-top: 0.5rem;
+    border-top: 0.1rem solid $fcF0;
   }
 }
 
@@ -897,6 +964,13 @@
   }
   &.type3 {
     @include listdot(0.8rem, 1.3rem, $fc6, 0, $fc6);
+  }
+  &.type4 {
+    @include listdot(0.8rem, 1.3rem, $gc3, 0, $gc3);
+  }
+  &.type5 {
+    // "*" 스타일
+    @include listdot(0.8rem, 1.1rem, $fc9, 2, $fc9);
   }
 }
 

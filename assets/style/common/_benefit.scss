@@ -289,6 +289,8 @@
     .box-top {
       position: relative;
       height: 13.5rem;
+      border: 0.1rem solid $fcE4;
+      border-radius: 1.6rem 1.6rem 0 0;
       img {
         border-radius: 1.6rem 1.6rem 0 0;
         // position: absolute;

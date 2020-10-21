@@ -19,105 +19,103 @@
   </head>
 
   <body>
-    <div id="container"></div>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">차량정보 등록</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+      </header>
+      <!-- //Header -->
 
-    <!-- Popup -->
-    <div class="wrapper-layer pos-right">
-      <div class="wrap-layer">
-        <header class="header header-sub">
-          <h1 class="title">차량정보 등록</h1>
-          <div class="left">
-            <button type="button" class="bg-icon prev">이전페이지</button>
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="member-layout">
+          <div class="block-layout">
+            <div class="wrap-empty">
+              <div class="empty-img">
+                <img src="../../../assets/img/layout/icon-empty-search2.svg" alt />
+              </div>
+              <p class="empty-text">
+                <strong><span class="col-pc3">123가 5678</span> 차량에 대한<br />정보 조회결과입니다.</strong>
+              </p>
+              <p class="empty-text">선택하신 차량정보를 확인해주세요.<br />등록완료 후 서비스를 이용하실 수 있습니다.</p>
+            </div>
           </div>
-        </header>
-        <div class="wrap-contents">
-          <div class="member-layout">
-            <div class="block-layout">
-              <div class="wrap-empty">
-                <div class="empty-img">
-                  <img src="../../../assets/img/layout/icon-empty-search2.svg" alt />
+          <div class="block-layout">
+            <div class="title-sub">
+              <p>기본차량 정보</p>
+            </div>
+            <dl class="customer-info">
+              <dt>제조사</dt>
+              <dd>메르세데스-벤츠</dd>
+              <dt>모델명</dt>
+              <dd>벤츠 A클래스 AMG</dd>
+              <dt>세부모델명</dt>
+              <dd>2020 벤츠 A클래스 세단</dd>
+              <dt>주요제원</dt>
+              <dd>SUV 준중형</dd>
+              <dt>등급</dt>
+              <dd>디젤 2.0 AWD</dd>
+              <dt>유종</dt>
+              <dd>경유</dd>
+            </dl>
+          </div>
+          <div class="block-layout">
+            <ul class="form-list">
+              <li class="form-div">
+                <p class="title">기어<span class="req">(필수)</span></p>
+                <div class="wrap-check">
+                  <div class="checkbox type4">
+                    <input type="radio" id="chk1" name="group1" checked="">
+                    <label for="chk1">
+                      <p class="left">자동</p>
+                    </label>
+                  </div>
+                  <div class="checkbox type4">
+                    <input type="radio" id="chk2" name="group1">
+                    <label for="chk2">
+                      <p class="left">수동</p>
+                    </label>
+                  </div>
                 </div>
-                <p class="empty-text">
-                  <strong><span class="col-pc3">123가 5678</span> 차량에 대한<br />정보 조회결과입니다.</strong>
-                </p>
-                <p class="empty-text">선택하신 차량정보를 확인해주세요.<br />등록완료 후 서비스를 이용하실 수 있습니다.</p>
-              </div>
-            </div>
-            <div class="block-layout">
-              <div class="title-sub">
-                <p>기본차량 정보</p>
-              </div>
-              <dl class="customer-info">
-                <dt>제조사</dt>
-                <dd>메르세데스-벤츠</dd>
-                <dt>모델명</dt>
-                <dd>벤츠 A클래스 AMG</dd>
-                <dt>세부모델명</dt>
-                <dd>2020 벤츠 A클래스 세단</dd>
-                <dt>주요제원</dt>
-                <dd>SUV 준중형</dd>
-                <dt>등급</dt>
-                <dd>디젤 2.0 AWD</dd>
-                <dt>유종</dt>
-                <dd>경유</dd>
-              </dl>
-            </div>
-            <div class="block-layout">
-              <ul class="form-list">
-                <li class="form-div">
-                  <p class="title">기어<span class="req">(필수)</span></p>
-                  <div class="wrap-check">
-                    <div class="checkbox type4">
-                      <input type="radio" id="chk1" name="group1" checked="">
-                      <label for="chk1">
-                        <p class="left">자동</p>
-                      </label>
-                    </div>
-                    <div class="checkbox type4">
-                      <input type="radio" id="chk2" name="group1">
-                      <label for="chk2">
-                        <p class="left">수동</p>
-                      </label>
-                    </div>
-                  </div>
-                </li>
-                <li class="form-div">
-                  <p class="title">색상<span class="req">(필수)</span></p>
-                  <select class="select type1" required>
-                    <option value>선택해 주세요.</option>
-                    <option>option3</option>
-                  </select>
-                </li>
-                <li class="form-div">
-                  <p class="title">연식</p>
-                  <select class="select type1" required>
-                    <option value>선택해 주세요.</option>
-                    <option>2019</option>
-                  </select>
-                </li>
-                <li class="form-div">
-                  <p class="title">차대번호</p>
-                  <div class="form-input">
-                    <input type="text" placeholder="알파벳, 숫자조합 17자리를 입력해주세요."/>
-                  </div>
-                </li>
+              </li>
+              <li class="form-div">
+                <p class="title">색상<span class="req">(필수)</span></p>
+                <select class="select type1" required>
+                  <option value>선택해 주세요.</option>
+                  <option>option3</option>
+                </select>
+              </li>
+              <li class="form-div">
+                <p class="title">연식</p>
+                <select class="select type1" required>
+                  <option value>선택해 주세요.</option>
+                  <option>2019</option>
+                </select>
+              </li>
+              <li class="form-div">
+                <p class="title">차대번호</p>
+                <div class="form-input">
+                  <input type="text" placeholder="알파벳, 숫자조합 17자리를 입력해주세요."/>
+                </div>
+              </li>
+            </ul>
+            <div class="new-add-noti">
+              <ul class="list-dot">
+                <li>비어있는 <span class="col-pc3">(필수)</span>항목을 추가로 입력 및 선택하시어 정보 등록을 완료해주시기 바랍니다.</li>
+                <li>차량 정보를 확인하신 후, 잘못된 정보가 있거나 미입력된 정보가 있으시다면, <span class="col-pc3 tel">02-1234-5678</span>로 문의해주시기 바랍니다.</li>
               </ul>
-              <div class="new-add-noti">
-                <ul class="list-dot">
-                  <li>비어있는 <span class="col-pc3">(필수)</span>항목을 추가로 입력 및 선택하시어 정보 등록을 완료해주시기 바랍니다.</li>
-                  <li>차량 정보를 확인하신 후, 잘못된 정보가 있거나 미입력된 정보가 있으시다면, <span class="col-pc3 tel">02-1234-5678</span>로 문의해주시기 바랍니다.</li>
-                </ul>
-              </div>
             </div>
-          </div>
-
-          <div class="fix-footer-area">
-            <button type="button" class="btn type2 color4">등록완료 및 회원가입</button>
           </div>
         </div>
+
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4">등록완료 및 회원가입</button>
+        </div>
       </div>
-      <div class="mask"></div>
+      <!-- //Wrap-contents -->
     </div>
-    <!-- //Popup -->
   </body>
 </html>
