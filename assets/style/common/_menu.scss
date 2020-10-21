@@ -1,39 +1,12 @@
 .wrap-menu {
   padding: 0 2rem 0 3rem;
 
-  .wrap-member {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 0 2.5rem;
+  .menu-top {
+    padding: 1rem 0 2rem;
     border-bottom: 0.1rem solid $fc1;
-
-    .grade {
-      display: inline-block;
-      width: 5.1rem;
-      height: 6.9rem;
-    }
-
-    .member {
-      margin: 1rem 0 0 1.2rem;
-
-      p {
-        color: $fc1;
-        font-size: 1.1rem;
-        &.name {
-          font-size: 1.7rem;
-        }
-      }
-    }
-
-    .btn-arrow {
-      align-self: flex-end;
-      height: 1.3rem;
-      margin: 0 1rem 0 auto;
-      border-bottom: 0.1rem solid $pc3;
-      color: $pc3;
-      &:after {
-        background: url(../../assets/img/layout/icon-arrow-left-blue.svg) 0 0 / 100% auto no-repeat;
-      }
+    .name {
+      font-size: 1.7rem;
+      color: $fc1;
     }
   }
 
