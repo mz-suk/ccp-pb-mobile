@@ -5,6 +5,8 @@ $pc3: #3673ee;
 $pc4: #6257ff;
 $pc5: #0dacb9;
 $pc6: #fccb3a;
+$pc7: #f3f7fe;
+$pc8: #d6e5ff;
 
 $gc1: #04a0f3;
 $gc2: #45d49a;
@@ -140,6 +142,14 @@ $fcEB: #ebebeb;
         height: 0.1rem;
         background: $fc6;
         border-radius: none;
+      }
+    } @else if $dotSt == 2 {
+      &:before {
+        top: 0.3rem;
+        left: 0.4rem;
+        width: 0;
+        height: 0;
+        content: "*";
       }
     }
     // dot color
