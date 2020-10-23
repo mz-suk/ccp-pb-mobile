@@ -972,6 +972,15 @@
     // "*" 스타일
     @include listdot(0.8rem, 1.1rem, $fc9, 2, $fc9);
   }
+
+  .sub-list {
+    li {
+      color: $fc9;
+      &:not(:first-child) {
+        margin-top: 1rem;
+      }
+    }
+  }
 }
 
 // 카드박스타입
@@ -1308,6 +1317,20 @@
       padding: 4.9rem 3rem 5.1rem;
       .car-name {
         margin-top: 0;
+      }
+    }
+    // 티맵 / 오일배터리
+    &.type3 {
+      .logo {
+        margin-top: 4rem;
+        top: 0;
+        transform: inherit;
+      }
+      .car-name {
+        margin-top: 0.4rem;
+      }
+      .car-info {
+        margin-top: 4rem;
       }
     }
     .logo {
