@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">서비스 전후사진 전체보기</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="wrap-partner-images">
+            <div class="images-top">
+              <ul class="list-tab">
+                <li class="active"><button type="button">이용 전</button></li>
+                <li><button type="button">이용 후</button></li>
+              </ul>
+            </div>
+            <!-- swiper -->
+            <div class="wrap-list-image type1">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../../assets/img/temp/@375x460.jpg" alt="" /></div>
+                  <div class="swiper-slide"><img src="../../assets/img/temp/@335x200.jpg" alt="" /></div>
+                </div>
+              </div>
+              <div class="swiper-pagination">
+                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet"></span>
+              </div>
+            </div>
+
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+              var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 'auto',
+                pagination: {
+                  el: '.swiper-pagination',
+                  type: 'fraction'
+                },
+                loop: true
+              });
+            </script>
+            <!-- //swiper -->
+          </div>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
