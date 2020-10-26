@@ -196,10 +196,12 @@
   }
   &.size1 {
     font-size: 1.3rem;
+    line-height: 1.3rem;
     &:after {
       margin-top: 0.2rem;
     }
   }
+
   &.color1 {
     color: $fc6;
   }

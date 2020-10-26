@@ -1,39 +1,12 @@
 .wrap-menu {
   padding: 0 2rem 0 3rem;
 
-  .wrap-member {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 0 2.5rem;
+  .menu-top {
+    padding: 1rem 0 2rem;
     border-bottom: 0.1rem solid $fc1;
-
-    .grade {
-      display: inline-block;
-      width: 5.1rem;
-      height: 6.9rem;
-    }
-
-    .member {
-      margin: 1rem 0 0 1.2rem;
-
-      p {
-        color: $fc1;
-        font-size: 1.1rem;
-        &.name {
-          font-size: 1.7rem;
-        }
-      }
-    }
-
-    .btn-arrow {
-      align-self: flex-end;
-      height: 1.3rem;
-      margin: 0 1rem 0 auto;
-      border-bottom: 0.1rem solid $pc3;
-      color: $pc3;
-      &:after {
-        background: url(~assets/img/layout/icon-arrow-left-blue.svg) 0 0 / 100% auto no-repeat;
-      }
+    .name {
+      font-size: 1.7rem;
+      color: $fc1;
     }
   }
 
@@ -73,6 +46,18 @@
       height: 2rem;
       margin-right: 0.5rem;
       vertical-align: top;
+    }
+    .btn-arrow {
+      margin-left: auto;
+      width: 2rem;
+      height: 2rem;
+      @include blind();
+
+      &:after {
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url(~assets/img/layout/icon-more-type2.svg) 50% 50% / 100% 100% no-repeat;
+      }
     }
   }
 
@@ -114,15 +99,6 @@
         margin-top: 0.1rem;
       }
 
-      &.type2 {
-        .num {
-          font-weight: 700;
-          em {
-            font-weight: 400;
-          }
-        }
-      }
-
       &.type2,
       &.type3 {
         display: flex;
@@ -135,6 +111,22 @@
           color: $pc3;
           em {
             font-size: 1.6rem;
+          }
+        }
+      }
+
+      &.type2 {
+        .txt {
+          width: 11rem;
+        }
+        .num {
+          margin-left: inherit;
+          padding-right: 0;
+          width: calc(100% - 11rem);
+          font-weight: 700;
+          em {
+            margin-right: 0.1rem;
+            font-weight: 400;
           }
         }
       }
@@ -165,21 +157,10 @@
       margin-top: 1rem;
       color: $pc3;
       border-color: $pc3;
-    }
 
-    .btn-arrow {
-      position: absolute;
-      top: 50%;
-      right: 0.5rem;
-      width: 2rem;
-      height: 2rem;
-      transform: translateY(-50%);
-      @include blind();
-
-      &:after {
-        width: 1.2rem;
-        height: 1.2rem;
-        background: url(~assets/img/layout/icon-more-type2.svg) 50% 50% / 100% 100% no-repeat;
+      &.color1 {
+        color: $fc1;
+        border-color: $fc1;
       }
     }
 
@@ -189,6 +170,13 @@
       padding: 0 0.8rem;
       font-size: 0.9rem;
       line-height: 2rem;
+    }
+
+    .txt-row {
+      margin-top: 0.5rem;
+      em {
+        color: $fc1;
+      }
     }
   }
 }

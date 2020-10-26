@@ -156,6 +156,12 @@
   .wrap-text-link {
     margin-top: 0;
   }
+
+  .charge-top {
+    .text-box {
+      margin-top: 3rem;
+    }
+  }
 }
 
 .order-cont {
@@ -431,6 +437,10 @@
   .text-guide {
     margin: 1.2rem 0 0 1rem;
     font-size: 1.1rem;
+
+    & + .text-guide {
+      margin-top: 1rem;
+    }
   }
 
   .list-dot {

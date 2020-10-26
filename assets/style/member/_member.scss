@@ -59,6 +59,29 @@
         }
       }
     }
+
+    &.password {
+      input {
+        padding-right: 5.5rem;
+        &::placeholder {
+          letter-spacing: -0.1rem;
+        }
+      }
+      .wrap-btn {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        button {
+          position: static;
+          margin-left: 0.6rem;
+          transform: translateY(0);
+          .bg-icon {
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 
   .member-apply {
