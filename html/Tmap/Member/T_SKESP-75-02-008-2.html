@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">머핀 아이디 회원가입</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="account-area">
+          <div class="member-apply">
+            <div class="apply-form">
+              <p class="apply-title">아이디</p>
+              <!-- [D] 오류 .has-error 추가 -->
+              <div class="form-input">
+                <input type="email" placeholder="이메일 주소">
+                <p class="error-text">이메일 형식이 올바르지 않습니다.</p>
+              </div>
+            </div>
+
+            <div class="apply-form">
+              <p class="apply-title">비밀번호</p>
+              <!-- [D] 오류 .has-error 추가 -->
+              <div class="form-input password">
+                <input type="password" value="abc1234@">
+                <div class="wrap-btn">
+                  <button type="button" class="btn-clear-x"><i class="bg-icon clear-x"></i></button>
+                  <button type="button" class="btn-show"><i class="bg-icon show-off"></i></button>
+                </div>
+                <p class="error-text">영문 소문자, 숫자를 조합하여 8~15자리로 입력해주세요.</p>
+              </div>
+            </div>
+
+            <div class="apply-form">
+              <p class="apply-title">비밀번호</p>
+              <!-- [D] 오류 .has-error 추가 -->
+              <div class="form-input password">
+                <input type="text" value="abc1234@">
+                <div class="wrap-btn">
+                  <button type="button" class="btn-clear-x"><i class="bg-icon clear-x"></i></button>
+                  <button type="button" class="btn-show"><i class="bg-icon show-on"></i></button>
+                </div>
+                <p class="error-text">영문 소문자, 숫자를 조합하여 8~15자리로 입력해주세요.</p>
+              </div>
+            </div>
+
+            <div class="apply-form">
+              <p class="apply-title">휴대폰 번호</p>
+              <!-- [D] 오류 .has-error 추가 -->
+              <div class="form-input">
+                <input type="number" placeholder="010 - 1234 - 1234">
+                <p class="error-text">휴대전화번호를 입력해주세요.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4" disabled>회원가입</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+    </div>
+  </body>
+</html>
