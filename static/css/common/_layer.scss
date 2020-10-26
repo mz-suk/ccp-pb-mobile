@@ -304,6 +304,29 @@
   box-sizing: border-box;
   min-height: calc(100vh - 5.5rem);
   background-color: $fc1;
+  .images-top {
+    padding: 8.4rem 3rem 2rem;
+  }
+  .list-tab {
+    li {
+      display: inline-block;
+      font-size: 1.5rem;
+      &:not(:first-child) {
+        margin-left: 1.2rem;
+        &:before {
+          display: inline-block;
+          width: 0.1rem;
+          height: 1.2rem;
+          margin-right: 1.2rem;
+          background: $fc6;
+          content: "";
+        }
+      }
+      &.active {
+        color: $fcF;
+      }
+    }
+  }
 }
 
 .wrap-list-image {
@@ -313,6 +336,22 @@
     height: 20rem;
     margin-top: 1rem;
     @include cropimg(w);
+  }
+
+  &.type1 {
+    position: relative;
+    padding: 0 0 8rem;
+    .swiper-pagination-fraction {
+      top: -4rem;
+      right: 3rem;
+      bottom: inherit;
+      left: inherit;
+      width: auto;
+      color: $fcF;
+      .swiper-pagination-total {
+        opacity: 1;
+      }
+    }
   }
 }
 
