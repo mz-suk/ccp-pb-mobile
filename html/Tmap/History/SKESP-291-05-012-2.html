@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">수리견적 이용내역</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="charge-top">
+          <div class="tag-area">
+            <span class="tag"><i class="bg-icon reservation"></i> 예약</span>
+          </div>
+          <p class="txt-row">2020.09.24 (목) 오전 11시 40분</p>
+          <p class="txt-row type1"><em class="point3">기란 모터스에서 예약 검토 중</em>입니다.</p>
+          <div class="text-box">업체에서 예약사항 확인을 위해 곧 연락드릴 예정입니다.</div>
+        </div>
+
+        <div class="accordion active type2">
+          <!-- [D] accordion 펼침 상태 : .active 추가 -->
+          <div class="accordion-title">
+            <p class="title">예약 정보</p>
+            <button type="button" class="bg-icon toggle">펼침</button>
+          </div>
+          <div class="accordion-cont">
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>예약일시</p>
+              </div>
+              <dl class="customer-info">
+                <dt>요청 일시</dt>
+                <dd>2020.05.10 (화) 15:07</dd>
+                <dt>확정 일시</dt>
+                <dd class="col-gc3">확인 중</dd>
+                <dt>요청사항</dt>
+                <dd>오전 지하 주차장 F-30에 주차.
+                  왼쪽 타이어에 흠집이 있으니까 살살해주시고 트렁크 안에는 개인 짐이 많으니 청소 안하셔도 됩니다.</dd>
+              </dl>
+            </div>
+
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>예약자 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>예약자명</dt>
+                <dd>송헌호</dd>
+                <dt>연락처</dt>
+                <dd>010 - 1234 -5678</dd>
+              </dl>
+            </div>
+
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>차량 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>차량 번호</dt>
+                <dd>123디 1234</dd>
+                <dt>제조사</dt>
+                <dd>싼타페</dd>
+                <dt>세부모델명</dt>
+                <dd>[싼타페 TM (18.2.21 ~ 현재)</dd>
+                <dt>등급</dt>
+                <dd>준대형 SUV</dd>
+                <dt>색상</dt>
+                <dd>퓨어 화이트</dd>
+              </dl>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="accordion active type2">
+          <!-- [D] accordion 펼침 상태 : .active 추가 -->
+          <div class="accordion-title">
+            <p class="title">견적 정보</p>
+            <button type="button" class="bg-icon toggle">펼침</button>
+          </div>
+          <div class="accordion-cont">
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>견적 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>견적 번호</dt>
+                <dd>1205499</dd>
+                <dt>견적 일시</dt>
+                <dd>2020.05.10 (화) 오전 11시 30분</dd>
+                <dt>견적 일시</dt>
+                <dd>기란모터스</dd>
+              </dl>
+            </div>
+
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>견적 금액 (VAT포함)</p>
+              </div>
+              <div class="order-info">
+                <dl class="define-list">
+                  <dt>비보험 수리</dt>
+                  <dd>35,000원</dd>
+                  <dt>보험 수리</dt>
+                  <dd>0원</dd>
+                </dl>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="charge-btm">
+          <div class="btn-area grid">
+            <button type="button" class="btn">예약취소</button>
+            <button type="button" class="btn color1">예약일시 변경</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>

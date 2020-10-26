@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <!-- isDetail 상세 페이지 헤더 -->
+      <header class="header header-sub ">
+        <h1 class="title">견적서 상세</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="list-item detail-page">
+          <div class="map-top">
+            지도
+          </div>
+          <div class="item-bottom">
+            <div class="info">
+              <p class="title">기란모터스</p>
+              <p class="desc">경기도 광주시 곤지암읍 곤지암리 377-7번지</p>
+            </div>
+
+            <div class="etc">
+              <a href="javascript:;"><i class="bg-icon location">거리</i>1.5 km</a>
+              <a href="javascript:;">카닥 [만족도 <em class="point3">99.8</em>% , 후기 <em class="point3">88</em>건]</a>
+            </div>
+
+            <dl class="store-time">
+              <dt><i class="bg-icon time">시간</i>운영시간 :</dt>
+              <dd>
+                <ul>
+                  <li>평일 09:00 - 19:00</li>
+                  <li>주말 09:00 - 19:00<span class="holliday">(1,3 주차 일요일 휴무)</span></li>
+                </ul>
+              </dd>
+            </dl>
+            <ul class="store-link type1">
+              <li>
+                <button type="button"><i class="bg-icon direction"></i><span>길찾기</span></button>
+              </li>
+              <li>
+                <button type="button"><i class="bg-icon phone"></i><span>전화</span></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row-section-wrap">
+          <div class="row-section">
+            <div class="wrap-tab type2">
+              <ul class="tab-menu">
+                <li class="active">
+                  <button type="button">견적서</button>
+                </li>
+                <li>
+                  <button type="button">업체정보</button>
+                </li>
+                <li>
+                  <button type="button">카닥리뷰 <span class="num">(999+)</span></button>
+                </li>
+              </ul>
+            </div>
+            <!-- 견적서 -->
+            <div class="tab-content">
+              <div class="wrap-info">
+                <div class="estimate-box">
+                  <p class="title">수리 견적서 </p>
+                  <dl class="sum-list">
+                    <dt>비보험 수리</dt>
+                    <dd><button type="button"><em>80,000</em> 원</button></dd>
+                    <dt>보험 수리</dt>
+                    <dd><button type="button"><em>80,000</em> 원</button></dd>
+                    <dt class="re-txt">자기부담금</dt>
+                    <dd class="re-txt"><em>20,000</em> 원</dd>
+                  </dl>
+                  <dl class="sub-noti">
+                    <dt>무료제공 서비스</dt>
+                    <dd>픽업&딜리버리 세차</dd>
+                    <dt>예상 수리기간</dt>
+                    <dd>입고일로 부터 2일</dd>
+                  </dl>
+                  <p class="asterisk-mark type1">보험 수리 견적은 실제 보험 청구액과 다를 수 있습니다.</p>
+                </div>
+                <p class="txt-row">
+                  1급 공업사 입니다.<br/>픽업, 딜리버리, 세차 서비스해드립니다!
+                </p>
+                <p class="txt-row">20년 이상의 베티랑 기술진이 정식열처리장에서 정품도료로
+                  매뉴얼 시공 하고 있습니다.</p>
+                <p class="txt-row">복원 작업이 끝나면 전문 디테일링 매장에서 도장면 마무리, 세차,
+                  터치페인트 , 공기압체크 워셔액보충 작업을 기본 서비스로 해드리
+                  고 있습니다.</p>
+                <p class="txt-row">
+                  고객님께서 편하게 집이나 사무실에서 상담부터 픽업 딜리버리까
+                  지 시간과 장소에 구애받지 않고 최고의 서비스를 받으실 수 있습
+                  니다.</p>
+                <p class="txt-row">24시간 상담가능합니다.</p>
+
+                <div class="review-wrap">
+                  <p class="top-title">
+                    카닥 만족도 & 후기
+                    <button type="button" class="btn-arrow color1">리뷰 더보기</button>
+                  </p>
+                  <div>
+                    만족도 부분 디자인 변경예정
+                  </div>
+                  <ul class="review-list">
+                    <li>
+                      <div class="thumb-info">
+                        <div class="thumb-img"></div>
+                        <div class="thumb-txt">
+                          <p>르노 삼성 XM3 오너</p>
+                          <p class="day">오늘</p>
+                        </div>
+                      </div>
+                      <p class="txt">사장님 너무 친절하시고, 항상 잘 이용하고 있어요.   사장님 너무 친
+                        절하시고, 항상 잘 이용하고 있어요.  사장님 너무 친절하시고, 항상
+                        잘 이용하고 있어요. 사장님 너무 친절하시고 잘 이용하고 있어요.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- // 견적서 -->
+            <!-- 업체정보 -->
+            <div class="tab-content"></div>
+            <!--  // 업체정보 -->
+            <!-- 카닥리뷰 -->
+            <div class="tab-content"></div>
+            <!-- //카닥리뷰 -->
+          </div>
+        </div>
+
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4">예약하기</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

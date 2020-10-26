@@ -296,6 +296,11 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  //티맵
+  .map-top {
+    min-height: 18.5rem;
+  }
 }
 
 //empty
@@ -590,6 +595,15 @@
         color: $fc1;
       }
     }
+
+    // 티맵
+    &.type1 {
+      padding-top: 0;
+      .wrap-btn {
+        margin-top: 2.5rem;
+        margin-bottom: 0;
+      }
+    }
   }
 
   .wrap-tab {
@@ -653,6 +667,19 @@
       height: 0;
       background: none;
       content: "*";
+    }
+  }
+
+  // 티맵
+  .wrap-form {
+    margin-top: 0.8rem;
+    padding-top: 2rem;
+    width: 100%;
+    border-top: 0.1rem solid $fcF0;
+    .form-text-area {
+      textarea {
+        min-height: 6rem;
+      }
     }
   }
 }
