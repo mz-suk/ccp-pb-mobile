@@ -7,6 +7,18 @@
       border-right: 0.1rem dotted $fc9;
     }
   }
+  &.type1 {
+    & > span {
+      &:after {
+        display: none;
+      }
+      &:nth-child(odd) {
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
 
   & > span {
     position: relative;
@@ -35,6 +47,10 @@
       height: 1.1rem;
       border-right: 0.1rem solid $fc9;
       transform: translate(0, -50%);
+    }
+    em {
+      margin-left: 1rem;
+      color: $fc6;
     }
   }
 }
@@ -132,16 +148,7 @@
       display: none;
     }
   }
-  &.type1 {
-    padding: 0 2rem 3.5rem;
-    .gray-box {
-      margin: 0 -2rem 0;
-      padding: 3rem 2rem;
-    }
-    .form-list {
-      margin-top: 3rem;
-    }
-  }
+
   .title-sub {
     &.type-third {
       margin-top: 3rem;
@@ -313,6 +320,19 @@
     display: block;
     text-align: center;
     color: $fc1;
+  }
+  &.top-box {
+    padding: 3rem 2rem;
+    display: block;
+    color: $fc1;
+    .block-layout & {
+      &:first-child {
+        margin: -4rem -2rem 3rem;
+      }
+    }
+    .btn-box-arrow {
+      margin-bottom: 0.5rem;
+    }
   }
   .right {
     margin-left: auto;

@@ -1,9 +1,12 @@
 .wrap-order {
   .wrap-btn {
     margin-top: 4rem;
-
+    text-align: center;
     .btn {
       width: 100%;
+    }
+    .btn-arrow {
+      margin-top: 2rem;
     }
   }
 
@@ -162,6 +165,12 @@
       margin-top: 3rem;
     }
   }
+
+  & + .charge-btm {
+    .btn-area {
+      margin-top: 0;
+    }
+  }
 }
 
 .order-cont {
@@ -264,6 +273,15 @@
       margin: 2.5rem 0 0 0;
       font-size: 1.3rem;
       text-decoration: underline;
+    }
+  }
+
+  .top-title {
+    font-size: 1.7rem;
+    color: $fc1;
+
+    & + .order-info {
+      margin-top: 4rem;
     }
   }
 }
