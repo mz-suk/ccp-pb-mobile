@@ -180,6 +180,7 @@
 
   &.type1 {
     font-size: 1.5rem;
+    line-height: 1.5rem;
     &:after {
       width: 1.3rem;
       height: 1.3rem;
@@ -188,6 +189,7 @@
   }
   &.type2 {
     font-size: 1.3rem;
+    line-height: 1.3rem;
     &:after {
       width: 1.3rem;
       height: 1.3rem;
@@ -199,6 +201,20 @@
     line-height: 1.3rem;
     &:after {
       margin-top: 0.2rem;
+    }
+  }
+  &.type3 {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    &:after {
+      margin-top: 0.2rem;
+      margin-left: 0.5rem;
+      transform: rotate(90deg);
+    }
+    &.active {
+      &:after {
+        transform: rotate(270deg);
+      }
     }
   }
 

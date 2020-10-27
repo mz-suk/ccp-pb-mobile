@@ -339,7 +339,8 @@
     &:first-of-type {
       margin-top: 1.8rem;
     }
-    .text-color {
+    .text-color,
+    .col-pc3 {
       color: $pc3;
     }
     &.type2 {
