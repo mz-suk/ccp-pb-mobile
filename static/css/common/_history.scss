@@ -206,24 +206,23 @@
     .review-info-box {
       border: 0 none;
       margin-top: 2rem;
-      .rating {
-        height: auto;
-        width: auto;
-        margin-top: 0.5rem;
-        background: none;
-        .star {
-          width: 3rem;
-          height: 3rem;
-          display: inline-block;
-          background: url(~assets/img/layout/icon-review-apply-star.svg) 0 0.2rem / 3rem 3rem no-repeat;
-          &.active {
-            background-image: url(~assets/img/layout/icon-review-apply-star-active.svg);
-          }
+      .rating-box {
+        margin: 1rem 0;
+        .rating {
+          width: 21.5rem;
+          margin-top: 1rem;
+        }
+        .percent {
+          background-position-y: -0.2rem;
+        }
+        .rating,
+        .percent {
+          height: 3.5rem;
+          background-size: auto 8.8rem;
         }
       }
       .num {
         display: block;
-        margin-top: 0.3rem;
         font-size: 2.4rem;
       }
     }

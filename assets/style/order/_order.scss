@@ -37,14 +37,13 @@
   .wrap-btn-pay {
     margin-top: 2.5rem;
 
-    > .btn:first-child {
-      border-color: $fc9;
-    }
-
     .btn {
       width: 100%;
       height: 4.5rem;
       line-height: 4.5rem;
+      &:not(.color3) {
+        border-color: $fc9;
+      }
     }
 
     .wrap-etc {
