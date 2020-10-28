@@ -62,11 +62,35 @@
 
   &.pos-drag {
     position: fixed;
-    top: auto;
+    top: calc((100% - 5.5rem) * 0.4);
     bottom: 0;
-    min-height: 64.5%;
-    &.active {
-      height: 88%;
+    touch-action: none;
+    transform: translateZ(0);
+    transition: top 0.2s ease-out;
+
+    &.position0 {
+      top: 5.5rem;
+
+      .wrap-layer {
+        border-radius: 0;
+        transition: border-radius 0.2s;
+      }
+    }
+    &.position1 {
+      top: calc((100% - 5.5rem) * 0.4);
+    }
+    &.position2 {
+      top: calc(100% - 3rem);
+    }
+    &.moving {
+      transition: none;
+    }
+    .layer-touch-area {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3rem;
     }
     .wrap-layer {
       height: 100%;
@@ -160,6 +184,8 @@
   }
 
   &.pos-menu {
+    z-index: 99;
+
     .wrap-layer {
       top: 0;
       left: 4rem;
