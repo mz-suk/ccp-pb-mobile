@@ -165,9 +165,9 @@
   &.type2 {
     .tab-menu {
       display: flex;
-
       li {
-        flex: auto;
+        // flex: auto;
+        flex: 1;
         height: auto;
         font-size: 1.7rem;
         padding-bottom: 1rem;
@@ -176,6 +176,7 @@
         border-bottom: 0.1rem solid $fcF0;
         background: $fcF;
         color: $fc1;
+        white-space: nowrap;
 
         &.active {
           padding-bottom: 1rem;

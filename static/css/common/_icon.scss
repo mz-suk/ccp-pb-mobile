@@ -514,6 +514,12 @@
   &.cancel {
     background-image: url(~assets/img/layout/icon-cancel.svg);
   }
+  &.show-on {
+    background-image: url(~assets/img/layout/icon-show-on.svg);
+  }
+  &.show-off {
+    background-image: url(~assets/img/layout/icon-show-off.svg);
+  }
 }
 // 뱃지
 
