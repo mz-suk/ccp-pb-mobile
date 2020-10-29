@@ -193,6 +193,26 @@
       width: auto;
       height: 100%;
     }
+    &.pos-menu-enter-active,
+    &.pos-menu-leave-active {
+      transition-duration: 0.2s;
+
+      .wrap-layer {
+        transition: transform 0.2s ease-out;
+      }
+      .mask {
+        transition: opacity 0.2s;
+      }
+    }
+    &.pos-menu-enter,
+    &.pos-menu-leave-to {
+      .wrap-layer {
+        transform: translateX(100%);
+      }
+      .mask {
+        opacity: 0;
+      }
+    }
   }
 
   .wrap-layer-btn {
