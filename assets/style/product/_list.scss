@@ -285,12 +285,20 @@
     }
   }
 
-  .checkbox:nth-of-type(4n) {
-    margin-right: 1rem;
+  // .checkbox:nth-of-type(4n) {
+  //   margin-right: 1rem;
+  // }
+
+  // .checkbox:nth-of-type(5n) {
+  //   margin-right: 0;
+  // }
+
+  .wrap-checkbox {
+    margin-left: -1rem;
   }
 
-  .checkbox:nth-of-type(5n) {
-    margin-right: 0;
+  .checkbox {
+    margin: 1rem 0 0 1rem;
   }
 
   &:last-of-type {
@@ -548,6 +556,7 @@
   .wrap-info {
     width: 100%;
     margin-top: 0.8rem;
+    padding-top: 0;
     border-top: 0.1rem solid $fcF0;
 
     dl {
@@ -1513,7 +1522,7 @@
     display: flex;
     align-items: center;
     height: 11rem;
-    padding: 0 2.9rem;
+    // padding-right: 2.9rem;
     background-color: $fcF9;
     border-top: 0.1rem solid $fcF0;
     border-bottom: 0.1rem solid $fcF0;
@@ -1524,16 +1533,20 @@
     position: relative;
     overflow-x: visible;
     overflow-y: hidden;
-
     white-space: nowrap;
     scroll-snap-type: x mandatory;
 
     li {
       scroll-snap-align: start;
       box-sizing: border-box;
+      margin-left: 0.6rem;
 
-      &:not(:first-child) {
-        margin-left: 0.6rem;
+      &:first-child {
+        margin: 0;
+        padding-left: 2.9rem;
+      }
+      &:last-child {
+        padding-right: 2.9rem;
       }
     }
 

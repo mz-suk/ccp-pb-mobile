@@ -193,6 +193,26 @@
       width: auto;
       height: 100%;
     }
+    &.pos-menu-enter-active,
+    &.pos-menu-leave-active {
+      transition-duration: 0.2s;
+
+      .wrap-layer {
+        transition: transform 0.2s ease-out;
+      }
+      .mask {
+        transition: opacity 0.2s;
+      }
+    }
+    &.pos-menu-enter,
+    &.pos-menu-leave-to {
+      .wrap-layer {
+        transform: translateX(100%);
+      }
+      .mask {
+        opacity: 0;
+      }
+    }
   }
 
   .wrap-layer-btn {
@@ -229,22 +249,26 @@
 
     .title-sub {
       margin-bottom: 2.4rem;
-      padding-left: 1rem;
 
       .bg-icon {
         width: 2rem;
         height: 2rem;
         margin-top: -0.3rem;
+        &.refresh {
+          background-size: 1.6rem auto;
+        }
       }
     }
 
     .wrap-checkbox {
       margin-top: -1.1rem;
+      margin-left: -0.7rem;
     }
 
     .checkbox.type5 {
       margin-top: 1.5rem;
-      margin-right: 0.7rem;
+      margin-right: 0;
+      margin-left: 0.7rem;
     }
 
     .wrap-btn {
@@ -290,6 +314,7 @@
 
       .wrap-checkbox {
         margin-top: 0;
+        margin-left: 0;
       }
     }
 
