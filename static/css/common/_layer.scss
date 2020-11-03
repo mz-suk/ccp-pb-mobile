@@ -254,6 +254,9 @@
         width: 2rem;
         height: 2rem;
         margin-top: -0.3rem;
+        &.refresh {
+          background-size: 1.6rem auto;
+        }
       }
     }
 
@@ -311,6 +314,7 @@
 
       .wrap-checkbox {
         margin-top: 0;
+        margin-left: 0;
       }
     }
 
