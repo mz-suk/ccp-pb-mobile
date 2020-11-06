@@ -662,6 +662,9 @@
       border-bottom: 0.1rem solid $fcF0;
     }
   }
+  .level-area {
+    margin-top: 1.5rem;
+  }
 }
 .more-comment-wrap {
   margin-top: 1rem;
@@ -1017,6 +1020,59 @@
       .img {
         margin: 3rem 0 1.5rem;
         display: block;
+      }
+    }
+  }
+}
+
+.level-area {
+  padding: 2rem 2.5rem 1.5rem;
+  border: 0.1rem solid $fcF0;
+
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: $fc1;
+
+    em {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+  }
+
+  .score {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-top: 0.1rem dotted $fcD7;
+
+    & > span {
+      position: relative;
+      padding-left: 1rem;
+      font-size: 1.1rem;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0.8rem;
+        left: 0.4rem;
+        display: block;
+        width: 0.2rem;
+        height: 0.2rem;
+        background: $fc6;
+        border-radius: 50%;
+      }
+
+      &:not(:first-child) {
+        margin-left: 2rem;
+      }
+
+      em {
+        margin-left: 0.3rem;
+        font-size: 1.2rem;
+        color: $fc1;
       }
     }
   }
