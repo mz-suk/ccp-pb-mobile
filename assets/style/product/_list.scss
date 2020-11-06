@@ -323,11 +323,6 @@
       }
     }
   }
-  .logo-img {
-    margin: 3rem auto 2.5rem;
-    width: 14.6rem;
-    height: 2.5rem;
-  }
   .empty-img {
     width: 10rem;
     height: 10rem;
@@ -372,17 +367,13 @@
       color: $pc3;
     }
     + .btn-area {
+      flex-wrap: nowrap;
       margin: 4rem 2rem 0;
-      .btn {
-        width: 100%;
-      }
     }
   }
   &.member {
     .text-box {
-      margin-top: 2rem;
       + .btn-area {
-        margin-top: 3rem;
         .btn {
           font-size: 1.5rem;
         }
