@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">카닥 차수리 비교견적 서비스</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="wrap-cardoc">
+            <p class="logo"><img src="../../../assets/img/layout/icon_cardoc.svg" alt="cardoc"></p>
+            <p class="big-txt">
+              대한민국 1등 <em>차수리 견적 비교 서비스, 카닥!</em>
+            </p>
+            <p class="txt-row">차수리가 필요하신가요?<br/>
+              내 차 스크래치 사진을 올려주세요!</p>
+            <p class="txt-row">사진 1장만으로 평균 5~6개 수리업체<br/>
+              견적을 받아 비교할 수 있습니다</p>
+            <div class="color-box">
+              소중한 내차,<br/><em>믿을 수 있는 업체</em>에서 안심하고<br/>수리하세요.
+            </div>
+            <p class="guide-title">
+              <i class="bg-icon doc-star"></i>카닥 서비스 이용 혜택
+            </p>
+            <ul class="list-dot type1">
+              <li>사진 1장으로 간편한 견적요청</li>
+              <li>평균 5~6개 수리견적 비교</li>
+              <li>실시간 업체상담 및 예약</li>
+              <li>카닥 1년 무상 품질 보증서비스</li>
+              <li>다양한 이벤트 및 혜택</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>

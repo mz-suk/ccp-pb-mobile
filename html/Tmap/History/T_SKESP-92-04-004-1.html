@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">리뷰 등록</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="review-cont">
+          <div class="apply-row">
+            <div class="label-area">
+              <span class="badge grad1 lg">오일,배터리 교환</span>
+              <span class="date">2020.06.10 이용</span>
+            </div>
+            <div class="title-area">
+              <p class="title"><strong>불스원프라자 대자점</strong></p>
+            </div>
+            <div class="like-box"> <!-- 선택된 버튼에 active 클래스-->
+              <button><i class="bg-icon like-down"></i>별로에요</button>
+              <button class="active"><i class="bg-icon like-up"></i>좋아요</button>
+            </div>
+            <div class="review-info-box type1">
+              <span class="tit">수리 퀄리티</span>
+              <div class="rating-box">
+                <div class="rating">
+                  <span class="percent" style="width: 80%">4.0</span>
+                </div><span class="num">4.0</span>
+              </div>
+            </div>
+            <div class="review-info-box type1">
+              <span class="tit">서비스/친절도</span>
+              <div class="rating-box">
+                <div class="rating">
+                  <span class="percent" style="width: 80%">4.0</span>
+                </div><span class="num">4.0</span>
+              </div>
+            </div>
+            <div class="review-info-box type1">
+              <span class="tit">견적 정확도</span>
+              <div class="rating-box">
+                <div class="rating">
+                  <span class="percent" style="width: 80%">4.0</span>
+                </div><span class="num">4.0</span>
+              </div>
+            </div>
+            <div class="form-text-area">
+              <textarea maxlength="200" placeholder="리뷰를 작성해 주세요." spellcheck="false"></textarea>
+              <span class="text-length">
+                <!-- 글 작성 시 strong에  class="active" -->
+                <strong>0</strong>/500자
+              </span>
+            </div>
+            <div class="review-add-img">
+              <ul class="img-list">
+                <li>
+                  <label class="btn-add-photo">
+                    <input type="file" />
+                    <span>
+                      <i class="bg-icon photo"></i>
+                      <span class="num">사진 6/20</span>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <img src="../../../assets/img/temp/list-thumb-1.png" alt="" />
+                  <button type="button"><i class="bg-icon remove"></i></button>
+                </li>
+                <li>
+                  <img src="../../../assets/img/temp/list-thumb-1.png" alt="" />
+                  <button type="button"><i class="bg-icon remove"></i></button>
+                </li>
+                <li>
+                  <img src="../../../assets/img/temp/@375x460.jpg" alt="" />
+                  <span class="more-num">+ 4</span>
+                </li>
+              </ul>
+            </div>
+            <div class="attention-info">
+              <div class="wrap-check">
+                <input type="checkbox" id="chk1">
+                <label for="chk1">작성한 리뷰를 카수리에 제공하는 것에 동의 합니다.</label>
+              </div>
+              <p class="asterisk-mark type1">등록해 주시는 리뷰는 카수리 리뷰에 자동으로 등록 됩니다.</p>
+              <a href="#" class="btn apply color1">확인</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>

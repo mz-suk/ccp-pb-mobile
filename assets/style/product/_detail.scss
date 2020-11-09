@@ -998,12 +998,20 @@
       align-items: center;
       .thumb-img {
         margin-right: 1.5rem;
+        padding-top: 1.3rem;
         width: 5rem;
         height: 5rem;
+        text-align: center;
         overflow: hidden;
-        background: $fcD7;
+        background: $fcF9;
+        border: 0.1rem solid $fcF0;
         border-radius: 50%;
-        object-fit: cover;
+        box-sizing: border-box;
+
+        .bg-icon {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
       }
       .thumb-txt {
         color: $fc1;
