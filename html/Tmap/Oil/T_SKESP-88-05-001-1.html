@@ -19,64 +19,63 @@
   </head>
 
   <body>
-    <div id="container"></div>
-
-    <div class="fix-footer-area">
-      <button type="button" class="btn type2 color4">다음으로</button>
-    </div>
-
-    <!-- Popup -->
-    <div class="wrapper-layer pos-right">
-      <div class="wrap-layer">
-        <header class="header header-popup">
-          <h1 class="title">차량정보 추가 입력</h1>
-          <div class="right">
-            <button type="button" class="bg-icon close">닫기</button>
-          </div>
-        </header>
-        <div class="wrap-contents">
-          <div class="block-layout">
-            <div class="gray-box top-box">
-              <ul class="list-dot type1">
-                <li>오일,배터리 교환 서비스 이용을 위해 고객님의 차량정보를
-                  다시 한번 선택해 주세요.</li>
-              </ul>
-            </div>
-            <ul class="form-list">
-              <div class="form-div">
-                <p class="title">제조사</p>
-                <div class="form-input">
-                  <input type="text" placeholder="KMHJB81VP9ANQNB" value="KMHJB81VP9ANQNB" />
-                  <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
-                </div>
-              </div>
-              <li class="form-div">
-                <p class="title">모델명</p>
-                <div>
-                  <select class="select type1" required>
-                    <option value>선택해 주세요.</option>
-                    <option>벤츠 A클래스 AMG</option>
-                    <option>option3</option>
-                  </select>
-                </div>
-              </li>
-              <li class="form-div">
-                <p class="title">서브모델명</p>
-                <div>
-                  <select class="select type1" required>
-                    <option value>선택해 주세요.</option>
-                    <option>메르세데스-벤츠</option>
-                    <option>option3</option>
-                  </select>
-                </div>
-              </li>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">차량정보 추가 입력</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="block-layout">
+          <div class="gray-box top-box">
+            <ul class="list-dot type1">
+              <li>오일,배터리 교환 서비스 이용을 위해 고객님의 차량정보를
+                다시 한번 선택해 주세요.</li>
             </ul>
           </div>
+          <ul class="form-list">
+            <div class="form-div">
+              <p class="title">제조사</p>
+              <div class="form-input">
+                <input type="text" placeholder="KMHJB81VP9ANQNB" value="KMHJB81VP9ANQNB" />
+                <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+              </div>
+            </div>
+            <li class="form-div">
+              <p class="title">모델명</p>
+              <div>
+                <select class="select type1" required>
+                  <option value>선택해 주세요.</option>
+                  <option>벤츠 A클래스 AMG</option>
+                  <option>option3</option>
+                </select>
+              </div>
+            </li>
+            <li class="form-div">
+              <p class="title">서브모델명</p>
+              <div>
+                <select class="select type1" required>
+                  <option value>선택해 주세요.</option>
+                  <option>메르세데스-벤츠</option>
+                  <option>option3</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4">다음으로</button>
         </div>
       </div>
-      <div class="mask"></div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
     </div>
-    <!-- //Popup -->
-
   </body>
 </html>
