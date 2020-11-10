@@ -199,6 +199,7 @@
   .apply-row {
     padding: 4rem 2rem 0;
     text-align: center;
+
     .title {
       padding: 0;
       font-size: 1.8rem;
@@ -206,6 +207,35 @@
     .review-info-box {
       border: 0 none;
       margin-top: 2rem;
+
+      &.type1 {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+
+        .rating-box {
+          margin: 0 0 0 auto;
+          display: flex;
+          align-items: center;
+
+          .rating,
+          .percent {
+            margin-top: 0;
+            width: 17rem;
+            height: 2.8rem;
+            background-size: auto 6.9rem;
+          }
+          .num {
+            margin-left: 1rem;
+            font-size: 1.8rem;
+          }
+        }
+
+        & + .review-info-box.type1 {
+          margin-top: 0.5rem;
+        }
+      }
+
       .rating-box {
         margin: 1rem 0;
         .rating {
@@ -235,7 +265,7 @@
     }
     .attention-info {
       margin: 3rem 0 0;
-      padding: 1.5rem 0 0;
+      padding: 3rem 0 0;
       border-top: 0.1rem solid $fcF0;
       text-align: left;
       .title {
@@ -248,6 +278,10 @@
           color: $fc6;
           font-size: 1.1rem;
         }
+      }
+
+      .asterisk-mark {
+        margin: 2rem 0 4rem;
       }
     }
     .label-area {
@@ -262,6 +296,34 @@
   }
   .apply {
     width: 100%;
+  }
+
+  .like-box {
+    margin-top: 4rem;
+    display: flex;
+
+    button {
+      flex: 1;
+      height: 4.8rem;
+      background: $fcF;
+      border: 0.1rem solid $fcD7;
+      box-sizing: border-box;
+
+      &:first-child {
+        border-right: none;
+      }
+
+      .bg-icon {
+        margin-right: 0.4rem;
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+
+      &.active {
+        color: $fc1;
+        border: 0.1rem solid $fc1;
+      }
+    }
   }
 }
 .review-add-img {
@@ -376,6 +438,7 @@
     padding-left: 1.2rem;
     color: $fc1;
     margin-top: 0.5rem;
+    line-height: 1.35;
     &:first-child {
       margin-top: 0;
     }
@@ -1011,6 +1074,61 @@
             height: 1.6rem;
           }
         }
+      }
+    }
+  }
+}
+
+.star-score-area {
+  margin-top: 1.5rem;
+  padding: 2.2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  background: $fcF9;
+  border: 0.1rem solid $fcF0;
+  border-radius: 0.1rem;
+
+  .icon-box {
+    margin-right: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.4rem;
+    height: 6.4rem;
+    background: $fcF;
+    border: 0.1rem solid $fcE4;
+    border-radius: 50%;
+
+    .bg-icon {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+
+  .score-list {
+    width: calc(100% - 9.1rem);
+    li {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      color: $fc1;
+
+      &::before {
+        content: "";
+        margin: 0 0.45rem;
+        display: block;
+        width: 0.3rem;
+        height: 0.3rem;
+        background: $fc6;
+        border-radius: 50%;
+      }
+
+      &:not(:first-child) {
+        margin-top: 0.7rem;
+      }
+
+      .rating-box {
+        margin-left: auto;
       }
     }
   }

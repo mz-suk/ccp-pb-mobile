@@ -63,6 +63,16 @@
     }
   }
 
+  .logo-img {
+    display: inline-block;
+    width: 14.6rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .left,
   .right {
     position: absolute;

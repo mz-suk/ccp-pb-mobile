@@ -662,6 +662,9 @@
       border-bottom: 0.1rem solid $fcF0;
     }
   }
+  .level-area {
+    margin-top: 1.5rem;
+  }
 }
 .more-comment-wrap {
   margin-top: 1rem;
@@ -780,6 +783,21 @@
     margin-top: 1rem;
   }
 }
+
+//견적 목록 예약업체
+.wrap-estimate {
+  padding: 3rem 2rem;
+
+  .estimate-list {
+    .estimate-box {
+      padding: 2.5rem;
+      &:not(:first-child) {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
 .estimate-box {
   padding: 3rem 2.5rem 2.5rem;
   border: 0.1rem solid $fcD7;
@@ -856,6 +874,116 @@
   & + .txt-row {
     margin-top: 3rem;
   }
+
+  //티맵 견적 목록 예약업체
+
+  .txt-desc {
+    margin-top: 0.3rem;
+    color: $fc6;
+  }
+
+  .etc {
+    margin-top: 1.8rem;
+
+    .bg-icon {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin: -0.5rem 0.5rem 0 0;
+    }
+
+    span {
+      display: inline-block;
+      margin-right: 0.8rem;
+      color: $fc1;
+
+      &:not(:first-of-type):before {
+        display: inline-block;
+        width: 0.1rem;
+        height: 1.1rem;
+        margin: -0.2rem 1rem 0 0;
+        border-right: 0.1rem dotted $fc1;
+        vertical-align: middle;
+        content: "";
+      }
+    }
+  }
+
+  .info {
+    margin-top: 2rem;
+    padding: 1.5rem 2.5rem;
+    background: $fcF0;
+    border: 0.1rem solid #fafafa;
+
+    & + .more-detail {
+      margin-top: 0;
+      border-top: none;
+    }
+
+    .sum-list {
+      &:not(:first-child) {
+        margin-bottom: 1rem;
+        margin-top: 1.6rem;
+        padding-top: 1.6rem;
+        border-top: 0.1rem dotted $fcD7;
+      }
+
+      dt,
+      dd {
+        margin-top: 0;
+      }
+      dd {
+        font-size: 1.5rem;
+        em {
+          font: 1.8rem;
+        }
+      }
+
+      .sub-txt {
+        margin-top: 0.4rem;
+        font-size: 1.1rem;
+        color: $fc6;
+        em {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .more-detail {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.1rem solid $fcE4;
+
+    .more-item {
+      position: relative;
+      flex: 1;
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0.1rem;
+        height: 2rem;
+        background: $fcE4;
+      }
+      .bg-icon {
+        margin-top: -0.4rem;
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
 }
 
 .review-list {
@@ -870,12 +998,20 @@
       align-items: center;
       .thumb-img {
         margin-right: 1.5rem;
+        padding-top: 1.3rem;
         width: 5rem;
         height: 5rem;
+        text-align: center;
         overflow: hidden;
-        background: $fcD7;
+        background: $fcF9;
+        border: 0.1rem solid $fcF0;
         border-radius: 50%;
-        object-fit: cover;
+        box-sizing: border-box;
+
+        .bg-icon {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
       }
       .thumb-txt {
         color: $fc1;
@@ -892,6 +1028,59 @@
       .img {
         margin: 3rem 0 1.5rem;
         display: block;
+      }
+    }
+  }
+}
+
+.level-area {
+  padding: 2rem 2.5rem 1.5rem;
+  border: 0.1rem solid $fcF0;
+
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: $fc1;
+
+    em {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+  }
+
+  .score {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-top: 0.1rem dotted $fcD7;
+
+    & > span {
+      position: relative;
+      padding-left: 1rem;
+      font-size: 1.1rem;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0.8rem;
+        left: 0.4rem;
+        display: block;
+        width: 0.2rem;
+        height: 0.2rem;
+        background: $fc6;
+        border-radius: 50%;
+      }
+
+      &:not(:first-child) {
+        margin-left: 2rem;
+      }
+
+      em {
+        margin-left: 0.3rem;
+        font-size: 1.2rem;
+        color: $fc1;
       }
     }
   }
