@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">수리견적 이용내역</h1>
+        <h1 class="title">결제 및 예약완료</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
@@ -35,34 +35,39 @@
       <!-- Wrap-contents -->
       <div class="wrap-contents">
         <div class="charge-top">
-          <div class="tag-area">
-            <span class="tag"><i class="bg-icon reservation"></i> 예약</span>
+          <div class="img"><img src="../../../assets/img/layout/icon-empty-estimate.svg" alt=""></div>
+          <p class="txt-row">예약요청이 완료되었습니다.</p>
+          <p class="txt-row type1">아래와 같은 서비스의<br/>예약요청이 정상 완료되었습니다.</p>
+          <div class="text-box">
+            <dl class="define-list">
+              <dt>예약번호</dt>
+              <dd>1205499</dd>
+              <dt>주문일시</dt>
+              <dd>2020.06.12 (화) 15:07:12</dd>
+            </dl>
           </div>
-          <p class="txt-row">2020.09.24 (목) 오전 11시 40분</p>
-          <p class="txt-row type1"><a href="javascript:void(0);">기란 모터스</a>로 방문해주세요.</p>
-          <div class="text-box">129디 8189 차량으로 방문해주세요.</div>
         </div>
 
         <div class="accordion active type2">
           <!-- [D] accordion 펼침 상태 : .active 추가 -->
           <div class="accordion-title">
-            <p class="title">예약 정보</p>
+            <p class="title">예약정보</p>
             <button type="button" class="bg-icon toggle">펼침</button>
           </div>
           <div class="accordion-cont">
             <div class="order-cont">
               <div class="title-sub">
-                <p>예약일시</p>
+                <p>예약 일시 정보</p>
               </div>
-              <dl class="customer-info">
-                <dt>요청 일시</dt>
-                <dd>2020.05.10 (화) 15:07</dd>
-                <dt>확정 일시</dt>
-                <dd>2020.05.10 (화) 15:07</dd>
-                <dt>요청사항</dt>
-                <dd>오전 지하 주차장 F-30에 주차.
-                  왼쪽 타이어에 흠집이 있으니까 살살해주시고 트렁크 안에는 개인 짐이 많으니 청소 안하셔도 됩니다.</dd>
-              </dl>
+              <div class="order-info">
+                <dl class="customer-info">
+                  <dt>예약 일시</dt>
+                  <dd>2020.05.10 (화) 오전 11시 30분</dd>
+                  <dt>요청사항</dt>
+                  <dd>오전 지하 주차장 F-30에 주차.
+                    왼쪽 타이어에 흠집이 있으니까 살살해주시고 트렁크 안에는 개인 짐이 많으니 청소 안하셔도 됩니다.</dd>
+                </dl>
+              </div>
             </div>
 
             <div class="order-cont">
@@ -73,7 +78,7 @@
                 <dt>예약자명</dt>
                 <dd>송헌호</dd>
                 <dt>연락처</dt>
-                <dd>010 - 1234 -5678</dd>
+                <dd>010 - 1234 - 5678</dd>
               </dl>
             </div>
 
@@ -85,16 +90,15 @@
                 <dt>차량 번호</dt>
                 <dd>123디 1234</dd>
                 <dt>제조사</dt>
-                <dd>싼타페</dd>
+                <dd>랜드로버</dd>
                 <dt>세부모델명</dt>
-                <dd>[싼타페 TM (18.2.21 ~ 현재)</dd>
+                <dd>랜드로버 레인지로버 스포트 슈퍼차지드 HSE</dd>
                 <dt>등급</dt>
                 <dd>준대형 SUV</dd>
                 <dt>색상</dt>
                 <dd>퓨어 화이트</dd>
               </dl>
             </div>
-
           </div>
         </div>
 
@@ -132,14 +136,12 @@
                 </dl>
               </div>
             </div>
-
           </div>
         </div>
 
         <div class="charge-btm">
           <div class="btn-area grid">
-            <button type="button" class="btn">예약취소</button>
-            <button type="button" class="btn color1">예약일시 변경</button>
+            <button type="button" class="btn color1">홈으로 가기</button>
           </div>
         </div>
       </div>
