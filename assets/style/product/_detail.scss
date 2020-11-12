@@ -56,7 +56,7 @@
   border: 0.1rem solid $fcF0;
 
   &.type1 {
-    padding: 2rem 0;
+    padding: 2.5rem 0;
     .bg-icon {
       margin: 0 1rem 0;
       display: inline-block;
@@ -792,7 +792,7 @@
     .estimate-box {
       padding: 2.5rem;
       &:not(:first-child) {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
       }
     }
   }
@@ -911,8 +911,8 @@
   .info {
     margin-top: 2rem;
     padding: 1.5rem 2.5rem;
-    background: $fcF0;
-    border: 0.1rem solid #fafafa;
+    background: #fafafa;
+    border: 0.1rem solid $fcF0;
 
     & + .more-detail {
       margin-top: 0;
