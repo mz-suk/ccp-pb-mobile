@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-empty type2">
+          <div class="empty-img">
+            <img src="../../assets/img/layout/icon-empty-blind.svg" alt />
+          </div>
+          <p class="empty-text">
+            <strong>현재 서비스 접속이 불가합니다.</strong>
+          </p>
+          <p class="empty-text">접속하신 고객님이 많거나 인터넷 네트워크 상태가<br/>불안정하여 서비스 접속이 불가합니다.<br/>이용에 불편을 드린 점 진심으로 사과드리며,<br/>잠시 후 다시 이용 해 주시기 바랍니다.</p>
+          <p class="empty-text type1">고객행복센터 1599-0051</p>
+          <div class="btn-area grid">
+            <button type="button" class="btn">이전</button>
+            <button type="button" class="btn color1">새로고침</button>
+          </div>
+          <div class="copyright">SK Energy Co.,LTD. All Rights Reserved.</div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+    </div>
+  </body>
+</html>
