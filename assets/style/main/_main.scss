@@ -17,16 +17,20 @@
     margin-top: 2.5rem;
   }
 
-  .info-car-cont {
+  .info-car-cont.type1 {
     padding: 2.5rem 2.5rem 3.5rem;
     background: $fcF;
     border-color: $fcF0;
 
     .car-number {
-      margin: 1.8rem 0 0.7rem;
+      display: inline-block;
+      width: calc(100% - 7.5rem);
+      margin: 0 0 0.7rem;
       font-size: 2.4rem;
     }
     .car-name {
+      display: inline-block;
+      width: calc(100% - 7.5rem);
       margin-top: 0;
       font-size: 1.3rem;
     }
@@ -37,10 +41,26 @@
         margin-top: 2rem;
       }
     }
-    &.type1 {
-      .logo {
-        top: 6rem;
+    .top-area {
+      margin-top: 1.8rem;
+
+      &:after {
+        display: block;
+        clear: both;
+        content: "";
       }
+    }
+    .logo {
+      display: inline-block;
+      position: static;
+      float: right;
+      margin-top: -0.5rem;
+
+      // img {
+      //   width: 100%;
+      //   height: 100%;
+      //   object-fit: cover;
+      // }
     }
   }
 
