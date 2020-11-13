@@ -3,14 +3,18 @@
   background: #fdfdfd;
   border-top: 1px solid $fcD7;
   text-align: center;
+
   .list-policy {
     margin-bottom: 2.5rem;
+
     li {
       display: inline-block;
       color: $fc1;
       line-height: 1.3rem;
+
       &:not(:first-child) {
         margin-left: 1rem;
+
         &:before {
           display: inline-block;
           width: 0.1rem;
@@ -23,16 +27,19 @@
       }
     }
   }
+
   .wrap-address {
     .address {
       display: none;
       margin-top: 1rem;
       font-size: 1.2rem;
     }
+
     .btn-arrow.active + .address {
       display: block;
     }
   }
+
   small {
     display: block;
     margin-top: 2.5rem;
