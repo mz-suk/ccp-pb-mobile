@@ -455,11 +455,15 @@
       flex: 1 1 auto;
       color: $fc1;
     }
+
+    & + .wrap-filter-tab {
+      height: calc(100% - 15.6rem);
+    }
   }
 
   .wrap-filter-tab {
     display: flex;
-    height: calc(100% - 15.6rem);
+    height: 100%;
   }
 
   .filter-menu {
@@ -828,6 +832,7 @@
   .bg-icon {
     width: 1.6rem;
     height: 1.6rem;
+
     &.size2 {
       width: 2rem;
       height: 2rem;
@@ -836,6 +841,11 @@
     &.tooltip2 {
       margin-top: -0.4rem;
       margin-left: 0.6rem;
+    }
+
+    &.gas2 {
+      width: 2rem;
+      height: 2rem;
     }
   }
   .btn-arrow {
