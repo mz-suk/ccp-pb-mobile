@@ -647,17 +647,12 @@ input[type="checkbox"] {
     }
   }
 }
-// .form-list {
-//   .form-div:not(:first-child) {
-//     margin-top: 3rem;
-//   }
-// }
+
 .form-div {
   .title {
     margin-bottom: 1rem;
     font-size: 1.7rem;
     color: $fc1;
-    line-height: 1;
     & + .form-search {
       padding-top: 0.4rem;
     }
@@ -669,6 +664,32 @@ input[type="checkbox"] {
   }
   & + .form-div {
     margin-top: 3rem;
+  }
+
+  .list-dot.color1 {
+    margin: 3rem 0 4rem;
+
+    li {
+      font-size: 1.3rem;
+    }
+    .tel {
+      border-bottom: 0.1rem solid;
+    }
+  }
+
+  .btn-area {
+    margin-top: 4rem;
+  }
+
+  .txt-area {
+    margin-top: 2.5rem;
+    text-align: center;
+
+    .btn-arrow {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      text-decoration: underline;
+    }
   }
 }
 // 검색화면
@@ -769,5 +790,66 @@ input[type="checkbox"] {
   }
   span {
     color: $fc9;
+  }
+}
+
+.form-list {
+  .title {
+    font-size: 1.5rem;
+    color: $fc1;
+
+    .req {
+      padding-left: 0.3rem;
+      font-size: 1.1rem;
+      color: $gc3;
+    }
+  }
+
+  .wrap-check {
+    margin: 2rem 0 0 1rem;
+  }
+
+  .checkbox {
+    margin-right: 2rem;
+
+    label {
+      font-size: 1.5rem;
+    }
+  }
+
+  .txt-guide {
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    color: $gc3;
+    font-size: 1.1rem;
+
+    &:before {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      width: 0.2rem;
+      height: 0.2rem;
+      background: $gc3;
+      content: "";
+    }
+  }
+
+  &.type1 {
+    .title {
+      margin-bottom: 1rem;
+    }
+
+    li:not(:first-child) {
+      margin-top: 3rem;
+    }
+  }
+
+  & + .btn-area {
+    margin-top: 4rem;
+
+    .btn {
+      font-size: 1.5rem;
+    }
   }
 }

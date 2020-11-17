@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">직접등록</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="block-layout">
+          <div class="form-div">
+            <p class="title">서비스를 제공받으실 차량번호와<br/>정보를 입력 및 선택해주세요.</p>
+            <ul class="list-dot color1">
+              <li>차량번호를 포함한 필수항목을 입력 및 선택하셔야<br/>정보 등록을 완료해주시기 바랍니다.</li>
+              <li>실제 차량의 모델명, 등급 등의 정보와 맞지 않는 경우<br/>패널티가 발생할 수 있는 점 주의해주시기 바랍니다.</li>
+            </ul>
+          </div>
+          <ul class="form-list type1">
+            <li>
+              <p class="title">차량번호<em class="req">*</em></p>
+              <div class="form-input">
+                <input type="text" placeholder="현대">
+                <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+              </div>
+            </li>
+            <li>
+              <p class="title">제조사<em class="req">*</em></p>
+              <select class="select type1" required="">
+                <option value="">선택해 주세요.</option>
+              </select>
+            </li>
+            <li>
+              <p class="title">모델명<em class="req">*</em></p>
+              <select class="select type1" required="">
+                <option value="">선택해 주세요.</option>
+              </select>
+            </li>
+            <li>
+              <p class="title">서브 모델명<em class="req">*</em></p>
+              <select class="select type1" required="">
+                <option value="">선택해 주세요.</option>
+              </select>
+            </li>
+            <li>
+              <p class="title">등급<em class="req">*</em></p>
+              <select class="select type1" required="">
+                <option value="">선택해 주세요.</option>
+              </select>
+            </li>
+            <li>
+              <p class="title">유종<em class="req">*</em></p>
+              <div class="form-input">
+                <input type="text" placeholder="차량의 유종을 입력해주세요 (휘발유, 경유)">
+                <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+              </div>
+            </li>
+            <li>
+              <p class="title">기어<em class="req">*</em></p>
+              <div>
+                <div class="checkbox type4">
+                  <input type="radio" id="chk1" name="group1" checked="">
+                  <label for="chk1"><p class="left">자동</p></label>
+                </div>
+                <div class="checkbox type4">
+                  <input type="radio" id="chk2" name="group1">
+                  <label for="chk2"><p class="left">수동</p></label>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="title">색상<em class="req">*</em></p>
+              <div class="form-input">
+                <input type="text" placeholder="차량의 색상을 입력해주세요 (흰색, 검정색)">
+                <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+              </div>
+            </li>
+            <li>
+              <p class="title">연식</p>
+              <select class="select type1" required="">
+                <option value="">2018</option>
+                <option>2019</option>
+              </select>
+            </li>
+            <li>
+              <p class="title">차대번호</p>
+              <div class="form-input">
+                <input type="text" placeholder="알파벳, 숫자조합 17자리 입력">
+                <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+              </div>
+              <p class="txt-guide">자동차등록증에 기재되어 있는 알파벳, 숫자 조합 17자리를 입력해주세요.</p>
+            </li>
+          </ul>
+          <div class="btn-area grid">
+            <button type="button" class="btn">등록취소</button>
+            <button type="button" class="btn color1">등록완료</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
