@@ -1387,6 +1387,11 @@
     background: $fcF9;
     border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
+
+    &:not(label) {
+      background: $fcF;
+    }
+
     &.type1 {
       .logo {
         top: 4.8rem;
@@ -1457,6 +1462,11 @@
       color: $fc1;
       text-align: center;
       border-top: 0.1rem dotted $fcD7;
+
+      .customer-info {
+        margin-top: 1.5rem;
+        text-align: left;
+      }
     }
     .car-info-box {
       margin-top: 1.5rem;
@@ -1477,6 +1487,16 @@
         border: 0.1rem solid $fcE4;
       }
     }
+
+    .gray-box {
+      &.vartical-bar {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+
+  .btn-area {
+    margin-top: 3rem;
   }
 
   .dropdown-area {

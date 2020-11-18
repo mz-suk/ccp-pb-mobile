@@ -322,6 +322,31 @@
     text-align: center;
     color: $fc1;
   }
+
+  &.type1 {
+    margin-top: 4rem;
+    padding: 2rem 1.5rem;
+    font-size: 1.1rem;
+  }
+  &.type2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0 4rem;
+    text-align: center;
+    color: $fc1;
+
+    .btn {
+      margin-top: 2rem;
+    }
+  }
+  &.type3 {
+    padding-left: 2.5rem;
+    display: block;
+    color: $fc1;
+    p:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
   &.top-box {
     padding: 3rem 2rem;
     display: block;
@@ -342,20 +367,15 @@
       }
     }
   }
-  &.type1 {
-    margin-top: 4rem;
-    padding: 2rem 1.5rem;
-    font-size: 1.1rem;
-  }
-  &.type2 {
-    flex-wrap: wrap;
+  &.vartical-bar {
     justify-content: center;
-    padding: 3rem 0 4rem;
-    text-align: center;
     color: $fc1;
-
-    .btn {
-      margin-top: 2rem;
+    span {
+      margin-top: 0;
+      em {
+        font-size: 1.5rem;
+        color: $fc1;
+      }
     }
   }
   .right {

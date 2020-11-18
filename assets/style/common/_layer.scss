@@ -222,6 +222,14 @@
     padding: 1.5rem 2rem 1.5rem 3rem;
     border-top: 0.1rem solid $fcD7;
 
+    &.type1 {
+      padding: 0;
+      border-top: none;
+      button {
+        flex: 1;
+      }
+    }
+
     .refresh {
       width: 1.6rem;
       height: 1.6rem;
@@ -347,6 +355,9 @@
         font-size: 1.5rem;
         text-align: left;
       }
+    }
+    .gray-box {
+      margin-top: 2rem;
     }
   }
 }
