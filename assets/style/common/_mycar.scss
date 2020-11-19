@@ -243,9 +243,14 @@
     }
     label {
       align-items: flex-start;
+      > div {
+        width: calc(100% - 8rem);
+      }
     }
     .btn-arrow {
+      width: 8rem;
       margin-top: 0.5rem;
+      text-align: right;
     }
   }
   .option-box {
