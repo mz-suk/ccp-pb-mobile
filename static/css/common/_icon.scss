@@ -535,6 +535,18 @@
   &.like-down {
     background-image: url(~assets/img/layout/icon-like-down.svg);
   }
+  &.icon-detailing {
+    background-image: url(~assets/img/layout/icon-detailing.svg);
+  }
+  &.icon-oiling {
+    background-image: url(~assets/img/layout/icon-oiling.svg);
+  }
+  &.membership-type1 {
+    background-image: url(~assets/img/layout/icon-membership-type1.svg);
+  }
+  &.icon-regularly {
+    background-image: url(~assets/img/layout/icon-regularly.svg);
+  }
 }
 // 뱃지
 
@@ -553,11 +565,6 @@
   border-radius: 10rem;
   box-sizing: border-box;
   line-height: 1;
-
-  // &.lg {
-  //   height: 2.5rem;
-  //   font-size: 1.1rem;
-  // }
 
   &.blue {
     color: $pc3;

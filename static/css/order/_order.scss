@@ -648,7 +648,8 @@
     font-size: 1.1rem;
   }
 
-  .wrap-btn {
+  .wrap-btn,
+  .btn-area {
     margin-top: 3rem;
 
     .btn {
@@ -658,6 +659,7 @@
     .download {
       width: 1.6rem;
       height: 1.6rem;
+      margin-top: 0;
     }
   }
 

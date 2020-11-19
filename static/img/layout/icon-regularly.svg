@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_280502" data-name="사각형 280502" width="20" height="20" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_regularly_20" transform="translate(10 10)">
+    <g id="그룹_368052" data-name="그룹 368052" transform="translate(-10 -10)" clip-path="url(#clip-path)">
+      <g id="그룹_368051" data-name="그룹 368051" clip-path="url(#clip-path)">
+        <g id="그룹_368048" data-name="그룹 368048" opacity="0">
+          <g id="그룹_368047" data-name="그룹 368047" clip-path="url(#clip-path)">
+            <rect id="사각형_280497" data-name="사각형 280497" width="20" height="20" fill="#f0f"/>
+          </g>
+        </g>
+        <g id="그룹_368050" data-name="그룹 368050" opacity="0">
+          <g id="그룹_368049" data-name="그룹 368049" clip-path="url(#clip-path)">
+            <rect id="사각형_280499" data-name="사각형 280499" width="20" height="20" fill="#f0f"/>
+          </g>
+        </g>
+        <path id="패스_743337" data-name="패스 743337" d="M13.4,3.4A7.2,7.2,0,0,1,8.5,16.8" fill="none" stroke="#111" stroke-width="1.5"/>
+        <path id="패스_743338" data-name="패스 743338" d="M4.5,15.2A7.1,7.1,0,0,1,9.4,2.8h.4" fill="none" stroke="#111" stroke-width="1.5"/>
+        <path id="패스_743339" data-name="패스 743339" d="M9.1,3.7l.7-.8L7.6.8" fill="none" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="선_103592" data-name="선 103592" y1="1.2" x2="1.3" transform="translate(7.8 3.7)" fill="none" stroke="#111" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="패스_743340" data-name="패스 743340" d="M9.2,17.6l-.7-.7,2.2-2.1" fill="none" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="선_103593" data-name="선 103593" x1="1.3" y1="1.3" transform="translate(9.2 17.6)" fill="none" stroke="#111" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
