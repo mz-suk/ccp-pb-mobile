@@ -275,7 +275,7 @@
     }
 
     .list-dot:not(:first-child) {
-      padding-left: 2.5rem;
+      padding-left: 1.5rem;
     }
 
     .btn-arrow {
@@ -338,26 +338,6 @@
     }
     .customer-info {
       margin-top: 2.5rem;
-    }
-  }
-
-  .form-list {
-    .title {
-      font-size: 1.5rem;
-      .req {
-        padding-left: 0.3rem;
-        font-size: 1.1rem;
-        color: $pc3;
-      }
-    }
-    .wrap-check {
-      margin: 2rem 0 0 1rem;
-    }
-    .checkbox {
-      margin-right: 2rem;
-      label {
-        font-size: 1.5rem;
-      }
     }
   }
 }

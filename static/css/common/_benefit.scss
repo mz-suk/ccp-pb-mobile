@@ -269,7 +269,6 @@
   .evnet-box {
     position: relative;
     display: block;
-    border-radius: 1.6rem;
     &.theme-ligth {
       .box-top {
         .title,
@@ -291,11 +290,9 @@
       height: 13.5rem;
       border: 0.1rem solid $fcE4;
       border-radius: 1.6rem 1.6rem 0 0;
+
       img {
         border-radius: 1.6rem 1.6rem 0 0;
-        // position: absolute;
-        // left: 0;
-        // bottom: 0;
         width: 100%;
         height: 100%;
         box-sizing: border-box;
@@ -308,7 +305,7 @@
         right: -0.1rem;
         font-size: 1.1rem;
         padding: 0.7rem 1.5rem 0.8rem;
-        border-radius: 0 0 0 1.6rem;
+        border-radius: 0 1.6rem;
         color: $fc1;
         background: $fcF;
       }
