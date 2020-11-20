@@ -12,9 +12,10 @@
       &:after {
         display: none;
       }
-      &:nth-child(odd) {
+      &:not(:last-of-type):nth-child(odd) {
         &:after {
           display: block;
+          border-right-style: dotted;
         }
       }
     }
