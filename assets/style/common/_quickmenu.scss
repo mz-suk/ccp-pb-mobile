@@ -6,8 +6,10 @@
   width: 100%;
   border-top: 0.1rem solid $fcF0;
   background: $fcF;
+
   .quick-menu-list {
     display: flex;
+
     li {
       display: flex;
       flex: 1;
@@ -15,6 +17,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+
       .bg-icon {
         width: 2.4rem;
         height: 2.4rem;
@@ -24,6 +27,33 @@
         padding-top: 0.2rem;
         font-size: 1.2rem;
         color: $fc1;
+      }
+
+      &.active {
+        .menu-name {
+          color: $pc3;
+        }
+        .home {
+          background-image: url(../../assets/img/layout/icon-quick-home-on.svg);
+        }
+        .activity {
+          background-image: url(../../assets/img/layout/icon-activity-on.svg);
+        }
+        .customer2 {
+          background-image: url(../../assets/img/layout/icon-quick-customer-on.svg);
+        }
+        .wash {
+          background-image: url(../../assets/img/layout/icon-quick-wash-on.svg);
+        }
+        .oiling {
+          background-image: url(../../assets/img/layout/icon-quick-oiling-on.svg);
+        }
+        .membership {
+          background-image: url(../../assets/img/layout/icon-quick-membership-on.svg);
+        }
+        .my-muffin {
+          background-image: url(../../assets/img/layout/icon-quick-my-on.svg);
+        }
       }
     }
   }

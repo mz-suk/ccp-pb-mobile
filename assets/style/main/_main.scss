@@ -1,6 +1,10 @@
 .wrapper-main {
   min-height: 100vh;
   background-color: $fcF9;
+
+  .wrap-contents {
+    padding-bottom: 6rem;
+  }
 }
 
 .main-cont {
