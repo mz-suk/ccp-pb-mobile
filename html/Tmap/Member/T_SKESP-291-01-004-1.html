@@ -27,77 +27,73 @@
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
       </header>
-       <!-- //Header -->
+      <!-- //Header -->
 
       <!-- Wrap-contents -->
       <div class="wrap-contents">
         <div class="member-layout">
-          <div class="block-layout">
-            <div class="wrap-empty">
-              <div class="empty-img">
-                <img src="../../../assets/img/layout/icon-empty-member5.svg" alt />
-              </div>
-              <p class="empty-text">
-                <strong>차량정보를 입력해주세요.</strong>
-              </p>
-              <p class="empty-text">선택하신 차량정보를 확인해주세요.<br />등록완료 후 서비스를 이용하실 수 있습니다.</p>
-            </div>
-          </div>
-          <div class="block-layout">
-            <div class="title-sub">
-              <p>기본차량 정보</p>
-            </div>
-            <dl class="customer-info">
-              <dt>차량번호</dt>
-              <dd>123가 5678</dd>
-              <dt>제조사</dt>
-              <dd>메르세데스-벤츠</dd>
-              <dt>모델명</dt>
-              <dd>벤츠 A클래스 AMG</dd>
-            </dl>
-          </div>
-          <div class="block-layout">
+          <div class="order-cont">
+            <p class="title-sub type2">
+              123가5678 차량에 대한<br/>정보 조회 결과입니다.
+            </p>
+            <ul class="list-dot color1">
+              <li>T map에서 선택하신 차량에 대한 정보를 확인해주세요.</li>
+              <li>필비어있는 필수(*)항목을 추가로 입력 및 선택하시어 정보 등록을 완료해주시기 바랍니다.</li>
+              <li>모델명, 색상, 등급 등이 잘못 설정되어 있는 경우 서비스 이용의
+                패널티가 발생할 수 있는 점 주의해주시기 바랍니다.</li>
+            </ul>
             <ul class="form-list">
               <li class="form-div">
-                <p class="title">서브모델명<span class="req">(필수)</span></p>
-                <select class="select type1" required>
-                  <option value>선택해 주세요.</option>
-                  <option>option3</option>
-                </select>
-              </li>
-              <li class="form-div">
-                <p class="title">등급<span class="req">(필수)</span></p>
-                <select class="select type1" required>
-                  <option value>선택해 주세요.</option>
-                  <option>option3</option>
-                </select>
-              </li>
-              <li class="form-div">
-                <p class="title">유종<span class="req">(필수)</span></p>
-                <div class="wrap-check">
-                  <div class="checkbox type4">
-                    <input type="radio" id="chk1" name="group1" checked="">
-                    <label for="chk1">
-                      <p class="left">휘발유</p>
-                    </label>
-                  </div>
-                  <div class="checkbox type4">
-                    <input type="radio" id="chk2" name="group1">
-                    <label for="chk2">
-                      <p class="left">경유</p>
-                    </label>
-                  </div>
-                  <div class="checkbox type4">
-                    <input type="radio" id="chk2" name="group1">
-                    <label for="chk2">
-                      <p class="left">고급휘발유</p>
-                    </label>
-                  </div>
+                <p class="title">차량번호 <span class="asterisk-mark color2">*</span></p>
+                <div class="form-input">
+                  <input type="text" placeholder="현대" value="">
+                  <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
                 </div>
               </li>
               <li class="form-div">
-                <p class="title">기어<span class="req">(필수)</span></p>
-                <div class="wrap-check">
+                <p class="title">제조사 <span class="asterisk-mark color2">*</span></p>
+                <div class="form-input">
+                  <input type="text" placeholder="현대" value="">
+                  <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+                </div>
+              </li>
+              <li class="form-div">
+                <p class="title">모델명 <span class="asterisk-mark color2">*</span></p>
+                <div class="form-input">
+                  <input type="text" placeholder="싼타페" value="">
+                  <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+                </div>
+              </li>
+              <li class="form-div">
+                <p class="title">서브 모델명 <span class="asterisk-mark color2">*</span></p>
+                <div>
+                  <select class="select type1" required="">
+                    <option value="">선택해 주세요.</option>
+                    <option>모델명</option>
+                    <option>모델명</option>
+                  </select>
+                </div>
+              </li>
+              <li class="form-div">
+                <p class="title">등급 <span class="asterisk-mark color2">*</span></p>
+                <div>
+                  <select class="select type1" required="">
+                    <option value="">선택해 주세요.</option>
+                    <option>등급</option>
+                    <option>등급</option>
+                  </select>
+                </div>
+              </li>
+              <li class="form-div">
+                <p class="title">유종 <span class="asterisk-mark color2">*</span></p>
+                <div class="form-input">
+                  <input type="text" placeholder="경유" value="">
+                  <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+                </div>
+              </li>
+              <li class="form-div">
+                <p class="title">기어 <span class="asterisk-mark color2">*</span></p>
+                <div>
                   <div class="checkbox type4">
                     <input type="radio" id="chk1" name="group1" checked="">
                     <label for="chk1">
@@ -113,32 +109,33 @@
                 </div>
               </li>
               <li class="form-div">
-                <p class="title">색상<span class="req">(필수)</span></p>
-                <select class="select type1" required>
-                  <option value>선택해 주세요.</option>
-                  <option>option3</option>
-                </select>
+                <p class="title">색상 <span class="asterisk-mark color2">*</span></p>
+                <div class="form-input">
+                  <input type="text" placeholder="차량의 색상을 입력해주세요 (흰색, 검정색)" value="">
+                  <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
+                </div>
               </li>
               <li class="form-div">
                 <p class="title">연식</p>
-                <select class="select type1" required>
-                  <option value>선택해 주세요.</option>
-                  <option>2019</option>
-                </select>
+                <div>
+                  <select class="select type1" required="">
+                    <option value="">선택해 주세요.</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                  </select>
+                </div>
               </li>
               <li class="form-div">
                 <p class="title">차대번호</p>
                 <div class="form-input">
-                  <input type="text" placeholder="알파벳, 숫자조합 17자리를 입력해주세요."/>
+                  <input type="text" placeholder="알파벳, 숫자조합 17자리 입력" value="">
+                  <button type="button" class="btn-clear-x" title="검색단어 삭제"><i class="bg-icon clear-x"></i></button>
                 </div>
               </li>
             </ul>
-            <div class="new-add-noti">
-              <ul class="list-dot">
-                <li>비어있는 <span class="col-pc3">(필수)</span>항목을 추가로 입력 및 선택하시어 정보 등록을 완료해주시기 바랍니다.</li>
-                <li>모델명, 색상, 등급 등이 잘못 설정되어 있는 경우<br />서비스 이용의 패널티가 발생할 수 있는 점 주의해주시기 바랍니다.</li>
-              </ul>
-            </div>
+            <ul class="list-dot color3">
+              <li>자동차등록증에 기재되어 있는 알파벳, 숫자 조합 17자리를 입력해주세요.</li>
+            </ul>
           </div>
         </div>
 
