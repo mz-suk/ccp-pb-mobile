@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+     <div class="wrap-guide">
+      <div class="wrap-order-card">
+        <div class="wrap-card">
+          <div class="card color1">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk1" checked="">
+                <label for="sp-chk1">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">신한카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-visa.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">SK주유소 할인 체크하기</a>
+              <div class="wrap-tooltip ">
+                <!-- [D] tooltip 활성화 .active 추가 -->
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color2">
+            <div class="info">
+              <div class="checkbox-cycle">
+                <input type="radio" name="" id="sp-chk2">
+              </div>
+              <div class="detail">
+                <p class="brand">삼성카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-mastercard.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color3">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk3">
+                <label for="sp-chk3">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">현대카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-unionpay.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color4">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk4">
+                <label for="sp-chk4">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">국민카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-jcb.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color5">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk5">
+                <label for="sp-chk5">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">롯데카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-americanexpress.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color6">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk6">
+                <label for="sp-chk6">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">하나카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-americanexpress.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color7">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk7">
+                <label for="sp-chk7">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">우래ㅣ카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-americanexpress.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color8">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk8">
+                <label for="sp-chk8">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">비씨카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-americanexpress.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color9">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk9">
+                <label for="sp-chk9">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">NH농협카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-americanexpress.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color10">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk10">
+                <label for="sp-chk10">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">수협은행카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-americanexpress.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color11">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk11">
+                <label for="sp-chk11">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">광주은행카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-americanexpress.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color12">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk12">
+                <label for="sp-chk12">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">전북은행카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-americanexpress.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card color13">
+            <div class="info">
+              <div class="checkbox-btn">
+                <input type="checkbox" name="" id="sp-chk13">
+                <label for="sp-chk13">대표카드</label>
+              </div>
+              <button type="button" class="btn-card-del"><i class="bg-icon tooltip-close"></i><span>삭제</span></button>
+              <div class="detail">
+                <p class="brand">제주은행카드</p>
+                <p class="num">9490 88** **** 5200</p>
+                <p class="date">등록일 2020.06.10</p>
+                <span class="logo-card"><img src="../../assets/img/layout/icon-card-americanexpress.png" alt="현대카드"></span>
+              </div>
+            </div>
+            <div class="bottom">
+              <a href="javascript:;" class="link">주유 이용금액 0.7% 할인적용 됨</a>
+              <div class="wrap-tooltip">
+                <button type="button" class="bg-icon tooltip2">툴팁</button>
+                <div class="tooltip-box">
+                  <button type="button" class="bg-icon tooltip-close">닫기</button>
+                  <p>SK주유소 할인 체크를 해두시면 주유소에서 카드로 할인된 가격 정보를 확인하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+     </div>
+    </div>
+  </body>
+</html>
