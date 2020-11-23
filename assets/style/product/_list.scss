@@ -434,6 +434,19 @@
       text-align: center;
     }
   }
+
+  &.type3 {
+    padding: 11rem 0 0;
+    .empty-img {
+      margin-top: 11.5rem;
+    }
+    .empty-text {
+      margin-top: 1.2rem;
+      &:first-of-type {
+        margin-top: 3.5rem;
+      }
+    }
+  }
 }
 
 .filter-layer {
