@@ -823,6 +823,11 @@
     font-size: 1.7rem;
   }
 
+  &.type3 {
+    font-size: 1.3rem;
+    border: none;
+  }
+
   .title {
     .bg-icon {
       margin-right: 0.5rem;
@@ -925,6 +930,12 @@
         width: 1.2rem;
         height: 1.2rem;
         margin-left: 0;
+      }
+      .desc {
+        margin: 0.3rem 0 0 1.5rem;
+        display: block;
+        font-size: 1.1rem;
+        color: $fc9;
       }
     }
   }

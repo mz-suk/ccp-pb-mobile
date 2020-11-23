@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">정기결제내역</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="charge-top">
+          <div class="tag-area">
+            <span class="tag"><i class="bg-icon repeat"></i> 이용중</span>
+          </div>
+          <p class="txt-row">내일 재결제 예정입니다</p>
+        </div>
+
+        <div class="accordion active type2">
+          <!-- [D] accordion 펼침 상태 : .active 추가 -->
+          <div class="accordion-title">
+            <p class="title">안내 정보</p>
+            <button type="button" class="bg-icon toggle">펼침</button>
+          </div>
+          <div class="accordion-cont">
+            <div class="order-cont">
+              <p class="title-sub type2">
+                본 내역은 정기상품 구매 시<br/>
+                자동으로 신청되는 정보입니다.<br/>
+                아래 자세한 내용을 확인해주시기 바랍니다.
+              </p>
+
+              <p class="title-sub type3">재결제 안내</p>
+              <ul class="list-dot">
+                <li>재결제는 회차별로 아래 기준을 통해 결제일자를 산정하며, 실 결제는
+                  해당일자 새벽시간에 진행하고 있습니다.</li>
+                <li>재결제를 통해 발급된 예약정보는 세차이용내역 메뉴에서
+                  회차별로 조회하실 수 있습니다.</li>
+                <li>또한, 쿠폰 및 포인트 등의 할인수단은 최초 결제에만 적용되며
+                  재결제에는 적용되지 않습니다.</li>
+              </ul>
+
+              <p class="title-sub type3">재결제 예정일자 산정기준</p>
+              <ul class="list-dot">
+                <li>정기상품 1회차 : 마지막 회차 예약일자 +3주</li>
+                <li>정기상품 2회차 : 마지막 회차 예약일자 +1주</li>
+                <li>정기상품 4회차 : 마지막 회차 예약일자 +1주</li>
+                <li>정기상품 8회차 : 7회차 예약일자 +1일</li>
+              </ul>
+
+              <p class="title-sub type3">변경 및 해지안내</p>
+              <ul class="list-dot">
+                <li>본 정보는 결제수단만 변경 가능합니다.</li>
+                <li>정기요일 등의 정보 변경을 희망하시는 경우 고객센터로 문의 및 요청
+                  부탁드립니다.</li>
+                <li>예약정보 변경 및 해지는 재결제 예정일자 1일전 까지만 가능하며,
+                  이미 발급된 예약정보에 대해서는자동으로 환불 처리되지 않습니다.</li>
+              </ul>
+
+              <ul class="list-dot color3 ">
+                <li>재결제 실패 시 자동으로 정기결제가 해지되오니 유의 바랍니다.</li>
+              </ul>
+
+              <div class="btn-area">
+                <button type="button" class="btn-arrow type2"><span class="txt-under">고객센터 문의 하기</span></button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion active type2">
+          <!-- [D] accordion 펼침 상태 : .active 추가 -->
+          <div class="accordion-title">
+            <p class="title">이용 정보</p>
+            <button type="button" class="bg-icon toggle">펼침</button>
+          </div>
+          <div class="accordion-cont">
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>이용자 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>이용자명</dt>
+                <dd>송헌호</dd>
+                <dt>연락처</dt>
+                <dd>010 - 1234 - 5678</dd>
+              </dl>
+            </div>
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>회차 및 정기 요일 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>이용회차</dt>
+                <dd>8회차</dd>
+                <dt>이용주기</dt>
+                <dd>2매주</dd>
+                <dt>정기요일</dt>
+                <dd>수, 금</dd>
+              </dl>
+            </div>
+
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>차량 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>차량 번호</dt>
+                <dd>123디 1234</dd>
+                <dt>모델명</dt>
+                <dd>싼타페</dd>
+                <dt>세부모델명</dt>
+                <dd>싼타페 TM (18.02.21 ~ 현재)</dd>
+                <dt>등급</dt>
+                <dd>SUV 준중형</dd>
+                <dt>색상</dt>
+                <dd>퓨어 화이트</dd>
+              </dl>
+            </div>
+
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>상품 및 옵션 정보</p>
+              </div>
+              <dl class="define-list">
+                <dt class="bold">PREMIUM 세차<button type="button" class="bg-icon info">상세</button></dt>
+                <dd class="bold">40,000원</dd>
+                <dt class="replay-txt">
+                  <i class="bg-icon reply-arrow"></i> 발수코딩 옵션 <button type="button" class="bg-icon info">상세</button>
+                  <span class="desc">(1,2,3,5,6회차 적용)</span>
+                </dt>
+                <dd class="replay-txt">-5,000원</dd>
+                <dt class="replay-txt">
+                  <i class="bg-icon reply-arrow"></i> 카나우바 왁스 <button type="button" class="bg-icon info">상세</button>
+                  <span class="desc">(1,2회차 적용)</span>
+                </dt>
+                <dd class="replay-txt">-5,000원</dd>
+                <dt class="replay-txt">
+                  <i class="bg-icon reply-arrow"></i> 딥디크 차량용 방향제 <button type="button" class="bg-icon info">상세</button>
+                  <span class="desc">(1,2,3,5,6,7,8회차 적용)</span>
+                </dt>
+                <dd class="replay-txt">-5,000원</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion active type2">
+          <!-- [D] accordion 펼침 상태 : .active 추가 -->
+          <div class="accordion-title">
+            <p class="title">정기결제 정보</p>
+            <button type="button" class="bg-icon toggle">펼침</button>
+          </div>
+          <div class="accordion-cont">
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>정기결제 정보</p>
+                <span>
+                  <button type="button" class="btn-arrow">전체결제내역</button>
+                </span>
+              </div>
+              <dl class="customer-info">
+                <dt>등록일시</dt>
+                <dd>2020.05.10 (화) 15:07:12</dd>
+                <dt>최근결제일시</dt>
+                <dd>2020.05.10 (화) 15:07:12</dd>
+                <dt>결제카드</dt>
+                <dd>비씨카드 (5898)</dd>
+
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="charge-btm">
+          <div class="btn-area grid center">
+            <button type="button" class="btn color1">결제수단 변경</button>
+          </div>
+          <button type="button" class="btn-arrow type2"><span class="txt-under">정기결제 해지하기</span></button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>

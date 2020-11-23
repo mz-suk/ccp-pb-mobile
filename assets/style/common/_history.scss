@@ -982,6 +982,10 @@
         .title {
           font-size: 1.5rem;
           padding-bottom: 0.5rem;
+
+          .desc {
+            display: block;
+          }
         }
         .state {
           position: absolute;
