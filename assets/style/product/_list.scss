@@ -978,14 +978,55 @@
       flex: 1 1 100%;
       margin-left: 0;
       text-align: left;
-      color: $fc6;
+      color: $fc1;
+
       span {
         border-bottom: 0.1rem solid $fc6;
       }
+
       .bg-icon {
         margin-left: 0;
         margin-right: 0.5rem;
       }
+
+      &.type1 {
+        flex: auto;
+        color: $fc6;
+      }
+    }
+  }
+  &.type3 {
+    color: $fc1;
+    dt {
+      width: 21.5rem;
+      padding-right: 2.5rem;
+      box-sizing: border-box;
+      @include clamp(1);
+    }
+    .num {
+      overflow: hidden;
+      width: calc(100% - 21.5rem);
+      text-align: left;
+      span {
+        float: right;
+      }
+    }
+    .replay-txt {
+      float: none;
+      clear: both;
+      text-align: left;
+      &.type1 {
+        overflow: hidden;
+        color: $fc6;
+        .right {
+          float: right;
+        }
+      }
+    }
+    & + & {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 0.1rem solid $fcF0;
     }
   }
   & + & {
@@ -996,8 +1037,7 @@
 .wrap-define-list {
   margin-top: -2rem;
   .define-list.type2:not(:first-child) {
-    margin-top: 2.5rem;
-    padding-top: 0.5rem;
+    margin-top: 2rem;
     border-top: 0.1rem solid $fcF0;
   }
 }
@@ -1716,6 +1756,7 @@
 }
 
 .wrap-tooltip {
+  display: inline-block;
   position: relative;
 
   .tooltip2 {
@@ -1730,8 +1771,8 @@
     position: absolute;
     top: 3rem;
     left: -7.3rem;
-    z-index: 50;
-    width: 31rem;
+    z-index: 20;
+    width: 29.8rem;
     padding: 1.8rem 2rem;
     box-sizing: border-box;
     background: linear-gradient(to right, $gc1 0%, $gc2 100%);
