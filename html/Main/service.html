@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="wrap-contents">
+        <div class="wrap-empty type3">
+          <div class="logo-img"><img src="../../../assets/img/layout/logo-tmap.svg" alt=""></div>
+          <div class="empty-img">
+            <img src="../../../assets/img/layout/icon-loading.svg" alt="" />
+          </div>
+          <p class="empty-text">
+            <strong>Car Care 서비스<br/>머핀으로 <span class="text-color">이동 중</span> 입니다.</strong>
+          </p>
+          <p class="empty-text">잠시만 기다려 주세요.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
