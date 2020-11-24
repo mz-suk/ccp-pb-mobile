@@ -31,80 +31,96 @@
         </div>
       </header>
       <!-- //Header -->
-
-      <!-- Wrap-contents -->
+      <!-- wrap-contents -->
       <div class="wrap-contents">
         <div class="wrap-order">
           <div class="accordion active">
             <div class="accordion-title">
-              <p class="title">구매정보</p>
+              <p class="title">구매 정보</p>
               <button type="button" class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
-              <div class="wrap-define-list">
-                <dl class="define-list type2">
-                  <dt>에탄올 워셔액</dt>
-                  <dd>1개</dd>
-                  <dd>5,000원</dd>
-                  <dd class="replay-txt"><i class="bg-icon reply-arrow"></i><span>쿠폰조회</span></dd>
-                </dl>
-                <dl class="define-list type2">
-                  <dt>양키캔들 차량용 방향제</dt>
-                  <dd>1개</dd>
-                  <dd>4,000원</dd>
-                  <dd class="replay-txt"><i class="bg-icon reply-arrow"></i><span>쿠폰조회</span></dd>
-                </dl>
-              </div>
+              <dl class="define-list type3">
+                <dt>에탄올 워셔액</dt>
+                <dd class="num">1개<span>5,000원</span></dd>
+                <dd class="replay-txt">
+                  <i class="bg-icon reply-arrow"></i>
+                  <button type="button" class="btn-arrow size1"><span class="txt-under">쿠폰조회</span></button>
+                </dd>
+              </dl>
+              <dl class="define-list type3">
+                <dt>양키캔들 차량용 방향제</dt>
+                <dd class="num">1개<span>4,000원</span></dd>
+                <dd class="replay-txt">
+                  <i class="bg-icon reply-arrow"></i>
+                  <button type="button" class="btn-arrow size1"><span class="txt-under">쿠폰조회</span></button>
+                </dd>
+              </dl>
               <dl class="define-box total">
-                <dt>총 사용금액</dt>
-                <dd><span>45,000</span>원</dd>
+                <dt>구매 총 금액</dt>
+                <dd><span>9,000</span>원</dd>
               </dl>
               <dl class="define-box charge">
-                <dt>남은 금액</dt>
-                <dd><span>59,000</span>원</dd>
+                <dt>쿠폰할인 금액</dt>
+                <dd><span>0</span>원</dd>
               </dl>
             </div>
           </div>
+
           <div class="accordion active">
             <div class="accordion-title">
               <p class="title">포인트 할인</p>
               <button type="button" class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
-              <div class="wrap-text-link">
-                <button type="button" class="text-link">머핀 포인트</button>
-                <button type="button" class="text-link">OK 캐시백 포인트</button>
-              </div>
+              <dl class="define-list type1">
+                <dt>머핀 포인트</dt>
+                <dd><button type="button" class="btn-arrow size1"><span class="txt-under">조회하기</span></button></dd>
+                <dt>OK캐시백 포인트</dt>
+                <dd><button type="button" class="btn-arrow size1"><span class="txt-under">조회하기</span></button></dd>
+              </dl>
             </div>
           </div>
+
           <div class="accordion active">
             <div class="accordion-title">
-              <p class="title">결제 정보</p>
-              <button type="button" class="bg-icon toggle">펼침</button>
+              <p class="title">결제금액 정보</p>
+              <button class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
               <div class="order-info">
+                <dl class="define-box">
+                  <dt>옵션 총 금액</dt>
+                  <dd>9,000원</dd>
+                </dl>
                 <dl class="define-list">
-                  <dt>세부옵션 추가금액</dt>
-                  <dd>20,000원</dd>
                   <dt>쿠폰할인</dt>
-                  <dd>-20,000원</dd>
-                  <dt>포인트 차감 (머핀)</dt>
                   <dd>0원</dd>
-                  <dt>포인트 차감 (OK 캐시백)</dt>
-                  <dd>-1,150원</dd>
+                  <dt>포인트할인 (머핀)</dt>
+                  <dd>0원</dd>
+                  <dt>포인트할인 (OK캐시백)</dt>
+                  <dd>0원</dd>
                 </dl>
                 <dl class="define-box total">
-                  <dt>실 결제금액</dt>
-                  <dd><span>30,000</span>원</dd>
+                  <dt class="left">실 결제금액</dt>
+                  <dd class="right"><span>9,000</span>원</dd>
                 </dl>
                 <dl class="define-box benefit">
-                  <dt>총 혜택 금액</dt>
-                  <dd><span>0</span>원</dd>
+                  <dt class="left">혜택 총 금액
+                    <div class="wrap-tooltip"><!-- [D] 활성화 .active 추가 -->
+                      <button type="button" class="bg-icon tooltip2">툴팁</button>
+                      <div class="tooltip-box">
+                        <button type="button" class="bg-icon tooltip-close">닫기</button>
+                        <p>구매하실 상품 및 옵션의 정상가와<br/>실제 결제금액을 기준으로 계산됩니다.</p>
+                      </div>
+                    </div>
+                  </dt>
+                  <dd class="right"><span>12,000</span>원</dd>
                 </dl>
               </div>
             </div>
           </div>
+
           <div class="accordion active">
             <div class="accordion-title">
               <p class="title">결제 수단</p>
@@ -119,35 +135,45 @@
                 <div class="tab-content">
                   <div class="pay-method">
                     <div class="wrap-card">
-                      <div class="card type1">
+                      <div class="card color1">
                         <div class="info">
-                          <span class="logo-card"><img src="../../assets/img/layout/logo-card1.png" alt="현대카드" /></span>
-                          <p class="brand">현대카드</p>
-                          <p class="num">3742 76** ****0927</p>
+                          <div class="checkbox-cycle">
+                            <input type="radio" name="radio1" id="sp-chk1" checked>
+                          </div>
+                          <p class="brand">신한카드</p>
+                          <p class="num">9490 88** **** 5200</p>
                         </div>
+                        <span class="logo-card"><img src="../../assets/img/layout/icon-card-mastercard.png" alt="현대카드" /></span>
                         <div class="bottom">
                           <p>등록일</p>
                           <p>2020.06.22</p>
                         </div>
-                        <div class="bg-icon card-tag">기본 결제수단</div>
                       </div>
-                      <div class="card type2">
+
+                      <div class="card color4">
                         <div class="info">
-                          <span class="logo-card"><img src="../../assets/img/layout/logo-card1.png" alt="KB국민카드" /></span>
+                          <div class="checkbox-cycle">
+                            <input type="radio" name="radio1" id="sp-chk2">
+                          </div>
                           <p class="brand">KB국민카드</p>
                           <p class="num">3742 76** ****0927</p>
                         </div>
+                        <span class="logo-card"><img src="../../assets/img/layout/icon-card-visa.png" alt="KB국민카드" /></span>
                         <div class="bottom">
                           <p>등록일</p>
                           <p>2020.06.22</p>
                         </div>
                       </div>
-                      <div class="card type1">
+
+                      <div class="card color3">
                         <div class="info">
-                          <span class="logo-card"><img src="../../assets/img/layout/logo-card1.png" alt="현대카드" /></span>
+                          <div class="checkbox-cycle">
+                            <input type="radio" name="radio1" id="sp-chk3">
+                          </div>
                           <p class="brand">현대카드</p>
                           <p class="num">3742 76** ****0927</p>
                         </div>
+                        <span class="logo-card"><img src="../../assets/img/layout/icon-card-mastercard.png" alt="현대카드" /></span>
                         <div class="bottom">
                           <p>등록일</p>
                           <p>2020.06.22</p>
@@ -165,32 +191,33 @@
               </div>
             </div>
           </div>
+
           <div class="accordion active">
             <div class="accordion-title">
-              <p class="title">결제예정 포인트정보</p>
+              <p class="title">적립 예정 포인트 정보</p>
               <button type="button" class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
               <div class="point-info">
                 <dl class="define-list">
-                  <dt>머핀 포인트 <span class="desc">(플래티넘)</span> <span class="tag point">3% 적립</span></dt>
-                  <dd>1,350원</dd>
-                  <dt>OK 캐시백 포인트 <span class="desc">(0.1% 적립)</span></dt>
-                  <dd>45원</dd>
+                  <dt>머핀 포인트 <span class="desc">(플래티넘 +3%)</span></dt>
+                  <dd>1,800P</dd>
+                  <dt>OK 캐시백 포인트 <span class="desc">(+0.1%)</span></dt>
+                  <dd>60P</dd>
                 </dl>
                 <dl class="define-box total">
-                  <dt class="left">총 적립 예상 포인트</dt>
-                  <dd class="right"><span>1,736</span>원</dd>
+                  <dt class="left">총 적립 예정 포인트</dt>
+                  <dd class="right"><span>1,920</span>P</dd>
                 </dl>
-                <ul class="list-dot type5">
+                <ul class="list-dot">
                   <li>적립율은 실결제금액을 기준으로 계산됩니다.</li>
                   <li>적립예정포인트는 실제 서비스 이용 완료 시점기준으로 7일 후에 실제 포인트로 전환 지급됩니다.</li>
-                  <li>적립된 포인트는 1P = 1원으로 환산되어 APP 내에 결제 시 할인하실 수 있습니다.</li>
-                  <li>추가 포인트가 여러 개 존재하는 경우 하나만 선택하실 수 있습니다.</li>
+                  <li>적립된 포인트는 1원=1P로 환산되어 APP 내에 결제 시 할인하실 수 있습니다.</li>
                 </ul>
               </div>
             </div>
           </div>
+
           <div class="order-cont">
             <div class="accordion type3 active">
               <div class="accordion-title">
@@ -203,31 +230,36 @@
               <div class="accordion-cont">
                 <div class="terms-box">
                   <input type="checkbox" id="terms1" />
-                  <label for="terms1">개인정보 수집 이용 및 제 3자 제공 동의</label>
-                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                  <label for="terms1">개인정보 제 3자 제공 동의</label>
+                  <button type="button" class="btn-arrow size1"><span class="txt-under">전문보기</span></button>
                 </div>
                 <div class="terms-box">
                   <input type="checkbox" id="terms2" />
-                  <label for="terms2">환불/취소규정에 대한 유의사항 동의</label>
-                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                  <label for="terms2">이용약관 동의</label>
+                  <button type="button" class="btn-arrow size1"><span class="txt-under">전문보기</span></button>
+                </div>
+                <div class="terms-box">
+                  <input type="checkbox" id="terms3" />
+                  <label for="terms3">환불/취소규정에 대한 유의사항 동의</label>
+                  <button type="button" class="btn-arrow size1"><span class="txt-under">전문보기</span></button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="order-cont">
-            <ul class="list-dot type5">
-              <li>㈜ SK에너지는 통신판매중개자로서 통신판매의 당사자가 아니며,<br />입점판매자가 등록한 상품에 대한 거래인 경우 책임을 지지 않습니다.</li>
-            </ul>
+            <div class="gray-box type1">
+              <p>㈜SK에너지는 통신판매중개자로서 통신판매의 당사자가 아니며,<br/>입점판매자가 등록한 상품에 대한 거래인 경우 책임을 지지 않습니다.</p>
+            </div>
             <div class="wrap-btn">
               <button type="button" class="btn-arrow size1"><span class="txt-under">결제 취소하기</span></button>
             </div>
           </div>
         </div>
+
         <div class="fix-footer-area">
-          <button type="button" class="btn type2 color5"><em>30,000</em>원 최종 결제하기</button>
+          <button type="button" class="btn type2 color5"><em>56,000</em>원 최종 결제하기</button>
         </div>
       </div>
-      <!-- //Wrap-contents -->
+      <!-- //wrap-contents -->
+      <!-- Footer -->
     </div>
   </body>
 </html>
