@@ -306,7 +306,9 @@
     .wrap-order-card {
       padding: 0 0 4rem;
       .wrap-card {
-        margin-top: 2.5rem;
+        &:not(:first-child) {
+          margin-top: 2.5rem;
+        }
       }
     }
     .wrap-order {

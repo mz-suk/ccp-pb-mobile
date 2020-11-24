@@ -1015,13 +1015,18 @@
     }
 
     &.type1 {
-      .info {
-        background-color: #777;
+      .checkbox-cycle {
+        z-index: 2;
       }
-
-      .bottom {
-        background-color: #6a6a6a;
-        color: $fc9;
+      .detail {
+        margin-top: 0;
+        padding-bottom: 5.7rem;
+      }
+      .logo-card {
+        margin-left: 0;
+        bottom: 0;
+        left: 0;
+        right: auto;
       }
     }
 
