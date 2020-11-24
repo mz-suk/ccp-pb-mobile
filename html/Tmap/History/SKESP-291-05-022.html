@@ -91,21 +91,47 @@
             <!-- 업체정보 -->
             <div class="tab-content">
               <div class="wrap-info">
-                <ul class="review-list">
+                <ul class="review-list store">
                   <li>
                     <div class="thumb-info">
-                      <div class="thumb-img"></div>
+                      <div class="thumb-img">
+                        <img src="../../../assets/img/temp/@52x52.jpg" alt="">
+                      </div>
                       <div class="thumb-txt">
                         <p>1급 평촌 오토 자동차(주)</p>
                         <p class="day">담당자 정안희 대표</p>
                       </div>
                     </div>
-                    <p class="txt">
-                      <span class="img"><img src="../../../assets/img/temp/step02.png" alt=""></span>
-                      사장님 너무 친절하시고, 항상 잘 이용하고 있어요.   사장님 너무 친
-                      절하시고, 항상 잘 이용하고 있어요.  사장님 너무 친절하시고, 항상
-                      잘 이용하고 있어요. 사장님 너무 친절하시고 잘 이용하고 있어요.
-                    </p>
+                    <div class="store-info">
+                      <!-- swiper -->
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="../../../assets/img/temp/@335x190.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="../../../assets/img/temp/@375x460.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="../../../assets/img/temp/step02.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination">
+                          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                          <span class="swiper-pagination-bullet"></span>
+                          <span class="swiper-pagination-bullet"></span>
+                        </div>
+                      </div>
+
+                      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+                      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                      <script>
+                        var swiper = new Swiper('.swiper-container', {
+                          slidesPerView: 'auto',
+                          pagination: {
+                            el: '.swiper-pagination',
+                            type: 'fraction'
+                          },
+                          loop: true
+                        });
+                      </script>
+                      <!-- //swiper -->
+                      <p class="txt">20년 이상의 베티랑 기술진이 정식열처리장에서 정품도료로 매뉴얼 시공 하고 있습니다.</p>
+                    </div>
                   </li>
                 </ul>
                 <dl class="customer-info">
