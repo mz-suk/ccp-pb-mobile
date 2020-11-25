@@ -22,23 +22,25 @@
   }
 
   .info-car-cont.type1 {
-    padding: 3.5rem 2.5rem;
+    padding: 1rem 2.5rem 3.5rem;
     background: $fcF;
     border-color: $fcF0;
 
     .car-number {
       display: inline-block;
-      margin: 0 0 0.7rem;
+      margin: 0.7rem 0 0;
       font-size: 2.4rem;
+      width: calc(100% - 10.5rem);
     }
     .car-name {
       display: inline-block;
-      margin-top: 0;
+      margin-top: 3rem;
       font-size: 1.3rem;
+      width: calc(100% - 10.5rem);
     }
     .car-info {
       clear: both;
-      margin: 2.5rem 0 0;
+      margin: 2rem 0 0;
       padding: 0 0.5rem;
       .vartical-bar > span {
         margin-top: 2rem;
@@ -47,7 +49,7 @@
     .logo {
       position: static;
       float: right;
-      margin-top: -0.5rem;
+      margin-right: 0.5rem;
     }
   }
 
