@@ -1,6 +1,10 @@
 .wrapper-main {
   min-height: 100vh;
   background-color: $fcF9;
+
+  .wrap-contents {
+    padding-bottom: 6rem;
+  }
 }
 
 .main-cont {
@@ -24,13 +28,11 @@
 
     .car-number {
       display: inline-block;
-      width: calc(100% - 7.5rem);
       margin: 0 0 0.7rem;
       font-size: 2.4rem;
     }
     .car-name {
       display: inline-block;
-      width: calc(100% - 7.5rem);
       margin-top: 0;
       font-size: 1.3rem;
     }
@@ -43,7 +45,6 @@
       }
     }
     .logo {
-      display: inline-block;
       position: static;
       float: right;
       margin-top: -0.5rem;

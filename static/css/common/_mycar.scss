@@ -12,9 +12,10 @@
       &:after {
         display: none;
       }
-      &:nth-child(odd) {
+      &:not(:last-of-type):nth-child(odd) {
         &:after {
           display: block;
+          border-right-style: dotted;
         }
       }
     }
@@ -90,6 +91,9 @@
   }
   &.color1 {
     color: $fc1;
+  }
+  &.color2 {
+    color: $gc3;
   }
   > li {
     position: relative;
@@ -243,9 +247,14 @@
     }
     label {
       align-items: flex-start;
+      > div {
+        width: calc(100% - 8rem);
+      }
     }
     .btn-arrow {
+      width: 8rem;
       margin-top: 0.5rem;
+      text-align: right;
     }
   }
   .option-box {

@@ -84,13 +84,13 @@
     margin: 1.8rem 2rem 0;
     padding: 1.3rem;
     color: $fc1;
-    .define-list dt,
-    .define-list dd {
+    .define-list dt:not(:last-of-type),
+    .define-list dd:not(:last-of-type) {
       margin-bottom: 1.2rem;
     }
   }
 }
-                  
+
 .accordion.active.type2 {
   + .charge-btm {
     .btn-area {
@@ -100,6 +100,7 @@
 }
 .charge-btm {
   padding: 0.5rem 2rem 0;
+  text-align: center;
 
   .btn-area {
     &.center {
@@ -207,7 +208,7 @@
     padding: 0 1.5rem;
     height: 3.5rem;
     line-height: 3.3rem;
-    text-align: center;                             
+    text-align: center;
     color: $fc1;
     background: $pc2;
     border: 0.1rem solid $pc6;

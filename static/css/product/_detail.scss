@@ -306,7 +306,9 @@
     .wrap-order-card {
       padding: 0 0 4rem;
       .wrap-card {
-        margin-top: 2.5rem;
+        &:not(:first-child) {
+          margin-top: 2.5rem;
+        }
       }
     }
     .wrap-order {
@@ -989,45 +991,96 @@
 .review-list {
   li {
     padding: 0 0 3rem;
+
     &:not(:first-child) {
       padding: 3rem 0;
       border-top: 0.1rem solid $fcF0;
     }
-    .thumb-info {
-      display: flex;
-      align-items: center;
-      .thumb-img {
-        margin-right: 1.5rem;
-        padding-top: 1.3rem;
-        width: 5rem;
-        height: 5rem;
-        text-align: center;
-        overflow: hidden;
-        background: $fcF9;
-        border: 0.1rem solid $fcF0;
-        border-radius: 50%;
-        box-sizing: border-box;
-
-        .bg-icon {
-          width: 2.4rem;
-          height: 2.4rem;
-        }
-      }
-      .thumb-txt {
-        color: $fc1;
-        .day {
-          margin-top: 1rem;
-          font-size: 1.1rem;
-          color: $fc6;
-        }
-      }
-    }
-
     .txt {
       margin-top: 2rem;
       .img {
         margin: 3rem 0 1.5rem;
         display: block;
+      }
+    }
+  }
+
+  .thumb-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .thumb-img {
+    margin-right: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    overflow: hidden;
+    background: $fcF9;
+    border: 0.1rem solid $fcF0;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .bg-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-top: 1.3rem;
+    }
+  }
+
+  .thumb-txt {
+    color: $fc1;
+    .day {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: $fc6;
+    }
+  }
+
+  &.store {
+    .thumb-img {
+      width: 5.2rem;
+      height: 5.2rem;
+      margin-right: 1.3rem;
+      border: 0;
+    }
+
+    .thumb-txt {
+      p {
+        font-size: 1.5rem;
+        &.day {
+          margin-top: 0.3rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .store-info {
+      margin-top: 3rem;
+      .txt {
+        margin-top: 1.5rem;
+      }
+      .swiper-container {
+        height: 19rem;
+      }
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .swiper-pagination {
+        color: $fcF;
+        font-size: 1.2rem;
+      }
+      .swiper-pagination-total {
+        opacity: 1;
       }
     }
   }

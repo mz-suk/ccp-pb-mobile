@@ -1,34 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20.145" viewBox="0 0 20 20.145">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
   <defs>
-    <style>
-      .cls-1 {
-        fill: #f0f;
-        opacity: 0;
-      }
-
-      .cls-2 {
-        stroke: #000;
-        stroke-miterlimit: 10;
-        stroke-width: 0.15px;
-        font-size: 9.842px;
-        font-family: MoebiusKorea-Bold, Moebius Korea;
-        font-weight: 700;
-      }
-
-      .cls-3 {
-        fill: none;
-        stroke: #111;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 1.5px;
-      }
-    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_295753" data-name="사각형 295753" width="20" height="20" fill="none"/>
+    </clipPath>
   </defs>
-  <g id="그룹_290221" data-name="그룹 290221" transform="translate(18204 20816.145)">
-    <g id="그룹_290209" data-name="그룹 290209" transform="translate(-18204 -20816)">
-      <rect id="사각형_222411" data-name="사각형 222411" class="cls-1" width="20" height="20" transform="translate(0 0)"/>
-      <text id="m" class="cls-2" transform="translate(5.563 13.274)"><tspan x="0" y="0">m</tspan></text>
-      <path id="패스_590376" data-name="패스 590376" class="cls-3" d="M9.992.877l-8.1,4.562v9.123l8.1,4.562,8.1-4.562V5.438L9.992.877"/>
+  <g id="icon_membership_20" transform="translate(10 10)">
+    <g id="icon_membership_20-2" data-name="icon_membership_20" transform="translate(-10 -10)" clip-path="url(#clip-path)">
+      <g id="그룹_385202" data-name="그룹 385202" clip-path="url(#clip-path)">
+        <g id="그룹_385201" data-name="그룹 385201" opacity="0">
+          <g id="그룹_385200" data-name="그룹 385200" clip-path="url(#clip-path)">
+            <rect id="사각형_295750" data-name="사각형 295750" width="20" height="20" fill="#f0f"/>
+          </g>
+        </g>
+        <line id="선_113525" data-name="선 113525" x2="4.4" transform="translate(13.6 18.1)" fill="none" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="선_113526" data-name="선 113526" x2="12.2" transform="translate(1.4 18.1)" fill="none" stroke="#111" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="패스_779765" data-name="패스 779765" d="M10,1.3l3.6,5.2h.3L18,2.9V14.7H2V2.9L6.1,6.6h.3Z" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_113527" data-name="선 113527" x2="0.9" transform="translate(10.7 10.8)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1.5"/>
+        <line id="선_113528" data-name="선 113528" x2="3.1" transform="translate(8.4 10.8)" fill="none" stroke="#111" stroke-width="1.5"/>
+      </g>
     </g>
   </g>
 </svg>

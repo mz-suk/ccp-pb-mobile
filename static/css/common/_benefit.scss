@@ -254,7 +254,7 @@
           font-size: 1.5rem;
           text-align: center;
           background: rgba(0, 0, 0, 0.7);
-          border-radius: 1.6rem 1.6rem 0 0;
+          border-radius: 1.6rem 0 0 0;
         }
         .state-label {
           display: none;
@@ -305,7 +305,7 @@
         right: -0.1rem;
         font-size: 1.1rem;
         padding: 0.7rem 1.5rem 0.8rem;
-        border-radius: 0 1.6rem;
+        border-radius: 0 0 0 1.6rem;
         color: $fc1;
         background: $fcF;
       }
