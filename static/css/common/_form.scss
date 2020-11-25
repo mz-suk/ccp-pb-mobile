@@ -648,6 +648,29 @@ input[type="checkbox"] {
   }
 }
 
+.checkbox-cycle {
+  input[type="checkbox"] {
+    width: 2.3rem;
+    height: 2.3rem;
+    background: url(~assets/img/layout/icon-chk-cycle.svg) 0 0/100% auto no-repeat;
+
+    &:checked {
+      background: url(~assets/img/layout/icon-chk-cycle-on.svg) 0 0/100% auto no-repeat;
+    }
+  }
+
+  input[type="radio"] {
+    width: 2.3rem;
+    height: 2.3rem;
+    background: url(~assets/img/layout/icon-chk-cycle.svg) 0 0/100% auto no-repeat;
+    transition: all 0.2s ease;
+
+    &:checked {
+      background: url(~assets/img/layout/icon-chk-cycle-on.svg) 0 0/100% auto no-repeat;
+    }
+  }
+}
+
 .form-div {
   .title {
     margin-bottom: 1rem;
@@ -745,6 +768,8 @@ input[type="checkbox"] {
     min-width: 15.8rem;
     background: $fcF;
     border: 0.1rem solid $fcD7;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16%);
+
     li {
       &:not(:first-child) {
         border-top: 0.1rem solid $fcF0;

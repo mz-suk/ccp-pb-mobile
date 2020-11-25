@@ -5,20 +5,28 @@
     .btn {
       width: 100%;
     }
-    .btn-arrow {
-      margin-top: 2rem;
+  }
+
+  .form-div {
+    .title {
+      font-size: 1.3rem;
     }
   }
 
   .wrap-tab {
-    margin: 0 1rem;
+    .tab-menu {
+      margin: 0 1rem;
+    }
+    .tab-content {
+      margin-top: 2.5rem;
+    }
   }
 
   .card-add {
     display: block;
     width: 26.5rem;
     height: 17rem;
-    margin: 2.5rem auto 0;
+    margin: 0 auto;
     box-sizing: border-box;
     border: 0.1rem dashed $fc9;
     border-radius: 2rem;
@@ -32,29 +40,28 @@
       height: 3rem;
       margin: 0 auto 1rem;
     }
+
+    & + .txt-desc {
+      margin-top: 2rem;
+      color: $pc3;
+      text-align: center;
+    }
   }
 
   .wrap-btn-pay {
-    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 1rem -1.2rem;
 
     .btn {
-      width: 100%;
+      width: calc(50% - 0.5rem);
       height: 4.5rem;
       line-height: 4.5rem;
-      &:not(.color3) {
-        border-color: $fc9;
-      }
-    }
-
-    .wrap-etc {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       margin-bottom: 1.2rem;
 
-      .btn {
-        width: calc(50% - 0.5rem);
-        margin-top: 1.2rem;
+      &.active {
+        border-color: $fc9;
       }
     }
 
@@ -85,7 +92,7 @@
   }
 
   .pay-method {
-    margin: 2.5rem 2.5rem 0;
+    margin: 0 3.5rem;
 
     .wrap-select {
       margin-top: 1.8rem;
@@ -94,6 +101,21 @@
     .text-guide {
       margin-top: 1.5rem;
       font-size: 1.1rem;
+    }
+
+    .wrap-card {
+      .info {
+        padding-bottom: 1rem;
+      }
+      .bottom {
+        justify-content: flex-end;
+        height: 3.6rem;
+        color: rgba(255, 255, 255, 0.7);
+
+        p:first-child {
+          margin-right: 0.5rem;
+        }
+      }
     }
   }
 
@@ -123,9 +145,8 @@
   .wrap-card {
     overflow-x: visible;
     overflow-y: hidden;
-    height: 18rem;
+    height: 17rem;
     margin: 0 -5.5rem;
-    padding-top: 0.8rem;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
 
@@ -138,7 +159,7 @@
 
       &:first-child {
         margin-left: 0;
-        padding-left: 5.5rem;
+        margin-left: 5.5rem;
       }
 
       &:last-child {
@@ -283,6 +304,14 @@
       margin-top: 4rem;
     }
   }
+
+  .terms-box {
+    display: flex;
+
+    .btn-arrow {
+      margin-left: auto;
+    }
+  }
 }
 
 .customer-info {
@@ -349,6 +378,15 @@
     width: 1.6rem;
     height: 1.6rem;
   }
+
+  &.type1 {
+    dt {
+      width: 14rem;
+    }
+    dd {
+      width: calc(100% - 14rem);
+    }
+  }
 }
 
 .define-box {
@@ -361,6 +399,10 @@
       font-size: 2rem;
       line-height: 1;
       vertical-align: top;
+    }
+
+    & + .list-dot {
+      margin-top: 1.2rem;
     }
   }
 
@@ -375,6 +417,15 @@
     .right span {
       font-size: 1.8rem;
       vertical-align: middle;
+    }
+    dt {
+      line-height: 1.3;
+    }
+    .tooltip-box {
+      left: -8.3rem;
+      &:before {
+        left: 9rem;
+      }
     }
   }
   &.charge {
@@ -611,11 +662,21 @@
 
   .accordion-cont {
     display: none;
-    overflow: hidden;
+    // overflow: hidden;
     padding: 2.5rem 2rem 3.5rem;
     border-bottom: 0.1rem solid $fcF0;
     .gray-box {
       border-bottom: 0 none;
+    }
+    .order-cont {
+      .list-dot {
+        .dot-point {
+          margin-top: 3rem;
+        }
+        li {
+          font-size: 1.1rem;
+        }
+      }
     }
   }
 
@@ -822,9 +883,10 @@
 
 .wrap-card {
   .logo-card {
+    margin-left: 2.5rem;
     display: block;
-    height: 2rem;
-    margin-bottom: 4rem;
+    height: 3.8rem;
+    margin-bottom: 1rem;
 
     img {
       height: 100%;
@@ -835,14 +897,136 @@
     position: relative;
     border-radius: 2rem;
 
-    &.type1 {
-      .info {
-        background-color: #777;
-      }
+    &.color1 {
+      background: #726aa9;
+      border: 0.1rem solid #6b639f;
 
       .bottom {
-        background-color: #6a6a6a;
-        color: $fc9;
+        background: #6961a0;
+      }
+    }
+
+    &.color2 {
+      background: #2e7cf1;
+      border: 0.1rem solid #2972ef;
+
+      .bottom {
+        background: #2972ef;
+      }
+    }
+
+    &.color3 {
+      background: #777;
+      border: 0.1rem solid #6e6e6e;
+
+      .bottom {
+        background: #6e6e6e;
+      }
+    }
+
+    &.color4 {
+      background: #786c61;
+      border: 0.1rem solid #6f6358;
+
+      .bottom {
+        background: #6f6358;
+      }
+    }
+
+    &.color5 {
+      background: #6b4aaf;
+      border: 0.1rem solid #6242a7;
+
+      .bottom {
+        background: #6242a7;
+      }
+    }
+
+    &.color6 {
+      background: #00a8a8;
+      border: 0.1rem solid #009f9f;
+
+      .bottom {
+        background: #009f9f;
+      }
+    }
+
+    &.color7 {
+      background: #0096fe;
+      border: 0.1rem solid #008dfe;
+
+      .bottom {
+        background: #008dfe;
+      }
+    }
+
+    &.color8 {
+      background: #f05144;
+      border: 0.1rem solid #ea3b30;
+
+      .bottom {
+        background: #ea3b30;
+      }
+    }
+
+    &.color9 {
+      background: #00b695;
+      border: 0.1rem solid #00ae8c;
+
+      .bottom {
+        background: #00ae8c;
+      }
+    }
+
+    &.color10 {
+      background: #196e89;
+      border: 0.1rem solid #16657f;
+
+      .bottom {
+        background: #16657f;
+      }
+    }
+
+    &.color11 {
+      background: #168ef5;
+      border: 0.1rem solid #1385f4;
+
+      .bottom {
+        background: #1385f4;
+      }
+    }
+
+    &.color12 {
+      background: #355cb5;
+      border: 0.1rem solid #2e56b4;
+
+      .bottom {
+        background: #2e56b4;
+      }
+    }
+
+    &.color13 {
+      background: #143c98;
+      border: 0.1rem solid #12358f;
+
+      .bottom {
+        background: #12358f;
+      }
+    }
+
+    &.type1 {
+      .checkbox-cycle {
+        z-index: 2;
+      }
+      .detail {
+        margin-top: 0;
+        padding-bottom: 5.7rem;
+      }
+      .logo-card {
+        margin-left: 0;
+        bottom: 0;
+        left: 0;
+        right: auto;
       }
     }
 
@@ -958,7 +1142,7 @@
 
   .info {
     position: relative;
-    padding: 2.5rem 2.5rem 1.7rem;
+    padding: 2.5rem 2.5rem 1.5rem;
     border-radius: 2rem 2rem 0 0;
     box-sizing: border-box;
     color: $fcF;
@@ -976,6 +1160,12 @@
       font-size: 1.1rem;
       color: rgba($fcF, 0.7);
     }
+
+    .checkbox-cycle {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
   }
 
   .bottom {
@@ -983,8 +1173,9 @@
     justify-content: space-between;
     align-items: center;
     height: 4rem;
+    margin: 0 2rem 2rem;
     padding: 0 2.8rem 0 2.2rem;
-    border-radius: 0 0 2rem 2rem;
+    border-radius: 0.1rem;
     font-size: 1.1rem;
 
     .link {
@@ -1031,7 +1222,7 @@
 }
 
 .wrap-order-card {
-  padding: 4rem 2rem 14rem;
+  padding: 4rem 2rem 6rem;
 
   .wrap-card {
     .card {
@@ -1040,7 +1231,7 @@
       }
     }
     .detail {
-      margin-top: 3.5rem;
+      margin-top: 2.5rem;
       padding-left: 0.5rem;
     }
 
@@ -1057,8 +1248,7 @@
     }
 
     .bottom {
-      padding: 0 2.5rem;
-      height: 5rem;
+      padding: 0 1.5rem;
 
       .tooltip2 {
         filter: brightness(30);
@@ -1069,7 +1259,9 @@
 
   .tooltip-box {
     left: inherit;
-    right: -2.5rem;
+    right: -3.6rem;
+    top: 4.8rem;
+    border-radius: 0.1rem;
 
     &:before {
       left: inherit;
