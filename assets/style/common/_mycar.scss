@@ -72,6 +72,10 @@
     left: 0;
     line-height: 1.4;
   }
+
+  &.color1 {
+    color: $fc1;
+  }
 }
 .asterisk-mark {
   font-size: 1.1rem;
@@ -173,6 +177,10 @@
     .gray-box + .title-sub {
       margin-top: 3.4rem;
     }
+  }
+
+  .reeference-mark {
+    margin-top: 1.5rem;
   }
 }
 

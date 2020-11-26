@@ -329,6 +329,12 @@
     width: 10rem;
     height: 10rem;
     margin: 0 auto;
+
+    &.size1 {
+      margin-bottom: 3rem;
+      width: 17rem;
+      height: 10.7rem;
+    }
   }
 
   .empty-text {
@@ -366,6 +372,12 @@
 
   .btn-area {
     margin-top: 5.2rem;
+    &.type1 {
+      margin-top: 10rem;
+      button {
+        font-size: 1.5rem;
+      }
+    }
 
     button {
       font-size: 1.3rem;
@@ -393,6 +405,12 @@
         font-size: 1.3rem;
       }
     }
+  }
+
+  .empty-title {
+    margin-bottom: 3rem;
+    font-size: 2.3rem;
+    color: $fc1;
   }
 
   &.member {
@@ -1115,6 +1133,11 @@
   &.type5 {
     // "*" 스타일
     @include listdot(0.8rem, 1.1rem, $fc9, 2, $fc9);
+  }
+
+  &.st1 {
+    margin: 2rem auto 0;
+    display: inline-block;
   }
 
   .sub-list {

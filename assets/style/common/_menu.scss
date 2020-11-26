@@ -180,3 +180,67 @@
     }
   }
 }
+
+.wrap-alarm-setting {
+  .title-box {
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1rem solid $fc1;
+
+    .title {
+      font-size: 1.5rem;
+      color: $fc1;
+
+      .bg-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+    .sub-txt {
+      margin-top: 1rem;
+    }
+
+    .right {
+      margin-left: auto;
+    }
+  }
+
+  .set-list {
+    padding: 0 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 0.1rem solid $fcF0;
+
+    dt {
+      margin-top: 2rem;
+      width: 70%;
+      height: 3rem;
+    }
+    dd {
+      margin-top: 2rem;
+      text-align: right;
+      width: 30%;
+      height: 3rem;
+    }
+  }
+
+  .noti-txt {
+    position: relative;
+    padding: 0 3.1rem;
+    font-size: 1.1rem;
+    color: $fc9;
+    background: url(../../assets/img/layout/icon-info.svg) no-repeat 1rem 0;
+    em {
+      margin-top: 0.6rem;
+      display: block;
+      font-size: 1.2rem;
+    }
+  }
+
+  .btn-area {
+    margin-top: 6rem;
+  }
+}

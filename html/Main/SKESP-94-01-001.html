@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">설정</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-alarm-setting">
+          <div class="block-layout">
+            <div class="title-box">
+              <div>
+                <p class="title">정보 알림 설정</p>
+                <p class="sub-txt">세차 / 오일,배터리 / 수리견적 알림을<br/>
+                  받을 수 있습니다.</p>
+              </div>
+              <div class="checkbox-spinner right type1">
+                <input type="checkbox" id="chk-sp">
+                <label for="chk-sp"></label>
+              </div>
+            </div>
+            <dl class="set-list">
+              <dt>문자 (sms) 수신동의</dt>
+              <dd>
+                <div class="checkbox-spinner  type1">
+                  <input type="checkbox" id="chk-sp00">
+                  <label for="chk-sp00"></label>
+                </div>
+              </dd>
+              <dt>이메일 수신동의</dt>
+              <dd>
+                <div class="checkbox-spinner  type1">
+                  <input type="checkbox" id="chk-sp01">
+                  <label for="chk-sp01"></label>
+                </div>
+              </dd>
+              <dt>알림톡 수신동의</dt>
+              <dd>
+                <div class="checkbox-spinner  type1">
+                  <input type="checkbox" id="chk-sp02">
+                  <label for="chk-sp02"></label>
+                </div>
+              </dd>
+            </dl>
+            <p class="noti-txt">
+              정보 알림에 대한 수신동의 여부 정보 갱신
+              <em>2020-11-15 19:23</em>
+            </p>
+          </div>
+
+          <div class="block-layout">
+            <div class="title-box">
+              <div>
+                <p class="title"><button type="button">마케팅 정보 활용 동의 <i class="bg-icon more"></i></button></p>
+                <p class="sub-txt">이벤트 및 혜택 알림을 받을 수 있습니다.</p>
+              </div>
+              <div class="checkbox-spinner right type1">
+                <input type="checkbox" id="chk-sp1">
+                <label for="chk-sp1"></label>
+              </div>
+            </div>
+            <dl class="set-list">
+              <dt>문자 (sms) 수신동의</dt>
+              <dd>
+                <div class="checkbox-spinner  type1">
+                  <input type="checkbox" id="chk-sp03" checked>
+                  <label for="chk-sp03"></label>
+                </div>
+              </dd>
+              <dt>이메일 수신동의</dt>
+              <dd>
+                <div class="checkbox-spinner  type1">
+                  <input type="checkbox" id="chk-sp04">
+                  <label for="chk-sp04"></label>
+                </div>
+              </dd>
+              <dt>알림톡 수신동의</dt>
+              <dd>
+                <div class="checkbox-spinner  type1">
+                  <input type="checkbox" id="chk-sp05">
+                  <label for="chk-sp02"></label>
+                </div>
+              </dd>
+            </dl>
+            <p class="noti-txt">
+              마케팅 알림에 대한 수신동의 여부 정보 갱신
+              <em>2020-11-15 19:23</em>
+            </p>
+            <div class="btn-area">
+              <button type="button" class="btn-link type2">로그아웃</button>
+            </div>
+          </div>
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4">변경</button>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">마케팅 정보 활용 동의</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="block-layout">
+            <table class="tbl type1">
+              <colgroup>
+                <col width="40%" />
+                <col />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>항목</th>
+                  <td>
+                    <ul class="list-dot type3">
+                      <li>이름</li>
+                      <li>휴대폰번호</li>
+                      <li>주소( 교환/반품 시)</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>목적</th>
+                  <td>
+                    <ul class="list-dot type3">
+                      <li>문자(SMS), 이메일, 알림톡 등을
+                        통한 마케팅 홍보
+                        (이벤트 등 광고성 정보 포함)</li>
+                      <li>회원의 서비스 이용에 대한 통계</li>
+                      <li>멤버십 가입 유치</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>보유 및 이용기간</th>
+                  <td>회원탈퇴 시까지</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="reeference-mark color1">고객님께서는 동의 거부 권리가 있으며,
+              미동의 시에도 muffin 서비스 이용에 불이익은 없습니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
