@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">쿠폰등록</h1>
+        <h1 class="title">쿠폰함</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">
             이전페이지
@@ -38,16 +38,21 @@
       <!-- Wrap-contents -->
       <div class="wrap-contents">
         <div class="coupon-cont">
-          <div class="form-div">
-            <select name="" id="" class="select">
-              <option value="">전체</option>
-            </select>
+          <div class="wrap-tab type1">
+            <ul class="tab-menu">
+              <li class="active"><button type="button">주유소 사용 쿠폰 (5)</button></li>
+              <li><button type="button">제휴 세차 쿠폰 (2)</button></li>
+            </ul>
           </div>
-          <div class="form-div">
-            <p class="title-sm">쿠폰번호</p>
-            <div class="form-input">
-              <input type="text" placeholder="쿠폰번호" />
-              <button type="button" class="btn-clear-x" aria-label="텍스트 삭제"></button><i class="bg-icon clear-x"></i></button>
+          <div class="tab-content">
+            <div class="wrap-empty">
+              <div class="empty-img">
+                <img src="../../assets/img/layout/icon-empty-coupon.png" alt="" />
+              </div>
+              <p class="empty-text">
+                <strong>사용 가능한 쿠폰이 없습니다.</strong>
+              </p>
+              <p class="empty-text">다운 가능 쿠폰에서 쿠폰을 먼저 확인 해주세요.</p>
             </div>
           </div>
         </div>

@@ -1160,6 +1160,7 @@
   &:not(:first-child) {
     margin-top: 2rem;
   }
+
   //check-box
   &.chk-type {
     padding: 0;
@@ -1314,6 +1315,131 @@
       }
       .btn-download {
         display: none;
+      }
+    }
+  }
+
+  &.coupon-type {
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+
+      &:checked + label {
+        background: url(../../assets/img/layout/bg-coupon-on.svg) 0 0 / contain no-repeat;
+
+        &:after {
+          filter: brightness(10);
+        }
+      }
+    }
+
+    label {
+      position: relative;
+      width: 33.5rem;
+      height: 19.7rem;
+      margin: 0;
+      padding: 0;
+      background: url(../../assets/img/layout/bg-coupon.svg) 0 0 / contain no-repeat;
+      border: 0;
+      border-radius: 0;
+      transition: all 0.2s ease;
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        right: 1.9rem;
+        width: 2rem;
+        height: 2rem;
+        background: url(../../assets/img/layout/icon-chk-off.svg) 0 0 / 100% auto no-repeat;
+        transform: translateY(-50%);
+        content: "";
+      }
+    }
+
+    .coupon-info {
+      padding: 2.5rem 8.3rem 0 2.5rem;
+
+      .title {
+        margin-top: 1.5rem;
+        color: $fc1;
+
+        span {
+          padding-left: 0.4rem;
+          color: $pc3;
+          font-size: 1.1rem;
+        }
+      }
+      .num {
+        margin-top: 0.8rem;
+        font-size: 1.7rem;
+
+        strong {
+          font-size: 2.8rem;
+        }
+      }
+      .info-txt {
+        margin-top: 1.2rem;
+        color: $fc9;
+      }
+      .date {
+        margin-top: 0.6rem;
+        font-size: 1.1rem;
+        color: $fc9;
+      }
+      .btn-area {
+        margin-top: 2rem;
+        padding-top: 2rem;
+      }
+    }
+
+    &.size1 {
+      label {
+        height: 24.5rem;
+        background: url(../../assets/img/layout/bg-coupon-type1.svg) 0 0 / 100% auto no-repeat;
+      }
+
+      input[type="checkbox"] {
+        &:checked + label {
+          background: url(../../assets/img/layout/bg-coupon-on-type1.svg) 0 0 / contain no-repeat;
+        }
+      }
+    }
+
+    .dim-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 6.3rem;
+      background: rgba(#1c1c1c, 0.8);
+      border-radius: 0 0 1.6rem 1.6rem;
+      color: $fcF;
+
+      .title {
+        font-size: 1.5rem;
+        .bg-icon {
+          width: 2rem;
+          height: 2rem;
+          margin-right: 0.4rem;
+        }
+      }
+
+      .txt {
+        margin-left: 1.5rem;
+        font-size: 1.1rem;
+
+        span:not(:first-child) {
+          &:before {
+            display: inline-block;
+            height: 0.7rem;
+            margin: 0 0.8rem;
+            border-left: 0.1rem dotted $fcF;
+            content: "";
+          }
+        }
       }
     }
   }

@@ -362,3 +362,30 @@
     }
   }
 }
+
+.btn-floating {
+  display: inline-block;
+  height: 4rem;
+  padding: 0 1.5rem;
+  background: rgba($fc1, 0.85%);
+  border-radius: 2.5rem;
+  color: $fcF;
+  font-size: 1.3rem;
+  line-height: 1.2;
+
+  .bg-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+
+    &.more {
+      filter: brightness(30);
+    }
+  }
+}
+
+.wrap-floating {
+  position: fixed;
+  bottom: 8.5rem;
+  right: 2rem;
+  z-index: 30;
+}
