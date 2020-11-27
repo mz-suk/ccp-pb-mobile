@@ -701,59 +701,6 @@
   height: 1.6rem;
 }
 
-.coupon-cont {
-  padding: 4rem 2rem 11.5rem;
-
-  .text-guide {
-    margin-top: 2rem;
-    font-size: 1.1rem;
-  }
-
-  .wrap-btn,
-  .btn-area {
-    margin-top: 3rem;
-
-    .btn {
-      width: 100%;
-    }
-
-    .download {
-      width: 1.6rem;
-      height: 1.6rem;
-      margin-top: 0;
-    }
-  }
-
-  .list-coupon {
-    margin-top: 3rem;
-  }
-
-  .wrap-tab-scroll.type1 {
-    margin-top: 3rem;
-  }
-
-  .wrap-tab-scroll.type2 {
-    margin-top: 2.5rem;
-    padding-bottom: 0;
-    &:after {
-      display: none;
-    }
-  }
-
-  .coupon-top-select {
-    margin-top: 3rem;
-    & + .list-coupon {
-      margin-top: 2rem;
-    }
-  }
-
-  .tab-content {
-    .btn-area:first-child {
-      margin-top: 3rem;
-    }
-  }
-}
-
 .point-cont {
   padding: 4rem 2rem 11.5rem;
 
