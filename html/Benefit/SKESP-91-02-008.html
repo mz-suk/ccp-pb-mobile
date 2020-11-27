@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">쿠폰등록</h1>
+        <h1 class="title">쿠폰함</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">
             이전페이지
@@ -35,25 +35,38 @@
         </div>
       </header>
       <!-- //Header -->
+
       <!-- Wrap-contents -->
       <div class="wrap-contents">
         <div class="coupon-cont">
           <div class="form-div">
-            <select name="" id="" class="select">
-              <option value="">전체</option>
-            </select>
+            <p class="title">쿠폰 종류를 선택해주세요.</p>
+            <ul class="list-radio">
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-1" name="group1" checked>
+                <label for="chk1-1"><p class="left">Sk 모바일 주유권</p></label>
+              </li>
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-2" name="group1">
+                <label for="chk1-2"><p class="left">머핀 주유 쿠폰</p></label>
+              </li>
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-3" name="group1">
+                <label for="chk1-3"><p class="left">머핀 자동 세차쿠폰</p></label>
+              </li>
+            </ul>
           </div>
+
           <div class="form-div">
             <p class="title-sm">쿠폰번호</p>
             <div class="form-input">
-              <input type="text" placeholder="쿠폰번호" />
+              <input type="text" placeholder="- 를 제외한 숫자만 입력해 주세요." />
               <button type="button" class="btn-clear-x" aria-label="텍스트 삭제"></button><i class="bg-icon clear-x"></i></button>
             </div>
           </div>
         </div>
       </div>
       <!-- //Wrap-contents -->
-      <!-- Footer -->
     </div>
   </body>
 </html>

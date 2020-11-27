@@ -1395,7 +1395,7 @@
     &.size1 {
       label {
         height: 24.5rem;
-        background: url(../../assets/img/layout/bg-coupon-type1.svg) 0 0 / 100% auto no-repeat;
+        background: url(../../assets/img/layout/bg-coupon-type1.svg) 0 0 / contain no-repeat;
       }
 
       input[type="checkbox"] {
