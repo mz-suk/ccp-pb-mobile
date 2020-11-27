@@ -960,6 +960,7 @@
   dt {
     clear: both;
     &.replay-txt {
+      color: $fc6;
       .bg-icon {
         width: 1.2rem;
         height: 1.2rem;
@@ -1060,6 +1061,11 @@
       float: none;
       clear: both;
       text-align: left;
+
+      .bg-icon {
+        margin-left: 0;
+      }
+
       &.type1 {
         overflow: hidden;
         color: $fc6;
@@ -1069,8 +1075,8 @@
       }
     }
     & + & {
-      margin-top: 2rem;
-      padding-top: 2rem;
+      margin-top: 1.8rem;
+      padding-top: 1.8rem;
       border-top: 0.1rem solid $fcF0;
     }
   }

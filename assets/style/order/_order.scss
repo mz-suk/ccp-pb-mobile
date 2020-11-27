@@ -13,7 +13,7 @@
 
   .form-div {
     .title {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -338,7 +338,7 @@
 
   dt,
   dd {
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -514,6 +514,13 @@
 .point-info {
   .define-list {
     color: $fc1;
+
+    dt {
+      width: 25rem;
+    }
+    dd {
+      width: calc(100% - 25rem);
+    }
   }
 
   .desc {
