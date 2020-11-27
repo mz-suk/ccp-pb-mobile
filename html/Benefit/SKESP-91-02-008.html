@@ -35,20 +35,38 @@
         </div>
       </header>
       <!-- //Header -->
+
       <!-- Wrap-contents -->
       <div class="wrap-contents">
-        <div class="wrap-empty">
-          <div class="empty-img">
-            <img src="../../assets/img/layout/icon-empty-coupon.png" alt="" />
+        <div class="coupon-cont">
+          <div class="form-div">
+            <p class="title">쿠폰 종류를 선택해주세요.</p>
+            <ul class="list-radio">
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-1" name="group1" checked>
+                <label for="chk1-1"><p class="left">Sk 모바일 주유권</p></label>
+              </li>
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-2" name="group1">
+                <label for="chk1-2"><p class="left">머핀 주유 쿠폰</p></label>
+              </li>
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-3" name="group1">
+                <label for="chk1-3"><p class="left">머핀 자동 세차쿠폰</p></label>
+              </li>
+            </ul>
           </div>
-          <p class="empty-text">
-            <strong>사용가능한 쿠폰이 없습니다.</strong>
-          </p>
-          <p class="empty-text">다운 가능 쿠폰에서 쿠폰을 먼저 확인해 주세요.</p>
+
+          <div class="form-div">
+            <p class="title-sm">쿠폰번호</p>
+            <div class="form-input">
+              <input type="text" placeholder="- 를 제외한 숫자만 입력해 주세요." />
+              <button type="button" class="btn-clear-x" aria-label="텍스트 삭제"></button><i class="bg-icon clear-x"></i></button>
+            </div>
+          </div>
         </div>
       </div>
       <!-- //Wrap-contents -->
-      <!-- Footer -->
     </div>
   </body>
 </html>

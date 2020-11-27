@@ -362,6 +362,12 @@
   &.coupon-label {
     background-image: url(../../assets/img/layout/icon-coupon-label.svg);
   }
+  &.coupon-label-type1 {
+    background-image: url(../../assets/img/layout/coupon-label-type1.svg);
+  }
+  &.coupon-label-type2 {
+    background-image: url(../../assets/img/layout/coupon-label-type2.svg);
+  }
   &.filter-cash {
     background-image: url(../../assets/img/layout/icon-filter-cash.svg);
   }
@@ -544,6 +550,9 @@
   &.membership-type1 {
     background-image: url(../../assets/img/layout/icon-membership-type1.svg);
   }
+  &.membership-type2 {
+    background-image: url(../../assets/img/layout/icon-membership-type2.svg);
+  }
   &.icon-regularly {
     background-image: url(../../assets/img/layout/icon-regularly.svg);
   }
@@ -597,6 +606,11 @@
     border-color: $gc3;
   }
 
+  &.purple {
+    color: #493cff;
+    border-color: #5952ed;
+  }
+
   &.grad1 {
     color: $fcF;
     border: none;
@@ -606,6 +620,11 @@
     color: $fcF;
     border: none;
     background: linear-gradient(to right, $gc3 0%, $gc4 100%);
+  }
+  &.grad3 {
+    color: $fcF;
+    border: none;
+    background: linear-gradient(to right, #4545c3 0%, #6257ff 100%);
   }
   &.gray {
     border-color: $fcD7;
@@ -627,5 +646,11 @@
     line-height: 2rem;
     vertical-align: top;
     box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16%);
+  }
+
+  .bg-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.4rem;
   }
 }

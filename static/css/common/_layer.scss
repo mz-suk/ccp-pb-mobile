@@ -360,6 +360,10 @@
       margin-top: 2rem;
     }
   }
+
+  .coupon-cont {
+    padding-bottom: 11.5rem;
+  }
 }
 
 .wrap-partner-images {
@@ -492,6 +496,25 @@
       padding: 0 2rem;
       flex-direction: column;
     }
+    &.type2 {
+      display: block;
+      text-align: left;
+      .tit {
+        font-size: 1.7rem;
+        text-align: center;
+        em {
+          margin-bottom: 0.3rem;
+          display: block;
+          font-size: 1.8rem;
+        }
+      }
+      .list-dot {
+        margin-top: 1rem;
+      }
+      .gray-box.loc-box {
+        width: auto;
+      }
+    }
     & + .check-layer {
       margin: -1.9rem 0 3.9rem;
     }
@@ -525,6 +548,9 @@
             margin-top: 1rem;
           }
         }
+      }
+      .list-dot {
+        margin-top: 0;
       }
     }
   }

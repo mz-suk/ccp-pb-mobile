@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47.974" height="46.406" viewBox="0 0 47.974 46.406">
+  <g id="그룹_349638" data-name="그룹 349638" transform="translate(-290.645 -83.559)">
+    <line id="선_89070" data-name="선 89070" x1="0.749" y1="0.75" transform="translate(303.771 113.43) rotate(-9)" fill="none" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_89071" data-name="선 89071" x1="0.749" y1="0.642" transform="translate(304.629 114.055) rotate(-9)" fill="none" stroke="#111" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="패스_643522" data-name="패스 643522" d="M15.677,4.35,2.4,17.52l7.709,7.71h0l.749.75S13,28.121,16.319,24.694L26.812,14.2,25.206,5.313,16.426,3.6l-.749.75" transform="translate(291.201 96.949) rotate(-9)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="패스_643523" data-name="패스 643523" d="M18.5,9.306A1.392,1.392,0,1,1,17.106,10.7,1.392,1.392,0,0,1,18.5,9.306m0-1.606a3,3,0,1,0,3,3,3,3,0,0,0-3-3" transform="translate(292.162 97.09) rotate(-9)" fill="#111"/>
+    <circle id="타원_5567" data-name="타원 5567" cx="8.909" cy="8.909" r="8.909" transform="translate(314.912 104.643) rotate(30)" fill="#f9f9f9"/>
+    <circle id="타원_5568" data-name="타원 5568" cx="6.869" cy="6.869" r="6.869" transform="translate(315.697 107.453) rotate(30)" fill="#fddb2b" stroke="#001" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="패스_475243" data-name="패스 475243" d="M1.113-5.278l.651,2.6q.119.469.21.987l.049.287h.014l.049-.308.063-.35q.035-.21.119-.616l.609-2.6H3.983l.679,2.6q.1.385.217,1.078a1.649,1.649,0,0,1,.028.2h.021q.112-.693.259-1.274l.658-2.6H6.888l-1.26,4.6a.65.65,0,0,1-.7.5.649.649,0,0,1-.707-.511L3.689-2.674q-.021-.091-.042-.189L3.6-3.073q-.049-.189-.091-.441l-.042-.2q-.014-.084-.021-.154H3.423q-.056.42-.189,1-.028.119-.042.182L2.667-.707a.645.645,0,0,1-.7.511.8.8,0,0,1-.444-.112.646.646,0,0,1-.249-.385L0-5.278Z" transform="translate(314.869 120.133) rotate(-4)" fill="#111" stroke="#111" stroke-linecap="round" stroke-width="0.5"/>
+    <line id="선_44023" data-name="선 44023" x2="7" transform="translate(314.709 117.137) rotate(-4)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="선_43568" data-name="선 43568" x1="2.828" y1="2.829" transform="translate(329.775 126.076)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="선_43569" data-name="선 43569" y1="2.829" x2="2.828" transform="translate(329.775 126.076)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <g id="그룹_171823" data-name="그룹 171823" transform="translate(242.174 4.652)">
+      <line id="선_43570" data-name="선 43570" x1="2.829" y1="2.828" transform="translate(61.647 79.967)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43571" data-name="선 43571" y1="2.828" x2="2.829" transform="translate(61.647 79.967)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <g id="그룹_171824" data-name="그룹 171824" transform="translate(240.174 14.652)">
+      <line id="선_43572" data-name="선 43572" x1="2.21" y1="2.21" transform="translate(95.174 83.274)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43573" data-name="선 43573" y1="2.21" x2="2.21" transform="translate(95.174 83.274)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <circle id="타원_5540" data-name="타원 5540" cx="1" cy="1" r="1" transform="translate(312.469 89.375)" fill="#111"/>
+    <circle id="타원_5541" data-name="타원 5541" cx="1" cy="1" r="1" transform="translate(292 86.125)" fill="#111"/>
+    <circle id="타원_5542" data-name="타원 5542" cx="1" cy="1" r="1" transform="translate(328.467 103)" fill="#111"/>
+    <circle id="타원_5538" data-name="타원 5538" cx="1.5" cy="1.5" r="1.5" transform="translate(291.395 101.391)" fill="none" stroke="#111" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>
