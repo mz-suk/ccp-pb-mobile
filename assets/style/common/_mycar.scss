@@ -542,21 +542,31 @@
 }
 .refund-area {
   margin-top: 4rem;
-  color: $fc1;
   .top-title {
     margin-top: 3.4rem;
     margin-bottom: 0.75rem;
     font-size: 1.5rem;
+    color: $fc1;
+  }
+
+  .txt-row {
+    & + .top-title {
+      margin-top: 2rem;
+    }
   }
   .list-number {
-    margin-top: 3rem;
+    margin-top: 1rem;
     color: $fc1;
     & > li:not(:first-child) {
-      margin-top: 2.15rem;
+      margin-top: 2rem;
     }
-    .list-dot {
-      margin-top: 1.25rem;
-      padding-left: 1rem;
+    .txt-row {
+      margin-top: 1rem;
+      margin-left: 1.5rem;
+      color: $fc6;
+    }
+    .ol-num {
+      margin-top: 1rem;
     }
   }
 }
