@@ -41,17 +41,12 @@
               <button type="button" class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
-              <dl class="customer-info">
-                <dt>예약자명</dt>
+              <dl class="customer-info type1">
+                <dt>구매자명 (예약자)</dt>
                 <dd>송헌호</dd>
-                <dt>연락처</dt>
-                <dd>010 - 1234 -5678 <span>(안심번호 사용)</span></dd>
+                <dt>구매자 휴대전화</dt>
+                <dd>010 - 1234 -5678</dd>
               </dl>
-              <div class="safe-number">
-                <input type="checkbox" id="num" />
-                <label for="num">안심번호 사용</label>
-                <button type="button" class="bg-icon tooltip">툴팁</button>
-              </div>
             </div>
           </div>
 
@@ -61,60 +56,65 @@
               <button type="button" class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
-              <dl class="define-box">
-                <dt class="left">머핀 클럽 멤버십</dt>
-                <dd class="right"><span>30,000</span>원</dd>
+              <dl class="define-list type1">
+                <dt>머핀 클럽 멤버십</dt>
+                <dd><span>30,000</span>원</dd>
               </dl>
             </div>
           </div>
 
           <div class="accordion active">
             <div class="accordion-title">
-              <p class="title">할인 적용</p>
+              <p class="title">포인트 할인</p>
               <button type="button" class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
-              <div class="wrap-text-link">
-                <a href="javascript:;" class="text-link">쿠폰</a>
-                <a href="javascript:;" class="text-link">머핀 포인트</a>
-                <a href="javascript:;" class="text-link">OK 캐시백 포인트</a>
-                <a href="javascript:;" class="text-link">현대 블루 포인트</a>
-                <a href="javascript:;" class="text-link">기아 레드 포인트</a>
-              </div>
+              <dl class="define-list type1">
+                <dt>머핀 포인트</dt>
+                <dd><button type="button" class="btn-arrow size1"><span class="txt-under">조회하기</span></button></dd>
+                <dt>OK캐시백 포인트</dt>
+                <dd><button type="button" class="btn-arrow size1"><span class="txt-under">조회하기</span></button></dd>
+              </dl>
             </div>
           </div>
 
           <div class="accordion active">
             <div class="accordion-title">
-              <p class="title">결제 정보</p>
+              <p class="title">결제금액 정보</p>
               <button class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
               <div class="order-info">
                 <dl class="define-box">
-                  <dt class="left">상품금액</dt>
-                  <dd class="right">40,000원</dd>
+                  <dt>상품 총 금액</dt>
+                  <dd>40,000원</dd>
+                </dl>
+                <dl class="define-box">
+                  <dt>옵션 총 금액</dt>
+                  <dd>20,000원</dd>
                 </dl>
                 <dl class="define-list">
-                  <dt>세부옵션 추가금액</dt>
-                  <dd>20,000원</dd>
                   <dt>쿠폰할인</dt>
-                  <dd>-20,000원</dd>
-                  <dt>포인트 차감 (머핀)</dt>
                   <dd>0원</dd>
-                  <dt>포인트 차감 (OK 캐시백)</dt>
-                  <dd>-1,150원</dd>
-                  <dt>포인트 차감 (현대 블루 포인트)</dt>
+                  <dt>포인트할인 (머핀)</dt>
                   <dd>0원</dd>
-                  <dt>포인트 차감 (기아 레드 포인트)</dt>
-                  <dd>-850원</dd>
+                  <dt>포인트할인 (OK캐시백)</dt>
+                  <dd>0원</dd>
                 </dl>
                 <dl class="define-box total">
                   <dt class="left">실 결제금액</dt>
                   <dd class="right"><span>56,000</span>원</dd>
                 </dl>
                 <dl class="define-box benefit">
-                  <dt class="left">총 혜택 금액</dt>
+                  <dt class="left">혜택 총 금액
+                    <div class="wrap-tooltip"><!-- [D] 활성화 .active 추가 -->
+                      <button type="button" class="bg-icon tooltip2">툴팁</button>
+                      <div class="tooltip-box">
+                        <button type="button" class="bg-icon tooltip-close">닫기</button>
+                        <p>구매하실 상품 및 옵션의 정상가와<br/>실제 결제금액을 기준으로 계산됩니다.</p>
+                      </div>
+                    </div>
+                  </dt>
                   <dd class="right"><span>35,000</span>원</dd>
                 </dl>
               </div>
@@ -132,17 +132,16 @@
                   <li class="active"><button type="button">간편결제 카드</button></li>
                   <li><button type="button">일반 결제</button></li>
                 </ul>
-                <!-- [D] 간편결제 카드 : 카드 선택  -->
                 <div class="tab-content">
                   <div class="pay-method">
                     <div class="wrap-card">
-                      <div class="card color3">
+                      <div class="card color1">
                         <div class="info">
                           <div class="checkbox-cycle">
-                            <input type="radio" name="radio1" id="sp-chk1">
+                            <input type="radio" name="radio1" id="sp-chk1" checked>
                           </div>
-                          <p class="brand">현대카드</p>
-                          <p class="num">3742 76** ****0927</p>
+                          <p class="brand">신한카드</p>
+                          <p class="num">9490 88** **** 5200</p>
                         </div>
                         <span class="logo-card"><img src="../../assets/img/layout/icon-card-mastercard.png" alt="현대카드" /></span>
                         <div class="bottom">
@@ -189,7 +188,6 @@
                     <p class="text-guide">카드는 [결제관리] 메뉴에서 관리하실 수 있습니다.</p>
                   </div>
                 </div>
-                <!-- //간편결제 카드 : 카드 선택  -->
               </div>
             </div>
           </div>
@@ -206,16 +204,17 @@
               <div class="accordion-cont">
                 <div class="terms-box">
                   <input type="checkbox" id="terms1" />
-                  <label for="terms1">(필수) 개인정보 수집 이용 및 제 3자 제공 동의</label>
-                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                  <label for="terms1">개인정보 제 3자 제공 동의</label>
+                  <button type="button" class="btn-arrow size1"><span class="txt-under">전문보기</span></button>
                 </div>
                 <div class="terms-box">
                   <input type="checkbox" id="terms2" />
-                  <label for="terms2">(필수) 결제 대행 서비스 이용약관 동의</label>
-                  <a href="javascript:;" class="bg-icon more">더보기</a>
+                  <label for="terms2">결제 대행 서비스 이용약관 동의</label>
+                  <button type="button" class="btn-arrow size1"><span class="txt-under">전문보기</span></button>
                 </div>
               </div>
             </div>
+
             <div class="wrap-btn">
               <button type="button" class="btn-arrow size1"><span class="txt-under">결제 취소하기</span></button>
             </div>

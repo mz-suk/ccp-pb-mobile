@@ -5,6 +5,10 @@
     .btn {
       width: 100%;
     }
+
+    &.type1 {
+      margin: 4rem 2rem 0;
+    }
   }
 
   .form-div {
@@ -140,6 +144,20 @@
 
   .text-box {
     margin-top: 3rem;
+
+    .define-list {
+      padding: 0 2rem;
+      color: $fc1;
+
+      dt:not(:last-of-type),
+      dd:not(:last-of-type) {
+        margin-bottom: 0.7rem;
+      }
+
+      dd + dd {
+        width: 100%;
+      }
+    }
   }
 
   .wrap-card {
@@ -275,7 +293,7 @@
   .list-dot {
     margin-bottom: 3.8rem;
     li {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
     &.type5 {
       margin: 0 1rem;
@@ -331,7 +349,7 @@
     position: relative;
     clear: both;
     float: left;
-    width: 10.4rem;
+    width: 11.9rem;
     padding-left: 1.2rem;
     box-sizing: border-box;
     color: $fc1;
@@ -350,7 +368,7 @@
 
   dd {
     float: right;
-    width: calc(100% - 10.4rem);
+    width: calc(100% - 11.9rem);
     word-break: break-all;
 
     p:not(:first-child) {
@@ -692,6 +710,10 @@
 
     .accordion-cont {
       display: block;
+    }
+
+    & + .wrap-btn.type1 {
+      margin-top: 0;
     }
   }
 }
