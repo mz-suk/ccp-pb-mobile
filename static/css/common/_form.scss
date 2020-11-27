@@ -594,6 +594,46 @@ input[type="checkbox"] {
       transition: right 0.2s, border-color 0.2s, box-shadow 0.2s;
     }
   }
+
+  &.type1 {
+    input[type="checkbox"] + label {
+      padding: 0;
+      width: 5rem;
+      height: 2rem;
+      border-radius: 1rem;
+      background: $fc9;
+      box-sizing: border-box;
+      transition: background 0.2s;
+
+      &:before {
+        top: -0.6rem;
+        left: -0.1rem;
+        right: auto;
+        width: 3rem;
+        height: 3rem;
+        border-color: $fcF0;
+        box-shadow: 0.1rem 0 0.2rem 0 rgba(0, 0, 0, 0.16);
+        transition: left 0.2s, border-color 0.2s, box-shadow 0.2s;
+      }
+    }
+
+    input[type="checkbox"]:checked + label {
+      background: $pc3;
+      border-color: $pc3;
+
+      &:before {
+        left: calc(100% - 2.9rem);
+        border-color: $fcF0;
+        transition: left 0.2s, border-color 0.2s, box-shadow 0.2s;
+      }
+    }
+  }
+
+  &.color1 {
+    input[type="checkbox"] + label {
+      background: $fcD7;
+    }
+  }
 }
 .checkbox-btn {
   input[type="checkbox"] {
