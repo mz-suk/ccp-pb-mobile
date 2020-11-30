@@ -88,13 +88,14 @@
       }
     }
     .top-row {
-      padding-bottom: 2rem;
+      padding-bottom: 1.5rem;
     }
     .body-row {
       padding-top: 2rem;
       border-top: 0.1rem solid $fcF0;
     }
     .blind-row {
+      border-top: 0.1rem solid $fcF0;
       .wrap-empty {
         padding-top: 1rem;
         padding-bottom: 0;
@@ -295,6 +296,7 @@
     }
   }
   .apply {
+    margin-top: 0.5rem;
     width: 100%;
   }
 

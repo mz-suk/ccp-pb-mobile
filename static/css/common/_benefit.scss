@@ -517,4 +517,21 @@
       }
     }
   }
+
+  .list-radio {
+    margin-top: 2rem;
+
+    .left {
+      font-size: 1.5rem;
+    }
+  }
+
+  .form-div + .form-div {
+    border-top: 0.1rem solid $fcF0;
+    padding-top: 3rem;
+
+    .title-sm {
+      font-size: 1.5rem;
+    }
+  }
 }

@@ -930,6 +930,9 @@
       span {
         margin-right: 0.15rem;
       }
+      strong {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -957,6 +960,7 @@
   dt {
     clear: both;
     &.replay-txt {
+      color: $fc6;
       .bg-icon {
         width: 1.2rem;
         height: 1.2rem;
@@ -1057,6 +1061,11 @@
       float: none;
       clear: both;
       text-align: left;
+
+      .bg-icon {
+        margin-left: 0;
+      }
+
       &.type1 {
         overflow: hidden;
         color: $fc6;
@@ -1066,8 +1075,8 @@
       }
     }
     & + & {
-      margin-top: 2rem;
-      padding-top: 2rem;
+      margin-top: 1.8rem;
+      padding-top: 1.8rem;
       border-top: 0.1rem solid $fcF0;
     }
   }
@@ -1151,6 +1160,32 @@
 
   .txt-under {
     text-decoration: underline;
+  }
+}
+
+.ol-num {
+  li {
+    position: relative;
+    padding-left: 1.7rem;
+    color: $fc6;
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+
+    .num {
+      position: absolute;
+      top: 0.3rem;
+      left: 0;
+      display: block;
+      width: 1.1rem;
+      height: 1.1rem;
+      text-align: center;
+      line-height: 1.2rem;
+      font-size: 1rem;
+      color: $fc6;
+      border: 0.1rem solid $fc6;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -1395,7 +1430,7 @@
     &.size1 {
       label {
         height: 24.5rem;
-        background: url(~assets/img/layout/bg-coupon-type1.svg) 0 0 / 100% auto no-repeat;
+        background: url(~assets/img/layout/bg-coupon-type1.svg) 0 0 / contain no-repeat;
       }
 
       input[type="checkbox"] {
