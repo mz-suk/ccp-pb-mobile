@@ -1,6 +1,9 @@
 .wrapper-main {
   min-height: 100vh;
   background-color: $fcF9;
+  .wrap-contents {
+    padding-bottom: 6rem;
+  }
 }
 
 .main-cont {
@@ -230,6 +233,7 @@
       left: 50%;
       transform: translateX(-50%);
       margin-top: 1.2rem;
+      margin-left: -2.5rem;
     }
     .swiper-pagination-bullet {
       display: inline-block;
