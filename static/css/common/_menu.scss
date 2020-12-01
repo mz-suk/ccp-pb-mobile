@@ -19,6 +19,7 @@
       }
 
       button {
+        position: relative;
         color: $fc1;
         font-size: 1.5rem;
       }
@@ -31,7 +32,10 @@
       }
 
       .badge {
-        margin-top: -0.2rem;
+        position: absolute;
+        top: -0.2rem;
+        right: -2.7rem;
+        margin: 0;
       }
     }
   }

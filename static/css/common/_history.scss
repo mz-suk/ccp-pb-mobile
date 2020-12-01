@@ -88,13 +88,14 @@
       }
     }
     .top-row {
-      padding-bottom: 2rem;
+      padding-bottom: 1.5rem;
     }
     .body-row {
       padding-top: 2rem;
       border-top: 0.1rem solid $fcF0;
     }
     .blind-row {
+      border-top: 0.1rem solid $fcF0;
       .wrap-empty {
         padding-top: 1rem;
         padding-bottom: 0;
@@ -295,6 +296,7 @@
     }
   }
   .apply {
+    margin-top: 0.5rem;
     width: 100%;
   }
 
@@ -1043,8 +1045,20 @@
             background: $fc6;
             border-radius: 50%;
           }
+
+          &.color1 {
+            color: $pc3;
+            &:before {
+              background: $pc3;
+            }
+          }
+        }
+
+        .txt-line-th {
+          text-decoration: line-through;
         }
       }
+
       .more-detail {
         border-top: 0.1rem solid $fcE4;
         margin: 3rem -0.5rem -2rem;
@@ -1076,6 +1090,27 @@
             margin-top: -0.4rem;
             width: 1.6rem;
             height: 1.6rem;
+          }
+        }
+      }
+
+      .sum-box {
+        padding: 1.7rem 2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background: $fcF9;
+        color: $fc6;
+        dt,
+        dd {
+          margin-top: 1rem;
+          width: 50%;
+        }
+        dd {
+          text-align: right;
+          em {
+            margin-left: 0.5rem;
+            font-size: 1.4rem;
           }
         }
       }

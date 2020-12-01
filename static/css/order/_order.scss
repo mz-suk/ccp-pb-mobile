@@ -163,7 +163,7 @@
   .wrap-card {
     overflow-x: visible;
     overflow-y: hidden;
-    height: 17rem;
+    height: 17.2rem;
     margin: 0 -5.5rem;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
@@ -349,7 +349,7 @@
     position: relative;
     clear: both;
     float: left;
-    width: 11.9rem;
+    width: 11rem;
     padding-left: 1.2rem;
     box-sizing: border-box;
     color: $fc1;
@@ -368,7 +368,7 @@
 
   dd {
     float: right;
-    width: calc(100% - 11.9rem);
+    width: calc(100% - 11rem);
     word-break: break-all;
 
     p:not(:first-child) {
@@ -547,7 +547,6 @@
 
   .text-link {
     display: block;
-    width: 100%;
     margin-bottom: 2rem;
     padding-right: 1.5rem;
     background: url(~assets/img/layout/icon-more-type2.svg) 100% 50% / 1.2rem 1.2rem no-repeat;
