@@ -572,7 +572,7 @@
 }
 
 .wrap-layer-float {
-  flex: 0 1 calc(100% - 4rem);
+  // flex: 0 1 calc(100% - 4rem);
   position: relative;
   z-index: 51;
   .layer-float-cont {
@@ -596,16 +596,7 @@
   }
   .float-cont {
     padding-top: 2.5rem;
-    .barcode-box {
-      position: relative;
-      margin: 2rem 1.4rem 0;
-      padding-right: 3.1rem;
-      .btn-add {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-    }
+    width: 27.5rem;
     .gray-box {
       align-items: center;
       justify-content: center;
@@ -638,5 +629,15 @@
     top: -5.6rem;
     left: 50%;
     transform: translate(-50%, 0);
+  }
+  .qrcode-box {
+    margin-top: 0.5rem;
+    text-align: center;
+    .qrcode {
+      width: 20rem;
+    }
+    .btn-link {
+      margin: 3.5rem 0 1rem;
+    }
   }
 }

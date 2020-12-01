@@ -102,12 +102,75 @@
 .wrap-membership {
   padding: 4rem 2rem 0;
   color: $fc1;
+
   .mumbership-card-list {
     margin-top: 3.5rem;
 
     .membership-info:not(:first-child) {
       margin-top: 3rem;
     }
+  }
+
+  .info-cont {
+    .title {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+    }
+    .customer-info {
+      padding: 2.5rem 0 4rem;
+      border-top: 0.1rem solid $fcF0;
+      border-bottom: 0.1rem solid $fcF0;
+
+      dd {
+        color: $fc6;
+      }
+    }
+    .gray-box {
+      padding: 2.5rem 2rem;
+    }
+
+    &:not(:first-child) {
+      margin-top: 2.5rem;
+    }
+  }
+
+  .charge-top {
+    padding: 0 0 3rem;
+  }
+}
+
+.wrap-code {
+  text-align: center;
+
+  .gray-box {
+    margin: 0 1rem;
+    padding: 3.5rem 3.4rem 4rem 3.4rem;
+  }
+  .barcode-box {
+    margin: 0;
+    width: 21.6rem;
+
+    img {
+      width: 100%;
+    }
+  }
+  .btn-link {
+    margin-top: 3rem;
+  }
+  .wrap-btn {
+    margin-top: 5.5rem;
+  }
+}
+
+.barcode-box {
+  position: relative;
+  margin: 2rem 1.4rem 0;
+  padding-right: 3.1rem;
+
+  .btn-add {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
