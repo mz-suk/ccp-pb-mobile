@@ -1031,7 +1031,14 @@
     }
 
     &.muffin {
-      background: linear-gradient(138deg, rgba(4, 160, 243, 1) 0%, rgba(69, 212, 154, 1) 100%);
+      background: url(../../../assets/img/layout/bg-getcha.svg) no-repeat 0 0;
+      &.bg1 {
+        background: url(../../../assets/img/layout/bg-oil.svg) no-repeat 0 0;
+      }
+      &.bg2 {
+        background: url(../../../assets/img/layout/bg-exp.svg) no-repeat 0 0;
+      }
+
       .info {
         padding-bottom: 3rem;
       }
