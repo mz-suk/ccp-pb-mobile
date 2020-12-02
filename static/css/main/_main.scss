@@ -1,20 +1,28 @@
 .wrapper-main {
   min-height: 100vh;
   background-color: $fcF9;
+  .wrap-contents {
+    padding-bottom: 6rem;
+  }
 }
 
 .main-cont {
   padding: 0 2.5rem;
 
   .main-txt {
-    margin: 0.5rem 0 0 1.5rem;
+    margin: 0 0 0 1.5rem;
+    padding-top: 0.5rem;
     color: $fc1;
     font-size: 1.8rem;
     line-height: 1.3;
   }
 
   .info-type-box {
-    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+
+    .dropdown-area {
+      top: 3.5rem;
+    }
   }
 
   .info-car-cont.type1 {
@@ -56,7 +64,9 @@
   .list-category {
     display: flex;
     flex-wrap: wrap;
+    width: 32.5rem;
     padding: 0 0.5rem;
+    box-sizing: border-box;
 
     li {
       position: relative;
@@ -91,29 +101,47 @@
     }
 
     &.type1 {
+      justify-content: space-between;
+
       li {
         display: flex;
         align-items: center;
-        margin: 1.4rem 4rem 0 0;
+        width: 14.7rem;
+        min-height: 9.2rem;
+        margin: 0;
+        padding-left: 8.4rem;
         text-align: left;
 
-        img {
-          width: 8rem;
-          height: 8rem;
-        }
-        &:nth-of-type(2n) {
-          margin-right: 0;
-        }
+        img,
         &:nth-child(odd):before {
           display: none;
         }
         &:before {
-          left: -2rem;
+          top: inherit;
+          left: -1.2rem;
+        }
+        &:nth-of-type(1) {
+          background: url(~assets/img/layout/icon-category1.svg) 0 0 / 8.6rem 8.2rem no-repeat;
+        }
+        &:nth-of-type(2) {
+          padding-left: 9.6rem;
+          background: url(~assets/img/layout/icon-category2.svg) 0 0 / 8.1rem 8.4rem no-repeat;
+        }
+        &:nth-of-type(3) {
+          background: url(~assets/img/layout/icon-category3.svg) 0 0 / 8rem 8rem no-repeat;
+        }
+        &:nth-of-type(4) {
+          background: url(~assets/img/layout/icon-category6.svg) 0 0 / 9.1rem 9rem no-repeat;
+        }
+        & > a {
+          display: flex;
+          align-items: center;
         }
       }
     }
 
     &.type2 {
+      width: 100%;
       padding: 0 1rem;
 
       li {

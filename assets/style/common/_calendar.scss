@@ -221,6 +221,11 @@
     transform: translateX(-50%);
     content: "오늘";
   }
+  &.not-current-month {
+    &:after {
+      display: none;
+    }
+  }
 }
 .mx-table-date .cell.not-current-month {
   color: transparent;

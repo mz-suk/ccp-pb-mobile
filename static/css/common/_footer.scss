@@ -13,7 +13,7 @@
       line-height: 1.3rem;
 
       &:not(:first-child) {
-        margin-left: 1rem;
+        margin-left: 0.8rem;
 
         &:before {
           display: inline-block;
@@ -21,7 +21,7 @@
           height: 1.3rem;
           margin-right: 1rem;
           background: $fcD7;
-          vertical-align: top;
+          vertical-align: middle;
           content: "";
         }
       }
@@ -32,7 +32,7 @@
     .address {
       display: none;
       margin-top: 1rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     .btn-arrow.active + .address {
