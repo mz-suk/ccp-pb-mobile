@@ -114,6 +114,7 @@
       .bottom {
         justify-content: flex-end;
         height: 3.6rem;
+        padding-right: 1.5rem;
         color: rgba(255, 255, 255, 0.7);
 
         p:first-child {
@@ -329,6 +330,12 @@
     .btn-arrow {
       margin-left: auto;
     }
+  }
+
+  > .gray-box.type1 {
+    margin-top: 0;
+    padding: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -749,8 +756,15 @@
   }
 
   .text-guide {
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
     font-size: 1.1rem;
+    color: $pc3;
+
+    &:before {
+      width: 0.2rem;
+      height: 0.2rem;
+      background: $pc3;
+    }
   }
 
   .wrap-form {
