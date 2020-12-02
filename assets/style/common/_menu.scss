@@ -244,7 +244,18 @@
     }
   }
 
+  .link-setting {
+    margin-top: -3rem;
+
+    li {
+      padding: 2.7rem 1rem;
+      border-bottom: 0.1rem solid $fcF0;
+      color: $fc1;
+    }
+  }
+
   .btn-area {
-    margin-top: 6rem;
+    margin: 3rem 0 0 1rem;
+    text-align: left;
   }
 }
