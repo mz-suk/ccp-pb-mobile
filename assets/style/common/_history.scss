@@ -328,19 +328,24 @@
     }
   }
 }
+
 .review-add-img {
   overflow: hidden;
   margin-top: 1.5rem;
+
   .img-list {
     overflow: hidden;
+    text-align: left;
+
     li {
+      display: inline-block;
       position: relative;
-      float: left;
       width: 8rem;
       height: 8rem;
+      vertical-align: top;
 
       &:not(:first-child) {
-        margin-left: 0.5rem;
+        margin-left: 0.1rem;
       }
       img {
         width: 100%;
@@ -424,7 +429,28 @@
       font-size: 1.1rem;
     }
   }
+
+  &.scroll {
+    margin: 1.5rem -2rem 0;
+
+    .img-list {
+      overflow-x: visible;
+      overflow-y: hidden;
+      height: 8rem;
+      padding-right: 2rem;
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+
+      li {
+        scroll-snap-align: start;
+        &:first-child {
+          padding-left: 2rem;
+        }
+      }
+    }
+  }
 }
+
 .dotted-list {
   &.error-msg {
     li {
