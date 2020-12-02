@@ -450,7 +450,7 @@
     .rating,
     .rating .percent {
       height: 1.2rem;
-      background-size: 6.4rem 2.4rem;
+      background-size: 6.4rem auto;
     }
     .num {
       font-size: 1.2rem;
@@ -459,19 +459,19 @@
   .rating {
     text-align: left;
     vertical-align: top;
-    width: 8.5rem;
+    width: 8.8rem;
     margin: 0.25rem 0 0;
     background: url(~assets/img/layout/icon-rating-star.svg) no-repeat 0 100%;
     font-size: 0;
     .percent {
-      background: url(~assets/img/layout/icon-rating-star.svg) no-repeat 0 0.2rem;
+      background: url(~assets/img/layout/icon-rating-star.svg) no-repeat 0 0;
     }
   }
   .rating,
   .rating .percent {
     display: inline-block;
     height: 1.6rem;
-    background-size: 8.5rem 3.2rem;
+    background-size: 8.8rem auto;
   }
   .num {
     display: inline-block;

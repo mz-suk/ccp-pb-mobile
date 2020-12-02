@@ -1031,14 +1031,21 @@
     }
 
     &.muffin {
-      background: linear-gradient(138deg, rgba(4, 160, 243, 1) 0%, rgba(69, 212, 154, 1) 100%);
+      background: url(~assets/img/layout/bg-getcha.svg) no-repeat 0 0 / 100% auto;
+      &.bg1 {
+        background: url(~assets/img/layout/bg-oil.svg) no-repeat 0 0 / 100% auto;
+      }
+      &.bg2 {
+        background: url(~assets/img/layout/bg-exp.svg) no-repeat 0 0 / 100% auto;
+      }
+
       .info {
         padding-bottom: 3rem;
       }
       .rep-card {
         padding-left: 2.9rem;
         line-height: 2.4rem;
-        background: url(../~assets/img/layout/icon-rep-card.svg) no-repeat 0 center;
+        background: url(~assets/img/layout/icon-rep-card.svg) no-repeat 0 center;
         background-size: 2.4rem auto;
       }
       .logo-card {

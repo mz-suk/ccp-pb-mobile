@@ -1,6 +1,9 @@
 .wrapper-main {
   min-height: 100vh;
   background-color: $fcF9;
+  .wrap-contents {
+    padding-bottom: 6rem;
+  }
 }
 
 .main-cont {
@@ -56,7 +59,9 @@
   .list-category {
     display: flex;
     flex-wrap: wrap;
+    width: 32.5rem;
     padding: 0 0.5rem;
+    box-sizing: border-box;
 
     li {
       position: relative;
@@ -91,29 +96,43 @@
     }
 
     &.type1 {
+      justify-content: space-between;
+
       li {
         display: flex;
         align-items: center;
-        margin: 1.4rem 4rem 0 0;
+        width: 14.7rem;
+        min-height: 9.2rem;
+        margin: 0;
+        padding-left: 8.4rem;
         text-align: left;
 
-        img {
-          width: 8rem;
-          height: 8rem;
-        }
-        &:nth-of-type(2n) {
-          margin-right: 0;
-        }
+        img,
         &:nth-child(odd):before {
           display: none;
         }
         &:before {
-          left: -2rem;
+          top: inherit;
+          left: -1.2rem;
+        }
+        &:nth-of-type(1) {
+          background: url(~assets/img/layout/icon-category1.svg) 0 0 / 8.6rem 8.2rem no-repeat;
+        }
+        &:nth-of-type(2) {
+          padding-left: 9.6rem;
+          background: url(~assets/img/layout/icon-category2.svg) 0 0 / 8.1rem 8.4rem no-repeat;
+        }
+        &:nth-of-type(3) {
+          background: url(~assets/img/layout/icon-category3.svg) 0 0 / 8rem 8rem no-repeat;
+        }
+        &:nth-of-type(4) {
+          background: url(~assets/img/layout/icon-category6.svg) 0 0 / 9.1rem 9rem no-repeat;
         }
       }
     }
 
     &.type2 {
+      width: 100%;
       padding: 0 1rem;
 
       li {

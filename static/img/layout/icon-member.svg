@@ -1,42 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
   <defs>
-    <style>
-      .cls-1, .cls-5 {
-        fill: none;
-      }
-
-      .cls-2 {
-        clip-path: url(#clip-path);
-      }
-
-      .cls-3 {
-        opacity: 0;
-      }
-
-      .cls-4 {
-        fill: #ff00f3;
-      }
-
-      .cls-5 {
-        stroke: #111;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 1.5px;
-      }
-    </style>
     <clipPath id="clip-path">
-      <rect id="사각형_226304" data-name="사각형 226304" class="cls-1" width="20" height="20"/>
+      <rect id="사각형_318555" data-name="사각형 318555" width="20" height="20" fill="none"/>
     </clipPath>
   </defs>
-  <g id="내_정보_사본_20x20" data-name="내 정보_사본_20x20" transform="translate(10 10)">
-    <g id="그룹_294436" data-name="그룹 294436" class="cls-2" transform="translate(-10 -10)">
-      <g id="그룹_294435" data-name="그룹 294435" class="cls-2">
-        <g id="그룹_294434" data-name="그룹 294434" class="cls-3">
-          <g id="그룹_294433" data-name="그룹 294433" class="cls-2">
-            <rect id="사각형_226301" data-name="사각형 226301" class="cls-4" width="20" height="20"/>
+  <g id="icon_man_20" transform="translate(10 10)">
+    <g id="그룹_422954" data-name="그룹 422954" transform="translate(-10 -10)" clip-path="url(#clip-path)">
+      <g id="그룹_422953" data-name="그룹 422953" clip-path="url(#clip-path)">
+        <g id="그룹_422952" data-name="그룹 422952" opacity="0">
+          <g id="그룹_422951" data-name="그룹 422951" clip-path="url(#clip-path)">
+            <rect id="사각형_318552" data-name="사각형 318552" width="20" height="20" fill="#ff00f3"/>
           </g>
         </g>
-        <path id="패스_596884" data-name="패스 596884" class="cls-5" d="M9.6,10.9A4.5,4.5,0,0,1,5.5,6.5,4.6,4.6,0,0,1,9.9,1.9a4.5,4.5,0,0,1,2.3,8.4A8,8,0,0,1,18,16.8a1,1,0,0,1-1,1.1H3.1a1,1,0,0,1-1-1.1,8,8,0,0,1,5.6-6.6"/>
+        <path id="패스_840843" data-name="패스 840843" d="M9.5,11A4.8,4.8,0,0,1,5.2,6.2,4.9,4.9,0,0,1,9.9,1.4a4.8,4.8,0,0,1,2.5,9,8.6,8.6,0,0,1,6.1,7,1.1,1.1,0,0,1-1.1,1.2H2.7a1.1,1.1,0,0,1-1.1-1.2,8.6,8.6,0,0,1,6-7" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
       </g>
     </g>
   </g>
