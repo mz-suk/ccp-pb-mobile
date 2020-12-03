@@ -219,12 +219,17 @@
           display: flex;
           align-items: center;
 
+          .rating {
+            margin-top: 0;
+            width: 15.2rem;
+          }
+          .percent {
+            background-position-y: 0.1rem;
+          }
           .rating,
           .percent {
-            margin-top: 0;
-            width: 17rem;
             height: 2.8rem;
-            background-size: auto 6.9rem;
+            background-size: 15.2rem auto;
           }
           .num {
             margin-left: 1rem;
@@ -249,7 +254,7 @@
         .rating,
         .percent {
           height: 3.5rem;
-          background-size: auto 8.8rem;
+          background-size: 21.5rem auto;
         }
       }
       .num {
