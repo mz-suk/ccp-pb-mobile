@@ -330,6 +330,12 @@
       margin-left: auto;
     }
   }
+
+  .gray-box.type1:first-child {
+    margin-top: 0;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+  }
 }
 
 .customer-info {
