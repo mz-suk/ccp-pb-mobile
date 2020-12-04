@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <g id="icon_qr_12" transform="translate(0.5)">
+    <rect id="사각형_261159" data-name="사각형 261159" width="12" height="12" transform="translate(-0.5)" fill="red" opacity="0"/>
+    <g id="icon_qr" transform="translate(0 1)">
+      <g id="사각형_211803" data-name="사각형 211803" transform="translate(0 6)" fill="none" stroke="#fff" stroke-width="1.5">
+        <rect width="4.5" height="4.5" stroke="none"/>
+        <rect x="0.75" y="0.75" width="3" height="3" fill="none"/>
+      </g>
+      <g id="사각형_211809" data-name="사각형 211809" fill="none" stroke="#fff" stroke-width="1.5">
+        <rect width="4.5" height="4.5" stroke="none"/>
+        <rect x="0.75" y="0.75" width="3" height="3" fill="none"/>
+      </g>
+      <g id="사각형_211810" data-name="사각형 211810" transform="translate(6)" fill="none" stroke="#fff" stroke-width="1.5">
+        <rect width="4.5" height="4.5" stroke="none"/>
+        <rect x="0.75" y="0.75" width="3" height="3" fill="none"/>
+      </g>
+      <g id="사각형_211804" data-name="사각형 211804" transform="translate(6 6)" fill="#fff" stroke="#fff" stroke-width="1">
+        <rect width="1.5" height="1.5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+      </g>
+      <g id="사각형_211805" data-name="사각형 211805" transform="translate(9 6)" fill="#fff" stroke="#fff" stroke-width="1.5">
+        <rect width="1.5" height="1.5" stroke="none"/>
+        <rect x="0.75" y="0.75" fill="none"/>
+      </g>
+      <g id="사각형_211806" data-name="사각형 211806" transform="translate(7.5 7.5)" fill="#fff" stroke="#fff" stroke-width="1">
+        <rect width="1.5" height="1.5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+      </g>
+      <g id="사각형_211807" data-name="사각형 211807" transform="translate(6 9)" fill="#fff" stroke="#fff" stroke-width="1">
+        <rect width="1.5" height="1.5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="0.5" height="0.5" fill="none"/>
+      </g>
+      <g id="사각형_211808" data-name="사각형 211808" transform="translate(9 9)" fill="#fff" stroke="#fff" stroke-width="1.5">
+        <rect width="1.5" height="1.5" stroke="none"/>
+        <rect x="0.75" y="0.75" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

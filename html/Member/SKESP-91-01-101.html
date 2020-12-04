@@ -42,8 +42,142 @@
               <button type="button" class="btn-arrow blue size1"><span class="txt-under">카드등록</span></button>
             </p>
           </div>
+          <div  class="membership-swiper">
+            <!-- 카드 스와이퍼 -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="thumb oil">
+                    <p class="txt1">MUFFIN CLUB</p>
+                    <p class="txt2">OIL</p>
+                    <p class="txt3">MEMBERSHIP CARD</p>
+                  </div>
+                  <p class="name">머핀클럽 OIL</p>
+                  <p class="info vartical-bar">
+                    <span>연회비 30,000원</span>
+                    <span>멤버십기간 1년</span>
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="thumb getcha">
+                    <p class="txt1">MUFFIN CLUB</p>
+                    <p class="txt2">Getcha</p>
+                    <p class="txt3">MEMBERSHIP CARD</p>
+                  </div>
+                  <p class="name">머핀클럽 Getcha</p>
+                  <p class="info vartical-bar">
+                    <span>연회비 무료</span>
+                    <span>멤버십기간 1년</span>
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="thumb exp">
+                    <p class="txt1">MUFFIN CLUB</p>
+                    <p class="txt2">체험형</p>
+                    <p class="txt3">MEMBERSHIP CARD</p>
+                  </div>
+                  <p class="name">머핀클럽 체험형</p>
+                  <p class="info vartical-bar">
+                    <span>연회비 3,900원</span>
+                    <span>멤버십기간 1달</span>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- z카드 컨텐츠-->
+            <div class="wrap-membercard-info">
+              <div class="membership-info active">
+                <p class="title">주유 20원/L 할인</p>
+                <ul class="list-dot type3">
+                  <li>월 30만원 주유 한도</li>
+                </ul>
+                <p class="title">외부 기계세차 5회 무료</p>
+                <ul class="list-dot type3">
+                  <li>기본형 무료 세차 (5매)</li>
+                </ul>
+                <p class="title">스피드메이트 정비혜택 (기본형)</p>
+                <ul class="list-dot type3">
+                  <li>
+                    <button type="button" class="btn-arrow blue size1"><em class="txt-under">정비 혜택 보기</em></button>
+                  </li>
+                </ul>
+                <p class="title">운전자보험 무료가입 (1년)</p>
+                <ul class="list-dot type3">
+                  <li>자동차운전 중 교통상해사망(운전자용) 2천만원 한도</li>
+                  <li>뻉소니/무보험자 상해사망 1천만원 한도</li>
+                  <li>자동차운전 중 교통상해사망(운전자용) 2천만원 한도</li>
+                  <li>뻉소니/무보험자 상해사망 1천만원 한도</li>
+                </ul>
+              </div>
+              <div class="membership-info ">
+                <p class="asterisk-mark type1">머핀회원이 겟차 신차를 구매하고, 차량 인도 시
+                  머핀 클럽 [머핀겟차]가 자동 발급됩니다. </p>
+                <p class="title">주유 100원/L 할인</p>
+                <ul class="list-dot type3">
+                  <li>월 100ℓ 주유 한도</li>
+                </ul>
+                <p class="title">멤버십 플래티넘 회원등급 자동 적용</p>
+                <ul class="list-dot type3">
+                  <li>머핀 포인트적립 : 세차상품 결제금액의 5%</li>
+                  <li>주유 이용 시 OK캐시백 0.1% 적립</li>
+                  <li>주유∙세차 상품 구매 시 포인트사용(1원단위)</li>
+                  <li>세차 옵션상품 혜택 (무료쿠폰2매/ 할인쿠폰 4매 지급)</li>
+                </ul>
+                <p class="title">머핀 겟차 신차 차량 정보</p>
+                <div class="car-info">
+                  <div>
+                    <div class="thumb"></div>
+                    <p>메르세데스 벤츠</p>
+                    <p class="sum"><em>98,560</em>만원</p>
+                  </div>
+                  <div>
+                    <div class="thumb"></div>
+                    <p>메르세데스 벤츠</p>
+                    <p class="sum"><em>98,560</em>만원</p>
+                  </div>
+                </div>
+              </div>
+              <div class="membership-info ">
+                <p class="title">주유 20원/L 할인</p>
+                <ul class="list-dot type3">
+                  <li>월 30만원 주유 한도</li>
+                </ul>
+                <p class="title">외부 기계세차 1회 무료</p>
+                <ul class="list-dot type3">
+                  <li>기본형 무료 세차 (1매)</li>
+                </ul>
+                <p class="asterisk-mark type1">체험형은 구매 후 해지/환불 처리가 불가 합니다.</p>
+              </div>
 
-          <ul class="mumbership-card-list">
+              <!--swiepr js-->
+              <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+              <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+              <script>
+                var swiper = new Swiper('.swiper-container', {
+                  slidesPerView: 'auto',
+                  centeredSlides:true,
+                  loop:true,
+                  pagination: {
+                    el: '.swiper-pagination',
+                  }
+                });
+
+                swiper.on('slideChange', function (slides) {
+
+                  var el = document.getElementsByClassName('membership-info');
+                  for(var i = 0; i < el.length; i++){
+                    el[i].classList.remove('active');
+                  }
+                  el[slides.realIndex].classList.add('active');
+
+                });
+              </script>
+            <!-- // swiper js-->
+          </div>
+
+
+          <!-- <ul class="mumbership-card-list">
             <li class="membership-info">
               <div class="membership-top">
                 <div class="thumb"><img src="../../assets/img/layout/bg-oil-sm.svg" alt="" /></div>
@@ -134,7 +268,11 @@
                 <button type="button" class="btn">구매하기</button>
               </div>
             </li>
-          </ul>
+          </ul> -->
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4
+          ">구매하기</button>
         </div>
       </div>
       <!-- //wrap-contents -->

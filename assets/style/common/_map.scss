@@ -97,6 +97,22 @@
       color: $fc9;
     }
   }
+
+  .result-list {
+    li {
+      position: relative;
+    }
+    .num-count {
+      position: absolute;
+      bottom: 3.4rem;
+      right: 1rem;
+      font-size: 1.5rem;
+      em {
+        font-size: 1.6rem;
+        color: $pc3;
+      }
+    }
+  }
 }
 
 .result-more {
