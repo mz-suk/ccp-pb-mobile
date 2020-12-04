@@ -219,12 +219,17 @@
           display: flex;
           align-items: center;
 
+          .rating {
+            margin-top: 0;
+            width: 15.2rem;
+          }
+          .percent {
+            background-position-y: 0.1rem;
+          }
           .rating,
           .percent {
-            margin-top: 0;
-            width: 17rem;
             height: 2.8rem;
-            background-size: auto 6.9rem;
+            background-size: 15.2rem auto;
           }
           .num {
             margin-left: 1rem;
@@ -249,7 +254,7 @@
         .rating,
         .percent {
           height: 3.5rem;
-          background-size: auto 8.8rem;
+          background-size: 21.5rem auto;
         }
       }
       .num {
@@ -328,19 +333,24 @@
     }
   }
 }
+
 .review-add-img {
   overflow: hidden;
   margin-top: 1.5rem;
+
   .img-list {
     overflow: hidden;
+    text-align: left;
+
     li {
+      display: inline-block;
       position: relative;
-      float: left;
       width: 8rem;
       height: 8rem;
+      vertical-align: top;
 
       &:not(:first-child) {
-        margin-left: 0.5rem;
+        margin-left: 0.1rem;
       }
       img {
         width: 100%;
@@ -424,7 +434,28 @@
       font-size: 1.1rem;
     }
   }
+
+  &.scroll {
+    margin: 1.5rem -2rem 0;
+
+    .img-list {
+      overflow-x: visible;
+      overflow-y: hidden;
+      height: 8rem;
+      padding-right: 2rem;
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+
+      li {
+        scroll-snap-align: start;
+        &:first-child {
+          padding-left: 2rem;
+        }
+      }
+    }
+  }
 }
+
 .dotted-list {
   &.error-msg {
     li {
@@ -1095,7 +1126,8 @@
       }
 
       .sum-box {
-        padding: 1.7rem 2rem;
+        margin-top: 1rem;
+        padding: 1.5rem 2rem;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -1103,8 +1135,10 @@
         color: $fc6;
         dt,
         dd {
-          margin-top: 1rem;
           width: 50%;
+          &:not(:first-of-type) {
+            margin-top: 0.7rem;
+          }
         }
         dd {
           text-align: right;

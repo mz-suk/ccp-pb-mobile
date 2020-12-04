@@ -130,7 +130,7 @@
     }
 
     &:not(:first-child) {
-      margin-top: 2.5rem;
+      margin-top: 3rem;
     }
   }
 
@@ -144,7 +144,7 @@
 
   .gray-box {
     margin: 0 1rem;
-    padding: 3.5rem 3.4rem 4rem 3.4rem;
+    padding: 3.5rem 3.4rem 4rem 3rem;
   }
   .barcode-box {
     margin: 0;
@@ -155,10 +155,13 @@
     }
   }
   .btn-link {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
   .wrap-btn {
     margin-top: 5.5rem;
+    button {
+      width: 100%;
+    }
   }
 }
 
@@ -188,58 +191,67 @@
 }
 
 .membership-info {
-  padding: 2.5rem 2rem 4rem;
-  border: 0.1rem solid $fcD7;
-  border-radius: 1.6rem;
-
-  .membership-top {
-    display: flex;
-    align-items: center;
-    .thumb {
-      margin-right: 2.3rem;
-      width: 10rem;
-    }
-    .info {
-      color: $fc1;
-    }
-    .title {
-      font-size: 1.7rem;
-    }
-    .annual-fees {
-      .col-point {
-        color: $pc3;
-        em {
-          font-size: 1.4rem;
-        }
-      }
-    }
-    .period {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-      color: $fc6;
+  .title {
+    font-size: 1.5rem;
+    &:not(:first-child) {
+      margin-top: 3rem;
     }
   }
-
-  .card-detail-info {
-    margin-top: 3rem;
-    padding: 3rem 0.5rem 0;
-    border-top: 0.1rem solid $fcE4;
-
-    .title {
-      font-size: 1.5rem;
-      &:not(:first-child) {
-        margin-top: 2.5rem;
-      }
-    }
-    .list-dot {
-      margin-top: 0.7rem;
-    }
+  .list-dot {
+    margin-top: 0.7rem;
   }
 
-  .btn-area {
-    margin-top: 3rem;
-    padding: 0 0.5rem;
-  }
+  // padding: 2.5rem 2rem 4rem;
+  // border: 0.1rem solid $fcD7;
+  // border-radius: 1.6rem;
+  // .membership-top {
+  //   display: flex;
+  //   align-items: center;
+  //   .thumb {
+  //     margin-right: 2.3rem;
+  //     width: 10rem;
+  //   }
+  //   .info {
+  //     color: $fc1;
+  //   }
+  //   .title {
+  //     font-size: 1.7rem;
+  //   }
+  //   .annual-fees {
+  //     .col-point {
+  //       color: $pc3;
+  //       em {
+  //         font-size: 1.4rem;
+  //       }
+  //     }
+  //   }
+  //   .period {
+  //     margin-top: 0.5rem;
+  //     font-size: 1.1rem;
+  //     color: $fc6;
+  //   }
+  // }
+
+  // .card-detail-info {
+  //   margin-top: 3rem;
+  //   padding: 3rem 0.5rem 0;
+  //   border-top: 0.1rem solid $fcE4;
+
+  //   .title {
+  //     font-size: 1.5rem;
+  //     &:not(:first-child) {
+  //       margin-top: 2.5rem;
+  //     }
+  //   }
+  //   .list-dot {
+  //     margin-top: 0.7rem;
+  //   }
+  // }
+
+  // .btn-area {
+  //   margin-top: 3rem;
+  //   padding: 0 0.5rem;
+  // }
 }
 
 .membership-detail {
@@ -256,14 +268,17 @@
   .detail-box {
     padding-top: 4rem;
 
+    &.type1 {
+      .info-block:last-of-type {
+        border-bottom: 0.1rem dotted $fcD7;
+      }
+    }
+
     .info-block {
       padding: 0 1rem 3.5rem;
-      border-bottom: 0.1rem dotted $fcD7;
       &:not(:first-child) {
         padding-top: 3rem;
-      }
-      &:last-of-type {
-        border-bottom: 0.1rem solid $fc1;
+        border-top: 0.1rem dotted $fcD7;
       }
 
       .info-tit {
@@ -284,8 +299,9 @@
           margin-left: 0.5rem;
           color: $pc3;
         }
-        .em {
+        em {
           font-size: 1.4rem;
+          font-weight: 700;
         }
         .barcode {
           margin: 2rem 0 2.5rem;
@@ -301,7 +317,142 @@
     }
   }
   .btn-area {
+    margin-top: 1.5rem;
+    padding-top: 4rem;
     text-align: center;
+    border-top: 0.1rem solid $fc1;
+  }
+  .benefit-coupon-list {
+    margin-top: 3rem;
+  }
+}
+
+.membership-swiper {
+  margin-top: 4rem;
+  .swiper-container {
+    margin: 0 -2rem;
+    background: $fcF9;
+    border-top: 0.1rem solid $fcF0;
+    border-bottom: 0.1rem solid $fcF0;
+    overflow: hidden;
+
+    .swiper-slide {
+      padding: 4rem 0 6rem;
+      width: 27rem !important;
+      color: $fc1;
+      text-align: center;
+
+      .thumb {
+        margin: auto;
+        padding: 1.5rem;
+        width: 22rem;
+        height: 12.5rem;
+        font-weight: 700;
+        color: $fcF;
+        line-height: 1;
+        text-align: left;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.15);
+
+        &.getcha {
+          background: #f47645 url(../~assets/img/layout/bg-icon-getcha.svg) no-repeat 0 0.8rem;
+          background-size: 22rem auto;
+          border: 0.1rem solid #fd8250;
+        }
+        &.oil {
+          background: #5d85fa url(../~assets/img/layout/bg-icon-oil.svg) no-repeat 0 0.8rem;
+          background-size: 22rem auto;
+          border: 0.1rem solid #4977ea;
+        }
+        &.exp {
+          background: #43d6c5 url(../~assets/img/layout/bg-icon-exp.svg) no-repeat 0 0.8rem;
+          background-size: 22rem auto;
+          border: 0.1rem solid #36c9b9;
+        }
+
+        .txt1 {
+          font-size: 1.1rem;
+        }
+        .txt2 {
+          margin-top: 1rem;
+          font-size: 2.8rem;
+        }
+        .txt3 {
+          margin-top: 3.5rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      .name {
+        margin-top: 1.9rem;
+        font-size: 1.7rem;
+      }
+      .info {
+        text-align: center;
+
+        span {
+          margin-top: 0.6rem;
+        }
+      }
+    }
+
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        width: 0.8rem;
+        height: 0.8rem;
+        background: #e0e0e0;
+        border-radius: 50%;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+          background: $fc1;
+        }
+      }
+    }
+  }
+
+  .wrap-membercard-info {
+    padding-top: 3rem;
+
+    .membership-info {
+      display: none;
+      &.active {
+        display: block;
+      }
+
+      .car-info {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        & > div:not(:first-child) {
+          margin-left: 2rem;
+        }
+        .thumb {
+          width: 13.8rem;
+          height: 13.8rem;
+          background: #dddddd;
+        }
+        p {
+          margin-top: 1.5rem;
+          font-size: 1.1rem;
+          color: $fc9;
+        }
+        .sum {
+          margin-top: 0.2rem;
+          font-size: 1.3rem;
+          color: $fc1;
+          em {
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+        }
+      }
+      .asterisk-mark:not(:first-child) {
+        margin-top: 3rem;
+      }
+    }
   }
 }
 
@@ -406,5 +557,114 @@
 
   .list-dot {
     margin-top: 1rem;
+  }
+}
+
+.benefit-coupon-list {
+  li {
+    position: relative;
+    margin: 0 -1rem;
+    padding: 2rem 1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    border-top: 0.1rem solid $fcF0;
+
+    &:first-child {
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+  .coupon-img {
+    position: relative;
+    margin-right: 1.7rem;
+    padding: 0 0 0 1.3rem;
+    width: 11.2rem;
+    height: 8rem;
+    background: url(../~assets/img/layout/bg-coupon2.svg) no-repeat 0 0;
+    line-height: 1;
+    box-sizing: border-box;
+
+    .txt1 {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: $pc3;
+      text-decoration: underline;
+    }
+    .txt2 {
+      margin-top: 0.6rem;
+      font-size: 1.7rem;
+      font-weight: 700;
+      text-indent: -0.3rem;
+      em {
+        font-size: 2.6rem;
+      }
+    }
+    .txt3 {
+      margin-top: 0.1rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+    }
+
+    .dmm {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: $fcF;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 1;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        right: 2.55rem;
+        display: block;
+        width: 0.9rem;
+        height: 0.9rem;
+        background: $fcF;
+        border-radius: 50%;
+      }
+      &:before {
+        top: -0.45rem;
+      }
+      &:after {
+        bottom: -0.4em;
+      }
+    }
+
+    .bg-icon {
+      margin-right: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .tit {
+    font-size: 1.5rem;
+    letter-spacing: -0.1rem;
+    em {
+      margin-left: 0.2rem;
+      font-weight: 700;
+      color: $pc3;
+    }
+  }
+  .desc {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+  .date {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: $fc6;
+    span {
+      display: block;
+    }
   }
 }

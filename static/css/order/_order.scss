@@ -114,6 +114,7 @@
       .bottom {
         justify-content: flex-end;
         height: 3.6rem;
+        padding-right: 1.5rem;
         color: rgba(255, 255, 255, 0.7);
 
         p:first-child {
@@ -179,7 +180,6 @@
         margin-left: 0;
         margin-left: 5.5rem;
       }
-
       &:last-child {
         margin-right: 5.5rem;
       }
@@ -329,6 +329,12 @@
     .btn-arrow {
       margin-left: auto;
     }
+  }
+
+  .gray-box.type1:first-child {
+    margin-top: 0;
+    padding: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -749,8 +755,15 @@
   }
 
   .text-guide {
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
     font-size: 1.1rem;
+    color: $pc3;
+
+    &:before {
+      width: 0.2rem;
+      height: 0.2rem;
+      background: $pc3;
+    }
   }
 
   .wrap-form {
@@ -1031,12 +1044,24 @@
     }
 
     &.muffin {
-      background: url(~assets/img/layout/bg-getcha.svg) no-repeat 0 0 / 100% auto;
+      background: #f47645 url(~assets/img/layout/bg-icon-getcha.svg) no-repeat 0 0 / 100% auto;
+      border: 0.1rem solid #f48253;
       &.bg1 {
-        background: url(~assets/img/layout/bg-oil.svg) no-repeat 0 0 / 100% auto;
+        background: #5d85fa url(~assets/img/layout/bg-icon-oil.svg) no-repeat 0 0 / 100% auto;
+        border: 0.1rem solid #4977ea;
       }
       &.bg2 {
-        background: url(~assets/img/layout/bg-exp.svg) no-repeat 0 0 / 100% auto;
+        background: #41d0bf url(~assets/img/layout/bg-icon-exp.svg) no-repeat 0 0 / 100% auto;
+        border: 0.1rem solid #36c9b9;
+      }
+      &.barcode {
+        .barcode-img {
+          margin-top: 2rem;
+          padding: 2rem;
+          width: 24.5rem;
+          height: 7.55rem;
+          background: $fcF;
+        }
       }
 
       .info {
