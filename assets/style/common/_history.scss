@@ -1126,7 +1126,8 @@
       }
 
       .sum-box {
-        padding: 1.7rem 2rem;
+        margin-top: 1rem;
+        padding: 1.5rem 2rem;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -1134,8 +1135,10 @@
         color: $fc6;
         dt,
         dd {
-          margin-top: 1rem;
           width: 50%;
+          &:not(:first-of-type) {
+            margin-top: 0.7rem;
+          }
         }
         dd {
           text-align: right;
