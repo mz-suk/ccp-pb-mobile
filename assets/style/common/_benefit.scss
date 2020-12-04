@@ -395,23 +395,8 @@
   padding: 4rem 2rem 0;
 
   .text-guide {
-    margin-top: 2rem;
-    font-size: 1.1rem;
+    color: $fc1;
   }
-
-  .wrap-btn,
-  .btn-area {
-    margin-top: 4rem;
-    .btn {
-      width: 100%;
-    }
-    .download {
-      width: 1.6rem;
-      height: 1.6rem;
-      margin-top: 0;
-    }
-  }
-
   .list-coupon {
     margin-top: 3rem;
   }
@@ -419,12 +404,32 @@
   .wrap-tab-scroll.type1 {
     margin-top: 3rem;
   }
-
   .wrap-tab-scroll.type2 {
     margin-top: 2.5rem;
     padding-bottom: 0;
     &:after {
       display: none;
+    }
+  }
+
+  .tab-content {
+    .wrap-btn {
+      margin-top: 3rem;
+      .btn {
+        width: 100%;
+        font-size: 1.5rem;
+      }
+      .bg-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0 0 0 0.5rem;
+      }
+    }
+    .list-dot {
+      margin-top: 3rem;
+    }
+    .list-coupon + .list-dot {
+      margin-top: 2rem;
     }
   }
 
@@ -435,16 +440,9 @@
     }
   }
 
-  .tab-content {
-    .btn-area:first-child {
-      margin-top: 3rem;
-    }
-  }
-
   .top-area {
     position: relative;
     padding: 0 1rem 3rem;
-    // background: url(../../assets/img/layout/icon-coupon-type1.svg) 26.8rem 0 / 4.8rem 4.6rem no-repeat;
     border-bottom: 0.1rem solid $fc1;
     color: $fc1;
 
@@ -452,7 +450,6 @@
       font-size: 1.7rem;
       font-weight: 400;
     }
-
     &:before {
       position: absolute;
       top: 0;
@@ -495,7 +492,6 @@
         height: 2rem;
         margin-right: 0.5rem;
       }
-
       .txt {
         margin-left: auto;
         span {
@@ -520,7 +516,6 @@
 
   .list-radio {
     margin-top: 2rem;
-
     .left {
       font-size: 1.5rem;
     }
@@ -529,9 +524,59 @@
   .form-div + .form-div {
     border-top: 0.1rem solid $fcF0;
     padding-top: 3rem;
-
     .title-sm {
       font-size: 1.5rem;
+    }
+  }
+
+  .block-layout {
+    margin: 0 -2rem;
+
+    &:first-child {
+      padding-top: 0;
+    }
+    .wrap-btn {
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+
+  .title-sub {
+    .sub-txt {
+      color: $fc9;
+      font-size: 1.1rem;
+
+      &:before {
+        display: inline-block;
+        margin: 0.5rem 0.3rem 0 0;
+        vertical-align: middle;
+        content: "*";
+      }
+    }
+  }
+}
+
+.wrap-coupon {
+  margin: 2rem -2rem 0;
+
+  .swiper-slide {
+    width: 33.5rem;
+    margin-left: 1rem;
+    &:first-child {
+      margin-left: 2rem;
+    }
+    &:last-child {
+      margin-right: 2rem;
+    }
+  }
+
+  .swiper-pagination {
+    position: static;
+    margin-top: 1.2rem;
+    color: $fc9;
+
+    .swiper-pagination-current {
+      color: $fc1;
     }
   }
 }
