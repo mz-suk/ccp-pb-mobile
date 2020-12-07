@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">운전자 보험 안내</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-order">
+          <div class="order-cont">
+            <div class="wrap-empty type4">
+              <p class="empty-text">
+                <strong>운전자 보험 안내</strong>
+              </p>
+              <p class="empty-text">본 상품은 주식회사 SK 에너지에서 제공하며, 보험료 납입주체는 보험계약자인 주식회사 SK 에너지입니다.</p>
+            </div>
+            <div class="gray-box type4"><span class="col-gc3">미가입</span></div>
+            <table class="tbl type1">
+              <!-- 0923 간격 수정  -->
+              <colgroup>
+                <col width="33%">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>상품명</th>
+                  <td>
+                    <ul class="list-dot type6">
+                      <li>DB 손해보험(주) 미니 운전자보험</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>보장기간</th>
+                  <td>
+                    <ul class="list-dot type6">
+                      <li>구매일로 부터 1년</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>보장내용</th>
+                  <td>
+                    <ul class="list-dot type6">
+                      <li>운전 중 교통상해사망 <em class="point3">최대 2천만원</em></li>
+                      <li>벌금(자가용) <em class="point3">최대5백만원</em>
+                      </li>
+                      <li>자동차사고 변호사 선임비용<br/>(약식기소제외) <em class="point3">최대 3백만원</em>
+                      </li>
+                      <li>뺑소니, 무보험차 상해사망<br/><em class="point3">최대 1천만원</em></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>기타사항</th>
+                  <td>
+                    <ul class="list-dot type6">
+                      <li>유상운송차량, 택시, 이륜차 등
+                        영업용 차량 제외</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="order-cont">
+            <p class="head-title">꼭 알아두세요!</p>
+            <ul class="list-dot type3">
+              <li>본 서비스는 DB손해보험사와 제휴를 통해 제공되는
+                서비스입니다.</li>
+              <li>당사 또는 제휴사 내부 사정으로 인해 보험 혜택제공이 중단
+                될 수 있습니다. </li>
+              <li>보험 담보사랑 관련 자세한 사항은 DB손해보험(주)
+                미니 운전자 보험 약관 참조 또는 전용 상담센터 <a href="tel:1588-0100">1588-0100</a> 로
+                문의 바랍니다.</li>
+              <li>가입관련 자세한 내용은 보험가입동의서를 확인하시거나
+                고객행복센터 <a href="tel:1588-0051">1588-0051</a> / <a href="tel:1599-0051">1599-0051</a>에 문의 바랍니다.</li>
+            </ul>
+
+
+          </div>
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4" >운전자 보험 가입하기</button>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <!-- <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+    <!-- //Quick-menu -->
+  </body>
+</html>

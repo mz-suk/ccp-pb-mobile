@@ -541,6 +541,13 @@
       margin-top: 2rem;
     }
   }
+  .form-text-area {
+    margin-top: 1.5rem;
+
+    textarea {
+      min-height: 6rem;
+    }
+  }
 }
 
 .member-layout {

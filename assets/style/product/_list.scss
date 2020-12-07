@@ -466,6 +466,16 @@
       }
     }
   }
+
+  &.type4 {
+    color: $fc1;
+    text-align: left;
+    .empty-text {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .filter-layer {
@@ -1146,6 +1156,11 @@
     @include listdot(0.8rem, 1.1rem, $fc9, 2, $fc9);
   }
 
+  &.type6 {
+    // "-" 스타일
+    @include listdot(0, 1.3rem, $fc6, 1);
+  }
+
   &.st1 {
     margin: 2rem auto 0;
     display: inline-block;
@@ -1162,6 +1177,11 @@
 
   .txt-under {
     text-decoration: underline;
+  }
+
+  a[href*="tel:"] {
+    text-decoration: underline;
+    color: $pc3;
   }
 }
 

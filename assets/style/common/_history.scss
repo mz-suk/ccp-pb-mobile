@@ -572,6 +572,14 @@
         display: block;
         text-align: left;
         background: url(../../assets/img/layout/bg-top-info-point.svg) right center / 4.75rem 4.99rem no-repeat;
+
+        &.bg1 {
+          background: url(../../assets/img/layout/bg-top-info-point2.svg) right center / 6.5rem 4.5rem no-repeat;
+        }
+        &.bg2 {
+          background: url(../../assets/img/layout/bg-top-info-point3.svg) right center / 6.5rem 4.5rem no-repeat;
+        }
+
         .num {
           font-size: 1.7rem;
           strong {
@@ -688,6 +696,12 @@
     }
   }
   .statement-list {
+    &.type1 {
+      li {
+        padding-bottom: 2.5rem;
+      }
+    }
+
     li {
       position: relative;
       padding: 3rem 1rem;
@@ -752,6 +766,18 @@
     }
     .down {
       color: $gc3;
+    }
+  }
+
+  .top-title {
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: $fc1;
+    border-bottom: 0.1rem solid $fc1;
+
+    &:not(:first-child) {
+      margin-top: 4rem;
     }
   }
 }
