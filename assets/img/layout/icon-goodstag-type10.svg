@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+  <g id="icon_service_voice_g_28" transform="translate(-251.5 -436.5)">
+    <path id="패스_679708" data-name="패스 679708" d="M14,0A14,14,0,1,1,0,14,14,14,0,0,1,14,0" transform="translate(252 437)" fill="#f9f9f9" stroke="#e4e4e4" stroke-width="1"/>
+    <g id="그룹_350327" data-name="그룹 350327" transform="translate(-9)">
+      <g id="그룹_336269" data-name="그룹 336269" transform="translate(270.5 444)">
+        <path id="패스_671455" data-name="패스 671455" d="M1556.025,1527.142v1.273a4.505,4.505,0,0,1-9,0v-1.273" transform="translate(-1547.025 -1520.702)" fill="none" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.1"/>
+        <path id="패스_671456" data-name="패스 671456" d="M1565.025,1472.858a2.506,2.506,0,0,1,4.991,0v5.29a2.506,2.506,0,0,1-4.991,0Z" transform="translate(-1563.021 -1470.575)" fill="#fff" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.1"/>
+      </g>
+      <line id="선_90786" data-name="선 90786" x2="5" transform="translate(272.5 458)" fill="none" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.1"/>
+      <g id="그룹_350325" data-name="그룹 350325" transform="translate(8.385 -0.176)">
+        <line id="선_90787" data-name="선 90787" x2="0.698" transform="translate(265.416 447.176)" fill="none" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.1"/>
+        <line id="선_90788" data-name="선 90788" x2="0.503" transform="translate(264.615 447.176)" fill="none" stroke="#111" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.1"/>
+      </g>
+      <g id="그룹_350326" data-name="그룹 350326" transform="translate(8.385 1.824)">
+        <line id="선_90787-2" data-name="선 90787" x2="0.698" transform="translate(265.416 447.176)" fill="none" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.1"/>
+        <line id="선_90788-2" data-name="선 90788" x2="0.503" transform="translate(264.615 447.176)" fill="none" stroke="#111" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.1"/>
+      </g>
+    </g>
+  </g>
+</svg>

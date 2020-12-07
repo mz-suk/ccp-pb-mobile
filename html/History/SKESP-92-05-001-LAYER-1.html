@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">{{ title }}</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents"></div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-bottom">
+      <div class="wrap-layer">
+        <div class="inner-layer">
+          <div class="layer-cont">
+            <div class="title-sub">
+              <p class="title"><i class="bg-icon filter-sorting"></i>리스트 정렬</p>
+            </div>
+            <div class="wrap-checkbox">
+              <div class="checkbox type5">
+                <input type="radio" id="chk1" name="sorting" checked />
+                <label for="chk1">최근이용순</label>
+              </div>
+              <div class="checkbox type5">
+                <input type="radio" id="chk2" name="sorting" />
+                <label for="chk2">거리순</label>
+              </div>
+              <div class="checkbox type5">
+                <input type="radio" id="chk3" name="sorting" />
+                <label for="chk3">가나다순</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap-layer-btn">
+            <button type="button" class="btn-refresh"><i class="bg-icon refresh"></i>초기화</button>
+            <button type="button" class="btn type2 color4">적용하기</button>
+          </div>
+        </div>
+
+        <button type="button" class="bg-icon layer-close">레이어팝업 닫기</button>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Layer Pop -->
+  </body>
+</html>
