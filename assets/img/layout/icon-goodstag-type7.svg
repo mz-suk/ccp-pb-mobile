@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="그룹_444157" data-name="그룹 444157" transform="translate(-20 -437)">
+    <g id="icon_service_carwash_g_28" transform="translate(20 437)" fill="#f9f9f9" stroke="#e4e4e4" stroke-width="1">
+      <circle cx="14" cy="14" r="14" stroke="none"/>
+      <circle cx="14" cy="14" r="13.5" fill="none"/>
+    </g>
+    <g id="그룹_348446" data-name="그룹 348446" transform="translate(-263.333 333)">
+      <path id="패스_671432" data-name="패스 671432" d="M301.333,120c0-2.209-4-8-4-8s-4,5.791-4,8a4,4,0,0,0,8,0Z" fill="#fff"/>
+      <path id="패스_671433" data-name="패스 671433" d="M298.933,126.933a1.6,1.6,0,0,1-1.6-1.6" transform="translate(-1.6 -5.333)" fill="none" stroke="#001" stroke-width="1.1"/>
+      <path id="패스_671434" data-name="패스 671434" d="M301.333,120c0-2.209-4-8-4-8s-4,5.791-4,8a4,4,0,0,0,8,0Z" fill="none" stroke="#001" stroke-width="1.1"/>
+    </g>
+  </g>
+</svg>

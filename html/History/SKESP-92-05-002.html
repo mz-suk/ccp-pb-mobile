@@ -37,20 +37,19 @@
         <div class="bookmark-cont">
           <div class="wrap-tab type2">
             <ul class="tab-menu">
-              <li class="active">
+              <li>
                 <button type="button">주유 <em>(6)</em></button>
               </li>
-              <li>
+              <li class="active">
                 <button type="button">세차 <em>(17)</em></button>
               </li>
             </ul>
           </div>
-
           <div class="wrap-tab-scroll type2">
             <ul class="tab-scroll-menu">
               <li>
                 <div class="checkbox type5">
-                  <input type="checkbox" id="chk2" checked />
+                  <input type="checkbox" id="chk2" checked/>
                   <label for="chk2">손세차</label>
                 </div>
               </li>
@@ -62,19 +61,15 @@
               </li>
             </ul>
           </div>
-
           <div class="wrap-filter">
             <div class="left">
               <p class="desc">9개의 세차장</p>
             </div>
             <div class="right">
               <button type="button" class="bg-icon filter">필터</button>
-              <button type="button" class="bg-icon refresh">새로고침</button>
             </div>
           </div>
-
           <div class="list-content">
-            <!-- [D] 손세차 -->
             <div class="list-item">
               <div class="item-top">
                 <div class="thumbnail"><img src="../../assets/img/temp/list-thumb-1.png" alt="" /></div>
@@ -92,22 +87,18 @@
                 </div>
                 <ul class="wrap-tag">
                   <li class="tag"><i class="bg-icon tag1"></i>현장방문</li>
-                  <li class="tag"><i class="bg-icon tag2"></i>온수</li>
-                  <li class="tag"><i class="bg-icon tag3"></i>개인용품</li>
+                  <li class="tag"><i class="bg-icon tag3"></i>온수</li>
+                  <li class="tag"><i class="bg-icon tag5"></i>개인용품</li>
                 </ul>
                 <div class="wrap-btn">
                   <a href="javascript:;" class="btn">예약하기</a>
                 </div>
               </div>
             </div>
-            <!-- //손세차 -->
-
-            <!-- [D] 셀프세차 -->
             <div class="list-item">
               <div class="item-top">
                 <div class="thumbnail"><img src="../../assets/img/temp/list-thumb-1.png" alt="" /></div>
                 <div class="wrap-badge"><span class="badge grad1">셀프세차</span></div>
-                <div class="label type2"><span>선불권 사용가능 .</span></div>
               </div>
               <div class="item-bottom">
                 <div class="info">
@@ -121,19 +112,16 @@
                 </div>
                 <ul class="wrap-tag">
                   <li class="tag"><i class="bg-icon tag1"></i>현장방문</li>
-                  <li class="tag"><i class="bg-icon tag2"></i>온수</li>
-                  <li class="tag"><i class="bg-icon tag3"></i>개인용품</li>
+                  <li class="tag"><i class="bg-icon tag3"></i>온수</li>
+                  <li class="tag"><i class="bg-icon tag5"></i>개인용품</li>
                 </ul>
                 <div class="wrap-btn">
                   <a href="javascript:;" class="btn">예약하기</a>
-                  <a href="javascript:;" class="btn color4">예약일 선택 후 원터치 결제</a>
                 </div>
               </div>
             </div>
-            <!-- //셀프세차 -->
           </div>
         </div>
-
         <div class="toast-area">즐겨찾기에 추가 되었습니다.</div>
       </div>
       <!-- //Wrap-contents -->
@@ -144,7 +132,7 @@
     <!-- Quick-menu -->
     <div class="quick-menu">
       <ul class="quick-menu-list">
-        <li>
+        <li><!-- [D] 활성화 .active 추가 -->
           <a href="#">
             <i class="bg-icon home"></i>
             <span class="menu-name">홈</span>
@@ -152,14 +140,26 @@
         </li>
         <li>
           <a href="#">
-            <i class="bg-icon bill"></i>
-            <span class="menu-name">이용내역</span>
+            <i class="bg-icon oiling"></i>
+            <span class="menu-name">주유</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon wash"></i>
+            <span class="menu-name">세차</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon membership"></i>
+            <span class="menu-name">멤버십</span>
           </a>
         </li>
         <li>
           <a href="#">
             <i class="bg-icon my-muffin"></i>
-            <span class="menu-name">마이머핀</span>
+            <span class="menu-name">My</span>
           </a>
         </li>
       </ul>
