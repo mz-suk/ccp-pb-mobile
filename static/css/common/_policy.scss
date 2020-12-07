@@ -23,6 +23,14 @@
   }
   .list-dot {
     margin-top: 1.5rem;
+    &.red {
+      li {
+        color: $gc3;
+        &:before {
+          background: $gc3;
+        }
+      }
+    }
   }
   .tbl {
     margin-top: 1.95rem;

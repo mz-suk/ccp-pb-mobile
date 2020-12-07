@@ -568,19 +568,19 @@
         color: $fc9;
       }
       .comment-img {
-        display: flex;
-        margin: 2rem 0 0 -0.5rem;
+        margin: 2rem 0 0 0;
         li {
-          flex: 1;
+          display: inline-block;
           position: relative;
-          margin-left: 0.5rem;
           width: 8rem;
           height: 8rem;
+          &:not(:first-child) {
+            margin-left: 0.1rem;
+          }
           img {
             height: 8rem;
             width: 100%;
             object-fit: cover;
-            -webkit-object-fit: cover;
           }
           .more-num {
             position: absolute;
