@@ -572,6 +572,14 @@
         display: block;
         text-align: left;
         background: url(~assets/img/layout/bg-top-info-point.svg) right center / 4.75rem 4.99rem no-repeat;
+
+        &.bg1 {
+          background: url(~assets/img/layout/bg-top-info-point2.svg) right center / 6.5rem 4.5rem no-repeat;
+        }
+        &.bg2 {
+          background: url(~assets/img/layout/bg-top-info-point3.svg) right center / 6.5rem 4.5rem no-repeat;
+        }
+
         .num {
           font-size: 1.7rem;
           strong {
@@ -688,6 +696,12 @@
     }
   }
   .statement-list {
+    &.type1 {
+      li {
+        padding-bottom: 2.5rem;
+      }
+    }
+
     li {
       position: relative;
       padding: 3rem 1rem;
@@ -754,6 +768,18 @@
       color: $gc3;
     }
   }
+
+  .top-title {
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: $fc1;
+    border-bottom: 0.1rem solid $fc1;
+
+    &:not(:first-child) {
+      margin-top: 4rem;
+    }
+  }
 }
 
 .bookmark-cont {
@@ -763,48 +789,140 @@
     margin: 0 2rem;
   }
 
-  .list-item {
-    &:not(:last-of-type):after {
-      display: block;
-      width: calc(100% - 4rem);
-      height: 0.1rem;
-      margin: 4rem auto 0;
-      background-color: $fcF0;
-      content: "";
-    }
+  .wrap-filter {
+    padding-top: 2rem;
+  }
 
-    .thumbnail {
-      min-height: 17.8rem;
-    }
-
-    &.business,
-    &.dawn {
-      img {
-        width: 12.4rem;
-        min-height: auto;
-      }
-
-      .item-bottom {
-        padding-top: 0;
-      }
-
-      .wrap-btn {
-        margin: 0;
+  .top-area {
+    padding: 3rem 2rem 0;
+    .gray-box {
+      padding: 1.2rem;
+      justify-content: center;
+      align-items: center;
+      .line {
+        border-bottom: 0.1rem solid;
+        line-height: 1.3;
       }
     }
-
-    &.business {
-      img {
-        width: 15.3rem;
-      }
+    .bg-icon {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 0.5rem;
     }
   }
 
-  .item-top {
-    margin: 0 2rem;
+  .list-content {
+    .list-item {
+      margin: 0 2rem 4rem;
+      border-bottom: 0.1rem solid $fcF0;
 
-    .label {
-      left: -0.5rem;
+      .item-bottom {
+        padding: 2.8rem 0 4rem;
+      }
+      .thumbnail {
+        min-height: 17.8rem;
+      }
+      .favorite {
+        right: 0;
+      }
+      .btn {
+        font-size: 1.5rem;
+      }
+      &:last-child {
+        margin-bottom: -4rem;
+        border-bottom: 0;
+      }
+    }
+
+    &.type1 {
+      .list-item {
+        margin: 0 2rem;
+        border-top: 0.1rem solid $fcF0;
+        border-bottom: 0;
+        &:last-child {
+          margin-bottom: -4rem;
+        }
+        .info {
+          padding-right: 0;
+        }
+        .tag {
+          margin-left: 1.2rem;
+          color: $fc6;
+        }
+      }
+      .item-bottom {
+        padding-top: 2.5rem;
+      }
+      .title {
+        margin: 1.5rem 0 0.2rem;
+        padding-right: 8rem;
+        font-size: 1.7rem;
+      }
+      .wrap-badge {
+        display: flex;
+        padding-right: 2rem;
+      }
+      .btn-location {
+        position: absolute;
+        top: 6.6rem;
+        right: 0;
+        color: $pc3;
+        font-size: 1.5rem;
+        .bg-icon {
+          width: 2rem;
+          height: 2rem;
+        }
+        .num {
+          border-bottom: 0.1rem solid;
+        }
+        em {
+          font-size: 1.7rem;
+        }
+      }
+      .wrap-price {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+
+        .kind {
+          height: 2rem;
+          margin-right: 0.5rem;
+          padding: 0 0.5rem;
+          border-radius: 0.1rem;
+          font-size: 1.1rem;
+          text-align: center;
+          line-height: 2rem;
+
+          &.type1 {
+            background: #ffe7ad;
+            color: #ff7e40;
+          }
+          &.type2 {
+            background: #ccf0e8;
+            color: #00b58c;
+          }
+          &.type3 {
+            background: #fef0f2;
+            color: $gc3;
+          }
+        }
+        .price {
+          span {
+            padding-right: 0.8rem;
+            &:first-child {
+              color: $gc3;
+              em {
+                font-size: 1.7rem;
+              }
+            }
+            &:last-child {
+              em {
+                text-decoration: line-through;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -813,7 +931,6 @@
       width: calc(100% - 2rem);
       margin: 2.5rem 0 0 2rem;
     }
-
     li:first-child {
       margin-left: 2rem;
     }

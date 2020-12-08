@@ -55,7 +55,9 @@
   &.location {
     background-image: url(~assets/img/layout/icon-location.svg);
   }
-
+  &.location-blue {
+    background-image: url(~assets/img/layout/icon-location-blue.svg);
+  }
   &.location-small {
     background-image: url(~assets/img/layout/icon-location-small.svg);
   }
@@ -98,6 +100,22 @@
 
   &.tag4 {
     background-image: url(~assets/img/layout/icon-goodstag-type6.svg);
+  }
+
+  &.tag7 {
+    background-image: url(~assets/img/layout/icon-goodstag-type7.svg);
+  }
+
+  &.tag8 {
+    background-image: url(~assets/img/layout/icon-goodstag-type8.svg);
+  }
+
+  &.tag9 {
+    background-image: url(~assets/img/layout/icon-goodstag-type9.svg);
+  }
+
+  &.tag10 {
+    background-image: url(~assets/img/layout/icon-goodstag-type10.svg);
   }
 
   &.filter-sorting {
@@ -479,6 +497,9 @@
   &.pattern {
     background-image: url(~assets/img/layout/icon-pattern.svg);
   }
+  &.pattern-blue {
+    background-image: url(~assets/img/layout/icon-pattern-blue.svg);
+  }
   &.calendar-type3 {
     background-image: url(~assets/img/layout/icon-calendar-type3.svg);
   }
@@ -583,6 +604,9 @@
   &.check {
     background-image: url(~assets/img/layout/icon-chk-off.svg);
   }
+  &.qrcode {
+    background-image: url(~assets/img/layout/icon-qr.svg);
+  }
 }
 // 뱃지
 
@@ -606,17 +630,14 @@
     color: $pc3;
     border-color: $pc3;
   }
-
   &.red {
     color: $gc3;
     border-color: $gc3;
   }
-
   &.purple {
     color: #493cff;
     border-color: #5952ed;
   }
-
   &.grad1 {
     color: $fcF;
     border: none;
@@ -636,7 +657,21 @@
     border-color: $fcD7;
     background: #fafafa;
   }
-
+  &.bg-gray {
+    color: $fcF;
+    border-color: rgba($fc6, 0.3);
+    background: $fc9;
+  }
+  &.bg-red {
+    color: $fcF;
+    background: #f8483b;
+    border-color: #de4135;
+  }
+  &.bg-blue {
+    color: $fcF;
+    background: $pc3;
+    border-color: #3167d6;
+  }
   &.num {
     display: inline-block;
     min-width: 2rem;
