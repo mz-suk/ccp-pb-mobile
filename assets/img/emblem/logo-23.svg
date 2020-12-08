@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_299366" data-name="사각형 299366" width="60" height="60" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="renault" transform="translate(-245 -182)">
+    <rect id="_60" data-name="60" width="60" height="60" transform="translate(245 182)" fill="#fff"/>
+    <g id="car_logo_renault" transform="translate(245 182)">
+      <g id="renault-2" data-name="renault">
+        <g id="그룹_390311" data-name="그룹 390311" clip-path="url(#clip-path)">
+          <path id="패스_787719" data-name="패스 787719" d="M20.968,33.811,36.043,6.617H49.019L64.065,33.811,48.849,61.16H36.2Zm14.735.008L42.59,46.2l6.895-12.378H52.2l11.439-.008L48.731,6.987h-12.4L21.4,33.811l11.794.008,8.52,14.905-4.256,9.628h.68c.5-.872,14.062-24.534,14.062-24.534L43.543,18.84c1.4-3.185,2.875-6.363,4.227-9.577h-.658l-13.9,24.556ZM42.59,45.442l6.481-11.624L42.6,22.217l-6.488,11.6Z" transform="translate(-12.606 -3.978)" fill="#231815" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
