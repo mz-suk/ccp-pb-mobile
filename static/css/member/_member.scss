@@ -147,7 +147,8 @@
     padding: 3.5rem 3.4rem 4rem 3rem;
   }
   .barcode-box {
-    margin: 0;
+    padding-right: 0;
+    margin: 0 auto;
     width: 21.6rem;
 
     img {
@@ -539,6 +540,13 @@
     display: block;
     &:not(:first-child) {
       margin-top: 2rem;
+    }
+  }
+  .form-text-area {
+    margin-top: 1.5rem;
+
+    textarea {
+      min-height: 6rem;
     }
   }
 }

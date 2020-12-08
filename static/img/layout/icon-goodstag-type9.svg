@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+  <g id="icon_service_maintenance_g_28_" data-name="icon_service_maintenance_g_28  " transform="translate(-170.5 -436.5)">
+    <path id="패스_679708" data-name="패스 679708" d="M14,0A14,14,0,1,1,0,14,14,14,0,0,1,14,0" transform="translate(171 437)" fill="#f9f9f9" stroke="#e4e4e4" stroke-width="1"/>
+    <g id="그룹_350323" data-name="그룹 350323" transform="translate(130 310.42)">
+      <line id="선_90899" data-name="선 90899" x2="2" transform="translate(50 135.58)" fill="none" stroke="#001" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"/>
+      <line id="선_90900" data-name="선 90900" y2="2" transform="translate(52.5 141.58)" fill="none" stroke="#001" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_90901" data-name="선 90901" x1="2" transform="translate(51.5 142.58)" fill="none" stroke="#001" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_90904" data-name="선 90904" x1="2" transform="translate(56.5 142.58)" fill="none" stroke="#001" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line id="선_90903" data-name="선 90903" x1="2" transform="translate(58 135.58)" fill="none" stroke="#001" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"/>
+      <path id="패스_679791" data-name="패스 679791" d="M50.826,141H49v-2H63v2H61.174" transform="translate(-1 -1.42)" fill="none" stroke="#001" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"/>
+      <path id="패스_702649" data-name="패스 702649" d="M16.7,11.7v7H7.058A2.4,2.4,0,0,1,4.7,16.261V13.944" transform="translate(44.3 127.879)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"/>
+    </g>
+  </g>
+</svg>

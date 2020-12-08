@@ -401,17 +401,6 @@
     margin-top: 3rem;
   }
 
-  .wrap-tab-scroll.type1 {
-    margin-top: 3rem;
-  }
-  .wrap-tab-scroll.type2 {
-    margin-top: 2.5rem;
-    padding-bottom: 0;
-    &:after {
-      display: none;
-    }
-  }
-
   .tab-content {
     .wrap-btn {
       margin-top: 3rem;
@@ -429,13 +418,6 @@
       margin-top: 3rem;
     }
     .list-coupon + .list-dot {
-      margin-top: 2rem;
-    }
-  }
-
-  .coupon-top-select {
-    margin-top: 3rem;
-    & + .list-coupon {
       margin-top: 2rem;
     }
   }
@@ -486,7 +468,6 @@
           content: "";
         }
       }
-
       .bg-icon {
         width: 2rem;
         height: 2rem;

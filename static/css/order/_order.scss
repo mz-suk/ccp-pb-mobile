@@ -295,10 +295,20 @@
     li {
       font-size: 1.1rem;
     }
+    &.type3 {
+      li {
+        font-size: 1.3rem;
+      }
+    }
     &.type5 {
       margin: 0 1rem;
       li {
         font-size: 1.1rem;
+      }
+    }
+    &.type6 {
+      li {
+        font-size: 1.3rem;
       }
     }
     &:last-child {
@@ -335,6 +345,14 @@
     margin-top: 0;
     padding: 1.5rem;
     font-size: 1.3rem;
+  }
+
+  .tbl {
+    margin-top: 3rem;
+  }
+
+  .head-title + .list-dot {
+    margin-top: 2.5rem;
   }
 }
 
@@ -1090,6 +1108,21 @@
         }
         .num {
           margin-top: 0.7rem;
+        }
+      }
+      .top-qrcode {
+        margin-top: 0.5rem;
+        text-align: right;
+        font-size: 1.1rem;
+        line-height: 1;
+        .bg-icon {
+          margin-right: 0.4rem;
+          width: 1.2rem;
+          height: 1.2rem;
+          vertical-align: top;
+        }
+        span {
+          text-decoration: underline;
         }
       }
     }

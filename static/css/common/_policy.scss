@@ -98,3 +98,10 @@
     }
   }
 }
+
+.policy-area {
+  iframe {
+    width: 100%;
+    height: calc(100vh - 5.5rem);
+  }
+}
