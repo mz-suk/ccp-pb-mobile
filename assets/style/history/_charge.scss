@@ -84,9 +84,48 @@
     margin: 3rem 2rem 0;
     padding: 1.3rem;
     color: $fc1;
+
     .define-list dt:not(:last-of-type),
     .define-list dd:not(:last-of-type) {
       margin-bottom: 1.2rem;
+    }
+
+    &.type1 {
+      padding: 3rem 0;
+
+      .txt {
+        margin: 0 2.5rem;
+        padding: 1.5rem;
+        background: $fcF;
+        border: 0.1rem solid $fcF0;
+      }
+      .info-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5rem;
+
+        dl {
+          position: relative;
+          padding: 0 2.2rem;
+
+          &:not(:first-child):before {
+            position: absolute;
+            top: 0.3rem;
+            left: 0;
+            height: 3.8rem;
+            border-left: 0.1rem dotted $fcD7;
+            content: "";
+          }
+        }
+
+        dd {
+          color: $pc3;
+          font-weight: 700;
+          em {
+            font-size: 1.8rem;
+          }
+        }
+      }
     }
   }
 }
@@ -226,6 +265,90 @@
       margin-right: 0.3rem;
       width: 2rem;
       height: 2rem;
+    }
+  }
+}
+
+.wrap-detail {
+  .wrap-btn {
+    position: relative;
+    text-align: center;
+    margin: 0 2rem;
+
+    &:after {
+      position: absolute;
+      top: 0.7rem;
+      left: 0;
+      width: 100%;
+      height: 0.1rem;
+      background: $fcE4;
+      content: "";
+    }
+
+    .btn-more {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      width: auto;
+      padding: 0 1.6rem 1.7rem;
+      background: $fcF;
+      color: $fc1;
+
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url(../../assets/img/layout/icon-arrow-btm.svg) 0 0 / 100% auto no-repeat;
+        transform: translateX(-50%);
+        content: "";
+      }
+
+      &.active {
+        &:after {
+          transform: translateX(-50%) rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .charge-btm {
+    margin-bottom: 4.5rem;
+  }
+}
+
+.guide-cont {
+  padding: 5rem 2rem 0;
+
+  .list-guide {
+    li {
+      padding: 2.5rem 1rem;
+      border-bottom: 0.1rem solid $fcE4;
+    }
+    dt {
+      margin-top: 0.3rem;
+      color: $pc3;
+      font-size: 1.5rem;
+    }
+    dd {
+      margin-top: 1rem;
+      span:not(:first-child):before {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.4rem;
+        background: url(../../assets/img/layout/icon-arrow-left.svg) 0 0 /100% auto no-repeat;
+        content: "";
+      }
+    }
+    .step {
+      color: $pc3;
+      font-size: 1.1rem;
+    }
+    .bold {
+      font-weight: 700;
+      color: $fc1;
     }
   }
 }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">주유 예약상세</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="charge-top">
+          <div class="tag-area">
+            <span class="tag"><i class="bg-icon reservation"></i> 예약</span>
+          </div>
+          <p class="txt-row">2020.05.12 (목) 오전 11시 40분</p>
+          <p class="txt-row type1"><a href="javascript:;">SK 에너지 퇴계로 직영 셀프주유소</a>로<br />방문해주시기 바랍니다</p>
+          <div class="text-box type1">
+            <p class="txt">129디 8189 차량으로 방문해주세요.</p>
+            <div class="info-list">
+              <dl>
+                <dt>단가</dt>
+                <dd><em>1,394</em>원</dd>
+              </dl>
+              <dl>
+                <dt>주유량</dt>
+                <dd><em>1.43</em>ℓ</dd>
+              </dl>
+              <dl>
+                <dt>휘발유</dt>
+                <dd><em>25,000</em>원</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-detail">
+          <div class="wrap-btn"><button type="button" class="btn-more">자세히보기</button></div>
+          <!-- <div class="wrap-btn"><button type="button" class="btn-more active">간략보기</button></div> -->
+        </div>
+
+        <div class="guide-cont">
+          <div class="title-sub type1">
+            <p class="title">주유 예약 사용 안내</p>
+          </div>
+          <ul class="list-guide">
+            <li>
+              <span class="step">[ 방법 01 ]</span>
+              <dl>
+                <dt>셀프 주유소에서는</dt>
+                <dd>
+                  <span>주유소에서 <em class="bold">머핀 App</em> 터치</span>
+                  <span>차량번호 뒤 4자리 입력</span>
+                  <span>유종 및 금액 확인</span>
+                  <span>주유하기</span>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <span class="step">[ 방법 02 ]</span>
+              <dl>
+                <dt>일반주유소에서는</dt>
+                <dd>주유 전 주유원에게 반드시 <em class="bold">‘머핀주유’</em> 라고 전해주세요.<br/>예약한 차량번호랑 일치해야 주유가 가능합니다.</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+
+        <div class="charge-btm">
+          <div class="btn-area grid">
+            <button type="button" class="btn">예약취소</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li><!-- [D] 활성화 .active 추가 -->
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="#">
+            <i class="bg-icon oiling"></i>
+            <span class="menu-name">주유</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon wash"></i>
+            <span class="menu-name">세차</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon membership"></i>
+            <span class="menu-name">멤버십</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">My</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>
