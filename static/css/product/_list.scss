@@ -891,12 +891,6 @@
       width: 2rem;
       height: 2rem;
     }
-
-    &.tooltip2 {
-      margin-top: -0.4rem;
-      margin-left: 0.6rem;
-    }
-
     &.gas2 {
       width: 2rem;
       height: 2rem;
@@ -910,6 +904,13 @@
   & + .define-list,
   & + .point-info {
     margin-top: 2.3rem;
+  }
+
+  > div {
+    .tooltip2 {
+      vertical-align: middle;
+      margin-left: 0;
+    }
   }
 }
 
@@ -2018,6 +2019,7 @@
     }
     p {
       color: $fcF;
+      font-size: 1.3rem;
       line-height: 1.5;
       word-break: break-all;
     }

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Publishing list</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #wrapper {
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .guide-header {
+        margin-bottom: 10px;
+      }
+      .guide-header h1 {
+        font-size: 30px;
+      }
+      .guide-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .guide-table th,
+      .guide-table td {
+        border: 1px solid #e4e4e4;
+        padding: 10px;
+      }
+      .guide-table th {
+        background: #111;
+        color: #fff;
+        border-color: #111;
+      }
+      .guide-table td {
+        font-size: 15px;
+        color: #666;
+      }
+      .guide-table td:first-child {
+        width: 5%;
+        text-align: center;
+      }
+      .guide-table .category td {
+        background: #e4e4e4;
+        font-weight: 700;
+        color: #111;
+      }
+      .guide-table .url a {
+        text-decoration: none;
+        color: #666;
+      }
+      .guide-table tr:hover {
+        background: #f1f1f1;
+      }
+      .guide-table .depth1,
+      .guide-table .depth2,
+      .guide-table .depth3 {
+        width: 15%;
+      }
+      .guide-table .url {
+        width: 20%;
+      }
+      .guide-table .desc {
+        width: auto;
+      }
+
+      @media (max-width: 750px) {
+        #wrapper {
+          max-width: 100%;
+          padding: 0;
+        }
+        .guide-table th,
+        .guide-table td {
+          padding: 0 5px;
+        }
+        .guide-table td {
+          font-size: 13px;
+        }
+        .guide-table colgroup {
+          display: none;
+        }
+        .guide-table td:first-child {
+          width: 2%;
+        }
+        .guide-table .depth1,
+        .guide-table .depth2,
+        .guide-table .depth3 {
+          width: 20%;
+        }
+        .guide-table .url {
+          width: auto;
+        }
+        .guide-table th:last-child,
+        .guide-table .desc {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="guide-header">
+        <h1>CCP_Muffin-ver_20201228</h1>
+
+        <nav>
+          <a href="./"></a>
+        </nav>
+      </header>
+
+      <div class="guide-container">
+        <table class="guide-table">
+          <thead>
+            <tr>
+              <th class="depth1">Depth1</th>
+              <th class="depth2">Depth2</th>
+              <th class="depth3">Depth3</th>
+              <th class="depth4">Depth4</th>
+              <th class="url">Url</th>
+              <th class="desc">Desc</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 가이드
+            <tr class="category">
+              <td class="depth1">GUIDE</td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./guide/.html"></a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./guide/.html">button</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./guide/.html">form</a></td>
+              <td class="desc"></td>
+            </tr>
+            //가이드 -->
+
+            <!-- 세차메인 -->
+            <tr class="category">
+              <td class="depth1">세차메인</td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">차량정보가 있을 때</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Main/SKESP-88-00-002.html">SKESP-88-00-002</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">차량정보가 있을 때 (필수항목 추가입력 유도)</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Main/SKESP-88-00-002-2.html">SKESP-88-00-002-2</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">차량정보가 없을 때</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Main/SKESP-88-00-002-1.html">SKESP-88-00-002-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <!-- //세차메인 -->
+
+            <!-- 출장세차 -->
+            <tr class="category">
+              <td class="depth1">출장세차</td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">차량선택</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Mypage/SKESP-90-04-003.html">SKESP-90-04-003</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">내차량위치</td>
+              <td class="depth3">지역선택</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-01-001-POP-1.html">SKESP-88-01-001-POP-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">주소검색</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Hand/SKESP-88-04-002-POP-3.html">SKESP-88-04-002-POP-3</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">주소확인</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Hand/SKESP-88-04-003.html">SKESP-88-04-003</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">정보입력</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Business/SKESP-88-05-002-2.html">SKESP-88-05-002-2</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">세차상품선택</td>
+              <td class="depth3">목록</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Hand/SKESP-88-03-002-1.html">SKESP-88-03-002-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">상세</td>
+              <td class="depth4">[Tab] 상품정보</td>
+              <td class="url"><a href="./Hand/SKESP-88-03-002-2.html">SKESP-88-03-002-2</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">[Tab] 가격표</td>
+              <td class="url"><a href="./Hand/SKESP-88-03-002-3.html">SKESP-88-03-002-3</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">[Tab] 유의사항</td>
+              <td class="url"><a href="./Hand/SKESP-88-03-002-4.html">SKESP-88-03-002-4</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">세부옵션선택</td>
+              <td class="depth3">목록</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Hand/SKESP-88-03-003.html">SKESP-88-03-003</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">상세</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Hand/SKESP-88-03-003-1.html">SKESP-88-03-003-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">예약일시선택</td>
+              <td class="depth3">1회권</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Business/SKESP-88-05-005-1.html">SKESP-88-05-005-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">시작시간설정</td>
+              <td class="url"><a href="./Business/SKESP-88-05-005-POP-1.html">SKESP-88-05-005-POP-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">예약정보확인</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Business/SKESP-88-05-006.html">SKESP-88-05-006</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">결제하기</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-01-010.html">SKESP-88-01-010</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">[Tab] 등록한카드결제(빌키)</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-01-010.html">SKESP-88-01-010</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">[Tab] 일반/간편결제</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-01-010-3.html">SKESP-88-01-010-3</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">[POP] 결제서비스 제 3자 제공 동의</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-05-007.html">SKESP-88-05-007</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">[POP] 이용약관</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-05-007.html">SKESP-88-05-007</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">결제실패</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">결제 및 예약완료</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-02-005.html">SKESP-88-02-005</a></td>
+              <td class="desc"></td>
+            </tr>
+            <!-- //출장세차 -->
+
+            <!-- 새벽세차 -->
+            <tr class="category">
+              <td class="depth1">새벽세차</td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">차량선택</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Mypage/SKESP-90-04-003.html">SKESP-90-04-003</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">내차량위치</td>
+              <td class="depth3">지역선택</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-01-001-POP-1.html">SKESP-88-01-001-POP-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">아파트선택</td>
+              <td class="depth4"></td>
+              <td class="url"></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">정보입력</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Business/SKESP-88-05-002-2.html">SKESP-88-05-002-2</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">세차상품선택</td>
+              <td class="depth3">목록</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Hand/SKESP-88-03-002-1.html">SKESP-88-03-002-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">상세</td>
+              <td class="depth4">[Tab] 상품정보</td>
+              <td class="url"><a href="./Hand/SKESP-88-03-002-2.html">SKESP-88-03-002-2</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">[Tab] 가격표</td>
+              <td class="url"><a href="./Hand/SKESP-88-03-002-3.html">SKESP-88-03-002-3</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">[Tab] 유의사항</td>
+              <td class="url"><a href="./Hand/SKESP-88-03-002-4.html">SKESP-88-03-002-4</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">세부옵션선택</td>
+              <td class="depth3">목록</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Hand/SKESP-88-03-003.html">SKESP-88-03-003</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">상세</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Hand/SKESP-88-03-003-1.html">SKESP-88-03-003-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">예약일시선택</td>
+              <td class="depth3">1회권</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Business/SKESP-88-05-005-1.html">SKESP-88-05-005-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">시작시간설정</td>
+              <td class="url"><a href="./Business/SKESP-88-05-005-POP-1.html">SKESP-88-05-005-POP-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">다회권</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Business/SKESP-88-05-005-6.html">SKESP-88-05-005-6</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">주기요일설정</td>
+              <td class="url"><a href="./Business/SKESP-88-05-005-POP-3.html">SKESP-88-05-005-POP-3</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">시작시간설정</td>
+              <td class="url"><a href="./Business/SKESP-88-05-005-POP-1.html">SKESP-88-05-005-POP-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">예약정보확인</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Business/SKESP-88-05-006.html">SKESP-88-05-006</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">결제하기</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-01-010.html">SKESP-88-01-010</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">[Tab] 등록한카드결제(빌키)</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-01-010.html">SKESP-88-01-010</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">[Tab] 일반/간편결제</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-01-010-3.html">SKESP-88-01-010-3</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">[POP] 결제서비스 제 3자 제공 동의</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-05-007.html">SKESP-88-05-007</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">[POP] 이용약관</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-05-007.html">SKESP-88-05-007</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">결제실패</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">결제 및 예약완료</td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./Self/SKESP-88-02-005-1.html">SKESP-88-02-005-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <!-- //새벽세차 -->
+
+            <!-- 세차내역 -->
+            <tr class="category">
+              <td class="depth1">세차내역</td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./00000000000"></a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">세차이용내역</td>
+              <td class="depth3">목록</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./History/SKESP-92-01-001.html">SKESP-92-01-001</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">상세</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./History/SKESP-92-01-003-11.html">SKESP-92-01-003-11</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">예약일시변경</td>
+              <td class="url"><a href="./History/SKESP-92-01-004-1.html">SKESP-92-01-004-1</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">예약취소</td>
+              <td class="url"><a href="./History/SKESP-92-01-004.html">SKESP-92-01-004</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">[POP] 서비스전후사진</td>
+              <td class="url"><a href="./History/SKESP-92-01-003-POP-2.html">SKESP-92-01-003-POP-2</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2">정기세차내역</td>
+              <td class="depth3">목록</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./History/SKESP-89-00-002.html">SKESP-89-00-002</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3">상세</td>
+              <td class="depth4"></td>
+              <td class="url"><a href="./History/SKESP-89-00-002-3.html">SKESP-89-00-002-3</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">[POP] 재결제 내역</td>
+              <td class="url"><a href="./History/SKESP-89-00-002-9.html">SKESP-89-00-002-9</a></td>
+              <td class="desc"></td>
+            </tr>
+            <tr>
+              <td class="depth1"></td>
+              <td class="depth2"></td>
+              <td class="depth3"></td>
+              <td class="depth4">결제수단변경</td>
+              <td class="url"><a href="./History/SKESP-89-00-002-10.html">SKESP-89-00-002-10</a></td>
+              <td class="desc"></td>
+            </tr>
+            <!-- //세차내역 -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -252,6 +252,7 @@
 
   .asterisk-mark {
     margin-top: 2rem;
+    margin-left: 1rem;
   }
 
   .text-color {
@@ -373,7 +374,7 @@
     position: relative;
     clear: both;
     float: left;
-    width: 11rem;
+    width: 11.9rem;
     padding-left: 1.2rem;
     box-sizing: border-box;
     color: $fc1;
@@ -392,12 +393,12 @@
 
   dd {
     float: right;
-    width: calc(100% - 11rem);
+    width: calc(100% - 11.9rem);
     word-break: break-all;
 
-    p:not(:first-child) {
-      margin-top: 1rem;
-    }
+    // p:not(:first-child) {
+    //   margin-top: 1rem;
+    // }
   }
 
   .desc {
@@ -554,9 +555,24 @@
   .text-guide {
     margin: 1.2rem 0 0 1rem;
     font-size: 1.1rem;
-
+    &:before {
+      top: 0.6rem;
+      width: 0.2rem;
+      height: 0.2rem;
+    }
     & + .text-guide {
       margin-top: 1rem;
+    }
+
+    &.type1 {
+      margin-top: 3rem;
+      color: $pc3;
+      &:before {
+        top: 0.4rem;
+        left: 0.3rem;
+        background: none;
+        content: "*";
+      }
     }
   }
 
