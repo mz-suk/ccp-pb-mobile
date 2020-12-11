@@ -137,6 +137,176 @@
   .charge-top {
     padding: 0 0 3rem;
   }
+
+  .big-title {
+    color: $fc1;
+    font-size: 1.7rem;
+
+    strong {
+      display: block;
+      font-size: 2rem;
+    }
+  }
+
+  .wrap-benefit {
+    margin: 3rem 0 4rem;
+    border-top: 0.1rem solid $fc1;
+  }
+
+  .tbl-grade {
+    width: 100%;
+
+    tr:first-child {
+      td {
+        border-top: 0;
+      }
+    }
+    td {
+      padding: 1.5rem;
+      border: 0.1rem solid $fcF0;
+      font-size: 1.1rem;
+      text-align: center;
+      line-height: 1.6;
+
+      &:first-child {
+        border-left: 0;
+      }
+      &:last-child {
+        border-right: 0;
+      }
+      .num {
+        color: $pc3;
+      }
+    }
+
+    .grade {
+      display: block;
+      font-size: 1.3rem;
+
+      &:before {
+        display: block;
+        width: 4.2rem;
+        height: 4.2rem;
+        margin: 0 auto 1rem;
+        content: "";
+      }
+      &.member-grade1:before {
+        background: url(../../assets/img/layout/icon-grade1.svg) 0 0 / 100% auto no-repeat;
+      }
+      &.member-grade2:before {
+        background: url(../../assets/img/layout/icon-grade2.svg) 0 0 / 100% auto no-repeat;
+      }
+      &.member-grade3:before {
+        background: url(../../assets/img/layout/icon-grade3.svg) 0 0 / 100% auto no-repeat;
+      }
+    }
+  }
+
+  .tbl-btm {
+    margin-top: 3rem;
+    .list-dot {
+      margin-top: 1.5rem;
+      li {
+        color: $fc1;
+      }
+      .point {
+        position: relative;
+        padding-left: 1.9rem;
+        &:before {
+          position: absolute;
+          top: -0.1rem;
+          left: 0;
+          width: 1.6rem;
+          height: 1.6rem;
+          background: url(../../assets/img/layout/icon-point-down.svg) 0 0 / 100% auto no-repeat;
+          content: "";
+        }
+      }
+      .cash {
+        position: relative;
+        padding-left: 2.6rem;
+        &:before {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 2.4rem;
+          height: 1.6rem;
+          background: url(../../assets/img/layout/icon-okcash.svg) 0 0 / 100% auto no-repeat;
+          content: "";
+        }
+      }
+    }
+  }
+
+  .wrap-benefit-coupon {
+    margin-top: 4rem;
+
+    .title {
+      padding-bottom: 1.5rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      span {
+        color: #6955ff;
+      }
+    }
+    .benefit-coupon-list {
+      border-top: 0.1rem solid $fc1;
+      border-bottom: 0.1rem solid $fcF0;
+
+      li {
+        margin: 0;
+        padding: 0;
+      }
+      .left,
+      .right {
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+      .coupon-img {
+        overflow: hidden;
+        margin: 0;
+        width: 9rem;
+        height: 6.2rem;
+        box-sizing: border-box;
+        background: url(../../assets/img/layout/bg-coupon3.svg) 0 0 / 100% auto no-repeat;
+
+        .txt1 {
+          font-size: 0.9rem;
+          color: $fc1;
+        }
+        .txt2 {
+          font-size: 1.3rem;
+          em {
+            font-size: 1.8rem;
+          }
+        }
+        .txt3 {
+          font-size: 0.8rem;
+          letter-spacing: 0;
+        }
+      }
+      .left {
+        width: 13rem;
+        border-right: 0.1rem solid $fcF0;
+      }
+      .right {
+        flex: auto;
+        padding-right: 1rem;
+      }
+      .tit {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .accordion {
+    margin: 0 -2rem;
+    .list-dot {
+      li:not(:first-child) {
+        margin-top: 1.3rem;
+      }
+    }
+  }
 }
 
 .wrap-code {

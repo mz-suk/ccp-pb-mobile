@@ -535,29 +535,59 @@
       }
     }
   }
+
+  .block-layout {
+    padding-bottom: 0;
+    border: 0;
+
+    &:before {
+      display: none;
+    }
+  }
 }
 
 .wrap-coupon {
   margin: 2rem -2rem 0;
+  padding: 3rem 0 3.5rem;
+  background: $fcF9;
+  border-top: 0.1rem solid $fcF0;
 
   .swiper-slide {
-    width: 33.5rem;
-    margin-left: 1rem;
+    width: 31.5rem;
+    margin-left: 2rem;
+
     &:first-child {
       margin-left: 2rem;
     }
     &:last-child {
       margin-right: 2rem;
     }
+    &.swiper-slide-next {
+    }
   }
 
   .swiper-pagination {
     position: static;
-    margin-top: 1.2rem;
+    margin-top: 2rem;
     color: $fc9;
+    font-size: 0;
 
     .swiper-pagination-current {
       color: $fc1;
+      font-size: 1.2rem;
+
+      &:after {
+        display: inline-block;
+        width: 0.1rem;
+        height: 0.8rem;
+        margin: 0 0.5rem;
+        background: $fcD7;
+        content: "";
+      }
+    }
+    .swiper-pagination-total {
+      color: $fc9;
+      font-size: 1.2rem;
     }
   }
 }

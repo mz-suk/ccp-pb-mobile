@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">멤버십 소개</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-membership">
+          <p class="big-title">머핀만의 특별한 멤버십<strong>레벨업하면 더 많은 혜택!</strong></p>
+          <div class="wrap-benefit">
+            <table class="tbl-grade">
+              <colgroup>
+                <col width="33%">
+                <col width="33%">
+                <col width="34%">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong class="grade member-grade1">플래티넘</strong>
+                    50만원 이상
+                  </td>
+                  <td>
+                    <strong class="grade member-grade2">골드</strong>
+                    20-50만원 미만
+                  </td>
+                  <td>
+                    <strong class="grade member-grade3">일반</strong>
+                    20만원 미만
+                  </td>
+                </tr>
+                <tr>
+                  <td>세차상품 결제 시 <strong>포인트 <span class="num">5%</span>적립</strong></td>
+                  <td>세차상품 결제 시 <strong>포인트 <span class="num">3%</span>적립</strong></td>
+                  <td>세차상품 결제 시 <strong>포인트 <span class="num">2%</span>적립</strong></td>
+                </tr>
+                <tr>
+                  <td>세차쿠폰 6종</td>
+                  <td>세차쿠폰 6종</td>
+                  <td>세차쿠폰 6종</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="tbl-btm">
+              <p class="title">공통혜택</p>
+              <ul class="list-dot">
+                <li>주유/세차 상품 구매 시 <strong class="point">포인트 사용</strong> (1원 단위)</li>
+                <li>주유이용 시 <strong class="cash">캐시백 0.1%</strong> 적립</li>
+              </ul>
+            </div>
+
+            <div class="wrap-benefit-coupon">
+              <p class="title"><span>플래티넘</span> 회원 쿠폰혜택</p>
+              <ul class="benefit-coupon-list">
+                <li>
+                  <div class="left">
+                    <div class="coupon-img">
+                      <p class="txt1">손세차</p>
+                      <p class="txt2"><em>100</em>%</p>
+                      <p class="txt3">COUPON</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="tit">에어컨 필터 교체 공임 <em> x1</em></p>
+                    <p class="desc">(필터 비용 본인부담)</p>
+                    <p class="date">유효기간 : 발행일로부터 1년</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left">
+                    <div class="coupon-img">
+                      <p class="txt1">새벽세차</p>
+                      <p class="txt2"><em>60</em>%</p>
+                      <p class="txt3">COUPON</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="tit">타이어 공기압 체크∙주입 할인권 <em> x1</em></p>
+                    <p class="desc">(공임 비용 본인부담)</p>
+                    <p class="date">유효기간 : 발행일로부터 1년</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left">
+                    <div class="coupon-img">
+                      <p class="txt1">출장세차</p>
+                      <p class="txt2"><em>50</em>%</p>
+                      <p class="txt3">COUPON</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="tit">왁스코팅 할인권 <em> x1</em></p>
+                    <p class="desc">(공임 비용 본인부담)</p>
+                    <p class="date">유효기간 : 발행일로부터 1년</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion active">
+            <div class="accordion-title">
+              <p class="title">[ 회원등급 안내 ]</p>
+              <button type="button" class="bg-icon toggle">펼침</button>
+            </div>
+            <div class="accordion-cont">
+              <ul class="list-dot type3">
+                <li>회원 등급은 정회원에 한해 제공됩니다.</li>
+                <li>등급 기준은 상품구매 후 사용 완료금액을 기반으로 실적을 산정합니다.</li>
+                <li>2020.12.00~2021.12.31 실적 달성 시 익일로 승급 반영</li>
+                <li>2022.01.01 전년도 연간실적에 따라 등급 부여<br/>(매년 1월 1일 등급 기준에 따라 자동으로 변경됩니다.)</li>
+                <li>2020.01.01 전년도 연간실적에 따라 등급 부여<br/>(매년 1월 1일 등급 기준에 따라 자동으로 변경됩니다.)</li>
+                <li>주유 고객은 기존 사용 실적으로 최초 등급을 부여하며, 이후 동일한 정책이 적용됩니다.</li>
+                <li>부당한 방법으로 획득한 고객 승급은 사후 심사를 통해 제조정 될 수 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion active">
+            <div class="accordion-title">
+              <p class="title">[ 혜택 유의사항 ]</p>
+              <button type="button" class="bg-icon toggle">펼침</button>
+            </div>
+            <div class="accordion-cont">
+              <ul class="list-dot type3">
+                <li>할인 쿠폰은 일부 상품에만 적용이 가능합니다.</li>
+                <li>발급된 쿠폰은 로그인 후 쿠폰함에서 확인하실 수 있습니다.</li>
+                <li>오프라인 제휴 혜택은 매장의 사정에 의해 변경 또는 종료될 수 있습니다.</li>
+                <li>멤버십 등급 및 혜택은 당사 사정에 의해 고객 고지 없이 변경 또는 종료될 수 있습니다.</li>
+                <li>간편회원 가입 고객에게는 등급 혜택이 제공되지 않습니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
