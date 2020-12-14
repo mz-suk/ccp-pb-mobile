@@ -1502,6 +1502,35 @@
         }
       }
     }
+
+    &.disabled {
+      .info-type-cont {
+        &:before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 1;
+          padding-left: 2.5rem;
+          background: url(~assets/img/layout/icon-chk-white.svg) 0 0 / 2rem no-repeat;
+          color: $fcF;
+          font-size: 1.5rem;
+          line-height: 1.5;
+          transform: translate(-50%, -50%);
+          content: "쿠폰 발급 완료";
+        }
+        &:after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba($fc1, 0.7);
+          color: $fcF;
+          font-size: 1.5rem;
+          content: "";
+        }
+      }
+    }
   }
 
   .info-type-cont {
