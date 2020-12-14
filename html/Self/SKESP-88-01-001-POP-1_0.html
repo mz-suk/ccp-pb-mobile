@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">위치 검색</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="filter-layer">
+            <div class="wrap-filter-tab">
+              <div class="filter-menu">
+                <ul class="">
+                  <li><a href="javascript:;">서울</a></li>
+                  <li><a href="javascript:;">경기</a></li>
+                  <li class="active"><a href="javascript:;">인천</a></li>
+                  <li><a href="javascript:;">제주</a></li>
+                  <li><a href="javascript:;">강원</a></li>
+                  <li><a href="javascript:;">충북</a></li>
+                  <li><a href="javascript:;">충남</a></li>
+                  <li><a href="javascript:;">경북</a></li>
+                  <li><a href="javascript:;">경남</a></li>
+                  <li><a href="javascript:;">전북</a></li>
+                  <li><a href="javascript:;">전남</a></li>
+                  <li><a href="javascript:;">전남</a></li>
+                  <li><a href="javascript:;">전남</a></li>
+                  <li><a href="javascript:;">전남</a></li>
+                  <li><a href="javascript:;">전남</a></li>
+                  <li><a href="javascript:;">전남</a></li>
+                  <li><a href="javascript:;">전남</a></li>
+                </ul>
+              </div>
+              <div class="filter-content">
+                <ul class="filter-list-item">
+                  <li><a href="javascript:;">경기전체</a></li>
+                  <li><a href="javascript:;">광주시</a></li>
+                  <li><a href="javascript:;">고양시</a></li>
+                  <li><a href="javascript:;">과천시</a></li>
+                  <li><a href="javascript:;">광명시</a></li>
+                  <li><a href="javascript:;">남양주시</a></li>
+                  <li><a href="javascript:;">동두천시</a></li>
+                  <li><a href="javascript:;">부천시</a></li>
+                  <li><a href="javascript:;">수원시</a></li>
+                  <li><a href="javascript:;">수원시</a></li>
+                  <li><a href="javascript:;">수원시</a></li>
+                  <li><a href="javascript:;">수원시</a></li>
+                  <li><a href="javascript:;">수원시</a></li>
+                  <li><a href="javascript:;">수원시</a></li>
+                  <li><a href="javascript:;">수원시</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
