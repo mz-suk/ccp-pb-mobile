@@ -251,6 +251,12 @@
       padding: 2.7rem 1rem;
       border-bottom: 0.1rem solid $fcF0;
       color: $fc1;
+
+      button {
+        width: 100%;
+        text-align: left;
+        background: url(../../assets/img/layout/icon-more-type2.svg) no-repeat 100% 50%;
+      }
     }
   }
 
