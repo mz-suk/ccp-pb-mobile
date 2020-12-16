@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">추가정보 삭제</h1>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="member-layout">
+          <div class="order-cont">
+            <p class="title-sub type2">삭제할 차량을 선택해 주세요.</p>
+            <ul class="list-dot type3">
+              <li>T 차량은 최대 3대까지 등록할 수 있습니다.</li>
+              <li>3대 미만으로 차량 대수를 조정해 주세요.</li>
+              <li>차량을 삭제 하여도 이용하신 내역은 유지 됩니다.</li>
+            </ul>
+
+            <ul class="car-del-list">
+              <li class="info-type-box chk-box-type chk-type1">
+                <input type="checkbox" id="chk01" name="" checked />
+                <label for="chk01" class="info-car-cont">
+                  <div class="logo">
+                    <img src="../../../assets/img/emblem/logo-1.svg" alt="">
+                    <p class="car-barnd">현대</p>
+                  </div>
+                  <p class="car-name">현대 팰리세이드</p>
+                  <p class="car-number">28자 8617</p>
+                </label>
+              </li>
+              <li class="info-type-box chk-box-type chk-type1">
+                <input type="checkbox" id="chk02" name="" />
+                <label for="chk02" class="info-car-cont">
+                  <div class="logo">
+                    <img src="../../../assets/img/emblem/logo-2.svg" alt="">
+                    <p class="car-barnd">기아</p>
+                  </div>
+                  <p class="car-name">기아 쏘렌토</p>
+                  <p class="car-number">28자 8617</p>
+                </label>
+              </li>
+              <li class="info-type-box chk-box-type chk-type1">
+                <input type="checkbox" id="chk03" name="" />
+                <label for="chk03" class="info-car-cont">
+                  <div class="logo">
+                    <img src="../../../assets/img/emblem/logo-7.svg" alt="">
+                    <p class="car-barnd">BMW</p>
+                  </div>
+                  <p class="car-name">BMW 6 그란 투리스모 </p>
+                  <p class="car-number">28자 8617</p>
+                </label>
+              </li>
+              <li class="info-type-box chk-box-type chk-type1">
+                <input type="checkbox" id="chk04" name="" />
+                <label for="chk04" class="info-car-cont">
+                  <div class="logo">
+                    <img src="../../../assets/img/emblem/logo-3.svg" alt="">
+                    <p class="car-barnd">쉐보레</p>
+                  </div>
+                  <p class="car-name">쉐보레 The New 말리부</p>
+                  <p class="car-number">28자 8617</p>
+                </label>
+              </li>
+              <li class="info-type-box chk-box-type chk-type1">
+                <input type="checkbox" id="chk05" name="" />
+                <label for="chk05" class="info-car-cont">
+                  <div class="logo">
+                    <img src="../../../assets/img/emblem/logo-8.svg" alt="">
+                    <p class="car-barnd">벤츠</p>
+                  </div>
+                  <p class="car-name">벤츠 A클래스 AMG 세단</p>
+                  <p class="car-number">28자 8617</p>
+                </label>
+              </li>
+              <li class="info-type-box chk-box-type chk-type1">
+                <input type="checkbox" id="chk06" name="" />
+                <label for="chk06" class="info-car-cont">
+                  <div class="logo">
+                    <img src="../../../assets/img/emblem/logo-5.svg" alt="">
+                    <p class="car-barnd">쌍용</p>
+                  </div>
+                  <p class="car-name">쌍용 Tivoli air</p>
+                  <p class="car-number">28자 8617</p>
+                </label>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="fix-footer-area">
+          <!-- <button type="button" class="btn type2 color4" disabled="">선택한 차량 삭제하기</button> -->
+          <button type="button" class="btn type2 color4" >선택한 차량 삭제하기</button>
+        </div>
+        <div class="toast-area">차량이 삭제 되었습니다.</div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

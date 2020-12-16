@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">결제 및 예약 완료</h1>
+        <h1 class="title">결제 완료</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
@@ -40,9 +40,9 @@
             <p class="txt-row type1">아래와 같은 서비스의<br/>예약결제가 정상 완료되었습니다.<br/>예약일 하루 전에 최종 예약확정 전화를 드립니다.</p>
             <div class="text-box">
               <dl class="define-list">
-                <dt>구매번호 </dt>
+                <dt>구매번호 (주문번호)  </dt>
                 <dd>20200422-AW22A</dd>
-                <dt>구매일시</dt>
+                <dt>구매일시 (주문일시)</dt>
                 <dd>2020.06.12 (화) 15:07:12</dd>
               </dl>
            </div>
@@ -51,7 +51,7 @@
           <div class="accordion active type2">
             <!-- [D] accordion 펼침 상태 : .active 추가 -->
             <div class="accordion-title">
-              <p class="title">견적요청 정보</p>
+              <p class="title">예약 정보</p>
               <button type="button" class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
@@ -98,7 +98,6 @@
               <div class="order-cont">
                 <div class="title-sub">
                   <p>내 차량 위치</p>
-                  <button type="button" class="btn-arrow">변경하기</button>
                 </div>
                 <dl class="customer-info">
                   <dt>기본주소</dt>
@@ -110,6 +109,20 @@
                   <dt>요청사항</dt>
                   <dd>지하 주차장 F-30에 주차.<br/>
                     왼쪽 타이어에 흠집이 있으니까 살살해주시고 트렁크 안에는 개인 짐이 많으니 청소 안하셔도 됩니다.</dd>
+                </dl>
+              </div>
+
+              <div class="order-cont">
+                <div class="title-sub">
+                  <p>상품 정보</p>
+                </div>
+                <dl class="customer-info">
+                  <dt>상품명</dt>
+                  <dd>토탈쿼츠 이네오 NEX 5W-30 <button type="button" class="bg-icon info"></button></dd>
+                  <dt>상품명</dt>
+                  <dd>로케트 GB60L <button type="button" class="bg-icon info"></button></dd>
+                  <dt>상품명</dt>
+                  <dd>Aerotwin EDPM 와이퍼 <button type="button" class="bg-icon info"></button> </dd>
                 </dl>
               </div>
             </div>
@@ -130,10 +143,10 @@
                   <dl class="define-box">
                     <dt class="left">엔진오일</dt>
                   </dl>
-                  <dl class="define-list">
+                  <dl class="define-list type3">
                     <dt>토탈쿼츠 이네오 NEX 5W-30</dt>
-                    <dd>50,000원</dd>
-                    <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 쿠폰적용</dt>
+                    <dd class="num">1개<span>15,000원</span></dd>
+                    <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 신규 회원 가입 쿠폰 5,000원</dt>
                     <dd class="replay-txt">-5,000원</dd>
                   </dl>
                 </div>
@@ -142,25 +155,27 @@
                   <dl class="define-box">
                     <dt class="left">배터리</dt>
                   </dl>
-                  <dl class="define-list">
+                  <dl class="define-list type3">
                     <dt>토탈쿼츠 이네오 NEX 5W-30</dt>
-                    <dd>50,000원</dd>
+                    <dd class="num">1개<span>15,000원</span></dd>
+                    <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 신규 회원 가입 쿠폰 5,000원</dt>
+                    <dd class="replay-txt">-5,000원</dd>
                   </dl>
                 </div>
                 <div class="order-info">
                   <dl class="define-box">
                     <dt class="left">추가 패키지</dt>
                   </dl>
-                  <dl class="define-list">
+                  <dl class="define-list type3">
                     <dt>Aerotwin EDPM 와이퍼</dt>
-                    <dd>50,000원</dd>
+                    <dd class="num">1개<span>15,000원</span></dd>
                     <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 쿠폰적용</dt>
                     <dd class="replay-txt">-5,000원</dd>
                   </dl>
                 </div>
 
                 <dl class="define-box total">
-                  <dt class="left">총 상품금액</dt>
+                  <dt class="left">구매총금액</dt>
                   <dd class="right"><span>45,000</span>원</dd>
                 </dl>
                 <dl class="define-box charge">
@@ -174,14 +189,20 @@
                   <p>결제금액 정보</p>
                 </div>
                 <div class="order-info">
+                  <dl class="define-box">
+                    <dt>상품 총 금액</dt>
+                    <dd>40,000원</dd>
+                  </dl>
+                  <dl class="define-box">
+                    <dt>옵션 총 금액</dt>
+                    <dd>40,000원</dd>
+                  </dl>
                   <dl class="define-list">
-                    <dt>총 상품금액 </dt>
-                    <dd>20,000원</dd>
                     <dt>쿠폰할인금액 </dt>
                     <dd>20,000원</dd>
-                    <dt>포인트 차감 (머핀)</dt>
+                    <dt>포인트 할인 (머핀)</dt>
                     <dd>0원</dd>
-                    <dt>포인트 차감 (OK 캐시백)</dt>
+                    <dt>포인트 할인 (OK 캐시백)</dt>
                     <dd>-1,150원</dd>
                   </dl>
                   <dl class="define-box total">
@@ -189,7 +210,7 @@
                     <dd class="right"><span>56,000</span>원</dd>
                   </dl>
                   <dl class="define-box benefit">
-                    <dt class="left">총혜택금액</dt>
+                    <dt class="left">혜택 총 금액</dt>
                     <dd class="right"><span>35,000</span>원</dd>
                   </dl>
                 </div>
@@ -209,29 +230,28 @@
 
               <div class="order-cont">
                 <div class="title-sub">
-                  <p>포인트 혜택</p>
+                  <p>적립 예정 포인트 정보</p>
                 </div>
                 <div class="point-info">
                   <dl class="define-list">
                     <dt>
                       머핀 포인트
-                      <span class="tag point">3% 적립</span>
+                      <span class="desc"> (플래티넘 +3%)</span>
+                      <!-- <span class="tag point">3% 적립</span> -->
                     </dt>
-                    <dd>1,680원</dd>
+                    <dd>1,680 P</dd>
                     <dt>OK 캐시백 포인트 <span class="desc">(0.1% 적립)</span></dt>
-                    <dd>56원</dd>
-                    <dt>[추가] 루패스 세차장 전용 6월 포인트 프로모션<br/><span class="desc">(0.1% 적립)</span></dt>
-                    <dd>56원</dd>
+                    <dd>56 P</dd>
                   </dl>
                   <dl class="define-box total">
-                    <dt class="left">총 예상 적립 포인트</dt>
-                    <dd class="right"><span>1,736</span>원</dd>
+                    <dt class="left">총 적립 예상 포인트</dt>
+                    <dd class="right"><span>1,736</span><strong>P</strong></dd>
                   </dl>
-                  <p class="text-guide">예상적립포인트는 실제 서비스 이용 완료 시점에 실제 포인트로 전환
-                    지급됩니다</p>
-                  <p class="text-guide">적립된 포인트는 1원=1P로 환산되어 APP 내에 결제 시 할인하실 수
-                    있습니다.
-                    </p>
+                  <ul class="list-dot">
+                    <li>적립율은 실결제금액을 기준으로 계산됩니다.</li>
+                    <li>적립예정포인트는 실제 서비스 이용 완료 시점기준으로 7일 후에 실제 포인트로 전환 지급됩니다.</li>
+                    <li>적립된 포인트는 1원=1P로 환산되어 APP 내에 결제 시 할인하실 수 있습니다.</li>
+                  </ul>
 
                   <div class="wrap-btn">
                     <a href="javascript:;" class="btn color1">홈으로 가기</a>
