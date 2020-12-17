@@ -785,8 +785,9 @@ input[type="checkbox"] {
   .btn-search {
     position: absolute;
     top: 50%;
-    right: 1rem;
-    transform: translate(0, -50%);
+    right: 0;
+    padding: 1rem;
+    transform: translate3D(0, -50%, 0);
   }
 }
 
