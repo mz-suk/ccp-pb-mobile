@@ -2,7 +2,6 @@
 .isDetail {
   .header {
     height: auto;
-    top: 0;
     z-index: 31;
     .title {
       display: none;
@@ -21,6 +20,7 @@
 
 .header {
   position: sticky;
+  top: 0;
   z-index: 31;
   height: 5.5rem;
   box-sizing: border-box;

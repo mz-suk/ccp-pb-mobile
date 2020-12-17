@@ -109,6 +109,7 @@ html {
 }
 body {
   width: 100%;
+  min-height: 100vh;
   font: 1.3rem/1.5 "Moebius", sans-serif;
   // letter-spacing: -0.05em;
   word-break: keep-all;
@@ -291,4 +292,8 @@ html {
       width: 9rem;
     }
   }
+}
+
+.text-pre {
+  white-space: pre-line;
 }
