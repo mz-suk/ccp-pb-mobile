@@ -846,3 +846,12 @@
     }
   }
 }
+
+.car-del-list {
+  margin-top: 3rem;
+  li {
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+}
