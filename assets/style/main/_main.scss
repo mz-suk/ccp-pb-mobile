@@ -168,25 +168,32 @@
           line-height: 1.3;
         }
 
-        .btn-arrow {
+        .wrap-btn {
           margin-top: 1.5rem;
-          font-size: 1.3rem;
-          line-height: 1.3;
-          text-decoration: underline;
 
-          &:after {
-            margin-top: 0.2rem;
-            margin-left: 0.3rem;
-            vertical-align: 0;
-          }
-          &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
+          .btn-arrow {
+            font-size: 1.3rem;
+            line-height: 1.3;
+            text-decoration: underline;
+
+            &:not(:first-child) {
+              margin-left: 1.2rem;
+            }
+
+            &:after {
+              margin-top: 0.2rem;
+              margin-left: 0.3rem;
+              vertical-align: 0;
+            }
+            // &::before {
+            //   content: "";
+            //   position: absolute;
+            //   top: 0;
+            //   left: 0;
+            //   z-index: 1;
+            //   width: 100%;
+            //   height: 100%;
+            // }
           }
         }
 
