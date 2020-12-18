@@ -2117,3 +2117,232 @@
     }
   }
 }
+
+// 세차 제휴사 소개
+.wash-brand {
+  position: relative;
+  color: $fc1;
+  border-bottom: 0.1rem solid $fcF0;
+  .logo {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+  }
+  .txt-box {
+    padding: 3rem 3rem 4.5rem;
+
+    .title {
+      font-size: 1.9rem;
+      span {
+        position: relative;
+        line-height: 1;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0.2rem;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 0.7rem;
+          background: $pc3;
+          opacity: 0.2;
+        }
+      }
+    }
+
+    .txt {
+      margin-top: 1rem;
+    }
+  }
+}
+.wash-content {
+  border-top: 0.8rem solid $fcF9;
+}
+
+.wash-info {
+  li {
+    position: relative;
+    padding: 6rem 0;
+
+    &:last-child::after {
+      display: none;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 4rem);
+      border-bottom: 0.1rem dotted $fcD7;
+    }
+
+    &.left {
+      padding-right: 4rem;
+      .title {
+        padding-left: 4rem;
+      }
+      .txt {
+        padding-left: 4rem;
+      }
+      &:after {
+        right: 0;
+      }
+
+      &.type1 {
+        text-align: right;
+      }
+    }
+
+    &.right {
+      padding-left: 4rem;
+      text-align: right;
+      .title {
+        padding-right: 4rem;
+      }
+      .txt {
+        padding-right: 4rem;
+      }
+      &:after {
+        left: 0;
+      }
+      &.type1 {
+        text-align: left;
+      }
+    }
+
+    &.center {
+      padding-left: 4rem;
+      padding-right: 4rem;
+      text-align: center;
+      &:after {
+        left: 4rem;
+        width: calc(100% - 8rem);
+      }
+    }
+
+    .title {
+      font-size: 1.7rem;
+      color: $fc1;
+      text-decoration: underline;
+    }
+    .txt {
+      margin-top: 1rem;
+    }
+    .img {
+      margin-top: 2.5rem;
+    }
+
+    &.king-swiper {
+      &:after {
+        left: 4rem;
+        width: calc(100% - 8rem);
+      }
+    }
+  }
+}
+
+.swiper-container {
+  padding-left: 2rem;
+}
+.wash-swiper {
+  padding: 6rem 0 6.5rem;
+  color: $fc1;
+  background: $fcF9;
+
+  .title {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .txt {
+    margin-top: 1.6rem;
+    text-align: center;
+  }
+
+  .swiper-container {
+    margin-top: 5rem;
+    padding-left: 2rem;
+    padding-bottom: 2.8rem;
+  }
+
+  .swiper-slide {
+    width: 26rem;
+    height: 100%;
+    overflow: hidden;
+    background: $fcF;
+    border: 0.1rem solid $fcF0;
+    border-radius: 1.6rem;
+
+    .txt-box {
+      padding: 2.5rem 0 2rem 2.5rem;
+      .type {
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+        color: $pc3;
+        em {
+          font-size: 1.2rem;
+        }
+      }
+      .tit {
+        font-size: 1.7rem;
+      }
+      .sw-txt {
+        margin-top: 1rem;
+        color: $fc6;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 0 !important;
+    .swiper-pagination-bullet {
+      width: 0.8rem;
+      height: 0.8rem;
+      background: #e0e0e0;
+      border-radius: 50%;
+      opacity: 1;
+      &.swiper-pagination-bullet-active {
+        background: $fc1;
+      }
+    }
+  }
+}
+
+.king-swiper {
+  text-align: right;
+
+  &.type1 {
+    text-align: center;
+  }
+
+  .title {
+    padding-right: 4rem;
+  }
+  .txt {
+    padding-right: 4rem;
+  }
+
+  .swiper-container {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    padding-bottom: 2.8rem;
+  }
+
+  .swiper-slide {
+    width: 29.5rem;
+    height: 19.7rem;
+  }
+
+  .swiper-pagination {
+    bottom: 0 !important;
+    .swiper-pagination-bullet {
+      width: 0.8rem;
+      height: 0.8rem;
+      background: #e0e0e0;
+      border-radius: 50%;
+      opacity: 1;
+      &.swiper-pagination-bullet-active {
+        background: $fc1;
+      }
+    }
+  }
+}
