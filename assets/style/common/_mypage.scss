@@ -107,6 +107,7 @@
     text-align: center;
     padding-right: 1rem;
     border: 0 none;
+    font-size: 1.6rem;
   }
 }
 
@@ -152,6 +153,17 @@
       &:first-child {
         margin-left: 0;
       }
+    }
+
+    .card-date {
+      font-size: 1.6rem;
+    }
+    .card-pw {
+      font-size: 1.6rem;
+    }
+
+    .card-cvc {
+      font-size: 1.6rem;
     }
   }
   .title {
