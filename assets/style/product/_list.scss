@@ -940,6 +940,16 @@
     margin-bottom: 0;
   }
 
+  &.charge {
+    dd {
+      span {
+        margin-right: 0.2rem;
+        font-size: 1.8rem;
+        vertical-align: middle;
+      }
+    }
+  }
+
   dt,
   dd {
     display: inline-block;
