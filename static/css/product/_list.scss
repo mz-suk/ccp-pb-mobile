@@ -940,6 +940,16 @@
     margin-bottom: 0;
   }
 
+  &.charge {
+    dd {
+      span {
+        margin-right: 0.2rem;
+        font-size: 1.8rem;
+        vertical-align: middle;
+      }
+    }
+  }
+
   dt,
   dd {
     display: inline-block;
@@ -996,6 +1006,9 @@
   dd {
     float: right;
     text-align: right;
+    em {
+      margin-right: 0.2rem;
+    }
   }
   .sub-point {
     display: block;
@@ -1125,8 +1138,8 @@
     position: absolute;
     top: 0.7rem;
     left: 0.5rem;
-    width: 0.3rem;
-    height: 0.3rem;
+    width: 0.2rem;
+    height: 0.2rem;
     background: $fc6;
     border-radius: 50%;
     content: "";
