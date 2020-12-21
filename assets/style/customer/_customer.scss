@@ -432,10 +432,41 @@
 //문의쓰기
 .wrap-question-write {
   padding: 4rem 2rem;
+  .question-area {
+    padding: 2.5rem 1rem 0;
+
+    .form-div.type1 {
+      .select {
+        margin-top: 1.5rem;
+
+        & + .select {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .review-add-img {
+      .img-list {
+        li {
+          width: 7.4rem;
+          height: 7.4rem;
+        }
+      }
+      .btn-add-photo {
+        height: 7.4rem;
+      }
+    }
+  }
   .form-text-area {
     margin-top: 1.5rem;
     textarea {
       min-height: 20rem;
+    }
+  }
+
+  .form-div {
+    & + .form-div {
+      margin-top: 2.5rem;
     }
   }
 }

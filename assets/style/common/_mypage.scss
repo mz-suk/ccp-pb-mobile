@@ -89,7 +89,13 @@
     }
   }
 }
-
+.card-scan {
+  & + .form-wrap {
+    .form-row:first-child {
+      margin-top: 2.4rem;
+    }
+  }
+}
 .form-card {
   display: flex;
   height: 4.5rem;
@@ -146,7 +152,10 @@
 .form-wrap {
   .form-row {
     display: flex;
-    margin-top: 2.4rem;
+    &:not(:first-child) {
+      margin-top: 2.4rem;
+    }
+
     .row-cell {
       flex: 1;
       margin-left: 1.5rem;

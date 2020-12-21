@@ -36,41 +36,75 @@
         <div class="wrap-question-write">
           <div class="wrap-select">
             <select class="select" required>
-              <option value="">카테고리를 선택해 주세요</option>
+              <option value="">문의하실 카테고리를 선택해 주세요.</option>
+              <option value="">예약/취소/환불</option>
             </select>
           </div>
-          <div class="form-text-area">
-            <textarea placeholder="문의내역을 작성해 주세요."></textarea>
-            <span class="text-length">
-              <span>0</span>
-              <span>/200자</span>
-            </span>
+          <div class="question-area">
+            <div class="form-div type1">
+              <p class="title-sm"><input type="checkbox" id="checkbox1" checked><label for="checkbox1">구매 정보 추가</label></p>
+              <select class="select" required>
+                <option value="">문의하실 구매내역을 선택해 주세요.</option>
+              </select>
+            </div>
+            <div class="form-div type1">
+              <p class="title-sm"><input type="checkbox" id="checkbox2"><label for="checkbox2">제휴사, 가맹점 정보 추가</label></p>
+              <select class="select" required >
+                <option value="">제휴사를 선택해주세요.</option>
+              </select>
+              <select class="select" required disabled>
+                <option value="">가맹점을 선택해주세요</option>
+              </select>
+            </div>
+            <div class="form-div ">
+              <p class="title-sm">문의내역</p>
+              <div class="form-text-area">
+                <textarea placeholder="문의내역을 작성해 주세요."></textarea>
+                <span class="text-length">
+                  <span>0</span>
+                  <span>/1000자</span>
+                </span>
+              </div>
+            </div>
+            <div class="review-add-img">
+              <ul class="img-list">
+                <li>
+                  <label class="btn-add-photo">
+                    <input type="file" />
+                    <span>
+                      <i class="bg-icon photo"></i>
+                      <span class="num">사진/동영상 0/20</span>
+                    </span>
+                  </label>
+                </li>
+                <li><span class="no-add-img"></span></li>
+                <li><span class="no-add-img"></span></li>
+                <li><span class="no-add-img"></span></li>
+              </ul>
+              <ul class="img-list">
+                <li>
+                  <label class="btn-add-photo">
+                    <input type="file" />
+                    <span>
+                      <i class="bg-icon photo"></i>
+                      <span class="num">사진/동영상 0/20</span>
+                    </span>
+                  </label>
+                </li>
+                <li><img src="../../assets/img/temp/list-thumb-1.png" alt=""></li>
+                <li><img src="../../assets/img/temp/list-thumb-1.png" alt=""></li>
+                <li>
+                  <img src="../../assets/img/temp/list-thumb-1.png" alt="">
+                  <span class="more-num">+ 4</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="review-add-img">
-            <ul class="img-list">
-              <li>
-                <label class="btn-add-photo">
-                  <input type="file" />
-                  <span>
-                    <i class="bg-icon photo"></i>
-                    <span class="num">사진 6/20</span>
-                  </span>
-                </label>
-              </li>
-              <!-- <li>
-                <button type="button" class="btn-add-photo">
-                  <i class="bg-icon photo"></i>
-                  <span class="num">사진 6/20</span>
-                </button>
-              </li> -->
-              <li><span class="no-add-img"></span></li>
-              <li><span class="no-add-img"></span></li>
-              <li><span class="no-add-img"></span></li>
-            </ul>
-          </div>
-          <div class="btn-area grid">
-            <button type="button" class="btn color1">확인</button>
-          </div>
+
+        </div>
+        <div class="fix-footer-area">
+          <button type="button" class="btn type2 color4" disabled>확인</button>
+          <!-- <button type="button" class="btn type2 color4">확인</button> -->
         </div>
       </div>
       <!-- //Wrap-contents -->

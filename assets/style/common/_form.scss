@@ -716,6 +716,15 @@ input[type="checkbox"] {
 }
 
 .form-div {
+  &.type1 {
+    padding-bottom: 2.5rem;
+    border-bottom: 0.1rem solid $fcF0;
+
+    .title-sm {
+      margin-bottom: 0;
+    }
+  }
+
   .title {
     margin-bottom: 1rem;
     font-size: 1.7rem;
