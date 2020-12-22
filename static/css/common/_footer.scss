@@ -1,7 +1,7 @@
 .footer {
   padding: 6rem 0 10.5rem;
   background: #fdfdfd;
-  border-top: 1px solid $fcD7;
+  border-top: 1px solid $fcF0;
   text-align: center;
 
   .list-policy {
@@ -9,7 +9,6 @@
 
     li {
       display: inline-block;
-      color: $fc1;
       line-height: 1.3rem;
 
       &:not(:first-child) {
@@ -24,6 +23,10 @@
           vertical-align: middle;
           content: "";
         }
+      }
+
+      &:last-child {
+        color: $fc1;
       }
     }
   }
