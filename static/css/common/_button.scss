@@ -221,9 +221,9 @@ a {
   }
   &.size1 {
     font-size: 1.3rem;
-    line-height: 1.3rem;
+    line-height: 1.4;
     &:after {
-      margin-top: 0.15rem;
+      vertical-align: middle;
     }
   }
   &.type3 {

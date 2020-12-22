@@ -151,7 +151,7 @@
     margin-top: 3rem;
 
     .define-list {
-      padding: 0 0.7rem;
+      padding: 0 2rem;
       color: $fc1;
 
       dt:not(:last-of-type),
@@ -205,6 +205,9 @@
   .charge-top {
     .text-box {
       margin-top: 3rem;
+      .define-list {
+        padding: 0 0.7rem;
+      }
     }
   }
 
