@@ -19,30 +19,29 @@
   </head>
 
   <body>
-    <div id="container"></div>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">세차혜택 사용내역</h1>
+        <div class="left"><button type="button" class="bg-icon prev">이전페이지</button></div>
+        <div class="right"><button type="button" class="bg-icon menu">메뉴</button></div>
+      </header>
+      <!-- //Header -->
 
-    <!-- Popup -->
-    <div class="wrapper-layer pos-right">
-      <div class="wrap-layer">
-        <header class="header header-popup">
-          <h1 class="title">세차혜택 사용내역</h1>
-          <div class="right">
-            <button type="button" class="bg-icon close">닫기</button>
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-empty">
+          <div class="empty-img">
+            <img src="../../assets/img/layout/icon-empty.png" alt="">
           </div>
-        </header>
-        <div class="wrap-contents">
-          <div class="wrap-empty">
-            <div class="empty-img">
-              <img src="../../assets/img/layout/icon-empty.png" alt="">
-            </div>
-            <p class="empty-text">
-              <strong>사용내역이 없습니다.</strong>
-            </p>
-          </div>
+          <p class="empty-text">
+            <strong>사용내역이 없습니다.</strong>
+          </p>
         </div>
       </div>
-      <div class="mask"></div>
+      <!-- //wrap-contents -->
+
+      <!-- Footer -->
     </div>
-    <!-- //Popup -->
   </body>
 </html>
