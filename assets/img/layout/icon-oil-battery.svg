@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_349905" data-name="사각형 349905" width="20" height="20" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_oil_battery_20" transform="translate(10 10)">
+    <g id="그룹_471909" data-name="그룹 471909" transform="translate(-10 -10)" clip-path="url(#clip-path)">
+      <g id="그룹_471905" data-name="그룹 471905" clip-path="url(#clip-path)">
+        <g id="그룹_471904" data-name="그룹 471904" opacity="0">
+          <g id="그룹_471903" data-name="그룹 471903" clip-path="url(#clip-path)">
+            <rect id="사각형_349899" data-name="사각형 349899" width="20" height="20" fill="#f0f"/>
+          </g>
+        </g>
+      </g>
+      <g id="그룹_471908" data-name="그룹 471908" clip-path="url(#clip-path)">
+        <g id="그룹_471907" data-name="그룹 471907" opacity="0">
+          <g id="그룹_471906" data-name="그룹 471906" clip-path="url(#clip-path)">
+            <rect id="사각형_349902" data-name="사각형 349902" width="20" height="20" fill="#f0f"/>
+          </g>
+        </g>
+        <path id="패스_875671" data-name="패스 875671" d="M18.1,17.6H5a3.1,3.1,0,0,1-3.1-3.2V4.4H18.1Z" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="패스_875672" data-name="패스 875672" d="M4.9,1.1H8.1a.8.8,0,0,1,0,1.5H4.9Z" fill="#111"/>
+        <path id="패스_875673" data-name="패스 875673" d="M11.4,1.1h3.2a.8.8,0,0,1,0,1.5H11.4Z" fill="#111"/>
+        <path id="패스_875674" data-name="패스 875674" d="M12,11.6c0-1.1-2-4-2-4s-2,2.9-2,4a2,2,0,1,0,4,.1Z" fill="none" stroke="#001" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

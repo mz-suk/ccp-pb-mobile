@@ -233,10 +233,13 @@
     .title {
       color: $pc3;
     }
-    .btn-arrow {
-      margin-top: 1rem;
-      font-size: 1.3rem;
-      color: $fc6;
+    .btn-area {
+      .btn-arrow {
+        font-size: 1.3rem;
+      }
+      .desc {
+        margin-top: 1.2rem;
+      }
     }
   }
   &.type-dawn {
