@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">1:1 문의</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-chat">
+          <div class="noti-area">
+            <i class="bg-icon info2"></i>답변시간 : 오전 9시~오후 6시 (주말/공휴일 제외)
+          </div>
+          <div class="chat-area">
+            <button type="button" class="btn-txt">지난 상담 내용 보기</button>
+            <div class="chat-section">
+              <p class="chat-date"><span>2020년 10월 20일</span></p>
+              <div class="answer-box">
+                <div class="answer"><p>궁금하신 사항에 대해서 문의<br/>주시면 답변 드리도록 하겠습니다.</p></div>
+                <div class="answer"><p>상담량에 따라 바로 답변을 못 드릴 수 있으니,<br/>양해 탁드립니다.</p></div>
+              </div>
+              <div class="question-box">
+                <div class="question"><p>세차후 문제가 생겼습니다.<br/>사진첨부 합니다.</p></div>
+                <p class="chat-time">오후 06:10</p>
+                <div class="question"><img src="../../assets/img/temp/di-img.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fix-footer-area">
+          <div class="chat-input"><!-- [D] 텍스트 입력 시 .active 추가 -->
+            <label class="btn-photo"><input type="file" /></label>
+            <textarea class="chat-box" placeholder="문의사항을 입력하세요"></textarea>
+            <button type="button" class="btn-send">보내기</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+    </div>
+  </body>
+</html>
