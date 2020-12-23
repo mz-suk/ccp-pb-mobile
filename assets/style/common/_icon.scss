@@ -512,8 +512,17 @@
   &.review-type2 {
     background-image: url(../../assets/img/layout/icon-review-type2.svg);
   }
+  &.member-platinum {
+    background-image: url(../../assets/img/layout/icon-member-platinum.svg);
+  }
   &.member-gold {
     background-image: url(../../assets/img/layout/icon-member-gold.svg);
+  }
+  &.member-general {
+    background-image: url(../../assets/img/layout/icon-member-general.svg);
+  }
+  &.member-associate {
+    background-image: url(../../assets/img/layout/icon-member-associate.svg);
   }
   &.btn-prev,
   &.btn-next {
