@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, width=device-width, height=device-height">
+<title>머핀 - Muffin</title>
+<link type="text/css" rel="stylesheet" href="./resources/css/style.css">
+<!-- swiper js -->
+<link type="text/css" rel="stylesheet" href="./resources/css/swiper.min.css">
+</head>
+<body>
+<div class="body-area">
+    <!--header-->
+    <div class="header">
+        <div class="wrapper">
+            <div class="logo default"></div>
+            <a class="intro-link" href="http://www.skenergy.com/company/overview.asp" target="_blank">회사소개</a>
+        </div>
+    </div>
+    <!-- contents (swiper) -->
+    <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="slide-wrapper first">
+                        <div class="contents-wrapper first">
+                            <div class="contents first">
+                                <span class="title">다양한 혜택으로</span> <br/>
+                                <span class="title">간편하게 주유하세요</span>
+                                <div class="app-download-wrapper">
+                                    <button type="button" class="btn-download android" onclick="window.open('https://play.google.com/store/apps/details?id=com.ske.phone.epay');"></button>
+                                    <button type="button" class="btn-download ios" onclick="window.open('https://apps.apple.com/app/id1507316276?mt=8');"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                        <div class="contents-wrapper second">
+                            <div class="contents">
+                                <span class="title">원터치 주유</span>
+                                <div class="content-wrapper">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                        <div class="contents-wrapper third">
+                            <div class="contents">
+                                <span class="title">나만의 주유패턴</span>
+                                <div class="content-wrapper"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                        <div class="contents-wrapper fourth">
+                            <div class="contents">
+                                <span class="title">내 주변 주유소</span>
+                                <div class="content-wrapper"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                        <div class="contents-wrapper youtube">
+                            <div class="contents youtube">
+                                <span class="title"></span>
+                                <div class="content-wrapper">
+                                    <span class="content"></span>
+                                </div>
+                            </div>
+                            <div class="youtube-wrapper">
+                                <iframe src="https://www.youtube.com/embed/Fh0RuTf300w"
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                        <div class="contents-wrapper wash1">
+                            <div class="contents wash1">
+                                <span class="title">전문가의 방문세차</span>
+                                <div class="content-wrapper"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="slide-wrapper">
+                        <div class="contents-wrapper wash2">
+                            <div class="contents wash2">
+                                <span class="title">프리미엄 새벽세차</span>
+                                <div class="content-wrapper"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide :: footer -->
+                <div class="swiper-slide">
+                    <div class="introduction-wrapper">
+                        <div class="introduction">
+                            <div class="logo small"></div>
+                            <div class="copyright">ⓒSK ENERGY CO.,LTD. ALL RIGHTS RESERVED.</div>
+                            <div class="info">
+                                ARS 고객센터 <a href="tel:1588-0051">1588-0051</a> / <a href="tel:1599-0051">1599-0051</a>
+                                <br />
+                                (주)SK에너지, 조경목
+                                <br />
+                                서울특별시 종로구 종로 26, 1층
+                                <br />
+                                <div class="align-wrapper">
+                                    <div>사업자번호 : 101-86-60120</div>
+                                    <div class="terms">
+                                        <div>
+                                            <a href="https://app.enclean.com/front/policy/policy_muffin_service" target="_blank">서비스 이용약관</a>
+                                        </div>
+                                        <div>
+                                            <a href="https://app.enclean.com/front/policy/policy_info_protection" target="_blank">개인정보 처리방침</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div>
+                                    <a href="http://skinnovation.com/company/ethics.asp" target="_blank"><img src="./resources/images/image002.png" style="width:150px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--fixed-area-->
+    <div class="fixed-area">
+        <a href="#" class="btn-app-download" target="_blank">앱 설치하기</a>
+    </div>
+</div>
+
+<script src="./resources/js/swiper.min.js"></script>
+
+<script>
+
+var varUA = navigator.userAgent.toLowerCase();
+
+//swiper js 설정
+var swiper = new Swiper('.swiper-container', {
+    direction: 'vertical',
+    mousewheel: {
+        invert: true,
+        forceToAxis: true
+    },
+    speed: 500
+});
+
+//기기 해상도에 따라 text 다르게 설정하기
+function setText() {
+
+    //화면 해상도 구하기
+    var width = window.innerWidth || document.body.clientWidth;
+    var height = window.innerHeight || document.body.clientHeight;
+
+    var content1 = ''; //원터치 주유
+    var content2 = ''; //나만의 주유패턴
+    var content3 = ''; //내주변 주유소
+    var titleText = ''; //유튜브 페이지 제목
+    var content4 = '<span class="content">원터치 주유, 주유예약 등</span>'; //유튜브 페이지
+    var content5 = ''; //방문세차
+    var content6 = ''; //새벽세차
+
+    //화면 해상도에 따라서 => text 넣어주기
+    if(width === 375 && height === 812) {
+        content1 = '<span class="content">자주 이용하는 주유소를 즐겨찾기하여 <br/> 홈화면에 등록하고</span>';
+        content1 += '<span class="content">원터치 주유로 쉽고 빠르게 예약하세요.</span>';
+
+        content2 = '<span class="content">번거로운 주유, 결제 정보를 <br/> 매번 입력하지 말고</span>';
+        content2 += '<span class="content">미리 등록하고 편리하게 사용하세요.</span>';
+
+        content3 = '<span class="content">내 주변의 주유소 정보를 <br/> 한눈에 보고 비교하여</span>';
+        content3 += '<span class="content">쉽게 주유 예약하세요.</span>';
+
+        titleText = 'Muffin 사용을 좀더 <br /> 쉽게!';
+        content4 += '<span class="content">Muffin의 주유기능을 좀 더 쉽게</span>';
+        content4 += '<span class="content">알아보기 위해 아래 Muffin앱</span>';
+        content4 += '<span class="content">사용 영상을 확인해보세요.</span>';
+
+        content5 = '<span class="content">내 차량 기준의 친환경 세차 상품과</span>';
+        content5 += '<span class="content">최상의 테크니션이 제공하는<br/>출장세차를 예약하세요.</span>';
+
+        content6 = '<span class="content">거주하고 계신 지역의 아파트를 선택하여</span>';
+        content6 += '<span class="content">잠든 사이 세차 서비스를 예약하세요.</span>';
+    } else {
+        content1 = '<span class="content">자주 이용하는 주유소를 즐겨찾기하여 홈화면에 등록하고</span>';
+        content1 += '<span class="content">원터치 주유로 쉽고 빠르게 예약하세요.</span>';
+
+        content2 = '<span class="content">번거로운 주유, 결제 정보를 매번 입력하지 말고</span>';
+        content2 += '<span class="content">미리 등록하고 편리하게 사용하세요.</span>';
+
+        content3 = '<span class="content">내 주변의 주유소 정보를 한눈에 보고 비교하여</span>';
+        content3 += '<span class="content">쉽게 주유 예약하세요.</span>';
+
+        titleText = 'Muffin 사용을 좀더 쉽게!';
+        content4 += '<span class="content">Muffin의 주유기능을 좀 더 쉽게 알아보기 위해</span>';
+        content4 += '<span class="content">아래 Muffin앱 사용 영상을 확인해보세요.</span>';
+
+        content5 = '<span class="content">내 차량 기준의 친환경 세차 상품과</span>';
+        content5 += '<span class="content">최상의 테크니션이 제공하는 출장세차를 예약하세요.</span>';
+
+        content6 = '<span class="content">거주하고 계신 지역의 아파트를 선택하여</span>';
+        content6 += '<span class="content">잠든 사이 세차 서비스를 예약하세요.</span>';
+    }
+
+    document.querySelectorAll('.content-wrapper')[0].innerHTML = content1;
+    document.querySelectorAll('.content-wrapper')[1].innerHTML = content2;
+    document.querySelectorAll('.content-wrapper')[2].innerHTML = content3;
+    document.querySelector('.contents.youtube > .title').innerHTML = titleText;
+    document.querySelector('.contents.youtube > .content-wrapper').innerHTML = content4;
+    document.querySelector('.contents.wash1 > .content-wrapper').innerHTML = content5;
+    document.querySelector('.contents.wash2> .content-wrapper').innerHTML = content6;
+}
+
+var androidUrl = 'https://play.google.com/store/apps/details?id=com.ske.phone.epay';
+var iosUrl = 'https://apps.apple.com/app/id1507316276?mt=8';
+
+function downloadApp() {
+    var url = "";
+    if (varUA.indexOf('android') > -1) {
+        url = androidUrl;
+    } else if (varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 ) {
+        url = iosUrl;
+    }
+    document.querySelector('.btn-app-download').setAttribute('href', url);
+}
+
+setText();
+downloadApp();
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyAe84nglRo2yhbYdBI2OIsK64tqbU8etPE",
+    authDomain: "sk-epay-project.firebaseapp.com",
+    databaseURL: "https://sk-epay-project.firebaseio.com",
+    projectId: "sk-epay-project",
+    storageBucket: "sk-epay-project.appspot.com",
+    messagingSenderId: "247121418106",
+    appId: "1:247121418106:web:83ab4a1311ae8ec592e8c3",
+    measurementId: "G-THL10JH2ZP"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var firebaseAnalytics = firebase.analytics();
+    //GA 이벤트 수집
+    //firebaseAnalytics.logEvent(firebase.analytics.EventName.PAGE_VIEW, {"utm_source":getParameterByName("utm_source"),"utm_medium":getParameterByName("utm_medium"),"utm_campaign":getParameterByName("utm_campaign")});
+</script>
+</body>
+</html>
