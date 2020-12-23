@@ -165,33 +165,36 @@
 .link-msg-box {
   position: relative;
   box-sizing: border-box;
-  height: 4.5rem;
+  min-height: 5.1rem;
   padding: 0 3.2rem 0 1rem;
-  line-height: 4.5rem;
+  line-height: 5.1rem;
   font-size: 1.3rem;
   color: $fc1;
   border: 0.1rem solid $fcE4;
   background: $fcF;
   &.type-search {
-    margin-bottom: 2rem;
+    margin: 1rem 0 2rem;
+    padding-bottom: 1.5rem;
     border: 0 none;
     border-bottom: 0.1rem solid $fc1;
+    line-height: 1.2;
   }
   .link {
-    height: 4.5rem;
-    width: 2.7rem;
     position: absolute;
+    top: 0;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 2.7rem;
+    height: 5.1rem;
   }
   .bg-icon.more {
     position: absolute;
+    top: 1.2rem;
     right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
     width: 1.2rem;
     height: 1.2rem;
+  }
+  .msg:not(:first-child) {
+    margin-top: 0.5rem;
   }
 }
 
@@ -233,10 +236,13 @@
     .title {
       color: $pc3;
     }
-    .btn-arrow {
-      margin-top: 1rem;
-      font-size: 1.3rem;
-      color: $fc6;
+    .btn-area {
+      .btn-arrow {
+        font-size: 1.3rem;
+      }
+      .desc {
+        margin-top: 1.2rem;
+      }
     }
   }
   &.type-dawn {

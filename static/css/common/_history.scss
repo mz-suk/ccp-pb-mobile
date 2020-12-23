@@ -580,13 +580,14 @@
           background: url(~assets/img/layout/bg-top-info-point2.svg) right center / 6.5rem 4.5rem no-repeat;
         }
         &.bg2 {
-          background: url(~assets/img/layout/bg-top-info-point3.svg) right center / 6.5rem 4.5rem no-repeat;
+          background: url(~assets/img/layout/bg-top-info-point3.svg) right center / 6.5rem 6.1rem no-repeat;
         }
 
         .num {
           font-size: 1.7rem;
           strong {
             font-size: 2.4rem;
+            vertical-align: middle;
           }
         }
       }
