@@ -288,6 +288,7 @@
         width: 20%;
         margin-right: 1rem;
         padding: 0 1rem;
+        font-size: 1.5rem;
 
         &:last-of-type {
           margin-right: 0;
@@ -629,15 +630,5 @@
     top: -5.6rem;
     left: 50%;
     transform: translate(-50%, 0);
-  }
-  .qrcode-box {
-    margin-top: 0.5rem;
-    text-align: center;
-    .qrcode {
-      width: 20rem;
-    }
-    .btn-link {
-      margin: 3.5rem 0 1rem;
-    }
   }
 }
