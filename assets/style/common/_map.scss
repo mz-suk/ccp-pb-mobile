@@ -160,6 +160,12 @@
       }
     }
   }
+
+  & + .wrap-btn {
+    .btn {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .link-msg-box {
