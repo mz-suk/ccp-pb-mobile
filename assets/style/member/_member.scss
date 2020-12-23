@@ -352,22 +352,22 @@
 
   .gray-box {
     margin: 0 1rem;
-    padding: 3.5rem 3.4rem 4rem 3rem;
+    padding: 3rem 1.5rem;
   }
   .barcode-box {
     padding-right: 0;
     margin: 0 auto;
-    width: 21.6rem;
+    width: 20.6rem;
 
     img {
       width: 100%;
     }
   }
   .btn-link {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
   }
   .wrap-btn {
-    margin-top: 5.5rem;
+    margin-top: 4rem;
     button {
       width: 100%;
     }
@@ -891,5 +891,16 @@
     &:not(:first-child) {
       margin-top: 2rem;
     }
+  }
+}
+
+.qrcode-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18rem;
+  transform: translate(-50%, -50%);
+  .qrcode {
+    text-align: center;
   }
 }
