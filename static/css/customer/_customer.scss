@@ -170,18 +170,22 @@
     background: $fcF;
   }
   p {
-    margin-bottom: 1.8rem;
     font-size: 1.7rem;
     color: $fc1;
     line-height: 1.5;
-    & + .btn {
-      margin-top: -0.8rem;
-    }
   }
   .sub-desc {
     font-size: 1.3rem;
     color: $fc6;
-    margin-bottom: 0.7rem;
+    margin: 1.8rem 0 0.7rem;
+  }
+  .sub-desc2 {
+    margin: 1rem 0 2rem;
+    font-size: 1.3rem;
+    color: $fc6;
+    em {
+      color: $pc3;
+    }
   }
   .more-desc {
     position: relative;
@@ -317,6 +321,7 @@
   }
 }
 .onetoone-list {
+  margin-bottom: 2rem;
   border-bottom: 0.8rem solid $fcF9;
   > li:last-child {
     border-bottom: 0.1rem solid $fcF0;
@@ -372,7 +377,7 @@
   }
   .a-txt {
     position: relative;
-    margin-top: 1.3rem;
+    margin-top: 1.5rem;
     padding: 1.7rem 2rem 1.7rem 3.5rem;
     background: $fcF9;
     border: 0.1rem solid $fcF0;
@@ -400,6 +405,9 @@
   .thumb-swiper {
     position: relative;
     margin-top: 2rem;
+    .swiper-container {
+      padding-left: 0;
+    }
     .swiper-pagination {
       position: absolute;
       bottom: 1.5rem;
