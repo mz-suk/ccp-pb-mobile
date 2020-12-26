@@ -36,7 +36,11 @@
       border-bottom: 0.1rem solid $fcE4;
     }
   }
-  //padding-bottom: 6rem;
+  &.type2 {
+    margin-top: 2rem;
+    border-top: 0.1rem solid $fc1;
+  }
+
   .pos-bottom & {
     padding-bottom: 6rem;
   }
