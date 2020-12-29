@@ -29,6 +29,12 @@
         color: $fc1;
       }
     }
+
+    &.type1 {
+      li:last-child {
+        color: $fc6;
+      }
+    }
   }
 
   .wrap-address {
@@ -36,6 +42,10 @@
       display: none;
       margin-top: 1rem;
       font-size: 1.1rem;
+
+      .call-center {
+        margin-top: 0.8rem;
+      }
     }
 
     .btn-arrow.active + .address {
@@ -47,6 +57,11 @@
     display: block;
     margin-top: 2.5rem;
     color: $fc9;
+    font-size: 1.1rem;
+  }
+
+  .noti-foot {
+    margin-top: 2rem;
     font-size: 1.1rem;
   }
 }
