@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-  <g id="car_logo_mitsubishi" transform="translate(-219 -155)">
-    <rect id="W_100_H_100" data-name="W 100 H 100" width="100" height="100" transform="translate(219 155)" fill="#f0f0f0" opacity="0"/>
-    <g id="mitsubishi" transform="translate(242 180)">
-      <path id="패스_787712" data-name="패스 787712" d="M9.279,88.408l-9.28,16H18.775l9.225-16Z" transform="translate(-1 -55.408)"/>
-      <path id="패스_787713" data-name="패스 787713" d="M59.028,0,50.015,15.987,59.028,32l8.987-16.013Z" transform="translate(-32.015 1)"/>
-      <path id="패스_787714" data-name="패스 787714" d="M75.369,88.408l8.9,16h18.1l-8.948-16Z" transform="translate(-48.369 -55.408)"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path data-name="패스 787712" d="M31.279 58l-9.28 16h18.776L50 58z"/><path data-name="패스 787713" d="M50.013 26L41 41.987 50.013 58 59 41.987z"/><path data-name="패스 787714" d="M50 58l8.9 16H77l-8.948-16z"/></svg>

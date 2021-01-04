@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-  <g id="car_logo_suzuki" transform="translate(-219 -161)">
-    <g id="W_100_H_100" data-name="W 100 H 100" transform="translate(219 161)" fill="#f9f9f9" stroke="#f0f0f0" stroke-width="1" opacity="0">
-      <rect width="100" height="100" stroke="none"/>
-      <rect x="0.5" y="0.5" width="99" height="99" fill="none"/>
-    </g>
-    <g id="suzuki" transform="translate(-1119.712 -2920.449)">
-      <path id="패스_791890" data-name="패스 791890" d="M1389.137,3155.448c4.567-4.179,18.69-12.75,23.575-14.357l-29.31-21.214,1.327-.857,10.779,7.929c1.327.964,12.478,3.214,16.991-3.215l-23.576-16.286c-4.141,3.965-18.69,12.858-24.212,14.786l30.8,21.428-.85,1.126-11.469-7.929c-3.61-2.2-13.062-4.5-18.265,2.517l24.212,16.072Z" transform="translate(-2)" fill="#231815" fill-rule="evenodd"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path data-name="패스 791890" d="M48.425 73.999C52.992 69.82 67.115 61.249 72 59.642L42.69 38.428l1.327-.857L54.796 45.5c1.327.964 12.478 3.214 16.991-3.215L48.211 25.999c-4.141 3.965-18.69 12.858-24.212 14.786l30.8 21.428-.85 1.126L42.48 55.41c-3.61-2.2-13.062-4.5-18.265 2.517l24.212 16.072z" fill="#231815" fill-rule="evenodd"/></svg>
