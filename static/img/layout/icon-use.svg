@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="사각형_249688" data-name="사각형 249688" width="20" height="20" fill="none"/>
-    </clipPath>
-  </defs>
-  <g id="사용_배경_20x20" transform="translate(10 10)">
-    <g id="그룹_345318" data-name="그룹 345318" transform="translate(-10 -10)">
-      <rect id="사각형_249687" data-name="사각형 249687" width="20" height="20" fill="none"/>
-      <g id="그룹_345317" data-name="그룹 345317" clip-path="url(#clip-path)">
-        <path id="패스_647701" data-name="패스 647701" d="M11.2,2.4a8.8,8.8,0,1,1-8.8,8.8,8.8,8.8,0,0,1,8.8-8.8" fill="#fff"/>
-        <circle id="타원_8227" data-name="타원 8227" cx="8.5" cy="8.5" r="8.5" transform="translate(1 1)" fill="none" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
-        <path id="패스_647702" data-name="패스 647702" d="M12.8,7.7,8.5,11.9,5.7,9.2" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
-        <line id="선_89796" data-name="선 89796" x1="0.6" y2="0.5" transform="translate(12.8 7.2)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      </g>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><clipPath id="a"><path data-name="사각형 249688" fill="none" d="M0 0h20v20H0z"/></clipPath></defs><g data-name="그룹 345318"><path data-name="사각형 249687" fill="none" d="M0 0h20v20H0z"/><g data-name="그룹 345317" clip-path="url(#a)"><path data-name="패스 647701" d="M11.2 2.4a8.8 8.8 0 11-8.8 8.8 8.8 8.8 0 018.8-8.8" fill="#fff"/><circle data-name="타원 8227" cx="8.5" cy="8.5" r="8.5" transform="translate(1 1)" fill="none" stroke="#111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/><path data-name="패스 647702" d="M12.8 7.7l-4.3 4.2-2.8-2.7" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/><path data-name="선 89796" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.4 7.2l-.6.5"/></g></g></svg>

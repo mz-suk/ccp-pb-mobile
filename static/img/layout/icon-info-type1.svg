@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="사각형_150995" data-name="사각형 150995" width="20" height="20" transform="translate(-0.052 -0.052)" fill="none"/>
-    </clipPath>
-  </defs>
-  <g id="알림함_안내_28x28" transform="translate(0.052 0.052)" clip-path="url(#clip-path)">
-    <g id="그룹_172577" data-name="그룹 172577" clip-path="url(#clip-path)">
-      <g id="그룹_172576" data-name="그룹 172576" opacity="0">
-        <g id="그룹_172575" data-name="그룹 172575" clip-path="url(#clip-path)">
-          <rect id="사각형_150992" data-name="사각형 150992" width="20" height="20" transform="translate(-0.052 -0.052)" fill="#f0f"/>
-        </g>
-      </g>
-      <path id="패스_395913" data-name="패스 395913" d="M13.681,7.8a.853.853,0,0,1,.568.213.711.711,0,0,1,.213.568.711.711,0,0,1-.213.568.865.865,0,0,1-1.137,0,.711.711,0,0,1-.213-.568.711.711,0,0,1,.213-.568.853.853,0,0,1,.568-.213m.782,2.487v5.187a.64.64,0,0,1-.426.711h-.355A.734.734,0,0,1,12.9,15.4V10.287Z" transform="translate(-3.732 -2.257)" fill="#fff"/>
-      <circle id="타원_5467" data-name="타원 5467" cx="8.669" cy="8.669" r="8.669" transform="translate(1.279 1.279)" fill="none" stroke="#fff" stroke-width="1.5"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><clipPath id="a"><path data-name="사각형 150995" transform="translate(-.052 -.052)" fill="none" d="M0 0h20v20H0z"/></clipPath></defs><g transform="translate(.052 .052)" clip-path="url(#a)"><g data-name="그룹 172577" clip-path="url(#a)"><path data-name="패스 395913" d="M9.949 5.543a.853.853 0 01.568.213.711.711 0 01.213.568.711.711 0 01-.213.568.865.865 0 01-1.137 0 .711.711 0 01-.213-.568.711.711 0 01.213-.568.853.853 0 01.568-.213m.782 2.487v5.187a.64.64 0 01-.426.711h-.355a.734.734 0 01-.781-.785V8.03z" fill="#fff"/><circle data-name="타원 5467" cx="8.669" cy="8.669" r="8.669" transform="translate(1.279 1.279)" fill="none" stroke="#fff" stroke-width="1.5"/></g></g></svg>

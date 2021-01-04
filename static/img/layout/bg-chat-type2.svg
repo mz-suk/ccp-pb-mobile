@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="14" viewBox="0 0 10 14">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="사각형_300803" data-name="사각형 300803" width="10" height="14" transform="translate(351 361)" fill="red" opacity="0.464"/>
-    </clipPath>
-  </defs>
-  <g id="마스크_그룹_198350" data-name="마스크 그룹 198350" transform="translate(-351 -361)" clip-path="url(#clip-path)">
-    <path id="패스_788026" data-name="패스 788026" d="M49,14.91V50.08C49,58.319,56.159,65,65,65H197.24c8.83,0,16-6.681,16-14.92V8.38A9.041,9.041,0,0,1,214.9,4.359,25.908,25.908,0,0,1,217.76,1.29a.284.284,0,0,1,.03-.03A.762.762,0,0,0,218,.739.735.735,0,0,0,217.309,0H65C56.159,0,49,6.67,49,14.91" transform="translate(143 361)" fill="#3673ee"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="14"><defs><clipPath id="a"><path data-name="사각형 300803" transform="translate(351 361)" fill="red" opacity=".464" d="M0 0h10v14H0z"/></clipPath></defs><g data-name="마스크 그룹 198350" transform="translate(-351 -361)" clip-path="url(#a)"><path data-name="패스 788026" d="M192 375.91v35.17c0 8.239 7.159 14.92 16 14.92h132.24c8.83 0 16-6.681 16-14.92v-41.7a9.041 9.041 0 011.66-4.021 25.908 25.908 0 012.86-3.069.284.284 0 01.03-.03.762.762 0 00.21-.521.735.735 0 00-.691-.739H208c-8.841 0-16 6.67-16 14.91" fill="#3673ee"/></g></svg>
