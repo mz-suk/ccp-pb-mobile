@@ -1,1 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><clipPath id="a"><path class="a" d="M0 0h20v20H0z"/></clipPath><clipPath id="c"><path class="a" transform="translate(2 2)" d="M0 0h16v16H0z"/></clipPath><clipPath id="e"><path class="a" transform="translate(7 6)" d="M0 0h6v10.46H0z"/></clipPath><style>.a,.k{fill:none}.b{clip-path:url(#a)}.c{opacity:0}.k{stroke-linecap:round;stroke-width:1.5px}.h{isolation:isolate}.i{clip-path:url(#e)}.k{stroke:#3673ee}</style></defs><g class="b"><g class="b"><g clip-path="url(#c)"><path fill="#f0f" d="M2 2h16v16H2z"/></g><g class="c"><path fill="#fff" d="M0 0h20v20H0z"/></g><path d="M9.9 1A8.9 8.9 0 111 9.9" stroke-linecap="round" stroke-width="1.5" stroke="#111" fill="none"/><g class="h"><g class="i"><g class="h"><text transform="translate(7 14)" fill="#111" font-size="10" font-family="MoebiusKorea-Bold,Moebius Korea" font-weight="700"><tspan x="0" y="0">P</tspan></text></g></g></g><path class="k" d="M3.5 6.8v-5M1.2 3.2l2.4-1.7 2.3 1.7"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_215090" data-name="사각형 215090" width="20" height="20" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="사각형_215084" data-name="사각형 215084" width="16" height="16" transform="translate(2 2)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect id="사각형_215088" data-name="사각형 215088" width="6" height="10.46" transform="translate(7 6)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="적립예상포인트_20x20" transform="translate(10 10)">
+    <g id="그룹_275397" data-name="그룹 275397" transform="translate(-10 -10)" clip-path="url(#clip-path)">
+      <g id="그룹_275396" data-name="그룹 275396" clip-path="url(#clip-path)">
+        <g id="그룹_275389" data-name="그룹 275389" opacity="0">
+          <g id="그룹_275388" data-name="그룹 275388" clip-path="url(#clip-path-3)">
+            <rect id="사각형_215083" data-name="사각형 215083" width="16" height="16" transform="translate(2 2)" fill="#f0f"/>
+          </g>
+        </g>
+        <g id="그룹_275391" data-name="그룹 275391" opacity="0">
+          <g id="그룹_275390" data-name="그룹 275390" clip-path="url(#clip-path)">
+            <rect id="사각형_215085" data-name="사각형 215085" width="20" height="20" fill="#fff"/>
+          </g>
+        </g>
+        <path id="패스_580324" data-name="패스 580324" d="M9.9,1A8.9,8.9,0,1,1,1,9.9" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1.5"/>
+        <g id="그룹_275395" data-name="그룹 275395" style="isolation: isolate">
+          <g id="그룹_275394" data-name="그룹 275394" clip-path="url(#clip-path-5)">
+            <g id="그룹_275393" data-name="그룹 275393" style="isolation: isolate">
+              <g id="그룹_275392" data-name="그룹 275392" clip-path="url(#clip-path-5)">
+                <text id="P" transform="translate(7 14)" fill="#111" font-size="10" font-family="MoebiusKorea-Bold, Moebius Korea" font-weight="700"><tspan x="0" y="0">P</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <line id="선_73102" data-name="선 73102" y1="5" transform="translate(3.5 1.8)" fill="none" stroke="#3673ee" stroke-linecap="round" stroke-width="1.5"/>
+        <path id="패스_580325" data-name="패스 580325" d="M1.2,3.2,3.6,1.5,5.9,3.2" fill="none" stroke="#3673ee" stroke-linecap="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
