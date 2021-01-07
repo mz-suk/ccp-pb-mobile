@@ -159,4 +159,21 @@
       background-size: 1.2rem 1.2rem;
     }
   }
+
+  .wrap-tooltip {
+    line-height: 1.2;
+    .tooltip-box {
+      top: 2.5rem;
+      left: -6rem;
+      width: 32rem;
+      padding: 1.8rem;
+
+      &:before {
+        left: 6.7rem;
+      }
+    }
+    .tooltip2 {
+      background-size: 100% auto;
+    }
+  }
 }

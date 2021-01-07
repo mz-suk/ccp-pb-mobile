@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Publishing list</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  #wrapper{padding:50px 20px;width:100%;max-width:1280px;margin:0 auto}
+  .guide-header{margin-bottom:10px}
+  .guide-header h1{font-size:30px}
+  .list-guide{border:1px solid #e4e4e4;border-width:1px 1px 0 0;counter-reset:num}
+  .row{display:flex;position:relative;font-size:15px;color:#666;counter-increment:num}
+  .row div{flex:0 0 200px;min-height:35px;padding:10px 10px 5px;box-sizing:border-box;border:1px solid #e4e4e4;border-width:0 0 1px 1px;line-height:1.2}
+  .row .link{position:absolute;top:0;right:0;bottom:0;left:0}
+  .row .num{flex:0 0 50px;text-align:center;font-weight:400;color:#666}
+  .row .desc{flex:1 1 auto}
+  .wrap-row.header div{background:#111;border-color :#111;color:#fff;font-weight:700;text-align:center}
+  .wrap-row.header .row{counter-reset: num}
+  .wrap-row:not(.header) .num:before{display:block;content:counter(num)}
+  .wrap-row:not(.header) .row:first-child{background:#f0f0f0;font-weight:700;color:#111}
+  .wrap-row:not(.header) .row:first-child div{border-color:#f0f0f0}
+  .wrap-row:not(.header) .row:hover{background:#f0f0f0}
+
+  @media (max-width:1200px){
+    #wrapper{padding:10px}
+    .row div{flex:1 1 100%}
+    .row .desc{display:none}
+  }
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <header class="guide-header">
+    <h1>CCP_Tmap</h1>
+  </header>
+
+  <div class="guide-container">
+    <div class="list-guide">
+      <div class="wrap-row header">
+        <div class="row">
+          <div class="num">No</div>
+          <div class="depth1">Depth1</div>
+          <div class="depth2">Depth2</div>
+          <div class="depth3">Depth3</div>
+          <div class="depth4">Depth4</div>
+          <div class="desc">Desc</div>
+          <a href="javascript:;" class="link"></a>
+        </div>
+      </div>
+
+      <!-- 공통 -->
+      <div class="wrap-row">
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1">공통</div>
+          <div class="depth2"></div>
+          <div class="depth3"></div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="javascript:;" class="link"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2">alert Layer</div>
+          <div class="depth3"></div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="../guide/layer-alert.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2">퀵메뉴</div>
+          <div class="depth3"></div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="../Main/quickmenu.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2">서비스이동중</div>
+          <div class="depth3"></div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="../Main/service.html" class="link" target="_blank"></a>
+        </div>
+      </div>
+      <!-- //공통 -->
+
+      <!-- 메인 -->
+      <div class="wrap-row">
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1">Tmap 메인</div>
+          <div class="depth2"></div>
+          <div class="depth3"></div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="javascript:;" class="link"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2">메인</div>
+          <div class="depth3"></div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-291-02-001.html" class="link" target="_blank"></a>
+        </div>
+      </div>
+      <!-- //메인 -->
+
+      <!-- 전체메뉴 -->
+      <div class="wrap-row">
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1">전체메뉴</div>
+          <div class="depth2"></div>
+          <div class="depth3"></div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="javascript:;" class="link"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2">전체메뉴</div>
+          <div class="depth3"></div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="../Main/T_SKESP-89-00-001.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2">내정보</div>
+          <div class="depth3">Index</div>
+          <div class="depth4">정회원</div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-89-00-002.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3"></div>
+          <div class="depth4">정보 NULL</div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-89-00-002-1.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3"></div>
+          <div class="depth4">준회원</div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-89-00-002-2.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3"></div>
+          <div class="depth4">정보 NULL</div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-89-00-002-3.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3">회원정보</div>
+          <div class="depth4">회원정보 노출 (정회원)</div>
+          <div class="desc"></div>
+          <a href="../Main/T_SKESP-90-01-001-3.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3"></div>
+          <div class="depth4">회원정보 노출 (준회원)</div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-90-01-001.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2">설정</div>
+          <div class="depth3">Index</div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-94-01-001.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3">정보 알림 설정</div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-94-01-001-1.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3">마케팅 알림 수신</div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-94-01-001-2.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3"></div>
+          <div class="depth4">알림수신 설정완료 팝업</div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-94-01-003-4.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3"></div>
+          <div class="depth4">마케팅정보활용동의 팝업</div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-94-01-003-5.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3">로그아웃 안내</div>
+          <div class="depth4"></div>
+          <div class="desc"></div>
+          <a href="../Main/SKESP-94-01-003-7.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2">고객센터</div>
+          <div class="depth3">Index</div>
+          <div class="depth4"></div>
+          <div class="desc">1월 버전</div>
+          <a href="../Main/T_SKESP-93-02-001.html" class="link" target="_blank"></a>
+        </div>
+        <div class="row">
+          <div class="num"></div>
+          <div class="depth1"></div>
+          <div class="depth2"></div>
+          <div class="depth3">서비스 소개</div>
+          <div class="depth4"></div>
+          <div class="desc">1월 버전</div>
+          <a href="../Customer/T_SKESP-93-04-001.html" class="link" target="_blank"></a>
+        </div>
+
+      </div>
+      <!-- //전체메뉴 -->
+
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
