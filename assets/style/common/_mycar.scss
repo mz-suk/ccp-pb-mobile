@@ -160,6 +160,9 @@
   .title-sub {
     &.type-third {
       margin-top: 3rem;
+      .title {
+        color: $fc6;
+      }
     }
   }
   .wrap-tab-scroll {

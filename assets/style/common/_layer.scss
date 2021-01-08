@@ -119,6 +119,12 @@
           &.type-info {
             padding-bottom: 3rem;
           }
+          .title-sub {
+            padding-left: 1rem;
+            .title {
+              color: $fc6;
+            }
+          }
         }
       }
     }
