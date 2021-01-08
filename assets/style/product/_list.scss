@@ -427,7 +427,7 @@
   }
 
   & + .wrap-noti {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   &.type1 {
@@ -1318,7 +1318,6 @@
 
   &.chk-box-type {
     &.chk-type1 {
-      position: relative;
       input[type="checkbox"] {
         top: 1.5rem;
         left: auto;
@@ -1326,8 +1325,16 @@
       }
 
       .info-car-cont {
-        padding: 4rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 12.9rem;
+        padding: 0 13.6rem 0 3rem;
         background: $fcF;
+
+        p {
+          width: 100%;
+        }
         .logo {
           right: 3.6rem;
         }
@@ -1339,6 +1346,11 @@
           margin-bottom: 0;
           font-size: 2.4rem;
           font-weight: 700;
+        }
+        .txt {
+          margin-top: 1rem;
+          font-size: 1.1rem;
+          color: $pc3;
         }
       }
     }
@@ -1805,14 +1817,18 @@
     // 티맵 / 오일배터리
     &.type3 {
       .logo {
-        top: 0;
+        top: 1rem;
         transform: inherit;
       }
       .car-name {
-        margin-top: 0.4rem;
+        margin-top: 0.5rem;
+        padding-left: 0.5rem;
+      }
+      .car-number {
+        padding-left: 0.5rem;
       }
       .car-info {
-        margin-top: 4rem;
+        margin: 4rem -0.5rem 0;
       }
     }
 
@@ -1907,9 +1923,6 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    .edite-more {
-      background-size: 1.6rem 1.6rem;
-    }
   }
 
   .list-btn {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-alert">
+      <div class="wrap-layer-alert">
+        <div class="desc type2">
+          <p class="tit">로그인 차단 안내</p>
+          <div class="gray-box loc-box">
+            <ul class="list-dot type1">
+              <li>기간 : 2020.11.15 ~ 2020.12.15</li>
+              <li>사유 : <span class="col-gc3">반복적 취소 환불</span></li>
+            </ul>
+          </div>
+          <ul class="list-dot color1">
+            <li>로그인 차단 기간이 종료 된 후 로그인 가능합니다.</li>
+          </ul>
+        </div>
+        <div class="wrap-btn">
+          <button class="btn type2 color4">확인</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Layer Pop -->
+  </body>
+</html>
