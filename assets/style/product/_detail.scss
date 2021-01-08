@@ -698,11 +698,13 @@
       line-height: 2rem;
       font-size: 0.9rem;
       font-weight: 700;
-      color: $pc3;
+      color: #2680eb;
+
       .logo {
         margin-right: 0.2rem;
         display: inline-block;
         height: 1rem;
+        line-height: 1;
         img {
           height: 100%;
         }
@@ -716,7 +718,7 @@
         transform: translateY(-50%);
         height: 0.9rem;
         display: block;
-        border-left: 0.1rem dotted $fcD7;
+        border-left: 0.1rem dotted $fc9;
       }
     }
   }

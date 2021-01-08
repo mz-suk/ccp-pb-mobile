@@ -870,6 +870,8 @@
   align-items: center;
   padding-bottom: 0.8rem;
   border-bottom: 0.1rem solid $fcF0;
+  font-size: 1.5rem;
+  color: $fc1;
 
   &:not(:first-child) {
     margin-top: 3rem;
@@ -1774,6 +1776,7 @@
         height: 6rem;
         border: 0.1rem solid $fcE4;
         background: $fcF;
+        box-sizing: border-box;
 
         img {
           width: 100%;
@@ -2317,7 +2320,7 @@
       }
     }
     .tbl-area {
-      margin-top: 3rem;
+      margin: 3rem -2rem 0;
       color: $fc1;
 
       .tbl {
@@ -2539,7 +2542,7 @@
     box-sizing: border-box;
 
     .txt-box {
-      padding: 2.8rem 0 2rem 3rem;
+      padding: 2.8rem 0 3rem 3rem;
       .type {
         margin-bottom: 0.5rem;
         font-size: 1.1rem;
