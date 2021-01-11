@@ -160,6 +160,10 @@
   .title-sub {
     &.type-third {
       margin-top: 3rem;
+      padding-left: 1rem;
+      .title {
+        color: $fc6;
+      }
     }
   }
   .wrap-tab-scroll {
@@ -674,6 +678,11 @@
         height: 1.2rem;
       }
     }
+    .dotted-list {
+      li:before {
+        top: 0.7rem;
+      }
+    }
   }
   .order-cont {
     .wrap-form {
@@ -690,7 +699,7 @@
       }
     }
     .title-sub:not(:first-child) {
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
     .title-sub.type2 {
       margin-bottom: 0rem;
@@ -724,7 +733,13 @@
       }
     }
   }
+  .define-list {
+    .btn-clear-x {
+      margin-left: 0.5rem;
+    }
+  }
 }
+
 .sel-layout {
   padding: 3rem 2rem 0;
 }

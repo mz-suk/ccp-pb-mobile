@@ -1,7 +1,1 @@
-<svg id="icon_more_20" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-  <rect id="사각형_65385" data-name="사각형 65385" width="20" height="20" fill="red" opacity="0"/>
-  <g id="option_icon" transform="translate(9 2)">
-    <rect id="guide" width="3" height="15" transform="translate(0 0)" fill="#999" opacity="0"/>
-    <path id="합치기_226" data-name="합치기 226" d="M1043,7035.5a1.5,1.5,0,1,1,1.5,1.5A1.5,1.5,0,0,1,1043,7035.5Zm0-6a1.5,1.5,0,1,1,1.5,1.5A1.5,1.5,0,0,1,1043,7029.5Zm0-6a1.5,1.5,0,1,1,1.5,1.5A1.5,1.5,0,0,1,1043,7023.5Z" transform="translate(-1043 -7022)" fill="#999"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><defs><style>.a{fill:none;}.b{clip-path:url(#a);}.c{opacity:0;}.d{fill:red;}.e{clip-path:url(#d);}.f{fill:#999;}</style><clipPath id="a"><rect class="a" width="16" height="16"/></clipPath><clipPath id="d"><rect class="a" width="3" height="15" transform="translate(6.5 0.5)"/></clipPath></defs><g transform="translate(8 8)"><g class="b" transform="translate(-8 -8)"><g class="b"><g class="c"><g class="b"><rect class="d" width="16" height="16"/></g></g><g class="c"><g class="e"><rect class="f" width="3" height="15" transform="translate(6.5 0.5)"/></g></g><path class="f" d="M6.5,14A1.5,1.5,0,1,1,8,15.5,1.5,1.5,0,0,1,6.5,14m0-6A1.5,1.5,0,1,1,8,9.5,1.5,1.5,0,0,1,6.5,8m0-6A1.5,1.5,0,1,1,8,3.5,1.5,1.5,0,0,1,6.5,2"/></g></g></g></svg>

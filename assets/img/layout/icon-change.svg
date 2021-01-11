@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><defs><clipPath id="a"><path data-name="사각형 355390" fill="none" d="M0 0h16v16H0z"/></clipPath></defs><g data-name="그룹 480030" clip-path="url(#a)" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"><path data-name="패스 881925" d="M12.8 3.6H2.6v2.5" stroke-linecap="round"/><path data-name="패스 881926" d="M11 6.1l2.6-2.6L11 .9"/><path data-name="패스 881927" d="M3.2 12.5h10.2V9.9" stroke-linecap="round"/><path data-name="패스 881928" d="M5 15.1l-2.6-2.6L5 9.9"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_355390" data-name="사각형 355390" width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_edit_16" clip-path="url(#clip-path)">
+    <g id="그룹_480030" data-name="그룹 480030" clip-path="url(#clip-path)">
+      <path id="패스_881925" data-name="패스 881925" d="M12.8,3.6H2.6V6.1" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_881926" data-name="패스 881926" d="M11,6.1l2.6-2.6L11,.9" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_881927" data-name="패스 881927" d="M3.2,12.5H13.4V9.9" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_881928" data-name="패스 881928" d="M5,15.1,2.4,12.5,5,9.9" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="그룹_480029" data-name="그룹 480029" opacity="0">
+        <g id="그룹_480028" data-name="그룹 480028" clip-path="url(#clip-path)">
+          <rect id="사각형_355387" data-name="사각형 355387" width="16" height="16" fill="#f0f"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

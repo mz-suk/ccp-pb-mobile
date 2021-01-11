@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="사각형_29915" data-name="사각형 29915" width="20" height="20" transform="translate(177 660)" fill="#e31e8f" opacity="0.233"/>
-    </clipPath>
-  </defs>
-  <g id="마스크_그룹_263" data-name="마스크 그룹 263" transform="translate(-177 -660)" clip-path="url(#clip-path)">
-    <g id="그룹_28197" data-name="그룹 28197" transform="translate(528.614 63.384) rotate(45)">
-      <path id="패스_9101" data-name="패스 9101" d="M134.731,9.6l3.048-3.083a3.555,3.555,0,0,0,0-4.987,3.458,3.458,0,0,0-4.93,0L129.8,4.616" transform="matrix(0.719, -0.695, 0.695, 0.719, 86.782, 754.819)" fill="none" stroke="#111" stroke-miterlimit="10" stroke-width="1.5"/>
-      <path id="패스_9102" data-name="패스 9102" d="M4.569,129.8l-3.048,3.083a3.555,3.555,0,0,0,0,4.987,3.458,3.458,0,0,0,4.93,0L9.5,134.787" transform="matrix(0.719, -0.695, 0.695, 0.719, 89.974, 581.738)" fill="none" stroke="#111" stroke-miterlimit="10" stroke-width="1.5"/>
-      <rect id="사각형_38670" data-name="사각형 38670" width="1.5" height="10" transform="translate(186.2 665)" fill="#111"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a{fill:#e31e8f;opacity:0.233;}.b{clip-path:url(#a);}.c{fill:none;stroke:#111;stroke-miterlimit:10;stroke-width:1.5px;}.d{fill:#111;}</style><clipPath id="a"><rect class="a" width="20" height="20" transform="translate(177 660)"/></clipPath></defs><g class="b" transform="translate(-177 -660)"><g transform="translate(528.614 63.384) rotate(45)"><path class="c" d="M134.731,9.6l3.048-3.083a3.555,3.555,0,0,0,0-4.987,3.458,3.458,0,0,0-4.93,0L129.8,4.616" transform="matrix(0.719, -0.695, 0.695, 0.719, 86.782, 754.819)"/><path class="c" d="M4.569,129.8l-3.048,3.083a3.555,3.555,0,0,0,0,4.987,3.458,3.458,0,0,0,4.93,0L9.5,134.787" transform="matrix(0.719, -0.695, 0.695, 0.719, 89.974, 581.738)"/><rect class="d" width="1.5" height="10" transform="translate(186.2 665)"/></g></g></svg>

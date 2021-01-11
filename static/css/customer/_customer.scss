@@ -692,3 +692,30 @@
     }
   }
 }
+
+.wrap-guide {
+  padding: 3rem 0 0;
+
+  .item-guide {
+    &:not(:first-child) {
+      margin-top: 4rem;
+    }
+
+    .tit {
+      color: $fc1;
+      font-size: 1.5rem;
+
+      .point3 {
+        display: block;
+      }
+    }
+
+    .cont {
+      margin-top: 2rem;
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

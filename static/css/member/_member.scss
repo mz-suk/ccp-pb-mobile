@@ -760,8 +760,6 @@
 }
 
 .member-layout {
-  padding-bottom: 9rem;
-
   .block-layout {
     .wrap-empty {
       padding: 0;
@@ -773,6 +771,10 @@
 
   .list-dot {
     margin-top: 1rem;
+
+    &.color1 {
+      @include listdot(0.8rem, 1.3rem, $pc3, 0, $pc3);
+    }
   }
 }
 
@@ -886,12 +888,7 @@
 }
 
 .car-del-list {
-  margin-top: 3rem;
-  li {
-    &:not(:first-child) {
-      margin-top: 2rem;
-    }
-  }
+  margin-top: -0.8rem;
 }
 
 .qrcode-box {

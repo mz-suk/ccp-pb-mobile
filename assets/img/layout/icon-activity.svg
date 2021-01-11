@@ -1,1 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><defs><clipPath id="a"><path data-name="사각형 295559" fill="none" d="M0 0h24v24H0z"/></clipPath></defs><g data-name="그룹 385006" clip-path="url(#a)"><g data-name="그룹 385005" clip-path="url(#a)" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"><path data-name="패스 779675" d="M11.5 22.5H5s-3 0-3-5v-1h13v1c0 5 3 5 3 5a3 3 0 003-3V2H4v14"/><path data-name="선 113300" stroke-linecap="round" d="M13 22.5h-1.5"/><path data-name="선 113301" stroke-linecap="round" d="M11.3 6.5H13"/><path data-name="선 113302" d="M7 6.5h5.3"/><path data-name="선 113303" stroke-linecap="round" d="M8.7 9.5H11"/><path data-name="선 113304" d="M7 9.5h2.7"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_295559" data-name="사각형 295559" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_history_off_24" transform="translate(12 12)">
+    <g id="그룹_385006" data-name="그룹 385006" transform="translate(-12 -12)" clip-path="url(#clip-path)">
+      <g id="그룹_385005" data-name="그룹 385005" clip-path="url(#clip-path)">
+        <g id="그룹_385004" data-name="그룹 385004" opacity="0">
+          <g id="그룹_385003" data-name="그룹 385003" clip-path="url(#clip-path)">
+            <rect id="사각형_295556" data-name="사각형 295556" width="24" height="24" fill="#ff00f3"/>
+          </g>
+        </g>
+        <path id="패스_779675" data-name="패스 779675" d="M11.5,22.5H5s-3,0-3-5v-1H15v1c0,5,3,5,3,5a3,3,0,0,0,3-3V2H4V16" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_113300" data-name="선 113300" x1="1.5" transform="translate(11.5 22.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_113301" data-name="선 113301" x2="1.7" transform="translate(11.3 6.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_113302" data-name="선 113302" x2="5.3" transform="translate(7 6.5)" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_113303" data-name="선 113303" x2="2.3" transform="translate(8.7 9.5)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_113304" data-name="선 113304" x2="2.7" transform="translate(7 9.5)" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

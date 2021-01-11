@@ -1,1 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><clipPath id="clip-path"><path id="사각형_226335" data-name="사각형 226335" class="cls-1" d="M0 0h20v20H0z"/></clipPath><clipPath id="clip-path-4"><path id="사각형_226333" data-name="사각형 226333" class="cls-1" transform="translate(7 5.9)" d="M0 0h6.6v11.51H0z"/></clipPath><style>.cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-5{isolation:isolate}.cls-6{clip-path:url(#clip-path-4)}</style></defs><g id="포인트내역_20x20" transform="translate(10 10)"><g id="그룹_294469" data-name="그룹 294469" class="cls-2" transform="translate(-10 -10)"><g id="그룹_294468" data-name="그룹 294468" class="cls-2"><g id="그룹_294467" data-name="그룹 294467" class="cls-5"><g id="그룹_294466" data-name="그룹 294466" class="cls-6"><g id="그룹_294465" data-name="그룹 294465" class="cls-5"><g id="그룹_294464" data-name="그룹 294464" class="cls-6"><text id="P" transform="translate(7 14.7)" font-size="11" font-family="MoebiusKorea-Bold,Moebius Korea" font-weight="700" fill="#111"><tspan x="0" y="0">P</tspan></text></g></g></g></g><path id="패스_596897" data-name="패스 596897" d="M10 1.5A8.5 8.5 0 111.5 10 8.5 8.5 0 0110 1.5M10 0a10 10 0 1010 10A10 10 0 0010 0" fill="#111"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        opacity: 0;
+      }
+
+      .cls-4 {
+        fill: #f0f;
+      }
+
+      .cls-5 {
+        isolation: isolate;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-4);
+      }
+
+      .cls-7, .cls-8 {
+        fill: #111;
+      }
+
+      .cls-7 {
+        font-size: 11px;
+        font-family: MoebiusKorea-Bold, Moebius Korea;
+        font-weight: 700;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_226335" data-name="사각형 226335" class="cls-1" width="20" height="20"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="사각형_226333" data-name="사각형 226333" class="cls-1" width="6.6" height="11.51" transform="translate(7 5.9)"/>
+    </clipPath>
+  </defs>
+  <g id="포인트내역_20x20" transform="translate(10 10)">
+    <g id="그룹_294469" data-name="그룹 294469" class="cls-2" transform="translate(-10 -10)">
+      <g id="그룹_294468" data-name="그룹 294468" class="cls-2">
+        <g id="그룹_294463" data-name="그룹 294463" class="cls-3">
+          <g id="그룹_294462" data-name="그룹 294462" class="cls-2">
+            <rect id="사각형_226330" data-name="사각형 226330" class="cls-4" width="20" height="20"/>
+          </g>
+        </g>
+        <g id="그룹_294467" data-name="그룹 294467" class="cls-5">
+          <g id="그룹_294466" data-name="그룹 294466" class="cls-6">
+            <g id="그룹_294465" data-name="그룹 294465" class="cls-5">
+              <g id="그룹_294464" data-name="그룹 294464" class="cls-6">
+                <text id="P" class="cls-7" transform="translate(7 14.7)"><tspan x="0" y="0">P</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <path id="패스_596897" data-name="패스 596897" class="cls-8" d="M10,1.5A8.5,8.5,0,1,1,1.5,10,8.5,8.5,0,0,1,10,1.5M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0"/>
+      </g>
+    </g>
+  </g>
+</svg>

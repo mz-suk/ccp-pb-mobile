@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29"><defs><clipPath id="a"><path data-name="사각형 340485" fill="none" d="M0 0h16v16H0z"/></clipPath></defs><g data-name="그룹 484425"><g data-name="그룹 484424"><path data-name="패스 679708" d="M14.5.5a14 14 0 11-14 14 14 14 0 0114-14" fill="#f9f9f9" stroke="#e4e4e4"/></g><g data-name="그룹 471628" transform="translate(6.5 6.496)" clip-path="url(#a)"><g data-name="그룹 471627" clip-path="url(#a)" fill="none" stroke="#111"><path data-name="패스 868435" d="M12.5 4.8a4.4 4.4 0 01-2.2 3.8v4.9a2.2 2.2 0 01-4.2 0V8.6A4.4 4.4 0 016.3.7v3.5h3.5V.8a4.4 4.4 0 012.7 4z" stroke-linejoin="round" stroke-width="1.3"/><path data-name="선 133121" d="M6.6 6.4h3"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="29" viewBox="0 0 29 29">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_340485" data-name="사각형 340485" width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_484425" data-name="그룹 484425" transform="translate(-170.5 -436.5)">
+    <g id="그룹_484424" data-name="그룹 484424">
+      <path id="패스_679708" data-name="패스 679708" d="M14,0A14,14,0,1,1,0,14,14,14,0,0,1,14,0" transform="translate(171 437)" fill="#f9f9f9" stroke="#e4e4e4" stroke-width="1"/>
+    </g>
+    <g id="icon_repair_16" transform="translate(185 450.996)">
+      <g id="그룹_471628" data-name="그룹 471628" transform="translate(-8 -8)" clip-path="url(#clip-path)">
+        <g id="그룹_471627" data-name="그룹 471627" clip-path="url(#clip-path)">
+          <g id="그룹_471626" data-name="그룹 471626" opacity="0">
+            <g id="그룹_471625" data-name="그룹 471625" clip-path="url(#clip-path)">
+              <rect id="사각형_340482" data-name="사각형 340482" width="16" height="16" fill="#f0f"/>
+            </g>
+          </g>
+          <path id="패스_868435" data-name="패스 868435" d="M12.5,4.8a4.4,4.4,0,0,1-2.2,3.8v4.9a2.2,2.2,0,0,1-4.2,0V8.6A4.4,4.4,0,0,1,6.3.7V4.2H9.8V.8a4.4,4.4,0,0,1,2.7,4Z" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.3"/>
+          <line id="선_133121" data-name="선 133121" x2="3" transform="translate(6.6 6.4)" fill="none" stroke="#111" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

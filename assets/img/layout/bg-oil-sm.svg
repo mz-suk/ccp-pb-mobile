@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="71"><defs><linearGradient id="a" x1="-.175" y1=".888" x2="1" y2=".186" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#5d85fa"/><stop offset=".232" stop-color="#5581fa"/><stop offset=".877" stop-color="#4178fe"/><stop offset="1" stop-color="#3168ea"/></linearGradient><clipPath id="b"><rect width="71" height="100" rx="8" transform="rotate(180 47.5 115.202)" stroke="rgba(4,160,243,0.15)" fill="url(#a)"/></clipPath></defs><g data-name="그룹 331074"><g data-name="배경" transform="rotate(-90 35.5 35.5)" stroke="#5d7dea" fill="url(#a)"><rect width="71" height="100" rx="8" stroke="none"/><rect x=".5" y=".5" width="70" height="99" rx="7.5" fill="none"/></g><g data-name="마스크 그룹 365" clip-path="url(#b)" transform="rotate(90 127.202 103.202)"><g opacity=".4" style="mix-blend-mode:multiply;isolation:isolate" fill="#2553cc"><path data-name="패스 788295" d="M48.248 128.035a33.884 33.884 0 00-1.096 42.845 1.715 1.715 0 00.025.45 1.559 1.559 0 01-.268 1.334c-.981 1.294-3.85 1.81-4.781 1.89a1.709 1.709 0 00.277 3.407c.518-.044 5.132-.487 7.219-3.22a5.051 5.051 0 00.4-.622q.69.686 1.424 1.339c.307.8 1.239 3.231-2.935 6.48a23.394 23.394 0 01-5.196 2.954 1.71 1.71 0 001.227 3.19 26.59 26.59 0 006.01-3.4c5.16-3.987 5.066-7.882 4.086-10.45l-.152-.395a1.709 1.709 0 00-.48-.682 30.418 30.418 0 1119.053 7.366l-1.56-.123a29.5 29.5 0 01-9.464-2.36l-1.567-.681-1.363 3.135 1.568.68a32.9 32.9 0 0010.515 2.63 1.7 1.7 0 00.392.074c.433.029.865.047 1.297.06l.057.005a33.81 33.81 0 0033.423-43.186 33.819 33.819 0 00-58.11-12.72z"/><path data-name="패스 788296" d="M84.7 151.866a7.745 7.745 0 01-2.91 8.404l-1.134.818-1.638-2.267 1.135-.819a4.941 4.941 0 00-3.422-8.919l-1.391.15-.3-2.78 1.39-.15a7.745 7.745 0 018.054 4.922c.082.212.153.425.215.64z"/><path data-name="패스 788297" d="M64.888 146.727l-1.183.454-.016.004-5.114 1.963 1.227 3.19 5.13-1.968 1.183-.453a1.709 1.709 0 001.032-2.065c-.014-.048-.028-.096-.047-.142a1.709 1.709 0 00-2.212-.983z"/><path data-name="패스 788298" d="M71.704 164.481l-1.578.606-.01.002-4.725 1.813 1.227 3.19 4.734-1.816 1.579-.605a1.709 1.709 0 001.03-2.065c-.013-.048-.027-.096-.048-.143a1.709 1.709 0 00-2.209-.982z"/></g></g><g data-name="그룹 326248"><g data-name="그룹 238213"><text data-name="muffin club" transform="translate(12 15)" fill="#fff" font-size="6" font-family="MoebiusKorea-Bold, Moebius Korea" font-weight="700" letter-spacing=".05em"><tspan x="0" y="0">MUFFIN CLUB</tspan></text></g></g><g data-name="그룹 327778"><g data-name="그룹 238213"><text data-name="membership card Muffin club" transform="translate(12 55)" fill="#fff" font-size="4" font-family="Jost-Bold, 'Jost*'" font-weight="700" letter-spacing=".05em"><tspan x="0" y="0">MEMBERSHIP CARD</tspan><tspan x="0" y="5">MUFFIN CLUB</tspan></text></g></g><g data-name="그룹 238213"><text transform="translate(12 32)" fill="#fff" font-size="15" font-family="Jost-Bold, 'Jost*'" font-weight="700"><tspan x="0" y="0">OIL</tspan></text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="71" viewBox="0 0 100 71">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.175" y1="0.888" x2="1" y2="0.186" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5d85fa"/>
+      <stop offset="0.232" stop-color="#5581fa"/>
+      <stop offset="0.877" stop-color="#4178fe"/>
+      <stop offset="1" stop-color="#3168ea"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="배경" width="71" height="100" rx="8" transform="translate(95 230.404) rotate(180)" stroke="rgba(4,160,243,0.15)" stroke-width="1" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_331074" data-name="그룹 331074" transform="translate(-22 -155)">
+    <g id="카드" transform="translate(252.404 131) rotate(90)">
+      <g id="배경-2" data-name="배경" transform="translate(95 230.404) rotate(180)" stroke="#5d7dea" stroke-width="1" fill="url(#linear-gradient)">
+        <rect width="71" height="100" rx="8" stroke="none"/>
+        <rect x="0.5" y="0.5" width="70" height="99" rx="7.5" fill="none"/>
+      </g>
+      <g id="마스크_그룹_365" data-name="마스크 그룹 365" clip-path="url(#clip-path)">
+        <g id="대갈" transform="translate(-210.713 568.865) rotate(-106)" opacity="0.4" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="패스_788295" data-name="패스 788295" d="M352.374,370.439a33.884,33.884,0,0,0-40.883-12.864,1.715,1.715,0,0,0-.44-.1,1.559,1.559,0,0,1-1.208-.625c-.974-1.3-.679-4.2-.5-5.117a1.709,1.709,0,0,0-3.351-.673c-.1.51-.946,5.068,1.105,7.827a5.051,5.051,0,0,0,.488.556q-.849.474-1.679,1c-.854.075-3.448.3-5.421-4.608a23.394,23.394,0,0,1-1.407-5.808,1.709,1.709,0,0,0-3.405.3,26.59,26.59,0,0,0,1.613,6.715c2.41,6.059,6.18,7.042,8.919,6.807l.421-.037a1.709,1.709,0,0,0,.788-.273,30.418,30.418,0,1,1-12.332,16.284l.548-1.466a29.5,29.5,0,0,1,4.877-8.446l1.087-1.319-2.638-2.174-1.087,1.319a32.9,32.9,0,0,0-5.425,9.384,1.7,1.7,0,0,0-.18.356c-.147.408-.283.818-.415,1.23l-.02.053h0a33.81,33.81,0,0,0,32.3,44.032,33.819,33.819,0,0,0,28.244-52.353Z" transform="translate(0 0)" fill="#2553cc"/>
+          <path id="패스_788296" data-name="패스 788296" d="M366.87,492.421a7.745,7.745,0,0,1-7.277-5.113l-.474-1.316,2.631-.949.474,1.316a4.941,4.941,0,0,0,9.517-.831l.239-1.378,2.755.478-.239,1.378a7.745,7.745,0,0,1-6.951,6.385C367.319,492.411,367.094,492.421,366.87,492.421Z" transform="translate(-47.451 -93.512)" fill="#2553cc"/>
+          <path id="패스_788297" data-name="패스 788297" d="M408.664,439.109l-.11-1.263c0-.005,0-.011,0-.016l-.477-5.457-3.405.3.478,5.473h0l.11,1.263a1.709,1.709,0,0,0,1.7,1.561c.05,0,.1,0,.15-.006A1.709,1.709,0,0,0,408.664,439.109Z" transform="translate(-78.845 -57.827)" fill="#2553cc"/>
+          <path id="패스_788298" data-name="패스 788298" d="M347.7,444.443l-.147-1.684,0-.01-.44-5.042-3.405.3.441,5.052h0l.147,1.684a1.709,1.709,0,0,0,1.7,1.56c.05,0,.1,0,.151-.007A1.709,1.709,0,0,0,347.7,444.443Z" transform="translate(-36.826 -61.503)" fill="#2553cc"/>
+        </g>
+      </g>
+    </g>
+    <g id="그룹_326248" data-name="그룹 326248" transform="translate(-27 157)">
+      <g id="그룹_238213" data-name="그룹 238213">
+        <text id="muffin_club_" data-name="muffin club " transform="translate(61 13)" fill="#fff" font-size="6" font-family="MoebiusKorea-Bold, Moebius Korea" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">MUFFIN CLUB </tspan></text>
+      </g>
+    </g>
+    <g id="그룹_327778" data-name="그룹 327778" transform="translate(-28 188.602)">
+      <g id="그룹_238213-2" data-name="그룹 238213" transform="translate(62 16)">
+        <text id="membership_card_Muffin_club" data-name="membership card
+Muffin club" transform="translate(0 5.398)" fill="#fff" font-size="4" font-family="Jost-Bold, 'Jost*'" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">MEMBERSHIP CARD</tspan><tspan x="0" y="5">MUFFIN CLUB</tspan></text>
+      </g>
+    </g>
+    <g id="그룹_238213-3" data-name="그룹 238213" transform="translate(-24 170)">
+      <text id="OIL" transform="translate(58 17)" fill="#fff" font-size="15" font-family="Jost-Bold, 'Jost*'" font-weight="700"><tspan x="0" y="0">OIL</tspan></text>
+    </g>
+  </g>
+</svg>
