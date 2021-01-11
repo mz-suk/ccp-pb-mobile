@@ -89,7 +89,7 @@
       }
     }
     .desc {
-      margin-top: 4rem;
+      margin-top: 3rem;
       color: $fc1;
       font-size: 1.5rem;
       text-align: center;
@@ -138,7 +138,7 @@
 
 .info-list {
   li {
-    padding: 3rem 0.5rem;
+    padding: 2.8rem 1rem;
     display: flex;
     border-bottom: 0.1rem solid $fcF0;
     color: $fc1;
@@ -157,6 +157,23 @@
       width: 2rem;
       height: 2rem;
       background-size: 1.2rem 1.2rem;
+    }
+  }
+
+  .wrap-tooltip {
+    line-height: 1.2;
+    .tooltip-box {
+      top: 2.5rem;
+      left: -6rem;
+      width: 32rem;
+      padding: 1.8rem;
+
+      &:before {
+        left: 6.7rem;
+      }
+    }
+    .tooltip2 {
+      background-size: 100% auto;
     }
   }
 }

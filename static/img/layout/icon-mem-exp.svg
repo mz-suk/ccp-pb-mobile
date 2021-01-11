@@ -1,1 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="71"><g opacity=".997" data-name="그룹 331075"><g data-name="사각형 37251" transform="rotate(-90 35.5 35.5)" fill="#c5c9d3" stroke="rgba(113,120,136,0.1)"><rect width="71" height="100" rx="8" stroke="none"/><rect x=".5" y=".5" width="70" height="99" rx="7.5" fill="none"/></g><g data-name="그룹 326248"><text transform="translate(12 31)" fill="#fff" font-size="15" font-family="MoebiusKorea-Regular, Moebius Korea" letter-spacing="-.03em" data-name="그룹 238213"><tspan x="0" y="0">체험형</tspan></text></g><g data-name="그룹 328352"><text data-name="muffin club" transform="translate(12 15)" fill="#fff" font-size="6" font-family="MoebiusKorea-Bold, Moebius Korea" font-weight="700" letter-spacing=".05em"><tspan x="0" y="0">MUFFIN CLUB</tspan></text></g><g data-name="그룹 328353"><g data-name="그룹 238213"><text data-name="Muffin club membership card" transform="translate(12 55)" fill="#fff" font-size="4" font-family="Jost-Bold, 'Jost*'" font-weight="700" letter-spacing=".05em"><tspan x="0" y="0">MUFFIN CLUB</tspan><tspan x="0" y="5">MEMBERSHIP CARD</tspan></text></g></g><g data-name="그룹 328354" transform="translate(-60 -154)"><circle data-name="타원 8546" cx="4.5" cy="4.5" r="4.5" transform="translate(141.2 206)" fill="#fff"/><circle data-name="타원 8547" cx="4.5" cy="4.5" r="4.5" transform="translate(134.2 206)" fill="#fff"/><path data-name="패스 657454" d="M139.507 214.886a3.574 3.574 0 016.115.113 7.876 7.876 0 10-8.46-.2" fill="none" stroke="#bec2cb" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="71" viewBox="0 0 100 71">
+  <g id="그룹_331075" data-name="그룹 331075" transform="translate(-25 -154)">
+    <g id="현대카드" transform="translate(255.404 130) rotate(90)" opacity="0.997">
+      <g id="사각형_37251" data-name="사각형 37251" transform="translate(95 230.404) rotate(180)" fill="#c5c9d3" stroke="rgba(113,120,136,0.1)" stroke-width="1">
+        <rect width="71" height="100" rx="8" stroke="none"/>
+        <rect x="0.5" y="0.5" width="70" height="99" rx="7.5" fill="none"/>
+      </g>
+      <g id="그룹_326248" data-name="그룹 326248" transform="translate(-11 276.404) rotate(-90)">
+        <g id="그룹_238213" data-name="그룹 238213">
+          <text id="체험형" transform="translate(58 66)" fill="#fff" font-size="15" font-family="MoebiusKorea-Regular, Moebius Korea" letter-spacing="-0.03em"><tspan x="0" y="0">체험형</tspan></text>
+        </g>
+      </g>
+      <g id="그룹_328352" data-name="그룹 328352" transform="translate(26 279.404) rotate(-90)">
+        <text id="muffin_club_" data-name="muffin club " transform="translate(61 13)" fill="#fff" font-size="6" font-family="MoebiusKorea-Bold, Moebius Korea" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">MUFFIN CLUB </tspan></text>
+      </g>
+      <g id="그룹_328353" data-name="그룹 328353" transform="translate(57.602 280.404) rotate(-90)">
+        <g id="그룹_238213-2" data-name="그룹 238213" transform="translate(62 16)">
+          <text id="Muffin_club_membership_card" data-name="Muffin club
+membership card" transform="translate(0 5.398)" fill="#fff" font-size="4" font-family="Jost-Bold, 'Jost*'" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">MUFFIN CLUB</tspan><tspan x="0" y="5">MEMBERSHIP CARD</tspan></text>
+        </g>
+      </g>
+      <g id="그룹_328354" data-name="그룹 328354" transform="translate(-130 290.404) rotate(-90)">
+        <circle id="타원_8546" data-name="타원 8546" cx="4.5" cy="4.5" r="4.5" transform="translate(141.2 206)" fill="#fff"/>
+        <circle id="타원_8547" data-name="타원 8547" cx="4.5" cy="4.5" r="4.5" transform="translate(134.2 206)" fill="#fff"/>
+        <path id="패스_657454" data-name="패스 657454" d="M1289.759,116.823a3.574,3.574,0,0,1,6.115.113,7.876,7.876,0,1,0-8.46-.2" transform="translate(-1150.252 98.063)" fill="none" stroke="#bec2cb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><clipPath id="a"><path data-name="사각형 249823" fill="none" d="M0 0h20v20H0z"/></clipPath></defs><g data-name="그룹 345492" clip-path="url(#a)"><g data-name="그룹 345491" clip-path="url(#a)"><path data-name="패스 647831" d="M11.2 2.4a8.8 8.8 0 11-8.8 8.8 8.8 8.8 0 018.8-8.8" fill="#fff"/><circle data-name="타원 8230" cx="8.5" cy="8.5" r="8.5" transform="translate(1 1)" fill="none" stroke="#000111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/><path data-name="선 89892" fill="none" stroke="#000111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M9.5 9.5L7 12.1"/><path data-name="선 89893" fill="none" stroke="#000111" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5" d="M12.1 7L9.5 9.5"/><path data-name="선 89894" fill="none" stroke="#000111" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5" d="M9.7 9.7L7 7"/><path data-name="선 89895" fill="none" stroke="#000111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M12.1 12.1L9.7 9.7"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_249823" data-name="사각형 249823" width="20" height="20" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="취소_배경_20x20" transform="translate(10 10)">
+    <g id="그룹_345492" data-name="그룹 345492" transform="translate(-10 -10)" clip-path="url(#clip-path)">
+      <g id="그룹_345490" data-name="그룹 345490" clip-path="url(#clip-path)">
+        <g id="그룹_345489" data-name="그룹 345489" opacity="0">
+          <g id="그룹_345488" data-name="그룹 345488" clip-path="url(#clip-path)">
+            <rect id="사각형_249819" data-name="사각형 249819" width="20" height="20" fill="#f0f"/>
+          </g>
+        </g>
+      </g>
+      <g id="그룹_345491" data-name="그룹 345491" clip-path="url(#clip-path)">
+        <path id="패스_647831" data-name="패스 647831" d="M11.2,2.4a8.8,8.8,0,1,1-8.8,8.8,8.8,8.8,0,0,1,8.8-8.8" fill="#fff"/>
+        <circle id="타원_8230" data-name="타원 8230" cx="8.5" cy="8.5" r="8.5" transform="translate(1 1)" fill="none" stroke="#000111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="선_89892" data-name="선 89892" x1="2.5" y2="2.6" transform="translate(7 9.5)" fill="none" stroke="#000111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="선_89893" data-name="선 89893" x1="2.6" y2="2.5" transform="translate(9.5 7)" fill="none" stroke="#000111" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="선_89894" data-name="선 89894" x1="2.7" y1="2.7" transform="translate(7 7)" fill="none" stroke="#000111" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="선_89895" data-name="선 89895" x1="2.4" y1="2.4" transform="translate(9.7 9.7)" fill="none" stroke="#000111" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

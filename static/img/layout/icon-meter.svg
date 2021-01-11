@@ -1,1 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><clipPath id="clip-path"><path id="사각형_62931" data-name="사각형 62931" fill="#d5d5d5" d="M0 0h20v20H0z"/></clipPath><clipPath id="clip-path-2"><path id="사각형_220108" data-name="사각형 220108" fill="none" d="M0 0h20v20H0z"/></clipPath><style>.cls-4{clip-path:url(#clip-path-2)}</style></defs><g id="마스크_그룹_279" data-name="마스크 그룹 279" clip-path="url(#clip-path)"><g id="연료게이지_20x20" transform="translate(10 10)"><g id="그룹_285925" data-name="그룹 285925" class="cls-4" transform="translate(-10 -10)"><g id="그룹_285924" data-name="그룹 285924" class="cls-4" stroke="#111" stroke-width="1.5" fill="none"><path id="패스_586361" data-name="패스 586361" d="M13.6 3.8v-3a9.2 9.2 0 100 18.3v-3" stroke-miterlimit="10"/><path id="선_74836" data-name="선 74836" transform="translate(4.6 10)" stroke-linecap="round" stroke-miterlimit="10" d="M2.4 0H0"/><path id="선_74837" data-name="선 74837" transform="translate(8.8 6.3)" stroke-linecap="round" d="M3.1 2.7L0 0"/><path id="패스_586362" data-name="패스 586362" d="M13.6 8.3a2.2 2.2 0 11-2.2 2.2 2.2 2.2 0 012.2-2.2z"/></g></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d5d5d5;
+      }
+
+      .cls-10, .cls-2, .cls-7, .cls-8, .cls-9 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-5 {
+        opacity: 0;
+      }
+
+      .cls-6 {
+        fill: #f0f;
+      }
+
+      .cls-10, .cls-7, .cls-8, .cls-9 {
+        stroke: #111;
+        stroke-width: 1.5px;
+      }
+
+      .cls-7, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-8, .cls-9 {
+        stroke-linecap: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_62931" data-name="사각형 62931" class="cls-1" width="20" height="20"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_220108" data-name="사각형 220108" class="cls-2" width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_279" data-name="마스크 그룹 279" class="cls-3">
+    <g id="연료게이지_20x20" transform="translate(10 10)">
+      <g id="그룹_285925" data-name="그룹 285925" class="cls-4" transform="translate(-10 -10)">
+        <g id="그룹_285924" data-name="그룹 285924" class="cls-4">
+          <g id="그룹_285923" data-name="그룹 285923" class="cls-5">
+            <g id="그룹_285922" data-name="그룹 285922" class="cls-4">
+              <rect id="사각형_220105" data-name="사각형 220105" class="cls-6" width="20" height="20"/>
+            </g>
+          </g>
+          <path id="패스_586361" data-name="패스 586361" class="cls-7" d="M13.6,3.8V.8a9.2,9.2,0,1,0,0,18.3v-3"/>
+          <line id="선_74836" data-name="선 74836" class="cls-8" x1="2.4" transform="translate(4.6 10)"/>
+          <line id="선_74837" data-name="선 74837" class="cls-9" x1="3.1" y1="2.7" transform="translate(8.8 6.3)"/>
+          <path id="패스_586362" data-name="패스 586362" class="cls-10" d="M13.6,8.3a2.2,2.2,0,1,1-2.2,2.2A2.2,2.2,0,0,1,13.6,8.3Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

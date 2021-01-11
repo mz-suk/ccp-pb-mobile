@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="14"><defs><clipPath id="a"><path data-name="사각형 355391" transform="translate(60 971)" fill="red" opacity=".447" d="M0 0h32v14H0z"/></clipPath></defs><g data-name="마스크 그룹 422681" transform="translate(-60 -971)" clip-path="url(#a)"><text transform="translate(76 984)" fill="#fff" font-size="17" font-family="Jost-Bold, 'Jost*'" font-weight="700"><tspan x="-16.379" y="0">OFF</tspan></text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="14" viewBox="0 0 32 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_355391" data-name="사각형 355391" width="32" height="14" transform="translate(60 971)" fill="red" opacity="0.447"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_422681" data-name="마스크 그룹 422681" transform="translate(-60 -971)" clip-path="url(#clip-path)">
+    <text id="Off" transform="translate(76 984)" fill="#fff" font-size="17" font-family="Jost-Bold, 'Jost*'" font-weight="700"><tspan x="-16.379" y="0">OFF</tspan></text>
+  </g>
+</svg>

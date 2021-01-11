@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><defs><clipPath id="a"><path data-name="사각형 291950" fill="none" d="M0 0h20v20H0z"/></clipPath></defs><g data-name="그룹 381412" clip-path="url(#a)"><g data-name="그룹 381411" clip-path="url(#a)" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"><path data-name="패스 772439" d="M8.9.9h8v9.3" stroke-linecap="square"/><path data-name="패스 772440" d="M9.9 18.2h-5a2.8 2.8 0 01-2.8-2.8h0V.9h6.8" stroke-linecap="round"/><path data-name="패스 772441" d="M17.3 16.2l.5 2.8-2.5-1.3-2.6 1.4.5-2.8-2.1-1.9 2.8-.5 1.1-2.7 1.4 2.6 2.8.4z" stroke-linecap="round"/><path data-name="선 109191" stroke-linecap="round" d="M8.7 4.4h1.5"/><path data-name="선 109192" d="M5 4.4h4.6"/><path data-name="선 109193" stroke-linecap="round" d="M6.5 7.4h2"/><path data-name="선 109194" d="M5 7.4h2.3"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_291950" data-name="사각형 291950" width="20" height="20" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_reveiwlist_20" transform="translate(10 10)">
+    <g id="그룹_381412" data-name="그룹 381412" transform="translate(-10 -10)" clip-path="url(#clip-path)">
+      <g id="그룹_381411" data-name="그룹 381411" clip-path="url(#clip-path)">
+        <g id="그룹_381410" data-name="그룹 381410" opacity="0">
+          <g id="그룹_381409" data-name="그룹 381409" clip-path="url(#clip-path)">
+            <rect id="사각형_291947" data-name="사각형 291947" width="20" height="20" fill="#f0f"/>
+          </g>
+        </g>
+        <path id="패스_772439" data-name="패스 772439" d="M8.9.9h8v9.3" fill="none" stroke="#111" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="패스_772440" data-name="패스 772440" d="M9.9,18.2h-5a2.8,2.8,0,0,1-2.8-2.8h0V.9H8.9" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="패스_772441" data-name="패스 772441" d="M17.3,16.2l.5,2.8-2.5-1.3-2.6,1.4.5-2.8-2.1-1.9,2.8-.5L15,11.2l1.4,2.6,2.8.4Z" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_109191" data-name="선 109191" x2="1.5" transform="translate(8.7 4.4)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_109192" data-name="선 109192" x2="4.6" transform="translate(5 4.4)" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_109193" data-name="선 109193" x2="2" transform="translate(6.5 7.4)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_109194" data-name="선 109194" x2="2.3" transform="translate(5 7.4)" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

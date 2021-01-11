@@ -123,6 +123,7 @@
         flex: 1 1 auto;
         width: auto;
         padding: 0 2.5rem;
+        font-size: 1.5rem;
 
         + .btn {
           margin-left: 1rem;
@@ -426,7 +427,7 @@
   }
 
   & + .wrap-noti {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   &.type1 {
@@ -867,14 +868,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.9rem;
+  padding-bottom: 0.8rem;
   border-bottom: 0.1rem solid $fcF0;
   font-size: 1.5rem;
   color: $fc1;
+
   &:not(:first-child) {
     margin-top: 3rem;
   }
-
+  &.pos-top {
+    margin-top: 3rem;
+  }
   &.type1 {
     display: block;
     border-bottom-color: $fc1;
@@ -884,7 +888,6 @@
       color: $fc9;
     }
   }
-
   &.type2 {
     display: block;
     margin-bottom: 2.8rem;
@@ -892,12 +895,10 @@
     border: 0;
     font-size: 1.7rem;
   }
-
   &.type3 {
     font-size: 1.3rem;
     border: none;
   }
-
   &.type4 {
     padding: 0;
     font-size: 1.5rem;
@@ -905,6 +906,9 @@
   }
 
   .title {
+    color: $fc1;
+    font-size: 1.5rem;
+    font-weight: 400;
     .bg-icon {
       margin-right: 0.5rem;
     }
@@ -923,6 +927,7 @@
       height: 2rem;
     }
   }
+
   .btn-arrow {
     color: $fc6;
   }
@@ -1317,7 +1322,6 @@
 
   &.chk-box-type {
     &.chk-type1 {
-      position: relative;
       input[type="checkbox"] {
         top: 1.5rem;
         left: auto;
@@ -1325,8 +1329,16 @@
       }
 
       .info-car-cont {
-        padding: 4rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 12.9rem;
+        padding: 0 13.6rem 0 3rem;
         background: $fcF;
+
+        p {
+          width: 100%;
+        }
         .logo {
           right: 3.6rem;
         }
@@ -1338,6 +1350,11 @@
           margin-bottom: 0;
           font-size: 2.4rem;
           font-weight: 700;
+        }
+        .txt {
+          margin-top: 1rem;
+          font-size: 1.1rem;
+          color: $pc3;
         }
       }
     }
@@ -1759,6 +1776,7 @@
         height: 6rem;
         border: 0.1rem solid $fcE4;
         background: $fcF;
+        box-sizing: border-box;
 
         img {
           width: 100%;
@@ -1804,14 +1822,18 @@
     // 티맵 / 오일배터리
     &.type3 {
       .logo {
-        top: 0;
+        top: 1rem;
         transform: inherit;
       }
       .car-name {
-        margin-top: 0.4rem;
+        margin-top: 0.5rem;
+        padding-left: 0.5rem;
+      }
+      .car-number {
+        padding-left: 0.5rem;
       }
       .car-info {
-        margin-top: 4rem;
+        margin: 4rem -0.5rem 0;
       }
     }
 
@@ -1906,9 +1928,6 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    .edite-more {
-      background-size: 1.6rem 1.6rem;
-    }
   }
 
   .list-btn {
@@ -2150,7 +2169,7 @@
   .tooltip-close {
     position: absolute;
     top: 0.8rem;
-    right: 1rem;
+    right: 0.8rem;
     width: 1.2rem;
     height: 1.2rem;
   }
@@ -2301,7 +2320,7 @@
       }
     }
     .tbl-area {
-      margin-top: 3rem;
+      margin: 3rem -2rem 0;
       color: $fc1;
 
       .tbl {
@@ -2523,7 +2542,7 @@
     box-sizing: border-box;
 
     .txt-box {
-      padding: 2.8rem 0 2rem 3rem;
+      padding: 2.8rem 0 3rem 3rem;
       .type {
         margin-bottom: 0.5rem;
         font-size: 1.1rem;

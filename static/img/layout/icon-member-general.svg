@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="50"><defs><clipPath id="a"><path data-name="사각형 352457" fill="none" d="M0 0h40v50H0z"/></clipPath></defs><g data-name="멤버십아이콘 실버 40x50"><g data-name="그룹 476478"><g data-name="그룹 476477"><g data-name="그룹 343280" clip-path="url(#a)"><path data-name="패스 695049" d="M19.7 48.5A17.6 17.6 0 012.2 31V17.8a17.6 17.6 0 0135.1 0V31a17.6 17.6 0 01-17.6 17.5h-.1" fill="#fff"/><path data-name="패스 695050" d="M20.6 49.4A17.6 17.6 0 013.3 31.5V18.8A17.6 17.6 0 0121.7 2.1a17.6 17.6 0 0116.2 16.7v12.8a17.6 17.6 0 01-17.3 17.9" fill="#c5c9d3"/><path data-name="패스 695051" d="M19.5 48.7h0A17.2 17.2 0 012.2 31.6h0V18.8a17.25 17.25 0 0134.5 0h0v12.7a17.2 17.2 0 01-17.2 17.2z" fill="none" stroke="#7d8391" stroke-miterlimit="10"/><g data-name="그룹 343301"><path data-name="패스 694984" d="M20.238 9.8A8.345 8.345 0 1112 18.255v-.109a8.345 8.345 0 018.235-8.235" fill="#fff"/><path data-name="패스 694985" d="M12.552 14.636a8.129 8.129 0 011.537-2.2" fill="none" stroke="#111" stroke-linecap="square" stroke-linejoin="round"/><path data-name="패스 694986" d="M13.979 7.605s0 3.184 1.976 3.184h.11a8.344 8.344 0 11-3.623 3.843" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round"/><path data-name="패스 694987" d="M16.615 8.154s-.549 1.867.659 2.086" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round"/><path data-name="패스 694988" d="M20.348 19.024a1.647 1.647 0 01-3.184 0" fill="none" stroke="#111" stroke-linecap="square" stroke-miterlimit="10"/><path data-name="선 93127" fill="none" stroke="#111" stroke-linecap="round" d="M21.225 16.059v.329"/><path data-name="선 93128" fill="none" stroke="#111" d="M21.225 14.633v1.427"/><path data-name="선 93129" fill="none" stroke="#111" stroke-linecap="round" d="M16.285 15.95v.439"/><path data-name="선 93130" fill="none" stroke="#111" d="M16.285 14.633v1.318"/></g></g></g></g></g><text data-name="일반" transform="translate(12.82 37.5)" fill="#111" font-size="8" font-family="MoebiusKorea-Bold, Moebius Korea" font-weight="700" letter-spacing="-.03em" style="isolation:isolate"><tspan x="0" y="0">일반</tspan></text></svg>
+<svg id="icon_membership_n_40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="50" viewBox="0 0 40 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_352457" data-name="사각형 352457" width="40" height="50" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="멤버십아이콘_실버_40x50" data-name="멤버십아이콘 실버 40x50">
+    <g id="그룹_476478" data-name="그룹 476478">
+      <g id="그룹_476477" data-name="그룹 476477" clip-path="url(#clip-path)">
+        <g id="그룹_343280" data-name="그룹 343280">
+          <path id="패스_695049" data-name="패스 695049" d="M19.7,48.5h0A17.6,17.6,0,0,1,2.2,31V17.8a17.6,17.6,0,0,1,35.1,0V31A17.6,17.6,0,0,1,19.7,48.5h-.1" fill="#fff"/>
+          <path id="패스_695050" data-name="패스 695050" d="M20.6,49.4h0A17.6,17.6,0,0,1,3.3,31.5V18.8A17.6,17.6,0,0,1,21.7,2.1,17.6,17.6,0,0,1,37.9,18.8V31.6A17.6,17.6,0,0,1,20.6,49.5h0" fill="#c5c9d3"/>
+          <path id="패스_695051" data-name="패스 695051" d="M19.5,48.7h0A17.2,17.2,0,0,1,2.2,31.6h0V18.8a17.25,17.25,0,0,1,34.5,0h0V31.5A17.2,17.2,0,0,1,19.5,48.7Z" fill="none" stroke="#7d8391" stroke-miterlimit="10" stroke-width="1"/>
+          <g id="그룹_343301" data-name="그룹 343301">
+            <path id="패스_694984" data-name="패스 694984" d="M20.238,9.8A8.345,8.345,0,1,1,12,18.255c0-.036,0-.073,0-.109h0a8.345,8.345,0,0,1,8.235-8.235" fill="#fff"/>
+            <path id="패스_694985" data-name="패스 694985" d="M12.552,14.636a8.129,8.129,0,0,1,1.537-2.2" fill="none" stroke="#111" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+            <path id="패스_694986" data-name="패스 694986" d="M13.979,7.605s0,3.184,1.976,3.184h.11a8.344,8.344,0,1,1-3.623,3.843" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <path id="패스_694987" data-name="패스 694987" d="M16.615,8.154s-.549,1.867.659,2.086" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <path id="패스_694988" data-name="패스 694988" d="M20.348,19.024a1.647,1.647,0,0,1-3.184,0" fill="none" stroke="#111" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+            <line id="선_93127" data-name="선 93127" y2="0.329" transform="translate(21.225 16.059)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1"/>
+            <line id="선_93128" data-name="선 93128" y2="1.427" transform="translate(21.225 14.633)" fill="none" stroke="#111" stroke-width="1"/>
+            <line id="선_93129" data-name="선 93129" y2="0.439" transform="translate(16.285 15.95)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1"/>
+            <line id="선_93130" data-name="선 93130" y2="1.318" transform="translate(16.285 14.633)" fill="none" stroke="#111" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="일반" style="isolation: isolate">
+    <text id="일반-2" data-name="일반" transform="translate(12.82 37.5)" fill="#111" font-size="8" font-family="MoebiusKorea-Bold, Moebius Korea" font-weight="700" letter-spacing="-0.03em" style="isolation: isolate"><tspan x="0" y="0">일반</tspan></text>
+  </g>
+</svg>
