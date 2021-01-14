@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">muffin 소개</h1>
+        <div class="left"><button type="button" class="bg-icon prev">이전페이지</button></div>
+        <div class="right"><button type="button" class="bg-icon menu">메뉴</button></div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="block-layout">
+          <div class="wrap-tab type2">
+            <ul class="tab-menu">
+              <li><button type="button">T map X muffin 안내</button></li>
+              <li class="active"><button type="button">muffin App 안내</button></li>
+            </ul>
+            <div class="tab-content">
+              <div class="wrap-guide">
+                <strong class="logo"><img src="../../assets/img/layout/muffin_bi.png" alt=""></strong>
+                <dl class="item-guide type1">
+                  <dt class="tit">다양한 혜택으로<br/><span class="point3">간편한 주유, 편리한 세차</span>를 경험해보세요.</dt>
+                  <dd class="cont">
+                    <img src="../../assets/img/layout/info-01.png" alt="">
+                  </dd>
+                </dl>
+                <dl class="item-guide type1">
+                  <dt class="tit">원터치 주유</dt>
+                  <dd class="cont">
+                    <p>자주 이용하는 주유소를 즐겨찾기하여 홈화면에 등록하고<br/>원터치 주유로 쉽고 빠르게 예약하세요.</p>
+                    <img src="../../assets/img/layout/info-02.png" alt="">
+                  </dd>
+                </dl>
+                <dl class="item-guide type1">
+                  <dt class="tit">나만의 주유패턴</dt>
+                  <dd class="cont">
+                    <p>번거로운 주유, 결제 정보를 매번 입력하지 말고<br/>미리 등록하고 편리하게 사용하세요.</p>
+                    <img src="../../assets/img/layout/info-03.png" alt="">
+                  </dd>
+                </dl>
+                <dl class="item-guide type1">
+                  <dt class="tit">내 주변 주유소</dt>
+                  <dd class="cont">
+                    <p>내 주변의 주유소 정보를 한눈에 보고 비교하여<br/>쉽게 주유 예약하세요.</p>
+                    <img src="../../assets/img/layout/info-04.png" alt="">
+                  </dd>
+                </dl>
+                <dl class="item-guide type1">
+                  <dt class="tit">주유 이용을 좀 더 쉽게!</dt>
+                  <dd class="cont">
+                    <p>원터치 주유, 주유예약 등<br/>Muffin의 주유기능을 좀 더 쉽게 알아보기 위해<br/>아래 Muffin앱 사용 영상을 확인해보세요.</p>
+                    <div class="youtube-area">
+                      <iframe src="https://www.youtube.com/embed/Fh0RuTf300w" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="item-guide type1">
+                  <dt class="tit">전문가의 방문세차</dt>
+                  <dd class="cont">
+                    <p>내 차량 기준의 친환경 세차 상품과<br/>최상의 테크니션이 제공하는 출장세차를 예약하세요.</p>
+                    <img src="../../assets/img/layout/info-05.png" alt="">
+                  </dd>
+                </dl>
+                <dl class="item-guide type1">
+                  <dt class="tit">프리미엄 새벽세차</dt>
+                  <dd class="cont">
+                    <p>거주하고 계신 지역의 아파트를 선택하여<br/>잠든 사이 세차 서비스를 예약하세요.</p>
+                    <img src="../../assets/img/layout/info-06.png" alt="">
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+    </div>
+  </body>
+</html>

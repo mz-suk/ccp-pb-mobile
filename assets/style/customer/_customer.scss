@@ -696,25 +696,59 @@
 .wrap-guide {
   padding: 3rem 0 0;
 
-  .item-guide {
-    &:not(:first-child) {
-      margin-top: 4rem;
-    }
+  .logo {
+    display: inline-block;
+    width: 6.4rem;
+    height: 3.8rem;
+    margin-bottom: 3rem;
+  }
 
+  .youtube-area {
+    iframe {
+      width: 100%;
+      height: 18.9rem;
+    }
+  }
+
+  .item-guide {
     .tit {
       color: $fc1;
       font-size: 1.5rem;
-
-      .point3 {
-        display: block;
+    }
+    .point3 {
+      display: block;
+    }
+    .cont {
+      margin-top: 2rem;
+      p {
+        margin-top: 1rem;
       }
     }
 
-    .cont {
-      margin-top: 2rem;
+    &:not(:first-of-type) {
+      margin-top: 4rem;
+    }
 
-      p {
-        margin-top: 1rem;
+    &.type1 {
+      .point3 {
+        display: inline-block;
+      }
+
+      .cont {
+        margin-top: 1.5rem;
+        p {
+          margin: 0 0 3rem;
+        }
+      }
+
+      &:not(:first-of-type) {
+        margin-top: 7rem;
+      }
+
+      &:first-of-type {
+        .cont {
+          margin-top: 3rem;
+        }
       }
     }
   }

@@ -1,1 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.e,.f,.g,.h{fill:none;}.b{clip-path:url(#a);}.c{opacity:0;}.d{fill:#ff00f3;}.e,.f,.g,.h{stroke:#111;stroke-width:1.5px;}.e,.g{stroke-linecap:round;}.e,.f{stroke-linejoin:round;}</style><clipPath id="a"><rect class="a" width="24" height="24"/></clipPath></defs><g transform="translate(12 12)"><g class="b" transform="translate(-12 -12)"><g class="b"><g class="c"><g class="b"><rect class="d" width="24" height="24"/></g></g></g><line class="e" y1="1" transform="translate(12 17)"/><g class="b"><path class="f" d="M11,22.5H2V11l9.3-9.3a1,1,0,0,1,1.4,0L22,11V22.5H15S12,23,12,18"/><line class="g" x2="1.1" transform="translate(12.9 12)"/><line class="h" x2="3.9" transform="translate(10 12)"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_295505" data-name="사각형 295505" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_home_off_24" transform="translate(12 12)">
+    <g id="icon_home_off_24-2" data-name="icon_home_off_24" transform="translate(-12 -12)" clip-path="url(#clip-path)">
+      <g id="그룹_384951" data-name="그룹 384951" clip-path="url(#clip-path)">
+        <g id="그룹_384950" data-name="그룹 384950" opacity="0">
+          <g id="그룹_384949" data-name="그룹 384949" clip-path="url(#clip-path)">
+            <rect id="사각형_295501" data-name="사각형 295501" width="24" height="24" fill="#ff00f3"/>
+          </g>
+        </g>
+      </g>
+      <line id="선_113267" data-name="선 113267" y1="1" transform="translate(12 17)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="그룹_384952" data-name="그룹 384952" clip-path="url(#clip-path)">
+        <path id="패스_779664" data-name="패스 779664" d="M11,22.5H5a3,3,0,0,1-3-3V9l9.3-7.3a1,1,0,0,1,1.4,0L22,9V22.5H15S12,23,12,18" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_113268" data-name="선 113268" x2="1.1" transform="translate(12.4 12)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="1.5"/>
+        <line id="선_113269" data-name="선 113269" x2="3.9" transform="translate(9.5 12)" fill="none" stroke="#111" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
