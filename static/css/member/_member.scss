@@ -291,49 +291,6 @@
           padding-bottom: 0;
         }
       }
-      // li {
-      //   margin: 0;
-      //   padding: 0;
-      // }
-      // .left,
-      // .right {
-      //   padding: 2rem;
-      //   box-sizing: border-box;
-      // }
-      // .coupon-img {
-      //   overflow: hidden;
-      //   margin: 0;
-      //   width: 9rem;
-      //   height: 6.2rem;
-      //   box-sizing: border-box;
-      //   background: url(~assets/img/layout/bg-coupon3.svg) 0 0 / 100% auto no-repeat;
-
-      //   .txt1 {
-      //     font-size: 0.9rem;
-      //     color: $fc1;
-      //   }
-      //   .txt2 {
-      //     font-size: 1.3rem;
-      //     em {
-      //       font-size: 1.8rem;
-      //     }
-      //   }
-      //   .txt3 {
-      //     font-size: 0.8rem;
-      //     letter-spacing: 0;
-      //   }
-      // }
-      // .left {
-      //   width: 13rem;
-      //   border-right: 0.1rem solid $fcF0;
-      // }
-      // .right {
-      //   flex: auto;
-      //   padding-right: 1rem;
-      // }
-      // .tit {
-      //   font-size: 1.3rem;
-      // }
     }
   }
 
@@ -798,7 +755,7 @@
     padding: 0 0 0 1.3rem;
     width: 11.2rem;
     height: 8rem;
-    background: url(../~assets/img/layout/bg-coupon2.svg) no-repeat 0 0;
+    background: url(../~assets/img/layout/bg-coupon2.svg) 0 0 / 100% auto no-repeat;
     line-height: 1;
     box-sizing: border-box;
 

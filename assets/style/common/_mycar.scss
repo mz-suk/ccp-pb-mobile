@@ -713,7 +713,11 @@
         height: 20rem;
       }
     }
+    .desc + .product-info {
+      margin-top: 2.3rem;
+    }
   }
+
   .option-box {
     margin-top: 1.4rem;
     padding: 2.5rem 1rem;
@@ -736,6 +740,39 @@
   .define-list {
     .btn-clear-x {
       margin-left: 0.5rem;
+    }
+  }
+
+  .product-info {
+    display: flex;
+    padding-top: 0.7rem;
+    color: $fc1;
+
+    .thumb {
+      width: 6rem;
+      height: 6rem;
+      border: 0.1rem solid #e8e8e8;
+      box-sizing: border-box;
+    }
+    .info {
+      width: calc(100% - 7.6rem);
+      padding: 0 1.5rem;
+      box-sizing: border-box;
+    }
+    .price {
+      margin-top: 1rem;
+    }
+    .btn-clear-x {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-left: auto;
+    }
+    .wrap-btn {
+      width: 100%;
+      padding: 0 2.5rem;
+      .btn {
+        width: 100%;
+      }
     }
   }
 }
