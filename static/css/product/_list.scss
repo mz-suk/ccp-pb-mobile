@@ -2285,6 +2285,19 @@
         left: 4rem;
         width: calc(100% - 8rem);
       }
+
+      &.type1 {
+        padding: 6rem 2rem;
+
+        .img + .img {
+          margin-top: 2rem;
+        }
+
+        &:after {
+          left: 2rem;
+          width: calc(100% - 4rem);
+        }
+      }
     }
 
     .title {
@@ -2320,7 +2333,7 @@
       }
     }
     .tbl-area {
-      margin: 3rem -2rem 0;
+      margin: 3rem 0 0;
       color: $fc1;
 
       .tbl {
@@ -2345,6 +2358,7 @@
     margin-top: 3rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     div {
       position: relative;
