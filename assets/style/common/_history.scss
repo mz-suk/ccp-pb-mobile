@@ -348,6 +348,9 @@
       width: 8rem;
       height: 8rem;
       vertical-align: top;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
 
       &:not(:first-child) {
         margin-left: 0.1rem;
