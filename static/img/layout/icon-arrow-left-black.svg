@@ -1,40 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 10 10">
   <defs>
-    <style>
-      .cls-1, .cls-5 {
-        fill: none;
-      }
-
-      .cls-2 {
-        clip-path: url(#clip-path);
-      }
-
-      .cls-3 {
-        opacity: 0;
-      }
-
-      .cls-4 {
-        fill: #ea002c;
-      }
-
-      .cls-5 {
-        stroke: #111;
-      }
-    </style>
     <clipPath id="clip-path">
-      <rect id="사각형_195139" data-name="사각형 195139" class="cls-1" width="10" height="10"/>
+      <rect id="사각형_195139" data-name="사각형 195139" width="10" height="10" fill="none"/>
     </clipPath>
   </defs>
   <g id="arrow_10x10" transform="translate(5 5)">
-    <g id="그룹_235388" data-name="그룹 235388" class="cls-2" transform="translate(-5 -5)">
-      <g id="그룹_235387" data-name="그룹 235387" class="cls-2">
-        <g id="그룹_235386" data-name="그룹 235386" class="cls-3">
-          <g id="그룹_235385" data-name="그룹 235385" class="cls-2">
-            <rect id="사각형_195136" data-name="사각형 195136" class="cls-4" width="10" height="10"/>
+    <g id="그룹_235388" data-name="그룹 235388" transform="translate(-5 -5)" clip-path="url(#clip-path)">
+      <g id="그룹_235387" data-name="그룹 235387" clip-path="url(#clip-path)">
+        <g id="그룹_235386" data-name="그룹 235386" opacity="0">
+          <g id="그룹_235385" data-name="그룹 235385" clip-path="url(#clip-path)">
+            <rect id="사각형_195136" data-name="사각형 195136" width="10" height="10" fill="#ea002c"/>
           </g>
         </g>
       </g>
-      <path id="패스_481556" data-name="패스 481556" class="cls-5" d="M4,2,7,5,4,8"/>
+      <path id="패스_481556" data-name="패스 481556" d="M4,2,7,5,4,8" fill="none" stroke="#111" stroke-width="1"/>
     </g>
   </g>
 </svg>

@@ -2484,6 +2484,10 @@
 
   &.type1 {
     text-align: center;
+    .title,
+    .txt {
+      padding: 0;
+    }
   }
 
   .title {

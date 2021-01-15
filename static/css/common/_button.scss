@@ -179,6 +179,7 @@ a {
   font-size: 1.1rem;
   color: $fc1;
   line-height: 1.1rem;
+
   &:after {
     content: "";
     margin-left: 0.3rem;
@@ -189,6 +190,7 @@ a {
     background-size: 1rem auto;
     vertical-align: top;
   }
+
   &.blue {
     color: $pc3;
     &:after {
@@ -210,15 +212,17 @@ a {
       background-size: 1.3rem auto;
     }
   }
+
   &.type2 {
     font-size: 1.3rem;
     line-height: 1.3rem;
     &:after {
-      width: 1.3rem;
-      height: 1.3rem;
+      width: 1.2rem;
+      height: 1.2rem;
       background: url(~assets/img/layout/icon-arrow-left-black.svg) 0 0 / 100% auto no-repeat;
     }
   }
+
   &.size1 {
     font-size: 1.3rem;
     line-height: 1.4;
@@ -226,17 +230,18 @@ a {
       vertical-align: middle;
     }
   }
+
   &.type3 {
     font-size: 1.3rem;
-    line-height: 1.3rem;
+    line-height: 1.2;
     &:after {
-      margin-top: 0.2rem;
+      margin-top: 0.3rem;
       margin-left: 0.5rem;
-      transform: rotate(90deg);
+      background: url(~assets/img/layout/icon-arrow-btm2.svg) 0 0 / 100% auto no-repeat;
     }
     &.active {
       &:after {
-        transform: rotate(270deg);
+        transform: rotate(180deg);
       }
     }
   }

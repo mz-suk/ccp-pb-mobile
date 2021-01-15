@@ -226,6 +226,9 @@
 
   &:first-of-type {
     border-top: 0;
+    & + .accordion {
+      margin-top: -0.1rem;
+    }
   }
 
   &:last-of-type {
@@ -518,6 +521,7 @@
   display: inline-block;
   color: $fc6;
   font-size: 1.1rem;
+  line-height: 1.2;
 
   .link {
     width: 1rem;
@@ -692,9 +696,12 @@
   }
 
   &.type2 {
+    .accordion-title {
+      border-top: 0.1rem solid $fcF0;
+    }
+
     .accordion-cont {
       padding: 0;
-
       &:last-of-type {
         border-bottom: 0;
       }

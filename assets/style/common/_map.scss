@@ -173,8 +173,7 @@
 
 .link-msg-box {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  align-items: center;
   position: relative;
   box-sizing: border-box;
   min-height: 4.5rem;
@@ -186,11 +185,25 @@
   background: $fcF;
 
   &.type-search {
-    margin: 1rem 0 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 2.5rem 0 2rem;
     padding-bottom: 1.5rem;
     border: 0 none;
     border-bottom: 0.1rem solid $fc1;
+
+    .bg-icon.more {
+      top: 1.2rem;
+      transform: translateY(0);
+    }
+    .msg + .msg {
+      margin-top: 0.5rem;
+      color: $fc6;
+      font-size: 1.1rem;
+    }
   }
+
   .link {
     position: absolute;
     top: 0;
@@ -200,10 +213,11 @@
   }
   .bg-icon.more {
     position: absolute;
-    top: 1.2rem;
+    top: 50%;
     right: 1rem;
     width: 1.2rem;
     height: 1.2rem;
+    transform: translateY(-50%);
   }
 }
 
