@@ -973,6 +973,7 @@
   }
 
   &.charge {
+    align-items: center;
     dd {
       span {
         margin-right: 0.2rem;
@@ -994,6 +995,12 @@
       strong {
         font-size: 1.5rem;
       }
+    }
+  }
+
+  dd {
+    em {
+      margin-right: 0.2rem;
     }
   }
 
@@ -1654,6 +1661,7 @@
     .top {
       display: flex;
       align-items: center;
+
       .title {
         font-size: 1.5rem;
         font-weight: 700;
@@ -1661,7 +1669,6 @@
         &.blue {
           color: $pc3;
         }
-
         &.green {
           color: $pc5;
         }
@@ -1671,6 +1678,11 @@
         margin-top: -0.2rem;
         margin-left: auto;
       }
+
+      .btn-arrow:after {
+        margin-left: 0;
+      }
+
       .date {
         margin-left: auto;
         font-size: 1rem;

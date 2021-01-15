@@ -375,7 +375,7 @@
 }
 
 .header-main {
-  & + .wrap-contents {
+  & ~ .wrap-contents {
     .main-cont {
       padding-top: 0;
     }

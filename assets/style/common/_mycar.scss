@@ -278,9 +278,12 @@
       }
     }
     .btn-arrow {
-      width: 8rem;
-      margin-top: 0.5rem;
+      margin-top: 0.2rem;
       text-align: right;
+      line-height: 1.2;
+      &:after {
+        margin-top: 0.2rem;
+      }
     }
   }
   .option-box {
