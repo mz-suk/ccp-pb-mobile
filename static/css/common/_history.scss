@@ -13,8 +13,9 @@
   }
   .link-msg-box {
     margin: 1.5rem 0 0;
-    a {
-      display: block;
+    padding-left: 2rem;
+    .bg-icon {
+      right: 1.5rem;
     }
   }
 }
@@ -97,14 +98,16 @@
     .blind-row {
       border-top: 0.1rem solid $fcF0;
       .wrap-empty {
-        padding-top: 1rem;
-        padding-bottom: 0;
+        padding: 4rem 0 0;
         .empty-img {
           width: 7rem;
           height: 7rem;
         }
-        .empty-text strong {
-          font-size: 1.3rem;
+        .empty-text {
+          margin-top: 1.5rem;
+          strong {
+            font-size: 1.3rem;
+          }
         }
       }
     }
