@@ -276,9 +276,12 @@
       display: block;
       overflow: hidden;
       text-align: center;
+      height: 17.9rem;
 
       img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
 
@@ -370,6 +373,10 @@
 
   .head-title + .list-dot {
     margin-top: 2.5rem;
+  }
+
+  .title-sub + .list-dot li {
+    font-size: 1.3rem;
   }
 }
 
@@ -1433,6 +1440,7 @@
     label {
       color: $fc1;
       margin-left: 0;
+      font-size: 1.5rem;
     }
   }
 }

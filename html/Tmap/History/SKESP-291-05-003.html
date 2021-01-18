@@ -56,7 +56,7 @@
               <dl class="customer-info">
                 <dt>예약자명</dt>
                 <dd>송헌호</dd>
-                <dt>연락처</dt>
+                <dt>예약자 휴대전화</dt>
                 <dd>
                   010 - 1234 -5678
                   <p class="desc">가급적 전화통화는 원치 않습니다.</p>
@@ -70,7 +70,7 @@
               </div>
               <dl class="customer-info">
                 <dt>요청 일시</dt>
-                <dd>2020.05.10 (화) 15:07</dd>
+                <dd>2020.05.10 (화) 오전 11:30</dd>
                 <dt>확정 일시</dt>
                 <dd><em class="col-gc3">확인중</em></dd>
               </dl>
@@ -86,7 +86,7 @@
                 <dt>제조사</dt>
                 <dd>싼타페</dd>
                 <dt>세부모델명</dt>
-                <dd>[싼타페 TM (18.2.21 ~ 현재)</dd>
+                <dd>싼타페 TM (18.2.21 ~ 현재)</dd>
                 <dt>등급</dt>
                 <dd>준대형 SUV</dd>
                 <dt>색상</dt>
@@ -111,17 +111,50 @@
               </dl>
             </div>
 
-
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>상품 및 옵션 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>상품명</dt>
+                <dd>토탈쿼츠 이네오 NEX 5W-30
+                  <button type="button" class="bg-icon info">상세</button>
+                </dd>
+                <dt>상품명</dt>
+                <dd>로케트 GB60L
+                  <button type="button" class="bg-icon info">상세</button>
+                </dd>
+                <dt>상품명</dt>
+                <dd>Aerotwin EDPM 와이퍼
+                  <button type="button" class="bg-icon info">상세</button>
+                </dd>
+                <dt>상품명</dt>
+                <dd>플러싱 오일 Express
+                  <button type="button" class="bg-icon info">상세</button>
+                </dd>
+              </dl>
+            </div>
           </div>
         </div>
 
         <div class="accordion active type2">
           <!-- [D] accordion 펼침 상태 : .active 추가 -->
           <div class="accordion-title">
-            <p class="title">구매 정보</p>
+            <p class="title">구매정보</p>
             <button type="button" class="bg-icon toggle">펼침</button>
           </div>
           <div class="accordion-cont">
+            <div class="order-cont">
+              <div class="title-sub">
+                <p>구매자 정보</p>
+              </div>
+              <dl class="customer-info">
+                <dt>구매자명</dt>
+                <dd>송헌호</dd>
+                <dt>구매자 연락처</dt>
+                <dd>010 - 1234 - 5678</dd>
+              </dl>
+            </div>
             <div class="order-cont">
               <div class="title-sub">
                 <p>구매 정보</p>
@@ -137,44 +170,23 @@
               <div class="title-sub">
                 <p>상품 정보</p>
               </div>
-              <div class="order-info">
-                <dl class="define-box">
-                  <dt class="left">엔진오일</dt>
-                </dl>
-                <dl class="define-list">
-                  <dt>토탈쿼츠 이네오 NEX 5W-30</dt>
-                  <dd>50,000원</dd>
-                  <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 쿠폰적용</dt>
-                  <dd class="replay-txt">-5,000원</dd>
-                </dl>
-              </div>
-
-              <div class="order-info">
-                <dl class="define-box">
-                  <dt class="left">배터리</dt>
-                </dl>
-                <dl class="define-list">
-                  <dt>토탈쿼츠 이네오 NEX 5W-30</dt>
-                  <dd>50,000원</dd>
-                  <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 쿠폰적용</dt>
-                  <dd class="replay-txt">-5,000원</dd>
-                </dl>
-              </div>
-              <div class="order-info">
-                <dl class="define-box">
-                  <dt class="left">추가 패키지</dt>
-                </dl>
-                <dl class="define-list">
-                  <dt>Aerotwin EDPM 와이퍼</dt>
-                  <dd>50,000원</dd>
-                  <dt>플러싱 오일 Express</dt>
-                  <dd>50,000원</dd>
-                </dl>
-              </div>
-
+              <dl class="define-list">
+                <dt class="bold">토탈쿼츠 이네오 NEX 5W-30</dt>
+                <dd class="bold">15,000원</dd>
+                <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> SK 엔크린 고객 감사쿠폰</dt>
+                <dd class="replay-txt">-1,000원</dd>
+                <dt class="bold">로케트 GB60L</dt>
+                <dd class="bold">5,000원</dd>
+                <dt class="replay-txt"><i class="bg-icon reply-arrow"></i> 코로나 극복 기원 프로모션쿠폰</dt>
+                <dd class="replay-txt">-4,000원</dd>
+                <dt class="bold">Aerotwin EDPM 와이퍼</dt>
+                <dd class="bold">15,000원</dd>
+                <dt class="bold">플러싱 오일 Express</dt>
+                <dd class="bold">15,000원</dd>
+              </dl>
               <dl class="define-box total">
-                <dt class="left">총 상품금액</dt>
-                <dd class="right"><span>45,000</span>원</dd>
+                <dt class="left">상품 총 금액</dt>
+                <dd class="right"><span>180,000</span>원</dd>
               </dl>
             </div>
             <div class="order-cont">
@@ -182,17 +194,19 @@
                 <p>결제금액 정보</p>
               </div>
               <div class="order-info">
+                <dl class="define-box">
+                  <dt>상품 총 금액 (쿠폰적용)</dt>
+                  <dd>40,000원</dd>
+                </dl>
                 <dl class="define-list">
-                  <dt>총 상품금액 (쿠폰적용)</dt>
-                  <dd>35,000원</dd>
-                  <dt>포인트 차감 (머핀)</dt>
+                  <dt>포인트 할인 (머핀)</dt>
                   <dd>0원</dd>
-                  <dt>포인트 차감 (OK 캐시백)</dt>
-                  <dd>-1,150원</dd>
+                  <dt>포인트 할인 (OK 캐시백)</dt>
+                  <dd>0원</dd>
                 </dl>
                 <dl class="define-box total">
-                  <dt class="left">총 결제금액</dt>
-                  <dd class="right"><span>56,000</span>원</dd>
+                  <dt class="left">실 결제금액</dt>
+                  <dd class="right"><span>30,000</span>원</dd>
                 </dl>
               </div>
             </div>
@@ -202,8 +216,8 @@
                 <p>결제 수단</p>
               </div>
               <dl class="customer-info">
-                <dt>결제방법</dt>
-                <dd>간편결제카드</dd>
+                <dt>결제유형</dt>
+                <dd>등록한 카드결제</dd>
                 <dt>결제정보</dt>
                 <dd>비씨 9490 88** **** 5200 / 일시불</dd>
               </dl>
@@ -211,22 +225,22 @@
 
             <div class="order-cont">
               <div class="title-sub">
-                <p>적립 예정 포인트</p>
+                <p>적립 예정 포인트 정보</p>
               </div>
               <div class="point-info">
                 <dl class="define-list">
-                  <dt>머핀 포인트<span class="tag point">3% 적립</span></dt>
-                  <dd>1,680원</dd>
-                  <dt>OK 캐시백 포인트 <span class="desc">(0.1% 적립)</span></dt>
-                  <dd>56원</dd>
-                  <dt>9월 포인트 프로모션 <span class="desc">(머핀 포인트 0.2% 적립)</span></dt>
-                  <dd>56원</dd>
+                  <dt>머핀 포인트 <span class="desc">(플래티넘 + 3%)</span></dt>
+                  <dd>1,800P</dd>
+                  <dt>OK캐시백 포인트 <span class="desc">(+0.1%)</span></dt>
+                  <dd>60P</dd>
+                  <dt>9월 포인트 프로모션 <span class="desc">(+0.1%)</span></dt>
+                  <dd>60P</dd>
                 </dl>
                 <dl class="define-box total">
-                  <dt class="left">총 예상 적립 포인트</dt>
-                  <dd class="right"><span>1,736</span>원</dd>
+                  <dt class="left">총 적립 예상 포인트</dt>
+                  <dd class="right"><span>1,920</span>P</dd>
                 </dl>
-                <p class="text-guide">포인트는 1P당 1원으로 환산됩니다.</p>
+                <p class="text-guide">포인트는 1원당 1P으로 환산됩니다.</p>
               </div>
             </div>
           </div>
@@ -239,33 +253,6 @@
         </div>
       </div>
       <!-- //Wrap-contents -->
-
-      <!-- Footer -->
     </div>
-
-    <!-- Quick-menu -->
-    <div class="quick-menu">
-      <ul class="quick-menu-list">
-        <li>
-          <a href="#">
-            <i class="bg-icon home"></i>
-            <span class="menu-name">홈</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon bill"></i>
-            <span class="menu-name">이용내역</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon my-muffin"></i>
-            <span class="menu-name">마이머핀</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- //Quick-menu -->
   </body>
 </html>

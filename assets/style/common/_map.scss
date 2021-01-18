@@ -193,10 +193,6 @@
     border: 0 none;
     border-bottom: 0.1rem solid $fc1;
 
-    .bg-icon.more {
-      top: 1.2rem;
-      transform: translateY(0);
-    }
     .msg + .msg {
       margin-top: 0.5rem;
       color: $fc6;
@@ -213,11 +209,10 @@
   }
   .bg-icon.more {
     position: absolute;
-    top: 50%;
+    top: 1.5rem;
     right: 1rem;
     width: 1.2rem;
     height: 1.2rem;
-    transform: translateY(-50%);
   }
 }
 
