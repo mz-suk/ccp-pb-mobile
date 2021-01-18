@@ -492,7 +492,7 @@
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    padding: 3rem 3rem 3rem 4rem;
+    padding: 3rem;
     border-bottom: 0.1rem solid $fcE4;
 
     .desc {
@@ -2204,7 +2204,7 @@
     left: 3rem;
   }
   .txt-box {
-    padding: 3rem 3rem 4.5rem;
+    padding: 3rem 1rem 4.5rem 3rem;
 
     .title {
       font-size: 1.9rem;
@@ -2224,13 +2224,11 @@
         }
       }
     }
-
     .txt {
       margin-top: 1rem;
     }
-
-    .car-txt {
-      margin: 1rem 0 3rem;
+    .txt1 {
+      margin-top: 3rem;
     }
   }
 }

@@ -144,6 +144,7 @@
   .title {
     font-size: 1.8rem;
     color: $fc1;
+    line-height: 1.1;
     .bg-icon {
       width: 1.6rem;
       height: 1.6rem;
@@ -151,16 +152,11 @@
     }
   }
   .desc {
+    margin-top: 0.5rem;
     p {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       color: $fc6;
-      &:first-child {
-        font-size: 1.3rem;
-        color: $fc1;
-      }
-      &.new-address {
-        color: $fc6;
-      }
+      line-height: 1.5;
     }
   }
 
