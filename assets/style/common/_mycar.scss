@@ -699,6 +699,9 @@
       }
       .list-check {
         margin: 1rem 1rem 0;
+        .left {
+          font-size: 1.3rem;
+        }
       }
     }
     .title-sub:not(:first-child) {
@@ -722,10 +725,9 @@
   }
 
   .option-box {
-    margin-top: 1.4rem;
+    margin-top: 1rem;
     padding: 2.5rem 1rem;
     box-sizing: border-box;
-    // border: 0.1rem solid $fcE4;
     border-top: 0.1rem solid $fc1;
     border-bottom: 0.1rem solid $fcF0;
     .wrap-check {
@@ -733,10 +735,17 @@
       &:not(:first-child) {
         margin-top: 2.5rem;
         padding-top: 2.5rem;
+        padding-left: 1rem;
         border-top: 0.1rem dotted $fcD7;
+        .left {
+          color: $fc6;
+        }
       }
       .checkbox:not(:first-child) {
         margin-left: 3rem;
+      }
+      label {
+        line-height: 1;
       }
     }
   }

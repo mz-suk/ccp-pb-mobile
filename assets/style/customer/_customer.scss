@@ -332,10 +332,13 @@
   .a-txt .txt-row {
     @include clamp(2);
   }
+  .question-cont {
+    padding-top: 2.8rem;
+  }
 }
 .question-cont {
   position: relative;
-  padding: 2.8rem 2rem 2.5rem;
+  padding: 4rem 2rem 2.5rem;
   &:not(:first-of-type) {
     border-top: 0.9rem solid $fcF9;
   }
@@ -384,7 +387,7 @@
     &:before {
       content: "A";
       position: absolute;
-      top: 2rem;
+      top: 1.8rem;
       left: 2rem;
       font-weight: 700;
       color: $fc5;
@@ -424,11 +427,19 @@
       }
     }
   }
+
   .attach-box {
     margin-top: 1rem;
     padding: 1.2rem 1.5rem;
     border: 0.1rem solid $fcF0;
+
+    &.type1 {
+      margin: 1.5rem 0 3rem;
+      padding: 0;
+      border: 0;
+    }
   }
+
   .btn-area {
     margin-top: 1.3rem;
     text-align: right;

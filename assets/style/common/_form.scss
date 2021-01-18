@@ -762,6 +762,9 @@ input[type="checkbox"] {
 
   .btn-area {
     margin-top: 4rem;
+    &.grid .btn {
+      font-size: 1.5rem;
+    }
   }
 
   .txt-area {
@@ -771,7 +774,11 @@ input[type="checkbox"] {
     .btn-arrow {
       margin-top: 1rem;
       font-size: 1.3rem;
+      line-height: 1.2;
       text-decoration: underline;
+      &:after {
+        margin-top: 0.3rem;
+      }
     }
   }
 }
