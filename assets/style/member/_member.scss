@@ -365,6 +365,9 @@
   }
   .list-dot {
     margin-top: 0.7rem;
+    .txt-under {
+      text-decoration: none;
+    }
   }
 
   // padding: 2.5rem 2rem 4rem;
@@ -432,7 +435,7 @@
     }
   }
   .detail-box {
-    padding-top: 4rem;
+    padding-top: 2.5rem;
 
     &.type1 {
       .info-block:last-of-type {
@@ -522,19 +525,26 @@
         box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.15);
 
         &.getcha {
-          background: #f47645 url(../../../assets/img/layout/bg-icon-getcha.svg) no-repeat 0 0.8rem;
+          background: #f47645 url(../../assets/img/layout/bg-icon-getcha.svg) no-repeat 0 0.8rem;
           background-size: 22rem auto;
           border: 0.1rem solid #fd8250;
         }
         &.oil {
-          background: #5d85fa url(../../../assets/img/layout/bg-icon-oil.svg) no-repeat 0 0.8rem;
+          background: #5d85fa url(../../assets/img/layout/bg-icon-oil.svg) no-repeat 0 0.8rem;
           background-size: 22rem auto;
           border: 0.1rem solid #4977ea;
         }
         &.exp {
-          background: #43d6c5 url(../../../assets/img/layout/bg-icon-exp.svg) no-repeat 0 0.8rem;
+          background: #43d6c5 url(../../assets/img/layout/bg-icon-exp.svg) no-repeat 0 0.8rem;
           background-size: 22rem auto;
           border: 0.1rem solid #36c9b9;
+
+          .txt2 {
+            font-size: 2.2rem;
+          }
+          .txt3 {
+            margin-top: 4.2rem;
+          }
         }
 
         .txt1 {
@@ -556,9 +566,12 @@
       }
       .info {
         text-align: center;
-
         span {
           margin-top: 0.6rem;
+          &:after {
+            height: 0.7rem;
+            border-right: 0.1rem dotted $fc1;
+          }
         }
       }
     }
@@ -695,6 +708,9 @@
 
   & + .btn-area {
     margin-top: 4rem;
+    .btn {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -755,7 +771,7 @@
     padding: 0 0 0 1.3rem;
     width: 11.2rem;
     height: 8rem;
-    background: url(../../../assets/img/layout/bg-coupon2.svg) 0 0 / 100% auto no-repeat;
+    background: url(../../assets/img/layout/bg-coupon2.svg) 0 0 / 100% auto no-repeat;
     line-height: 1;
     box-sizing: border-box;
 
