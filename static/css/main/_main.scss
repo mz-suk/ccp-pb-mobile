@@ -71,21 +71,16 @@
   .list-category {
     display: flex;
     flex-wrap: wrap;
-    width: 32.5rem;
-    padding: 0 0.5rem;
     box-sizing: border-box;
 
     li {
       position: relative;
-      margin-right: 2rem;
       box-sizing: border-box;
-      text-align: center;
 
       img {
         width: 7rem;
         height: 7rem;
       }
-
       strong {
         display: block;
         color: $fc1;
@@ -93,72 +88,54 @@
         font-weight: 400;
         line-height: 1;
       }
-
-      &:last-child {
-        margin-right: 0;
-      }
-      &:not(:first-child):before {
-        position: absolute;
-        top: 1rem;
-        left: -1rem;
-        height: 4rem;
-        border-left: 0.1rem dotted $fcD7;
-        content: "";
-      }
     }
 
     &.type1 {
-      justify-content: space-between;
+      justify-content: flex-start;
       padding-top: 2rem;
 
       li {
         display: flex;
         align-items: center;
-        width: 14.7rem;
-        min-height: 9.2rem;
-        margin: 0;
-        padding-left: 8.4rem;
-        text-align: left;
-        white-space: nowrap;
+        width: 15.6rem;
+        min-height: 9.3rem;
+        padding-left: 8rem;
 
-        img,
-        &:nth-child(odd):before {
-          display: none;
+        .btn-arrow:after {
+          margin-left: 0;
         }
-        &:before {
-          top: inherit;
-          left: -1.2rem;
+
+        &:nth-of-type(2n):before {
+          position: absolute;
+          left: 0;
+          height: 3.5rem;
+          border-left: 0.1rem dotted $fcD7;
+          content: "";
         }
+
         &:nth-of-type(1) {
           background: url(~assets/img/layout/icon-category1.svg) 0 0 / 8.6rem 8.2rem no-repeat;
         }
         &:nth-of-type(2) {
-          padding-left: 9.6rem;
-          background: url(~assets/img/layout/icon-category2.svg) 0 0 / 8.1rem 8.4rem no-repeat;
+          padding-left: 10.6rem;
+          background: url(~assets/img/layout/icon-category2.svg) 2rem 0 / 8.1rem 8.4rem no-repeat;
         }
         &:nth-of-type(3) {
-          background: url(~assets/img/layout/icon-category3.svg) 0 0 / 8rem 8rem no-repeat;
+          background: url(~assets/img/layout/icon-category3.svg) 0.6rem 0.9rem / 8rem 8rem no-repeat;
         }
         &:nth-of-type(4) {
-          background: url(~assets/img/layout/icon-category6.svg) 0 0 / 9.1rem 9rem no-repeat;
-        }
-        & > a {
-          display: flex;
-          align-items: center;
+          padding-left: 9.2rem;
+          background: url(~assets/img/layout/icon-category6.svg) 0.8rem 0 / 9.1rem 9rem no-repeat;
         }
       }
     }
 
     &.type2 {
-      width: auto;
       padding: 0 1rem;
 
       li {
-        margin: 0;
         padding: 2rem 0 4rem;
-        text-align: left;
         flex-basis: 100%;
-        position: relative;
 
         .tit {
           color: $fc1;
@@ -196,12 +173,11 @@
         &:not(:first-child) {
           border-top: 0.1rem dotted $fcD7;
         }
-        &:before {
-          display: none;
-        }
+
         &.category1 {
           background: url(~assets/img/layout/icon-category-type1.svg) 100% 2rem / 12.4rem auto no-repeat;
         }
+
         &.category2 {
           padding-top: 4rem;
           background: url(~assets/img/layout/icon-category-type2.svg) 0.5rem 2rem / 9.2rem auto no-repeat;
@@ -216,21 +192,14 @@
     &.type3 {
       flex-wrap: nowrap;
       justify-content: center;
-      width: auto;
       margin: 3rem -2rem 0;
-      padding: 0;
 
       li {
         flex: 1;
-        margin: 0;
         padding: 0 2rem;
-        text-align: left;
 
         &:not(:first-child) {
           border-left: 0.1rem dotted #d7d7d7;
-        }
-        &:before {
-          display: none;
         }
 
         strong {
@@ -243,6 +212,7 @@
           display: block;
           margin: 0 auto;
         }
+
         .btn-arrow {
           margin: 1.5rem 0 1.5rem 0.4rem;
           line-height: 1.4;

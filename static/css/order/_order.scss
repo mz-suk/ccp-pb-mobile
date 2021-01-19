@@ -1167,16 +1167,21 @@
           height: 7.55rem;
           background: $fcF;
         }
+        .detail {
+          margin-top: 2rem;
+        }
       }
 
       .info {
         padding-bottom: 3rem;
       }
       .rep-card {
+        display: inline-block;
         padding-left: 2.9rem;
         line-height: 2.4rem;
         background: url(~assets/img/layout/icon-rep-card.svg) no-repeat 0 center;
         background-size: 2.4rem auto;
+        font-size: 1.1rem;
       }
       .logo-card {
         position: absolute;
@@ -1194,14 +1199,16 @@
           font-weight: 700;
         }
         .num {
-          margin-top: 0.7rem;
+          margin-top: 0.5rem;
         }
       }
       .top-qrcode {
-        margin-top: 0.5rem;
+        position: absolute;
+        top: 3rem;
+        right: 2.5rem;
         text-align: right;
         font-size: 1.1rem;
-        line-height: 1;
+        line-height: 1.2;
         .bg-icon {
           margin-right: 0.4rem;
           width: 1.2rem;
@@ -1283,7 +1290,7 @@
       line-height: 1.4;
     }
     .date {
-      margin-top: 0.9rem;
+      margin-top: 0.8rem;
       font-size: 1.1rem;
       color: rgba($fcF, 0.7);
     }
