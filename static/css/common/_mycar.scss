@@ -121,19 +121,7 @@
 .txt-under {
   text-decoration: underline;
 }
-// 레이아웃
-// .wrap-mycar {
-//   padding: 4rem 2rem;
-//   .block-layout {
-//     margin: 0 -2rem;
-//     &:first-child {
-//       padding-top: 0;
-//     }
-//     &:last-child {
-//       padding-bottom: 0;
-//     }
-//   }
-// }
+
 .block-layout {
   position: relative;
   padding: 4rem 2rem 3.5rem;
@@ -178,6 +166,10 @@
   .order-cont {
     margin: 0 -2rem;
     padding: 4rem 2rem 3.5rem;
+
+    &:first-child {
+      padding-top: 3rem;
+    }
     .gray-box + .title-sub {
       margin-top: 3.4rem;
     }
@@ -284,6 +276,9 @@
         margin-top: 0.2rem;
         background: url(~assets/img/layout/icon-arrow-left-black2.svg) 0 0 / 100% auto no-repeat;
       }
+    }
+    .sub-txt {
+      margin-top: 0;
     }
   }
   .option-box {
@@ -572,7 +567,7 @@
 
   .txt-row {
     & + .top-title {
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
   }
   .list-number {

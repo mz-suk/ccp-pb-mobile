@@ -211,6 +211,7 @@
     .review-info-box {
       border: 0 none;
       margin-top: 2rem;
+      padding: 2rem 0 3rem;
 
       &.type1 {
         padding: 2rem;
@@ -246,10 +247,9 @@
       }
 
       .rating-box {
-        margin: 1rem 0;
+        margin: 0;
         .rating {
           width: 21.5rem;
-          margin-top: 1rem;
         }
         .percent {
           background-position-y: -0.2rem;
@@ -306,6 +306,7 @@
   .apply {
     margin-top: 0.5rem;
     width: 100%;
+    font-size: 1.5rem;
   }
 
   .like-box {
