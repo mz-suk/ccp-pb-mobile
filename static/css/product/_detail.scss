@@ -372,6 +372,10 @@
     }
     .title {
       font-weight: 400;
+      span {
+        color: $fc6;
+        font-size: 1.3rem;
+      }
     }
   }
   &.type-order {

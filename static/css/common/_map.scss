@@ -184,7 +184,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    margin: 2.5rem 0 2rem;
+    margin: 0;
     padding-bottom: 1.5rem;
     border: 0 none;
     border-bottom: 0.1rem solid $fc1;
@@ -193,6 +193,10 @@
       margin-top: 0.5rem;
       color: $fc6;
       font-size: 1.1rem;
+    }
+
+    & + .form-input {
+      margin-top: 1.5rem;
     }
   }
 

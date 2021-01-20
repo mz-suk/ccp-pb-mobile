@@ -569,7 +569,6 @@
   }
 
   .filter-list-item {
-    // padding-top: 2.2rem;
     padding-bottom: 9rem;
 
     li {
@@ -602,6 +601,48 @@
 
       & + .wrap-filter-tab {
         height: calc(100% - 13.1rem);
+      }
+    }
+  }
+
+  &.type2 {
+    .top {
+      display: block;
+      position: relative;
+      height: 26rem;
+      padding: 4rem 2rem 3rem;
+
+      .tit {
+        color: $pc3;
+        font-size: 1.5rem;
+      }
+      .desc {
+        margin-top: 1rem;
+        line-height: 1.4;
+      }
+
+      &:before {
+        position: absolute;
+        top: 2.2rem;
+        right: 2rem;
+        width: 11rem;
+        height: 11rem;
+        background: url(~assets/img/layout/icon-carwash.svg) 0 0 / 100% auto no-repeat;
+        content: "";
+      }
+      & + .wrap-filter-tab {
+        height: calc(100% - 31.5rem);
+      }
+    }
+
+    .gray-box {
+      display: block;
+      margin-top: 3rem;
+      padding: 2rem;
+      font-size: 1.1rem;
+
+      p:first-child {
+        color: $fc1;
       }
     }
   }
