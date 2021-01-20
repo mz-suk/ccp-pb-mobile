@@ -676,6 +676,10 @@
   .title {
     font-size: 1.5rem;
 
+    span {
+      color: $fc6;
+      font-size: 1.3rem;
+    }
     .bg-icon {
       width: 2rem;
       height: 2rem;
@@ -971,6 +975,10 @@
 
   .btn-arrow {
     color: $fc6;
+
+    &:after {
+      margin-left: 0;
+    }
   }
 
   & + .order-info,

@@ -226,36 +226,17 @@
   }
 
   .main-banner {
-    position: relative;
-    min-height: 13.4rem;
-    margin: 4.5rem 0 0;
-    padding: 3rem 1.5rem 2.1rem 11.9rem;
-    background: #e5f0ff;
-    border: 0.1rem solid rgba(#315aad, 0.07);
-    border-radius: 2rem;
-    box-sizing: border-box;
-
-    &:before {
-      position: absolute;
-      top: 2.3rem;
-      left: 1.5rem;
-      width: 9rem;
-      height: 9rem;
-      // background: url(~assets/img/layout/icon-banner.svg) 0 0 / 100% auto no-repeat;
-      background: #f0f0f0;
-      content: "";
-    }
-
-    .tit {
-      margin-top: 1.2rem;
-      font-size: 1.5rem;
-      color: #111;
-    }
+    margin-top: 4.5rem;
 
     &.type1 {
+      position: relative;
       min-height: 12.8rem;
       margin-top: 3.6rem;
       padding: 3rem 1.5rem 1.5rem 11.6rem;
+      background: #e5f0ff;
+      border: 0.1rem solid rgba(#315aad, 0.07);
+      border-radius: 2rem;
+      box-sizing: border-box;
 
       .wrap-txt {
         text-align: left;
@@ -263,11 +244,12 @@
 
         .tit {
           margin: 0;
-          font-size: 1.3rem;
+          font-size: 1.5rem;
+          color: #111;
           line-height: 1.2;
+
           span {
             color: $pc3;
-            font-size: 1.5rem;
           }
         }
         .txt {
@@ -277,10 +259,13 @@
       }
 
       &:before {
+        position: absolute;
+        top: 2.3rem;
         left: 2.9rem;
         width: 7.2rem;
         height: 9.1rem;
         background: url(~assets/img/layout/icon-banner.svg) 0 0 / 100% auto no-repeat;
+        content: "";
       }
     }
   }
