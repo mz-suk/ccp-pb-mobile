@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">주행거리 조회</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="car-cont">
+          <div class="form-div">
+            <p class="title">해당 서비스는<br/>조회하시고자 하는 차량 1대만<br/>선택해주셔야 합니다.</p>
+          </div>
+          <div class="wrap-text">
+            <p class="text-guide color1">아래 차량 중에서 해당 정보를 선택해주시기 바랍니다.</p>
+          </div>
+          <ul class="list-radio">
+            <li class="checkbox type4">
+              <input type="radio" id="chk1-1" name="group1" checked>
+              <label for="chk1-1"><p class="left">싼타페</p></label>
+            </li>
+            <li class="checkbox type4">
+              <input type="radio" id="chk1-2" name="group1">
+              <label for="chk1-2"><p class="left">그랜저</p></label>
+            </li>
+          </ul>
+          <div class="btn-area grid">
+            <button type="button" class="btn color1">선택완료</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+    </div>
+  </body>
+</html>

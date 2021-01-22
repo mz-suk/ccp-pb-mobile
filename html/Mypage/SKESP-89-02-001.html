@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">차량 정보</h1>
+        <h1 class="title">차량관리</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
@@ -31,63 +31,82 @@
         </div>
       </header>
       <!-- //Header -->
+
       <!-- Wrap-contents -->
       <div class="wrap-contents">
-        <div class="block-layout">
+        <div class="car-cont">
           <ul class="car-select-list">
-            <li class="info-type-box ">
+            <li class="info-type-box">
               <!-- 편집창은 active 클래스 추가로 활성-->
               <div class="dropdown-area">
                 <button type="button" class="btn-drpomenu"><i class="bg-icon edite-more">메뉴보기</i></button>
                 <ul class="drop-menu">
                   <li>
-                    <button type="button">수정하기<i class="bg-icon write"></i></button>
+                    <button type="button">삭제하기<i class="bg-icon trash-del"></i></button>
                   </li>
+                </ul>
+              </div>
+              <div class="info-car-cont type1">
+                <div class="logo">
+                  <img src="../../assets/img/emblem/logo-32.svg" alt="" />
+                  <p class="car-barnd">재규어</p>
+                </div>
+                <p class="car-name">2017 벤틀리 벤테이가</p>
+                <p class="car-number">28자 8617</p>
+                <div class="btn-area grid">
+                  <button type="button" class="btn">주행거리 조회하기</button>
+                </div>
+                <div class="car-info">
+                  <dl class="customer-info type2">
+                    <dt>등급</dt>
+                    <dd>SUV 준중형</dd>
+                    <dt>유종</dt>
+                    <dd>경유</dd>
+                    <dt>색상</dt>
+                    <dd>퓨어화이트</dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="info-type-box">
+              <!-- 편집창은 active 클래스 추가로 활성-->
+              <div class="dropdown-area active">
+                <button type="button" class="btn-drpomenu"><i class="bg-icon edite-more">메뉴보기</i></button>
+                <ul class="drop-menu">
                   <li>
                     <button type="button">삭제하기<i class="bg-icon trash-del"></i></button>
                   </li>
                 </ul>
               </div>
-              <div class="info-car-cont type1" >
+              <div class="info-car-cont type1">
                 <div class="logo">
-                  <img src="../../assets/img/layout/logo-jaguar.png" alt="" />
+                  <img src="../../assets/img/emblem/logo-32.svg" alt="" />
                   <p class="car-barnd">재규어</p>
                 </div>
-                <p class="car-name">2021 재규어 F-타입</p>
-                <p class="car-number">28저 8617</p>
-                <div class="gray-box vartical-bar">
-                  <span class="point3">주행가능 657km</span>
-                  <span>누적주행 <em>174,000</em>km</span>
+                <p class="car-name">2017 벤틀리 벤테이가</p>
+                <p class="car-number">28자 8617</p>
+                <div class="btn-area grid">
+                  <button type="button" class="btn">주행거리 조회하기</button>
                 </div>
                 <div class="car-info">
-                  <dl class="customer-info">
+                  <dl class="customer-info type2">
                     <dt>등급</dt>
                     <dd>SUV 준중형</dd>
-                    <dt>서브모델명</dt>
-                    <dd>산타페TM (18.06~07)</dd>
-                    <dt>주요제원</dt>
-                    <dd>2.0 디젤 익스클루시브 스페셜</dd>
-                    <dt>색상</dt>
-                    <dd>퓨어화이트</dd>
-                    <dt>연식</dt>
-                    <dd>2018년식</dd>
                     <dt>유종</dt>
                     <dd>경유</dd>
+                    <dt>색상</dt>
+                    <dd>퓨어화이트</dd>
                   </dl>
                 </div>
               </div>
             </li>
           </ul>
           <div class="btn-area grid">
-            <button type="button" class="btn type1">새로운 차량 등록 (2/5)</button>
+            <button type="button" class="btn type4">새로운 차량 등록하기 (2/3)</button>
           </div>
-        </div>
-        <div class="fix-footer-area">
-          <button type="button" class="btn type2 color4">건너뛰기</button>
         </div>
       </div>
       <!-- //Wrap-contents -->
-      <!-- Footer -->
     </div>
   </body>
 </html>

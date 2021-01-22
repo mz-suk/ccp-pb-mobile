@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">차량관리</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="car-cont">
+          <ul class="car-select-list">
+            <!-- 현대 -->
+            <li class="info-type-box">
+              <!-- 편집창은 active 클래스 추가로 활성-->
+              <div class="dropdown-area">
+                <button type="button" class="btn-drpomenu"><i class="bg-icon edite-more">메뉴보기</i></button>
+                <ul class="drop-menu">
+                  <li>
+                    <button type="button">삭제하기<i class="bg-icon trash-del"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-car-cont type1">
+                <div class="logo">
+                  <img src="../../assets/img/emblem/logo-32.svg" alt="" />
+                  <p class="car-barnd">재규어</p>
+                </div>
+                <p class="car-name">2017 벤틀리 벤테이가</p>
+                <p class="car-number">28자 8617</p>
+                <div class="btn-area grid">
+                  <button type="button" class="btn">주행거리 조회하기</button>
+                </div>
+                <div class="driving-info">
+                  <p class="tit">주행거리</p>
+                  <button class="btn-txt">연동해지</button>
+                  <dl class="define-list type2">
+                    <dt>지금까지 주행한 거리</dt>
+                    <dd>132,810km</dd>
+                    <dt>앞으로 주행 가능한 거리</dt>
+                    <dd>870km</dd>
+                  </dl>
+                  <div class="box-btm">
+                    <span class="image"><img src="../../assets/img/layout/logo-info-hyundai.svg" alt=""></span>
+                    <p class="desc">※ 위 정보는 실제와 다를 수 있습니다.</p>
+                  </div>
+                </div>
+                <div class="car-info">
+                  <dl class="customer-info type2">
+                    <dt>등급</dt>
+                    <dd>SUV 준중형</dd>
+                    <dt>유종</dt>
+                    <dd>경유</dd>
+                    <dt>색상</dt>
+                    <dd>퓨어화이트</dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <!-- //현대 -->
+
+            <!-- 기아 -->
+            <li class="info-type-box">
+              <!-- 편집창은 active 클래스 추가로 활성-->
+              <div class="dropdown-area">
+                <button type="button" class="btn-drpomenu"><i class="bg-icon edite-more">메뉴보기</i></button>
+                <ul class="drop-menu">
+                  <li>
+                    <button type="button">삭제하기<i class="bg-icon trash-del"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-car-cont type1">
+                <div class="logo">
+                  <img src="../../assets/img/emblem/logo-32.svg" alt="" />
+                  <p class="car-barnd">재규어</p>
+                </div>
+                <p class="car-name">2017 벤틀리 벤테이가</p>
+                <p class="car-number">28자 8617</p>
+                <div class="btn-area grid">
+                  <button type="button" class="btn">주행거리 조회하기</button>
+                </div>
+                <div class="driving-info">
+                  <p class="tit">주행거리</p>
+                  <button class="btn-txt">연동해지</button>
+                  <dl class="define-list type2">
+                    <dt>지금까지 주행한 거리</dt>
+                    <dd>132,810km</dd>
+                    <dt>앞으로 주행 가능한 거리</dt>
+                    <dd>870km</dd>
+                  </dl>
+                  <div class="box-btm">
+                    <span class="image"><img src="../../assets/img/layout/logo-info-kia.svg" alt=""></span>
+                    <p class="desc">※ 위 정보는 실제와 다를 수 있습니다.</p>
+                  </div>
+                </div>
+                <div class="car-info">
+                  <dl class="customer-info type2">
+                    <dt>등급</dt>
+                    <dd>SUV 준중형</dd>
+                    <dt>유종</dt>
+                    <dd>경유</dd>
+                    <dt>색상</dt>
+                    <dd>퓨어화이트</dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <!-- //기아 -->
+
+            <!-- 제네시스 -->
+            <li class="info-type-box">
+              <!-- 편집창은 active 클래스 추가로 활성-->
+              <div class="dropdown-area">
+                <button type="button" class="btn-drpomenu"><i class="bg-icon edite-more">메뉴보기</i></button>
+                <ul class="drop-menu">
+                  <li>
+                    <button type="button">삭제하기<i class="bg-icon trash-del"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-car-cont type1">
+                <div class="logo">
+                  <img src="../../assets/img/emblem/logo-32.svg" alt="" />
+                  <p class="car-barnd">재규어</p>
+                </div>
+                <p class="car-name">2017 벤틀리 벤테이가</p>
+                <p class="car-number">28자 8617</p>
+                <div class="btn-area grid">
+                  <button type="button" class="btn">주행거리 조회하기</button>
+                </div>
+                <div class="driving-info">
+                  <p class="tit">주행거리</p>
+                  <button class="btn-txt">연동해지</button>
+                  <dl class="define-list type2">
+                    <dt>지금까지 주행한 거리</dt>
+                    <dd>132,810km</dd>
+                    <dt>앞으로 주행 가능한 거리</dt>
+                    <dd>870km</dd>
+                  </dl>
+                  <div class="box-btm">
+                    <span class="image"><img src="../../assets/img/layout/logo-info-genesis.svg" alt=""></span>
+                    <p class="desc">※ 위 정보는 실제와 다를 수 있습니다.</p>
+                  </div>
+                </div>
+                <div class="car-info">
+                  <dl class="customer-info type2">
+                    <dt>등급</dt>
+                    <dd>SUV 준중형</dd>
+                    <dt>유종</dt>
+                    <dd>경유</dd>
+                    <dt>색상</dt>
+                    <dd>퓨어화이트</dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <!-- //제네시스 -->
+          </ul>
+          <div class="btn-area grid">
+            <button type="button" class="btn type4">새로운 차량 등록하기 (2/3)</button>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+    </div>
+  </body>
+</html>
