@@ -38,8 +38,14 @@
 }
 
 .list-content {
-  + .wrap-more {
-    margin-top: 1rem;
+  padding-bottom: 4rem;
+  & + .wrap-more {
+    text-align: center;
+    .btn-more {
+      display: inline-block;
+      width: auto;
+      padding: 0;
+    }
   }
 
   .pattern-comp-list > li {
@@ -2934,4 +2940,10 @@
       font-size: 1.5rem;
     }
   }
+}
+
+.top-guide {
+  padding: 3rem 2rem;
+  background: $fcF9;
+  color: $fc1;
 }
