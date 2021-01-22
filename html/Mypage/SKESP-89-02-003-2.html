@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">차량정보 등록</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <!-- Wrap-contents -->
+        <div class="wrap-contents">
+          <div class="top-guide">
+            <p class="text-guide">T map에서 선택하신 차량에 대한 정보를 확인해 주세요.<br/>하단에 등록완료를 선택해 주시면, 머핀 서비스를<br/>이용할 수 있습니다.</p>
+          </div>
+
+          <div class="car-cont">
+            <div class="form-div">
+              <p class="title">123가5678 차량의<br/>상세정보를 추가해주세요.</p>
+            </div>
+
+            <!-- [D] accordion 활성화 .active 추가 -->
+            <div class="accordion type4">
+              <div class="accordion-title">
+                <p class="title"><i class="bg-icon tooltip2"></i> 유의사항</p>
+                <button type="button" class="bg-icon toggle">펼침</button>
+              </div>
+              <div class="accordion-cont">
+                <ul class="list-dot">
+                  <li>머핀에서는 입력하신 정보를 기반으로 차량등급을 산정하고 있습니다.</li>
+                  <li>차량등급은 면적, 형태에 따라 산정되며 일반적인 기준과는 다소 차이가 있을 수 있습니다.</li>
+                  <li>차량색상은 서비스 참고용이므로 실제 차량과 가장 유사한 색상으로 선택해주시기 바랍니다.</li>
+                  <li>실제 차량과 등록정보가 다른 경우 서비스 정책에 따라 추가 결제가 발생될 수 있습니다.</li>
+                  <li>대형트럭, 탱크로리 등의 특수차량은 세차 등의 일부 서비스 이용에 제한이 있을 수 있습니다.</li>
+                  <li>차량정보가 검색되지 않거나 기타 문의사항은 고객센터(1599-0051)로 문의해주세요.</li>
+                </ul>
+              </div>
+            </div>
+
+            <ul class="form-list type1">
+              <li>
+                <p class="title">제조사<em class="req">*</em></p>
+                <select class="select type1" required="">
+                  <option value="">선택해 주세요.</option>
+                  <option>현대</option>
+                </select>
+              </li>
+              <li>
+                <p class="title">모델명<em class="req">*</em></p>
+                <select class="select type1" required="">
+                  <option value="">선택해 주세요.</option>
+                  <option>투싼</option>
+                </select>
+              </li>
+              <li>
+                <p class="title">상세타입<em class="req">*</em></p>
+                <select class="select type1" required="">
+                  <option value="">선택해 주세요.</option>
+                </select>
+              </li>
+              <li>
+                <p class="title">유종<em class="req">*</em></p>
+                <select class="select type1" required="">
+                  <option value="">선택해 주세요.</option>
+                </select>
+              </li>
+              <li>
+                <p class="title">색상<em class="req">*</em></p>
+                <select class="select type1" required="">
+                  <option value="">선택해 주세요.</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+
+          <div class="fix-footer-area">
+            <button type="button" class="btn type2 color4">등록완료 및 회원가입</button>
+          </div>
+        </div>
+        <!-- //Wrap-contents -->
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
