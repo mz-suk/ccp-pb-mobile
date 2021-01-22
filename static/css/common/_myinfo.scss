@@ -3,12 +3,13 @@
 
   .join-box {
     padding: 2.5rem 0.5rem 0;
+    line-height: 1.2;
     button {
       color: $fc1;
       vertical-align: top;
       &:not(:first-child) {
         position: relative;
-        margin-left: 1.8rem;
+        margin-left: 1.6rem;
         &:before {
           content: "";
           position: absolute;

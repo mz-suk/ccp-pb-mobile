@@ -185,6 +185,7 @@
 .board-list {
   .title {
     color: $fc1;
+    word-break: break-all;
   }
   .info {
     margin-top: 0.3rem;

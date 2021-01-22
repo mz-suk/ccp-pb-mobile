@@ -34,12 +34,14 @@
     .car-number {
       display: inline-block;
       margin: 0.7rem 0 0;
+      padding: 0;
       font-size: 2.4rem;
       width: calc(100% - 10rem);
     }
     .car-name {
       display: inline-block;
       margin-top: 3rem;
+      padding: 0;
       font-size: 1.3rem;
       width: calc(100% - 10rem);
     }

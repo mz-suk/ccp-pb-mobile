@@ -12,12 +12,7 @@
   background: rgba(17, 17, 17, 0.65);
   border-radius: 2.5rem;
 }
-// 알림함
-// .wrap-alarm {
-//   .wrap-tab-scroll {
-//     margin-top: 4rem;
-//   }
-// }
+
 .alarm-content {
   padding: 3rem 0 0;
   margin-bottom: -8rem;
@@ -156,6 +151,10 @@
         color: $pc3;
       }
     }
+  }
+
+  .btn-arrow:after {
+    margin-left: 0;
   }
 }
 
@@ -558,8 +557,7 @@
         left: 0;
         width: 4.5rem;
         height: 4.5rem;
-        background: url(~assets/img/layout/icon-chat.svg) 0 0 / 100% auto
-          no-repeat;
+        background: url(~assets/img/layout/icon-chat.svg) 0 0 / 100% auto no-repeat;
         content: "";
       }
     }
@@ -611,8 +609,7 @@
           &:before {
             top: -0.1rem;
             left: -0.55rem;
-            background: url(~assets/img/layout/bg-chat-type1.svg) 0 0 /100%
-              auto no-repeat;
+            background: url(~assets/img/layout/bg-chat-type1.svg) 0 0 /100% auto no-repeat;
           }
         }
       }
@@ -637,8 +634,7 @@
           &:before {
             top: 0;
             right: -0.45rem;
-            background: url(~assets/img/layout/bg-chat-type2.svg) 0 0 /100%
-              auto no-repeat;
+            background: url(~assets/img/layout/bg-chat-type2.svg) 0 0 /100% auto no-repeat;
           }
         }
       }
@@ -677,8 +673,7 @@
     width: 4rem;
     height: 4rem;
     margin: 0 1rem;
-    background: url(~assets/img/layout/icon-photo-type1.svg) 0 0 / 100%
-      auto no-repeat;
+    background: url(~assets/img/layout/icon-photo-type1.svg) 0 0 / 100% auto no-repeat;
     border-radius: 50%;
     box-shadow: 0.2rem 0.3rem 0 0.1rem rgba(0, 0, 0, 0.06);
   }

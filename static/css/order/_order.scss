@@ -1,4 +1,5 @@
 .wrap-order {
+  padding-bottom: 4rem;
   .wrap-btn {
     margin-top: 4rem;
     text-align: center;
@@ -386,7 +387,7 @@
 
   dt,
   dd {
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -454,6 +455,24 @@
     }
     dd {
       width: calc(100% - 14rem);
+    }
+  }
+
+  &.type2 {
+    dt {
+      width: 9.8rem;
+    }
+    dd {
+      width: calc(100% - 9.8rem);
+    }
+  }
+
+  &.type3 {
+    display: flex;
+    dt,
+    dd {
+      float: none;
+      width: auto;
     }
   }
 }
@@ -728,6 +747,53 @@
     .accordion-cont {
       padding: 0;
       border-bottom: 0;
+    }
+  }
+
+  &.type4 {
+    border: 0.1rem solid $fcF0;
+
+    .accordion-title {
+      padding: 0 1.5rem;
+      color: $fc6;
+      font-size: 1.3rem;
+      border: 0;
+
+      .title {
+        padding: 1.7rem 0;
+
+        .bg-icon {
+          width: 1.6rem;
+          height: 1.6rem;
+          margin-right: 0.3rem;
+        }
+      }
+      .toggle {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-top: -0.6rem;
+        background: url(~assets/img/layout/icon-plus-gray.svg) 0 0 / 100% auto no-repeat;
+      }
+      &:after {
+        display: none;
+      }
+    }
+
+    .accordion-cont {
+      padding: 2rem 1.5rem 3rem;
+      background: $fcF9;
+      border: 0;
+    }
+
+    &.active {
+      .accordion-title {
+        .title {
+          border-bottom: 0.1rem solid $fcF0;
+        }
+      }
+      .toggle {
+        background-image: url(~assets/img/layout/icon-minus-gray.svg);
+      }
     }
   }
 

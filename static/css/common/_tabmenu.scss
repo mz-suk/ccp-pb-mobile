@@ -168,14 +168,10 @@
 
   &.type2 {
     .tab-menu {
-      display: flex;
       li {
-        // flex: auto;
-        flex: 1;
         height: auto;
         font-size: 1.7rem;
-        padding-bottom: 1rem;
-        text-align: center;
+        padding-bottom: 1.1rem;
         border: 0 none;
         border-bottom: 0.1rem solid $fcF0;
         background: $fcF;
@@ -190,15 +186,15 @@
         .num {
           display: inline-block;
           font-size: 1.4rem;
-          vertical-align: top;
+          vertical-align: middle;
         }
       }
     }
   }
+
   &.type3 {
     .tab-menu {
       position: relative;
-      display: flex;
       justify-content: space-between;
       &:after {
         content: "";
@@ -238,6 +234,7 @@
       }
     }
   }
+
   &.type4 {
     .tab-menu {
       position: relative;
