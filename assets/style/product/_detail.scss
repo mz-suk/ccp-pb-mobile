@@ -300,7 +300,7 @@
       }
 
       .num {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         span {
           padding: 0;
           font-size: 1.8rem;
@@ -403,6 +403,9 @@
     padding: 0;
     .qna-list {
       margin-top: 1rem;
+    }
+    .head-title {
+      border-color: $fc1;
     }
   }
   & > .wrap-empty:first-child {
