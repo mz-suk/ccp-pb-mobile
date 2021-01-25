@@ -345,6 +345,7 @@
   .img-list {
     overflow: hidden;
     text-align: left;
+    font-size: 0;
 
     li {
       display: inline-block;
@@ -358,7 +359,7 @@
       border-radius: 0.1rem;
 
       &:not(:first-child) {
-        margin-left: 0.1rem;
+        margin-left: 0.5rem;
       }
 
       &.type1 {
