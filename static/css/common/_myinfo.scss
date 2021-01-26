@@ -2,7 +2,7 @@
   padding: 4rem 2rem;
 
   .join-box {
-    padding: 2.5rem 0.5rem 0;
+    padding: 2.5rem 1rem 0;
     line-height: 1.2;
     button {
       color: $fc1;
@@ -23,6 +23,11 @@
         }
       }
     }
+
+    & + .info-list {
+      margin-top: 2.8rem;
+      border-top: 0.1rem solid $fcF0;
+    }
   }
 
   .gray-box {
@@ -40,12 +45,17 @@
     }
     .btn-area {
       margin-top: 3rem;
+      padding: 0;
       text-align: center;
+      .btn {
+        height: 4.6rem;
+        line-height: 4.6rem;
+      }
     }
   }
   .btn-area {
     margin-top: 3rem;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     text-align: left;
   }
   .member-apply .apply-form .form-input.has-error input {

@@ -467,10 +467,18 @@
     }
 
     .review-add-img {
+      margin: 1.5rem -3rem 0;
       .img-list {
+        padding-right: 3rem;
         li {
           width: 7.4rem;
           height: 7.4rem;
+          &:not(:first-child) {
+            margin-left: 0.6rem;
+          }
+          &:first-child {
+            padding-left: 3rem;
+          }
         }
       }
       .btn-add-photo {
