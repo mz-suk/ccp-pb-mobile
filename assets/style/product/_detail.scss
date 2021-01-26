@@ -960,7 +960,7 @@
   }
 
   .etc {
-    margin-top: 1.8rem;
+    margin: 1.8rem -1rem 0 0;
 
     .bg-icon {
       width: 1.6rem;
@@ -970,7 +970,7 @@
 
     span {
       display: inline-block;
-      margin-right: 0.8rem;
+      margin-right: 0.6rem;
       color: $fc1;
 
       &:not(:first-of-type):before {
@@ -981,6 +981,9 @@
         border-right: 0.1rem dotted $fc1;
         vertical-align: middle;
         content: "";
+      }
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
