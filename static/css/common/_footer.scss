@@ -42,8 +42,23 @@
       }
     }
 
-    .btn-arrow.active + .address {
-      display: block;
+    .btn-arrow {
+      font-size: 1.3rem;
+      line-height: 1.2;
+      &:after {
+        margin-top: 0.3rem;
+        margin-left: 0.5rem;
+        background: url(~assets/img/layout/icon-arrow-btm2.svg) 0 0 / 100% auto no-repeat;
+      }
+
+      &.active {
+        &:after {
+          transform: rotate(180deg);
+        }
+        & + .address {
+          display: block;
+        }
+      }
     }
   }
 

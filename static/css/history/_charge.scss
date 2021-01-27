@@ -137,6 +137,7 @@
     }
   }
 }
+
 .charge-btm {
   padding: 0.5rem 2rem 0;
   text-align: center;
@@ -167,7 +168,18 @@
       text-decoration: underline;
     }
   }
+
+  .btn-arrow.type2 {
+    line-height: 1.4;
+    &:after {
+      width: 1rem;
+      height: 1rem;
+      margin-top: 0;
+      vertical-align: middle;
+    }
+  }
 }
+
 .charge-layer-cont {
   .gray-box {
     margin-top: 2.5rem;
@@ -210,7 +222,7 @@
 .charge-top-box {
   padding: 2.9rem 3rem 2.5rem;
   color: $fc1;
-  background: $fcF9 url(../~assets/img/layout/icon-charge-bg2.svg) no-repeat calc(100% - 3.54rem) center;
+  background: $fcF9 url(~assets/img/layout/icon-charge-bg2.svg) no-repeat calc(100% - 3.54rem) center;
   background-size: 4.756rem 4.99rem;
   border-bottom: 0.1rem solid $fcEB;
   .tit {
@@ -318,11 +330,6 @@
 
   .charge-btm {
     margin-bottom: 4.5rem;
-    .btn-area {
-      button {
-        font-size: 1.5rem;
-      }
-    }
   }
 }
 

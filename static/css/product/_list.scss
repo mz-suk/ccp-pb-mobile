@@ -915,12 +915,6 @@
   .wrap-time {
     padding: 0 1rem;
   }
-
-  .btn-area.grid {
-    .btn {
-      font-size: 1.5rem;
-    }
-  }
 }
 
 .title-sub {
@@ -1346,50 +1340,6 @@
     margin-top: 2rem;
   }
 
-  //check-box
-  &.chk-type {
-    padding: 0;
-    border: none;
-
-    input[type="checkbox"] {
-      position: absolute;
-      opacity: 0;
-    }
-
-    input[type="checkbox"]:checked + label {
-      &.info-type-cont,
-      &.info-car-cont {
-        background: $fcF;
-        border-color: $fc1;
-        // box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.08);
-        transition: background 0.2s, border 0.2s, box-shadow 0.2s;
-      }
-
-      &:after {
-        background: url("~assets/img/layout/icon-chk-on.svg") no-repeat center center;
-        background-size: 100% auto;
-      }
-    }
-
-    label {
-      margin: 0;
-      transition: background 0.2s, border 0.2s, box-shadow 0.2s;
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 2.5rem;
-        display: block;
-        width: 2rem;
-        height: 2rem;
-        background: url("~assets/img/layout/icon-chk-off.svg") no-repeat center center;
-        background-size: 100% auto;
-        transform: translate(0, -50%);
-      }
-    }
-  }
-
   &.chk-box-type {
     &.chk-type1 {
       input[type="checkbox"] {
@@ -1461,7 +1411,6 @@
     }
   }
 
-  //radio
   &.radio-type {
     padding: 0;
 
@@ -1482,31 +1431,6 @@
     input[type="radio"] + label {
       margin: 0;
       transition: background 0.2s, border 0.2s;
-    }
-  }
-
-  &.right-btn {
-    .info-type-cont {
-      padding-right: 5rem;
-      background: $fcF;
-      .top .date {
-        margin-right: -2.5rem;
-      }
-    }
-
-    button[data-type="right-btn"] {
-      position: absolute;
-      top: 50%;
-      right: 2.5rem;
-      transform: translate(0, -50%);
-    }
-  }
-
-  &.type1 {
-    .info-type-cont {
-      padding: 2.5rem 2.5rem 4rem;
-      background: $fcF;
-      border-color: $fc1;
     }
   }
 
@@ -1532,7 +1456,7 @@
         padding-left: 2.5rem;
         font-size: 1.5rem;
         color: $fcF;
-        background: url(../~assets/img/layout/icon-checkbox-white.png) no-repeat 0 center / 2rem 2rem;
+        background: url(~assets/img/layout/icon-checkbox-white.png) no-repeat 0 center / 2rem 2rem;
         z-index: 6;
         transform: translate(-50%, -40%);
       }
@@ -1711,16 +1635,6 @@
     border-radius: 1.6rem;
     overflow: hidden;
 
-    &.type1 {
-      padding-top: 5.4rem;
-      &:after {
-        top: calc(50% + 2.7rem);
-      }
-      .big-title {
-        margin-top: 2.7rem;
-      }
-    }
-
     .top {
       display: flex;
       align-items: center;
@@ -1750,38 +1664,6 @@
         margin-left: auto;
         font-size: 1rem;
         color: $fc9;
-      }
-    }
-    .top-grad {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      padding: 1rem 2.5rem 0;
-      display: flex;
-      align-items: center;
-      height: 5.4rem;
-      color: $fcF;
-      background: linear-gradient(to right, $gc3 0%, $gc4 40%);
-      box-sizing: border-box;
-
-      &.grad1 {
-        background: linear-gradient(to right, $gc1 0%, $gc2 40%);
-      }
-      .title {
-        font-weight: 700;
-        strong {
-          margin-right: 0.4rem;
-          font-size: 2rem;
-          vertical-align: middle;
-        }
-      }
-
-      .date {
-        margin-left: auto;
-        font-size: 1.1rem;
-        color: $fcF;
       }
     }
 
@@ -2815,6 +2697,9 @@
 .car-select-list {
   .info-car-cont {
     padding: 2rem 2rem 3rem;
+    &.type3 {
+      padding: 2.5rem;
+    }
   }
 }
 
