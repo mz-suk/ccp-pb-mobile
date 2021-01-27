@@ -271,10 +271,13 @@
     }
     .btn-arrow {
       margin-top: 0.2rem;
+      font-size: 1.3rem;
       line-height: 1.2;
       &:after {
+        width: 1.2rem;
+        height: 1.2rem;
         margin-top: 0.2rem;
-        background: url(~assets/img/layout/icon-arrow-left-black2.svg) 0 0 / 100% auto no-repeat;
+        background-image: url(~assets/img/layout/icon-arrow-left-black2.svg);
       }
     }
     .sub-txt {

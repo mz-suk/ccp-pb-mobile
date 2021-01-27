@@ -137,6 +137,7 @@
     }
   }
 }
+
 .charge-btm {
   padding: 0.5rem 2rem 0;
   text-align: center;
@@ -167,7 +168,18 @@
       text-decoration: underline;
     }
   }
+
+  .btn-arrow.type2 {
+    line-height: 1.4;
+    &:after {
+      width: 1rem;
+      height: 1rem;
+      margin-top: 0;
+      vertical-align: middle;
+    }
+  }
 }
+
 .charge-layer-cont {
   .gray-box {
     margin-top: 2.5rem;
@@ -318,11 +330,6 @@
 
   .charge-btm {
     margin-bottom: 4.5rem;
-    .btn-area {
-      button {
-        font-size: 1.5rem;
-      }
-    }
   }
 }
 
