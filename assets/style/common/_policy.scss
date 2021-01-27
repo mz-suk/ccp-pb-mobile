@@ -13,9 +13,26 @@
     font-weight: 700;
     color: $fc1;
   }
+  .wrap-txt-row {
+    padding-left: 0.5rem;
+  }
   .txt-row {
     margin-top: 0.7rem;
     line-height: 1.6;
+    .list-roman {
+      margin-left: 2rem;
+    }
+    &.type1 {
+      margin-top: 2rem;
+      color: $fc1;
+    }
+    .tbl {
+      margin-top: 1rem;
+    }
+    .title {
+      margin: 1rem 0 0;
+      color: $fc6;
+    }
   }
   .txt-row2 {
     margin-top: 0.7rem;
@@ -70,6 +87,26 @@
       }
       ol {
         padding-left: 2rem;
+        &.list-number {
+          padding-left: 0;
+        }
+      }
+    }
+
+    &.type1 {
+      li {
+        margin-top: 0;
+        padding-left: 2rem;
+        counter-increment: num;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1.5rem;
+          font-size: 1.2rem;
+          text-align: right;
+          content: counter(num) ".";
+        }
       }
     }
   }
@@ -96,6 +133,29 @@
     .tbl {
       margin-bottom: 1rem;
     }
+
+    &.type1 {
+      padding: 2rem 0;
+      .title {
+        font-size: 1.3rem;
+      }
+    }
+
+    &.type2 {
+      padding: 0.7rem 0;
+      .title {
+        color: $fc6;
+        font-size: 1.3rem;
+      }
+      .tbl {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  .btn-down {
+    margin-top: 0.5rem;
+    color: $pc3;
+    border-bottom: 0.1rem solid $pc3;
   }
 }
 

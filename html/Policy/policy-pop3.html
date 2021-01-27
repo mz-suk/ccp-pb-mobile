@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">개인정보 수집ㆍ이용 동의서</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="wrap-policy">
+            <p class="big-title">T map X muffin 개인정보 수집ㆍ이용 동의서 (머핀 서비스)</p>
+
+            <div class="title">1. 개인정보 수집·이용에 대한 동의</div>
+            <div class="txt-row">
+              본인은 '머핀' 서비스 이용을 위하여 개인정보보호 관련 법령에 따라 아래의 내용과 같이 본인의 개인정보를 SK에너지 주식회사가 수집, 이용하는 것에 대하여 동의합니다.
+            </div>
+
+            <div class="tbl-layout type1">
+              <p class="title">일반 개인정보 수집ㆍ이용 동의</p>
+              <table class="tbl type2">
+                <colgroup>
+                  <col style="width:25%" />
+                  <col />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>수집하는 자</th>
+                    <td>SK 에너지</td>
+                  </tr>
+                  <tr>
+                    <th>수집·이용 목적</th>
+                    <td>
+                      <ul class="list-dot type3">
+                        <li>머핀 서비스 이용(간편결제 이용)</li>
+                        <li>본인확인</li>
+                        <li>출장 세차, 정비, 오일/배터리 교체 서비스 (이용 시)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>수집 항목</th>
+                    <td>
+                      <p class="title-sm">- 필수</p>
+                      <ul class="list-dot type3">
+                        <li>성명(실명)</li>
+                        <li>이메일</li>
+                        <li>T map 사용자 User Key</li>
+                        <li>휴대폰 번호</li>
+                        <li>
+                          차량정보 : 차량번호, 제조사, 모델명, 세부모델명, 유종, 기어, 색상, 연식
+                          <p class="reeference-mark">위 항목은 티맵모빌리티㈜를 통해 수집됩니다.</p>
+                        </li>
+                        <li>상품 또는 서비스 구매 내역</li>
+                        <li>기타 본 서비스 이용과정에서 발생한 상품 또는 서비스 구매 내역</li>
+                        <li>스마트 기기 식별정보(UUID)</li>
+                        <li>단말기 환경정보</li>
+                        <li>신용/체크카드 정보(카드사명, 카드번호, 유효기간, 비밀번호 앞 2자리, CVC)</li>
+                      </ul>
+
+                      <p class="title-sm">- 출장세차 및 교환서비스 이용 시 선택</p>
+                      <ul class="list-dot type3">
+                        <li>출장세차, 정비, 오일/배터리 교환 서비스 이용 주소</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>보유/이용기간</th>
+                    <td>머핀 서비스 해지시까지<br/>단, 관계법령상 필요한 경우 예외적으로 그 목적 달성시까지</td>
+                  </tr>
+                  <tr>
+                    <th>비동의시 불이익</th>
+                    <td>머핀 서비스 이용 불가</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tbl-layout type1">
+              <p class="title">개인정보 처리의 위탁 사실 고지</p>
+              <table class="tbl">
+                <colgroup>
+                  <col style="width:40%"/>
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>위탁받는자<br/>(수탁업체)</th>
+                    <th>위탁하는 업무의 내용</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>SK주식회사 C&C</td>
+                    <td>각종 정보의 전산 처리 및 전산 시스템의 개발, 유지 관리</td>
+                  </tr>
+                  <tr>
+                    <td>퀸텟시스템즈㈜</td>
+                    <td>각종 정보의 전산 처리 및 전산 시스템의 개발, 유지 관리</td>
+                  </tr>
+                  <tr>
+                    <td>메가존㈜</td>
+                    <td>각종 정보의 전산 처리 및 전산 시스템의 개발, 유지 관리</td>
+                  </tr>
+                  <tr>
+                    <td>SK인포섹㈜</td>
+                    <td>시스템 보안 관리</td>
+                  </tr>
+                  <tr>
+                    <td>SK엠엔서비스㈜</td>
+                    <td>고객행복센터(상담센터) 운영</td>
+                  </tr>
+                  <tr>
+                    <td>인포뱅크㈜</td>
+                    <td>SMS 송신 서비스</td>
+                  </tr>
+                  <tr>
+                    <td>㈜넷퍼씨</td>
+                    <td>DM 서비스(이메일, PUSH메시지, SMS, 카카오톡 알림톡 등)</td>
+                  </tr>
+                  <tr>
+                    <td>㈜나이스페이먼츠</td>
+                    <td>결제서비스</td>
+                  </tr>
+                  <tr>
+                    <td>카카오페이</td>
+                    <td>결제서비스</td>
+                  </tr>
+                  <tr>
+                    <td>나이스페이</td>
+                    <td>결제서비스</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="txt-row">
+              서비스 이용 과정에서 IP 주소, 쿠키, 서비스 이용 기록, 기기정보, 위치정보가 생성되어 수집될 수 있습니다. 구체적으로 1) 서비스 이용 과정에서 이용자에 관한 정보를 자동화된 방법으로 생성하여 이를 저장(수집)하거나, 2) 이용자 기기의 고유한 정보를 원래의 값을 확인하지 못하도록 안전하게 변환하여 수집합니다. 서비스 이용 과정에서 위치정보가 수집될 수 있으며, 머핀에서 제공하는 위치기반 서비스에 대해서는 '머핀 위치정보 이용약관'에서 자세하게 규정하고 있습니다.
+            </div>
+            <div class="txt-row type1">
+              본인은 SK에너지 주식회사가 본인의 개인정보를 위 기재와 같이 처리한다는 사실을 고지 받았고, 상기 내용을 숙지하였음을 확인합니다.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
