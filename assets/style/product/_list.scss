@@ -2696,7 +2696,7 @@
 
 .car-select-list {
   .info-car-cont {
-    padding: 2rem 2rem 3rem;
+    padding: 2rem 2.5rem 3rem;
     &.type3 {
       padding: 2.5rem;
     }
@@ -2708,7 +2708,7 @@
   padding: 4rem 2rem 6rem;
 
   .driving-info {
-    margin: 2rem 0 0;
+    margin: 2.8rem 0 0;
     padding: 2.5rem 2rem 1.5rem;
     background: $fcF9;
     border: 0.1rem solid $fcF0;
@@ -2819,11 +2819,8 @@
     }
   }
 
-  .btn-area {
-    margin-top: 4rem;
-    .btn {
-      font-size: 1.5rem;
-    }
+  .btn.type4 {
+    font-size: 1.3rem;
   }
 }
 
