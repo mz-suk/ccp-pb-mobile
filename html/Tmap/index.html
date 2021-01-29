@@ -12,7 +12,7 @@
   .guide-header h1{font-size:30px}
   .list-guide{border:1px solid #e4e4e4;border-width:1px 1px 0 0;counter-reset:num}
   .row{display:flex;position:relative;font-size:15px;color:#666;counter-increment:num}
-  .row div{flex:0 0 200px;min-height:35px;padding:10px 10px 5px;box-sizing:border-box;border:1px solid #e4e4e4;border-width:0 0 1px 1px;line-height:1.2}
+  .row div{flex:0 0 200px;min-height:35px;padding:10px 10px 5px;box-sizing:border-box;border:1px solid #e4e4e4;border-width:0 0 1px 1px;line-height:1.2;word-break:break-all}
   .row .link{position:absolute;top:0;right:0;bottom:0;left:0}
   .row .num{flex:0 0 50px;text-align:center;font-weight:400;color:#666}
   .row .desc{flex:1 1 auto}
@@ -27,6 +27,7 @@
     #wrapper{padding:10px}
     .row div{flex:1 1 100%}
     .row .desc{display:none}
+    .wrap-row:not(.header) .row:first-child div:not(.depth1)[class^=depth]{display:none}
   }
 </style>
 </head>
