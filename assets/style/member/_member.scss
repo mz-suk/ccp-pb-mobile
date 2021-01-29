@@ -327,6 +327,7 @@
     margin-top: 4rem;
     button {
       width: 100%;
+      font-size: 1.5rem;
     }
   }
 }
@@ -679,17 +680,18 @@
 }
 
 .stage-info {
-  padding-bottom: 2.4rem;
+  padding: 2.5rem 1rem;
   border-bottom: 0.1rem solid $fcE4;
-  &:not(:first-child) {
-    margin-top: 2.5rem;
+  line-height: 1.2;
+  &:first-child {
+    margin-top: -2.5rem;
   }
   .stage-num {
     font-size: 1.1rem;
     color: $pc3;
   }
   .stage-name {
-    margin-top: 0.8rem;
+    margin-top: 1rem;
     display: flex;
     font-size: 1.5rem;
     color: $fc1;
@@ -697,6 +699,7 @@
     & > span {
       margin-left: auto;
       color: $fc6;
+      font-size: 1.3rem;
       &.point {
         color: $fc9;
       }
