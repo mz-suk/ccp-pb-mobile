@@ -235,6 +235,7 @@
 .board-detail {
   & > .btn {
     width: 100%;
+    font-size: 1.5rem;
   }
   .detail-title {
     .title {
@@ -268,7 +269,7 @@
     }
   }
   .detail-body {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     padding-bottom: 2.5rem;
     p {
       &:first-child img {
