@@ -694,24 +694,18 @@ input[type="checkbox"] {
 }
 
 .checkbox-cycle {
-  input[type="checkbox"] {
-    width: 2.3rem;
-    height: 2.3rem;
-    background: url(../../assets/img/layout/icon-chk-cycle.svg) 0 0/100% auto no-repeat;
-
-    &:checked {
-      background: url(../../assets/img/layout/icon-chk-cycle-on.svg) 0 0/100% auto no-repeat;
-    }
-  }
-
+  input[type="checkbox"],
   input[type="radio"] {
     width: 2.3rem;
     height: 2.3rem;
-    background: url(../../assets/img/layout/icon-chk-cycle.svg) 0 0/100% auto no-repeat;
+    background: $fcF url(../../assets/img/layout/icon-chk1-on.svg) 50% 50% / 1.2rem 1.2rem no-repeat;
+    border: 0.1rem solid $fcD7;
+    border-radius: 50%;
+    opacity: 0.5;
     transition: all 0.2s ease;
 
     &:checked {
-      background: url(../../assets/img/layout/icon-chk-cycle-on.svg) 0 0/100% auto no-repeat;
+      opacity: 1;
     }
   }
 }
