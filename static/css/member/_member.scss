@@ -507,11 +507,32 @@
     border-bottom: 0.1rem solid $fcF0;
     overflow: hidden;
 
+    .swiper-wrapper {
+      align-items: center;
+    }
+
     .swiper-slide {
       padding: 4rem 0 6rem;
       width: 27rem !important;
       color: $fc1;
       text-align: center;
+
+      &:not(.swiper-slide-active) {
+        .thumb,
+        .thumb.exp {
+          height: 10rem;
+          .txt2 {
+            font-size: 1.7rem;
+          }
+          .txt3 {
+            margin-top: 2.5rem;
+          }
+        }
+        .name,
+        .info {
+          opacity: 0;
+        }
+      }
 
       .thumb {
         margin: auto;
@@ -563,13 +584,13 @@
       }
 
       .name {
-        margin-top: 1.9rem;
+        margin-top: 1.5rem;
         font-size: 1.7rem;
       }
       .info {
         text-align: center;
         span {
-          margin-top: 0.6rem;
+          margin-top: 0.4rem;
           &:after {
             height: 0.7rem;
             border-right: 0.1rem dotted $fc1;
@@ -579,9 +600,10 @@
     }
 
     .swiper-pagination {
+      bottom: 25px;
       .swiper-pagination-bullet {
-        width: 0.8rem;
-        height: 0.8rem;
+        width: 0.6rem;
+        height: 0.6rem;
         background: #e0e0e0;
         border-radius: 50%;
         opacity: 1;
@@ -660,7 +682,7 @@
     }
   }
   .noti-cont {
-    padding: 2rem 1rem;
+    padding: 2rem 0 2rem 0.7rem;
 
     p {
       margin-bottom: 1.5rem;
@@ -668,13 +690,14 @@
       font-size: 1.1rem;
       color: $fc1;
     }
-
     .list-dot:not(:first-child) {
       padding-left: 1.5rem;
     }
-
     .btn-arrow {
       margin: 2rem 0 0 3rem;
+      &:after {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -798,7 +821,7 @@
         width: 5rem;
         height: 1.5rem;
         margin-top: -0.2rem;
-        background: url(~assets/img/layout/bg-coupon-text3.svg) 0 0 / auto 100% no-repeat;
+        background: url(~assets/img/layout/bg-coupon-text3.png) 0 0 / auto 100% no-repeat;
         content: "";
       }
     }

@@ -141,8 +141,8 @@
       }
       &:after {
         display: block;
-        width: 6.5rem;
-        height: 1.1rem;
+        width: 6.6rem;
+        height: 1.2rem;
         margin-left: 0.3rem;
         background: url(~assets/img/layout/bg-coupon-text.svg) 0 0 / 100% auto no-repeat;
         content: "";
@@ -283,7 +283,7 @@
     .left {
       width: 9rem;
       padding: 0;
-      background: url(~assets/img/layout/bg-coupon-text2.svg) 50% 2rem / 4.8rem 2.2rem no-repeat;
+      background: url(~assets/img/layout/bg-coupon-text2.png) 50% 2rem / 4.8rem 2.2rem no-repeat;
       color: $fcF;
 
       .discount {
@@ -295,7 +295,7 @@
           width: 3.2rem;
           height: 1.4rem;
           margin: 0.3rem auto 0;
-          background: url(~assets/img/layout/bg-coupon-text1.svg) 0 0 / 100% auto no-repeat;
+          background: url(~assets/img/layout/bg-coupon-text1.png) 0 0 / 100% auto no-repeat;
         }
       }
 
