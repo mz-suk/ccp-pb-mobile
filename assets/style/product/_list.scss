@@ -1968,6 +1968,9 @@
     .gray-box {
       &.vartical-bar {
         margin-top: 2.5rem;
+        span:after {
+          border-right: 0.1rem dotted $fc9;
+        }
       }
     }
   }
@@ -2699,6 +2702,11 @@
     padding: 2rem 2.5rem 3rem;
     &.type3 {
       padding: 2.5rem;
+    }
+  }
+  & + .btn-area {
+    .btn.type4 {
+      font-size: 1.3rem;
     }
   }
 }

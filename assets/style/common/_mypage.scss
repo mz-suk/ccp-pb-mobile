@@ -100,7 +100,6 @@
   display: flex;
   height: 4.5rem;
   align-items: center;
-  justify-content: center;
   background-color: $fcF9;
   border: 0.1rem solid $fcF0;
   span {
@@ -110,10 +109,11 @@
     font-size: 0;
   }
   input {
+    width: 5.6rem;
+    padding: 0;
+    border: 0;
+    font-size: 1.4rem;
     text-align: center;
-    padding-right: 1rem;
-    border: 0 none;
-    font-size: 1.6rem;
   }
 }
 
@@ -155,24 +155,12 @@
     &:not(:first-child) {
       margin-top: 2.4rem;
     }
-
     .row-cell {
       flex: 1;
       margin-left: 1.5rem;
       &:first-child {
         margin-left: 0;
       }
-    }
-
-    .card-date {
-      font-size: 1.6rem;
-    }
-    .card-pw {
-      font-size: 1.6rem;
-    }
-
-    .card-cvc {
-      font-size: 1.6rem;
     }
   }
   .title {
@@ -475,6 +463,13 @@
     .dotted-list {
       margin-top: 1rem;
       font-size: 1.1rem;
+      li:before {
+        left: 0.5rem;
+        top: 0.5rem;
+        width: 0.2rem;
+        height: 0.2rem;
+        background: $fc6;
+      }
     }
     .error-msg {
       display: none;
@@ -564,8 +559,12 @@
   }
   .wrap-check {
     border-top: 0.1rem solid $fcF0;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
     padding-top: 2.5rem;
     display: flex;
+    label {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+    }
   }
 }
