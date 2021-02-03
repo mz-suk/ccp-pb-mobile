@@ -1120,6 +1120,9 @@
     width: 1.6rem;
     height: 1.6rem;
     margin-left: 0.5rem;
+    &.reply-arrow {
+      margin-left: 0;
+    }
   }
   & + .define-box {
     margin-top: 3.5rem;

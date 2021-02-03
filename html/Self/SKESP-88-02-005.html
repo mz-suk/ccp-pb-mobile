@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">결제 완료</h1>
+        <h1 class="title">결제 및 예약 완료</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
@@ -31,6 +31,7 @@
         </div>
       </header>
       <!-- //Header -->
+
       <!-- wrap-contents -->
       <div class="wrap-contents">
         <div class="wrap-order">
@@ -42,13 +43,13 @@
               <p class="empty-text">
                 <strong>예약이 완료되었습니다.</strong>
               </p>
-              <p class="empty-text">아래와 같은 서비스의<br/>예약 결제가 정상 완료되었습니다.</p>
+              <p class="empty-text">아래와 같은 서비스의 예약정보<br />결제가 정상 완료되었습니다.</p>
             </div>
             <div class="text-box">
               <dl class="define-list">
-                <dt>구매번호 (주문번호)</dt>
+                <dt>결제번호</dt>
                 <dd>20200422-AW22A</dd>
-                <dt>구매일시 (주문일시)</dt>
+                <dt>결제일시</dt>
                 <dd>2020.06.12(화) 15:07:12</dd>
               </dl>
             </div>
@@ -62,66 +63,28 @@
             </div>
             <div class="accordion-cont">
               <div class="order-cont">
-                <div class="title-sub"><p>예약 일시 정보</p></div>
+                <div class="title-sub"><p>이용자 정보</p></div>
                 <dl class="customer-info">
-                  <dt>예약 일시</dt>
-                  <dd>2020.05.10 (화)<br/>오전 11:30 ~ 오후 3:30</dd>
-                </dl>
-              </div>
-              <div class="order-cont">
-                <div class="title-sub">
-                  <p>예약자 정보</p>
-                </div>
-                <dl class="customer-info">
-                  <dt>예약자명</dt>
-                  <dd>송헌호</dd>
-                  <dt>예약자 휴대전화</dt>
+                  <dt>이용자 연락처</dt>
                   <dd>010 - 1234 -5678</dd>
-                  <dt>희망 연락수단</dt>
-                  <dd>APP채팅</dd>
                 </dl>
               </div>
               <div class="order-cont">
-                <div class="title-sub">
-                  <p>차량 정보</p>
-                </div>
+                <div class="title-sub"><p>세차장 정보</p></div>
                 <dl class="customer-info">
-                  <dt>차량번호</dt>
-                  <dd>129디 8189</dd>
-                  <dt>제조사</dt>
-                  <dd>랜드로버</dd>
-                  <dt>차량모델</dt>
-                  <dd>레인지로버 수퍼자차 3.0 SC HSE 다이내믹</dd>
-                  <dt>차량등급</dt>
-                  <dd>준대형 SUV</dd>
-                  <dt>차량색상</dt>
-                  <dd>퓨어 화이트</dd>
+                  <dt>세차장 이름</dt>
+                  <dd>SK 세차장 <button type="button" class="bg-icon info"></button></dd>
+                  <dt>주소 정보</dt>
+                  <dd>서울시 중구 청계천로 100</dd>
                 </dl>
               </div>
               <div class="order-cont">
-                <div class="title-sub">
-                  <p>내 차량 위치</p>
-                </div>
+                <div class="title-sub"><p>이용시간 • 시작시간 정보</p></div>
                 <dl class="customer-info">
-                  <dt>아파트 주소</dt>
-                  <dd>경기도 의정부시 누원로 52 수락리버시티 2단지</dd>
-                  <dt>상세위치</dt>
-                  <dd>2단지 지하 주차장 203동 주변</dd>
-                  <dt>요청사항</dt>
-                  <dd>왼쪽 타이어에 흠집이 있으니까 살살해주시고 트렁크 안에는 개인 짐이 많으니 청소 안하셔도 됩니다</dd>
-                </dl>
-              </div>
-              <div class="order-cont">
-                <div class="title-sub">
-                  <p>세차장 정보</p>
-                </div>
-                <dl class="customer-info">
-                  <dt>세차장명</dt>
-                  <dd>루페스 빅풋 디테일링 센터 오토블링 본점
-                    <button type="button" class="bg-icon info"></button>
-                  </dd>
-                  <dt>주소</dt>
-                  <dd>경기도 고양시 일산서구 덕산로 104번 길 12</dd>
+                  <dt>이용시간</dt>
+                  <dd>300분</dd>
+                  <dt>시작시간</dt>
+                  <dd>2020.05.10 (화) 오전 11시 30분</dd>
                 </dl>
               </div>
             </div>
@@ -130,70 +93,78 @@
           <div class="accordion type2 active">
             <!-- [D] accordion 펼침 상태 : .active 추가 -->
             <div class="accordion-title">
-              <p class="title">결제 정보</p>
+              <p class="title">구매 정보</p>
               <button type="button" class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
               <div class="order-cont">
-                <div class="title-sub">
-                  <p>구매 정보</p>
-                </div>
-                <dl class="define-list type3">
-                  <dt>99.9% 살균 인증 받은 스팀 세차 스팀 세차</dt>
-                  <dd class="num">1개<span>40,000원</span></dd>
-                  <dd class="replay-txt type1">
-                    <i class="bg-icon reply-arrow"></i>신규 회원 가입 쿠폰 5,000원
-                    <span class="right">-5,000원</span>
-                  </dd>
+                <div class="title-sub"><p>구매자 정보</p></div>
+                <dl class="customer-info">
+                  <dt>구매자 이름</dt>
+                  <dd>송헌호</dd>
+                  <dt>구매자 연락처</dt>
+                  <dd>010 - 1234 - 5678</dd>
                 </dl>
+              </div>
+              <div class="order-cont">
+                <div class="title-sub"><p>이용시간 정보</p></div>
                 <dl class="define-list type3">
-                  <dt>99.9% 살균 인증 받은 스팀 세차 스팀 세차</dt>
-                  <dd class="num">3개<span>15,000원</span></dd>
+                  <dt>시간권 300분</dt>
+                  <dd class="num">1개<span><em>40,000</em>원</span></dd>
                   <dd class="replay-txt type1">
-                    <i class="bg-icon reply-arrow"></i>신규 회원 가입 쿠폰 5,000원
-                    <span class="right">-5,000원</span>
+                    <i class="bg-icon reply-arrow"></i>
+                    신규 회원 가입 쿠폰 <em>5,000</em>원
+                    <span class="right"><em>-5,000</em>원</span>
                   </dd>
-                </dl>
-                <dl class="define-list type3">
-                  <dt>99.9% 살균 인증 받은 스팀 세차 스팀 세차</dt>
-                  <dd class="num">0개<span>5,000원</span></dd>
                 </dl>
                 <dl class="define-box total">
-                  <dt>구매 총 금액</dt>
+                  <dt>이용시간 총 금액</dt>
                   <dd><span>10,000</span>원</dd>
                 </dl>
                 <dl class="define-box charge">
-                  <dt>쿠폰할인 금액</dt>
+                  <dt>쿠폰할인</dt>
                   <dd><span>- 60,000</span>원</dd>
                 </dl>
               </div>
               <div class="order-cont">
-                <div class="title-sub">
-                  <p>결제금액 정보</p>
-                </div>
+                <div class="title-sub"><p>포인트 할인 정보</p></div>
+                <dl class="define-list type1">
+                  <dt>머핀 포인트</dt>
+                  <dd><em>0</em>원</dd>
+                  <dt>OK 캐시백 포인트</dt>
+                  <dd><em>- 60,000</em>원</dd>
+                </dl>
+              </div>
+
+              <div class="order-cont">
+                <div class="title-sub"><p>결제금액 정보</p></div>
                 <div class="order-info">
                   <dl class="define-box">
-                    <dt class="left">상품 총 금액</dt>
-                    <dd class="right">40,000원</dd>
-                  </dl>
-                  <dl class="define-box">
-                    <dt class="left">옵션 총 금액</dt>
-                    <dd class="right">40,000원</dd>
+                    <dt>이용시간 총 금액</dt>
+                    <dd><em>40,000</em>원</dd>
                   </dl>
                   <dl class="define-list">
                     <dt>쿠폰 할인</dt>
-                    <dd>0원</dd>
-                    <dt>포인트 할인 (머핀)</dt>
-                    <dd>0원</dd>
-                    <dt>포인트 차감 (OK 캐시백)</dt>
-                    <dd>0원</dd>
+                    <dd><em>0</em>원</dd>
+                    <dt>머핀 포인트 할인</dt>
+                    <dd><em>0</em>원</dd>
+                    <dt>OK 캐시백 포인트 할인</dt>
+                    <dd><em>0</em>원</dd>
                   </dl>
                   <dl class="define-box total">
                     <dt class="left">실 결제금액</dt>
                     <dd class="right"><span>56,000</span>원</dd>
                   </dl>
                   <dl class="define-box benefit">
-                    <dt class="left">혜택 총 금액</dt>
+                    <dt class="left">혜택 총 금액
+                      <div class="wrap-tooltip">
+                        <button type="button" class="bg-icon tooltip2">툴팁</button>
+                        <div class="tooltip-box">
+                          <button type="button" class="bg-icon tooltip-close">닫기</button>
+                          <p>구매하실 상품 및 옵션의 정상가와<br/>실제 결제금액을 기준으로 계산됩니다.</p>
+                        </div>
+                      </div>
+                    </dt>
                     <dd class="right"><span>35,000</span>원</dd>
                   </dl>
                 </div>
@@ -205,7 +176,7 @@
                 <dl class="customer-info">
                   <dt>결제유형</dt>
                   <dd>등록한 카드결제</dd>
-                  <dt>카드정보</dt>
+                  <dt>결제정보</dt>
                   <dd>비씨 9490 88** **** 5200<br/>/ 일시불</dd>
                 </dl>
               </div>
@@ -225,9 +196,9 @@
                     <dd class="right"><span>1,920</span>P</dd>
                   </dl>
                   <ul class="list-dot">
-                    <li>적립율은 실결제금액을 기준으로 계산됩니다.</li>
-                    <li>적립예정포인트는 실제 서비스 이용 완료 시점기준으로 7일 후에 실제 포인트로 전환 지급됩니다.</li>
-                    <li>적립된 포인트는 1원=1P로 환산되어 APP 내에 결제 시 할인하실 수 있습니다.</li>
+                    <li>적립율은 실 결제금액을 기준으로 계산됩니다.</li>
+                    <li>이용내역 메뉴의 서비스 사용완료 시점 기준으로 7일 후 실제 포인트가 지급되며, 다회차 서비스의 경우 전체 회차 사용완료 시에만 실제 포인트가 지급됩니다.</li>
+                    <li>포인트는 1원=1P로 환산되어 머핀 앱 내에 결제 시 포인트 할인으로 사용하실 수 있습니다.</li>
                   </ul>
                 </div>
               </div>
@@ -235,49 +206,11 @@
           </div>
 
           <div class="wrap-btn type1">
-            <a href="javascript:;" class="btn color1">홈으로 가기</a>
+            <button type="button" class="btn color1">이용내역 바로가기</button>
           </div>
         </div>
       </div>
       <!-- //wrap-contents -->
-      <!-- Footer -->
     </div>
-
-    <!-- Quick-menu -->
-    <div class="quick-menu">
-      <ul class="quick-menu-list">
-        <li><!-- [D] 활성화 .active 추가 -->
-          <a href="#">
-            <i class="bg-icon home"></i>
-            <span class="menu-name">홈</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon oiling"></i>
-            <span class="menu-name">주유</span>
-          </a>
-        </li>
-        <li class="active">
-          <a href="#">
-            <i class="bg-icon wash"></i>
-            <span class="menu-name">세차</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon membership"></i>
-            <span class="menu-name">멤버십</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon my-muffin"></i>
-            <span class="menu-name">My</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- //Quick-menu -->
   </body>
 </html>
