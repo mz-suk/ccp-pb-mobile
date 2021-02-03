@@ -46,9 +46,15 @@
   }
   li {
     position: relative;
-    padding: 2.3rem 1rem;
+    padding: 2.5rem 1rem;
     color: $fc1;
     border-bottom: 0.1rem solid $fcF0;
+
+    &:last-child {
+      padding-bottom: 3.5rem;
+      border-bottom: 0;
+    }
+
     .active {
       .title,
       .match,
@@ -135,7 +141,7 @@
     color: $fc1;
   }
   .btn-area {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 }
 
