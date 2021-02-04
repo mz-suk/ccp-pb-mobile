@@ -1254,6 +1254,12 @@
   }
 }
 
+.wrap-text {
+  .text-guide:not(:first-child) {
+    margin-top: 0.8rem;
+  }
+}
+
 .list-dot {
   // default   :  margin-top, font-size, color, dot style
   @include listdot(0.8rem, 1.1rem, $fc6, 0); // ·
@@ -2827,9 +2833,6 @@
 
   .wrap-text {
     margin: 2rem 0 0;
-    p:not(:first-child) {
-      margin-top: 0.8rem;
-    }
   }
 
   .btn.type4 {

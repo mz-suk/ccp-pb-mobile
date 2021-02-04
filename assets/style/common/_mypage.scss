@@ -582,4 +582,33 @@
   .btn-area.grid {
     margin-top: 4rem;
   }
+  .wrap-text {
+    margin: 0;
+  }
+
+  .wrap-form {
+    margin-top: 3rem;
+
+    .form-title {
+      padding-bottom: 1rem;
+      border-bottom: 0.1rem solid $fcF0;
+      font-size: 1.5rem;
+    }
+
+    .form-cont {
+      padding: 2.5rem 1rem 0;
+      .checkbox {
+        font-size: 1.5rem;
+        &:not(:first-child) {
+          margin-left: 2.6rem;
+        }
+      }
+      .apply-form:not(:first-child) {
+        margin-top: 2rem;
+      }
+      .btn-area {
+        margin: 4rem -1rem;
+      }
+    }
+  }
 }
