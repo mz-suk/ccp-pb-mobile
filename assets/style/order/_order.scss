@@ -16,6 +16,9 @@
     .title {
       font-size: 1.5rem;
     }
+    .wrap-check {
+      margin-top: 2.5rem;
+    }
   }
 
   .wrap-tab {
@@ -33,7 +36,7 @@
     height: 17rem;
     margin: 0 auto;
     box-sizing: border-box;
-    border: 0.1rem dashed $fc9;
+    border: 0.1rem dotted $fc9;
     border-radius: 2rem;
     font-size: 1.5rem;
     text-align: center;
@@ -1012,7 +1015,11 @@
 .terms-box {
   overflow: hidden;
   position: relative;
-  margin: 2rem 1rem 0;
+  color: $fc1;
+
+  &:not(:first-child) {
+    margin-top: 1.8rem;
+  }
 
   &.top-line {
     margin-top: 2.5rem;
@@ -1388,10 +1395,6 @@
     box-sizing: border-box;
     color: $fcF;
 
-    .brand {
-      font-size: 1.1rem;
-    }
-
     .num {
       font-size: 1.4rem;
       line-height: 1.4;
@@ -1401,7 +1404,6 @@
       font-size: 1.1rem;
       color: rgba($fcF, 0.7);
     }
-
     .checkbox-cycle {
       position: absolute;
       top: 2rem;

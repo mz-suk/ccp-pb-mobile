@@ -28,6 +28,9 @@ textarea {
   &::placeholder {
     color: $fc9;
   }
+  &:disabled {
+    color: #ddd;
+  }
 }
 textarea {
   min-height: 12rem;

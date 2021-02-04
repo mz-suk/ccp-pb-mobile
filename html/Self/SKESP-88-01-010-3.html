@@ -31,22 +31,39 @@
         </div>
       </header>
       <!-- //Header -->
+
       <!-- wrap-contents -->
       <div class="wrap-contents">
         <div class="wrap-order">
           <div class="accordion active">
             <!-- [D] accordion 펼침 상태 : .active 추가 -->
             <div class="accordion-title">
-              <p class="title">구매자 정보</p>
+              <p class="title">구매자 • 이용자 정보</p>
               <button type="button" class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
-              <dl class="customer-info type1">
-                <dt>구매자명 (예약자)</dt>
-                <dd>송헌호</dd>
-                <dt>구매자 휴대전화</dt>
-                <dd>010 - 1234 -5678</dd>
-              </dl>
+              <div class="form-div">
+                <p class="title">구매자명</p>
+                <div class="form-input">
+                  <input type="text" placeholder="이름을 입력해주세요." value="송헌호" disabled>
+                </div>
+              </div>
+              <div class="form-div">
+                <p class="title">구매자 휴대폰 번호</p>
+                <div class="form-input">
+                  <input type="text" placeholder="01012345678" value="01012345678" disabled>
+                </div>
+              </div>
+              <div class="form-div">
+                <p class="title">이용자 휴대폰 번호</p>
+                <div class="form-input">
+                  <input type="text" placeholder="01012345678">
+                </div>
+                <div class="wrap-check">
+                  <input type="checkbox" id="chk01">
+                  <label for="chk01">구매자 휴대폰 번호와 동일합니다.</label>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -57,43 +74,43 @@
             </div>
             <div class="accordion-cont">
               <dl class="define-list type3">
-                <dt>시간권 240분</dt>
+                <dt>99.9% 살균 인증 받은 스팀 세차 살균 인증 받은 스팀 세차</dt>
                 <dd class="num">1개<span><em>40,000</em>원</span></dd>
                 <dd class="replay-txt">
                   <i class="bg-icon reply-arrow"></i>
-                  <button type="button" class="btn-arrow size1"><span class="txt-under">쿠폰조회</span></button>
+                  <button type="button" class="btn-arrow size1"><span class="txt-under">쿠폰 조회하기</span></button>
                 </dd>
               </dl>
               <dl class="define-list type3">
-                <dt>시간권 120분</dt>
-                <dd class="num">2개<span><em>15,000</em>원</span></dd>
+                <dt>99.9% 살균 인증 받은 스팀 세차 살균 인증 받은 스팀 세차</dt>
+                <dd class="num">3개<span><em>15,000</em>원</span></dd>
                 <dd class="replay-txt">
                   <i class="bg-icon reply-arrow"></i>
-                  <button type="button" class="btn-arrow size1"><span class="txt-under">쿠폰조회</span></button>
+                  <button type="button" class="btn-arrow size1"><span class="txt-under">쿠폰 조회하기</span></button>
                 </dd>
               </dl>
               <dl class="define-list type3">
-                <dt>시간권 240분</dt>
-                <dd class="num">2개<span><em>5,000</em>원</span></dd>
+                <dt>99.9% 살균 인증 받은 스팀 세차 살균 인증 받은 스팀 세차</dt>
+                <dd class="num">1개<span><em>5,000</em>원</span></dd>
                 <dd class="replay-txt">
                   <i class="bg-icon reply-arrow"></i>
-                  <button type="button" class="btn-arrow size1"><span class="txt-under">쿠폰조회</span></button>
+                  <button type="button" class="btn-arrow size1"><span class="txt-under">쿠폰 조회하기</span></button>
                 </dd>
               </dl>
               <dl class="define-box total">
                 <dt>구매 총 금액</dt>
-                <dd><span>40,000</span>원</dd>
+                <dd><span>10,000</span>원</dd>
               </dl>
               <dl class="define-box charge">
-                <dt>쿠폰할인 금액</dt>
-                <dd><span>0</span>원</dd>
+                <dt>쿠폰할인</dt>
+                <dd><span>- 60,000</span>원</dd>
               </dl>
             </div>
           </div>
 
           <div class="accordion active">
             <div class="accordion-title">
-              <p class="title">포인트 할인</p>
+              <p class="title">포인트 사용</p>
               <button type="button" class="bg-icon toggle">펼침</button>
             </div>
             <div class="accordion-cont">
@@ -114,8 +131,12 @@
             <div class="accordion-cont">
               <div class="order-info">
                 <dl class="define-box">
-                  <dt>멤버십 이용금액</dt>
+                  <dt>상품 총 금액</dt>
                   <dd><em>40,000</em>원</dd>
+                </dl>
+                <dl class="define-box">
+                  <dt>옵션 총 금액</dt>
+                  <dd><em>20,000</em>원</dd>
                 </dl>
                 <dl class="define-list">
                   <dt>쿠폰할인</dt>
@@ -128,6 +149,18 @@
                 <dl class="define-box total">
                   <dt class="left">실 결제금액</dt>
                   <dd class="right"><span>56,000</span>원</dd>
+                </dl>
+                <dl class="define-box benefit">
+                  <dt class="left">혜택 총 금액
+                    <div class="wrap-tooltip"><!-- [D] 활성화 .active 추가 -->
+                      <button type="button" class="bg-icon tooltip2">툴팁</button>
+                      <div class="tooltip-box">
+                        <button type="button" class="bg-icon tooltip-close">닫기</button>
+                        <p>구매하실 상품 및 옵션의 정상가와<br/>실제 결제금액을 기준으로 계산됩니다.</p>
+                      </div>
+                    </div>
+                  </dt>
+                  <dd class="right"><span>35,000</span>원</dd>
                 </dl>
               </div>
             </div>
@@ -155,7 +188,7 @@
                     <button type="button" class="btn color3">
                       <i class="bg-icon kakaopay">kakao pay</i>
                     </button>
-                    <button type="button" class="btn color3">일반결제</button>
+                    <button type="button" class="btn color3">다른 결제수단</button>
                   </div>
                 </div>
               </div>
@@ -180,44 +213,30 @@
                   <dd class="right"><span>1,920</span>P</dd>
                 </dl>
                 <ul class="list-dot">
-                  <li>적립율은 실결제금액을 기준으로 계산됩니다.</li>
-                  <li>적립예정포인트는 실제 서비스 이용 완료 시점기준으로 7일 후에 실제 포인트로 전환 지급됩니다.</li>
-                  <li>적립된 포인트는 1원=1P로 환산되어 APP 내에 결제 시 할인하실 수 있습니다.</li>
+                  <li>적립율은 실 결제금액을 기준으로 계산됩니다.</li>
+                  <li>이용내역 메뉴의 서비스 사용완료 시점 기준으로 7일 후 실제 포인트가 지급되며, 다회차 서비스의 경우 전체 회차 사용완료 시에만 실제 포인트가 지급됩니다.</li>
+                  <li>포인트는 1원=1P로 환산되어 머핀 앱 내에 결제 시 포인트 할인으로 사용하실 수 있습니다.</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <div class="order-cont">
-            <div class="accordion type3 active">
-              <div class="accordion-title">
-                <p class="title">
-                  <input type="checkbox" id="allChk" />
-                  <label for="allChk">전체 동의하기</label>
-                </p>
-                <button type="button" class="bg-icon toggle">펼침</button>
-              </div>
-              <div class="accordion-cont">
-                <div class="terms-box">
-                  <input type="checkbox" id="terms1" />
-                  <label for="terms1">개인정보 제 3자 제공 동의</label>
-                  <button type="button" class="btn-arrow size1"><span class="txt-under">전문보기</span></button>
-                </div>
-                <div class="terms-box">
-                  <input type="checkbox" id="terms2" />
-                  <label for="terms2">이용약관 동의</label>
-                  <button type="button" class="btn-arrow size1"><span class="txt-under">전문보기</span></button>
-                </div>
-                <div class="terms-box">
-                  <input type="checkbox" id="terms3" />
-                  <label for="terms3">환불/취소규정에 대한 유의사항 동의</label>
-                  <button type="button" class="btn-arrow size1"><span class="txt-under">전문보기</span></button>
-                </div>
-              </div>
+            <div class="terms-box">
+              <p>개인정보 수집 이용 및 제 3자 제공 동의</p>
+              <button type="button" class="btn-arrow size1"><span class="txt-under">전문보기</span></button>
+            </div>
+            <div class="terms-box">
+              <p>환불/취소규정에 대한 유의사항 동의</p>
+              <button type="button" class="btn-arrow size1"><span class="txt-under">전문보기</span></button>
             </div>
             <div class="gray-box type1">
+              <p>본 상품은 입점판매자 세차왕에서 등록ㆍ판매하는 상품입니다.</p>
               <p>㈜SK에너지는 통신판매중개자로서 통신판매의 당사자가 아니며,<br/>입점판매자가 등록한 상품에 대한 거래인 경우 책임을 지지 않습니다.</p>
             </div>
+            <ul class="list-dot color3">
+              <li>위 내용을 확인하였으며, 결제에 동의합니다.</li>
+            </ul>
             <div class="wrap-btn">
               <button type="button" class="btn-arrow size1"><span class="txt-under">결제 취소하기</span></button>
             </div>
@@ -229,7 +248,6 @@
         </div>
       </div>
       <!-- //wrap-contents -->
-      <!-- Footer -->
     </div>
   </body>
 </html>

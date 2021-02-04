@@ -1178,7 +1178,6 @@
       width: 21.5rem;
       padding-right: 2.5rem;
       box-sizing: border-box;
-      @include clamp(1);
 
       &.replay-txt {
         float: left;
@@ -1190,6 +1189,9 @@
           color: $fc6;
         }
       }
+    }
+    dd {
+      margin-bottom: 0;
     }
     .num {
       overflow: hidden;
@@ -1203,6 +1205,7 @@
       float: none;
       clear: both;
       text-align: left;
+      padding-top: 2rem;
       &.type1 {
         overflow: hidden;
         color: $fc6;

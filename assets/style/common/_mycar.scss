@@ -362,11 +362,21 @@
   }
   &.type1 {
     display: block;
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 2rem 1.5rem;
     font-size: 1.1rem;
     text-align: center;
     color: $fc1;
+    p:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+    & + .list-dot {
+      margin-top: 2rem;
+      text-align: center;
+      li {
+        display: inline-block;
+      }
+    }
   }
   &.type2 {
     flex-wrap: wrap;
