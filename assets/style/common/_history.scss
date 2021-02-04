@@ -550,6 +550,14 @@
     margin: -4rem -2rem 0;
     padding: 0 2rem 2rem;
   }
+  .accordion.type4 {
+    margin-bottom: 3rem;
+    .list-dot {
+      li:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+  }
 }
 
 .top-info {

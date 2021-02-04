@@ -36,8 +36,10 @@
       <div class="wrap-contents">
         <div class="wrap-order-card">
           <div class="top-wrap-btn">
+            <button type="button" class="btn-arrow size1"><span class="txt-under">현금영수증 설정</span></button>
             <button type="button" class="btn-arrow size1"><span class="txt-under">결제 비밀번호 설정</span></button>
           </div>
+
           <div class="wrap-card">
             <div class="card color1">
               <div class="info">
@@ -50,11 +52,11 @@
                   <p class="brand">신한카드</p>
                   <p class="num">9490 **** **** 5200</p>
                   <p class="date">등록일 . 2020.06.10</p>
-                  <span class="logo-card"><img src="../../assets/img/layout/icon-card-visa.png" alt="현대카드"></span>
+                  <span class="logo-card"><img src="../../assets/img/layout/icon-card-visa.png" alt=""></span>
                 </div>
               </div>
               <div class="bottom">
-                <a href="javascript:;" class="link">SK주유소 이용금액 0.7% 할인</a>
+                <a href="javascript:;" class="link">주유 할인정보 설정</a>
                 <div class="wrap-tooltip">
                   <!-- [D] tooltip 활성화 .active 추가 -->
                   <button type="button" class="bg-icon tooltip2">툴팁</button>
@@ -66,6 +68,7 @@
               </div>
             </div>
 
+            <!-- [D] 카드 유효기간 만료된 경우 -->
             <div class="card color3">
               <div class="info">
                 <div class="checkbox-btn">
@@ -77,11 +80,11 @@
                   <p class="brand">현대카드</p>
                   <p class="num">9490 **** **** 5200</p>
                   <p class="date">등록일 . 2020.06.10</p>
-                  <span class="logo-card"><img src="../../assets/img/layout/icon-card-unionpay.png" alt="현대카드"></span>
+                  <span class="logo-card"><img src="../../assets/img/layout/icon-card-unionpay.png" alt=""></span>
                 </div>
               </div>
               <div class="bottom">
-                <a href="javascript:;" class="link">SK주유소 이용금액 0.7% 할인</a>
+                <a href="javascript:;" class="link">주유 할인정보 설정</a>
                 <div class="wrap-tooltip">
                   <button type="button" class="bg-icon tooltip2">툴팁</button>
                   <div class="tooltip-box">
@@ -90,11 +93,16 @@
                   </div>
                 </div>
               </div>
+              <div class="disabled">
+                <p class="text"><strong>사용불가</strong>유효기간이 만료되었습니다.</p>
+                <button type="button">삭제</button>
+              </div>
             </div>
+            <!-- //카드 유효기간 만료된 경우 -->
           </div>
 
           <div class="wrap-btn">
-            <button type="button" class="btn type4">새로운 결제수단 등록하기</button>
+            <button type="button" class="btn type4">새로운 결제카드 등록하기</button>
           </div>
         </div>
       </div>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">SK주유소 할인 체크</h1>
+          <div class="left">
+            <a href="javascript:;" class="bg-icon prev">이전페이지</a>
+          </div>
+          <div class="right">
+            <button type="button" class="btn-txt">적용안함</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="block-layout">
+            <div class="form-div">
+              <p class="title type1">카드를 검색해 주세요.</p>
+              <div class="form-search">
+                <input type="text" placeholder="검색할 카드를 입력해 주세요." />
+                <button type="button" class="btn-search" title="검색"><i class="bg-icon search"></i></button>
+              </div>
+            </div>
+            <p class="noti-txt ta-r">* 출처 : 카드사 홈페이지</p>
+            <!-- 검색어 입력시 나오는 결과 type-ing 클래스  -->
+            <div class="search-result type-ing">
+              <ul class="result-list">
+                <li>
+                  <a href="javascript:;">
+                    <p class="title"><span class="match">현대카드</span> ZERO Edition2(할인형) 모바일</p>
+                    <div class="desc">
+                      <p>5만원 이상 결제 시 5,000원 할인</p>
+                      <p class="sub-txt">전월실적 500,000원, 당월실적 300,000만원</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <p class="title"><span class="match">현대카드</span> ZERO Edition2(할인형) 모바일</p>
+                    <div class="desc">
+                      <p>주유 리터당 60원 할인</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <p class="title"><span class="match">현대카드</span> ZERO Edition2(할인형) 모바일</p>
+                    <div class="desc">
+                      <p>5만원 이상 결제 시 5,000원 할인</p>
+                      <p class="sub-txt">전월실적 500,000원, 당월실적 300,000만원</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="result-more">
+              <p class="more-text">원하시는 카드 정보가 없으신가요?</p>
+              <p class="more-text">다른 카드명으로 재검색하시거나 아래 버튼을 통해<br />직접 등록해보실 수 있습니다.</p>
+              <div class="btn-area">
+                <a href="javascript:;" class="btn color1">직접등록하기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>

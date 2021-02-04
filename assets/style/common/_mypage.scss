@@ -470,6 +470,15 @@
         height: 0.2rem;
         background: $fc6;
       }
+      &.error-msg {
+        font-size: 1.3rem;
+        li:before {
+          top: 0.6rem;
+          width: 0.3rem;
+          height: 0.3rem;
+          background: $gc3;
+        }
+      }
     }
     .error-msg {
       display: none;
@@ -557,6 +566,7 @@
       padding-bottom: 1.3rem;
     }
   }
+
   .wrap-check {
     border-top: 0.1rem solid $fcF0;
     margin-top: 4rem;
@@ -565,6 +575,11 @@
     label {
       margin-left: 1rem;
       font-size: 1.5rem;
+      letter-spacing: -0.02rem;
     }
+  }
+
+  .btn-area.grid {
+    margin-top: 4rem;
   }
 }
