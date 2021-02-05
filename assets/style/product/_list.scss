@@ -152,9 +152,10 @@
 
     .title {
       display: block;
-      margin-bottom: 0.4rem;
-      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.7rem;
       color: $fc1;
+      line-height: 1.4;
       word-break: break-all;
       @include clamp(2);
     }
@@ -238,6 +239,7 @@
     .btn {
       width: 100%;
       margin-top: 2rem;
+      font-size: 1.5rem;
 
       .bg-icon {
         width: 1.6rem;
@@ -260,10 +262,17 @@
   .wrap-checkbox {
     display: flex;
     align-items: center;
-    margin-top: 2.5rem;
+    margin-left: -1rem;
     padding: 1rem 0.5rem 0;
-    border-top: 0.1rem solid $fcE4;
 
+    &:before {
+      display: block;
+      width: 100%;
+      height: 0.1rem;
+      margin: 1.5rem 0 1rem 0.5rem;
+      background: $fcE4;
+      content: "";
+    }
     label {
       width: 5.6rem;
       height: 3rem;
@@ -272,37 +281,22 @@
       font-size: 1.2rem;
       line-height: 3rem;
     }
-
     .text-box {
       width: 100%;
-      margin: 1rem 0.5rem 0;
+      margin: 1rem 0.5rem 0 1rem;
       padding: 1.2rem 0;
       color: $fc1;
       border: none;
       background: $fcF0;
     }
-
     .wrap-more {
       flex: 1;
       margin: 1rem 1.1rem 0 0;
       text-align: right;
     }
-
     .btn {
       margin: 0 2.5rem;
     }
-  }
-
-  // .checkbox:nth-of-type(4n) {
-  //   margin-right: 1rem;
-  // }
-
-  // .checkbox:nth-of-type(5n) {
-  //   margin-right: 0;
-  // }
-
-  .wrap-checkbox {
-    margin-left: -1rem;
   }
 
   .checkbox {

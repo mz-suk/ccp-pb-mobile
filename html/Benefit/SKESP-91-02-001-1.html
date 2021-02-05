@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">쿠폰함</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="coupon-cont">
+          <div class="top-banner">
+            <button type="button" class="banner"><img src="../../assets/img/layout/img-banner-01.png" alt=""></button>
+          </div>
+          <ul class="list-link">
+            <li>
+              <a href="javascript:;">
+                <p class="title"><i class="bg-icon coupon-label"></i>내 쿠폰</p>
+                <p class="txt"><span>12</span>장</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <p class="title"><i class="bg-icon coupon-label-type1"></i>다운 가능 쿠폰</p>
+                <p class="txt"><span>5</span>장</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <p class="title"><i class="bg-icon coupon-label-type2"></i>쿠폰 등록하기</p>
+              </a>
+            </li>
+          </ul>
+          <div class="desc-area">
+            <ul class="list-dot type1">
+              <li>머핀 쿠폰 안내
+                <ul class="list-dot type2">
+                  <li>제휴 세차 쿠폰의 사용완료 및 사용기간이 만료된 쿠폰은 목록 에서 자동으로 삭제 처리됩니다</li>
+                  <li>주유 사용쿠폰의 사용완료 및 사용기간이 만료된 쿠폰은 [완료쿠폰 보기]
+                    에서 6개월 동안 확인 하실 수 있습니다.</li>
+                  <li>쿠폰은 정해진 기간 동안 사용이 유효합니다. 쿠폰의 사용기간을 확인해주세요.</li>
+                  <li>상품할인 쿠폰은 상품 1개에 대해 사용 가능하며, 상품 주문 결제 시 할인혜택을 받을 실 수 있습니다.</li>
+                  <li>부당한 방법으로 획득한 쿠폰 발견 시 목록에서 자동 삭제 처리 될 수 있습니다.</li>
+                </ul>
+              </li>
+              <li>무료 자동세차쿠폰 유의사항
+                <ul class="list-dot type2">
+                  <li>기본형 무료 세차(외부 자동 세차 기준)</li>
+                  <li>머핀 가맹 주요소에서만 사용가능 합니다.</li>
+                  <li>자동세차 진입 불가차량은 서비스 제공이 불가할 수 있습니다.</li>
+                  <li>주유소에 따라 물기제거 서비스는 제공하지 않을 수 있습니다.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
