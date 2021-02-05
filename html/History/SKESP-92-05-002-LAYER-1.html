@@ -19,58 +19,102 @@
   </head>
 
   <body>
-    <div id="container">
-      <!-- Header -->
-      <header class="header header-sub">
-        <h1 class="title">{{ title }}</h1>
-        <div class="left">
-          <button type="button" class="bg-icon prev">이전페이지</button>
-        </div>
-        <div class="right">
-          <button type="button" class="bg-icon menu">메뉴</button>
-        </div>
-      </header>
-      <!-- //Header -->
+    <div id="container"></div>
 
-      <!-- Wrap-contents -->
-      <div class="wrap-contents"></div>
-      <!-- //Wrap-contents -->
-
-      <!-- Footer -->
-    </div>
-
-    <!-- Layer Pop -->
-    <div class="wrapper-layer pos-bottom">
+     <!-- Layer Pop -->
+     <div class="wrapper-layer pos-bottom">
       <div class="wrap-layer">
         <div class="inner-layer">
           <div class="layer-cont">
             <div class="title-sub">
-              <p class="title"><i class="bg-icon filter-sorting"></i>리스트 정렬</p>
+              <p class="title"><i class="bg-icon oil"></i>유종</p>
             </div>
             <div class="wrap-checkbox">
               <div class="checkbox type5">
-                <input type="radio" id="chk7" name="sorting" checked />
-                <label for="chk7">최근이용순</label>
+                <input type="radio" id="rdo1" name="group1" checked />
+                <label for="rdo1">휘발유</label>
               </div>
               <div class="checkbox type5">
-                <input type="radio" id="chk7" name="sorting" />
-                <label for="chk7">거리순</label>
+                <input type="radio" id="rdo2" name="group1" />
+                <label for="rdo2">경유</label>
               </div>
               <div class="checkbox type5">
-                <input type="radio" id="chk8" name="sorting" />
-                <label for="chk8">평점순</label>
-              </div>
-              <div class="checkbox type5">
-                <input type="radio" id="chk9" name="sorting" />
-                <label for="chk9">리뷰순</label>
+                <input type="radio" id="rdo3" name="group1" />
+                <label for="rdo3">고급휘발유</label>
               </div>
             </div>
           </div>
 
-          <div class="wrap-layer-btn">
-            <button type="button" class="btn-refresh"><i class="bg-icon refresh"></i>초기화</button>
-            <button type="button" class="btn type2 color4">적용하기</button>
+          <div class="layer-cont">
+            <div class="title-sub">
+              <p class="title"><i class="bg-icon gas2"></i>주유소 유형</p>
+            </div>
+            <div class="wrap-checkbox">
+              <div class="checkbox type5">
+                <input type="radio" id="rdo4" name="group2" checked />
+                <label for="rdo4">전체</label>
+              </div>
+              <div class="checkbox type5">
+                <input type="radio" id="rdo5" name="group2" />
+                <label for="rdo5">직용</label>
+              </div>
+              <div class="checkbox type5">
+                <input type="radio" id="rdo6" name="group2" />
+                <label for="rdo6">자영</label>
+              </div>
+            </div>
           </div>
+
+          <div class="layer-cont">
+            <div class="title-sub">
+              <p class="title"><i class="bg-icon service-type"></i>서비스 유형</p>
+            </div>
+            <div class="wrap-checkbox">
+              <div class="checkbox type5">
+                <input type="radio" id="rdo6" name="group3" checked />
+                <label for="rdo6">전체</label>
+              </div>
+              <div class="checkbox type5">
+                <input type="radio" id="rdo7" name="group3" />
+                <label for="rdo7">일반</label>
+              </div>
+              <div class="checkbox type5">
+                <input type="radio" id="rdo8" name="group3" />
+                <label for="rdo8">셀프</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="layer-cont">
+            <div class="title-sub">
+              <p class="title"><i class="bg-icon additionalservice"></i>부가 서비스</p>
+            </div>
+            <div class="wrap-checkbox">
+              <div class="checkbox type5">
+                <input type="checkbox" id="chk1" name="" checked />
+                <label for="chk1">세차</label>
+              </div>
+              <div class="checkbox type5">
+                <input type="checkbox" id="chk2" name="" />
+                <label for="chk2">편의점</label>
+              </div>
+              <div class="checkbox type5">
+                <input type="checkbox" id="chk3" name="" />
+                <label for="chk3">경정비</label>
+              </div>
+              <div class="checkbox type5">
+                <input type="checkbox" id="chk4" name="" />
+                <label for="chk4">이벤트</label>
+              </div>
+              <div class="checkbox type5">
+                <input type="checkbox" id="chk5" name="" />
+                <label for="chk5">보이스주유</label>
+              </div>
+            </div>
+          </div>
+
+
+          <button type="button" class="btn type2 color4">적용하기</button>
         </div>
 
         <button type="button" class="bg-icon layer-close">레이어팝업 닫기</button>

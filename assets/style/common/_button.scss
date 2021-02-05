@@ -132,6 +132,13 @@ a {
     background: linear-gradient(to right, $gc3 0%, $gc4 100%);
   }
 
+  &.color13 {
+    border: 0;
+    color: $fc1;
+    border-color: #fccb3a;
+    background-color: #fddb2b;
+  }
+
   &:disabled,
   &[disabled] {
     color: $fcF;

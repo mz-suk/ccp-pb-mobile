@@ -37,12 +37,8 @@
         <div class="bookmark-cont">
           <div class="wrap-tab type2">
             <ul class="tab-menu">
-              <li>
-                <button type="button">주유 <em>(6)</em></button>
-              </li>
-              <li class="active">
-                <button type="button">세차 <em>(17)</em></button>
-              </li>
+              <li><button type="button">주유</button></li>
+              <li class="active"><button type="button">세차</button></li>
             </ul>
           </div>
           <div class="wrap-tab-scroll type2">
@@ -63,13 +59,15 @@
           </div>
           <div class="wrap-filter">
             <div class="left">
-              <p class="desc">9개의 세차장</p>
+              <p class="desc">머핀 제휴 셀프세차장입니다.</p>
             </div>
             <div class="right">
               <button type="button" class="bg-icon filter">필터</button>
+              <button type="button" class="bg-icon refresh">새로고침</button>
             </div>
           </div>
           <div class="list-content">
+            <!-- 손세차 -->
             <div class="list-item">
               <div class="item-top">
                 <div class="thumbnail"><img src="../../assets/img/temp/list-thumb-1.png" alt="" /></div>
@@ -95,6 +93,9 @@
                 </div>
               </div>
             </div>
+            <!-- //손세차 -->
+
+            <!-- 셀프세차 -->
             <div class="list-item">
               <div class="item-top">
                 <div class="thumbnail"><img src="../../assets/img/temp/list-thumb-1.png" alt="" /></div>
@@ -116,54 +117,18 @@
                   <li class="tag"><i class="bg-icon tag5"></i>개인용품</li>
                 </ul>
                 <div class="wrap-btn">
-                  <a href="javascript:;" class="btn">예약하기</a>
+                  <a href="javascript:;" class="btn">1대예약</a>
+                  <a href="javascript:;" class="btn">단체예약</a>
                 </div>
               </div>
             </div>
+            <!-- //셀프세차 -->
           </div>
+          <button type="button" class="btn-more"><span class="more-text">더보기</span></button>
         </div>
-        <div class="toast-area">즐겨찾기에 추가 되었습니다.</div>
+        <!-- <div class="toast-area">즐겨찾기에 추가 되었습니다.</div> -->
       </div>
       <!-- //Wrap-contents -->
-
-      <!-- Footer -->
     </div>
-
-    <!-- Quick-menu -->
-    <div class="quick-menu">
-      <ul class="quick-menu-list">
-        <li><!-- [D] 활성화 .active 추가 -->
-          <a href="#">
-            <i class="bg-icon home"></i>
-            <span class="menu-name">홈</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon oiling"></i>
-            <span class="menu-name">주유</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon wash"></i>
-            <span class="menu-name">세차</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon membership"></i>
-            <span class="menu-name">멤버십</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon my-muffin"></i>
-            <span class="menu-name">My</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- //Quick-menu -->
   </body>
 </html>
