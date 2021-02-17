@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_360396" data-name="사각형 360396" width="20" height="20" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_oil_20" transform="translate(10 10)">
+    <g id="icon_oil_20-2" data-name="icon_oil_20" transform="translate(-10 -10)" clip-path="url(#clip-path)">
+      <g id="그룹_486127" data-name="그룹 486127" clip-path="url(#clip-path)">
+        <g id="그룹_486124" data-name="그룹 486124" opacity="0">
+          <g id="그룹_486123" data-name="그룹 486123" clip-path="url(#clip-path)">
+            <rect id="사각형_360391" data-name="사각형 360391" width="20" height="20" fill="#f0f"/>
+          </g>
+        </g>
+        <g id="그룹_486126" data-name="그룹 486126" opacity="0">
+          <g id="그룹_486125" data-name="그룹 486125" clip-path="url(#clip-path)">
+            <rect id="사각형_360393" data-name="사각형 360393" width="20" height="20" fill="#f0f"/>
+          </g>
+        </g>
+        <path id="패스_891764" data-name="패스 891764" d="M4.2,3.3V.8H8.7V3.3" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="패스_891765" data-name="패스 891765" d="M3.1,8.1V19.3H16.9V9.1L10.3,3.6H3.1Z" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <line id="선_135976" data-name="선 135976" x1="2.3" y1="1.9" transform="translate(8.5 6.4)" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_135977" data-name="선 135977" x1="2.7" y1="2.2" transform="translate(10.8 8.3)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

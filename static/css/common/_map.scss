@@ -12,6 +12,7 @@
 }
 
 .search-result {
+  padding-bottom: 1.8rem;
   &.type-ing {
     .desc {
       padding-left: 0;
@@ -46,9 +47,15 @@
   }
   li {
     position: relative;
-    padding: 2.3rem 1rem;
+    padding: 2.5rem 1rem;
     color: $fc1;
     border-bottom: 0.1rem solid $fcF0;
+
+    &:last-child {
+      padding-bottom: 3.5rem;
+      border-bottom: 0;
+    }
+
     .active {
       .title,
       .match,
@@ -122,12 +129,12 @@
 .result-more {
   position: relative;
   border-top: 0.8rem solid $fcF9;
-  padding: 4rem 2rem 0;
-  margin: 0 -2rem 0;
+  padding: 4rem 2rem 2rem;
+  margin: 2.5rem -2rem 0;
   text-align: center;
   .more-text {
     margin-top: 1rem;
-    line-height: 2rem;
+    line-height: 1.5;
   }
   .more-text:first-of-type {
     margin-top: 0;
@@ -135,7 +142,7 @@
     color: $fc1;
   }
   .btn-area {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 }
 

@@ -486,7 +486,7 @@
   }
 
   .desc-area {
-    margin-top: 4rem;
+    margin: 4rem -1rem 0 0;
 
     .list-dot.type1 {
       > li:not(:first-child) {
@@ -590,5 +590,12 @@
       color: $fc9;
       font-size: 1.2rem;
     }
+  }
+}
+
+.top-banner {
+  margin: -4rem -2rem 1rem;
+  img {
+    width: 100%;
   }
 }

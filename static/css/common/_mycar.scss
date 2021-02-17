@@ -178,6 +178,13 @@
   .reeference-mark {
     margin-top: 1.5rem;
   }
+
+  .tab-checkbox {
+    padding: 2.5rem 0 1.5rem;
+  }
+  .tab-checkbox-cont {
+    padding: 0;
+  }
 }
 
 //fix-footer
@@ -211,6 +218,13 @@
     }
     em {
       font-size: 1.8rem;
+    }
+  }
+
+  .banner {
+    width: 100%;
+    img {
+      width: 100%;
     }
   }
 }
@@ -355,11 +369,21 @@
   }
   &.type1 {
     display: block;
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 2rem 1.5rem;
     font-size: 1.1rem;
     text-align: center;
     color: $fc1;
+    p:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+    & + .list-dot {
+      margin-top: 2rem;
+      text-align: center;
+      li {
+        display: inline-block;
+      }
+    }
   }
   &.type2 {
     flex-wrap: wrap;
@@ -488,12 +512,13 @@
   }
 }
 .detail-introduce {
-  margin-top: 2.25rem;
+  margin-top: 2.5rem;
   .row-txt {
+    margin-top: 1.5rem;
     line-height: 1.8rem;
   }
   .thumb {
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
   }
   .price-box {
     .discount {

@@ -150,12 +150,13 @@
   }
 
   .wrap-benefit {
-    margin: 3rem 0 4rem;
-    border-top: 0.1rem solid $fc1;
+    margin: 3rem 0 0;
+    padding-bottom: 6rem;
   }
 
   .tbl-grade {
     width: 100%;
+    border-top: 0.1rem solid $fc1;
 
     tr:first-child {
       td {
@@ -236,6 +237,7 @@
       .point {
         position: relative;
         padding-left: 2.7rem;
+        color: $fc1;
 
         &:before {
           position: absolute;
@@ -266,7 +268,7 @@
   }
 
   .wrap-benefit-coupon {
-    margin-top: 4rem;
+    margin: 4rem 0;
 
     .title {
       padding-bottom: 1.5rem;
@@ -301,6 +303,10 @@
         margin-top: 1.3rem;
       }
     }
+  }
+
+  .top-banner {
+    margin-bottom: 2.5rem;
   }
 }
 
