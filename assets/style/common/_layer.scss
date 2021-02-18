@@ -81,7 +81,8 @@
       }
     }
     &.position1 {
-      top: calc((100% - 5.5rem) * 0.4);
+      // top: calc((100% - 5.5rem) * 0.4);
+      top: calc((100% - 5.5rem - 8rem));
     }
     &.position2 {
       top: calc(100% - 3rem);
@@ -264,7 +265,7 @@
     }
 
     &.scroll-cont {
-      max-height: 41rem;
+      // max-height: 41rem;
       @include scroll(y);
     }
 
