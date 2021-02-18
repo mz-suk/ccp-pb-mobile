@@ -74,7 +74,8 @@
       z-index: 3;
       height: 4.6rem;
       padding-left: 2.5rem;
-      background: url(~assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem no-repeat;
+      background: url(~assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem
+        no-repeat;
       color: $fc1;
       font-size: 1.1rem;
       line-height: 3.4rem;
@@ -85,7 +86,8 @@
         height: 4.6rem;
         padding: 1rem 1rem 0 1.4rem;
         line-height: 1.35rem;
-        background: url(~assets/img/layout/bg-label-right.png) 100% 0 / auto 4.6rem no-repeat;
+        background: url(~assets/img/layout/bg-label-right.png) 100% 0 /
+          auto 4.6rem no-repeat;
         box-sizing: border-box;
         text-decoration: underline;
       }
@@ -96,7 +98,8 @@
         left: 0.8rem;
         width: 2.8rem;
         height: 2.8rem;
-        background: url(~assets/img/layout/icon-confusion-off.svg) 0 0 / 100% auto no-repeat;
+        background: url(~assets/img/layout/icon-confusion-off.svg) 0 0 /
+          100% auto no-repeat;
         content: "";
       }
 
@@ -626,7 +629,8 @@
         right: 2rem;
         width: 11rem;
         height: 11rem;
-        background: url(~assets/img/layout/icon-carwash.svg) 0 0 / 100% auto no-repeat;
+        background: url(~assets/img/layout/icon-carwash.svg) 0 0 / 100%
+          auto no-repeat;
         content: "";
       }
       & + .wrap-filter-tab {
@@ -1400,7 +1404,8 @@
       }
 
       &:after {
-        background: url("~assets/img/layout/icon-chk-on.svg") no-repeat center center;
+        background: url("~assets/img/layout/icon-chk-on.svg") no-repeat
+          center center;
         background-size: 100% auto;
       }
     }
@@ -1461,7 +1466,8 @@
         padding-left: 2.5rem;
         font-size: 1.5rem;
         color: $fcF;
-        background: url(~assets/img/layout/icon-checkbox-white.png) no-repeat 0 center / 2rem 2rem;
+        background: url(~assets/img/layout/icon-checkbox-white.png)
+          no-repeat 0 center / 2rem 2rem;
         z-index: 6;
         transform: translate(-50%, -40%);
       }
@@ -1472,16 +1478,19 @@
   }
 
   &.coupon-type {
-    input[type="checkbox"] {
+    input[type="checkbox"],
+    input[type="radio"] {
       position: absolute;
       opacity: 0;
     }
-    input[type="checkbox"] + label {
+    input[type="checkbox"] + label,
+    input[type="radio"] + label {
       margin: 0;
       background: $fcF9;
       transition: all 0.2s ease;
     }
-    input[type="checkbox"]:checked + label {
+    input[type="checkbox"]:checked + label,
+    input[type="radio"]:checked + label {
       background: $fcF;
       border-color: $fc1;
       .check {
@@ -1490,7 +1499,7 @@
     }
 
     .info-type-cont {
-      padding: 2.5rem 2.5rem 3.5rem;
+      padding: 2.5rem 7rem 3.5rem 2.5rem;
       background: $fcF;
 
       .title {
@@ -1608,7 +1617,8 @@
           left: 50%;
           z-index: 1;
           padding-left: 2.5rem;
-          background: url(~assets/img/layout/icon-chk-white.svg) 0 0 / 2rem no-repeat;
+          background: url(~assets/img/layout/icon-chk-white.svg) 0 0 / 2rem
+            no-repeat;
           color: $fcF;
           font-size: 1.5rem;
           line-height: 1.5;
