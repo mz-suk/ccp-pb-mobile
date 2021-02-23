@@ -373,6 +373,8 @@
   .question-top {
     display: flex;
     align-items: center;
+    border-bottom: 0.1rem solid $fcF0;
+    padding-bottom: 1.5rem;
     .state {
       font-weight: 700;
       color: $fc1;
@@ -394,6 +396,7 @@
     padding-left: 1.5rem;
     line-height: 1.4;
     color: $fc1;
+    font-weight: bold;
     &:before {
       content: "Q";
       position: absolute;
@@ -401,6 +404,10 @@
       left: 0;
       font-weight: 700;
     }
+  }
+  .q-cont {
+    padding: 1.5rem 0 0 1.5rem;
+    color: $fc1;
   }
   .a-txt {
     position: relative;
