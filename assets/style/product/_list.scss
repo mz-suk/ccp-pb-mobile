@@ -2854,14 +2854,17 @@
     border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
     .disabled {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       top: 0;
       left: 0;
       box-sizing: border-box;
       height: 100%;
       width: 100%;
-      padding-top: 6.6rem;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       text-align: center;
       background: rgba(0, 0, 0, 0.7);
       z-index: 30;
@@ -2872,22 +2875,34 @@
         padding-bottom: 1rem;
       }
       button {
-        width: 5.5rem;
+        width: 6.5rem;
         height: 3rem;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         background: $fcF;
         border-radius: 2.5rem;
         color: $fc1;
         text-align: center;
         line-height: 1;
         font-size: 1.3rem;
+
+        &:after {
+          display: inline-block;
+          width: 1.2rem;
+          height: 1.2rem;
+          margin-left: 0.5rem;
+          background: url(../../assets/img/layout/icon-close-type2.svg) 0 0/100% auto no-repeat;
+          vertical-align: top;
+          -webkit-filter: brightness(0);
+          filter: brightness(0);
+          content: "";
+        }
       }
     }
 
     .address-nick {
       margin-top: 1rem;
       padding-left: 1rem;
-      font-size: 2.1rem;
+      font-size: 1.8rem;
       color: $fc1;
     }
     .address-info {

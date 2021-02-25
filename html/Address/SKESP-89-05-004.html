@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">선택한 주소 확인</h1>
+          <div class="left">
+            <button type="button" class="bg-icon prev">이전페이지</button>
+          </div>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="map-wrap full-height"></div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-bottom none-mask">
+      <div class="wrap-layer">
+        <div class="inner-layer">
+          <div class="layer-cont">
+            <div class="search-address">
+              <p class="title-nick color1"><span>출장세차, 새벽세차</span> 모두 가능한 주소입니다.<br/>별명을 입력하신 후 등록을 완료해주세요.</p>
+              <dl class="nickname-info">
+                <dt>별명</dt>
+                <dd>
+                  <div class="form-input">
+                    <input type="text" placeholder="10자 이내로 입력 (집, 회사, 사무실)">
+                  </div>
+                </dd>
+                <dt>주소</dt>
+                <dd>
+                  서울 서초구 신반포로 270 반포자이
+                  <p>서울 서초구 반포동 20-43</p>
+                </dd>
+              </dl>
+            </div>
+            <div class="wrap-btn">
+              <button type="button" class="btn color1">등록</button>
+              <!-- <button type="button" class="btn color1" disabled>등록</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
