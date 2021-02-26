@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">주소 관리</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents"></div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+
+    </div>
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-bottom">
+      <div class="wrap-layer">
+        <div class="inner-layer">
+          <div class="layer-cont">
+            <div class="search-address">
+              <p class="nick-input">수정하실 별명을 입력해주세요.</p>
+              <div class="form-input">
+                <input type="text" placeholder="10자 이내로 입력 (집, 회사, 사무실)">
+              </div>
+            </div>
+            <div class="wrap-btn">
+              <button type="button" class="btn color1">수정완료</button>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="bg-icon layer-close">
+          레이어팝업 닫기
+        </button>
+      </div>
+      <div class="mask"></div>
+    </div>
+  <!-- //Layer Pop -->
+  </body>
+</html>

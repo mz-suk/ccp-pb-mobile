@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">주변 새벽세차 가능한 아파트</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="block-layout">
+            <div class="address-apply">
+              <p class="apply-info">'반포동' 주변 새벽세차 가능한 아파트입니다.</p>
+              <div class="apply-form-info">
+                <p>아래 원하시는 아파트 주소를 클릭하시면<br/>기존에 검색하신 주소가 변경됩니다.</p>
+              </div>
+            </div>
+            <div class="search-result type-ing">
+              <ul class="result-list">
+                <li class="border-top">
+                  <a href="#">
+                    <!-- <p class="title">한신아파트</p>-->
+                    <div class="desc">
+                      <p class="new-address">서울 서초구 신반포로</p>
+                      <p class="old-address">서울 서초구 반포동</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title">한신아파트</p>
+                    <div class="desc">
+                      <p class="new-address">서울 서초구 신반포로 27</p>
+                      <p class="old-address">서울 서초구 반포동 20-41</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title">반포자이</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 서초구 신반포로 270 반포자이</p>
+                      <p class="old-address">서울 서초구 반포동 20-43</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title">반포자이 (정문)</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 서초구 신반포로 270 반포자이 (정문)</p>
+                      <p class="old-address">서울 서초구 반포동 20-43</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title">반포자이 (후문)</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 서초구 신반포로 270 반포자이 (후문)</p>
+                      <p class="old-address">서울 서초구 반포동 20-43</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="title">반포자이 GATE1 주차장</p>
+                    <div class="desc">
+                      <p class="new-address">서울시 서초구 신반포로 270</p>
+                      <p class="old-address">서울 서초구 반포동 20-43</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>

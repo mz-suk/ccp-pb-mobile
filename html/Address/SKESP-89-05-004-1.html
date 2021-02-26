@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">선택한 주소 확인</h1>
+          <div class="left">
+            <button type="button" class="bg-icon prev">이전페이지</button>
+          </div>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <div class="wrap-contents">
+          <div class="map-wrap full-height"></div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-bottom none-mask">
+      <div class="wrap-layer">
+        <div class="inner-layer">
+          <div class="layer-cont">
+            <div class="search-address">
+              <p class="title-nick color1"><span>출장세차, 새벽세차</span> 불가능한 주소로 등록이 불가능합니다.<br/>빠른 시일 내에 서비스 제공해드릴 수 있도록 하겠습니다.</p>
+            </div>
+            <div class="wrap-btn">
+              <button type="button" class="btn color1">다음 주소로 검색해보기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
