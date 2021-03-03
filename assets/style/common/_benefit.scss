@@ -139,11 +139,6 @@
       }
       .letter {
         display: block;
-        em {
-          &.active {
-            color: #111;
-          }
-        }
       }
     }
 
@@ -161,11 +156,6 @@
       background-color: $fcF;
       color: $fc9;
       text-align: right;
-      em {
-        &.acitve {
-          color: #111;
-        }
-      }
     }
   }
 
