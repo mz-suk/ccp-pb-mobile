@@ -84,11 +84,9 @@
 
   &.type2 {
     margin-top: 3rem;
-    padding-bottom: 2.5rem;
     white-space: nowrap;
     .tab-scroll-menu {
       background: none;
-
       li {
         &:not(:first-child) {
           margin-left: 0.7rem;
@@ -98,6 +96,16 @@
           border: 0;
         }
       }
+    }
+    &:after {
+      display: block;
+      position: static;
+      margin-top: 2.5rem;
+    }
+    & + .event-list-wrap {
+      position: relative;
+      margin-top: -0.1rem;
+      background: #fff;
     }
   }
 }
