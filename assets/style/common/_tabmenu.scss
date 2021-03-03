@@ -112,7 +112,8 @@
       position: static;
       margin-top: 2.5rem;
     }
-    & + .event-list-wrap {
+    & + .event-list-wrap,
+    & + .wrap-empty {
       position: relative;
       margin-top: -0.1rem;
       background: #fff;
