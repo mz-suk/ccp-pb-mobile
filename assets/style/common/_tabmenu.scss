@@ -97,6 +97,16 @@
         &.active {
           border: 0;
         }
+        .checkbox {
+          &.type5 {
+            input[type="radio"] + label {
+              padding: 0 1.6rem 0 2.4rem;
+              &:before {
+                display: block;
+              }
+            }
+          }
+        }
       }
     }
   }

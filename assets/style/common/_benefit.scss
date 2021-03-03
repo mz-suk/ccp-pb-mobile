@@ -103,8 +103,6 @@
   }
 
   .wrap-label {
-    margin-bottom: 1.5rem;
-
     .label {
       display: inline-block;
       padding: 0 0.8rem;
@@ -115,6 +113,7 @@
       color: $fcF;
       font-size: 0.9rem;
       line-height: 2.2rem;
+      margin-bottom: 1.5rem;
 
       &:not(:first-child) {
         margin-left: 0.3rem;
@@ -140,6 +139,11 @@
       }
       .letter {
         display: block;
+        em {
+          &.active {
+            color: #111;
+          }
+        }
       }
     }
 
@@ -157,6 +161,11 @@
       background-color: $fcF;
       color: $fc9;
       text-align: right;
+      em {
+        &.acitve {
+          color: #111;
+        }
+      }
     }
   }
 
@@ -348,6 +357,18 @@
           font-weight: normal;
           font-size: 1.2rem;
           color: $gc3;
+          position: relative;
+          padding-left: 0.8rem;
+
+          &:before {
+            position: absolute;
+            top: 50%;
+            left: 0rem;
+            width: 0.6rem;
+            height: 0.1rem;
+            background: $fc6;
+            content: "";
+          }
         }
       }
     }
