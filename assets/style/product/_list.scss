@@ -74,8 +74,7 @@
       z-index: 3;
       height: 4.6rem;
       padding-left: 2.5rem;
-      background: url(../../assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem
-        no-repeat;
+      background: url(../../assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem no-repeat;
       color: $fc1;
       font-size: 1.1rem;
       line-height: 3.4rem;
@@ -86,8 +85,7 @@
         height: 4.6rem;
         padding: 1rem 1rem 0 1.4rem;
         line-height: 1.35rem;
-        background: url(../../assets/img/layout/bg-label-right.png) 100% 0 /
-          auto 4.6rem no-repeat;
+        background: url(../../assets/img/layout/bg-label-right.png) 100% 0 / auto 4.6rem no-repeat;
         box-sizing: border-box;
         text-decoration: underline;
       }
@@ -98,8 +96,7 @@
         left: 0.8rem;
         width: 2.8rem;
         height: 2.8rem;
-        background: url(../../assets/img/layout/icon-confusion-off.svg) 0 0 /
-          100% auto no-repeat;
+        background: url(../../assets/img/layout/icon-confusion-off.svg) 0 0 / 100% auto no-repeat;
         content: "";
       }
 
@@ -629,8 +626,7 @@
         right: 2rem;
         width: 11rem;
         height: 11rem;
-        background: url(../../assets/img/layout/icon-carwash.svg) 0 0 / 100%
-          auto no-repeat;
+        background: url(../../assets/img/layout/icon-carwash.svg) 0 0 / 100% auto no-repeat;
         content: "";
       }
       & + .wrap-filter-tab {
@@ -1404,8 +1400,7 @@
       }
 
       &:after {
-        background: url("../../assets/img/layout/icon-chk-on.svg") no-repeat
-          center center;
+        background: url("../../assets/img/layout/icon-chk-on.svg") no-repeat center center;
         background-size: 100% auto;
       }
     }
@@ -1466,8 +1461,7 @@
         padding-left: 2.5rem;
         font-size: 1.5rem;
         color: $fcF;
-        background: url(../../assets/img/layout/icon-checkbox-white.png)
-          no-repeat 0 center / 2rem 2rem;
+        background: url(../../assets/img/layout/icon-checkbox-white.png) no-repeat 0 center / 2rem 2rem;
         z-index: 6;
         transform: translate(-50%, -40%);
       }
@@ -1617,8 +1611,7 @@
           left: 50%;
           z-index: 1;
           padding-left: 2.5rem;
-          background: url(../../assets/img/layout/icon-chk-white.svg) 0 0 / 2rem
-            no-repeat;
+          background: url(../../assets/img/layout/icon-chk-white.svg) 0 0 / 2rem no-repeat;
           color: $fcF;
           font-size: 1.5rem;
           line-height: 1.5;
@@ -2897,8 +2890,7 @@
           width: 1.2rem;
           height: 1.2rem;
           margin-left: 0.5rem;
-          background: url(../../assets/img/layout/icon-close-type2.svg) 0 0/100%
-            auto no-repeat;
+          background: url(../../assets/img/layout/icon-close-type2.svg) 0 0/100% auto no-repeat;
           vertical-align: top;
           -webkit-filter: brightness(0);
           filter: brightness(0);
@@ -2965,6 +2957,440 @@
             width: 0.1rem;
             height: 2rem;
             background: $fcE4;
+          }
+        }
+      }
+    }
+  }
+}
+
+//추가
+
+.wrap-mymuffin {
+  padding-bottom: 4rem;
+  .define-box.total {
+    margin-top: 0;
+  }
+}
+
+.mymuffin-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem 3rem;
+  box-sizing: border-box;
+  border-top: 0.8rem solid $fcF9;
+  border-bottom: 0.1rem solid $fcF0;
+  color: $fc1;
+
+  .text-link {
+    color: $fc1;
+    .refresh {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+  .count {
+    color: $pc3;
+    font-size: 1.6rem;
+  }
+  .my-carinfo {
+    position: relative;
+    padding: 2.5rem;
+    display: block;
+    line-height: 1;
+    background: $fcF;
+    border: 0.1rem solid $fcD7;
+    border-radius: 1.6rem;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      right: 3rem;
+      width: 10rem;
+      height: 10rem;
+      transform: translate(0, -50%);
+    }
+    .car-name {
+      width: calc(100% - 10rem);
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      color: $fc1;
+    }
+    .car-number {
+      margin: 1rem 0;
+      font-size: 2.4rem;
+    }
+    .my-partner {
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      p {
+        position: relative;
+        padding-left: 2rem;
+        margin-top: 2rem;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0.4rem;
+          left: 0.4rem;
+          width: 0.3rem;
+          height: 0.3rem;
+          background-color: $fc6;
+          border-radius: 50%;
+        }
+        &.active {
+          color: $pc3;
+        }
+      }
+      span {
+        position: relative;
+        padding-left: 1.5rem;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0.4rem;
+          left: 0.4rem;
+          width: 0.1rem;
+          height: 1rem;
+          background-color: $fcD7;
+        }
+      }
+    }
+  }
+  .swiper-container {
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  .swiper-pagination {
+    bottom: 0 !important;
+    .swiper-pagination-bullet {
+      width: 0.6rem;
+      height: 0.6rem;
+      background: #e0e0e0;
+      border-radius: 50%;
+      opacity: 1;
+      &.swiper-pagination-bullet-active {
+        background: $fc1;
+      }
+    }
+  }
+
+  &:first-of-type {
+    border-top: 0;
+    padding: 3rem 2rem 2rem;
+  }
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+
+  .title {
+    font-size: 1.5rem;
+
+    span {
+      color: $fc6;
+      font-size: 1.3rem;
+    }
+    .bg-icon {
+      width: 2rem;
+      height: 2rem;
+      margin-top: -0.3rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &.type1 {
+    .swiper-slide {
+      width: 29rem;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .wrap-card {
+    .bottom {
+      justify-content: flex-end;
+      height: 3.6rem;
+      padding-right: 1.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1rem;
+      p {
+        &:first-child {
+          margin-right: 0.5rem;
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
+      }
+    }
+    .detail {
+      margin-top: 2.3rem;
+      .brand {
+        margin-bottom: 0.3rem;
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }
+      .num {
+        font-size: 1.4rem;
+        line-height: 1.4;
+      }
+      .logo-card {
+        position: absolute;
+        bottom: 0.8rem;
+        right: 0;
+        height: 4.6rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .my-dotted {
+    padding: 2.5rem;
+    display: block;
+    line-height: 1;
+    background: $fcF;
+    border: 0.1rem solid $fcD7;
+    border-radius: 1.6rem;
+    border-style: dotted;
+    border-color: #999;
+    button {
+      border: none;
+      height: 6.8rem;
+      width: 100%;
+      padding: 0;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 0.6rem;
+        height: 0.6rem;
+        margin: 0 0.6rem;
+        background: url(../../assets/img/layout/icon-more-type1.svg) 0 0/100% auto no-repeat;
+        vertical-align: 0.2rem;
+      }
+    }
+    &.type2 {
+      button {
+        height: 13.4rem;
+      }
+    }
+  }
+  .wrap-info {
+    width: 100%;
+    margin-top: 0.8rem;
+    padding-top: 0;
+    border-top: 0.1rem solid $fcF0;
+    .wrap-muffin-info {
+      margin-top: 1rem;
+    }
+    dl {
+      overflow: hidden;
+      padding: 2rem 1rem 1rem;
+    }
+
+    dt {
+      clear: both;
+      float: left;
+      color: $fc1;
+      font-size: 1.3rem;
+    }
+
+    dd {
+      float: right;
+      color: $fc1;
+      font-size: 1.4rem;
+      &.active {
+        color: $pc3;
+        font-size: 1.6rem;
+      }
+    }
+
+    dt,
+    dd {
+      margin-bottom: 1.5rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .wrap-select {
+      margin: 2.5rem 1rem 0;
+      padding-bottom: 2.5rem;
+      border-bottom: 0.1rem solid $fcF0;
+    }
+
+    .wrap-checkbox {
+      .checkbox {
+        margin-top: 2.5rem;
+      }
+    }
+
+    .gray-box {
+      margin: 2rem -1rem 0;
+      padding: 2rem 2.5rem;
+      dl {
+        width: 100%;
+      }
+      dd {
+        color: $fc1;
+      }
+    }
+  }
+  .muffin-address {
+    width: 100%;
+    margin-top: 2rem;
+    overflow: hidden;
+    .address-list {
+      overflow-x: visible;
+      overflow-y: hidden;
+      height: 10rem;
+      padding-right: 2rem;
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+
+      li {
+        display: inline-block;
+        text-align: center;
+        //line-height: 9rem;
+        margin-right: 0.05rem;
+        width: 9rem;
+        height: 9rem;
+        p {
+          border: 0.1rem solid $fcE4;
+          padding: 1rem;
+          width: 7rem;
+          height: 7rem;
+        }
+        a {
+          width: 100%;
+          .add-address {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+    &.scroll {
+      margin: 1.5rem -2rem 0;
+      .address-list {
+        overflow-x: visible;
+        overflow-y: hidden;
+        height: 10rem;
+        padding-right: 2rem;
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+
+        li {
+          scroll-snap-align: start;
+          &:first-child {
+            padding-left: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .muffin-member {
+    width: 100%;
+    border-radius: 1.6rem;
+    border: 0.1rem solid $fcE4;
+    padding: 3rem 2rem 2.4rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    span {
+      color: $pc3;
+    }
+    .swiper-container {
+      width: 29.5rem;
+      .my-carinfo {
+        background: #fafafa;
+        border-radius: 0;
+        padding: 2.5rem 8rem 2.5rem 2.5rem;
+        border: 0.1rem solid $fcF0;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 5rem;
+          height: 4.7rem;
+          right: 2rem;
+          top: 2.1rem;
+          background: url(../../assets/img/layout/icon-cashback.svg) 0 0/100% auto no-repeat;
+        }
+        .my-member {
+          font-size: 1.5rem;
+
+          p {
+            font-weight: 700;
+            margin-top: 0.4rem;
+            color: $pc3;
+          }
+        }
+      }
+    }
+  }
+  .more-benefits {
+    margin-top: 4rem;
+    .text-wrap {
+      padding-left: 14.2rem;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 11.4rem;
+        height: 7.4rem;
+        margin-top: -1rem;
+        left: 1.4rem;
+        background: url(../../assets/img/layout/icon-more-benefits.svg) 0 0/100% auto no-repeat;
+      }
+      .more-money {
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+      .underline {
+        position: relative;
+        z-index: 10;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0.2rem;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 0.5rem;
+          background: $pc2;
+          opacity: 0.6;
+          z-index: -10;
+        }
+      }
+    }
+  }
+  .my-event {
+    width: 100%;
+    margin-top: 2rem;
+    ul {
+      border: 0.1rem solid $fcF0;
+      padding: 3rem;
+      border-radius: 1.6rem;
+      li {
+        display: inline-block;
+        padding-left: 3rem;
+        width: 10.4rem;
+
+        &:last-child {
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 0.1rem;
+            height: 3.8rem;
+            background-color: #d7d7d7;
           }
         }
       }

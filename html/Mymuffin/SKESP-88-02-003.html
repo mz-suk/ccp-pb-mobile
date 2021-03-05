@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">예약 일시 및 상품 선택</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-mymuffin">
+
+          <div class="mymuffin-cont">
+            <p class="title">확인하지 않은 알림</p>
+            <button type="button" class="text count">25건</button>
+          </div>
+
+          <div class="mymuffin-cont">
+            <p class="title">차량정보</p>
+            <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
+
+            <div class="swiper-container" id="swiper01">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="my-carinfo">
+                    <div class="logo">
+                      <img src="../../assets/img/layout/logo-bentley.png" alt="">
+                      <p class="car-barnd">벤틀리</p>
+                    </div>
+                    <p class="car-name">2020 벤틀리 벤테이가</p>
+                    <p class="car-number">28자 8617</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="my-carinfo">
+                    <div class="logo">
+                      <img src="../../assets/img/layout/logo-bentley.png" alt="">
+                      <p class="car-barnd">벤틀리</p>
+                    </div>
+                    <p class="car-name">2020 벤틀리 벤테이가</p>
+                    <p class="car-number">28자 8617</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="my-dotted">
+                    <button type="button" class="btn">새로운 차량 등록하기</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="mymuffin-cont type1">
+            <p class="title">결제카드</p>
+            <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
+
+            <div class="swiper-container" id="swiper02">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="wrap-card">
+                    <div class="card color1">
+                      <div class="info">
+                        <div class="checkbox-btn">
+                          <input type="checkbox" name="" id="sp-chk1" checked="">
+                          <label for="sp-chk1">대표카드</label>
+                        </div>
+                        <div class="detail">
+                          <p class="brand">신한카드</p>
+                          <p class="num">9490 88** **** 5200</p>
+                          <span class="logo-card"><img src="../../assets/img/layout/icon-card-visa.png" alt="현대카드"></span>
+                        </div>
+                      </div>
+                      <div class="bottom">
+                        <p>등록일</p>
+                        <p>2020.06.22</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="wrap-card">
+                    <div class="card color3">
+                      <div class="info">
+                        <div class="checkbox-btn">
+                          <input type="checkbox" name="" id="sp-chk2">
+                          <label for="sp-chk2">대표카드</label>
+                        </div>
+                        <div class="detail">
+                          <p class="brand">신한카드</p>
+                          <p class="num">9490 88** **** 5200</p>
+                          <span class="logo-card"><img src="../../assets/img/layout/icon-card-visa.png" alt="현대카드"></span>
+                        </div>
+                      </div>
+                      <div class="bottom">
+                        <p>등록일</p>
+                        <p>2020.06.22</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="my-dotted type2">
+                    <button type="button" class="btn">새로운 카드 등록하기</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="mymuffin-cont">
+            <p class="title">머핀포인트</p>
+            <a href="" class="text-link"><i class="bg-icon refresh">새로고침</i></a>
+
+            <div class="wrap-info">
+              <div class="wrap-muffin-info">
+                <dl>
+                  <dt>사용가능</dt>
+                  <dd class="active">990,000원</dd>
+                  <dt>적립예정</dt>
+                  <dd>990,000원</dd>
+                  <dt>소멸예정</dt>
+                  <dd>990,000원</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="mymuffin-cont">
+            <p class="title">내 쿠폰</p>
+            <button type="button" class="text count">13개</button>
+          </div>
+
+          <div class="mymuffin-cont">
+            <p class="title">주유패턴</p>
+            <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
+
+            <div class="swiper-container" id="swiper03">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="my-carinfo">
+                    <div class="checkbox-btn">
+                      <input type="checkbox" name="" id="sp-chk3" checked="">
+                      <label for="sp-chk3">대표패턴</label>
+                    </div>
+                    <div class="my-partner">
+                      <p class="active">20 다 3456 <span>휘발유 35L</span></p>
+                      <p>쿠폰 사용 <span>OK캐시백 2,000 사용</span></p>
+                      <p>하나카드 1234 **** **** 7890</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="my-carinfo">
+                    <div class="checkbox-btn">
+                      <input type="checkbox" name="" id="sp-chk4">
+                      <label for="sp-chk4">대표패턴</label>
+                    </div>
+                    <div class="my-partner">
+                      <p class="active">20 다 3456 <span>휘발유 35L</span></p>
+                      <p>쿠폰 사용 <span>OK캐시백 2,000 사용</span></p>
+                      <p>하나카드 1234 **** **** 7890</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="my-dotted type2">
+                    <button type="button" class="btn">새로운 패턴 등록하기</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="mymuffin-cont">
+            <p class="title">즐겨찾기 주소</p>
+            <a href="" class="text-link">주소지 관리<i class="bg-icon link">더보기</i></a>
+
+            <div class="muffin-address scroll">
+              <ul class="address-list">
+                <li>
+                  <p>우리집</p>
+                </li>
+                <li>
+                  <p>우리집</p>
+                </li>
+                <li>
+                  <p>우리집</p>
+                </li>
+                <li>
+                   <p><a><i class="bg-icon add-address"></i></a></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mymuffin-cont">
+            <p class="title">머핀 회원 등급</p>
+            <a href="" class="text-link">멤버십 소개<i class="bg-icon link">더보기</i></a>
+
+            <div class="muffin-member">
+              <p>송헌호님은 <span>일반회원</span> 등급입니다.</p>
+              <div class="swiper-container" id="swiper04">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="my-carinfo">
+                      <div class="my-member">
+                        주유 및 세차 이용 시
+                        <p>머핀 포인트 / OK 캐시백 사용</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="my-carinfo">
+                      <div class="my-member">
+                        주유 및 세차 이용 시
+                        <p>머핀 포인트 / OK 캐시백 사용</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="my-carinfo">
+                      <div class="my-member">
+                        주유 및 세차 이용 시
+                        <p>머핀 포인트 / OK 캐시백 사용</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="more-benefits">
+              <div class="text-wrap">
+                <span class="more-money">107,650원만 더</span> 쓰시면<br/>
+                현재 일반 등급에서 골드 등급으로<br/>
+                <span class="underline">승급 + 추가 혜택을</span> 드려요!
+              </div>
+            </div>
+          </div>
+
+          <div class="mymuffin-cont type1">
+            <p class="title">머핀 유료 멤버십</p>
+
+            <div class="swiper-container" id="swiper02">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="wrap-card">
+                    <div class="card muffin bg1">
+                      <!-- 기본 배경 주황 / oli > .bg1 , 체험 > .bg2  클래스-->
+                      <div class="info">
+                        <div class="rep-card">대표카드</div>
+                        <div class="detail">
+                          <p class="brand">머핀클럽 겟차</p>
+                          <p class="num">E71A - 1245 - 4567 - 9012</p>
+                          <p class="date">유효기간 2020.06.10</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="wrap-card">
+                    <div class="card muffin ">
+                      <!-- 기본 배경 주황 / oli > .bg1 , 체험 > .bg2  클래스-->
+                      <div class="info">
+                        <div class="rep-card">대표카드</div>
+                        <div class="detail">
+                          <p class="brand">머핀클럽 겟차</p>
+                          <p class="num">E71A - 1245 - 4567 - 9012</p>
+                          <p class="date">유효기간 2020.06.10</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="mymuffin-cont">
+            <p class="title">이벤트</p>
+            <div class="my-event">
+              <ul>
+                <li>
+                  진행중인 이벤트<p>16건</p>
+                </li>
+                <li>
+                  참여한 이벤트<p>18건</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+       <!--swiepr js-->
+       <link rel="stylesheet" href="../swiper-bundle.min.css">
+       <script src="../swiper-bundle.min.js"></script>
+       <script>
+         var swiper = new Swiper('#swiper01', {
+           slidesPerView: 'auto',
+           spaceBetween:25,
+           loop:true,
+           pagination: {
+             el: '.swiper-pagination',
+             type1:'bullets',
+           }
+         });
+         var swiper = new Swiper('#swiper02', {
+           slidesPerView: 'auto',
+           spaceBetween:20,
+           loop:true,
+           pagination: {
+             el: '.swiper-pagination',
+             type1:'bullets',
+           }
+         });
+         var swiper = new Swiper('#swiper03', {
+           slidesPerView: 'auto',
+           spaceBetween:20,
+           loop:true,
+           pagination: {
+             el: '.swiper-pagination',
+             type1:'bullets',
+           }
+         });
+         var swiper = new Swiper('#swiper04', {
+           slidesPerView: 'auto',
+           spaceBetween:20,
+           loop:true,
+           pagination: {
+             el: '.swiper-pagination',
+             type1:'bullets',
+           }
+         });
+       </script>
+       <!-- // swiper js-->
+      <!-- //wrap-contents -->
+    </div>
+  </body>
+</html>
