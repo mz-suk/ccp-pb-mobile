@@ -84,11 +84,9 @@
 
   &.type2 {
     margin-top: 3rem;
-    padding-bottom: 2.5rem;
     white-space: nowrap;
     .tab-scroll-menu {
       background: none;
-
       li {
         &:not(:first-child) {
           margin-left: 0.7rem;
@@ -97,7 +95,28 @@
         &.active {
           border: 0;
         }
+        .checkbox {
+          &.type5 {
+            input[type="radio"] + label {
+              padding: 0 1.6rem 0 2.4rem;
+              &:before {
+                display: block;
+              }
+            }
+          }
+        }
       }
+    }
+    &:after {
+      display: block;
+      position: static;
+      margin-top: 2.5rem;
+    }
+    & + .event-list-wrap,
+    & + .wrap-empty {
+      position: relative;
+      margin-top: -0.1rem;
+      background: #fff;
     }
   }
 }
