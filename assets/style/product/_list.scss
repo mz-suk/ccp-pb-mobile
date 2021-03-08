@@ -2964,13 +2964,8 @@
   }
 }
 
-//추가
-
 .wrap-mymuffin {
   padding-bottom: 4rem;
-  .define-box.total {
-    margin-top: 0;
-  }
 }
 
 .mymuffin-cont {
@@ -2997,13 +2992,20 @@
   }
   .my-carinfo {
     position: relative;
-    padding: 2.5rem;
+    padding: 1rem 3rem;
     display: block;
     line-height: 1;
     background: $fcF;
     border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
-
+    width: 33.5rem;
+    box-sizing: border-box;
+    .car-barnd {
+      display: none;
+      margin-top: 0.5rem;
+      color: $fc9;
+      text-align: center;
+    }
     .logo {
       display: flex;
       align-items: center;
@@ -3017,12 +3019,12 @@
     }
     .car-name {
       width: calc(100% - 10rem);
-      margin-top: 1rem;
+      margin-top: 2.5rem;
       font-size: 1.3rem;
       color: $fc1;
     }
     .car-number {
-      margin: 1rem 0;
+      margin: 1rem 0 2.6rem;
       font-size: 2.4rem;
     }
     .my-partner {
@@ -3061,6 +3063,9 @@
           background-color: $fcD7;
         }
       }
+    }
+    &.type1 {
+      padding: 2.5rem;
     }
   }
   .swiper-container {
@@ -3114,12 +3119,16 @@
   }
 
   .wrap-card {
+    .info {
+      padding: 2rem 2.5rem 1.1rem 2.5rem;
+    }
     .bottom {
       justify-content: flex-end;
       height: 3.6rem;
       padding-right: 1.5rem;
       color: rgba(255, 255, 255, 0.7);
       font-size: 1rem;
+      margin: 0 2rem 2rem 2rem;
       p {
         &:first-child {
           margin-right: 0.5rem;
@@ -3132,7 +3141,7 @@
       margin-top: 2.3rem;
       .brand {
         margin-bottom: 0.3rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 1.2;
       }
       .num {
@@ -3141,9 +3150,9 @@
       }
       .logo-card {
         position: absolute;
-        bottom: 0.8rem;
+        bottom: 0.6rem;
         right: 0;
-        height: 4.6rem;
+        height: 4.2rem;
         margin-bottom: 0;
       }
     }
@@ -3154,10 +3163,10 @@
     display: block;
     line-height: 1;
     background: $fcF;
-    border: 0.1rem solid $fcD7;
+    border: 0.1rem solid $fcE4;
     border-radius: 1.6rem;
     border-style: dotted;
-    border-color: #999;
+    box-sizing: border-box;
     button {
       border: none;
       height: 6.8rem;
@@ -3256,15 +3265,21 @@
       li {
         display: inline-block;
         text-align: center;
-        //line-height: 9rem;
         margin-right: 0.05rem;
         width: 9rem;
         height: 9rem;
-        p {
+        div {
           border: 0.1rem solid $fcE4;
-          padding: 1rem;
-          width: 7rem;
-          height: 7rem;
+          padding: 1.7rem;
+          width: 5.4rem;
+          height: 5.4rem;
+          overflow: hidden;
+          white-space: pre-line;
+          vertical-align: middle;
+          font-size: 1.3rem;
+          p {
+            vertical-align: middle;
+          }
         }
         a {
           width: 100%;
@@ -3301,6 +3316,9 @@
     padding: 3rem 2rem 2.4rem;
     margin-top: 2rem;
     font-size: 1.5rem;
+    .my-membertext {
+      padding-left: 1rem;
+    }
     span {
       color: $pc3;
     }
@@ -3311,6 +3329,8 @@
         border-radius: 0;
         padding: 2.5rem 8rem 2.5rem 2.5rem;
         border: 0.1rem solid $fcF0;
+        width: 29.5rem;
+        box-sizing: border-box;
         position: relative;
         &:before {
           content: "";
@@ -3323,10 +3343,10 @@
         }
         .my-member {
           font-size: 1.5rem;
-
+          line-height: 1.8rem;
           p {
             font-weight: 700;
-            margin-top: 0.4rem;
+            margin-top: 0.1rem;
             color: $pc3;
           }
         }
@@ -3335,21 +3355,28 @@
   }
   .more-benefits {
     margin-top: 4rem;
+    padding: 0 1.4rem;
     .text-wrap {
-      padding-left: 14.2rem;
+      padding-left: 13.2rem;
       position: relative;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      p {
+        font-size: 1.3rem;
+      }
       &:before {
         content: "";
         position: absolute;
         width: 11.4rem;
         height: 7.4rem;
         margin-top: -1rem;
-        left: 1.4rem;
+        left: 0rem;
         background: url(../../assets/img/layout/icon-more-benefits.svg) 0 0/100% auto no-repeat;
       }
       .more-money {
-        font-size: 1.8rem;
         font-weight: 700;
+        font-size: 1.8rem;
       }
       .underline {
         position: relative;
@@ -3372,6 +3399,10 @@
   .my-event {
     width: 100%;
     margin-top: 2rem;
+    .event-num {
+      font-size: 2rem;
+      color: $pc3;
+    }
     ul {
       border: 0.1rem solid $fcF0;
       padding: 3rem;
@@ -3379,19 +3410,30 @@
       li {
         display: inline-block;
         padding-left: 3rem;
-        width: 10.4rem;
-
-        &:last-child {
-          position: relative;
-          &:before {
+        //width: 10.4rem;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0.3rem;
+          width: 2.4rem;
+          height: 2.4rem;
+          background: url(../../assets/img/layout/icon-my-event.svg) 0 0/100% auto no-repeat;
+        }
+        &:first-child {
+          padding-right: 2.5rem;
+          &:after {
             content: "";
             position: absolute;
-            display: block;
-            left: 0;
-            width: 0.1rem;
+            right: 0;
+            top: 0.3rem;
             height: 3.8rem;
-            background-color: #d7d7d7;
+            border-left: 0.1rem dotted #d7d7d7;
           }
+        }
+        &:last-child {
+          margin-left: 2.5rem;
         }
       }
     }

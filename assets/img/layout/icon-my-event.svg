@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_409779" data-name="사각형 409779" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_review_list_20" clip-path="url(#clip-path)">
+    <g id="그룹_568430" data-name="그룹 568430" clip-path="url(#clip-path)">
+      <g id="그룹_568429" data-name="그룹 568429" opacity="0">
+        <g id="그룹_568428" data-name="그룹 568428" clip-path="url(#clip-path)">
+          <rect id="사각형_409776" data-name="사각형 409776" width="24" height="24" fill="#f0f"/>
+        </g>
+      </g>
+      <path id="패스_1409214" data-name="패스 1409214" d="M8.9.9h9.641V11.385" transform="translate(1.826 0.185)" fill="none" stroke="#111" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_1409215" data-name="패스 1409215" d="M11.5,21.75H5.474A3.374,3.374,0,0,1,2.1,18.375h0V.9h8.2" transform="translate(0.431 0.185)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_1409216" data-name="패스 1409216" d="M18.572,17.226l.6,3.374-3.013-1.567-3.133,1.687.6-3.374L11.1,15.057l3.374-.6L15.8,11.2l1.687,3.133,3.374.482Z" transform="translate(2.277 2.298)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_143077" data-name="선 143077" x2="1.808" transform="translate(10.485 5.303)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_143078" data-name="선 143078" x2="5.544" transform="translate(6.026 5.303)" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_143079" data-name="선 143079" x2="2.41" transform="translate(7.834 8.918)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_143080" data-name="선 143080" x2="2.772" transform="translate(6.026 8.918)" fill="none" stroke="#111" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

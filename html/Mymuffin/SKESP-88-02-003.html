@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">예약 일시 및 상품 선택</h1>
+        <h1 class="title">마이머핀</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
@@ -80,11 +80,9 @@
           <div class="mymuffin-cont type1">
             <p class="title">결제카드</p>
             <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
-
-            <div class="swiper-container" id="swiper02">
+            <div class="swiper-container wrap-card" id="swiper02">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="wrap-card">
                     <div class="card color1">
                       <div class="info">
                         <div class="checkbox-btn">
@@ -93,19 +91,17 @@
                         </div>
                         <div class="detail">
                           <p class="brand">신한카드</p>
-                          <p class="num">9490 88** **** 5200</p>
-                          <span class="logo-card"><img src="../../assets/img/layout/icon-card-visa.png" alt="현대카드"></span>
+                          <p class="num">1234 **** **** 9999</p>
+                          <span class="logo-card"><img src="../../assets/img/layout/icon-card-mastercard.png" alt="현대카드"></span>
                         </div>
                       </div>
                       <div class="bottom">
                         <p>등록일</p>
                         <p>2020.06.22</p>
                       </div>
-                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="wrap-card">
                     <div class="card color3">
                       <div class="info">
                         <div class="checkbox-btn">
@@ -113,16 +109,15 @@
                           <label for="sp-chk2">대표카드</label>
                         </div>
                         <div class="detail">
-                          <p class="brand">신한카드</p>
-                          <p class="num">9490 88** **** 5200</p>
-                          <span class="logo-card"><img src="../../assets/img/layout/icon-card-visa.png" alt="현대카드"></span>
+                          <p class="brand">현대카드</p>
+                          <p class="num">1234 **** **** 9999</p>
+                          <span class="logo-card"><img src="../../assets/img/layout/icon-card-mastercard.png" alt="현대카드"></span>
                         </div>
                       </div>
                       <div class="bottom">
                         <p>등록일</p>
                         <p>2020.06.22</p>
                       </div>
-                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -165,7 +160,7 @@
             <div class="swiper-container" id="swiper03">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="my-carinfo">
+                  <div class="my-carinfo type1">
                     <div class="checkbox-btn">
                       <input type="checkbox" name="" id="sp-chk3" checked="">
                       <label for="sp-chk3">대표패턴</label>
@@ -178,7 +173,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="my-carinfo">
+                  <div class="my-carinfo type1">
                     <div class="checkbox-btn">
                       <input type="checkbox" name="" id="sp-chk4">
                       <label for="sp-chk4">대표패턴</label>
@@ -207,16 +202,16 @@
             <div class="muffin-address scroll">
               <ul class="address-list">
                 <li>
-                  <p>우리집</p>
+                  <div><p>우리집</p></div>
                 </li>
                 <li>
-                  <p>우리집</p>
+                  <div><p>롯데월드몰 지하1층</p></div>
                 </li>
                 <li>
-                  <p>우리집</p>
+                  <div><p>홍익대학교 미술디자인 교육원</p></div>
                 </li>
                 <li>
-                   <p><a><i class="bg-icon add-address"></i></a></p>
+                   <div><a><i class="bg-icon add-address"></i></a></div>
                 </li>
               </ul>
             </div>
@@ -226,7 +221,7 @@
             <a href="" class="text-link">멤버십 소개<i class="bg-icon link">더보기</i></a>
 
             <div class="muffin-member">
-              <p>송헌호님은 <span>일반회원</span> 등급입니다.</p>
+              <p class="my-membertext">송헌호님은 <span>일반회원</span> 등급입니다.</p>
               <div class="swiper-container" id="swiper04">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -259,9 +254,9 @@
             </div>
             <div class="more-benefits">
               <div class="text-wrap">
-                <span class="more-money">107,650원만 더</span> 쓰시면<br/>
-                현재 일반 등급에서 골드 등급으로<br/>
-                <span class="underline">승급 + 추가 혜택을</span> 드려요!
+                <span class="more-money">107,650원만 더 쓰시면
+                <p>현재 일반 등급에서 골드 등급으로</p>
+                <p><span class="underline">승급 + 추가 혜택을</span> 드려요!</p>
               </div>
             </div>
           </div>
@@ -269,7 +264,7 @@
           <div class="mymuffin-cont type1">
             <p class="title">머핀 유료 멤버십</p>
 
-            <div class="swiper-container" id="swiper02">
+            <div class="swiper-container" id="swiper05">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="wrap-card">
@@ -277,10 +272,16 @@
                       <!-- 기본 배경 주황 / oli > .bg1 , 체험 > .bg2  클래스-->
                       <div class="info">
                         <div class="rep-card">대표카드</div>
+                        <div class="code-list">
+                          <ul>
+                            <li>바코드</li>
+                            <li>QR코드</li>
+                          </ul>
+                        </div>
                         <div class="detail">
-                          <p class="brand">머핀클럽 겟차</p>
-                          <p class="num">E71A - 1245 - 4567 - 9012</p>
+                          <p class="brand">머핀 더 플러스 체험형</p>
                           <p class="date">유효기간 2020.06.10</p>
+                          <span class="list">혜택내역</span>
                         </div>
                       </div>
                     </div>
@@ -292,10 +293,16 @@
                       <!-- 기본 배경 주황 / oli > .bg1 , 체험 > .bg2  클래스-->
                       <div class="info">
                         <div class="rep-card">대표카드</div>
+                        <div class="code-list">
+                          <ul>
+                            <li>바코드</li>
+                            <li>QR코드</li>
+                          </ul>
+                        </div>
                         <div class="detail">
-                          <p class="brand">머핀클럽 겟차</p>
-                          <p class="num">E71A - 1245 - 4567 - 9012</p>
+                          <p class="brand">머핀 더 플러스 체험형</p>
                           <p class="date">유효기간 2020.06.10</p>
+                          <span class="list">혜택내역</span>
                         </div>
                       </div>
                     </div>
@@ -310,10 +317,10 @@
             <div class="my-event">
               <ul>
                 <li>
-                  진행중인 이벤트<p>16건</p>
+                  진행중인 이벤트<p class="event-num">16건</p>
                 </li>
                 <li>
-                  참여한 이벤트<p>18건</p>
+                  참여한 이벤트<p class="event-num">18건</p>
                 </li>
               </ul>
             </div>
@@ -353,6 +360,15 @@
            }
          });
          var swiper = new Swiper('#swiper04', {
+           slidesPerView: 'auto',
+           spaceBetween:20,
+           loop:true,
+           pagination: {
+             el: '.swiper-pagination',
+             type1:'bullets',
+           }
+         });
+         var swiper = new Swiper('#swiper05', {
            slidesPerView: 'auto',
            spaceBetween:20,
            loop:true,
