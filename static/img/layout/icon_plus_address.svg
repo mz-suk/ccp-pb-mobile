@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_409638" data-name="사각형 409638" width="20" height="20" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_plus_g_20" transform="translate(10 10)">
+    <g id="icon_plus_g_20-2" data-name="icon_plus_g_20" transform="translate(-10 -10)">
+      <path id="패스_1409121" data-name="패스 1409121" d="M10,18.8Z" fill="#666"/>
+      <g id="그룹_568257" data-name="그룹 568257" clip-path="url(#clip-path)">
+        <path id="패스_1409122" data-name="패스 1409122" d="M10,19.5a.7.7,0,0,1-.7-.7V10a.75.75,0,0,1,1.5,0v8.8a.7.7,0,0,1-.7.7" fill="#666"/>
+        <line id="선_143028" data-name="선 143028" y2="8.8" transform="translate(10 1.2)" fill="#666"/>
+        <rect id="사각형_409636" data-name="사각형 409636" width="1.5" height="10.23" transform="translate(9.3 0.5)" fill="#666"/>
+        <line id="선_143029" data-name="선 143029" x2="8.8" transform="translate(10 10)" fill="#666"/>
+        <path id="패스_1409123" data-name="패스 1409123" d="M18.8,10.7H10a.75.75,0,1,1,0-1.5h8.8a.75.75,0,1,1,0,1.5" fill="#666"/>
+        <line id="선_143030" data-name="선 143030" x2="8.8" transform="translate(1.2 10)" fill="#666"/>
+        <rect id="사각형_409637" data-name="사각형 409637" width="10.2" height="1.46" transform="translate(0.5 9.3)" fill="#666"/>
+      </g>
+    </g>
+  </g>
+</svg>
