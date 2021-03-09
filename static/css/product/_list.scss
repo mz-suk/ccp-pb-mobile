@@ -2971,3 +2971,483 @@
     }
   }
 }
+
+.wrap-mymuffin {
+  padding-bottom: 4rem;
+}
+
+.mymuffin-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem 3rem;
+  box-sizing: border-box;
+  border-top: 0.8rem solid $fcF9;
+  border-bottom: 0.1rem solid $fcF0;
+  color: $fc1;
+
+  .text-link {
+    color: $fc1;
+    .refresh {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+  .count {
+    color: $pc3;
+    font-size: 1.6rem;
+  }
+  .my-carinfo {
+    position: relative;
+    padding: 1rem 3rem;
+    display: block;
+    line-height: 1;
+    background: $fcF;
+    border: 0.1rem solid $fcD7;
+    border-radius: 1.6rem;
+    width: 33.5rem;
+    box-sizing: border-box;
+    .car-barnd {
+      display: none;
+      margin-top: 0.5rem;
+      color: $fc9;
+      text-align: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      right: 3rem;
+      width: 10rem;
+      height: 10rem;
+      transform: translate(0, -50%);
+    }
+    .car-name {
+      width: calc(100% - 10rem);
+      margin-top: 2.5rem;
+      font-size: 1.3rem;
+      color: $fc1;
+    }
+    .car-number {
+      margin: 1rem 0 2.6rem;
+      font-size: 2.4rem;
+    }
+    .my-partner {
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      p {
+        position: relative;
+        padding-left: 2rem;
+        margin-top: 2rem;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0.4rem;
+          left: 0.4rem;
+          width: 0.3rem;
+          height: 0.3rem;
+          background-color: $fc6;
+          border-radius: 50%;
+        }
+        &.active {
+          color: $pc3;
+        }
+      }
+      span {
+        position: relative;
+        padding-left: 1.5rem;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0.4rem;
+          left: 0.4rem;
+          width: 0.1rem;
+          height: 1rem;
+          background-color: $fcD7;
+        }
+      }
+    }
+    &.type1 {
+      padding: 2.5rem;
+    }
+  }
+  .swiper-container {
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  .swiper-pagination {
+    bottom: 0 !important;
+    .swiper-pagination-bullet {
+      width: 0.6rem;
+      height: 0.6rem;
+      background: #e0e0e0;
+      border-radius: 50%;
+      opacity: 1;
+      &.swiper-pagination-bullet-active {
+        background: $fc1;
+      }
+    }
+  }
+
+  &:first-of-type {
+    border-top: 0;
+    padding: 3rem 2rem 2rem;
+  }
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+
+  .title {
+    font-size: 1.5rem;
+
+    span {
+      color: $fc6;
+      font-size: 1.3rem;
+    }
+    .bg-icon {
+      width: 2rem;
+      height: 2rem;
+      margin-top: -0.3rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &.type1 {
+    .swiper-slide {
+      width: 29rem;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .wrap-card {
+    .info {
+      padding: 2rem 2.5rem 1.1rem 2.5rem;
+    }
+    .bottom {
+      justify-content: flex-end;
+      height: 3.6rem;
+      padding-right: 1.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1rem;
+      margin: 0 2rem 2rem 2rem;
+      p {
+        &:first-child {
+          margin-right: 0.5rem;
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
+      }
+    }
+    .detail {
+      margin-top: 2.3rem;
+      .brand {
+        margin-bottom: 0.3rem;
+        font-size: 1.3rem;
+        line-height: 1.2;
+      }
+      .num {
+        font-size: 1.4rem;
+        line-height: 1.4;
+      }
+      .logo-card {
+        position: absolute;
+        bottom: 0.6rem;
+        right: 0;
+        height: 4.2rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .my-dotted {
+    padding: 2.5rem;
+    display: block;
+    line-height: 1;
+    background: $fcF;
+    border: 0.1rem solid $fcE4;
+    border-radius: 1.6rem;
+    border-style: dotted;
+    box-sizing: border-box;
+    button {
+      border: none;
+      height: 6.8rem;
+      width: 100%;
+      padding: 0;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 0.6rem;
+        height: 0.6rem;
+        margin: 0 0.6rem;
+        background: url(~assets/img/layout/icon-more-type1.svg) 0 0/100%
+          auto no-repeat;
+        vertical-align: 0.2rem;
+      }
+    }
+    &.type2 {
+      button {
+        height: 13.4rem;
+      }
+    }
+  }
+  .wrap-info {
+    width: 100%;
+    margin-top: 0.8rem;
+    padding-top: 0;
+    border-top: 0.1rem solid $fcF0;
+    .wrap-muffin-info {
+      margin-top: 1rem;
+    }
+    dl {
+      overflow: hidden;
+      padding: 2rem 1rem 1rem;
+    }
+
+    dt {
+      clear: both;
+      float: left;
+      color: $fc1;
+      font-size: 1.3rem;
+    }
+
+    dd {
+      float: right;
+      color: $fc1;
+      font-size: 1.4rem;
+      &.active {
+        color: $pc3;
+        font-size: 1.6rem;
+      }
+    }
+
+    dt,
+    dd {
+      margin-bottom: 1.5rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .wrap-select {
+      margin: 2.5rem 1rem 0;
+      padding-bottom: 2.5rem;
+      border-bottom: 0.1rem solid $fcF0;
+    }
+
+    .wrap-checkbox {
+      .checkbox {
+        margin-top: 2.5rem;
+      }
+    }
+
+    .gray-box {
+      margin: 2rem -1rem 0;
+      padding: 2rem 2.5rem;
+      dl {
+        width: 100%;
+      }
+      dd {
+        color: $fc1;
+      }
+    }
+  }
+  .muffin-address {
+    width: 100%;
+    margin-top: 2rem;
+    overflow: hidden;
+    .address-list {
+      overflow-x: visible;
+      overflow-y: hidden;
+      height: 10rem;
+      padding-right: 2rem;
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+
+      li {
+        display: inline-block;
+        text-align: center;
+        margin-right: 0.05rem;
+        width: 9rem;
+        height: 9rem;
+        div {
+          border: 0.1rem solid $fcE4;
+          padding: 1.7rem;
+          width: 5.4rem;
+          height: 5.4rem;
+          overflow: hidden;
+          white-space: pre-line;
+          vertical-align: middle;
+          font-size: 1.3rem;
+          p {
+            vertical-align: middle;
+          }
+        }
+        a {
+          width: 100%;
+          .add-address {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+    &.scroll {
+      margin: 1.5rem -2rem 0;
+      .address-list {
+        overflow-x: visible;
+        overflow-y: hidden;
+        height: 10rem;
+        padding-right: 2rem;
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+
+        li {
+          scroll-snap-align: start;
+          &:first-child {
+            padding-left: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .muffin-member {
+    width: 100%;
+    border-radius: 1.6rem;
+    border: 0.1rem solid $fcE4;
+    padding: 3rem 2rem 2.4rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    .my-membertext {
+      padding-left: 1rem;
+    }
+    span {
+      color: $pc3;
+    }
+    .swiper-container {
+      width: 29.5rem;
+      .my-carinfo {
+        background: #fafafa;
+        border-radius: 0;
+        padding: 2.5rem 8rem 2.5rem 2.5rem;
+        border: 0.1rem solid $fcF0;
+        width: 29.5rem;
+        box-sizing: border-box;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 5rem;
+          height: 4.7rem;
+          right: 2rem;
+          top: 2.1rem;
+          background: url(~assets/img/layout/icon-cashback.svg) 0 0/100%
+            auto no-repeat;
+        }
+        .my-member {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          p {
+            font-weight: 700;
+            margin-top: 0.1rem;
+            color: $pc3;
+          }
+        }
+      }
+    }
+  }
+  .more-benefits {
+    margin-top: 4rem;
+    padding: 0 1.4rem;
+    .text-wrap {
+      padding-left: 13.2rem;
+      position: relative;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      p {
+        font-size: 1.3rem;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 11.4rem;
+        height: 7.4rem;
+        margin-top: -1rem;
+        left: 0rem;
+        background: url(~assets/img/layout/icon-more-benefits.svg) 0 0/100%
+          auto no-repeat;
+      }
+      .more-money {
+        font-weight: 700;
+        font-size: 1.8rem;
+      }
+      .underline {
+        position: relative;
+        z-index: 10;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0.2rem;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 0.5rem;
+          background: $pc2;
+          opacity: 0.6;
+          z-index: -10;
+        }
+      }
+    }
+  }
+  .my-event {
+    width: 100%;
+    margin-top: 2rem;
+    .event-num {
+      font-size: 2rem;
+      color: $pc3;
+    }
+    ul {
+      border: 0.1rem solid $fcF0;
+      padding: 3rem;
+      border-radius: 1.6rem;
+      li {
+        display: inline-block;
+        padding-left: 3rem;
+        //width: 10.4rem;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0.3rem;
+          width: 2.4rem;
+          height: 2.4rem;
+          background: url(~assets/img/layout/icon-my-event.svg) 0 0/100%
+            auto no-repeat;
+        }
+        &:first-child {
+          padding-right: 2.5rem;
+          &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0.3rem;
+            height: 3.8rem;
+            border-left: 0.1rem dotted #d7d7d7;
+          }
+        }
+        &:last-child {
+          margin-left: 2.5rem;
+        }
+      }
+    }
+  }
+}
