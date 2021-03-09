@@ -2974,7 +2974,7 @@
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
   color: $fc1;
-  .mymuffin-content {
+  .mymuffin-title {
     position: relative;
     .count {
       color: $pc3;
@@ -3162,8 +3162,12 @@
   }
   &.type3 {
     padding: 3rem 0;
-    .mymuffin-content {
+    .mymuffin-title {
       margin: 0 2rem;
+    }
+    .btn-area {
+      margin: 2rem 2rem 0;
+      width: auto;
     }
   }
   .wrap-card {
@@ -3204,6 +3208,28 @@
         margin-bottom: 0;
       }
     }
+    .bg3 {
+      .info {
+        color: $fc1;
+        text-align: center;
+        padding-bottom: 2.5rem;
+        .pay-membership {
+          font-size: 1.3rem;
+          .brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 1.1rem;
+          }
+          .explain {
+            margin-bottom: 1.1rem;
+          }
+          button {
+            color: $pc3;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
 
   .my-dotted {
@@ -3211,7 +3237,7 @@
     display: block;
     line-height: 1;
     background: $fcF;
-    border: 0.1rem solid $fcE4;
+    border: 0.1rem solid $fc9;
     border-radius: 1.6rem;
     border-style: dotted;
     box-sizing: border-box;

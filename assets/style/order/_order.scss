@@ -1314,8 +1314,8 @@
         border: 0.1rem solid #36c9b9;
       }
       &.bg3 {
-        background: #f9f9f9 url(../../assets/img/layout/bg-icon-membership.svg) no-repeat 0 0 / 100% auto;
-        border: 0.1rem solid#E4E4E4;
+        background: $fcF9 url(../../assets/img/layout/bg-icon-membership.svg) no-repeat 0 0 / 100% auto;
+        border: 0.1rem solid $fcE4;
       }
       &.barcode {
         .barcode-img {
