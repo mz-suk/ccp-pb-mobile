@@ -74,8 +74,7 @@
       z-index: 3;
       height: 4.6rem;
       padding-left: 2.5rem;
-      background: url(../../assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem
-        no-repeat;
+      background: url(../../assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem no-repeat;
       color: $fc1;
       font-size: 1.1rem;
       line-height: 3.4rem;
@@ -86,8 +85,7 @@
         height: 4.6rem;
         padding: 1rem 1rem 0 1.4rem;
         line-height: 1.35rem;
-        background: url(../../assets/img/layout/bg-label-right.png) 100% 0 /
-          auto 4.6rem no-repeat;
+        background: url(../../assets/img/layout/bg-label-right.png) 100% 0 / auto 4.6rem no-repeat;
         box-sizing: border-box;
         text-decoration: underline;
       }
@@ -98,8 +96,7 @@
         left: 0.8rem;
         width: 2.8rem;
         height: 2.8rem;
-        background: url(../../assets/img/layout/icon-confusion-off.svg) 0 0 /
-          100% auto no-repeat;
+        background: url(../../assets/img/layout/icon-confusion-off.svg) 0 0 / 100% auto no-repeat;
         content: "";
       }
 
@@ -629,8 +626,7 @@
         right: 2rem;
         width: 11rem;
         height: 11rem;
-        background: url(../../assets/img/layout/icon-carwash.svg) 0 0 / 100%
-          auto no-repeat;
+        background: url(../../assets/img/layout/icon-carwash.svg) 0 0 / 100% auto no-repeat;
         content: "";
       }
       & + .wrap-filter-tab {
@@ -1404,8 +1400,7 @@
       }
 
       &:after {
-        background: url("../../assets/img/layout/icon-chk-on.svg") no-repeat
-          center center;
+        background: url("../../assets/img/layout/icon-chk-on.svg") no-repeat center center;
         background-size: 100% auto;
       }
     }
@@ -1466,8 +1461,7 @@
         padding-left: 2.5rem;
         font-size: 1.5rem;
         color: $fcF;
-        background: url(../../assets/img/layout/icon-checkbox-white.png)
-          no-repeat 0 center / 2rem 2rem;
+        background: url(../../assets/img/layout/icon-checkbox-white.png) no-repeat 0 center / 2rem 2rem;
         z-index: 6;
         transform: translate(-50%, -40%);
       }
@@ -1617,8 +1611,7 @@
           left: 50%;
           z-index: 1;
           padding-left: 2.5rem;
-          background: url(../../assets/img/layout/icon-chk-white.svg) 0 0 / 2rem
-            no-repeat;
+          background: url(../../assets/img/layout/icon-chk-white.svg) 0 0 / 2rem no-repeat;
           color: $fcF;
           font-size: 1.5rem;
           line-height: 1.5;
@@ -2897,8 +2890,7 @@
           width: 1.2rem;
           height: 1.2rem;
           margin-left: 0.5rem;
-          background: url(../../assets/img/layout/icon-close-type2.svg) 0 0/100%
-            auto no-repeat;
+          background: url(../../assets/img/layout/icon-close-type2.svg) 0 0/100% auto no-repeat;
           vertical-align: top;
           -webkit-filter: brightness(0);
           filter: brightness(0);
@@ -2977,27 +2969,42 @@
 }
 
 .mymuffin-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   padding: 3rem 2rem 3rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
   color: $fc1;
-
-  .text-link {
-    color: $fc1;
-    .refresh {
-      width: 1.6rem;
-      height: 1.6rem;
+  .mymuffin-content {
+    position: relative;
+    .count {
+      color: $pc3;
+      font-size: 1.6rem;
+      position: absolute;
+      right: 0rem;
+      top: 0.2rem;
+    }
+    .text-link {
+      color: $fc1;
+      position: absolute;
+      right: 0rem;
+      top: -0.5rem;
+      padding: 1rem 0;
+      .refresh {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
     }
   }
-  .count {
-    color: $pc3;
-    font-size: 1.6rem;
+  .btn-area {
+    margin-top: 2rem;
+    &.grid {
+      width: 100%;
+      button {
+        font-size: 1.3rem;
+      }
+    }
   }
+
   .my-carinfo {
     position: relative;
     padding: 1rem 3rem;
@@ -3006,7 +3013,7 @@
     background: $fcF;
     border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
-    width: 33.5rem;
+    //width: 33.5rem;
     box-sizing: border-box;
     .car-barnd {
       display: none;
@@ -3036,18 +3043,19 @@
       font-size: 2.4rem;
     }
     .my-partner {
-      margin: 1rem 0;
+      margin-bottom: 1rem;
       font-size: 1.4rem;
       p {
         position: relative;
         padding-left: 2rem;
-        margin-top: 2rem;
+        margin-top: 1.7rem;
+        line-height: 2rem;
         &:before {
           content: "";
           display: block;
           position: absolute;
-          top: 0.4rem;
-          left: 0.4rem;
+          top: 0.7rem;
+          left: 0.8rem;
           width: 0.3rem;
           height: 0.3rem;
           background-color: $fc6;
@@ -3079,6 +3087,26 @@
   .swiper-container {
     padding-bottom: 3rem;
     margin-top: 2rem;
+    &.muffin-swiper {
+      padding-bottom: 3rem;
+      margin: 2rem -2rem 0;
+
+      .swiper-wrapper {
+        align-items: center;
+        .swiper-slide {
+          margin: 0 2rem;
+        }
+      }
+      &.type1 {
+        .swiper-slide {
+          margin: 0 0 0 2rem;
+        }
+      }
+    }
+    .swiper-slide {
+      margin: 0 2rem;
+      width: 33.5rem;
+    }
   }
   .swiper-pagination {
     bottom: 0 !important;
@@ -3125,10 +3153,22 @@
       overflow: hidden;
     }
   }
-
+  &.type2 {
+    .swiper-slide {
+      width: 29.5rem;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+  &.type3 {
+    padding: 3rem 0;
+    .mymuffin-content {
+      margin: 0 2rem;
+    }
+  }
   .wrap-card {
     .info {
-      padding: 2rem 2.5rem 1.1rem 2.5rem;
+      padding: 2.5rem 2rem 1.1rem 2.5rem;
     }
     .bottom {
       justify-content: flex-end;
@@ -3136,7 +3176,7 @@
       padding-right: 1.5rem;
       color: rgba(255, 255, 255, 0.7);
       font-size: 1rem;
-      margin: 0 2rem 2rem 2rem;
+      margin: 0 1.5rem 2rem 2.5rem;
       p {
         &:first-child {
           margin-right: 0.5rem;
@@ -3175,6 +3215,7 @@
     border-radius: 1.6rem;
     border-style: dotted;
     box-sizing: border-box;
+    width: 33.5rem;
     button {
       border: none;
       height: 6.8rem;
@@ -3186,14 +3227,19 @@
         width: 0.6rem;
         height: 0.6rem;
         margin: 0 0.6rem;
-        background: url(../../assets/img/layout/icon-more-type1.svg) 0 0/100%
-          auto no-repeat;
+        background: url(../../assets/img/layout/icon-more-type1.svg) 0 0/100% auto no-repeat;
         vertical-align: 0.2rem;
+      }
+    }
+    &.type1 {
+      width: 29rem;
+      button {
+        height: 12.7rem;
       }
     }
     &.type2 {
       button {
-        height: 13.4rem;
+        height: 14.6rem;
       }
     }
   }
@@ -3277,21 +3323,16 @@
         margin-right: 0.05rem;
         width: 9rem;
         height: 9rem;
-        div {
+        button {
           border: 0.1rem solid $fcE4;
           padding: 1.7rem;
-          width: 5.4rem;
-          height: 5.4rem;
           overflow: hidden;
           white-space: pre-line;
           vertical-align: middle;
           font-size: 1.3rem;
-          p {
-            vertical-align: middle;
-          }
-        }
-        a {
-          width: 100%;
+          width: 9rem;
+          height: 9rem;
+
           .add-address {
             width: 2rem;
             height: 2rem;
@@ -3300,7 +3341,7 @@
       }
     }
     &.scroll {
-      margin: 1.5rem -2rem 0;
+      //margin: 1.5rem -2rem 0;
       .address-list {
         overflow-x: visible;
         overflow-y: hidden;
@@ -3319,20 +3360,18 @@
     }
   }
   .muffin-member {
-    width: 100%;
     border-radius: 1.6rem;
     border: 0.1rem solid $fcE4;
-    padding: 3rem 2rem 2.4rem;
+    padding: 3rem 0 2.4rem;
     margin-top: 2rem;
     font-size: 1.5rem;
     .my-membertext {
-      padding-left: 1rem;
+      padding-left: 3rem;
     }
     span {
       color: $pc3;
     }
     .swiper-container {
-      width: 29.5rem;
       .my-carinfo {
         background: #fafafa;
         border-radius: 0;
@@ -3348,8 +3387,7 @@
           height: 4.7rem;
           right: 2rem;
           top: 2.1rem;
-          background: url(../../assets/img/layout/icon-cashback.svg) 0 0/100%
-            auto no-repeat;
+          background: url(../../assets/img/layout/icon-cashback.svg) 0 0/100% auto no-repeat;
         }
         .my-member {
           font-size: 1.5rem;
@@ -3382,8 +3420,7 @@
         height: 7.4rem;
         margin-top: -1rem;
         left: 0rem;
-        background: url(../../assets/img/layout/icon-more-benefits.svg) 0 0/100%
-          auto no-repeat;
+        background: url(../../assets/img/layout/icon-more-benefits.svg) 0 0/100% auto no-repeat;
       }
       .more-money {
         font-weight: 700;
@@ -3416,7 +3453,7 @@
     }
     ul {
       border: 0.1rem solid $fcF0;
-      padding: 3rem;
+      padding: 3rem 3rem 2.5rem;
       border-radius: 1.6rem;
       li {
         display: inline-block;
@@ -3430,8 +3467,7 @@
           top: 0.3rem;
           width: 2.4rem;
           height: 2.4rem;
-          background: url(../../assets/img/layout/icon-my-event.svg) 0 0/100%
-            auto no-repeat;
+          background: url(../../assets/img/layout/icon-my-event.svg) 0 0/100% auto no-repeat;
         }
         &:first-child {
           padding-right: 2.5rem;

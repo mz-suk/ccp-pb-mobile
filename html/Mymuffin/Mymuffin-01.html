@@ -35,17 +35,19 @@
       <!-- wrap-contents -->
       <div class="wrap-contents">
         <div class="wrap-mymuffin">
-
           <div class="mymuffin-cont">
-            <p class="title">확인하지 않은 알림</p>
-            <button type="button" class="text count">25건</button>
+            <div class="mymuffin-content">
+              <p class="title">확인하지 않은 알림</p>
+              <button type="button" class="text count">25건</button>
+            </div>
           </div>
 
           <div class="mymuffin-cont">
-            <p class="title">차량정보</p>
-            <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
-
-            <div class="swiper-container" id="swiper01">
+            <div class="mymuffin-content">
+              <p class="title">차량정보</p>
+              <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
+            </div>
+            <div class="swiper-container muffin-swiper" id="swiper01">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="my-carinfo">
@@ -78,9 +80,11 @@
           </div>
 
           <div class="mymuffin-cont type1">
-            <p class="title">결제카드</p>
-            <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
-            <div class="swiper-container wrap-card" id="swiper02">
+            <div class="mymuffin-content">
+              <p class="title">결제카드</p>
+              <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
+            </div>
+            <div class="swiper-container wrap-card muffin-swiper type1" id="swiper02">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="card color1">
@@ -121,7 +125,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="my-dotted type2">
+                  <div class="my-dotted type1">
                     <button type="button" class="btn">새로운 카드 등록하기</button>
                   </div>
                 </div>
@@ -131,8 +135,10 @@
           </div>
 
           <div class="mymuffin-cont">
-            <p class="title">머핀포인트</p>
-            <a href="" class="text-link"><i class="bg-icon refresh">새로고침</i></a>
+            <div class="mymuffin-content">
+              <p class="title">머핀포인트</p>
+              <a href="" class="text-link"><i class="bg-icon refresh">새로고침</i></a>
+            </div>
 
             <div class="wrap-info">
               <div class="wrap-muffin-info">
@@ -149,15 +155,18 @@
           </div>
 
           <div class="mymuffin-cont">
-            <p class="title">내 쿠폰</p>
-            <button type="button" class="text count">13개</button>
+            <div class="mymuffin-content">
+              <p class="title">내 쿠폰</p>
+              <button type="button" class="text count">13개</button>
+            </div>
           </div>
 
           <div class="mymuffin-cont">
-            <p class="title">주유패턴</p>
-            <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
-
-            <div class="swiper-container" id="swiper03">
+            <div class="mymuffin-content">
+              <p class="title">주유패턴</p>
+              <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
+            </div>
+            <div class="swiper-container muffin-swiper" id="swiper03">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="my-carinfo type1">
@@ -195,36 +204,37 @@
             </div>
           </div>
 
-          <div class="mymuffin-cont">
-            <p class="title">즐겨찾기 주소</p>
-            <a href="" class="text-link">주소지 관리<i class="bg-icon link">더보기</i></a>
-
+          <div class="mymuffin-cont type3">
+            <div class="mymuffin-content">
+              <p class="title">즐겨찾기 주소</p>
+              <a href="" class="text-link">주소지 관리<i class="bg-icon link">더보기</i></a>
+            </div>
             <div class="muffin-address scroll">
-              <!--
               <ul class="address-list">
                 <li>
-                  <div><p>우리집</p></div>
+                  <button type="button">우리집</button>
                 </li>
                 <li>
-                  <div><p>롯데월드몰 지하1층</p></div>
+                  <button type="button">롯데월드몰 지하1층</button>
                 </li>
                 <li>
-                  <div><p>홍익대학교 미술디자인 교육원</p></div>
+                  <button type="button">홍익대학교 미술디자인 교육원</button>
                 </li>
                 <li>
-                   <div><a><i class="bg-icon add-address"></i></a></div>
+                   <button type="button"><i class="bg-icon add-address"></i></button>
                 </li>
               </ul>
-              -->
             </div>
           </div>
           <div class="mymuffin-cont">
-            <p class="title">머핀 회원 등급</p>
-            <a href="" class="text-link">멤버십 소개<i class="bg-icon link">더보기</i></a>
+            <div class="mymuffin-content">
+              <p class="title">머핀 회원 등급</p>
+              <a href="" class="text-link">멤버십 소개<i class="bg-icon link">더보기</i></a>
+            </div>
 
             <div class="muffin-member">
               <p class="my-membertext">송헌호님은 <span>일반회원</span> 등급입니다.</p>
-              <div class="swiper-container" id="swiper04">
+              <div class="swiper-container " id="swiper04">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="my-carinfo">
@@ -263,10 +273,10 @@
             </div>
           </div>
 
-          <div class="mymuffin-cont type1">
+          <div class="mymuffin-cont type2">
             <p class="title">머핀 유료 멤버십</p>
 
-            <div class="swiper-container" id="swiper05">
+            <div class="swiper-container muffin-swiper type1" id="swiper05">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="wrap-card">
@@ -336,7 +346,6 @@
        <script>
          var swiper = new Swiper('#swiper01', {
            slidesPerView: 'auto',
-           spaceBetween:25,
            loop:true,
            pagination: {
              el: '.swiper-pagination',
@@ -345,8 +354,7 @@
          });
          var swiper = new Swiper('#swiper02', {
            slidesPerView: 'auto',
-           spaceBetween:20,
-           loop:false,
+           loop:true,
            pagination: {
              el: '.swiper-pagination',
              type1:'bullets',
@@ -354,8 +362,7 @@
          });
          var swiper = new Swiper('#swiper03', {
            slidesPerView: 'auto',
-           spaceBetween:20,
-           loop:false,
+           loop:true,
            pagination: {
              el: '.swiper-pagination',
              type1:'bullets',
@@ -363,7 +370,6 @@
          });
          var swiper = new Swiper('#swiper04', {
            slidesPerView: 'auto',
-           spaceBetween:20,
            loop:true,
            pagination: {
              el: '.swiper-pagination',
@@ -372,7 +378,6 @@
          });
          var swiper = new Swiper('#swiper05', {
            slidesPerView: 'auto',
-           spaceBetween:20,
            loop:true,
            pagination: {
              el: '.swiper-pagination',
