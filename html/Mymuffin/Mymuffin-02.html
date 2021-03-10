@@ -35,28 +35,22 @@
       <!-- wrap-contents -->
       <div class="wrap-contents">
         <div class="wrap-mymuffin">
-          <div class="mymuffin-cont">
-            <div class="mymuffin-title">
-              <p class="title">확인하지 않은 알림</p>
-              <button type="button" class="text count">25건</button>
-            </div>
-          </div>
 
           <div class="mymuffin-cont">
             <div class="mymuffin-title">
               <p class="title">차량정보</p>
-              <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
             </div>
+
             <div class="btn-area grid">
               <button type="button" class="btn type4">새로운 차량 등록하기</button>
             </div>
           </div>
 
-          <div class="mymuffin-cont type1">
+          <div class="mymuffin-cont">
             <div class="mymuffin-title">
               <p class="title">결제카드</p>
-              <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
             </div>
+
             <div class="btn-area grid">
               <button type="button" class="btn type4">새로운 카드 등록하기</button>
             </div>
@@ -75,8 +69,6 @@
                   <dd class="active">0원</dd>
                   <dt>적립예정</dt>
                   <dd>0원</dd>
-                  <dt>소멸예정</dt>
-                  <dd>0원</dd>
                 </dl>
               </div>
             </div>
@@ -85,27 +77,30 @@
           <div class="mymuffin-cont">
             <div class="mymuffin-title">
               <p class="title">내 쿠폰</p>
-              <button type="button" class="text count">0개</button>
+              <div class="count-round">
+                <div class="round-num"><p>0</p></div>
+                개
+              </div>
             </div>
           </div>
 
           <div class="mymuffin-cont">
             <div class="mymuffin-title">
               <p class="title">주유패턴</p>
-              <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
             </div>
             <div class="btn-area grid">
               <button type="button" class="btn type4">주유패턴 등록하기</button>
             </div>
           </div>
 
-          <div class="mymuffin-cont type3">
-            <div class="mymuffin-title">
-              <p class="title">즐겨찾기 주소</p>
-              <a href="" class="text-link">주소지 관리<i class="bg-icon link">더보기</i></a>
-            </div>
-            <div class="btn-area grid">
-              <button type="button" class="btn type4">즐겨찾기 주소 등록하기</button>
+          <div class="mymuffin-cont">
+            <div class="mymuffin-wrap">
+              <div class="mymuffin-title">
+                <p class="title">즐겨찾는 주소</p>
+              </div>
+              <div class="btn-area grid">
+                <button type="button" class="btn type4">즐겨찾는 주소 등록하기</button>
+              </div>
             </div>
           </div>
 
@@ -116,11 +111,11 @@
             </div>
 
             <div class="muffin-member">
-              <p class="my-membertext">송헌호님은 <span>일반회원</span> 등급입니다.</p>
-              <div class="swiper-container " id="swiper01">
-                <div class="swiper-wrapper">
+              <p class="my-membertext">김민국님은 <span>일반회원</span> 등급입니다.</p>
+              <div class="swiper-container muffin-swiper" id="swiper01">
+                <div class="swiper-wrapper ">
                   <div class="swiper-slide">
-                    <div class="my-carinfo">
+                    <div class="muffin-grade">
                       <div class="my-member">
                         주유 및 세차 이용 시
                         <p>머핀 포인트 / OK 캐시백 사용</p>
@@ -128,18 +123,26 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="my-carinfo">
+                    <div class="muffin-grade">
                       <div class="my-member">
                         주유 및 세차 이용 시
-                        <p>머핀 포인트 / OK 캐시백 사용</p>
+                        <p>쿠폰 사용</p>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="my-carinfo">
+                    <div class="muffin-grade">
                       <div class="my-member">
-                        주유 및 세차 이용 시
-                        <p>머핀 포인트 / OK 캐시백 사용</p>
+                        골드 회원 전용
+                        <p>DB 운전자보험 가입 1년 무료</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="muffin-grade">
+                      <div class="my-member">
+                        골드 회원 전용
+                        <p>스피드메이트 정비 혜택</p>
                       </div>
                     </div>
                   </div>
@@ -147,16 +150,16 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="more-benefits">
+            <div class="more-benefits ">
+              <!-- .more-benefits 에 .icon-platinum 클래스 추가 시 골드 up 플래티넘 -->
               <div class="text-wrap">
-                <span class="more-money">107,650</span><span class="more-bold">원만 더</span> 쓰시면
-                <p>현재 일반 등급에서 골드 등급으로</p>
-                <p><span class="underline">승급 + 추가 혜택을</span> 드려요!</p>
+                <p><span class="more-money">107,650</span><span class="more-bold">원</span> 을 더 쓰시면</p>
+                <span class="underline">승급 + 추가 혜택을</span> 드려요!
               </div>
             </div>
           </div>
 
-          <div class="mymuffin-cont type2">
+          <div class="mymuffin-cont type1">
             <p class="title">머핀 유료 멤버십</p>
 
             <div class="swiper-container muffin-swiper type1" id="swiper02">
@@ -212,10 +215,10 @@
             <div class="my-event">
               <ul>
                 <li>
-                  진행중인 이벤트<p class="event-num">0건</p>
+                  진행중인 이벤트<p class="event-num">16<span>건</span></p>
                 </li>
                 <li>
-                  참여한 이벤트<p class="event-num">0건</p>
+                  참여한 이벤트<p class="event-num">17<span>건</span></p>
                 </li>
               </ul>
             </div>

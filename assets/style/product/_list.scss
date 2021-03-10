@@ -3216,6 +3216,22 @@
         margin-bottom: 0;
       }
     }
+    .pay-membership {
+      color: #111111;
+      text-align: center;
+      .brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      .explain {
+        padding: 1.1rem 0;
+        line-height: 2rem;
+      }
+      button {
+        color: #3673ee;
+        text-decoration: underline;
+      }
+    }
   }
 
   .wrap-info {

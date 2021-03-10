@@ -27,7 +27,7 @@
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
         <div class="right">
-           <button type="button" class="bg-icon menu">메뉴</button>
+          <button type="button" class="bg-icon menu">메뉴</button>
         </div>
       </header>
       <!-- //Header -->
@@ -35,12 +35,6 @@
       <!-- wrap-contents -->
       <div class="wrap-contents">
         <div class="wrap-mymuffin">
-          <div class="mymuffin-cont">
-            <div class="mymuffin-title">
-              <p class="title">확인하지 않은 알림</p>
-              <button type="button" class="text count">25건</button>
-            </div>
-          </div>
 
           <div class="mymuffin-cont">
             <div class="mymuffin-signup">
@@ -64,62 +58,27 @@
           </div>
 
           <div class="mymuffin-cont">
-            <div class="mymuffin-title">
-              <p class="title">차량정보</p>
-              <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
-            </div>
-            <div class="swiper-container muffin-swiper" id="swiper01">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="my-carinfo">
-                    <div class="logo">
-                      <img src="../../assets/img/layout/logo-bentley.png" alt="">
-                      <p class="car-barnd">벤틀리</p>
-                    </div>
-                    <p class="car-name">2020 벤틀리 벤테이가</p>
-                    <p class="car-number">28자 8617</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="my-carinfo">
-                    <div class="logo">
-                      <img src="../../assets/img/layout/logo-bentley.png" alt="">
-                      <p class="car-barnd">벤틀리</p>
-                    </div>
-                    <p class="car-name">2020 벤틀리 벤테이가</p>
-                    <p class="car-number">28자 8617</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="my-dotted">
-                    <button type="button" class="btn">새로운 차량 등록하기</button>
-                  </div>
-                </div>
+            <div class="mymuffin-wrap">
+              <div class="mymuffin-title">
+                <p class="title">즐겨찾는 주소</p>
+                <a href="" class="text-link">주소지 관리<i class="bg-icon link">더보기</i></a>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="mymuffin-cont type3">
-            <div class="mymuffin-title">
-              <p class="title">즐겨찾기 주소</p>
-              <a href="" class="text-link">주소지 관리<i class="bg-icon link">더보기</i></a>
-            </div>
-            <div class="muffin-address scroll">
-              <ul class="address-list">
-                <li>
-                  <button type="button">우리집</button>
-                </li>
-                <li>
-                  <button type="button">롯데월드몰 지하1층</button>
-                </li>
-                <li>
-                  <button type="button">홍익대학교 미술디자인 교육원</button>
-                </li>
-                <li>
-                   <button type="button"><i class="bg-icon add-address"></i></button>
-                </li>
-              </ul>
+              <div class="muffin-address scroll">
+                <ul class="address-list">
+                  <li>
+                    <button type="button">우리집</button>
+                  </li>
+                  <li>
+                    <button type="button">롯데월드몰 지하1층</button>
+                  </li>
+                  <li>
+                    <button type="button">홍익대학교 미술디자인 교육원</button>
+                  </li>
+                  <li class="address-add">
+                     <button type="button"><i class="bg-icon add-address"></i></button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -128,10 +87,10 @@
             <div class="my-event">
               <ul>
                 <li>
-                  진행중인 이벤트<p class="event-num">16건</p>
+                  진행중인 이벤트<p class="event-num">16<span>건</span></p>
                 </li>
                 <li>
-                  참여한 이벤트<p class="event-num">18건</p>
+                  참여한 이벤트<p class="event-num">17<span>건</span></p>
                 </li>
               </ul>
             </div>
@@ -139,20 +98,6 @@
         </div>
 
       </div>
-       <!--swiepr js-->
-       <link rel="stylesheet" href="../swiper-bundle.min.css">
-       <script src="../swiper-bundle.min.js"></script>
-       <script>
-         var swiper = new Swiper('#swiper01', {
-           slidesPerView: 'auto',
-           loop:true,
-           pagination: {
-             el: '.swiper-pagination',
-             type1:'bullets',
-           }
-         });
-       </script>
-       <!-- // swiper js-->
       <!-- //wrap-contents -->
     </div>
   </body>
