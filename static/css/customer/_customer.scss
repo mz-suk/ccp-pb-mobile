@@ -350,6 +350,9 @@
     border-bottom: 0.1rem solid $fcF0;
   }
   .q-txt {
+    @include clamp(1);
+  }
+  .q-cont {
     @include clamp(2);
   }
   .a-txt .txt-row {
@@ -394,7 +397,7 @@
     position: relative;
     margin-top: 1.5rem;
     padding-left: 1.5rem;
-    line-height: 1.4;
+    line-height: 1.5;
     color: $fc1;
     font-weight: 700;
     &:before {

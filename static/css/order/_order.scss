@@ -1312,6 +1312,24 @@
       &.bg2 {
         background: #41d0bf url(~assets/img/layout/bg-icon-exp.svg) no-repeat 0 0 / 100% auto;
         border: 0.1rem solid #36c9b9;
+        .code-list {
+          li {
+            &:before {
+              display: block;
+              width: 2.4rem;
+              height: 2.4rem;
+              background: url(~assets/img/layout/icon-barcode-bg2.svg) 0 0 / 100% auto no-repeat;
+              padding-bottom: 0.5rem;
+              content: "";
+              margin: 0 auto;
+            }
+            &:last-child {
+              &:before {
+                background: url(~assets/img/layout/icon-qrcode-bg2.svg) 0 0 / 100% auto no-repeat;
+              }
+            }
+          }
+        }
       }
       &.bg3 {
         background: $fcF9 url(~assets/img/layout/bg-icon-membership.svg) no-repeat 0 0 / 100% auto;
@@ -1361,6 +1379,7 @@
                 height: 2.4rem;
                 border-left: 0.1rem dotted $fcF;
                 content: "";
+                opacity: 0.6;
               }
             }
           }

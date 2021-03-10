@@ -607,7 +607,8 @@
   }
 
   &.type-point {
-    padding: 3.9rem 2rem 2.5rem;
+    position: relative;
+    padding: 3rem 3rem 2.5rem;
     color: $fc1;
     text-align: center;
     background: $fcF9;
@@ -615,7 +616,6 @@
 
     &.type1 {
       padding: 0 3rem;
-
       .main-info {
         display: block;
         padding: 2.9rem 0 2.5rem;
@@ -628,93 +628,146 @@
         &.bg2 {
           background: url(~assets/img/layout/bg-top-info-point3.svg) 100% 50% / 6.5rem 6.1rem no-repeat;
         }
-
+        .title {
+          text-align: left;
+        }
         .num {
           font-size: 1.7rem;
+          &:before {
+            display: none;
+          }
           strong {
             font-size: 2.4rem;
           }
         }
       }
     }
+
+    .btn-refresh {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 3.2rem;
+      height: 3.2rem;
+      background: $fcF url(~assets/img/layout/icon-refresh-type3.svg) 50% 50% / 1.6rem 1.6rem no-repeat;
+      border: 0.1rem solid $fcF0;
+      border-radius: 50%;
+      @include blind();
+    }
+
     .main-info {
-      padding: 0 0 1rem 4.7rem;
       display: inline-block;
-      text-align: center;
-      background: url(~assets/img/layout/bg-top-info-point.svg) 0 1.6rem / 4.75rem 4.99rem no-repeat;
+      padding: 0;
+
       .num {
-        margin-top: 0.4rem;
-        line-height: 1;
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+        strong {
+          padding-right: 0.2rem;
+        }
+        &:before {
+          display: inline-block;
+          width: 5rem;
+          height: 5.1rem;
+          background: url(~assets/img/layout/bg-top-info-point.svg) 0 0 / 100% auto no-repeat;
+          content: "";
+        }
       }
       .more {
         color: $pc2;
       }
+      .title {
+        text-align: center;
+        line-height: 1.2;
+      }
     }
     .sub-info {
-      margin-top: 1.2rem;
-      padding: 2rem 0;
+      margin-top: 0.7rem;
+      padding: 2.2rem 2rem;
       display: flex;
       color: $fc1;
       text-align: left;
       border: 0.1rem solid $fcF0;
       background: $fcF;
+
       .sub-point-box {
-        width: 50%;
-        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        width: 100%;
         &.point-up {
-          padding-left: 2rem;
           .title {
-            padding: 0.4rem 0 0 2.5rem;
-            background: url(~assets/img/layout/icon-point-up.svg) 0 0.1rem / 2rem 2rem no-repeat;
-            line-height: 1.3;
+            line-height: 2rem;
+            &:before {
+              display: inline-block;
+              width: 2rem;
+              height: 2rem;
+              margin-right: 0.5rem;
+              background: url(~assets/img/layout/icon-point-up.svg) 0 0 / 100% auto no-repeat;
+              vertical-align: top;
+              content: "";
+            }
           }
           .num {
-            padding-left: 0.7rem;
+            margin-left: auto;
+            font-size: 1.5rem;
             color: $pc3;
+            strong {
+              padding-right: 0.2rem;
+              font-size: 1.8rem;
+              vertical-align: middle;
+            }
           }
         }
-        &.point-down {
-          padding-left: 2.5rem;
-          border-left: 0.1rem dotted $fcE4;
-          .title {
-            padding: 0.4rem 0 0 2.5rem;
-            background: url(~assets/img/layout/icon-point-down.svg) 0 0.1rem / 2rem 2rem no-repeat;
-            line-height: 1.3;
-          }
-          .num {
-            padding-left: 0.7rem;
-            color: $gc3;
-          }
-        }
-        .num {
-          margin-top: 1rem;
-          font-size: 1.7rem;
-          font-weight: 700;
-          strong {
-            margin-right: 0.2rem;
-            font-size: 1.8rem;
-          }
-        }
+        // &.point-down {
+        //   padding-left: 2.5rem;
+        //   border-left: 0.1rem dotted $fcE4;
+        //   .title {
+        //     padding: 0.4rem 0 0 2.5rem;
+        //     background: url(~assets/img/layout/icon-point-down.svg) 0 0.1rem / 2rem 2rem no-repeat;
+        //     line-height: 1.3;
+        //   }
+        //   .num {
+        //     padding-left: 0.7rem;
+        //     color: $gc3;
+        //   }
+        // }
       }
     }
   }
 
   &.type-down,
   &.type-up {
-    color: $fc1;
-    margin: -4rem 0 0;
-    padding: 4rem 0 3rem;
+    margin: 0;
+    padding: 0 0 2.8rem;
     border-bottom: 0.1rem solid $fc1;
+    color: $fc1;
     .main-info {
       padding-top: 0;
       .title {
+        // width: 10rem;
+        display: inline-block;
         padding-left: 2.5rem;
+        box-sizing: border-box;
       }
       .num {
         position: absolute;
         right: 0;
         top: 50%;
         transform: translateY(-50%);
+        padding-right: 0.7rem;
+        font-size: 1.7rem;
+        // padding-left: 10rem;
+        strong {
+          vertical-align: middle;
+          padding-right: 0.2rem;
+        }
+      }
+    }
+    .tooltip-box {
+      left: -9.5rem;
+      &:before {
+        left: 10.2rem;
       }
     }
   }
@@ -742,21 +795,29 @@
 
 .statement-list-wrap {
   .wrap-tab-scroll {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     .tab-scroll-menu {
       background: linear-gradient(to bottom, $fcF, $fcF calc(100% - 0.1rem), $fcE4 calc(100% - 0.1rem), $fcE4 100%);
     }
   }
+  .wrap-select {
+    display: flex;
+    margin-top: 2rem;
+    .select:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
   .statement-list {
     &.type1 {
-      li {
-        padding-bottom: 2.5rem;
+      .price-area {
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
 
     li {
       position: relative;
-      padding: 3rem 1rem;
+      padding: 2.5rem 1rem;
       border-bottom: 0.1rem solid $fcE4;
       .title,
       .price {
@@ -765,6 +826,7 @@
           margin-right: 0.2rem;
           font-size: 1.6rem;
           font-weight: 400;
+          word-break: break-all;
         }
       }
       .desc {
@@ -772,6 +834,7 @@
         color: $fc9;
       }
       .title-area {
+        padding-right: 8.5rem;
         .title {
           .t-logo {
             margin-top: -0.5rem;
@@ -783,7 +846,7 @@
           line-height: 1.2;
         }
         .desc {
-          margin-top: 0.5rem;
+          margin-top: 0.7rem;
           font-size: 1.2rem;
           line-height: 1.2;
           span {
@@ -811,8 +874,8 @@
       .price-area {
         position: absolute;
         right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 2.5rem;
+        width: 8.5rem;
         text-align: right;
       }
     }

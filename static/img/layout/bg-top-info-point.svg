@@ -1,27 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48.974" height="48.999" viewBox="0 0 48.974 48.999">
-  <g id="그룹_471687" data-name="그룹 471687" transform="translate(-8.366 -6)">
-    <g id="그룹_447452" data-name="그룹 447452">
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51">
+  <g id="그룹_567532" data-name="그룹 567532" transform="translate(-98 -107)">
+    <rect id="사각형_421597" data-name="사각형 421597" width="50" height="51" transform="translate(98 107)" fill="#fff" opacity="0"/>
+    <g id="그룹_447261" data-name="그룹 447261" transform="translate(90.279 103.159)">
       <g id="그룹_447260" data-name="그룹 447260">
-        <path id="패스_853722" data-name="패스 853722" d="M47.6,31.129a12,12,0,0,1-12,12,5.312,5.312,0,0,1-.55-.02,6.39,6.39,0,0,1-.62.17,12.474,12.474,0,0,1-5.69-24.29,12.324,12.324,0,0,1,6.28.16,5.353,5.353,0,0,1,.58-.02A12.009,12.009,0,0,1,47.6,31.129Z" fill="#fff"/>
+        <path id="패스_853722" data-name="패스 853722" d="M47.6,28.969a12,12,0,0,1-12,12,4.808,4.808,0,0,1-.55-.02,6.117,6.117,0,0,1-.62.17,12.474,12.474,0,0,1-5.69-24.29,12.346,12.346,0,0,1,6.28.16c.193-.016.387-.023.58-.02A12.01,12.01,0,0,1,47.6,28.969Z" fill="#fff"/>
       </g>
-      <path id="패스_315187" data-name="패스 315187" d="M37.953,20.349h-4a12.469,12.469,0,0,0,0,24.937h4a12.469,12.469,0,0,0,0-24.937Z" fill="#fddb2b"/>
-      <circle id="타원_5538" data-name="타원 5538" cx="1.5" cy="1.5" r="1.5" transform="translate(9.116 30.391)" fill="none" stroke="#111" stroke-miterlimit="10" stroke-width="1.5"/>
-      <line id="선_43570" data-name="선 43570" x1="2.829" y1="2.828" transform="translate(20.542 7.62)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <line id="선_43571" data-name="선 43571" y1="2.828" x2="2.829" transform="translate(20.542 7.62)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <line id="선_43572" data-name="선 43572" x1="2.21" y1="2.21" transform="translate(54.069 10.927)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <line id="선_43573" data-name="선 43573" y1="2.21" x2="2.21" transform="translate(54.069 10.927)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <circle id="타원_5540" data-name="타원 5540" cx="1" cy="1" r="1" transform="translate(29.189 12.375)" fill="#111"/>
-      <circle id="타원_5541" data-name="타원 5541" cx="1" cy="1" r="1" transform="translate(8.721 9.125)" fill="#111"/>
-      <circle id="타원_5542" data-name="타원 5542" cx="1" cy="1" r="1" transform="translate(45.188 6)" fill="#111"/>
-      <path id="패스_315187-2" data-name="패스 315187-2" d="M35.708,18.52h-4a12.469,12.469,0,1,0-.023,24.938h4.023a12.469,12.469,0,1,0,.023-24.938Z" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <line id="선_43563" data-name="선 43563" x2="3.419" transform="translate(44.177 30.989)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <line id="선_43564" data-name="선 43564" x2="3.501" transform="translate(41.081 39.212)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <line id="선_43565" data-name="선 43565" x2="3.491" transform="translate(43.482 35.099)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <line id="선_43566" data-name="선 43566" x1="3.623" transform="translate(41.081 22.797)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <line id="선_43567" data-name="선 43567" x1="3.479" transform="translate(43.494 26.909)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <circle id="타원_5536" data-name="타원 5536" cx="12.473" cy="12.473" r="12.473" transform="translate(19.236 18.526)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-      <path id="패스_481946" data-name="패스 481946" d="M31.265,24.937a7.638,7.638,0,0,1,3.136.527,2.853,2.853,0,0,1,1.648,2.849,3.608,3.608,0,0,1-.672,2.255,4.283,4.283,0,0,1-3.648,1.44q-1.183,0-1.184-.96a.782.782,0,0,1,.384-.735,1.258,1.258,0,0,1,.544-.161c.182-.011.368-.027.56-.048a1.56,1.56,0,0,0,1.484-1.63.938.938,0,0,0-.012-.13q0-1.583-2-1.584H30.193v8.5q0,1.3-1.152,1.3-1.135,0-1.136-1.3V24.941Z" fill="#111"/>
+      <path id="패스_315187" data-name="패스 315187" d="M37.953,18.189h-4a12.469,12.469,0,0,0,0,24.938h4a12.469,12.469,0,0,0,0-24.938Z" fill="#fddb2b"/>
+      <line id="선_43568" data-name="선 43568" x1="2.828" y1="2.829" transform="translate(40.497 50.916)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43569" data-name="선 43569" y1="2.829" x2="2.828" transform="translate(40.497 50.916)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <circle id="타원_5538" data-name="타원 5538" cx="1.5" cy="1.5" r="1.5" transform="translate(9.116 28.232)" fill="none" stroke="#111" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_43570" data-name="선 43570" x1="2.829" y1="2.828" transform="translate(20.542 5.46)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43571" data-name="선 43571" y1="2.828" x2="2.829" transform="translate(20.542 5.46)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43572" data-name="선 43572" x1="2.21" y1="2.21" transform="translate(54.069 8.767)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43573" data-name="선 43573" y1="2.21" x2="2.21" transform="translate(54.069 8.767)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <circle id="타원_5540" data-name="타원 5540" cx="1" cy="1" r="1" transform="translate(29.189 10.216)" fill="#111"/>
+      <circle id="타원_5541" data-name="타원 5541" cx="1" cy="1" r="1" transform="translate(8.721 6.966)" fill="#111"/>
+      <circle id="타원_5542" data-name="타원 5542" cx="1" cy="1" r="1" transform="translate(45.188 3.841)" fill="#111"/>
+      <path id="패스_315187-2" data-name="패스 315187-2" d="M35.708,16.36h-4A12.469,12.469,0,1,0,31.685,41.3h4.023a12.469,12.469,0,1,0,.023-24.938Z" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43563" data-name="선 43563" x2="4" transform="translate(44.177 28.829)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43564" data-name="선 43564" x2="3.998" transform="translate(41.081 37.052)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43565" data-name="선 43565" x2="4.001" transform="translate(43.482 32.94)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43566" data-name="선 43566" x1="4" transform="translate(41.081 20.637)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_43567" data-name="선 43567" x1="4" transform="translate(43.494 24.749)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <circle id="타원_5536" data-name="타원 5536" cx="12.473" cy="12.473" r="12.473" transform="translate(19.236 16.366)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="패스_481946" data-name="패스 481946" d="M31.265,22.777a7.639,7.639,0,0,1,3.136.528,2.852,2.852,0,0,1,1.648,2.848,3.609,3.609,0,0,1-.672,2.256,4.286,4.286,0,0,1-3.648,1.44q-1.183,0-1.184-.96a.785.785,0,0,1,.384-.736,1.27,1.27,0,0,1,.544-.16c.182-.011.368-.027.56-.048a1.56,1.56,0,0,0,1.484-1.631.923.923,0,0,0-.012-.129q0-1.584-2-1.584H30.193v8.5q0,1.3-1.152,1.3-1.135,0-1.136-1.3V22.781Z" fill="#111"/>
     </g>
-    <ellipse id="타원_10773" data-name="타원 10773" cx="10.5" cy="1.5" rx="10.5" ry="1.5" transform="translate(23.721 52)" fill="#4b4210" opacity="0.18" style="isolation: isolate"/>
   </g>
 </svg>
