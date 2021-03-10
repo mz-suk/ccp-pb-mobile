@@ -3073,82 +3073,36 @@
     padding: 2rem 1rem 0;
     height: 5.8rem;
     position: relative;
+    .my-cardpre {
+      position: static;
+      float: left;
+      background: #726aa9;
+      border-radius: 0.5rem;
+      border: 0.1rem solid #6b639f;
+      &.color1 {
+        background: #2e7cf1;
+        border: 0.1rem solid #2972ef;
+      }
+    }
     &:before {
-      content: "";
+      // content: "";
       position: absolute;
       left: 1rem;
       width: 9rem;
       height: 5.8rem;
-      background: url(../../assets/img/layout/mymuffin-card.png) 0 0/100% auto no-repeat;
+      background: url(../../assets/img/layout/mymuffin-card-test.svg) 0 0/100% auto no-repeat;
     }
-    &.color1 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-01.png) 0 0/100% auto no-repeat;
+
+    .mymuffin-card {
+      .card-name {
+        padding-left: 10.5rem;
+        margin-top: 0.8rem;
+        font-size: 1.5rem;
       }
-    }
-    &.color2 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-02.png) 0 0/100% auto no-repeat;
+      .card-number {
+        padding-left: 10.5rem;
+        font-size: 1.4rem;
       }
-    }
-    &.color3 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-03.png) 0 0/100% auto no-repeat;
-      }
-    }
-    &.color4 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-04.png) 0 0/100% auto no-repeat;
-      }
-    }
-    &.color5 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-05.png) 0 0/100% auto no-repeat;
-      }
-    }
-    &.color6 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-06.png) 0 0/100% auto no-repeat;
-      }
-    }
-    &.color7 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-07.png) 0 0/100% auto no-repeat;
-      }
-    }
-    &.color8 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-08.png) 0 0/100% auto no-repeat;
-      }
-    }
-    &.color9 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-09.png) 0 0/100% auto no-repeat;
-      }
-    }
-    &.color10 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-10.png) 0 0/100% auto no-repeat;
-      }
-    }
-    &.color11 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-11.png) 0 0/100% auto no-repeat;
-      }
-    }
-    &.color12 {
-      &:before {
-        background: url(../../assets/img/layout/mymuffin-card-12.png) 0 0/100% auto no-repeat;
-      }
-    }
-    .card-name {
-      padding-left: 10.5rem;
-      margin-top: 0.8rem;
-      font-size: 1.5rem;
-    }
-    .card-number {
-      padding-left: 10.5rem;
-      font-size: 1.4rem;
     }
   }
   .swiper-container {
