@@ -3014,8 +3014,6 @@
         border-radius: 50%;
         background: rgba(54, 115, 288, 0.1);
         display: inline-block;
-      }
-      p {
         text-align: center;
       }
     }
@@ -3085,12 +3083,62 @@
     }
     &.color1 {
       &:before {
-        background: url(../../assets/img/layout/mymuffin-card-02.png) 0 0/100% auto no-repeat;
+        background: url(../../assets/img/layout/mymuffin-card-01.png) 0 0/100% auto no-repeat;
       }
     }
     &.color2 {
       &:before {
+        background: url(../../assets/img/layout/mymuffin-card-02.png) 0 0/100% auto no-repeat;
+      }
+    }
+    &.color3 {
+      &:before {
         background: url(../../assets/img/layout/mymuffin-card-03.png) 0 0/100% auto no-repeat;
+      }
+    }
+    &.color4 {
+      &:before {
+        background: url(../../assets/img/layout/mymuffin-card-04.png) 0 0/100% auto no-repeat;
+      }
+    }
+    &.color5 {
+      &:before {
+        background: url(../../assets/img/layout/mymuffin-card-05.png) 0 0/100% auto no-repeat;
+      }
+    }
+    &.color6 {
+      &:before {
+        background: url(../../assets/img/layout/mymuffin-card-06.png) 0 0/100% auto no-repeat;
+      }
+    }
+    &.color7 {
+      &:before {
+        background: url(../../assets/img/layout/mymuffin-card-07.png) 0 0/100% auto no-repeat;
+      }
+    }
+    &.color8 {
+      &:before {
+        background: url(../../assets/img/layout/mymuffin-card-08.png) 0 0/100% auto no-repeat;
+      }
+    }
+    &.color9 {
+      &:before {
+        background: url(../../assets/img/layout/mymuffin-card-09.png) 0 0/100% auto no-repeat;
+      }
+    }
+    &.color10 {
+      &:before {
+        background: url(../../assets/img/layout/mymuffin-card-10.png) 0 0/100% auto no-repeat;
+      }
+    }
+    &.color11 {
+      &:before {
+        background: url(../../assets/img/layout/mymuffin-card-11.png) 0 0/100% auto no-repeat;
+      }
+    }
+    &.color12 {
+      &:before {
+        background: url(../../assets/img/layout/mymuffin-card-12.png) 0 0/100% auto no-repeat;
       }
     }
     .card-name {
