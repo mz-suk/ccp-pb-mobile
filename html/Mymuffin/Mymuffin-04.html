@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">마이머핀</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-mymuffin">
+          <div class="mymuffin-cont">
+            <div class="mymuffin-title">
+              <p class="title">확인하지 않은 알림</p>
+              <button type="button" class="text count">25건</button>
+            </div>
+          </div>
+
+          <div class="mymuffin-cont">
+            <div class="mymuffin-signup">
+              <div class="signup-title">
+                고객님~ 머핀 멤버십 회원으로 가입하고,
+                <p>다양한 혜택을 받아보세요!</p>
+              </div>
+              <div class="singup-list">
+                <ul>
+                  <li>1.  주유 이용 시 머핀 포인트 <span>리터당 2원 적립</span></li>
+                  <li>2.  세차 이용 시 머핀 포인트 <span>최대 5% 적립</span></li>
+                  <li>3.  세차쿠폰 최대 <span>14장 발급</span></li>
+                  <li>4.  DB운전자보험 <span>가입 1년 무료</span></li>
+                  <li>5. 스피드메이트 <span>정비 혜택</span></li>
+                </ul>
+              </div>
+              <div class="wrap-btn">
+                <button type="button" class="btn color1">머핀 멤버십 회원가입</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mymuffin-cont">
+            <div class="mymuffin-title">
+              <p class="title">차량정보</p>
+              <a href="" class="text-link">자세히보기<i class="bg-icon link">더보기</i></a>
+            </div>
+            <div class="btn-area grid">
+              <button type="button" class="btn type4">새로운 차량 등록하기</button>
+            </div>
+          </div>
+
+          <div class="mymuffin-cont type3">
+            <div class="mymuffin-title">
+              <p class="title">즐겨찾기 주소</p>
+              <a href="" class="text-link">주소지 관리<i class="bg-icon link">더보기</i></a>
+            </div>
+            <div class="btn-area grid">
+              <button type="button" class="btn type4">즐겨찾기 주소 등록하기</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- //wrap-contents -->
+    </div>
+  </body>
+</html>
