@@ -74,7 +74,8 @@
       z-index: 3;
       height: 4.6rem;
       padding-left: 2.5rem;
-      background: url(~assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem no-repeat;
+      background: url(~assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem
+        no-repeat;
       color: $fc1;
       font-size: 1.1rem;
       line-height: 3.4rem;
@@ -85,7 +86,8 @@
         height: 4.6rem;
         padding: 1rem 1rem 0 1.4rem;
         line-height: 1.35rem;
-        background: url(~assets/img/layout/bg-label-right.png) 100% 0 / auto 4.6rem no-repeat;
+        background: url(~assets/img/layout/bg-label-right.png) 100% 0 /
+          auto 4.6rem no-repeat;
         box-sizing: border-box;
         text-decoration: underline;
       }
@@ -96,7 +98,8 @@
         left: 0.8rem;
         width: 2.8rem;
         height: 2.8rem;
-        background: url(~assets/img/layout/icon-confusion-off.svg) 0 0 / 100% auto no-repeat;
+        background: url(~assets/img/layout/icon-confusion-off.svg) 0 0 /
+          100% auto no-repeat;
         content: "";
       }
 
@@ -626,7 +629,8 @@
         right: 2rem;
         width: 11rem;
         height: 11rem;
-        background: url(~assets/img/layout/icon-carwash.svg) 0 0 / 100% auto no-repeat;
+        background: url(~assets/img/layout/icon-carwash.svg) 0 0 / 100%
+          auto no-repeat;
         content: "";
       }
       & + .wrap-filter-tab {
@@ -1400,7 +1404,8 @@
       }
 
       &:after {
-        background: url("~assets/img/layout/icon-chk-on.svg") no-repeat center center;
+        background: url("~assets/img/layout/icon-chk-on.svg") no-repeat
+          center center;
         background-size: 100% auto;
       }
     }
@@ -1461,7 +1466,8 @@
         padding-left: 2.5rem;
         font-size: 1.5rem;
         color: $fcF;
-        background: url(~assets/img/layout/icon-checkbox-white.png) no-repeat 0 center / 2rem 2rem;
+        background: url(~assets/img/layout/icon-checkbox-white.png)
+          no-repeat 0 center / 2rem 2rem;
         z-index: 6;
         transform: translate(-50%, -40%);
       }
@@ -1611,7 +1617,8 @@
           left: 50%;
           z-index: 1;
           padding-left: 2.5rem;
-          background: url(~assets/img/layout/icon-chk-white.svg) 0 0 / 2rem no-repeat;
+          background: url(~assets/img/layout/icon-chk-white.svg) 0 0 / 2rem
+            no-repeat;
           color: $fcF;
           font-size: 1.5rem;
           line-height: 1.5;
@@ -2890,7 +2897,8 @@
           width: 1.2rem;
           height: 1.2rem;
           margin-left: 0.5rem;
-          background: url(~assets/img/layout/icon-close-type2.svg) 0 0/100% auto no-repeat;
+          background: url(~assets/img/layout/icon-close-type2.svg) 0 0/100%
+            auto no-repeat;
           vertical-align: top;
           -webkit-filter: brightness(0);
           filter: brightness(0);
@@ -2969,7 +2977,7 @@
 }
 
 .mymuffin-cont {
-  padding: 3rem 2rem 3rem;
+  padding: 3.5rem 2rem 3.5rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
@@ -2977,11 +2985,45 @@
   .mymuffin-title {
     position: relative;
     .count {
-      color: $pc3;
-      font-size: 1.6rem;
       position: absolute;
       right: 0rem;
-      top: 0.2rem;
+      top: -1rem;
+      line-height: 4.6rem;
+      color: $pc3;
+      font-size: 1.5rem;
+      .count-round {
+        color: $pc3;
+        position: relative;
+        font-weight: 500;
+        padding-right: 2rem;
+        font-size: 1.6rem;
+        &:before {
+          position: absolute;
+          width: 4.6rem;
+          height: 4.6rem;
+          border-radius: 50%;
+          background: $pc3;
+          opacity: 0.1;
+          content: "";
+          right: 0.6rem;
+        }
+      }
+    }
+    .count-round {
+      position: absolute;
+      right: 0rem;
+      top: -1rem;
+      line-height: 4.6rem;
+      color: $pc3;
+      font-size: 1.5rem;
+      .round-num {
+        width: 4.6rem;
+        height: 4.6rem;
+        border-radius: 50%;
+        background: rgba(54, 115, 288, 0.1);
+        display: inline-block;
+        text-align: center;
+      }
     }
     .text-link {
       color: $fc1;
@@ -3006,82 +3048,128 @@
   }
 
   .my-carinfo {
+    padding: 2rem 1rem 1.5rem;
+    height: 9rem;
+    .my-logo {
+      position: static;
+      float: left;
+      width: 9rem;
+      height: 9rem;
+      background: $fcF9;
+      border-radius: 50%;
+      border: 0.1rem solid $fcF0;
+      padding: 1.2rem 1.3rem 1.6rem 1.3rem;
+      box-sizing: border-box;
+      img {
+        width: 6.2rem;
+        height: 6.2rem;
+      }
+    }
+    .my-cartext {
+      .car-name {
+        padding-left: 10.5rem;
+        margin-top: 2.6rem;
+      }
+      .car-number {
+        padding-left: 10.5rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+    }
+  }
+  .my-cardinfo {
+    padding: 2rem 1rem 0;
+    height: 5.8rem;
     position: relative;
-    padding: 1rem 3rem;
-    display: block;
-    line-height: 1;
-    background: $fcF;
-    border: 0.1rem solid $fcD7;
-    border-radius: 1.6rem;
-    //width: 33.5rem;
-    box-sizing: border-box;
-    .car-barnd {
-      display: none;
-      margin-top: 0.5rem;
-      color: $fc9;
-      text-align: center;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      overflow: hidden;
+    &:before {
+      content: "";
       position: absolute;
-      top: 50%;
-      right: 3rem;
-      width: 10rem;
-      height: 10rem;
-      transform: translate(0, -50%);
+      left: 1rem;
+      width: 9rem;
+      height: 5.8rem;
+      background: url(~assets/img/layout/mymuffin-card.png) 0 0/100% auto
+        no-repeat;
     }
-    .car-name {
-      width: calc(100% - 10rem);
-      margin-top: 2.5rem;
-      font-size: 1.3rem;
-      color: $fc1;
+    &.color1 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-01.png) 0 0/100%
+          auto no-repeat;
+      }
     }
-    .car-number {
-      margin: 1rem 0 2.6rem;
-      font-size: 2.4rem;
+    &.color2 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-02.png) 0 0/100%
+          auto no-repeat;
+      }
     }
-    .my-partner {
-      margin-bottom: 1rem;
+    &.color3 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-03.png) 0 0/100%
+          auto no-repeat;
+      }
+    }
+    &.color4 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-04.png) 0 0/100%
+          auto no-repeat;
+      }
+    }
+    &.color5 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-05.png) 0 0/100%
+          auto no-repeat;
+      }
+    }
+    &.color6 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-06.png) 0 0/100%
+          auto no-repeat;
+      }
+    }
+    &.color7 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-07.png) 0 0/100%
+          auto no-repeat;
+      }
+    }
+    &.color8 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-08.png) 0 0/100%
+          auto no-repeat;
+      }
+    }
+    &.color9 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-09.png) 0 0/100%
+          auto no-repeat;
+      }
+    }
+    &.color10 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-10.png) 0 0/100%
+          auto no-repeat;
+      }
+    }
+    &.color11 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-11.png) 0 0/100%
+          auto no-repeat;
+      }
+    }
+    &.color12 {
+      &:before {
+        background: url(~assets/img/layout/mymuffin-card-12.png) 0 0/100%
+          auto no-repeat;
+      }
+    }
+    .card-name {
+      padding-left: 10.5rem;
+      margin-top: 0.8rem;
+      font-size: 1.5rem;
+    }
+    .card-number {
+      padding-left: 10.5rem;
       font-size: 1.4rem;
-      p {
-        position: relative;
-        padding-left: 2rem;
-        margin-top: 1.7rem;
-        line-height: 2rem;
-        &:before {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 0.7rem;
-          left: 0.8rem;
-          width: 0.3rem;
-          height: 0.3rem;
-          background-color: $fc6;
-          border-radius: 50%;
-        }
-        &.active {
-          color: $pc3;
-        }
-      }
-      span {
-        position: relative;
-        padding-left: 1.5rem;
-        &:before {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 0.4rem;
-          left: 0.4rem;
-          width: 0.1rem;
-          height: 1rem;
-          background-color: $fcD7;
-        }
-      }
-    }
-    &.type1 {
-      padding: 2.5rem;
     }
   }
   .swiper-container {
@@ -3094,18 +3182,15 @@
       .swiper-wrapper {
         align-items: center;
         .swiper-slide {
-          margin: 0 2rem;
+          margin: 0 3rem;
         }
       }
       &.type1 {
         .swiper-slide {
           margin: 0 0 0 2rem;
+          width: 29.5rem;
         }
       }
-    }
-    .swiper-slide {
-      margin: 0 2rem;
-      width: 33.5rem;
     }
   }
   .swiper-pagination {
@@ -3148,20 +3233,12 @@
 
   &.type1 {
     .swiper-slide {
-      width: 29rem;
       height: 100%;
       overflow: hidden;
     }
   }
-  &.type2 {
-    .swiper-slide {
-      width: 29.5rem;
-      height: 100%;
-      overflow: hidden;
-    }
-  }
-  &.type3 {
-    padding: 3rem 0;
+  .mymuffin-wrap {
+    margin: 0 -2rem;
     .mymuffin-title {
       margin: 0 2rem;
     }
@@ -3208,70 +3285,27 @@
         margin-bottom: 0;
       }
     }
-    .bg3 {
-      .info {
-        color: $fc1;
-        text-align: center;
-        padding-bottom: 2.5rem;
-        .pay-membership {
-          font-size: 1.3rem;
-          .brand {
-            font-weight: bold;
-            font-size: 1.5rem;
-            margin-bottom: 1.1rem;
-          }
-          .explain {
-            margin-bottom: 1.1rem;
-          }
-          button {
-            color: $pc3;
-            text-decoration: underline;
-          }
-        }
+    .pay-membership {
+      color: $fc1;
+      text-align: center;
+      .brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      .explain {
+        padding: 1.1rem 0;
+        line-height: 2rem;
+      }
+      button {
+        color: $pc3;
+        text-decoration: underline;
       }
     }
   }
 
-  .my-dotted {
-    padding: 2.5rem;
-    display: block;
-    line-height: 1;
-    background: $fcF;
-    border: 0.1rem solid $fc9;
-    border-radius: 1.6rem;
-    border-style: dotted;
-    box-sizing: border-box;
-    width: 33.5rem;
-    button {
-      border: none;
-      height: 6.8rem;
-      width: 100%;
-      padding: 0;
-      &:before {
-        content: "";
-        display: inline-block;
-        width: 0.6rem;
-        height: 0.6rem;
-        margin: 0 0.6rem;
-        background: url(~assets/img/layout/icon-more-type1.svg) 0 0/100% auto no-repeat;
-        vertical-align: 0.2rem;
-      }
-    }
-    &.type1 {
-      width: 29rem;
-      button {
-        height: 12.7rem;
-      }
-    }
-    &.type2 {
-      button {
-        height: 14.6rem;
-      }
-    }
-  }
   .wrap-info {
     width: 100%;
-    margin-top: 0.8rem;
+    margin-top: 1.5rem;
     padding-top: 0;
     border-top: 0.1rem solid $fcF0;
     .wrap-muffin-info {
@@ -3307,7 +3341,51 @@
         margin-bottom: 0;
       }
     }
-
+    .pattern-title {
+      padding: 3rem 0 0 1rem;
+      .pattern {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.5rem;
+      }
+    }
+    .mymuffin-pattern {
+      padding: 0 1rem;
+      li {
+        font-size: 1.4rem;
+        position: relative;
+        padding-left: 2rem;
+        margin-top: 1.7rem;
+        line-height: 2rem;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0.7rem;
+          left: 0.8rem;
+          width: 0.3rem;
+          height: 0.3rem;
+          background-color: $fc6;
+          border-radius: 50%;
+        }
+        &.active {
+          color: $pc3;
+        }
+        span {
+          padding-left: 1.5rem;
+          position: relative;
+          &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0.4rem;
+            left: 0.4rem;
+            width: 0.1rem;
+            height: 1rem;
+            background-color: $fcD7;
+          }
+        }
+      }
+    }
     .wrap-select {
       margin: 2.5rem 1rem 0;
       padding-bottom: 2.5rem;
@@ -3346,11 +3424,12 @@
       li {
         display: inline-block;
         text-align: center;
-        margin-right: 0.05rem;
+        margin-right: 0.1rem;
         width: 9rem;
         height: 9rem;
         button {
-          border: 0.1rem solid $fcE4;
+          background: $fcF9;
+          border: 0.1rem solid $fcF0;
           padding: 1.7rem;
           overflow: hidden;
           white-space: pre-line;
@@ -3362,6 +3441,12 @@
           .add-address {
             width: 2rem;
             height: 2rem;
+          }
+        }
+        &.address-add {
+          button {
+            background: $fcF;
+            border: 0.1rem dotted $fcD7;
           }
         }
       }
@@ -3386,68 +3471,83 @@
     }
   }
   .muffin-member {
-    border-radius: 1.6rem;
-    border: 0.1rem solid $fcE4;
-    padding: 3rem 0 2.4rem;
-    margin-top: 2rem;
+    padding: 3rem 0 2rem;
     font-size: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 0.1rem solid $fcF0;
+    border-bottom: 0.1rem solid $fcF0;
     .my-membertext {
-      padding-left: 3rem;
+      padding: 0 1rem;
+      span {
+        color: $pc3;
+      }
     }
-    span {
-      color: $pc3;
-    }
-    .swiper-container {
-      .my-carinfo {
-        background: #fafafa;
-        border-radius: 0;
-        padding: 2.5rem 8rem 2.5rem 2.5rem;
-        border: 0.1rem solid $fcF0;
-        width: 29.5rem;
-        box-sizing: border-box;
-        position: relative;
-        &:before {
-          content: "";
-          position: absolute;
-          width: 5rem;
-          height: 4.7rem;
-          right: 2rem;
-          top: 2.1rem;
-          background: url(~assets/img/layout/icon-cashback.svg) 0 0/100% auto no-repeat;
-        }
-        .my-member {
-          font-size: 1.5rem;
-          line-height: 1.8rem;
-          p {
-            font-weight: 700;
-            margin-top: 0.1rem;
-            color: $pc3;
-          }
+    .muffin-grade {
+      background: #fafafa;
+      border-radius: 0;
+      padding: 2.5rem 8rem 2.5rem 2.5rem;
+      border: 0.1rem solid $fcF0;
+      width: 31.5rem;
+      box-sizing: border-box;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 5rem;
+        height: 4.7rem;
+        right: 2.5rem;
+        top: 2.1rem;
+        background: url(~assets/img/layout/icon-cashback.svg) 0 0/100% auto
+          no-repeat;
+      }
+      .my-member {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        p {
+          color: $pc3;
+          margin-top: 0.4rem;
+          line-height: 2rem;
         }
       }
     }
   }
   .more-benefits {
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 0 1.4rem;
-    .text-wrap {
-      padding-left: 13.2rem;
-      position: relative;
-      line-height: 2rem;
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      p {
-        font-size: 1.3rem;
-      }
+    position: relative;
+    height: 7.4rem;
+    &.icon-platinum {
       &:before {
         content: "";
         position: absolute;
         width: 11.4rem;
         height: 7.4rem;
-        margin-top: -1rem;
-        left: 0rem;
-        background: url(~assets/img/layout/icon-more-benefits.svg) 0 0/100% auto no-repeat;
+        left: 1rem;
+        top: 0;
+        background: url(~assets/img/layout/icon-more-platinum.svg) 0 0/100%
+          auto no-repeat;
       }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 11.4rem;
+      height: 7.4rem;
+      left: 1rem;
+      top: 0;
+      background: url(~assets/img/layout/icon-more-benefits.svg) 0 0/100%
+        auto no-repeat;
+    }
+    .text-wrap {
+      padding: 1.8rem 0 0 13.2rem;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      p {
+        font-size: 1.5rem;
+      }
+
       .more-money {
         font-weight: 700;
         font-size: 1.8rem;
@@ -3475,43 +3575,110 @@
   }
   .my-event {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    border-top: 0.1rem solid $fcF0;
     .event-num {
       font-size: 2rem;
       color: $pc3;
+      font-weight: 500;
+      span {
+        font-size: 1.3rem;
+      }
     }
     ul {
-      border: 0.1rem solid $fcF0;
-      padding: 3rem 3rem 2.5rem;
+      padding: 3rem 1rem 2.5rem;
       border-radius: 1.6rem;
       li {
         display: inline-block;
-        padding-left: 3rem;
-        //width: 10.4rem;
+        padding-left: 5.7rem;
+        font-size: 1.1rem;
         position: relative;
         &:before {
           content: "";
           position: absolute;
           left: 0;
-          top: 0.3rem;
-          width: 2.4rem;
-          height: 2.4rem;
-          background: url(~assets/img/layout/icon-my-event.svg) 0 0/100% auto no-repeat;
+          top: -0.5rem;
+          width: 4.7rem;
+          height: 4.7rem;
+          background: url(~assets/img/layout/icon-my-event-02.svg) 0 0/100%
+            auto no-repeat;
         }
         &:first-child {
-          padding-right: 2.5rem;
+          padding-right: 3.1rem;
+          &:before {
+            background: url(~assets/img/layout/icon-my-event.svg) 0 0/100%
+              auto no-repeat;
+          }
           &:after {
             content: "";
             position: absolute;
             right: 0;
             top: 0.3rem;
             height: 3.8rem;
-            border-left: 0.1rem dotted #d7d7d7;
+            border-left: 0.1rem dotted $fcD7;
           }
         }
         &:last-child {
-          margin-left: 2.5rem;
+          margin-left: 2.8rem;
         }
+      }
+    }
+  }
+  .mymuffin-signup {
+    padding: 3.4rem 2.5rem;
+    background: #fafafa;
+    border: 0.1rem solid $fcF0;
+    border-radius: 1.6rem;
+    margin-bottom: 1.5rem;
+    .signup-title {
+      font-size: 1.5rem;
+      text-align: center;
+      padding-bottom: 2.5rem;
+      border-bottom: 0.1rem dotted $fcD7;
+      p {
+        color: $pc3;
+      }
+    }
+    .singup-list {
+      padding: 2.5rem;
+      font-size: 1.3rem;
+      ul {
+        li {
+          line-height: 2.5rem;
+          span {
+            border-bottom: 0.1rem solid $fc1;
+          }
+        }
+      }
+    }
+    .wrap-btn {
+      margin: 1.7rem 4.6rem 0;
+    }
+  }
+  .mycard-rep {
+    input[type="radio"] {
+      width: 2.4rem;
+      height: 2.4rem;
+      background: url(~assets/img/layout/icon-rep-card.svg) 100% 100%/2.4rem
+        2.4rem no-repeat;
+      border-radius: 50%;
+      opacity: 0.4;
+      transition: all 0.2s ease;
+    }
+    input[type="radio"]:checked {
+      opacity: 1;
+    }
+    input[type="radio"]:checked + label {
+      span {
+        opacity: 1;
+        transition: all 0.2s ease;
+      }
+    }
+    input[type="radio"] + label {
+      span {
+        font-size: 1.1rem;
+        font-weight: 700;
+        opacity: 0.4;
       }
     }
   }
