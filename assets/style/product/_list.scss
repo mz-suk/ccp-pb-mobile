@@ -2981,10 +2981,10 @@
       right: 0rem;
       top: -1rem;
       line-height: 4.6rem;
-      color: #3673ee;
+      color: $pc3;
       font-size: 1.5rem;
       .count-round {
-        color: #3673ee;
+        color: $pc3;
         position: relative;
         font-weight: 500;
         padding-right: 2rem;
@@ -2994,7 +2994,7 @@
           width: 4.6rem;
           height: 4.6rem;
           border-radius: 50%;
-          background: #3673ee;
+          background: $pc3;
           opacity: 0.1;
           content: "";
           right: 0.6rem;
@@ -3006,7 +3006,7 @@
       right: 0rem;
       top: -1rem;
       line-height: 4.6rem;
-      color: #3673ee;
+      color: $pc3;
       font-size: 1.5rem;
       .round-num {
         width: 4.6rem;
@@ -3049,9 +3049,9 @@
       float: left;
       width: 9rem;
       height: 9rem;
-      background: #f9f9f9;
+      background: $fcF9;
       border-radius: 50%;
-      border: 0.1rem solid #f0f0f0;
+      border: 0.1rem solid $fcF0;
       padding: 1.2rem 1.3rem 1.6rem 1.3rem;
       box-sizing: border-box;
       img {
@@ -3217,7 +3217,7 @@
       }
     }
     .pay-membership {
-      color: #111111;
+      color: $fc1;
       text-align: center;
       .brand {
         font-size: 1.5rem;
@@ -3228,7 +3228,7 @@
         line-height: 2rem;
       }
       button {
-        color: #3673ee;
+        color: $pc3;
         text-decoration: underline;
       }
     }
@@ -3295,11 +3295,11 @@
           left: 0.8rem;
           width: 0.3rem;
           height: 0.3rem;
-          background-color: #666;
+          background-color: $fc6;
           border-radius: 50%;
         }
         &.active {
-          color: #3673ee;
+          color: $pc3;
         }
         span {
           padding-left: 1.5rem;
@@ -3312,7 +3312,7 @@
             left: 0.4rem;
             width: 0.1rem;
             height: 1rem;
-            background-color: #d7d7d7;
+            background-color: $fcD7;
           }
         }
       }
@@ -3359,8 +3359,8 @@
         width: 9rem;
         height: 9rem;
         button {
-          background: #f9f9f9;
-          border: 0.1rem solid #f0f0f0;
+          background: $fcF9;
+          border: 0.1rem solid $fcF0;
           padding: 1.7rem;
           overflow: hidden;
           white-space: pre-line;
@@ -3376,8 +3376,8 @@
         }
         &.address-add {
           button {
-            background: #ffffff;
-            border: 0.1rem dotted #d7d7d7;
+            background: $fcF;
+            border: 0.1rem dotted $fcD7;
           }
         }
       }
@@ -3405,8 +3405,8 @@
     padding: 3rem 0 2rem;
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    border-top: 0.1rem solid #f0f0f0;
-    border-bottom: 0.1rem solid #f0f0f0;
+    border-top: 0.1rem solid $fcF0;
+    border-bottom: 0.1rem solid $fcF0;
     .my-membertext {
       padding: 0 1rem;
       span {
@@ -3504,7 +3504,7 @@
   .my-event {
     width: 100%;
     margin-top: 1.5rem;
-    border-top: 0.1rem solid #f0f0f0;
+    border-top: 0.1rem solid $fcF0;
     .event-num {
       font-size: 2rem;
       color: $pc3;
@@ -3541,7 +3541,7 @@
             right: 0;
             top: 0.3rem;
             height: 3.8rem;
-            border-left: 0.1rem dotted #d7d7d7;
+            border-left: 0.1rem dotted $fcD7;
           }
         }
         &:last-child {
@@ -3553,15 +3553,16 @@
   .mymuffin-signup {
     padding: 3.4rem 2.5rem;
     background: #fafafa;
-    border: 0.1rem solid #f0f0f0;
+    border: 0.1rem solid $fcF0;
     border-radius: 1.6rem;
+    margin-bottom: 1.5rem;
     .signup-title {
       font-size: 1.5rem;
       text-align: center;
       padding-bottom: 2.5rem;
-      border-bottom: 0.1rem dotted #d7d7d7;
+      border-bottom: 0.1rem dotted $fcD7;
       p {
-        color: #3673ee;
+        color: $pc3;
       }
     }
     .singup-list {
@@ -3571,7 +3572,7 @@
         li {
           line-height: 2.5rem;
           span {
-            border-bottom: 0.1rem solid #111111;
+            border-bottom: 0.1rem solid $fc1;
           }
         }
       }
