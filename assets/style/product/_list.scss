@@ -3661,17 +3661,13 @@
       opacity: 1;
     }
     input[type="radio"]:checked + label {
-      span {
-        opacity: 1;
-        transition: all 0.2s ease;
-      }
+      opacity: 1;
+      transition: all 0.2s ease;
     }
     input[type="radio"] + label {
-      span {
-        font-size: 1.1rem;
-        font-weight: 700;
-        opacity: 0.4;
-      }
+      font-size: 1.1rem;
+      font-weight: 700;
+      opacity: 0.4;
     }
   }
 }
