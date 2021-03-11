@@ -1267,7 +1267,7 @@
     }
 
     &.muffin {
-      background: #f47645 url(../../assets/img/layout/bg-icon-getcha.svg) no-repeat 0 0 / 100% auto;
+      background: url(../../assets/img/layout/bg-icon-getcha-type1.svg) 0 0 / 100% auto no-repeat, linear-gradient(135deg, #f89771, #f47645);
       border: 0.1rem solid #f48253;
       .code-list {
         li {
@@ -1288,7 +1288,7 @@
         }
       }
       &.bg1 {
-        background: #5d85fa url(../../assets/img/layout/bg-icon-oil.svg) no-repeat 0 0 / 100% auto;
+        background: url(../../assets/img/layout/bg-icon-oil-type1.svg) 0 0 / 100% auto no-repeat, linear-gradient(135deg, #5581fa, #5d85fa);
         border: 0.1rem solid #4977ea;
         .code-list {
           li {
@@ -1310,7 +1310,7 @@
         }
       }
       &.bg2 {
-        background: #41d0bf url(../../assets/img/layout/bg-icon-exp.svg) no-repeat 0 0 / 100% auto;
+        background: url(../../assets/img/layout/bg-icon-exp-type1.svg) 0 0 / 100% auto no-repeat, linear-gradient(135deg, #41d0bf, #29d6c3);
         border: 0.1rem solid #36c9b9;
         .code-list {
           li {
@@ -1336,6 +1336,13 @@
         border: 0.1rem solid $fcE4;
       }
       &.barcode {
+        background: url(../../assets/img/layout/bg-icon-getcha.svg) 0 0 / 100% auto no-repeat, linear-gradient(135deg, #f89771, #f47645);
+        &.bg1 {
+          background: url(../../assets/img/layout/bg-icon-oil.svg) 0 0 / 100% auto no-repeat, linear-gradient(135deg, #5581fa, #5d85fa);
+        }
+        &.bg2 {
+          background: url(../../assets/img/layout/bg-icon-exp.svg) 0 0 / 100% auto no-repeat, linear-gradient(135deg, #41d0bf, #29d6c3);
+        }
         .barcode-img {
           margin-top: 2rem;
           padding: 2rem;
@@ -1349,7 +1356,7 @@
       }
 
       .info {
-        padding-bottom: 3rem;
+        padding: 2.5rem;
       }
       .rep-card {
         display: inline-block;
@@ -1395,7 +1402,6 @@
 
       .detail {
         margin-top: 3rem;
-        padding-left: 0.5rem;
         .brand {
           font-size: 1.7rem;
           font-weight: 700;
