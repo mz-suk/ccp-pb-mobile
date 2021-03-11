@@ -1268,7 +1268,7 @@
 
     &.muffin {
       background: url(../../assets/img/layout/bg-icon-getcha-type1.svg) 0 0 / 100% auto no-repeat, linear-gradient(135deg, #f89771, #f47645);
-      border: 0.1rem solid #f48253;
+      border-color: #f48253;
       .code-list {
         li {
           &:before {
@@ -1289,7 +1289,7 @@
       }
       &.bg1 {
         background: url(../../assets/img/layout/bg-icon-oil-type1.svg) 0 0 / 100% auto no-repeat, linear-gradient(135deg, #5581fa, #5d85fa);
-        border: 0.1rem solid #4977ea;
+        border-color: #4977ea;
         .code-list {
           li {
             &:before {
@@ -1311,7 +1311,7 @@
       }
       &.bg2 {
         background: url(../../assets/img/layout/bg-icon-exp-type1.svg) 0 0 / 100% auto no-repeat, linear-gradient(135deg, #41d0bf, #29d6c3);
-        border: 0.1rem solid #36c9b9;
+        border-color: #36c9b9;
         .code-list {
           li {
             &:before {
@@ -1333,7 +1333,11 @@
       }
       &.bg3 {
         background: $fcF9 url(../../assets/img/layout/bg-icon-membership.svg) no-repeat 0 0 / 100% auto;
-        border: 0.1rem solid $fcE4;
+        border-color: $fcE4;
+      }
+      &.bg4 {
+        background: #7f6ef9 url(../../assets/img/layout/bg-icon-sk-type1.svg) 0 0 / 100% auto no-repeat;
+        border-color: #7969ee;
       }
       &.barcode {
         background: url(../../assets/img/layout/bg-icon-getcha.svg) 0 0 / 100% auto no-repeat, linear-gradient(135deg, #f89771, #f47645);
