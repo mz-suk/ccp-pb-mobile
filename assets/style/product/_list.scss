@@ -3296,7 +3296,7 @@
       }
       button {
         color: $pc3;
-        text-decoration: underline;
+        border-bottom: 0.1rem solid $pc3;
       }
     }
   }
@@ -3662,6 +3662,7 @@
       font-weight: 700;
       opacity: 0.4;
       transition: all 0.2s ease;
+      vertical-align: middle;
     }
     input[type="radio"]:checked,
     input[type="radio"]:checked + label {

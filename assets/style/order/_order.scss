@@ -1554,7 +1554,16 @@
     margin: 0 2rem 2rem 3rem;
     padding: 0 2.8rem 0 2.2rem;
     font-size: 1.1rem;
-
+    .enroll-date {
+      color: $fcF;
+      margin-left: auto;
+      opacity: 0.7;
+      span {
+        font-size: 1.2rem;
+        font-weight: 500;
+        vertical-align: middle;
+      }
+    }
     .link {
       display: inline-block;
       font-size: 1.3rem;
@@ -1613,7 +1622,7 @@
 
     .logo-card {
       position: absolute;
-      bottom: 0.8rem;
+      bottom: 0;
       right: 0;
       height: 4.6rem;
       margin-bottom: 0;
