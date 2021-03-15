@@ -74,8 +74,7 @@
       z-index: 3;
       height: 4.6rem;
       padding-left: 2.5rem;
-      background: url(~assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem
-        no-repeat;
+      background: url(~assets/img/layout/bg-label.png) 0 0 / 2.6rem 4.6rem no-repeat;
       color: $fc1;
       font-size: 1.1rem;
       line-height: 3.4rem;
@@ -86,8 +85,7 @@
         height: 4.6rem;
         padding: 1rem 1rem 0 1.4rem;
         line-height: 1.35rem;
-        background: url(~assets/img/layout/bg-label-right.png) 100% 0 /
-          auto 4.6rem no-repeat;
+        background: url(~assets/img/layout/bg-label-right.png) 100% 0 / auto 4.6rem no-repeat;
         box-sizing: border-box;
         text-decoration: underline;
       }
@@ -98,8 +96,7 @@
         left: 0.8rem;
         width: 2.8rem;
         height: 2.8rem;
-        background: url(~assets/img/layout/icon-confusion-off.svg) 0 0 /
-          100% auto no-repeat;
+        background: url(~assets/img/layout/icon-confusion-off.svg) 0 0 / 100% auto no-repeat;
         content: "";
       }
 
@@ -629,8 +626,7 @@
         right: 2rem;
         width: 11rem;
         height: 11rem;
-        background: url(~assets/img/layout/icon-carwash.svg) 0 0 / 100%
-          auto no-repeat;
+        background: url(~assets/img/layout/icon-carwash.svg) 0 0 / 100% auto no-repeat;
         content: "";
       }
       & + .wrap-filter-tab {
@@ -1404,8 +1400,7 @@
       }
 
       &:after {
-        background: url("~assets/img/layout/icon-chk-on.svg") no-repeat
-          center center;
+        background: url("~assets/img/layout/icon-chk-on.svg") no-repeat center center;
         background-size: 100% auto;
       }
     }
@@ -1466,8 +1461,7 @@
         padding-left: 2.5rem;
         font-size: 1.5rem;
         color: $fcF;
-        background: url(~assets/img/layout/icon-checkbox-white.png)
-          no-repeat 0 center / 2rem 2rem;
+        background: url(~assets/img/layout/icon-checkbox-white.png) no-repeat 0 center / 2rem 2rem;
         z-index: 6;
         transform: translate(-50%, -40%);
       }
@@ -1617,8 +1611,7 @@
           left: 50%;
           z-index: 1;
           padding-left: 2.5rem;
-          background: url(~assets/img/layout/icon-chk-white.svg) 0 0 / 2rem
-            no-repeat;
+          background: url(~assets/img/layout/icon-chk-white.svg) 0 0 / 2rem no-repeat;
           color: $fcF;
           font-size: 1.5rem;
           line-height: 1.5;
@@ -2897,8 +2890,7 @@
           width: 1.2rem;
           height: 1.2rem;
           margin-left: 0.5rem;
-          background: url(~assets/img/layout/icon-close-type2.svg) 0 0/100%
-            auto no-repeat;
+          background: url(~assets/img/layout/icon-close-type2.svg) 0 0/100% auto no-repeat;
           vertical-align: top;
           -webkit-filter: brightness(0);
           filter: brightness(0);
@@ -3081,95 +3073,101 @@
     padding: 2rem 1rem 0;
     height: 5.8rem;
     position: relative;
+    .my-cardpre {
+      position: static;
+      float: left;
+      background: #726aa9;
+      border-radius: 0.5rem;
+      border: 0.1rem solid #6b639f;
+      width: 9rem;
+      box-sizing: border-box;
+      img {
+        width: 100%;
+      }
+      &.color1 {
+        background: #726aa9;
+        border: 0.1rem solid #6b639f;
+      }
+
+      &.color2 {
+        background: #2e7cf1;
+        border: 0.1rem solid #2972ef;
+      }
+
+      &.color3 {
+        background: #777;
+        border: 0.1rem solid #6e6e6e;
+      }
+
+      &.color4 {
+        background: #786c61;
+        border: 0.1rem solid #6f6358;
+      }
+
+      &.color5 {
+        background: #6b4aaf;
+        border: 0.1rem solid #6242a7;
+      }
+
+      &.color6 {
+        background: #00a8a8;
+        border: 0.1rem solid #009f9f;
+      }
+
+      &.color7 {
+        background: #0096fe;
+        border: 0.1rem solid #008dfe;
+      }
+
+      &.color8 {
+        background: #f05144;
+        border: 0.1rem solid #ea3b30;
+      }
+
+      &.color9 {
+        background: #00b695;
+        border: 0.1rem solid #00ae8c;
+      }
+
+      &.color10 {
+        background: #196e89;
+        border: 0.1rem solid #16657f;
+      }
+
+      &.color11 {
+        background: #168ef5;
+        border: 0.1rem solid #1385f4;
+      }
+
+      &.color12 {
+        background: #355cb5;
+        border: 0.1rem solid #2e56b4;
+      }
+
+      &.color13 {
+        background: #143c98;
+        border: 0.1rem solid #12358f;
+      }
+    }
     &:before {
-      content: "";
+      // content: "";
       position: absolute;
       left: 1rem;
       width: 9rem;
       height: 5.8rem;
-      background: url(~assets/img/layout/mymuffin-card.png) 0 0/100% auto
-        no-repeat;
+      background: url(~assets/img/layout/mymuffin-card-test.svg) 0 0/100% auto no-repeat;
     }
-    &.color1 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-01.png) 0 0/100%
-          auto no-repeat;
+
+    .mymuffin-card {
+      .card-name {
+        padding-left: 10.5rem;
+        margin-top: 0.8rem;
+        font-size: 1.5rem;
       }
-    }
-    &.color2 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-02.png) 0 0/100%
-          auto no-repeat;
+      .card-number {
+        padding-left: 10.5rem;
+        font-size: 1.4rem;
       }
-    }
-    &.color3 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-03.png) 0 0/100%
-          auto no-repeat;
-      }
-    }
-    &.color4 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-04.png) 0 0/100%
-          auto no-repeat;
-      }
-    }
-    &.color5 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-05.png) 0 0/100%
-          auto no-repeat;
-      }
-    }
-    &.color6 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-06.png) 0 0/100%
-          auto no-repeat;
-      }
-    }
-    &.color7 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-07.png) 0 0/100%
-          auto no-repeat;
-      }
-    }
-    &.color8 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-08.png) 0 0/100%
-          auto no-repeat;
-      }
-    }
-    &.color9 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-09.png) 0 0/100%
-          auto no-repeat;
-      }
-    }
-    &.color10 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-10.png) 0 0/100%
-          auto no-repeat;
-      }
-    }
-    &.color11 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-11.png) 0 0/100%
-          auto no-repeat;
-      }
-    }
-    &.color12 {
-      &:before {
-        background: url(~assets/img/layout/mymuffin-card-12.png) 0 0/100%
-          auto no-repeat;
-      }
-    }
-    .card-name {
-      padding-left: 10.5rem;
-      margin-top: 0.8rem;
-      font-size: 1.5rem;
-    }
-    .card-number {
-      padding-left: 10.5rem;
-      font-size: 1.4rem;
     }
   }
   .swiper-container {
@@ -3298,7 +3296,7 @@
       }
       button {
         color: $pc3;
-        text-decoration: underline;
+        border-bottom: 0.1rem solid $pc3;
       }
     }
   }
@@ -3498,8 +3496,7 @@
         height: 4.7rem;
         right: 2.5rem;
         top: 2.1rem;
-        background: url(~assets/img/layout/icon-cashback.svg) 0 0/100% auto
-          no-repeat;
+        background: url(~assets/img/layout/icon-cashback.svg) 0 0/100% auto no-repeat;
       }
       .my-member {
         font-size: 1.5rem;
@@ -3525,8 +3522,7 @@
         height: 7.4rem;
         left: 1rem;
         top: 0;
-        background: url(~assets/img/layout/icon-more-platinum.svg) 0 0/100%
-          auto no-repeat;
+        background: url(~assets/img/layout/icon-more-platinum.svg) 0 0/100% auto no-repeat;
       }
     }
     &:before {
@@ -3536,8 +3532,7 @@
       height: 7.4rem;
       left: 1rem;
       top: 0;
-      background: url(~assets/img/layout/icon-more-benefits.svg) 0 0/100%
-        auto no-repeat;
+      background: url(~assets/img/layout/icon-more-benefits.svg) 0 0/100% auto no-repeat;
     }
     .text-wrap {
       padding: 1.8rem 0 0 13.2rem;
@@ -3600,14 +3595,12 @@
           top: -0.5rem;
           width: 4.7rem;
           height: 4.7rem;
-          background: url(~assets/img/layout/icon-my-event-02.svg) 0 0/100%
-            auto no-repeat;
+          background: url(~assets/img/layout/icon-my-event-02.svg) 0 0/100% auto no-repeat;
         }
         &:first-child {
-          padding-right: 3.1rem;
+          padding-right: 3rem;
           &:before {
-            background: url(~assets/img/layout/icon-my-event.svg) 0 0/100%
-              auto no-repeat;
+            background: url(~assets/img/layout/icon-my-event.svg) 0 0/100% auto no-repeat;
           }
           &:after {
             content: "";
@@ -3619,7 +3612,7 @@
           }
         }
         &:last-child {
-          margin-left: 2.8rem;
+          margin-left: 2.6rem;
         }
       }
     }
@@ -3659,27 +3652,21 @@
     input[type="radio"] {
       width: 2.4rem;
       height: 2.4rem;
-      background: url(~assets/img/layout/icon-rep-card.svg) 100% 100%/2.4rem
-        2.4rem no-repeat;
+      background: url(~assets/img/layout/icon-rep-card.svg) 100% 100%/2.4rem 2.4rem no-repeat;
       border-radius: 50%;
       opacity: 0.4;
       transition: all 0.2s ease;
     }
-    input[type="radio"]:checked {
-      opacity: 1;
-    }
-    input[type="radio"]:checked + label {
-      span {
-        opacity: 1;
-        transition: all 0.2s ease;
-      }
-    }
     input[type="radio"] + label {
-      span {
-        font-size: 1.1rem;
-        font-weight: 700;
-        opacity: 0.4;
-      }
+      font-size: 1.1rem;
+      font-weight: 700;
+      opacity: 0.4;
+      transition: all 0.2s ease;
+      vertical-align: middle;
+    }
+    input[type="radio"]:checked,
+    input[type="radio"]:checked + label {
+      opacity: 1;
     }
   }
 }
