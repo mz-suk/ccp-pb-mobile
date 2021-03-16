@@ -1,5 +1,5 @@
 .account-area {
-  padding: 4rem 2rem 0;
+  padding: 4rem 2rem;
 
   .terms-box {
     margin: 2.5rem 0 0;
@@ -102,7 +102,25 @@
 .wrap-membership {
   padding: 4rem 2rem;
   color: $fc1;
-
+    .membership-cont{
+      padding: 0 2rem;
+      margin: 0 -2rem;
+      box-sizing: border-box;
+      border-top: 0.8rem solid #f9f9f9;
+      border-bottom: 0.1rem solid #f0f0f0;
+    &:first-of-type {
+      border-top: 0;
+    }
+    &:last-of-type{
+      border-bottom:0;
+    }
+    .tbl-btm{
+      padding-bottom:3.5rem;
+    }
+    .big-title{
+      padding-top:4rem;
+    }
+  }
   .mumbership-card-list {
     margin-top: 3.5rem;
 
@@ -139,19 +157,38 @@
   }
 
   .big-title {
-    padding-left: 1rem;
     color: $fc1;
-    font-size: 2rem;
+    font-size: 1.7rem;
 
     > span {
       display: block;
-      font-size: 1.7rem;
+      font-size: 1.3rem;
     }
   }
-
+  .text-link{
+    margin-top:1.5rem;
+    color:$pc3;
+    font-size:1.3rem;
+    text-decoration:underline;
+    .link-blue {
+      width: 1rem;
+      height: 1rem;
+   }
+  }
   .wrap-benefit {
     margin: 3rem 0 0;
     padding-bottom: 6rem;
+  }
+
+  .tbl-title{
+    font-size: 1.5rem;
+    margin: 4rem 0 -2rem;
+    .m-grade{
+      width: 2rem;
+      height: 2rem;
+      margin: 0 0.6rem 0 0.5rem;
+      vertical-align:top;
+    }
   }
 
   .tbl-grade {
@@ -159,6 +196,7 @@
     border-top: 0.1rem solid $fc1;
 
     tr:first-child {
+      background: $fcF9;
       td {
         border-top: 0;
       }
@@ -190,11 +228,11 @@
       display: block;
       font-size: 1.5rem;
       line-height: 1.2;
-
+      font-weight:700;
       &:before {
         display: block;
-        width: 5rem;
-        height: 5rem;
+        width: 4.8rem;
+        height: 5.4rem;
         margin: 0 auto 0.8em;
         content: "";
       }
@@ -272,27 +310,57 @@
 
     .title {
       padding-bottom: 1.5rem;
+      padding-left: 1rem;
       font-size: 1.5rem;
       line-height: 1.2;
+      display:flex;
+      border-bottom: 0.1rem solid $fcE4;
+      .text-link{
+        margin-top: 0;
+      }
+      a{
+        margin-left: auto;
+      }
       span {
         color: #6955ff;
       }
     }
-
+    .coupon-title{
+      position: relative;
+      padding-left: 2.4rem;
+      margin-top : 3rem;
+      span{
+        color: $pc3;
+      }
+      &:before {
+        position: absolute;
+        top: 0.8rem;
+        left: 1.6rem;
+        width: 0.3rem;
+        height: 0.3rem;
+        border-radius: 50%;
+        background: $fc1;
+        content: "";
+      }
+    }
     .benefit-coupon-list {
-      border-top: 0.1rem solid $fc1;
+      //border-top: 0.1rem solid $fc1;
 
       li {
         margin: 0;
-        padding: 2.5rem 1rem 2rem;
+        padding: 2rem 1rem 0;
 
         &:not(:first-child) {
-          border-top: 0.1rem solid $fcF0;
+          border-top: 0;
         }
         &:last-child {
           padding-bottom: 0;
         }
       }
+    }
+    .btn-more{
+      margin-top: 3rem;
+      border-top: 0.1rem solid $fcE4;
     }
   }
 
@@ -307,6 +375,173 @@
 
   .top-banner {
     margin-bottom: 2.5rem;
+  }
+
+  .membership-list{
+    margin: 3rem 0 0;
+    border-top: 0.1rem solid $fc1;
+    ul{
+      li{
+        border-bottom: 0.1rem solid $fcF0;
+        padding: 3.3rem 0 3.3rem 11rem;
+        position: relative;
+        font-size: 1.5rem;
+        p{
+          font-size: 1.3rem;
+          span{
+            color: $pc3;
+          }
+          &.info{
+            font-size: 1.1rem;
+            color: $fc6;
+          }
+        }
+        &:before{
+          position: absolute;
+          left: 1rem;
+          width: 8.65rem;
+          height: 5.65rem;
+          background: url(~assets/img/layout/muffin-theplus-card.png) 0 0 / 100% auto no-repeat;
+          content: "";
+        }
+        &.theplus{
+          &:before{
+            background: url(~assets/img/layout/muffin-theplusbeta-card.png) 0 0 / 100% auto no-repeat;
+          }
+        }
+        &.getcha{
+          &:before{
+            background: url(~assets/img/layout/muffin-getcha-card.png) 0 0 / 100% auto no-repeat;
+          }
+        }
+        &.rentcar{
+          border-bottom:0;
+          &:before{
+            background: url(~assets/img/layout/muffin-rentcar-card.png) 0 0 / 100% auto no-repeat;
+          }
+          .rent-notice{
+            font-size:0.9rem;
+            color: $fc6;
+            margin-top:1rem;
+            position:relative;
+            &:before{
+              position: absolute;
+              left: -0.6rem;
+              top:0.6rem;
+              width: 0.2rem;
+              height: 0.2rem;
+              border-radius:50%;
+              background: $fc6;
+              vertical-align:middle;
+              content: "";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.membership-grade{
+  margin: -4rem -2rem 0;
+  background: $fcF9;
+  padding: 4rem 2rem 2rem;
+
+  .grade-title{
+    display:flex;
+    align-items:center;
+    font-size: 1.7rem;
+    color:$fc1;
+    span{
+      color: $pc3;
+      font-weight: 700;
+      border-bottom: 0.1rem solid $pc3;
+    }
+    p{
+      display:inline-block;
+      line-height:1.3;
+    }
+    .tit-member{
+      color: $pc3;
+      border-bottom:0;
+      font-weight: 400;
+    }
+    .thumb{
+      display:inline-block;
+      width:4.8rem;
+      height:5.4rem;
+      margin-right:1.1rem;
+      img{
+        width:100%;
+      }
+    }
+  }
+
+  .grade-sub{
+    color: $fc6;
+    position: relative;
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+    &:before{
+      position: absolute;
+      left: 0.4rem;
+      top: 0.7rem;
+      width: 0.3rem;
+      height: 0.3rem;
+      border-radius: 50%;
+      background: $fc6;
+      content: "";
+    }
+   }
+
+   .btn-arrow{
+    margin: 2rem 0 1.6rem 1rem;
+   }
+
+  .mycard-name{
+    margin-left: auto;
+    font-size: 0.9rem;
+    color: $fc6;
+    font-weight: 700;
+    padding-top: 1rem;
+    margin-left: 20.7rem;
+  }
+  .membership-barcode{
+    background: $fcF;
+    border: 0.1rem solid #EDEDED;
+    display: flex;
+    padding: 1.1rem 1.5rem 1rem 2rem;
+    margin-top: 2rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #EDEDED;
+    .barcode-info{
+      .name{
+        font-size: 1.2rem;
+        color: $pc3;
+      }
+      .card{
+        font-size: 1.3rem;
+        font-weight: 500;
+        span{
+          font-weight: 700;
+          font-size: 1.1rem;
+          margin-right: 0.7rem;
+        }
+      }
+    }
+    .barcode-img{
+      width: 5.8rem;
+      height: 3.3rem;
+      margin: 0 1.5rem 0 2rem;
+      img{
+        width:100%;
+      }
+    }
+    .m-arrow{
+      width: 1.6rem;
+      height: 1.6rem;
+    }
   }
 }
 
@@ -442,7 +677,7 @@
     }
   }
   .detail-box {
-    padding-top: 2.5rem;
+    //padding-top: 2.5rem;
 
     &.type1 {
       .info-block:last-of-type {
@@ -456,16 +691,33 @@
         padding-top: 3rem;
         border-top: 0.1rem dotted $fcD7;
       }
-
+      .notice{
+        font-size: 1.1rem;
+        color: $fc9;
+        position:relative;
+        padding-left: 1.4rem;
+        margin-top:0.8rem;
+        &:before{
+          content:'*';
+          position: absolute;
+          top: 0.4rem;
+          left: 0.4rem;
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
       .info-tit {
         display: flex;
         font-size: 1.5rem;
+        padding-top:2.5rem;
+
         button {
           margin-left: auto;
         }
       }
       .list-dot {
         margin-top: 1rem;
+
       }
       .gray-box {
         margin-top: 2.5rem;
