@@ -102,12 +102,13 @@
 .wrap-membership {
   padding: 4rem 2rem;
   color: $fc1;
-    .membership-cont{
-      padding: 0 2rem;
-      margin: 0 -2rem;
-      box-sizing: border-box;
-      border-top: 0.8rem solid #f9f9f9;
-      border-bottom: 0.1rem solid #f0f0f0;
+  .membership-cont{
+    padding: 0 2rem;
+    margin: 0 -2rem;
+    box-sizing: border-box;
+    border-top: 0.8rem solid #f9f9f9;
+    border-bottom: 0.1rem solid #f0f0f0;
+
     &:first-of-type {
       border-top: 0;
     }
@@ -447,6 +448,33 @@
       }
     }
   }
+
+  .membership-card{
+    margin:-4rem -2rem 0;
+    padding:4rem 0 3rem;
+    background:$fcF9;
+
+    .swiper-slide{
+      padding:0 2rem;
+      box-sizing: border-box;
+    }
+
+    .swiper-pagination {
+      position:static;
+      margin-top: 2rem;
+      height:.6rem;
+    }
+    .swiper-pagination-bullet {
+      display: inline-block;
+      background: $fc1;
+      border-radius: 50%;
+      vertical-align:top;
+      opacity: 0.2;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+  }
 }
 
 .membership-grade{
@@ -681,6 +709,15 @@
 
 .membership-detail {
   margin-top: 4rem;
+  .detail-top{
+    padding:0 1rem 3rem;
+    font-size:1.5rem;
+    line-height:1.5;
+    span{
+      color:$pc3;
+      border-bottom:.1rem solid;
+    }
+  }
   .title {
     padding: 0 0 1rem 0.5rem;
     font-size: 1.5rem;
@@ -691,8 +728,6 @@
     }
   }
   .detail-box {
-    //padding-top: 2.5rem;
-
     &.type1 {
       .info-block:last-of-type {
         border-bottom: 0.1rem dotted $fcD7;
@@ -701,8 +736,8 @@
 
     .info-block {
       padding: 0 1rem 3.5rem;
+      padding-top: 3rem;
       &:not(:first-child) {
-        padding-top: 3rem;
         border-top: 0.1rem dotted $fcD7;
       }
       .notice{
@@ -723,15 +758,15 @@
       .info-tit {
         display: flex;
         font-size: 1.5rem;
-        padding-top: 3rem;
-
         button {
           margin-left: auto;
         }
       }
       .list-dot {
         margin-top: 1rem;
-
+        &+.info-tit{
+          padding-top:2.5rem;
+        }
       }
       .gray-box {
         margin-top: 2.5rem;
@@ -755,6 +790,19 @@
           width: 3.8rem;
           height: 3.8rem;
         }
+        &.type1{
+          margin-top:1.5rem;
+          padding:2.5rem 1.5rem;
+          .list-dot{
+            margin-top:0;
+          }
+        }
+      }
+      .asterisk-mark{
+        margin-top:1rem;
+      }
+      .wrap-benefit-coupon{
+        margin:0 -1rem 5rem;
       }
     }
   }
@@ -763,9 +811,6 @@
     padding-top: 4rem;
     text-align: center;
     border-top: 0.1rem solid $fc1;
-  }
-  .benefit-coupon-list {
-    margin-top: 3rem;
   }
 }
 
