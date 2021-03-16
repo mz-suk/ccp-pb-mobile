@@ -32,7 +32,9 @@ a {
     border-radius: 2rem;
     font-size: 1.3rem;
   }
-
+  &.size2 {
+    padding: 0 1.9rem;
+  }
   &.type1 {
     border-style: dashed;
     border-color: $fc9;
