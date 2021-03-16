@@ -276,19 +276,23 @@
   &.type2 {
     display: flex;
     width: 31.5rem;
-    height: 11.2rem;
-    background: url(../../assets/img/layout/img-coupon-platinum.svg) 0 0 / 100% auto no-repeat;
+    height: 10.4rem;
+    background: $fcF url(../../assets/img/layout/img-coupon-platinum2.svg) 0 0 / 100% auto no-repeat;
     color: $fc1;
 
     .left {
       width: 9rem;
       padding: 0;
-      background: url(../../assets/img/layout/bg-coupon-text2.png) 50% 2rem / 4.8rem 2.2rem no-repeat;
+      //background: url(../../assets/img/layout/bg-coupon-text2.png) 50% 2rem / 4.8rem 2.2rem no-repeat;
       color: $fcF;
-
+      .tit{
+        text-align:center;
+        text-decoration:underline;
+        margin-top:2rem;
+      }
       .discount {
         display: block;
-        margin-top: 4.8rem;
+        margin-top: 0.3rem;
         text-align: center;
 
         &:after {
@@ -309,10 +313,10 @@
     }
 
     .right {
-      position: relative;
       width: 22.5rem;
-      padding: 2rem 2rem 3rem;
+      padding: 2rem 2rem 1.8rem;
       box-sizing: border-box;
+      background: url(../../assets/img/layout/bg-icon-membership2.svg) no-repeat 0 0/100% auto;
 
       .tit {
         line-height: 1.4;
@@ -332,9 +336,9 @@
       }
 
       .date {
-        position: absolute;
-        bottom: 1.5rem;
-        margin: 0;
+        //position: absolute;
+        //bottom: 1.5rem;
+        margin-top: 1rem;
         color: $fc6;
         font-size: 1.1rem;
       }
