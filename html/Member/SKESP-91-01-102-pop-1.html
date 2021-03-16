@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">차량정비 서비스 제공을 위한 개인정보 제 3자 정보제공 동의 (필수) </h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="wrap-policy">
+            <p class="sub-title">차량정비 서비스 제공을 위한 개인정보 제 3자 정보제공
+              동의 (필수)</p>
+              <div class="tbl-layout type1">
+                <table class="tbl type2">
+                  <colgroup>
+                    <col style="width:40%">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>제공받는 자</th>
+                      <td>SK네트웍스</td>
+                    </tr>
+                    <tr>
+                      <th>항목</th>
+                      <td>
+                          회원ID<br>
+                          휴대폰번호<br>
+                          차량등록번호<br>
+                          멤버십 카드번호
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>목적</th>
+                      <td>혜택 제공 및 회원식별<br>
+                        고객 문의 대응</td>
+                    </tr>
+                    <tr>
+                      <th>보유 및 이용기간</th>
+                      <td>동의 시부터 머핀 멤버스 <br>
+                        해지 시까지</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="reeference-mark color2">필수항목에 해당하는 정보를 입력하시지 않는 경우
+                머핀 멤버스 서비스 가입이 불가능합니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>

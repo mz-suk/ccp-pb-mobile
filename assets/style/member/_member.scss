@@ -115,7 +115,7 @@
       border-bottom:0;
     }
     .tbl-btm{
-      padding-bottom:3.5rem;
+      padding: 0 1rem 3.5rem;
     }
     .big-title{
       padding-top:4rem;
@@ -128,7 +128,11 @@
       margin-top: 3rem;
     }
   }
-
+  .btn-arrow{
+    &.title-sub{
+      margin-top:1.5rem;
+    }
+  }
   .info-cont {
     .title {
       font-size: 1.5rem;
@@ -165,19 +169,16 @@
       font-size: 1.3rem;
     }
   }
-  .text-link{
-    margin-top:1.5rem;
-    color:$pc3;
-    font-size:1.3rem;
-    text-decoration:underline;
-    .link-blue {
-      width: 1rem;
-      height: 1rem;
-   }
-  }
   .wrap-benefit {
     margin: 3rem 0 0;
     padding-bottom: 6rem;
+    .accordion {
+      &:last-child{
+        .accordion-cont{
+          border-bottom:0;
+        }
+      }
+    }
   }
 
   .tbl-title{
@@ -187,7 +188,7 @@
       width: 2rem;
       height: 2rem;
       margin: 0 0.6rem 0 0.5rem;
-      vertical-align:top;
+      vertical-align: top;
     }
   }
 
@@ -196,13 +197,14 @@
     border-top: 0.1rem solid $fc1;
 
     tr:first-child {
-      background: $fcF9;
+      background: rgba(249, 249, 249, 0.5);
       td {
         border-top: 0;
+        padding: 1.5rem 1rem;
       }
     }
     td {
-      padding: 1.5rem 1rem;
+      padding: 2.5rem 1rem;
       border: 0.1rem solid $fcF0;
       font-size: 1.1rem;
       text-align: center;
@@ -210,6 +212,7 @@
 
       .num {
         color: $pc3;
+        font-weight: 500;
       }
       strong {
         display: block;
@@ -250,6 +253,7 @@
 
   .tbl-btm {
     margin-top: 3rem;
+    padding:0 1rem;
 
     .title {
       font-size: 1.5rem;
@@ -315,11 +319,12 @@
       line-height: 1.2;
       display:flex;
       border-bottom: 0.1rem solid $fcE4;
-      .text-link{
+      .btn-arrow{
         margin-top: 0;
-      }
-      a{
         margin-left: auto;
+        span{
+          color: $pc3;
+        }
       }
       span {
         color: #6955ff;
@@ -374,7 +379,7 @@
   }
 
   .top-banner {
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
   }
 
   .membership-list{
@@ -383,13 +388,14 @@
     ul{
       li{
         border-bottom: 0.1rem solid $fcF0;
-        padding: 3.3rem 0 3.3rem 11rem;
+        padding: 3rem 0 3rem 11rem;
         position: relative;
         font-size: 1.5rem;
         p{
           font-size: 1.3rem;
           span{
             color: $pc3;
+            font-weight: 500;
           }
           &.info{
             font-size: 1.1rem;
@@ -399,6 +405,7 @@
         &:before{
           position: absolute;
           left: 1rem;
+          top: 3rem;
           width: 8.65rem;
           height: 5.65rem;
           background: url(../../assets/img/layout/muffin-theplus-card.png) 0 0 / 100% auto no-repeat;
@@ -606,12 +613,19 @@
     }
   }
   .list-dot {
-    margin-top: 0.7rem;
+    margin-top: 1.4rem;
     .txt-under {
       text-decoration: none;
     }
   }
-
+  .getcha-title{
+    font-size: 1.5rem;
+    color: $pc3;
+  }
+  .getcha-sub{
+    padding: 1.5rem 0 3rem;
+    border-bottom: 0.1rem solid $fcF0;
+  }
   // padding: 2.5rem 2rem 4rem;
   // border: 0.1rem solid $fcD7;
   // border-radius: 1.6rem;
@@ -709,7 +723,7 @@
       .info-tit {
         display: flex;
         font-size: 1.5rem;
-        padding-top:2.5rem;
+        padding-top: 3rem;
 
         button {
           margin-left: auto;
@@ -801,7 +815,7 @@
         color: $fcF;
         line-height: 1;
         text-align: left;
-        border-radius: 1rem;
+        border-radius: 2rem;
         box-sizing: border-box;
         box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.15);
 
@@ -821,23 +835,33 @@
           border: 0.1rem solid #36c9b9;
 
           .txt2 {
-            font-size: 2.2rem;
-          }
-          .txt3 {
-            margin-top: 4.2rem;
+            span{
+              position: relative;
+              padding-left:1.2rem;
+              &:before{
+                position:absolute;
+                content:"";
+                left:0;
+                top:0;
+                background: url(../../assets/img/layout/bg-icon-beta.png);
+                width:1.16rem;
+                height:2.79rem;
+              }
+            }
           }
         }
 
         .txt1 {
-          font-size: 1.1rem;
+          font-size: 1.5rem;
+          margin-top:0.5rem;
         }
         .txt2 {
-          margin-top: 1rem;
-          font-size: 2.8rem;
+          font-size: 2.1rem;
         }
         .txt3 {
-          margin-top: 3.5rem;
+          margin-top: 3.8rem;
           font-size: 0.9rem;
+          font-weight: 400;
         }
       }
 
@@ -847,11 +871,29 @@
       }
       .info {
         text-align: center;
-        span {
-          margin-top: 0.4rem;
-          &:after {
-            height: 0.7rem;
-            border-right: 0.1rem dotted $fc1;
+        color:$fc1;
+        p {
+          font-size:1.3rem;
+          display:inline-block;
+          vertical-align: top;
+          letter-spacing: -0.04rem;
+          margin: 1.1rem 1rem 0 0;
+          padding: 0 1.1rem 0 0;
+          position:relative;
+          span{
+            color:$pc3
+          }
+          &:first-of-type{
+            &:after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 0;
+              width: 0.1rem;
+              height: 0.7rem;
+              border-right: 0.1rem dotted $fc1;
+              transform: translate(0, -50%);
+          }
           }
         }
       }
@@ -912,6 +954,18 @@
       }
       .asterisk-mark:not(:first-child) {
         margin-top: 3rem;
+      }
+      .list-dot{
+        .list-dot{
+          &.type2{
+            li{
+              padding-left: 1.2rem;
+              &:before{
+                width: 0.3rem;
+              }
+            }
+          }
+        }
       }
     }
   }
