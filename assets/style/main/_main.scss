@@ -169,6 +169,7 @@
           display: flex;
 
           .btn {
+            flex:auto;
             padding: 0 2.7rem;
             &:not(:first-child) {
               margin-left: 1rem;
