@@ -289,10 +289,12 @@
         text-align:center;
         text-decoration:underline;
         margin-top:2rem;
+        font-size:1.3rem;
+        line-height:1.2;
       }
       .discount {
         display: block;
-        margin-top: 0.3rem;
+        margin-top: 0.5rem;
         text-align: center;
 
         &:after {
@@ -313,7 +315,7 @@
     }
 
     .right {
-      width: 22.5rem;
+      width: 22.4rem;
       padding: 2rem 2rem 1.8rem;
       box-sizing: border-box;
       background: url(../../assets/img/layout/bg-icon-membership2.svg) no-repeat 0 0/100% auto;

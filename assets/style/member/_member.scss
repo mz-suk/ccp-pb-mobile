@@ -552,7 +552,6 @@
     padding: 1.1rem 1.5rem 1rem 2rem;
     margin-top: 2rem;
     align-items: flex-end;
-    justify-content: space-between;
     border-bottom: 0.1rem solid #EDEDED;
     .barcode-info{
       .name{
@@ -572,7 +571,7 @@
     .barcode-img{
       width: 5.8rem;
       height: 3.3rem;
-      margin: 0 1.5rem 0 2rem;
+      margin-left:auto;
       img{
         width:100%;
       }
@@ -580,6 +579,7 @@
     .m-arrow{
       width: 1.6rem;
       height: 1.6rem;
+      margin-left:.7rem;
     }
   }
 }
