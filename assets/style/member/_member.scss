@@ -311,7 +311,6 @@
   }
 
   .wrap-benefit-coupon {
-    margin: 4rem 0;
 
     .title {
       padding-bottom: 1.5rem;
@@ -392,6 +391,9 @@
         padding: 3rem 0 3rem 11rem;
         position: relative;
         font-size: 1.5rem;
+        &:last-of-type{
+          border-bottom:0;
+        }
         p{
           font-size: 1.3rem;
           span{
@@ -423,7 +425,6 @@
           }
         }
         &.rentcar{
-          border-bottom:0;
           &:before{
             background: url(../../assets/img/layout/muffin-rentcar-card.png) 0 0 / 100% auto no-repeat;
           }
@@ -487,10 +488,12 @@
     align-items:center;
     font-size: 1.7rem;
     color:$fc1;
+
     span{
       color: $pc3;
       font-weight: 700;
       border-bottom: 0.1rem solid $pc3;
+      margin: 0 0.4rem;
     }
     p{
       display:inline-block;
@@ -1236,9 +1239,19 @@
       height: 2rem;
     }
   }
+  .left{
+    .discount{
+      .num{
+        font-size: 2.5rem;
+        span{
+          padding-left: 0.2rem;
+        }
+      }
+    }
+  }
 
   .tit {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: -0.1rem;
     em {
       margin-left: 0.2rem;
