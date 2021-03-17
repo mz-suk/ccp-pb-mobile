@@ -884,10 +884,12 @@
           border: 0.1rem solid #36c9b9;
 
           .txt2 {
+            background: url(../../assets/img/layout/bg-icon-beta.svg) no-repeat 8.8rem 0;
+            background-size: 1.16rem 2.79rem;
+            height:3rem;
+            margin-bottom: -0.8rem;
             span{
               padding-left:1.2rem;
-              background: url(../../assets/img/layout/bg-icon-beta.svg) no-repeat 0 0;
-              background-size: 1.16rem 2.79rem;
             }
           }
         }
@@ -1055,9 +1057,10 @@
   }
 }
 .stage-notice{
-  margin-top:1.2rem;
+  margin:1.2rem 0 7rem;
   padding-left:1.3rem;
   position: relative;
+
   &:before{
     content: "";
     width: 0.3rem;
