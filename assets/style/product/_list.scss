@@ -2512,6 +2512,7 @@
         color: $fc6;
       }
     }
+
   }
 
   .swiper-pagination {
@@ -3176,6 +3177,9 @@
         .swiper-slide {
           margin: 0 0 0 2rem;
           width: 29.5rem;
+          &:last-of-type{
+            margin-right:2rem;
+          }
         }
       }
     }
