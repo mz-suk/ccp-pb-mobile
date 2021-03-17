@@ -57,6 +57,7 @@
   .pos-bottom & {
     padding-bottom: 6rem;
   }
+
   li {
     position: relative;
     padding: 2.5rem 1rem;
@@ -133,6 +134,13 @@
       em {
         font-size: 1.6rem;
         color: $pc3;
+      }
+    }
+    &.type1{
+      li{
+        &:last-child{
+          border-bottom: 0.1rem solid $fcE4;
+        }
       }
     }
   }
