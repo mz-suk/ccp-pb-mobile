@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">회원 탈퇴</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="wrap-myinfo">
+          <p class="sub-title">확인사항</p>
+          <ol class="list-number">
+            <li>진행 중인 거래가 없고, 선불 충전권에 잔액이 없을 경우 회원 탈퇴가 가능합니다.</li>
+            <li>미 사용한 포인트, 할인쿠폰은 모두 소멸되며, 재가입 시에도 복원되지 않습니다.</li>
+            <li>탈퇴 전 보유하고 계신 선불 충전권 금액을 모두 사용 또는 환불 처리하여 주시기 바랍니다.</li>
+            <li>탈퇴 회원의 개인 정보 파기방법은 거래 기록 유무에 따라 달라집니다.
+              <div class="inner">
+                <table class="tbl">
+                  <colgroup>
+                    <col width="33%">
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>거래기록</th>
+                      <th>파기 방법</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>O</td>
+                      <td>거래기록 보존기간까지 그와 관련된<br />개인정보 보존 후 영구 파기</td>
+                    </tr>
+                    <tr>
+                      <td>X</td>
+                      <td>탈퇴 후 개인정보는 즉시 영구 파기</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="text-guide color1">단, 아이디 중복 사용 방지를 위하여 개인 정보 파기 후<br />일 아이디는 6개월 이후에 재가입 가능합니다.</p>
+              </div>
+            </li>
+            <li>탈퇴 후 게시판에 등록된 게시물은 삭제되지 않으며, 게시물 삭제를 원하시는 경우 직접 삭제 후 탈퇴하시기 바랍니다.</li>
+            <li>진행 중인 거래 정보가 있을 경우 결제 취소, 환불 등의 처리가 원활하지 않을 수 있습니다.</li>
+            <li>동일인에 의한 재가입은 회원 탈퇴 24시간 경과 후 가능합니다.</li>
+          </ol>
+
+          <p class="sub-title">활동현황</p>
+          <table class="tbl">
+            <colgroup>
+              <col width="20%">
+              <col width="18%">
+              <col>
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>현황</th>
+                <th>즉시 탈퇴 불가</th>
+                <th>탈퇴 방법</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>진행중인<br/>예약</td>
+                <td><span class="color1">0건</span></td>
+                <td>진행중인<br/>예약이 있는경우</td>
+                <td>거래 완료 후<br/>탈퇴 가능</td>
+              </tr>
+              <tr>
+                <td>유료<br/>멤버십</td>
+                <td><span class="color1">0건</span></td>
+                <td>유료 멤버십<br/>가입 후<br/>이용중인 경우</td>
+                <td>유료 멤버십<br/>해지 후<br/>탈퇴 가능</td>
+              </tr>
+              <tr>
+                <td>머핀<br/>포인트</td>
+                <td><span class="color1">0P</span></td>
+                <td colspan="2" rowspan="2">탈퇴 시 해당 내용 소멸</td>
+              </tr>
+              <tr>
+                <td>쿠폰</td>
+                <td><span class="color1">0개</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="wrap-form">
+            <input type="checkbox" id="chk1">
+            <label for="chk1">위 내용을 모두 확인하였고, 회원탈퇴에 동의 합니다.</label>
+          </div>
+
+          <p class="sub-title">탈퇴 사유</p>
+          <p class="sub-txt">탈퇴 사유를 선택해 주세요.</p>
+          <div class="wrap-form">
+            <ul class="list-radio">
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-1" name="group1">
+                <label for="chk1-1">
+                  <p class="left">서비스 이용불편</p>
+                </label>
+              </li>
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-2" name="group1">
+                <label for="chk1-2">
+                  <p class="left">서비스 상품 불만족</p>
+                </label>
+              </li>
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-3" name="group1">
+                <label for="chk1-3">
+                  <p class="left">서비스 불안정</p>
+                </label>
+              </li>
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-4" name="group1">
+                <label for="chk1-4">
+                  <p class="left">자주 사용하지 않음</p>
+                </label>
+              </li>
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-5" name="group1">
+                <label for="chk1-5">
+                  <p class="left">다른 서비스 이용</p>
+                </label>
+              </li>
+              <li class="checkbox type4">
+                <input type="radio" id="chk1-6" name="group1" checked>
+                <label for="chk1-6">
+                  <p class="left">기타</p>
+                </label>
+              </li>
+            </ul>
+            <div class="form-text-area">
+              <textarea placeholder="회원탈퇴 기타 사유를 직접 입력해 주세요."></textarea>
+              <span class="text-length">
+                <!-- 글 작성 시 strong에  class="active" -->
+                <strong>0</strong>/500자
+              </span>
+            </div>
+            <p class="desc">본인 확인을 위하여<br />휴대폰 번호로 본인인증을 진행 해주세요.</p>
+          </div>
+          <div class="wrap-btn">
+            <button type="button" class="btn">취소</button>
+            <button type="button" class="btn color1">인증하기</button>
+          </div>
+
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+      <!-- Footer -->
+    </div>
+  </body>
+</html>
