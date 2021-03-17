@@ -228,7 +228,7 @@
 .event-list-wrap {
   margin-top: 3rem;
   .event-list {
-    li {
+    .swiper-slide {
       position: relative;
       margin-top: 3rem;
       &.end-event {
@@ -326,22 +326,22 @@
       border-radius: 0 0 1.6rem 1.6rem;
 
       .title {
-        padding-right:4.5rem;
+        padding-right: 4.5rem;
         color: $fc1;
         font-size: 1.5rem;
-        line-height:1.3;
+        line-height: 1.3;
       }
-      .txt{
-        margin:1rem 0;
-        color:$fc6;
-        font-size:1.1rem;
-        line-height:1.2;
+      .txt {
+        margin: 1rem 0;
+        color: $fc6;
+        font-size: 1.1rem;
+        line-height: 1.2;
       }
       .date {
         margin-top: 0.5rem;
         color: $fc6;
         font-size: 1.2rem;
-        line-height:1.4;
+        line-height: 1.4;
       }
       .state-label {
         font-size: 1.1rem;

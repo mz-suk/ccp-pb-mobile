@@ -17,19 +17,19 @@
     line-height: 1.3;
   }
 
-  .wrap-info-box{
-    margin:0 -2.5rem;
+  .wrap-info-box {
+    margin: 0 -2.5rem;
 
-    .swiper-slide{
-      padding:0 2.5rem;
-      box-sizing:border-box;
+    .swiper-slide {
+      padding: 0 2.5rem;
+      box-sizing: border-box;
     }
-    .info-type-box{
-      padding-top:0;
+    .info-type-box {
+      padding-top: 0;
     }
-    .info-car-cont.type1{
-      padding:0 2.5rem 3rem;
-      border-color:#D7D7D7;
+    .info-car-cont.type1 {
+      padding: 0 2.5rem 3rem;
+      border-color: #d7d7d7;
     }
   }
 
@@ -50,14 +50,14 @@
     .car-number {
       display: inline-block;
       margin: 0.7rem 0 0;
-      padding:0 0 0 .5rem;
+      padding: 0 0 0 0.5rem;
       font-size: 2.4rem;
       width: calc(100% - 10.5rem);
     }
     .car-name {
       display: inline-block;
       margin-top: 3rem;
-      padding:0 0 0 .5rem;
+      padding: 0 0 0 0.5rem;
       font-size: 1.3rem;
       width: calc(100% - 10.5rem);
     }
@@ -161,7 +161,7 @@
           margin-top: 1rem;
           padding: 0 0.5rem;
           color: $fc6;
-          font-size:1.1rem;
+          font-size: 1.1rem;
           line-height: 1.4;
         }
         .wrap-btn {
@@ -169,7 +169,7 @@
           display: flex;
 
           .btn {
-            flex:auto;
+            flex: auto;
             padding: 0 2.7rem;
             &:not(:first-child) {
               margin-left: 1rem;
@@ -184,9 +184,9 @@
         }
         &.category1 {
           background: url(~assets/img/layout/icon-category-type1.svg) 100% 2.5rem / 10.7rem auto no-repeat;
-          p{
+          p {
             padding: 0 12.7rem 0 0;
-            text-align:right;
+            text-align: right;
           }
         }
         &.category2 {
@@ -197,7 +197,7 @@
         }
         &.category3 {
           background: url(~assets/img/layout/icon-category2.svg) 0 3rem / 8.7rem auto no-repeat;
-          p{
+          p {
             padding: 0 0 0 10rem;
           }
         }
@@ -295,7 +295,7 @@
     position: relative;
     margin: 3rem -2.5rem;
 
-    li {
+    .swiper-slide {
       margin-top: 0;
       margin: 0 0 0 2.5rem;
       width: 29rem;
@@ -305,29 +305,29 @@
       }
     }
 
-    .evnet-box{
-      .event-label{
-        background:$fcF9;
+    .evnet-box {
+      .event-label {
+        background: $fcF9;
       }
-      .box-bottom{
+      .box-bottom {
         padding: 2rem 2.5rem 2.5rem;
       }
-      .state-label{
+      .state-label {
         top: 2rem;
       }
     }
   }
 
   .swiper-pagination {
-    position:static;
+    position: static;
     margin-top: 2rem;
-    height:.6rem;
+    height: 0.6rem;
   }
   .swiper-pagination-bullet {
     display: inline-block;
     background: $fc1;
     border-radius: 50%;
-    vertical-align:top;
+    vertical-align: top;
     opacity: 0.2;
   }
   .swiper-pagination-bullet-active {
