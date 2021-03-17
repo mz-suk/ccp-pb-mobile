@@ -19,68 +19,43 @@
   </head>
 
   <body>
-    <div id="container">
-      <!-- Header -->
-      <header class="header header-sub">
-        <h1 class="title">자동세차 사용 내역</h1>
-        <div class="left">
-          <button type="button" class="bg-icon prev">이전페이지</button>
-        </div>
-        <div class="right">
-          <button type="button" class="bg-icon menu">메뉴</button>
-        </div>
-      </header>
-      <!-- //Header -->
+    <div id="container"></div>
 
-      <!-- Wrap-contents -->
-      <div class="wrap-contents">
-        <div class="row-section-wrap">
-          <div class="row-section">
-            <div class="top-info type-point type1">
-              <div class="main-info bg2">
-                <p class="title">자동세차 잔여 횟수</p>
-                <p class="num"><strong>1</strong> 회</p>
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">주유 사용 내역</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="row-section-wrap">
+            <div class="row-section">
+              <div class="top-info type-point type2">
+                <div class="main-info">
+                  <p class="title">자동세차 잔여 횟수</p>
+                  <p class="num"><strong>4</strong> 회</p>
+                </div>
               </div>
-            </div>
-            <div class="wrap-empty">
-              <div class="empty-img">
-                <img src="../../assets/img/layout/icon-empty.png" alt="">
+
+              <div class="wrap-empty">
+                <div class="empty-img">
+                  <img src="../../assets/img/layout/icon-empty.png" alt="">
+                </div>
+                <p class="empty-text">
+                  <strong>사용내역이 없습니다.</strong>
+                </p>
               </div>
-              <p class="empty-text">
-                <strong>사용내역이 없습니다.</strong>
-              </p>
             </div>
           </div>
         </div>
       </div>
-      <!-- //Wrap-contents -->
 
-      <!-- Footer -->
+      <div class="mask"></div>
     </div>
-
-    <!-- Quick-menu -->
-    <!-- <div class="quick-menu">
-      <ul class="quick-menu-list">
-        <li>
-          <a href="#">
-            <i class="bg-icon home"></i>
-            <span class="menu-name">홈</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon bill"></i>
-            <span class="menu-name">이용내역</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon my-muffin"></i>
-            <span class="menu-name">마이머핀</span>
-          </a>
-        </li>
-      </ul>
-    </div> -->
-    <!-- //Quick-menu -->
+    <!-- //Popup -->
   </body>
 </html>

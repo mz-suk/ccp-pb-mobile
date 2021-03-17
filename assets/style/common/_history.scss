@@ -643,6 +643,27 @@
       }
     }
 
+    &.type2{
+      .main-info{
+        display: flex;
+        align-items: center;
+        background: none;
+        .num{
+          margin-left: auto;
+          font-weight: 400;
+          color: $pc3;
+          font-size: 1.5rem;
+          strong{
+            font-size: 1.8rem;
+            font-weight: 400;
+          }
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+
     .btn-refresh {
       position: absolute;
       top: 2rem;
@@ -834,8 +855,8 @@
         color: $fc9;
       }
       .title-area {
-        padding-right: 8.5rem;
         .title {
+          padding-right: 8rem;
           .t-logo {
             margin-top: -0.5rem;
             margin-right: 0.5rem;
@@ -875,8 +896,8 @@
         position: absolute;
         right: 1rem;
         top: 2.5rem;
-        width: 8.5rem;
         text-align: right;
+        min-width: 8rem;
       }
     }
     .up {
@@ -896,6 +917,33 @@
 
     &:not(:first-child) {
       margin-top: 4rem;
+    }
+  }
+
+  &.type1{
+    .inner{
+      display: flex;
+      border-bottom: .1rem solid $fcE4;
+      &:last-child{
+        border-bottom: 0;
+      }
+    }
+    .top-title{
+      width: 6rem;
+      margin: 2.5rem 0 0;
+      padding-left: 1rem;
+      border: 0;
+      box-sizing: border-box;
+      font-weight: 700;
+    }
+    .statement-list{
+      flex: 1;
+      li{
+        padding-top: 2.8rem;
+        &:last-child{
+          border:0;
+        }
+      }
     }
   }
 }

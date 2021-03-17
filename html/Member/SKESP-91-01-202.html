@@ -19,53 +19,49 @@
   </head>
 
   <body>
-    <div id="container">
-      <!-- Header -->
-      <header class="header header-sub">
-        <h1 class="title">자동세차 예약하기</h1>
-        <div class="left">
-          <button type="button" class="bg-icon prev">
-            이전페이지
-          </button>
-        </div>
-        <div class="right">
-          <button type="button" class="bg-icon menu">
-            메뉴
-          </button>
-        </div>
-      </header>
-      <!-- //Header -->
+    <div id="container"></div>
 
-      <!-- Wrap-contents -->
-      <div class="wrap-contents">
-        <div class="wrap-membership">
-          <div class="info-cont">
-            <p class="title">예약정보</p>
-            <dl class="customer-info">
-              <dt>차량 번호</dt>
-              <dd>123디 1234</dd>
-              <dt>차량 종류</dt>
-              <dd>1111 - 0000 - 0000 - 0000</dd>
-            </dl>
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">자동세차 예약하기</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
           </div>
-          <div class="info-cont">
-            <p class="title">유의사항</p>
-            <div class="gray-box">
-              <ul class="list-dot">
-                <li>기본형 무료세차 (외부 자동세차 기준)</li>
-                <li>머핀 가맹 주유소에서만 가용가능 합니다.</li>
-                <li>자동세차 진입 불가차량은 서비스 제공 불가할 수 있습니다.</li>
-                <li>주유소에 따라 물기제거 서비스는 제공하지 않을 수 있습니다.</li>
-              </ul>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="wrap-membership">
+            <div class="info-cont">
+              <p class="title">예약 정보</p>
+              <dl class="customer-info">
+                <dt>차량 번호</dt>
+                <dd>123디 1234</dd>
+                <dt>쿠폰 번호</dt>
+                <dd>1111 - 0000 - 0000 - 0000</dd>
+              </dl>
+            </div>
+            <div class="info-cont">
+              <p class="title">유의사항</p>
+              <div class="gray-box">
+                <ul class="list-dot">
+                  <li>기본형 무료세차 (외부 자동세차 기준)</li>
+                  <li>본 쿠폰은 머핀 가맹 주유소에서만 사용 가능합니다.</li>
+                  <li>일부 수입차, 자동 세차기 진입 불가 차량은 서비스 제공 불가할 수 있습니다.</li>
+                  <li>주유소에 따라 물기제거 서비스는 제공하지 않을 수 있습니다.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="btn-area grid">
+              <button type="button" class="btn">예약하기</button>
             </div>
           </div>
         </div>
-
-        <div class="fix-footer-area">
-          <button type="button" class="btn type2 color4">예약하기</button>
-        </div>
       </div>
-      <!-- //Wrap-contents -->
+
+      <div class="mask"></div>
     </div>
+    <!-- //Popup -->
   </body>
 </html>
