@@ -118,6 +118,14 @@
       }
     }
   }
+
+  .membership-grade{
+    .grade-title{
+      span{
+        margin:0;
+      }
+    }
+  }
 }
 
 .myinfo-top {
@@ -148,6 +156,7 @@
 }
 
 .info-list {
+  margin-top:1rem;
   li {
     padding: 2.8rem 1rem;
     display: flex;

@@ -582,6 +582,34 @@
       margin-left:.7rem;
     }
   }
+
+  .desc{
+    margin-top: 1.4rem;
+    padding-left: 5rem;
+    text-align: right;
+
+    .grade-title{
+      padding-left: 1rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+    .grade-sub{
+      margin-top: .5rem;
+      padding-right: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      text-align: left;
+      &:before{
+        top: 0.5rem;
+        left: 0.5rem;
+        width: 0.2rem;
+        height: 0.2rem;
+      }
+    }
+    .btn-arrow{
+      margin:.6rem 1rem .5rem 0;
+    }
+  }
 }
 
 .wrap-code {
@@ -592,13 +620,12 @@
     padding: 3rem 1.5rem;
   }
   .barcode-box {
+    position: static;
+    margin: 2rem 1.4rem 0;
     padding-right: 0;
     margin: 0 auto;
     width: 20.6rem;
-
-    img {
-      width: 100%;
-    }
+    transform: inherit;
   }
   .btn-link {
     margin-top: 3rem;
@@ -613,9 +640,18 @@
 }
 
 .barcode-box {
-  position: relative;
-  margin: 2rem 1.4rem 0;
-  padding-right: 3.1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  .barcode{
+    width: 29.5rem;
+    margin: auto;
+    img{
+      width:100%;
+    }
+  }
 
   .btn-add {
     position: absolute;
