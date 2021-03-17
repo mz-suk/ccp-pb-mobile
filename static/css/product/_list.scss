@@ -2512,6 +2512,7 @@
         color: $fc6;
       }
     }
+
   }
 
   .swiper-pagination {
@@ -3176,6 +3177,9 @@
         .swiper-slide {
           margin: 0 0 0 2rem;
           width: 29.5rem;
+          &:last-of-type{
+            margin-right:2rem;
+          }
         }
       }
     }
@@ -3234,7 +3238,15 @@
       width: auto;
     }
   }
+
   .wrap-card {
+    .card{
+      &.muffin{
+        .detail{
+          margin-top: 3.4rem;
+        }
+      }
+    }
     .info {
       padding: 2.5rem 2rem 1.1rem 2.5rem;
     }
@@ -3254,7 +3266,6 @@
       }
     }
     .detail {
-      margin-top: 2.3rem;
       .brand {
         margin-bottom: 0.3rem;
         font-size: 1.3rem;
@@ -3635,27 +3646,6 @@
     }
     .wrap-btn {
       margin: 1.7rem 4.6rem 0;
-    }
-  }
-  .mycard-rep {
-    input[type="radio"] {
-      width: 2.4rem;
-      height: 2.4rem;
-      background: url(~assets/img/layout/icon-rep-card.svg) 100% 100%/2.4rem 2.4rem no-repeat;
-      border-radius: 50%;
-      opacity: 0.4;
-      transition: all 0.2s ease;
-    }
-    input[type="radio"] + label {
-      font-size: 1.1rem;
-      font-weight: 700;
-      opacity: 0.4;
-      transition: all 0.2s ease;
-      vertical-align: middle;
-    }
-    input[type="radio"]:checked,
-    input[type="radio"]:checked + label {
-      opacity: 1;
     }
   }
 }
