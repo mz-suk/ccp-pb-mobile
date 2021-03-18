@@ -624,11 +624,13 @@
     margin: 2rem 1.4rem 0;
     padding-right: 0;
     margin: 0 auto;
-    width: 20.6rem;
     transform: inherit;
+    .barcode{
+      width:21.6rem;
+    }
   }
   .btn-link {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
   .wrap-btn {
     margin-top: 4rem;
@@ -956,6 +958,7 @@
         font-size: 1.7rem;
       }
       .info {
+        margin-top:.5rem;
         text-align: center;
         color:$fc1;
         p {
@@ -963,23 +966,22 @@
           display:inline-block;
           vertical-align: top;
           letter-spacing: -0.04rem;
-          margin: 1.1rem 1rem 0 0;
-          padding: 0 1.1rem 0 0;
+          margin: 0 1rem 0 0;
+          padding: 0 0 0 1rem;
           position:relative;
           span{
             color:$pc3
           }
-          &:first-of-type{
+          &:not(:first-of-type){
             &:after {
               content: "";
               position: absolute;
               top: 50%;
-              right: 0;
-              width: 0.1rem;
+              left: 0;
               height: 0.7rem;
               border-right: 0.1rem dotted $fc1;
               transform: translate(0, -50%);
-          }
+            }
           }
         }
       }

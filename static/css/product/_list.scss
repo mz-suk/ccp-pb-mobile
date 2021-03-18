@@ -2512,7 +2512,6 @@
         color: $fc6;
       }
     }
-
   }
 
   .swiper-pagination {
@@ -3070,15 +3069,33 @@
   .my-cardinfo {
     padding: 2rem 1rem 0;
     height: 5.8rem;
-    position: relative;
+    display: flex;
+
+    .mymuffin-card {
+      padding-left: 1.5rem;
+      .card-name {
+        margin-top: 0.8rem;
+        font-size: 1.5rem;
+      }
+      .card-number {
+        font-size: 1.4rem;
+      }
+    }
     .my-cardpre {
-      position: static;
-      float: left;
       background: #726aa9;
       border-radius: 0.5rem;
       border: 0.1rem solid #6b639f;
       width: 9rem;
       box-sizing: border-box;
+      position: relative;
+      p {
+        position: absolute;
+        font-size: 0.9rem;
+        color: #fff;
+        left: 0.9rem;
+        top: 0.8rem;
+        letter-spacing: -0.04rem;
+      }
       img {
         width: 100%;
       }
@@ -3147,18 +3164,6 @@
         border: 0.1rem solid #12358f;
       }
     }
-
-    .mymuffin-card {
-      .card-name {
-        padding-left: 10.5rem;
-        margin-top: 0.8rem;
-        font-size: 1.5rem;
-      }
-      .card-number {
-        padding-left: 10.5rem;
-        font-size: 1.4rem;
-      }
-    }
   }
   .swiper-container {
     padding-bottom: 3rem;
@@ -3177,8 +3182,8 @@
         .swiper-slide {
           margin: 0 0 0 2rem;
           width: 29.5rem;
-          &:last-of-type{
-            margin-right:2rem;
+          &:last-of-type {
+            margin-right: 2rem;
           }
         }
       }
@@ -3240,9 +3245,9 @@
   }
 
   .wrap-card {
-    .card{
-      &.muffin{
-        .detail{
+    .card {
+      &.muffin {
+        .detail {
           margin-top: 3.4rem;
         }
       }
