@@ -267,6 +267,12 @@
         margin-top: 0;
       }
     }
+    li {
+      padding-top: 3rem;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
   }
   .evnet-box {
     position: relative;
