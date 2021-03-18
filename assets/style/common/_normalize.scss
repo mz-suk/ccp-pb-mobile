@@ -175,15 +175,13 @@ span {
 
 @font-face {
   font-family: "Moebius";
-  src: url("../../assets/font/MoebiusRegular.woff2") format("woff2"),
-    url("../../assets/font/MoebiusRegular.woff") format("woff");
+  src: url("../../assets/font/MoebiusRegular.woff2") format("woff2"), url("../../assets/font/MoebiusRegular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Moebius";
   font-weight: 700;
-  src: url("../../assets/font/MoebiusBold.woff2") format("woff2"),
-    url("../../assets/font/MoebiusBold.woff") format("woff");
+  src: url("../../assets/font/MoebiusBold.woff2") format("woff2"), url("../../assets/font/MoebiusBold.woff") format("woff");
 }
 
 html {
@@ -222,8 +220,7 @@ html {
     height: 0.7rem;
     margin-left: 0.5rem;
     vertical-align: 0.15em;
-    background: url(../../assets/img/layout/icon-required.png) 0 0 / 100% auto
-      no-repeat;
+    background: url(../../assets/img/layout/icon-required.png) 0 0 / 100% auto no-repeat;
   }
 }
 
