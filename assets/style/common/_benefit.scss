@@ -267,6 +267,12 @@
         margin-top: 0;
       }
     }
+    li {
+      padding-top: 3rem;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
   }
   .evnet-box {
     position: relative;
@@ -615,8 +621,8 @@
 
 .top-banner {
   margin: -4rem -2rem 1rem;
-  background:#3F6DF9;
-  text-align:center;
+  background: #3f6df9;
+  text-align: center;
   img {
     width: 100%;
   }
