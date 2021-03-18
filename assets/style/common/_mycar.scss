@@ -606,7 +606,7 @@
     }
   }
   .list-number {
-    margin-top: 1rem;
+    margin-top: 3rem;
     color: $fc1;
     & > li:not(:first-child) {
       margin-top: 2rem;
@@ -618,6 +618,9 @@
     }
     .ol-num {
       margin-top: 1rem;
+    }
+    .title {
+      margin-bottom: 1.5rem;
     }
   }
 }
