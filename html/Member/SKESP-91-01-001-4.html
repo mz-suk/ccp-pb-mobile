@@ -19,33 +19,39 @@
   </head>
 
   <body>
-    <div id="container">
-      <!-- Header -->
-      <header class="header header-popup">
-        <h1 class="title">휴대폰 본인인증</h1>
-        <div class="right"><button type="button" class="bg-icon close">닫기</button></div>
-      </header>
-      <!-- //Header -->
+    <div id="container"></div>
 
-      <!-- wrap-contents -->
-      <div class="wrap-contents">
-        <div class="account-area">
-          <div class="member-apply">
-            <div class="apply-form">
-              <p class="apply-title">이름</p>
-              <div class="form-input">
-                <input type="text" placeholder="이름을 입력하세요.">
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <!-- Header -->
+        <header class="header header-popup">
+          <h1 class="title">휴대폰 본인인증</h1>
+          <div class="right"><button type="button" class="bg-icon close">닫기</button></div>
+        </header>
+        <!-- //Header -->
+
+        <!-- wrap-contents -->
+        <div class="wrap-contents">
+          <div class="account-area">
+            <div class="member-apply">
+              <div class="apply-form">
+                <p class="apply-title">이름</p>
+                <div class="form-input">
+                  <input type="text" placeholder="이름을 입력하세요.">
+                </div>
               </div>
             </div>
           </div>
+          <div class="fix-footer-area">
+            <button type="button" class="btn type2 color4">확인</button>
+          </div>
         </div>
-        <div class="fix-footer-area">
-          <button type="button" class="btn type2 color4">확인</button>
-        </div>
+        <!-- //wrap-contents -->
       </div>
-      <!-- //wrap-contents -->
 
-      <!-- Footer -->
+      <div class="mask"></div>
     </div>
+    <!-- //Popup -->
   </body>
 </html>
