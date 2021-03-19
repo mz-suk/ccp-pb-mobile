@@ -441,6 +441,12 @@
       min-width: 24.4rem;
     }
   }
+  .dotted-list {
+    font-size: 1.3rem;
+    li:before {
+      top: 0.6rem;
+    }
+  }
 }
 
 .member-apply {
