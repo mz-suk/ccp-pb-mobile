@@ -478,6 +478,10 @@
       }
     }
   }
+
+  .address-btn {
+    margin-top: 1.5rem;
+  }
 }
 
 .filter-layer {
@@ -2897,15 +2901,26 @@
 
 .address-cont {
   padding: 4rem 2rem 6rem;
-
+  .address-list {
+    .info-type-box {
+      .dropdown-area {
+        .drop-menu {
+          top: 2.8rem;
+          right: 0.8rem;
+          min-width: 13.3rem;
+        }
+      }
+    }
+  }
   .info-address-cont {
     position: relative;
-    padding: 2.5rem;
+    padding: 3rem;
     display: block;
     line-height: 1;
     background: $fcF;
     border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
+
     .disabled {
       display: flex;
       flex-direction: column;
@@ -2923,14 +2938,17 @@
       z-index: 30;
       color: $fcF;
       border-radius: 1.6rem;
+
       .service-done {
-        color: $pc6;
-        padding-bottom: 1rem;
+        color: $fcF;
+        padding-bottom: 0.5rem;
+        font-size: 1.5rem;
       }
+
       button {
         width: 6.5rem;
         height: 3rem;
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         background: $fcF;
         border-radius: 2.5rem;
         color: $fc1;
@@ -2953,64 +2971,44 @@
     }
 
     .address-nick {
-      margin-top: 1rem;
-      padding-left: 1rem;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: $fc1;
+      font-weight: 700;
     }
     .address-info {
-      margin: 0 -2rem 0;
-      padding: 1rem 1.5rem 0.5rem;
-      line-height: 1;
       color: $fc1;
-      text-align: center;
-
-      .list {
-        padding: 0 2rem;
-        li {
-          position: relative;
-          padding-left: 1.2rem;
-          margin-top: 1rem;
-          line-height: 1.2;
-          text-align: left;
-          color: $fc6;
-          &:before {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0.7rem;
-            width: 0.3rem;
-            height: 0.3rem;
-            background: $fc6;
-            border-radius: 50%;
-          }
+      margin: 2rem 0;
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-left: 2.1rem;
+        position: relative;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1.6rem;
+          height: 1.6rem;
+          background: url(../../assets/img/layout/icon-address-pin.svg) 0 0/100% auto no-repeat;
+          content: "";
         }
       }
+      span {
+        display: block;
+        font-size: 1.3rem;
+        color: $fc6;
+        margin-top: 0.9rem;
+        padding-left: 2.1rem;
+      }
     }
-    .more-detail {
-      border-top: 0.1rem dotted #d7d7d7;
-      margin: 2rem 0 0;
-      padding: 2rem 0 0;
-      display: flex;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      .more-item {
-        position: relative;
-        flex: 1;
-        &:not(:first-child) {
-          &:before {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 0.1rem;
-            height: 2rem;
-            background: $fcE4;
-          }
+    .btn-area {
+      margin-top: 0;
+      .btn {
+        border: 0.1rem solid $fcE4;
+        .bg-icon {
+          width: 1.65rem;
+          height: 1.6rem;
+          margin: -0.2rem 0.5rem 0 0;
         }
       }
     }
