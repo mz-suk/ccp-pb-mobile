@@ -394,12 +394,12 @@ select:disabled {
       }
     }
 
-    input[type="radio"] + label {
-      padding: 0 1.5rem;
-      &:before {
-        display: none;
-      }
-    }
+    // input[type="radio"] + label {
+    //   padding: 0 1.5rem;
+    //   &:before {
+    //     display: none;
+    //   }
+    // }
 
     input[type="checkbox"]:checked + label,
     input[type="radio"]:checked + label {

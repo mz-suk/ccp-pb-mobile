@@ -39,80 +39,15 @@
             <div class="title-sub type4">
               <p>주유소 전용 쿠폰</p>
             </div>
-            <!-- swiper -->
-            <div class="wrap-coupon type1">
-              <div class="swiper-container">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <!-- [D] 다운로드 완료 .disabled 추가 -->
-                    <div class="info-type-box coupon-type disabled">
-                      <div class="info-type-cont">
-                        <div class="top">
-                          <span class="badge grad2">주유</span>
-                        </div>
-                        <p class="title">장층 주유소</p>
-                        <div class="num"><strong>10</strong>%</div>
-                        <p class="info-txt">최소결제금액 : 15,000원</p>
-                        <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
-                        <div class="right">
-                          <button type="button"><i class="bg-icon download" disabled>다운로드</i></button>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- //다운로드 완료 -->
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="info-type-box coupon-type">
-                      <div class="info-type-cont">
-                        <div class="top">
-                          <span class="badge grad2">주유</span>
-                        </div>
-                        <p class="title">장층 주유소</p>
-                        <div class="num"><strong>10</strong>%</div>
-                        <p class="info-txt">최소결제금액 : 15,000원</p>
-                        <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
-                        <div class="right">
-                          <button type="button"><i class="bg-icon download">다운로드</i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="info-type-box coupon-type">
-                      <div class="info-type-cont">
-                        <div class="top">
-                          <span class="badge grad2">주유</span>
-                        </div>
-                        <p class="title">장층 주유소</p>
-                        <div class="num"><strong>10</strong>%</div>
-                        <p class="info-txt">최소결제금액 : 15,000원</p>
-                        <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
-                        <div class="right">
-                          <button type="button"><i class="bg-icon download">다운로드</i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="wrap-btn">
-                <button type="button" class="btn color1">주유소 전용 쿠폰 모두 받기</button>
+
+            <div class="wrap-coupon">
+              <div class="wrap-empty">
+                <div class="empty-img">
+                  <img src="../../assets/img/layout/icon-empty-coupon.svg" alt="" />
+                </div>
+                <p class="empty-text"><strong>다운 가능한 쿠폰이 없습니다.</strong></p>
               </div>
             </div>
-
-            <link rel="stylesheet" href="../swiper-bundle.min.css" />
-            <script src="../swiper-bundle.min.js"></script>
-            <script>
-              var swiper = new Swiper(".type1 .swiper-container", {
-                slidesPerView: "auto",
-                pagination: {
-                  el: ".type1 .swiper-pagination",
-                  type: "fraction",
-                },
-              });
-            </script>
-            <!-- //swiper -->
           </div>
 
           <div class="block-layout">
@@ -120,20 +55,45 @@
               <p>제휴 세차 전용 쿠폰</p>
             </div>
             <!-- swiper -->
-            <div class="wrap-coupon type2">
+            <div class="wrap-coupon couponLst2">
               <div class="swiper-container">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <div class="info-type-box coupon-type">
-                      <div class="info-type-cont">
+                    <!-- [D] 다운로드 완료 .disabled 추가 -->
+                    <div class="info-type-box coupon-type disabled">
+                      <div class="info-type-cont type2">
                         <div class="top">
-                          <span class="badge grad1">세차</span>
-                          <span class="badge red">가맹점</span>
+                          <span class="badge grad3"><i class="bg-icon membership-type2"></i>멤버십</span>
+                          <span class="badge grad1">손세차</span>
+                          <span class="count"><strong>3</strong>장</span>
                         </div>
-                        <p class="title">루페스 이용쿠폰<span>(일부 가맹점 사용 불가)</span></p>
-                        <div class="num"><strong>10</strong>%</div>
-                        <p class="info-txt">최소결제금액 : 15,000원</p>
-                        <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
+                        <p class="title">유막제거 할인<br/> 소낙스, 루페스 매장에서 이용 가능</p>
+                        <div class="num"><strong>100</strong>%</div>
+                        <div class="bottom">
+                          <p class="desc">손세차 예약 중 해당 옵션 구매시 적용가능</p>
+                          <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
+                        </div>
+                        <div class="right">
+                          <button type="button"><i class="bg-icon download">다운로드</i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- //다운로드 완료 -->
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="info-type-box coupon-type">
+                      <div class="info-type-cont type2">
+                        <div class="top">
+                          <span class="badge grad3"><i class="bg-icon membership-type2"></i>멤버십</span>
+                          <span class="badge grad1">손세차</span>
+                          <span class="count"><strong>3</strong>장</span>
+                        </div>
+                        <p class="title">유막제거 할인<br/> 소낙스, 루페스 매장에서 이용 가능</p>
+                        <div class="num"><strong>100</strong>%</div>
+                        <div class="bottom">
+                          <p class="desc">손세차 예약 중 해당 옵션 구매시 적용가능</p>
+                          <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
+                        </div>
                         <div class="right">
                           <button type="button"><i class="bg-icon download">다운로드</i></button>
                         </div>
@@ -142,32 +102,18 @@
                   </li>
                   <li class="swiper-slide">
                     <div class="info-type-box coupon-type">
-                      <div class="info-type-cont">
+                      <div class="info-type-cont type2">
                         <div class="top">
-                          <span class="badge grad1">세차</span>
-                          <span class="badge red">가맹점</span>
+                          <span class="badge grad3"><i class="bg-icon membership-type2"></i>멤버십</span>
+                          <span class="badge grad1">손세차</span>
+                          <span class="count"><strong>3</strong>장</span>
                         </div>
-                        <p class="title">루페스 이용쿠폰<span>(일부 가맹점 사용 불가)</span></p>
-                        <div class="num"><strong>10</strong>%</div>
-                        <p class="info-txt">최소결제금액 : 15,000원</p>
-                        <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
-                        <div class="right">
-                          <button type="button"><i class="bg-icon download">다운로드</i></button>
+                        <p class="title">유막제거 할인<br/> 소낙스, 루페스 매장에서 이용 가능</p>
+                        <div class="num"><strong>100</strong>%</div>
+                        <div class="bottom">
+                          <p class="desc">손세차 예약 중 해당 옵션 구매시 적용가능</p>
+                          <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
                         </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="info-type-box coupon-type">
-                      <div class="info-type-cont">
-                        <div class="top">
-                          <span class="badge grad1">세차</span>
-                          <span class="badge red">가맹점</span>
-                        </div>
-                        <p class="title">루페스 이용쿠폰<span>(일부 가맹점 사용 불가)</span></p>
-                        <div class="num"><strong>10</strong>%</div>
-                        <p class="info-txt">최소결제금액 : 15,000원</p>
-                        <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
                         <div class="right">
                           <button type="button"><i class="bg-icon download">다운로드</i></button>
                         </div>
@@ -182,85 +128,14 @@
               </div>
             </div>
 
+            <link rel="stylesheet" href="../swiper-bundle.min.css" />
+            <script src="../swiper-bundle.min.js"></script>
             <script>
-              var swiper = new Swiper(".type2 .swiper-container", {
+              var swiper = new Swiper(".couponLst2 .swiper-container", {
                 slidesPerView: "auto",
+                centeredSlides:true,
                 pagination: {
-                  el: ".type2 .swiper-pagination",
-                  type: "fraction",
-                },
-              });
-            </script>
-            <!-- //swiper -->
-          </div>
-
-          <div class="block-layout">
-            <div class="title-sub type4">
-              <p>구매 횟수 제한 쿠폰</p>
-              <p class="sub-txt">개별로 쿠폰을 다운 해주세요.</p>
-            </div>
-            <!-- swiper -->
-            <div class="wrap-coupon type3">
-              <div class="swiper-container">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <div class="info-type-box coupon-type">
-                      <div class="info-type-cont">
-                        <div class="top">
-                          <span class="badge grad1">세차</span>
-                        </div>
-                        <p class="title">머핀 신규회원 가입쿠폰</p>
-                        <div class="num"><strong>10</strong>%</div>
-                        <p class="info-txt">최소결제금액 : 15,000</p>
-                        <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
-                        <div class="right">
-                          <button type="button"><i class="bg-icon download">다운로드</i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="info-type-box coupon-type">
-                      <div class="info-type-cont">
-                        <div class="top">
-                          <span class="badge grad1">세차</span>
-                        </div>
-                        <p class="title">머핀 신규회원 가입쿠폰</p>
-                        <div class="num"><strong>10</strong>%</div>
-                        <p class="info-txt">최소결제금액 : 15,000</p>
-                        <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
-                        <div class="right">
-                          <button type="button"><i class="bg-icon download">다운로드</i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="info-type-box coupon-type">
-                      <div class="info-type-cont">
-                        <div class="top">
-                          <span class="badge grad1">세차</span>
-                        </div>
-                        <p class="title">머핀 신규회원 가입쿠폰</p>
-                        <div class="num"><strong>10</strong>%</div>
-                        <p class="info-txt">최소결제금액 : 15,000</p>
-                        <p class="date">사용기간 : 2020.07.01 ~ 2020.07.31</p>
-                        <div class="right">
-                          <button type="button"><i class="bg-icon download">다운로드</i></button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <script>
-              var swiper = new Swiper(".type3 .swiper-container", {
-                slidesPerView: "auto",
-                pagination: {
-                  el: ".type3 .swiper-pagination",
+                  el: ".couponLst2 .swiper-pagination",
                   type: "fraction",
                 },
               });
@@ -271,43 +146,5 @@
       </div>
       <!-- //Wrap-contents -->
     </div>
-
-    <!-- Quick-menu -->
-    <div class="quick-menu">
-      <ul class="quick-menu-list">
-        <li>
-          <!-- [D] 활성화 .active 추가 -->
-          <a href="#">
-            <i class="bg-icon home"></i>
-            <span class="menu-name">홈</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon oiling"></i>
-            <span class="menu-name">주유</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon wash"></i>
-            <span class="menu-name">세차</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon membership"></i>
-            <span class="menu-name">멤버십</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon my-muffin"></i>
-            <span class="menu-name">My</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- //Quick-menu -->
   </body>
 </html>
