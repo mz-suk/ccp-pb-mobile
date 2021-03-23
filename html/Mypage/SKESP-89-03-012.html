@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <!-- Header -->
+        <header class="header header-popup">
+          <h1 class="title">결제 비밀번호 설정</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <!-- //Header -->
+
+        <!-- Wrap-contents -->
+        <div class="wrap-contents">
+          <div class="row-section-wrap">
+            <div class="row-section">
+              <div class="member-apply">
+                <p class="apply-info">등록하신 카드로 결제 이용 시<br/>사용하실 비밀번호를 설정해주세요.</p>
+                <div class="apply-form">
+                  <p class="apply-title">결제 비밀번호<em class="req">*</em>
+                    <span class="sub-txt">(등록한 카드로 앱 결제 시 사용)</span>
+                  </p>
+                  <div class="form-input">
+                    <input type="password" maxlength="4" placeholder="숫자 4자리" />
+                  </div>
+                </div>
+                <div class="apply-form">
+                  <p class="apply-title">결제 비밀번호 확인<em class="req">*</em></p>
+                  <div class="form-input">
+                    <input type="password" maxlength="4" placeholder="숫자 4자리" />
+                  </div>
+                </div>
+                <div class="wrap-check">
+                  <input type="checkbox" id="chk1" />
+                  <label for="chk1">결제 시 비밀번호 입력 없이 자동 결제하겠습니다.</label>
+                </div>
+                <div class="btn-area grid">
+                  <button type="button" class="btn">등록취소</button>
+                  <button type="button" class="btn color1">등록완료</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //Wrap-contents -->
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
