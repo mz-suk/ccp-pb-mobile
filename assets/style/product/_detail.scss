@@ -285,12 +285,12 @@
       padding: 0;
       //background: url(../../assets/img/layout/bg-coupon-text2.png) 50% 2rem / 4.8rem 2.2rem no-repeat;
       color: $fcF;
-      .tit{
-        text-align:center;
-        text-decoration:underline;
-        margin-top:2rem;
-        font-size:1.3rem;
-        line-height:1.2;
+      .tit {
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        line-height: 1.2;
       }
       .discount {
         display: block;
@@ -361,7 +361,7 @@
   }
   &.type-address {
     .wrap-form {
-      margin-top: 2rem;
+      margin-top: 2.5rem;
       &.type1 {
         margin-top: 1rem;
       }
@@ -389,17 +389,17 @@
     }
     .list-radio {
       margin-bottom: 3rem;
-      .address-detail {
-        padding-left: 3rem;
-        font-size: 1.3rem;
-        color: $fc1;
-        line-height: 2rem;
-      }
       .checkbox {
         input[type="radio"] + label {
+          display: block;
           color: $fc9;
           margin-left: 0;
           font-size: 1.5rem;
+          .address-detail {
+            font-size: 1.3rem;
+            padding-left: 3rem;
+            margin-top: 0.8rem;
+          }
         }
         input[type="radio"]:checked + label {
           color: $fc1;

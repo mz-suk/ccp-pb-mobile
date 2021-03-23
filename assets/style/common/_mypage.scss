@@ -648,4 +648,12 @@
   .list-dot {
     margin: 2rem 0;
   }
+  &.type1 {
+    .apply-info {
+      margin-bottom: 1.5rem;
+    }
+    .apply-form-info {
+      margin-bottom: 3rem;
+    }
+  }
 }

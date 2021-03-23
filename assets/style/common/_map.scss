@@ -143,6 +143,23 @@
         }
       }
     }
+    .desc {
+      &.type1 {
+        padding-left: 0;
+        .new-address {
+          .bg-icon {
+            &.location-small {
+              width: 1.6rem;
+              height: 1.6rem;
+              margin-top: -0.4rem;
+            }
+          }
+        }
+        .old-address {
+          padding-left: 2.2rem;
+        }
+      }
+    }
   }
 }
 
