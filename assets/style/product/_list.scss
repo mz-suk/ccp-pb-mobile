@@ -2901,17 +2901,13 @@
 
 .address-cont {
   padding: 4rem 2rem 6rem;
-  .address-list {
-    .info-type-box {
-      .dropdown-area {
-        .drop-menu {
-          top: 2.8rem;
-          right: 0.8rem;
-          min-width: 13.3rem;
-        }
-      }
-    }
+
+  .drop-menu {
+    top: 2.8rem;
+    right: 0.8rem;
+    min-width: 13.3rem;
   }
+
   .info-address-cont {
     position: relative;
     padding: 3rem;
@@ -3007,7 +3003,7 @@
         .bg-icon {
           width: 1.65rem;
           height: 1.6rem;
-          margin: -0.2rem 0.5rem 0 0;
+          margin-right: 0.5rem;
         }
       }
     }
