@@ -458,19 +458,21 @@
     line-height: 2.4rem;
   }
   .apply-form {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     &:nth-of-type(1) {
       margin-top: 0;
     }
     .apply-title {
       display: flex;
       align-items: center;
-      font-size: 1.5rem;
       padding-bottom: 0.9rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
       .req {
-        padding-left: 0.3rem;
-        font-size: 1.1rem;
+        height: 1rem;
+        padding-left: 0.4rem;
         color: $gc3;
+        font-size: 1rem;
       }
       .sub-txt {
         color: $fc6;
