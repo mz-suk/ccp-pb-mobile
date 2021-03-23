@@ -118,8 +118,8 @@
   .badge {
     &.num {
       position: absolute;
-      top: 0.9rem;
-      left: 0.4rem;
+      top: 0.7rem;
+      left: 0rem;
       min-width: 1.8rem;
       height: 1.8rem;
       margin: 0;
@@ -127,7 +127,7 @@
       font-size: 1rem;
       font-weight: 700;
       line-height: 1.8rem;
-      font-family: "Jost *";
+      font-family: "Jost*";
     }
   }
 
