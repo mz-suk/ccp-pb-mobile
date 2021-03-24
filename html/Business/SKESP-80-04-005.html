@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-popup">
+        <h1 class="title">선택한 주소 확인</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">
+            이전페이지
+          </button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">
+            메뉴
+          </button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents"></div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+
+    </div>
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-bottom">
+      <div class="wrap-layer">
+        <div class="inner-layer">
+          <div class="layer-cont">
+            <div class="search-address type1">
+              <p class="nick-input">아래 주소가 맞는지 확인 후 입력을 완료해주세요.<br>별명을 입력하시면 다시 예약하실 때 찾기 편리합니다.</p>
+              <div class="address-confirm">
+                <p class="new-adress">서울 서초구 신반포로 270 반포자이</p>
+                <p class="old-address">서울 서초구 반포동 20-43</p>
+              </div>
+              <p class="title-notice">별명</p>
+              <div class="form-input">
+                <input type="text" placeholder="10자 이내로 입력 (집, 회사, 사무실)">
+              </div>
+            </div>
+            <div class="wrap-btn">
+              <button type="button" class="btn color1">주소 입력 완료</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </div>
+  <!-- //Layer Pop -->
+  </body>
+</html>

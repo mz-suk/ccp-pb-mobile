@@ -496,7 +496,7 @@
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    padding: 3rem;
+    padding: 3rem 3rem 3rem 4rem;
     border-bottom: 0.1rem solid $fcE4;
 
     .desc {
@@ -508,7 +508,22 @@
       height: calc(100% - 15.6rem);
     }
   }
+  .dawn-top {
+    width: 100%;
+    padding: 4rem 2rem;
+    border-bottom: 0.1rem solid $fcE4;
+    box-sizing: border-box;
 
+    .title {
+      color: $fc1;
+      font-size: 1.7rem;
+      margin-bottom: 1.5rem;
+    }
+    .sub {
+      margin-bottom: 3rem;
+      color: $fc6;
+    }
+  }
   .wrap-filter-tab {
     display: flex;
     height: 100%;
@@ -586,7 +601,7 @@
         font-size: 1.5rem;
 
         &:active {
-          border-bottom: 0.1rem solid $fc1;
+          text-decoration: underline;
           font-weight: 700;
         }
       }
