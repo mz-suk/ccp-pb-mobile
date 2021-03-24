@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">손세차 서비스 소개</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="affiliate-wrap">
+            <div class="wrap-tab type2">
+              <ul class="tab-menu">
+                <li class="active"><button type="button">루페스</button></li>
+                <li><button type="button">SONAX</button></li>
+              </ul>
+            </div>
+
+            <div class="tab-content">
+              <div class="wash-brand">
+                <img src="../../assets/img/wash/rupes-01.png" alt="">
+                <span class="logo"><img src="../../assets/img/layout/logo-rupes.svg" alt=""></span>
+                <div class="logo-txt">
+                  <p class="logo-title">루페스</p>
+                  <p class="logo-sub">새차보다 더 세차처럼</p>
+                </div>
+                <div class="txt-box">
+                  <p class="title">70년 전통을 지닌<br><span>자동차 디테일링 1위 브랜드!</span></p>
+                  <p class="txt">이탈리아에 본사를 둔 자동차 광택기 제조 업체로서<br>자동차 디테일링 분야 점유율 세계 1위를 유지하고 있습니다.</p>
+                </div>
+              </div>
+              <div class="wash-content">
+                <ul class="wash-info">
+                  <li class="left">
+                    <p class="title">전문가 교육과정을 이수한<br>세계수준의 프로 디테일러 집단</p>
+                    <p class="txt">남들과 같다면 루페스가 아닙니다.<br>꼼꼼함은 기본! 감성만족을 시켜 드립니다.</p>
+                    <div class="img"><img src="../../assets/img/wash/rupes-02.png" alt=""></div>
+                  </li>
+                  <li class="right">
+                    <p class="title">세균과 바이러스 제거는 기본!<br>나와 내가족을 챙기는 실내클리닝</p>
+                    <p class="txt">코로나시대 이전부터 시행해온 루페스의 실내클리닝은<br>각종 세균과 먼지를 모조리 박멸합니다.</p>
+                    <div class="img"><img src="../../assets/img/wash/rupes-03.png" alt=""></div>
+                  </li>
+                  <li class="left">
+                    <p class="title">반려동물의 쾌적한 드라이빙을 위한<br>초정밀 펫케어</p>
+                    <p class="txt">털과 각종 이물질을 제거 뿐만 아니라<br>바이러스 살균 및 탈취까지 한번에 이루어 집니다.</p>
+                    <div class="img"><img src="../../assets/img/wash/rupes-04.png" alt=""></div>
+                  </li>
+                  <li class="right">
+                    <p class="title">새차보다 더 새차처럼<br>전체 디테일링 서비스 (광택)</p>
+                    <p class="txt">스크래치를 제거하고 본연의 모습으로 되돌리는<br>풀 디테일링 서비스로 복원과 보호 동시에 만족합니다.</p>
+                    <div class="img"><img src="../../assets/img/wash/rupes-05.png" alt=""></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>

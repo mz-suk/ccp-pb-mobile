@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <header class="header header-popup">
+          <h1 class="title">손세차 서비스 소개</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+
+        <div class="wrap-contents">
+          <div class="affiliate-wrap">
+            <div class="wrap-tab type2">
+              <ul class="tab-menu">
+                <li><button type="button">루페스</button></li>
+                <li class="active"><button type="button">SONAX</button></li>
+              </ul>
+            </div>
+
+            <div class="tab-content">
+              <div class="wash-brand">
+                <img src="../../assets/img/wash/sonax-01.png" alt="">
+                <span class="logo"><img src="../../assets/img/layout/logo-sonax.svg" alt=""></span>
+                <div class="logo-txt">
+                  <p class="logo-title">소낙스 (SONAX)</p>
+                  <p class="logo-sub">소낙스는 자연과 함께 존재합니다.</p>
+                </div>
+                <div class="txt-box">
+                  <p class="title"><span>120년 역사를 가진 글로벌 기업</span></p>
+                  <p class="txt">1903년에 독일에서 시작한 소낙스는 전 세계<br>100여개 국에 지사와 공식 수입원을 두고 있습니다.</p>
+                </div>
+              </div>
+              <div class="wash-content">
+                <ul class="wash-info">
+                  <li class="left">
+                    <p class="title">지구의 환경을 먼저 생각하는 기업</p>
+                    <p class="txt">엄격한 품질 테스트로 국제적인 공인기관에서도<br>소낙스의 제품력을 높이 평가받고 있습니다.</p>
+                    <div class="img"><img src="../../assets/img/wash/sonax-02.png" alt=""></div>
+                  </li>
+                  <li class="right">
+                    <p class="title">품질과 안정성을 인정받은 서비스</p>
+                    <p class="txt">독일 본사 전문 교육을 이수 받은 전문가들이<br>매뉴얼화된 시공 방법으로 서비스를 제공합니다.</p>
+                    <div class="img"><img src="../../assets/img/wash/sonax-03.png" alt=""></div>
+                  </li>
+                  <li class="left">
+                    <p class="title">맞춤형 차량 서비스</p>
+                    <p class="txt">차량의 상태에 따른 소낙스 케미컬을 사용하여<br>효과적이고 안전한 서비스를 제공합니다.</p>
+                    <div class="img"><img src="../../assets/img/wash/sonax-04.png" alt=""></div>
+                  </li>
+                  <li class="right">
+                    <p class="title">탁월한 폴리싱 광택</p>
+                    <p class="txt">버핑, 홀로그램 등을 효과적으로 제거하고<br>투명한 광택 작업을 통해 최고의 도장면으로 복원합니다.</p>
+                    <div class="img"><img src="../../assets/img/wash/sonax-05.png" alt=""></div>
+                  </li>
+                  <li class="left">
+                    <p class="title">유연하고 탄력적인 세라믹코팅</p>
+                    <p class="txt">오염물질로부터 도장면을 보호하고 뛰어난 효과로<br>차량의 가치를 오랫동안 보존합니다.</p>
+                    <div class="img"><img src="../../assets/img/wash/sonax-06.png" alt=""></div>
+                  </li>
+                  <li class="right">
+                    <p class="title">주기적인 관리를 위한 옵션 제공</p>
+                    <p class="txt">유막제거, 발수코팅, 왁스코팅, 엔진룸 크리닝 등의<br>옵션을 통해 내외부 상태를 안전하게 관리합니다.</p>
+                    <div class="img"><img src="../../assets/img/wash/sonax-07.png" alt=""></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
