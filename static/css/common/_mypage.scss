@@ -458,13 +458,27 @@
     line-height: 2.4rem;
   }
   .apply-form {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     &:nth-of-type(1) {
       margin-top: 0;
     }
     .apply-title {
-      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
       padding-bottom: 0.9rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      .req {
+        height: 1rem;
+        padding-left: 0.4rem;
+        color: $gc3;
+        font-size: 1rem;
+      }
+      .sub-txt {
+        color: $fc6;
+        font-size: 1.1rem;
+        margin-left: auto;
+      }
     }
     .dotted-list {
       margin-top: 1rem;
@@ -549,7 +563,6 @@
         }
       }
     }
-
     .txt-lang {
       margin-top: 1rem;
       margin-left: auto;
@@ -558,11 +571,19 @@
         color: $fc1;
       }
     }
-
     .list-dot {
       margin-top: 1.3rem;
     }
+    .form-txt {
+      margin-top: 2rem;
+      color: $fc6;
+    }
   }
+
+  .wrap-btn {
+    margin-top: 2.5rem;
+  }
+
   .apply-form-info {
     margin-top: 3.2rem;
     color: $fc6;
@@ -574,13 +595,12 @@
   }
 
   .wrap-check {
-    border-top: 0.1rem solid $fcF0;
-    margin-top: 4rem;
-    padding-top: 2.5rem;
     display: flex;
+    margin-top: 2rem;
     label {
       margin-left: 1rem;
       font-size: 1.5rem;
+      line-height: 1.2;
       letter-spacing: -0.02rem;
     }
   }
@@ -629,5 +649,13 @@
   }
   .list-dot {
     margin: 2rem 0;
+  }
+  &.type1 {
+    .apply-info {
+      margin-bottom: 1.5rem;
+    }
+    .apply-form-info {
+      margin-bottom: 3rem;
+    }
   }
 }

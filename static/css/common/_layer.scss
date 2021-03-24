@@ -647,6 +647,16 @@
         }
       }
     }
+    .barcode-box {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 2rem 1.2rem 0;
+      transform: none;
+      img {
+        width: 21.6rem;
+      }
+    }
   }
   .btn-x-black {
     position: absolute;
