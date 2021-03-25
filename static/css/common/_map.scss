@@ -53,7 +53,18 @@
     margin-top: 2rem;
     border-top: 0.1rem solid $fc1;
   }
-
+  &.type3 {
+    li {
+      &:last-child {
+        border-bottom: 0.1rem solid $fcF0;
+      }
+      .title {
+        .bg-icon {
+          margin-top: -0.1rem;
+        }
+      }
+    }
+  }
   .pos-bottom & {
     padding-bottom: 6rem;
   }
@@ -151,7 +162,7 @@
             &.location-small {
               width: 1.6rem;
               height: 1.6rem;
-              margin-top: -0.4rem;
+              margin-top: -0.1rem;
             }
           }
         }
@@ -261,6 +272,20 @@
     margin-top: 4rem;
     margin-bottom: 1.2rem;
     text-align: center;
+  }
+  .address-confirm {
+    padding: 2.5rem 0 2rem;
+    border-top: 0.1rem solid $fcF0;
+    .new-adress {
+      font-size: 1.5rem;
+      color: $fc1;
+    }
+  }
+  .service-ready {
+    color: $pc3;
+  }
+  &.type1 {
+    padding-bottom: 3rem;
   }
 }
 
