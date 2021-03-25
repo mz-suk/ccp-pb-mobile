@@ -1418,10 +1418,8 @@
       &.info-car-cont {
         background: $fcF;
         border-color: $fc1;
-        // box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.08);
         transition: background 0.2s, border 0.2s, box-shadow 0.2s;
       }
-
       &:after {
         background: url("../../assets/img/layout/icon-chk-on.svg") no-repeat center center;
         background-size: 100% auto;
@@ -1446,7 +1444,6 @@
       position: absolute;
       opacity: 0;
     }
-
     input[type="radio"]:checked + label {
       &.info-type-cont,
       &.info-car-cont {
@@ -1455,7 +1452,6 @@
         transition: background 0.2s, border 0.2s;
       }
     }
-
     input[type="radio"] + label {
       margin: 0;
       transition: background 0.2s, border 0.2s;
@@ -1498,6 +1494,9 @@
     input[type="checkbox"],
     input[type="radio"] {
       position: absolute;
+      width: 0.1rem;
+      height: 0.1rem;
+      clip: rect(0 0 0 0);
       opacity: 0;
     }
     input[type="checkbox"] + label,
@@ -1875,77 +1874,6 @@
         padding: 0;
         color: $fc6;
       }
-
-      // .info-box {
-      //   margin: 2rem 0 0;
-      //   padding: 2.5rem 2rem 1.5rem;
-      //   background: $fcF9;
-      //   border: 0.1rem solid $fcF0;
-      //   border-radius: 1.6rem;
-      //   box-sizing: border-box;
-
-      //   .tit {
-      //     display: inline-block;
-      //     font-size: 1.5rem;
-      //   }
-      //   .btn-txt {
-      //     float: right;
-      //     color: $pc3;
-      //     font-size: 1.1rem;
-      //     border-bottom: 0.1rem solid $pc3;
-      //     &:after {
-      //       display: block;
-      //       clear: both;
-      //       content: "";
-      //     }
-      //   }
-      //   .define-list {
-      //     align-items: center;
-      //     margin: 1rem 0 0 -0.5rem;
-      //     padding: 0;
-      //     dt,
-      //     dd {
-      //       margin-top: 1rem;
-      //     }
-      //     dt {
-      //       position: relative;
-      //       padding-left: 1.5rem;
-      //       &:before {
-      //         position: absolute;
-      //         top: 0.5rem;
-      //         left: 0.5rem;
-      //         width: 0.2rem;
-      //         height: 0.2rem;
-      //         background: $fc6;
-      //         border-radius: 50%;
-      //         content: "";
-      //       }
-      //     }
-      //     dd {
-      //       font-size: 1.5rem;
-      //     }
-      //   }
-      //   .box-btm {
-      //     display: flex;
-      //     align-items: center;
-      //     margin-top: 1.5rem;
-      //     padding-top: 1.2rem;
-      //     border-top: 0.1rem solid $fcF0;
-      //     .image {
-      //       height: 3.8rem;
-      //       padding-left: 0.4rem;
-      //       img {
-      //         height: 100%;
-      //       }
-      //     }
-      //     .desc {
-      //       margin-left: auto;
-      //       color: $fc9;
-      //       font-size: 1rem;
-      //       white-space: nowrap;
-      //     }
-      //   }
-      // }
     }
 
     &.type2 {
