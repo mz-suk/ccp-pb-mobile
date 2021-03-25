@@ -3495,7 +3495,8 @@
           span {
             margin-top: 1rem;
             display: block;
-            white-space: pre-line;
+            white-space: normal;
+            @include clamp(2);
           }
           button {
             color: $pc3;
