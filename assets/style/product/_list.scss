@@ -523,6 +523,9 @@
       margin-bottom: 3rem;
       color: $fc6;
     }
+    & + .wrap-filter-tab {
+      height: calc(100% - 28.9rem);
+    }
   }
   .wrap-filter-tab {
     display: flex;
