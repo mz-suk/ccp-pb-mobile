@@ -456,11 +456,13 @@
     padding: 4rem 0 3rem;
     background: $fcF9;
 
+    .wrap-card {
+      padding-left: 0;
+    }
     .swiper-slide {
       padding: 0 2rem;
       box-sizing: border-box;
     }
-
     .swiper-pagination {
       position: static;
       margin-top: 2rem;
