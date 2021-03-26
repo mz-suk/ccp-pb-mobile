@@ -907,6 +907,7 @@
         border-radius: 2rem;
         box-sizing: border-box;
         box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.15);
+        position: relative;
 
         &.getcha {
           background: url(../../assets/img/layout/bg-icon-getcha.svg) 0 0.8rem no-repeat, linear-gradient(135deg, #f89771, #f47645);
@@ -952,6 +953,21 @@
           margin-top: 3.8rem;
           font-size: 0.9rem;
           font-weight: 400;
+        }
+        .retain {
+          text-decoration: underline;
+          color: #fff;
+          position: absolute;
+          right: 2rem;
+          top: 1.5rem;
+          font-size: 1.1rem;
+          font-weight: 700;
+
+          .retain-check {
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-right: 0.3rem;
+          }
         }
       }
 
