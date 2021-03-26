@@ -581,10 +581,12 @@
   background: $fcF9;
   border-top: 0.1rem solid $fcF0;
 
+  .swiper-container {
+    min-height: 21.7rem;
+  }
   .swiper-wrapper {
     align-items: center;
   }
-
   .swiper-slide {
     width: 31.5rem;
     box-sizing: border-box;
