@@ -1,0 +1,20 @@
+<svg id="icon_check_12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_165496" data-name="사각형 165496" width="12" height="12" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="check_white_12x12" transform="translate(6 6)">
+    <g id="그룹_211915" data-name="그룹 211915" transform="translate(-6 -6)" clip-path="url(#clip-path)">
+      <g id="그룹_211914" data-name="그룹 211914" clip-path="url(#clip-path)">
+        <g id="그룹_211913" data-name="그룹 211913" opacity="0">
+          <g id="그룹_211912" data-name="그룹 211912" clip-path="url(#clip-path)">
+            <rect id="사각형_165493" data-name="사각형 165493" width="12" height="12" fill="#f0f"/>
+          </g>
+        </g>
+        <path id="패스_407110" data-name="패스 407110" d="M9.4,4.2,4.8,8.6,1.9,5.7" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_42184" data-name="선 42184" x1="0.6" y2="0.6" transform="translate(9.4 3.6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -365,23 +365,6 @@
       &.type1 {
         margin-top: 1rem;
       }
-      .address-choice {
-        border-bottom: 0.1rem solid $fc1;
-        color: $fc1;
-        margin-bottom: 2rem;
-        display: flex;
-        padding-bottom: 1.5rem;
-        p {
-          padding-left: 1rem;
-        }
-        button {
-          margin-left: auto;
-          .more {
-            width: 1.2rem;
-            height: 1.2rem;
-          }
-        }
-      }
     }
     .form-text-area {
       textarea {
