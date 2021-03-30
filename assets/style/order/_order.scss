@@ -632,6 +632,18 @@
       }
     }
   }
+  .text-guide {
+    margin: 1.2rem 0 0 1rem;
+    font-size: 1.1rem;
+    &:before {
+      top: 0.6rem;
+      width: 0.2rem;
+      height: 0.2rem;
+    }
+    & + .text-guide {
+      margin-top: 1rem;
+    }
+  }
 }
 
 .point-info {
@@ -725,6 +737,24 @@
     strong {
       font-weight: 400;
       color: $gc3;
+    }
+  }
+
+  .guide-wrap {
+    border-top: 0.1rem solid $fcF0;
+    padding: 0.6rem 0.2rem 1.2rem;
+    margin-top: 1.1rem;
+
+    .text-guide {
+      margin: 1.4rem 0 0 1rem;
+      font-size: 1.1rem;
+      color: $fc6;
+      text-align: left;
+      &:before {
+        top: 0.6rem;
+        width: 0.2rem;
+        height: 0.2rem;
+      }
     }
   }
 }
