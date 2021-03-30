@@ -86,7 +86,8 @@
     }
     .date {
       margin-left: 1.5rem;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      font-weight: 500;
     }
     .btn-clear-x {
       margin-left: auto;
@@ -121,6 +122,10 @@
     .txt-box {
       margin-top: 0.8rem;
       line-height: 1.4;
+      .num {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
     }
     .reserve-title {
       margin-top: 0.55rem;
@@ -136,8 +141,12 @@
     }
     .list-dot {
       margin-top: 0.95rem;
+      li {
+        color: $fc1;
+      }
+
       li:not(:first-child) {
-        margin-top: 0.1rem;
+        margin-top: 0.5rem;
       }
     }
     .btn-area {
@@ -150,6 +159,10 @@
         font-size: 1.1rem;
         color: $pc3;
       }
+    }
+    .btn-more {
+      text-align: left;
+      padding: 3rem 0 0 7rem;
     }
   }
 
