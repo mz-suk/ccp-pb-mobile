@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Layer Pop -->
+    <div class="wrapper-layer pos-bottom">
+      <div class="wrap-layer">
+        <div class="inner-layer">
+          <div class="layer-cont">
+            <div class="title-sub">
+              <p class="title"><i class="bg-icon locator"></i>길찾기 대상</p>
+            </div>
+            <div class="wrap-btn">
+              <button type="button" class="btn color3"><i class="bg-icon locator-kakao"></i> 카카오네비</button>
+              <button type="button" class="btn color3"><i class="bg-icon locator-tmap"></i> T-Map</button>
+            </div>
+            <div class="wrap-check">
+              <input type="checkbox" id="chk1">
+              <label for="chk1">항상 선택한 앱으로 이동합니다.</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="bg-icon layer-close">레이어팝업 닫기</button>
+      </div>
+      <div class="mask"></div>
+    </div>
+    <!-- //Layer Pop -->
+  </body>
+</html>
