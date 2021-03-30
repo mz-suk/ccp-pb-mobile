@@ -3207,14 +3207,7 @@
       .swiper-wrapper {
         align-items: center;
         .swiper-slide {
-          width: 100%;
-          margin: 0;
-          padding: 0 3rem;
-          box-sizing: border-box;
-
-          .muffin-grade {
-            margin: 0 auto;
-          }
+          margin: 0 3rem;
         }
       }
       &.type1 {
