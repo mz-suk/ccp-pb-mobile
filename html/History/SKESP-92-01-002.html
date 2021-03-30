@@ -22,7 +22,7 @@
     <div id="container">
       <!-- Header -->
       <header class="header header-sub">
-        <h1 class="title">주유 예약상세</h1>
+        <h1 class="title">주유 이용내역</h1>
         <div class="left">
           <button type="button" class="bg-icon prev">이전페이지</button>
         </div>
@@ -38,10 +38,10 @@
           <div class="tag-area">
             <span class="tag"><i class="bg-icon reservation"></i> 예약</span>
           </div>
-          <p class="txt-row">2020.05.12 (목) 오전 11시 40분</p>
-          <p class="txt-row type1"><a href="javascript:;">SK 에너지 퇴계로 직영 셀프주유소</a>로<br />방문해주시기 바랍니다</p>
+          <p class="txt-row">2020.09.24 (목) 오전 11시 40분<br />에 자동 예약 취소</p>
+          <p class="txt-row type1"><a href="javascript:;">SK 에너지 퇴계로 직영 셀프주유소</a>로<br />영업시간 내에 방문해주시기 바랍니다.</p>
           <div class="text-box type1">
-            <p class="txt">129디 8189 차량으로 방문해주세요.</p>
+            <p class="txt">129디 8189 차량으로 주유해주세요.</p>
             <div class="info-list">
               <dl>
                 <dt>단가</dt>
@@ -59,9 +59,134 @@
           </div>
         </div>
 
-        <div class="wrap-detail">
-          <div class="wrap-btn"><button type="button" class="btn-more">자세히보기</button></div>
-          <!-- <div class="wrap-btn"><button type="button" class="btn-more active">간략보기</button></div> -->
+        <div class="wrap-detail"><!-- [D] 펼침 :: .active 추가 -->
+          <div class="detail-cont">
+            <div class="accordion active type2">
+              <div class="accordion-title">
+                <p class="title">예약 정보</p>
+              </div>
+              <div class="accordion-cont">
+                <div class="order-cont">
+                  <div class="title-sub">
+                    <p>차량 정보</p>
+                  </div>
+                  <dl class="customer-info">
+                    <dt>차량번호</dt>
+                    <dd>123디 1234</dd>
+                    <dt>모델명</dt>
+                    <dd>투싼</dd>
+                    <dt>등급</dt>
+                    <dd>SUV 준대형 </dd>
+                    <dt>색상</dt>
+                    <dd>퓨어 화이트</dd>
+                  </dl>
+                </div>
+                <div class="order-cont">
+                  <div class="title-sub">
+                    <p>주유소 정보</p>
+                  </div>
+                  <dl class="customer-info">
+                    <dt>주유소 이름</dt>
+                    <dd>대구북구 한일주유소</dd>
+                    <dt>주소 정보</dt>
+                    <dd>경기도 고양시 일산서구 덕산로 104번길 12 일산서구 가좌동 648-4</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion active type2">
+              <div class="accordion-title">
+                <p class="title">구매 정보</p>
+              </div>
+              <div class="accordion-cont">
+                <div class="order-cont">
+                  <div class="title-sub">
+                    <p>구매 정보</p>
+                  </div>
+                  <dl class="customer-info">
+                    <dt>구매 일시</dt>
+                    <dd>2020.05.10 (화) 15:07:12</dd>
+                  </dl>
+                </div>
+                <div class="order-cont">
+                  <div class="title-sub">
+                    <p>주유 정보</p>
+                  </div>
+                  <dl class="define-list type1">
+                    <dt>휘발유 1.43ℓ</dt>
+                    <dd>2,000원</dd>
+                  </dl>
+                </div>
+                <div class="order-cont">
+                  <div class="title-sub">
+                    <p>결제금액 정보</p>
+                  </div>
+                  <div class="order-info">
+                    <dl class="define-box">
+                      <dt>주유 총 금액</dt>
+                      <dd>40,000원</dd>
+                    </dl>
+                    <dl class="define-list">
+                      <dt>멤버십 할인</dt>
+                      <dd>0원</dd>
+                      <dt>주유소 할인</dt>
+                      <dd>0원</dd>
+                      <dt>쿠폰 할인</dt>
+                      <dd>0원</dd>
+                      <dt>머핀 포인트 사용</dt>
+                      <dd>0원</dd>
+                    </dl>
+                    <dl class="define-box total">
+                      <dt class="left">실 결제금액</dt>
+                      <dd class="right"><span>30,000</span>원</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="order-cont">
+                  <div class="title-sub">
+                    <p>결제 수단</p>
+                  </div>
+                  <dl class="customer-info">
+                    <dt>결제유형</dt>
+                    <dd>등록한 카드결제</dd>
+                    <dt>결제정보</dt>
+                    <dd>
+                      <p>비씨 9490 88** **** 5200<br/>/ 일시불</p>
+                      <p>포인트 사용 500P</p>
+                      <p>가맹점 번호 10017253</p>
+                      <p>승인번호 5156102313</p>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="order-cont">
+                  <div class="title-sub">
+                    <p>예상 혜택 내역</p>
+                  </div>
+                  <div class="point-info">
+                    <dl class="define-list">
+                      <dt>OK캐시백 <span class="desc">(+0.1%)</span></dt>
+                      <dd>5원</dd>
+                      <dt>멤버십 할인</dt>
+                      <dd>12원</dd>
+                      <dt>주유소 할인</dt>
+                      <dd>600원</dd>
+                      <dt>예상 카드 청구할인</dt>
+                      <dd>90원</dd>
+                    </dl>
+                    <dl class="define-box total">
+                      <dt class="left">혜택 총 금액</dt>
+                      <dd class="right"><span>1,480</span><strong>원</strong></dd>
+                    </dl>
+                    <p class="text-guide">예상 카드청구할인 금액은 전월실적에 따라 다를 수 있습니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap-btn">
+            <button type="button" class="btn-more">자세히보기</button>
+          </div>
         </div>
 
         <div class="guide-cont">
@@ -98,45 +223,6 @@
         </div>
       </div>
       <!-- //Wrap-contents -->
-
-      <!-- Footer -->
     </div>
-
-    <!-- Quick-menu -->
-    <div class="quick-menu">
-      <ul class="quick-menu-list">
-        <li><!-- [D] 활성화 .active 추가 -->
-          <a href="#">
-            <i class="bg-icon home"></i>
-            <span class="menu-name">홈</span>
-          </a>
-        </li>
-        <li class="active">
-          <a href="#">
-            <i class="bg-icon oiling"></i>
-            <span class="menu-name">주유</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon wash"></i>
-            <span class="menu-name">세차</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon membership"></i>
-            <span class="menu-name">멤버십</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bg-icon my-muffin"></i>
-            <span class="menu-name">My</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- //Quick-menu -->
   </body>
 </html>

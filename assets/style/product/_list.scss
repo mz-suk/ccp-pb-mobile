@@ -970,6 +970,9 @@
   &.type3 {
     font-size: 1.3rem;
     border: none;
+    & + .list-dot {
+      margin-bottom: 3rem;
+    }
   }
   &.type4 {
     padding: 0;
