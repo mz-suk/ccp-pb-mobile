@@ -19,6 +19,9 @@
   align-items: center;
   justify-content: center;
 
+  &.pos-alert {
+    z-index: 99;
+  }
   .layer-close {
     position: absolute;
     z-index: 5;

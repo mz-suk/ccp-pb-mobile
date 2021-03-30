@@ -59,6 +59,9 @@
 .list-item {
   margin-bottom: 4rem;
 
+  & > a {
+    display: block;
+  }
   .thumbnail {
     min-height: 20rem;
     @include cropimg(w);
@@ -1521,6 +1524,7 @@
       padding: 2.5rem 7rem 2.5rem 2.5rem;
       box-sizing: border-box;
       background: $fcF;
+      transition: all 0.2s ease;
 
       .title {
         margin-top: 1.5rem;
@@ -2243,6 +2247,17 @@
   &.active {
     .tooltip-box {
       display: block;
+    }
+    .tooltip-close {
+      &:after {
+        content: "";
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 19;
+      }
     }
   }
 }
@@ -3192,7 +3207,14 @@
       .swiper-wrapper {
         align-items: center;
         .swiper-slide {
-          margin: 0 3rem;
+          width: 100%;
+          margin: 0;
+          padding: 0 3rem;
+          box-sizing: border-box;
+
+          .muffin-grade {
+            margin: 0 auto;
+          }
         }
       }
       &.type1 {
@@ -3472,6 +3494,7 @@
       .list-scroll {
         display: inline-block;
         scroll-snap-align: start;
+        vertical-align: top;
 
         &:first-child {
           padding-left: 2rem;

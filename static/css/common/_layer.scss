@@ -19,6 +19,9 @@
   align-items: center;
   justify-content: center;
 
+  &.pos-alert {
+    z-index: 99;
+  }
   .layer-close {
     position: absolute;
     z-index: 5;
@@ -374,8 +377,13 @@
         text-align: left;
       }
     }
+
     .gray-box {
       margin-top: 2rem;
+    }
+
+    .wrap-check {
+      margin: 2.5rem 1rem 0;
     }
   }
 
