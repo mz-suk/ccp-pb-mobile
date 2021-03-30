@@ -699,7 +699,16 @@
       }
     }
   }
-
+  .guide-wrap {
+    text-align: center;
+    margin-top: 2rem;
+    .text-guide {
+      color: $gc3;
+      &:before {
+        background-color: $gc3;
+      }
+    }
+  }
   .list-dot {
     margin: 2.5rem 0.8rem 0;
   }
@@ -717,6 +726,10 @@
     .point-price {
       float: right;
     }
+  }
+  .check-br {
+    display: block;
+    padding-left: 3rem;
   }
 }
 
@@ -753,14 +766,16 @@
       color: $gc3;
     }
   }
-
+  .guide-title {
+    color: $fc1;
+  }
   .guide-wrap {
     border-top: 0.1rem solid $fcF0;
     padding: 0.6rem 0.2rem 1.2rem;
     margin-top: 1.1rem;
 
     .text-guide {
-      margin: 1.4rem 0 0 1rem;
+      margin: 1.4rem 1rem 0 1rem;
       font-size: 1.1rem;
       color: $fc6;
       text-align: left;
@@ -769,6 +784,10 @@
         width: 0.2rem;
         height: 0.2rem;
       }
+    }
+    &.type1 {
+      margin: 1rem 1.5rem 0;
+      padding: 0.6rem 0 1rem;
     }
   }
 }

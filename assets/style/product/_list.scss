@@ -1232,6 +1232,11 @@
           float: right;
         }
       }
+      &.type2 {
+        padding-top: 0.6rem;
+        color: $fc6;
+        overflow: hidden;
+      }
     }
     & + & {
       margin-top: 2rem;
