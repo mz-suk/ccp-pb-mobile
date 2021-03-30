@@ -58,6 +58,9 @@
         padding-bottom: 2.7rem;
       }
     }
+    &:last-of-type {
+      padding-bottom: 3rem;
+    }
   }
 }
 .alarm-top {
@@ -162,7 +165,7 @@
     }
     .btn-more {
       text-align: left;
-      padding: 3rem 0 0 7rem;
+      padding: 3rem 0 0 9rem;
     }
   }
 
