@@ -154,11 +154,18 @@
     }
   }
 
-  &.header-menu,
   &.header-main {
     border: 0;
   }
-
+  &.header-menu {
+    position: relative;
+    border: 0;
+    .title {
+      padding: 0 3rem;
+      font-size: 1.5rem;
+      text-align: left;
+    }
+  }
   &.header-main {
     background-color: $fcF9;
   }

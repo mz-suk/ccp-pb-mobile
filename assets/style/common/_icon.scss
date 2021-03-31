@@ -738,17 +738,17 @@
   }
   &.num {
     display: inline-block;
-    min-width: 2rem;
-    height: 2rem;
+    min-width: 1.8rem;
+    height: 1.8rem;
     margin-left: 0.7rem;
-    padding: 0 0.4rem;
+    padding: 0;
     background-color: $gc3;
     border: 0;
     color: $fcF;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 700;
     text-align: center;
-    line-height: 2rem;
+    line-height: 1.8rem;
     vertical-align: top;
     box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16%);
   }

@@ -280,3 +280,85 @@
     text-align: left;
   }
 }
+
+.wrap-allmenu {
+  padding-bottom: 7rem;
+
+  .list-link {
+    display: flex;
+    padding: 2.5rem;
+    background: $fcF9;
+    border: 0.1rem solid $fcF0;
+    border-width: 1px 0;
+
+    li {
+      position: relative;
+      &:not(:first-child) {
+        margin-left: 2.8rem;
+      }
+    }
+    .link-name {
+      display: block;
+      margin-top: 0.5rem;
+      color: $fc1;
+    }
+    .bg-icon {
+      width: 5rem;
+      height: 5rem;
+      background-color: $fcF;
+      background-size: 2.2rem 2.2rem;
+      border: 0.1rem solid $fcF0;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+    .badge {
+      position: absolute;
+      top: -0.2rem;
+      left: 0;
+      margin: 0;
+    }
+  }
+
+  .list-menu {
+    padding: 3rem 2.5rem;
+
+    > li:not(:first-child) {
+      margin-top: 4.5rem;
+    }
+    .title {
+      position: relative;
+      padding: 0 0 1rem 1.5rem;
+      border-bottom: 0.1rem solid $fcF0;
+      color: $fc1;
+      font-size: 1.5rem;
+      &:before {
+        position: absolute;
+        top: 0.8rem;
+        left: 0.6rem;
+        width: 0.3rem;
+        height: 0.3rem;
+        background: $fc1;
+        border-radius: 50%;
+        content: "";
+      }
+    }
+    .depth {
+      overflow: hidden;
+      padding-left: 0.5rem;
+
+      li {
+        float: left;
+        width: 50%;
+        margin-top: 2rem;
+        padding-left: 1rem;
+        box-sizing: border-box;
+        color: $fc1;
+        font-size: 1.4rem;
+
+        button {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
