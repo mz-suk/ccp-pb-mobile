@@ -970,6 +970,9 @@
   &.type3 {
     font-size: 1.3rem;
     border: none;
+    & + .list-dot {
+      margin-bottom: 3rem;
+    }
   }
   &.type4 {
     padding: 0;
@@ -1231,6 +1234,11 @@
         .right {
           float: right;
         }
+      }
+      &.type2 {
+        padding-top: 0.6rem;
+        color: $fc6;
+        overflow: hidden;
       }
     }
     & + & {

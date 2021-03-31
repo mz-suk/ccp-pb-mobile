@@ -1245,8 +1245,6 @@
       background-image: url(~assets/img/layout/img_yellow_balloon_box.png);
       span {
         background-image: url(~assets/img/layout/img_yellow_balloon_box_right.png);
-        //background: $pc2;
-        // border-color: $pc6;
       }
     }
     .date {
@@ -1442,6 +1440,11 @@
           }
         }
       }
+    }
+
+    .btn-more {
+      margin: 3.6rem 0 3rem;
+      padding: 0;
     }
   }
 }

@@ -277,7 +277,7 @@
       border: 0.1rem solid $pc8;
     }
     .bg-icon {
-      margin-right: 0.3rem;
+      margin-right: 0.1rem;
       width: 2rem;
       height: 2rem;
     }
@@ -285,10 +285,14 @@
 }
 
 .wrap-detail {
+  .detail-cont {
+    display: none;
+  }
+
   .wrap-btn {
     position: relative;
     text-align: center;
-    margin: 0 2rem;
+    margin: 1rem 2rem 0;
 
     &:after {
       position: absolute;
@@ -319,22 +323,27 @@
         transform: translateX(-50%);
         content: "";
       }
-
-      &.active {
-        &:after {
-          transform: translateX(-50%) rotate(180deg);
-        }
-      }
     }
   }
 
   .charge-btm {
     margin-bottom: 4.5rem;
   }
+
+  &.active {
+    .detail-cont {
+      display: block;
+    }
+    .wrap-btn {
+      .btn-more:after {
+        transform: translateX(-50%) rotate(180deg);
+      }
+    }
+  }
 }
 
 .guide-cont {
-  padding: 5rem 2rem 0;
+  padding: 4rem 2rem 0;
 
   .list-guide {
     li {
@@ -354,6 +363,7 @@
         height: 1rem;
         margin-right: 0.4rem;
         background: url(~assets/img/layout/icon-arrow-left.svg) 0 0 /100% auto no-repeat;
+        vertical-align: middle;
         content: "";
       }
     }
