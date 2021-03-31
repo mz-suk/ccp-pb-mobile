@@ -699,16 +699,6 @@
       }
     }
   }
-  .guide-wrap {
-    text-align: center;
-    margin-top: 2rem;
-    .text-guide {
-      color: $gc3;
-      &:before {
-        background-color: $gc3;
-      }
-    }
-  }
   .list-dot {
     margin: 2.5rem 0 0 0.8rem;
   }
@@ -726,10 +716,6 @@
     .point-price {
       float: right;
     }
-  }
-  .check-br {
-    display: block;
-    padding-left: 3rem;
   }
 }
 
