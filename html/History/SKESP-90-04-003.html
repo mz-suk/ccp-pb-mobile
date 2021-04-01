@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">이용내역</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+
+        <div class="order-cont">
+          <div class="title-sub">
+            <p>주유 이용내역</p>
+            <button type="button" class="btn-arrow">자세히 보기</button>
+          </div>
+          <div class="usage-box">
+            <div class="usage-top">
+              <p><i class="bg-icon usage-reservation"></i>예약된 정보</p>
+            </div>
+              <div class="usage-body">
+                <div class="title-area">
+                  <p class="title">
+                    <strong>[주유]</strong>
+                  </p>
+                </div>
+                <ul class="list">
+                  <li>2021.04.01 (목) 오전 11:50 자동 예약취소</li>
+                  <li>SK머핀주유소</li>
+                  <li>경유 120,000원 (58.7ℓ)</li>
+                  <li>128저 8617</li>
+                </ul>
+                <div class="more-detail">
+                  <a href="#" class="more-item"><i class="bg-icon view-detail"></i> 상세보기</a>
+                  <a href="#" class="more-item"><i class="bg-icon find-direction"></i> 길찾기</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="order-cont">
+          <div class="title-sub">
+            <p>세차 이용내역</p>
+            <button type="button" class="btn-arrow">자세히 보기</button>
+          </div>
+          <div class="usage-box">
+            <div class="usage-top">
+              <p><i class="bg-icon usage-reservation"></i>예약된 정보</p>
+            </div>
+            <div class="usage-body">
+              <div class="title-area">
+                <p class="title">
+                  <strong>[출장세차]</strong>
+                </p>
+              </div>
+              <ul class="list">
+                <li>2021.04.01 (목)<br>오전 11시 07분 ~ 오후 3시 30분</li>
+                <li>서울 중구 수표로 99 시그니쳐타워 지하주차장 4층 D297 구역</li>
+                <li>128저 8617</li>
+              </ul>
+              <div class="more-detail">
+                <a href="#" class="more-item"><i class="bg-icon view-detail"></i> 상세보기</a>
+                <a href="#" class="more-item"><i class="bg-icon telphone"></i> 전화문의</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-cont">
+          <div class="title-sub">
+            <p>정기 결제내역</p>
+            <button type="button" class="btn-arrow">자세히 보기</button>
+          </div>
+          <div class="usage-box">
+            <div class="usage-top">
+              <p><i class="bg-icon usage-information"></i>이용중인 정보</p>
+            </div>
+            <div class="usage-body">
+              <div class="title-area">
+                <p class="title">
+                  <strong>[새벽세차]</strong>
+                </p>
+              </div>
+              <ul class="list">
+                <li>Premium 상품 (4회차)</li>
+                <li>128저 8617</li>
+                <li>2021.04.01(목) 6,000원 재 결제 예정</li>
+              </ul>
+              <div class="more-detail">
+                <a href="#" class="more-item"><i class="bg-icon view-detail"></i> 상세보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Quick-menu -->
+    <div class="quick-menu">
+      <ul class="quick-menu-list">
+        <li>
+          <a href="#">
+            <i class="bg-icon home"></i>
+            <span class="menu-name">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon bill"></i>
+            <span class="menu-name">이용내역</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bg-icon my-muffin"></i>
+            <span class="menu-name">마이머핀</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- //Quick-menu -->
+  </body>
+</html>
