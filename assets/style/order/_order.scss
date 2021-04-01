@@ -229,7 +229,14 @@
       }
     }
   }
+
+  .accordion {
+    & + .order-cont {
+      border-top: 0;
+    }
+  }
 }
+
 .wrap-btn-pay {
   .bg-icon.card {
     width: 100%;
@@ -961,7 +968,6 @@
 
   .accordion-cont {
     display: none;
-    // overflow: hidden;
     padding: 2.5rem 2rem 3.5rem;
     border-bottom: 0.1rem solid $fcF0;
     .gray-box {
