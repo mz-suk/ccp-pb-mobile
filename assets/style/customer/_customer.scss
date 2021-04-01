@@ -215,24 +215,25 @@
       top: 0.4rem;
     }
   }
-  .icon-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2rem 0 0;
-    padding: 0 2.2rem;
-    &.type-yellow {
-      .circle-icon {
-        background-color: $pc2;
-        border-color: $pc6;
-      }
-    }
-    li {
-      padding: 2rem 0 0;
-      flex: 1 0 33.333%;
-      .list-cont {
-        width: auto;
+  .icon-list-wrap {
+    .icon-list {
+      margin: 2rem 0 0;
+      padding: 0 2.2rem;
+      &.type-yellow {
         .circle-icon {
-          width: 6.4rem;
+          background-color: $pc2;
+          border-color: $pc6;
+        }
+      }
+      li {
+        flex: 1 0 33.333%;
+        margin: 0;
+        padding: 2rem 0 0;
+        .list-cont {
+          width: auto;
+          .circle-icon {
+            width: 6.4rem;
+          }
         }
       }
     }
