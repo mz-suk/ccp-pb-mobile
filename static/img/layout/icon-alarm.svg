@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a,.b,.d{fill:none;}.b,.d{stroke:#111;stroke-linejoin:round;stroke-width:1.5px;}.c{clip-path:url(#a);}.d{stroke-linecap:round;}</style><clipPath id="a"><rect class="a" width="20" height="20" transform="translate(-0.409)"/></clipPath></defs><g transform="translate(10.409 10)"><g transform="translate(-10 -10)"><line class="b" y2="2" transform="translate(4.2 11.4)"/><g class="c"><path class="d" d="M4.2,16.4H15.8V9A5.8,5.8,0,1,0,4.2,9v2.5"/><path class="d" d="M12.8,17A2.5,2.5,0,0,1,10,19.2,2.5,2.5,0,0,1,7.3,17"/><path class="d" d="M11.3,6.6A2.1,2.1,0,0,1,13,8.5v.8"/><path class="d" d="M11.3,3.1V2.2a1.3,1.3,0,1,0-2.6,0v.9"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_155538" data-name="사각형 155538" width="22" height="22" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_bell_2_22" transform="translate(0.292)">
+    <g id="그룹_198460" data-name="그룹 198460" transform="translate(-0.292)">
+      <line id="선_39417" data-name="선 39417" y2="2.147" transform="translate(5.061 12.31)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1.5"/>
+      <g id="그룹_198459" data-name="그룹 198459" transform="translate(0)" clip-path="url(#clip-path)">
+        <path id="패스_406478" data-name="패스 406478" d="M4.2,17.369H16.652V9.426a6.226,6.226,0,1,0-12.452,0v2.684" transform="translate(0.861 0.308)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="패스_406479" data-name="패스 406479" d="M13.2,17A2.684,2.684,0,0,1,10.2,19.362,2.684,2.684,0,0,1,7.3,17" transform="translate(1.089 1.321)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="패스_406480" data-name="패스 406480" d="M11.3,6.6a2.254,2.254,0,0,1,1.825,2.04V9.5" transform="translate(1.382 0.558)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="패스_406481" data-name="패스 406481" d="M11.491,3.262V2.3A1.4,1.4,0,1,0,8.7,2.3v.966" transform="translate(1.191 0.139)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <rect id="사각형_418197" data-name="사각형 418197" width="22" height="22" fill="#fff" opacity="0.003"/>
+      </g>
+    </g>
+  </g>
+</svg>
