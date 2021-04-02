@@ -511,18 +511,21 @@
 }
 
 .icon-list-wrap {
-  overflow: hidden;
   .icon-list {
-    margin: -2rem 0 0 -2.6rem;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -2rem;
     li {
-      float: left;
-      width: 25%;
+      width: 6.4rem;
       box-sizing: border-box;
-      padding: 2rem 0 0 2.6rem;
+      margin-top: 2rem;
       font-size: 1.3rem;
       text-align: center;
       color: $fc1;
+
+      &:not(:nth-of-type(4n)) {
+        margin-right: 2.6rem;
+      }
       .list-cont {
         display: inline-block;
         width: 6.4rem;
