@@ -420,6 +420,9 @@
         height: 1rem;
       }
     }
+    &:last-of-type {
+      padding-bottom: 8rem;
+    }
   }
   &.type-order {
     .wrap-order-card {
