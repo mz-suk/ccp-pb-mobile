@@ -25,7 +25,7 @@
     <div class="wrapper-layer pos-right">
       <div class="wrap-layer">
         <header class="header header-popup">
-          <h1 class="title">정기요일 설정</h1>
+          <h1 class="title">주기요일 설정</h1>
           <div class="right">
             <button type="button" class="bg-icon close">닫기</button>
           </div>
@@ -34,23 +34,17 @@
         <div class="wrap-contents">
           <div class="wrap-desc">
             <ul class="list-dot color3">
-              <li>본 상품의 경우 서비스를 이용 받으실 요일과 시작날짜를 선택하시면 회차별 이용날짜가 자동으로 계산됩니다.</li>
-              <li>선택된 날짜는 테크니션의 스케줄에 따라 부득이하게 유선연락을 통해 조정 요청드릴 수 있습니다.</li>
+              <li>본 상품의 경우 1회차 서비스를 이용 받으실 날짜를 선택하시면 나머지 날짜는 자동 계산됩니다.</li>
+              <li>전체 예약날짜는 세차 매니저 스케줄 또는 고객님 스케줄 확인 후 연락을 통해 조정될 수 있습니다.</li>
             </ul>
           </div>
           <div class="wrap-reservation">
             <div class="reservation-cont">
-              <div class="wrap-title">
-                <p class="title"><i class="bg-icon calendar"></i>예약 날짜</p>
-                <div class="wrap-tooltip">
-                  <!-- [D] tooltip 활성화 .active 추가 -->
-                  <button type="button" class="bg-icon tooltip2">툴팁</button>
-                  <div class="tooltip-box">
-                    <button type="button" class="bg-icon tooltip-close">닫기</button>
-                    <p>선택하신 날짜는 테크니션의 스케줄에 따라 부득이하게 유선연락을 통해 조정 요청드릴 수 있습니다.</p>
-                  </div>
-                </div>
+              <div class="wrap-title type1">
+                <p class="title">주기요일</p>
+                <button type="button" class="bg-icon refresh">새로고침</button>
               </div>
+
               <div class="wrap-calendar">
                 <div class="mx-datepicker mx-datepicker-inline">
                   <!---->
@@ -199,7 +193,6 @@
                 </div>
               </div>
             </div>
-
           </div>
 
           <div class="fix-footer-area">
