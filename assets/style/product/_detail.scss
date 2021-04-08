@@ -35,7 +35,7 @@
 
 .store-time {
   display: flex;
-  margin-top: 1.7rem;
+  margin-top: 2rem;
   padding-bottom: 1rem;
   color: $fc1;
   dt {
@@ -482,27 +482,6 @@
     line-height: 1.6;
     color: $fc1;
     @include clamp(2);
-
-    & + .btn-more {
-      .more-text {
-        &:before {
-          content: "더보기";
-        }
-      }
-    }
-    &.active {
-      display: block;
-      -webkit-line-clamp: inherit;
-
-      & + .btn-more {
-        .more-text:after {
-          background-image: url(../../assets/img/layout/icon-more-txt-active.png);
-        }
-        .more-text:before {
-          content: "접기";
-        }
-      }
-    }
   }
   .icon-list-wrap {
     margin-top: 2rem;
@@ -683,7 +662,7 @@
       .comment {
         .title {
           color: $fc1;
-          padding-bottom: 0.5rem;
+          padding-bottom: 1.5rem;
         }
         .option {
           color: $fc1;
@@ -720,6 +699,25 @@
             font-size: 1.6rem;
             text-align: center;
             line-height: 8rem;
+          }
+        }
+      }
+
+      .comment-wrap {
+        border: 0.1rem solid $fcF0;
+        background: $fcF9;
+        margin-top: 1.5rem;
+        padding: 2.5rem 3.3rem;
+        p {
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            left: -1.3rem;
+            top: 0.2rem;
+            width: 0.8rem;
+            height: 1.1rem;
+            background: url(../../assets/img/layout/icon-comment-left.svg) no-repeat 50% 50% / 1rem 1rem;
           }
         }
       }

@@ -273,13 +273,17 @@
   }
 }
 .acc-list {
-  margin-top: 2.5rem;
   .accordion {
     &:not(:first-child) {
       margin-top: 4rem;
     }
     .accordion-cont {
       padding: 0 1rem;
+    }
+    &.type3 {
+      .accordion-cont {
+        padding: 0 1rem;
+      }
     }
   }
   .checkbox-st {
@@ -519,6 +523,20 @@
     margin-top: 3rem;
     li {
       line-height: 1.4;
+    }
+    &.type1 {
+      border-top: 0.1rem solid $fcF0;
+      margin-top: 2rem;
+      padding-top: 3rem;
+      li {
+        color: $pc3;
+        font-size: 1.1rem;
+        &:before {
+          background-color: $pc3;
+          width: 0.2rem;
+          height: 0.2rem;
+        }
+      }
     }
   }
 }
