@@ -227,9 +227,10 @@
   }
   .wrap-etc {
     margin-top: 2rem;
+    font-size: 0;
     li {
       display: inline-block;
-      //margin-right: 0.5rem;
+      margin-right: 0.5rem;
       color: $fc6;
       background-color: $fcF9;
       border: 0.1rem solid $fcF0;
@@ -242,10 +243,10 @@
     &.type2 {
       li {
         font-size: 1.3rem;
-        margin-right: 0.5rem;
+        margin-right: 0.7rem;
       }
       &:not(:first-child) {
-        margin-top: 1.1rem;
+        margin-top: 0.7rem;
       }
     }
   }
