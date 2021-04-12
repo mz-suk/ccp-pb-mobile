@@ -380,7 +380,7 @@
   }
 
   .top-banner {
-    margin-bottom: 4rem;
+    margin: -4rem -2rem 4rem;
   }
 
   .membership-list {
@@ -909,7 +909,7 @@
         text-align: left;
         border-radius: 2rem;
         box-sizing: border-box;
-        box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0.5rem 1.5rem 2rem 0 rgba(0, 0, 0, 0.15);
         position: relative;
         transition: all 0.2s ease;
 

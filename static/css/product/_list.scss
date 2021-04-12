@@ -44,10 +44,11 @@
     .btn-more {
       display: inline-block;
       width: auto;
-      padding: 0;
     }
   }
-
+  .btn-more {
+    padding: 0;
+  }
   .pattern-comp-list > li {
     &:first-child {
       margin-top: 0;
@@ -222,6 +223,31 @@
       margin: 1.5rem 0 0 1.5rem;
       font-size: 1.3rem;
       color: $fc1;
+    }
+  }
+  .wrap-etc {
+    margin-top: 2rem;
+    font-size: 0;
+    li {
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: $fc6;
+      background-color: $fcF9;
+      border: 0.1rem solid $fcF0;
+      padding: 0.4rem 0.8rem;
+      font-size: 1.1rem;
+    }
+    &:not(:first-of-type) {
+      margin-top: 0.5rem;
+    }
+    &.type2 {
+      li {
+        font-size: 1.3rem;
+        margin-right: 0.7rem;
+      }
+      &:not(:first-child) {
+        margin-top: 0.7rem;
+      }
     }
   }
 
@@ -754,7 +780,7 @@
 
     dt,
     dd {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
 
       &:last-of-type {
         margin-bottom: 0;
@@ -838,9 +864,14 @@
     display: flex;
     align-items: center;
 
-    // .bg-icon {
-    //   margin-left: 0.5rem;
-    // }
+    &.type1 {
+      width: 100%;
+      .bg-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-left: auto;
+      }
+    }
   }
 
   .text-guide {
@@ -874,6 +905,9 @@
 
 .wrap-desc {
   padding: 4rem 2rem 1rem;
+  & + .wrap-setting {
+    margin-top: -1rem;
+  }
 }
 
 .wrap-setting {
@@ -1143,6 +1177,8 @@
     height: 1.6rem;
     margin-left: 0.5rem;
     &.reply-arrow {
+      width: 1.2rem;
+      height: 1.2rem;
       margin-left: 0;
     }
   }

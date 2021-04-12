@@ -273,14 +273,30 @@
   }
 }
 .acc-list {
-  margin-top: 2.5rem;
   .accordion {
     &:not(:first-child) {
       margin-top: 4rem;
     }
+    &.type1 {
+      .accordion-title {
+        padding: 0 0 1rem;
+        border-color: $fcF0;
+        font-size: 1.5rem;
+        .toggle {
+          right: 0;
+          width: 1.6rem;
+          height: 1.6rem;
+        }
+      }
+    }
     .accordion-cont {
       padding: 0 1rem;
     }
+    // &.type3 {
+    //   .accordion-cont {
+    //     padding: 0 1rem;
+    //   }
+    // }
   }
   .checkbox-st {
     margin-bottom: 2rem;
@@ -501,7 +517,6 @@
     line-height: 1.5;
   }
   .noti-box {
-    margin-top: 2rem;
     display: block;
     color: $fc1;
     text-align: center;
@@ -511,14 +526,37 @@
       font-size: 1.7rem;
       color: $pc3;
     }
+    & + .coupon {
+      margin-top: 2rem;
+    }
   }
   .coupon {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .list-dot {
-    margin-top: 3rem;
+    padding-top: 3rem;
     li {
       line-height: 1.4;
+    }
+    // &.type1 {
+    //   border-top: 0.1rem solid $fcF0;
+    //   margin-top: 2rem;
+    //   padding-top: 3rem;
+    //   li {
+    //     color: $pc3;
+    //     font-size: 1.1rem;
+    //     &:before {
+    //       background-color: $pc3;
+    //       width: 0.2rem;
+    //       height: 0.2rem;
+    //     }
+    //   }
+    // }
+  }
+  .price-box {
+    padding-bottom: 2rem;
+    & + .list-dot {
+      border-top: 0.1rem solid $fcF0;
     }
   }
 }
