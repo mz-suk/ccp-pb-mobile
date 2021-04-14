@@ -198,7 +198,8 @@
         content: "";
       }
 
-      &.active {
+      &.active,
+      &:first-child {
         color: $pc3;
         text-decoration: underline;
 
