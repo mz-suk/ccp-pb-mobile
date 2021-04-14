@@ -712,14 +712,14 @@ input[type="checkbox"] {
   input[type="radio"] {
     width: 2.5rem;
     height: 2.5rem;
-    background: url(../../assets/img/layout/icon-chk2-on.svg) no-repeat center center;
+    background: url(../../assets/img/layout/icon-chk2-on.svg) no-repeat center center / 100% auto;
     border-radius: 50%;
     transition: all 0.2s ease;
     box-shadow: 0.2rem 0.1rem 0 rgba(0, 0, 7, 0.1%);
 
     &:checked {
       opacity: 1;
-      background: url(../../assets/img/layout/icon-chk2-off.svg) no-repeat center center;
+      background: url(../../assets/img/layout/icon-chk2-off.svg) no-repeat center center / 100% auto;
     }
   }
 }
