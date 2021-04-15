@@ -1571,6 +1571,13 @@
       background: $fcF;
       transition: all 0.2s ease;
 
+      .badge {
+        .bg-icon {
+          width: 2rem;
+          height: 2.1rem;
+          margin: -0.1rem 0.2rem 0 -0.5rem;
+        }
+      }
       .title {
         margin-top: 1.5rem;
         color: $fc1;
@@ -1678,7 +1685,7 @@
         padding-bottom: 3.5rem;
         height: 21.7rem;
         .count {
-          right: 8rem;
+          right: 1.3rem;
         }
       }
     }
