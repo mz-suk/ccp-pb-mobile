@@ -702,13 +702,9 @@
           }
         }
       }
-
-      .comment-wrap {
-        border: 0.1rem solid $fcF0;
-        background: $fcF9;
-        margin-top: 1.5rem;
+      .reply-area {
         padding: 2.5rem 3.3rem;
-        p {
+        .comment {
           position: relative;
           &:before {
             content: "";
