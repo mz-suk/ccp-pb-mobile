@@ -36,17 +36,35 @@
       <div class="wrap-contents">
         <div class="car-cont">
           <ul class="car-select-list">
-            <li class="info-type-box">
+            <li class="info-type-box radio-type">
               <!-- 편집창은 active 클래스 추가로 활성-->
-              <div class="dropdown-area">
-                <button type="button" class="btn-drpomenu"><i class="bg-icon edite-more">메뉴보기</i></button>
-                <ul class="drop-menu">
-                  <li>
-                    <button type="button">삭제하기<i class="bg-icon trash-del"></i></button>
-                  </li>
-                </ul>
-              </div>
-              <div class="info-car-cont type1">
+              <input type="radio" id="r01" name="group">
+              <label for="r01" class="info-car-cont type1">
+                <div class="logo">
+                  <img src="../../assets/img/emblem/logo-32.svg" alt="" />
+                  <p class="car-barnd">재규어</p>
+                </div>
+                <p class="car-name">2017 벤틀리 벤테이가</p>
+                <p class="car-number">28자 8617</p>
+                <div class="btn-area grid">
+                  <button type="button" class="btn">주행거리 조회하기</button>
+                </div>
+                <div class="car-info">
+                  <dl class="customer-info type2">
+                    <dt>등급</dt>
+                    <dd>SUV 준중형</dd>
+                    <dt>유종</dt>
+                    <dd>경유</dd>
+                    <dt>색상</dt>
+                    <dd>퓨어화이트</dd>
+                  </dl>
+                </div>
+              </label>
+            </li>
+            <li class="info-type-box radio-type">
+              <!-- 편집창은 active 클래스 추가로 활성-->
+              <input type="radio" id="r02" name="group">
+              <label for="r02" class="info-car-cont type1">
                 <div class="logo">
                   <img src="../../assets/img/emblem/logo-32.svg" alt="" />
                   <p class="car-barnd">재규어</p>
@@ -77,7 +95,43 @@
                     <dd>퓨어화이트</dd>
                   </dl>
                 </div>
-              </div>
+              </label>
+            </li>
+            <li class="info-type-box radio-type">
+              <!-- 편집창은 active 클래스 추가로 활성-->
+              <input type="radio" id="r03" name="group">
+              <label for="r03" class="info-car-cont type1">
+                <div class="logo">
+                  <img src="../../assets/img/emblem/logo-32.svg" alt="" />
+                  <p class="car-barnd">재규어</p>
+                </div>
+                <p class="car-name">2017 벤틀리 벤테이가</p>
+                <p class="car-number">28자 8617</p>
+                <div class="driving-info">
+                  <p class="tit">주행거리</p>
+                  <button class="btn-txt">연동해지</button>
+                  <dl class="define-list type2">
+                    <dt>지금까지 주행한 거리</dt>
+                    <dd>132,810km</dd>
+                    <dt>앞으로 주행 가능한 거리</dt>
+                    <dd>870km</dd>
+                  </dl>
+                  <div class="box-btm">
+                    <span class="image"><img src="../../assets/img/layout/logo-info-hyundai.svg" alt=""></span>
+                    <p class="desc">※ 위 정보는 실제와 다를 수 있습니다.</p>
+                  </div>
+                </div>
+                <div class="car-info">
+                  <dl class="customer-info type2">
+                    <dt>등급</dt>
+                    <dd>SUV 준중형</dd>
+                    <dt>유종</dt>
+                    <dd>경유</dd>
+                    <dt>색상</dt>
+                    <dd>퓨어화이트</dd>
+                  </dl>
+                </div>
+              </label>
             </li>
           </ul>
           <div class="btn-area grid">
