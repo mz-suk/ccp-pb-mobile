@@ -274,6 +274,54 @@
       }
     }
   }
+  .event-list-box {
+    display: block;
+    .box-wrap {
+      border: 0.1rem solid $fcF0;
+      border-radius: 2rem;
+      min-height: 27.1rem;
+      background: $fcF;
+      box-sizing: border-box;
+      .box-top {
+        height: 13.5rem;
+        margin-bottom: -1.5rem;
+        img {
+          border-radius: 2rem 2rem 0 0;
+          border-bottom: 0.1rem solid $fcF0;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          object-fit: cover;
+          -webkit-object-fit: cover;
+        }
+      }
+      .box-bottom {
+        padding: 3.4rem 2.5rem 1.8rem;
+        background: $fcF;
+        border-radius: 2rem;
+
+        .title {
+          color: $fc1;
+          font-size: 1.5rem;
+          line-height: 1.3;
+          white-space: pre-line;
+        }
+        .txt {
+          margin: 1rem 0 0;
+          color: $fc6;
+          font-size: 1.1rem;
+          line-height: 1.2;
+        }
+        .date {
+          margin-top: 1rem;
+          padding-top: 0.5rem;
+          color: $fc6;
+          font-size: 1.2rem;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
   .evnet-box {
     position: relative;
     display: block;
