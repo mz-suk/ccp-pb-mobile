@@ -481,7 +481,14 @@
     margin: 1.5rem 0 0;
     line-height: 1.6;
     color: $fc1;
-    @include clamp(2);
+
+    &:not(.active) {
+      @include clamp(2);
+
+      br {
+        display: none;
+      }
+    }
   }
   .icon-list-wrap {
     margin-top: 2rem;
@@ -842,6 +849,13 @@
     border-bottom: 0.1rem solid $fc9;
     font-size: 1.3rem;
     color: $fc9;
+    &:before {
+      content: "더보기";
+
+      .row-desc.active + & {
+        content: "접기";
+      }
+    }
     &:after {
       content: "";
       display: inline-block;
@@ -851,6 +865,10 @@
       margin-left: 0.4rem;
       background: url(../../assets/img/layout/icon-more-txt.svg) no-repeat 0 0;
       background-size: 1.2rem 1.2rem;
+
+      .row-desc.active + & {
+        transform: rotateX(180deg);
+      }
     }
   }
   &.active {
