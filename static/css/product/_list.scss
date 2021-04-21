@@ -1889,19 +1889,14 @@
       margin-bottom: -0.8rem;
     }
   }
-
   .info-car-cont {
     position: relative;
     padding: 2.5rem;
     display: block;
     line-height: 1;
-    background: $fcF9;
+    background: $fcF;
     border: 0.1rem solid $fcD7;
     border-radius: 1.6rem;
-
-    &:not(label) {
-      background: $fcF;
-    }
 
     &.type1 {
       .logo {
@@ -1911,6 +1906,7 @@
       .btn-area {
         .btn {
           font-size: 1.5rem;
+          border: 0.1rem solid $fcE4;
         }
       }
       .car-name {
