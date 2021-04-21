@@ -300,6 +300,16 @@ a {
     height: 2rem;
     background-size: auto 1.5rem;
   }
+  .dropdown-area.active & {
+    &::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
 }
 .btn-link {
   font-size: 1.1rem;

@@ -112,7 +112,7 @@ body {
   min-height: 100vh;
   font: 1.3rem/1.5 "Moebius", sans-serif;
   // letter-spacing: -0.05em;
-  word-break: keep-all;
+  word-break: break-all;
   color: $fc6;
   background-color: $fcF;
 }
@@ -155,6 +155,10 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+button,
+a {
+  word-break: keep-all;
 }
 
 strong,
