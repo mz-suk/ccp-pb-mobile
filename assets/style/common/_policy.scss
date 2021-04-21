@@ -8,10 +8,10 @@
     font-size: 1.5rem;
     color: $fc1;
   }
-  .sub-title{
+  .sub-title {
     font-size: 1.5rem;
     color: $fc1;
-    margin-bottom:0.5rem;
+    margin-bottom: 0.5rem;
   }
   .title {
     margin-top: 1.7rem;
@@ -168,5 +168,150 @@
   iframe {
     width: 100%;
     height: calc(100vh - 5.5rem);
+  }
+}
+
+.terms-area {
+  padding: 4rem 2rem;
+
+  > strong:first-child {
+    display: block;
+    margin-bottom: 3.5rem;
+    color: $fc1;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  p {
+    color: $fc6;
+    strong {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 2rem 0 1rem;
+      color: $fc1;
+      > span {
+        margin-left: auto;
+        font-weight: 400;
+        font-size: 1.1rem;
+        em {
+          color: $pc3;
+        }
+      }
+    }
+  }
+
+  table {
+    margin: 1rem 0;
+    width: 100%;
+    table-layout: fixed;
+
+    thead {
+      th {
+        text-align: center;
+      }
+      & + tbody {
+        th,
+        td {
+          text-align: center;
+          padding: 1.3rem 0.5rem;
+        }
+      }
+    }
+
+    tbody {
+      th,
+      td {
+        padding: 1.5rem;
+      }
+    }
+
+    th {
+      padding: 1.3rem 0.5rem;
+      color: $fc1;
+      background: $fcF9;
+      border: 0.1rem solid $fcE4;
+      vertical-align: middle;
+      text-align: left;
+      &:first-child {
+        border-left: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    td {
+      padding: 1.2rem 0.5rem;
+      border: 0.1rem solid $fcE4;
+      vertical-align: middle;
+      &:first-child {
+        border-left: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  ol {
+    counter-reset: num;
+
+    li {
+      position: relative;
+      margin-top: 1rem;
+      padding-left: 2rem;
+      counter-increment: num;
+
+      &:before {
+        position: absolute;
+        top: 0.2rem;
+        left: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 0.1rem solid $fc6;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.2rem;
+        content: counter(num);
+      }
+    }
+
+    ol {
+      margin-top: 0.3rem;
+      padding-left: 2rem;
+      list-style-type: upper-roman;
+
+      li {
+        margin: 0;
+        padding-left: 0;
+        color: $fc9;
+        &:before {
+          display: none;
+        }
+
+        p {
+          color: $fc9;
+        }
+      }
+
+      table {
+        margin-left: -4rem;
+        width: calc(100% + 4rem);
+      }
+    }
+  }
+
+  div {
+    p {
+      strong {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+    & + div {
+      margin-top: 4rem;
+    }
   }
 }
