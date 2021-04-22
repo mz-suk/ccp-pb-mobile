@@ -100,10 +100,10 @@
   }
 
   .pay-method {
-    margin: 0 3.5rem;
+    margin: 0;
 
     .wrap-select {
-      margin-top: 1.8rem;
+      margin: 1.8rem 3.5rem 0;
     }
 
     .text-guide {
@@ -171,27 +171,23 @@
   }
 
   .wrap-card {
-    overflow-x: visible;
-    overflow-y: hidden;
     height: 17.2rem;
-    margin: 0 -5.5rem;
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
+    margin: 0 -2rem;
+    padding: 0 5.5rem;
+
+    .swiper-slide {
+      width: 26.5rem;
+      margin-right: 2.5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
     .card {
       display: inline-block;
       width: 26.5rem;
       height: 17rem;
-      margin-left: 1.7rem;
-      scroll-snap-align: center;
-
-      &:first-child {
-        margin-left: 0;
-        margin-left: 5.5rem;
-      }
-      &:last-child {
-        margin-right: 5.5rem;
-      }
     }
 
     .card-tag {
