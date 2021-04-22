@@ -179,52 +179,70 @@
                 </ul>
                 <div class="tab-content">
                   <div class="pay-method">
-                    <div class="wrap-card">
-                      <div class="card color1">
-                        <div class="info">
-                          <div class="checkbox-cycle">
-                            <input type="radio" name="radio1" id="sp-chk1" checked>
+                    <!-- swiper -->
+                    <div class="wrap-card swiper-container">
+                      <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                          <div class="card color1">
+                            <div class="info">
+                              <div class="checkbox-cycle">
+                                <input type="radio" name="radio1" id="sp-chk1" checked>
+                              </div>
+                              <p class="brand">신한카드</p>
+                              <p class="num">9490 88** **** 5200</p>
+                            </div>
+                            <span class="logo-card"><img src="../../assets/img/layout/icon-card-mastercard.png" alt="현대카드" /></span>
+                            <div class="bottom">
+                              <p>등록일</p>
+                              <p>2020.06.22</p>
+                            </div>
                           </div>
-                          <p class="brand">신한카드</p>
-                          <p class="num">9490 88** **** 5200</p>
-                        </div>
-                        <span class="logo-card"><img src="../../assets/img/layout/icon-card-mastercard.png" alt="현대카드" /></span>
-                        <div class="bottom">
-                          <p>등록일</p>
-                          <p>2020.06.22</p>
-                        </div>
-                      </div>
-
-                      <div class="card color4">
-                        <div class="info">
-                          <div class="checkbox-cycle">
-                            <input type="radio" name="radio1" id="sp-chk2">
+                        </li>
+                        <li class="swiper-slide">
+                          <div class="card color4">
+                            <div class="info">
+                              <div class="checkbox-cycle">
+                                <input type="radio" name="radio1" id="sp-chk2">
+                              </div>
+                              <p class="brand">KB국민카드</p>
+                              <p class="num">3742 76** ****0927</p>
+                            </div>
+                            <span class="logo-card"><img src="../../assets/img/layout/icon-card-visa.png" alt="KB국민카드" /></span>
+                            <div class="bottom">
+                              <p>등록일</p>
+                              <p>2020.06.22</p>
+                            </div>
                           </div>
-                          <p class="brand">KB국민카드</p>
-                          <p class="num">3742 76** ****0927</p>
-                        </div>
-                        <span class="logo-card"><img src="../../assets/img/layout/icon-card-visa.png" alt="KB국민카드" /></span>
-                        <div class="bottom">
-                          <p>등록일</p>
-                          <p>2020.06.22</p>
-                        </div>
-                      </div>
-
-                      <div class="card color3">
-                        <div class="info">
-                          <div class="checkbox-cycle">
-                            <input type="radio" name="radio1" id="sp-chk3">
+                        </li>
+                        <li class="swiper-slide">
+                          <div class="card color3">
+                            <div class="info">
+                              <div class="checkbox-cycle">
+                                <input type="radio" name="radio1" id="sp-chk3">
+                              </div>
+                              <p class="brand">현대카드</p>
+                              <p class="num">3742 76** ****0927</p>
+                            </div>
+                            <span class="logo-card"><img src="../../assets/img/layout/icon-card-mastercard.png" alt="현대카드" /></span>
+                            <div class="bottom">
+                              <p>등록일</p>
+                              <p>2020.06.22</p>
+                            </div>
                           </div>
-                          <p class="brand">현대카드</p>
-                          <p class="num">3742 76** ****0927</p>
-                        </div>
-                        <span class="logo-card"><img src="../../assets/img/layout/icon-card-mastercard.png" alt="현대카드" /></span>
-                        <div class="bottom">
-                          <p>등록일</p>
-                          <p>2020.06.22</p>
-                        </div>
-                      </div>
+                        </li>
+                      </ul>
                     </div>
+
+                    <link rel="stylesheet" href="../swiper-bundle.min.css" />
+                    <script src="../swiper-bundle.min.js"></script>
+                    <script>
+                      var swiper = new Swiper(".wrap-card.swiper-container", {
+                        slidesPerView: "auto",
+                        // centeredSlides:true
+                      });
+                    </script>
+                    <!-- //swiper -->
+
                     <div class="wrap-select">
                       <select class="select">
                         <option>일시불</option>
