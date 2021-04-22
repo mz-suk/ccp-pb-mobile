@@ -847,10 +847,12 @@
     padding-bottom: 0.2rem;
     display: inline-block;
     border-bottom: 0.1rem solid $fc9;
-    font-size: 1.3rem;
+    font-size: 0;
     color: $fc9;
     &:before {
       content: "더보기";
+      font-size: 1.3rem;
+      vertical-align: middle;
 
       .row-desc.active + & {
         content: "접기";
