@@ -3251,7 +3251,6 @@
     padding-bottom: 3rem;
     margin-top: 2rem;
     &.muffin-swiper {
-      padding-bottom: 3rem;
       margin: 2rem -2rem 0;
 
       .swiper-wrapper {
@@ -3261,6 +3260,7 @@
         }
       }
       &.type1 {
+        padding-bottom: 0;
         .swiper-pagination {
           margin-top: 2rem;
         }
