@@ -231,6 +231,12 @@
       border-top: 0;
     }
   }
+
+  .setting-cont {
+    &:last-of-type {
+      padding-bottom: 0rem;
+    }
+  }
 }
 
 .wrap-btn-pay {
