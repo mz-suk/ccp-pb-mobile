@@ -170,6 +170,9 @@ select:disabled {
       flex: 1;
       margin: 0;
       width: 100%;
+      &.color7 {
+        background: #f9f9f9;
+      }
       &.active {
         border-color: $fc1;
         background-color: $fc1;
