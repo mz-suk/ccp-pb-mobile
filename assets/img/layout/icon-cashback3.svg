@@ -1,13 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="70" viewBox="0 0 66 70">
   <defs>
     <clipPath id="clip-path">
-      <rect id="사각형_448324" data-name="사각형 448324" width="66" height="70" transform="translate(258 703)" fill="red" opacity="0.115"/>
+      <rect id="사각형_448324" data-name="사각형 448324" width="66" height="70" transform="translate(259 812)" fill="red" opacity="0.115"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_432832" data-name="사각형 432832" width="65" height="70" fill="none"/>
     </clipPath>
   </defs>
-  <g id="마스크_그룹_422901" data-name="마스크 그룹 422901" transform="translate(-258 -703)" clip-path="url(#clip-path)">
+  <g id="마스크_그룹_422901" data-name="마스크 그룹 422901" transform="translate(-259 -812)" clip-path="url(#clip-path)">
+    <g id="그룹_619584" data-name="그룹 619584" transform="translate(18524 17541)">
+      <g id="그룹_581839" data-name="그룹 581839" transform="translate(-18859 -17399)">
+        <g id="bg" transform="translate(365 660)" fill="#f9f9f9" stroke="#f0f0f0" stroke-width="1">
+          <rect width="315" height="89" rx="1" stroke="none"/>
+          <rect x="0.5" y="0.5" width="314" height="88" rx="0.5" fill="none"/>
+        </g>
+        <text id="골드_회원_전용" data-name="골드 회원 전용" transform="translate(433 698)" fill="#111" font-size="15" font-family="MoebiusKorea-Regular, Moebius Korea" letter-spacing="-0.03em"><tspan x="-42.975" y="0">골드 회원 전용</tspan></text>
+        <text id="DB_운전자보험_가입_1년_무료" data-name="DB 운전자보험 가입 1년 무료" transform="translate(390 720)" fill="#3673ee" font-size="15" font-family="MoebiusKorea-Regular, Moebius Korea" letter-spacing="-0.03em"><tspan x="0" y="0">DB 운전자보험 가입 </tspan><tspan y="0" font-size="16" font-family="Jost-Medium, 'Jost\*'" font-weight="500">1</tspan><tspan y="0">년 무료</tspan></text>
+      </g>
+      <g id="그룹_583963" data-name="그룹 583963" transform="translate(-17987.713 -16706.961)">
+        <ellipse id="타원_13724" data-name="타원 13724" cx="14.5" cy="1.5" rx="14.5" ry="1.5" transform="translate(-252.287 34.961)" fill="#e6e6e6"/>
+        <g id="그룹_583964" data-name="그룹 583964">
+          <path id="사각형_434616" data-name="사각형 434616" d="M-249.287,24.237V-.038h22a2,2,0,0,1,2,2v27a2,2,0,0,1-2,2h-22" fill="#ddd" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+          <path id="패스_1457428" data-name="패스 1457428" d="M-248.71-1.8h19.252a2,2,0,0,1,2,2l.009,23.947a1,1,0,0,1-.386.79l-6.914,5.378H-248.7a2,2,0,0,1-2-2L-250.71.2A2,2,0,0,1-248.71-1.8Z" fill="#fff"/>
+          <path id="패스_1457426" data-name="패스 1457426" d="M-250.936-3.327h19.252a2,2,0,0,1,2,2V22.264s0-.042-5.792.16c-1.462,5.509-1.511,5.519-1.511,5.519h-13.949a2,2,0,0,1-2-2V-1.327A2,2,0,0,1-250.936-3.327Z" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+          <path id="패스_1457427" data-name="패스 1457427" d="M-237.038,27.979l7.37-5.717" fill="none" stroke="#333" stroke-width="1.3"/>
+        </g>
+        <g id="그룹_583965" data-name="그룹 583965">
+          <line id="선_169755" data-name="선 169755" x2="11.884" transform="translate(-249.296 2.09)" fill="none" stroke="#333" stroke-width="1.3"/>
+          <line id="선_169756" data-name="선 169756" x2="11.884" transform="translate(-249.296 6.048)" fill="none" stroke="#333" stroke-width="1.3"/>
+          <line id="선_169757" data-name="선 169757" x2="11.884" transform="translate(-249.296 10.006)" fill="none" stroke="#333" stroke-width="1.3"/>
+          <line id="선_169758" data-name="선 169758" x2="6" transform="translate(-249.288 13.962)" fill="none" stroke="#333" stroke-width="1.3"/>
+        </g>
+        <g id="타원_13712" data-name="타원 13712">
+          <circle id="타원_13720" data-name="타원 13720" cx="2.5" cy="2.5" r="2.5" transform="translate(-249.287 17.96)" fill="#fbccd4"/>
+          <circle id="타원_13721" data-name="타원 13721" cx="2" cy="2" r="2" transform="translate(-248.787 18.46)" fill="none" stroke="#ea002c" stroke-width="1"/>
+        </g>
+        <line id="선_169843" data-name="선 169843" x1="3.067" y1="3.072" transform="translate(-232.495 40.088)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_169844" data-name="선 169844" y1="3.072" x2="3.067" transform="translate(-232.495 40.088)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <g id="사용금액_65x45" transform="translate(-240.787 12.461)">
+          <g id="그룹_581844" data-name="그룹 581844" transform="translate(-32.5 -35)" clip-path="url(#clip-path-2)">
+            <g id="그룹_583340" data-name="그룹 583340">
+              <circle id="타원_13614" data-name="타원 13614" cx="1.5" cy="1.5" r="1.5" transform="translate(8.1 29.1)" fill="none" stroke="#111" stroke-miterlimit="10" stroke-width="1.5"/>
+              <line id="선_167163" data-name="선 167163" x1="2.8" y1="2.8" transform="translate(19.5 6.4)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+              <line id="선_167164" data-name="선 167164" y1="2.8" x2="2.8" transform="translate(19.5 6.4)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+              <line id="선_167165" data-name="선 167165" x1="2.2" y1="2.2" transform="translate(53 9.699)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+              <line id="선_167166" data-name="선 167166" y1="2.2" x2="2.2" transform="translate(53 9.699)" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+              <path id="패스_1454213" data-name="패스 1454213" d="M29.1,11.1a1,1,0,1,1-1,1,1,1,0,0,1,1-1" fill="#111"/>
+              <path id="패스_1454214" data-name="패스 1454214" d="M8.7,7.9a1,1,0,1,1-1,1,1,1,0,0,1,1-1" fill="#111"/>
+              <path id="패스_1454215" data-name="패스 1454215" d="M45.1,4.7a1,1,0,1,1-1,1,1,1,0,0,1,1-1" fill="#111"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
     <g id="그룹_619586" data-name="그룹 619586" transform="translate(-1 -484)">
       <g id="그룹_581808" data-name="그룹 581808" transform="translate(0 -189)">
-        <g id="bg" transform="translate(30 1366)" fill="#f9f9f9" stroke="#f0f0f0" stroke-width="1">
+        <g id="bg-2" data-name="bg" transform="translate(30 1366)" fill="#f9f9f9" stroke="#f0f0f0" stroke-width="1">
           <rect width="315" height="89" rx="1" stroke="none"/>
           <rect x="0.5" y="0.5" width="314" height="88" rx="0.5" fill="none"/>
         </g>

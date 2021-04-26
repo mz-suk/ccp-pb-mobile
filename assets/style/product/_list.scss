@@ -3261,6 +3261,9 @@
         }
       }
       &.type1 {
+        .swiper-pagination {
+          margin-top: 2rem;
+        }
         .swiper-slide {
           margin: 0 0 0 2rem;
           width: 29.5rem;
@@ -3272,15 +3275,17 @@
     }
   }
   .swiper-pagination {
-    bottom: 0 !important;
+    position: static;
+    height: 0.6rem;
+    margin-top: 1.5rem;
     .swiper-pagination-bullet {
-      width: 0.6rem;
-      height: 0.6rem;
-      background: #e0e0e0;
+      background: $fc1;
       border-radius: 50%;
-      opacity: 1;
+      vertical-align: top;
+      opacity: 0.2;
       &.swiper-pagination-bullet-active {
         background: $fc1;
+        opacity: 1;
       }
     }
   }
@@ -3582,13 +3587,14 @@
     }
   }
   .muffin-member {
-    padding: 3rem 0 2.5rem;
+    padding: 3rem 0 0;
     font-size: 1.5rem;
     margin-top: 1.5rem;
     border-top: 0.1rem solid $fcF0;
     border-bottom: 0.1rem solid $fcF0;
     .my-membertext {
       padding: 0 1rem;
+      line-height: 1.2;
       span {
         color: $pc3;
       }
@@ -3605,12 +3611,28 @@
       &:before {
         content: "";
         position: absolute;
-        width: 5rem;
-        height: 4.7rem;
-        right: 2.5rem;
-        top: 2.1rem;
+        width: 6.6rem;
+        height: 7rem;
+        right: 2rem;
+        top: 1rem;
         background: url(../../assets/img/layout/icon-cashback.svg) 0 0/100% auto no-repeat;
       }
+      &.type2 {
+        &:before {
+          background-image: url(../../assets/img/layout/icon-cashback2.svg);
+        }
+      }
+      &.type3 {
+        &:before {
+          background-image: url(../../assets/img/layout/icon-cashback3.svg);
+        }
+      }
+      &.type4 {
+        &:before {
+          background-image: url(../../assets/img/layout/icon-cashback4.svg);
+        }
+      }
+
       .my-member {
         font-size: 1.5rem;
         line-height: 1.8rem;
