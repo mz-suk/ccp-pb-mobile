@@ -3251,7 +3251,6 @@
     padding-bottom: 3rem;
     margin-top: 2rem;
     &.muffin-swiper {
-      padding-bottom: 3rem;
       margin: 2rem -2rem 0;
 
       .swiper-wrapper {
@@ -3261,6 +3260,10 @@
         }
       }
       &.type1 {
+        padding-bottom: 0;
+        .swiper-pagination {
+          margin-top: 2rem;
+        }
         .swiper-slide {
           margin: 0 0 0 2rem;
           width: 29.5rem;
@@ -3272,15 +3275,17 @@
     }
   }
   .swiper-pagination {
-    bottom: 0 !important;
+    position: static;
+    height: 0.6rem;
+    margin-top: 1.5rem;
     .swiper-pagination-bullet {
-      width: 0.6rem;
-      height: 0.6rem;
-      background: #e0e0e0;
+      background: $fc1;
       border-radius: 50%;
-      opacity: 1;
+      vertical-align: top;
+      opacity: 0.2;
       &.swiper-pagination-bullet-active {
         background: $fc1;
+        opacity: 1;
       }
     }
   }
@@ -3330,8 +3335,8 @@
       }
       &:before {
         content: "";
-        width: 0.35rem;
-        height: 0.35rem;
+        width: 0.3rem;
+        height: 0.3rem;
         border-radius: 50%;
         background: $fc1;
         position: absolute;
@@ -3582,13 +3587,14 @@
     }
   }
   .muffin-member {
-    padding: 3rem 0 2.5rem;
+    padding: 3rem 0 0;
     font-size: 1.5rem;
     margin-top: 1.5rem;
     border-top: 0.1rem solid $fcF0;
     border-bottom: 0.1rem solid $fcF0;
     .my-membertext {
       padding: 0 1rem;
+      line-height: 1.2;
       span {
         color: $pc3;
       }
@@ -3605,12 +3611,28 @@
       &:before {
         content: "";
         position: absolute;
-        width: 5rem;
-        height: 4.7rem;
-        right: 2.5rem;
-        top: 2.1rem;
+        width: 6.6rem;
+        height: 7rem;
+        right: 2rem;
+        top: 1rem;
         background: url(~assets/img/layout/icon-cashback.svg) 0 0/100% auto no-repeat;
       }
+      &.type2 {
+        &:before {
+          background-image: url(~assets/img/layout/icon-cashback2.svg);
+        }
+      }
+      &.type3 {
+        &:before {
+          background-image: url(~assets/img/layout/icon-cashback3.svg);
+        }
+      }
+      &.type4 {
+        &:before {
+          background-image: url(~assets/img/layout/icon-cashback4.svg);
+        }
+      }
+
       .my-member {
         font-size: 1.5rem;
         line-height: 1.8rem;
@@ -3645,7 +3667,7 @@
       height: 7.4rem;
       left: 1rem;
       top: 0;
-      background: url(~assets/img/layout/icon-more-benefits.svg) 0 0/100% auto no-repeat;
+      background: url(~assets/img/layout/icon-more-benefits.png) 0 0/100% auto no-repeat;
     }
     .text-wrap {
       padding: 1.8rem 0 0 12.2rem;
@@ -3659,8 +3681,8 @@
       }
 
       .more-money {
-        font-weight: 700;
         font-size: 1.8rem;
+        vertical-align: middle;
       }
       .more-bold {
         font-weight: 700;

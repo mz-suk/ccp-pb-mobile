@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12"><defs><style>.a{fill:none;}.b{clip-path:url(#a);}.c{opacity:0;}.d{fill:#ff00c4;}.e{fill:#999;}.f{fill:#111;}</style><clipPath id="a"><rect class="a" width="12" height="12"/></clipPath></defs><g transform="translate(6 6)"><g class="b" transform="translate(-6 -6)"><g class="b"><g class="c"><g class="b"><rect class="d" width="12" height="12"/></g></g><path class="e" d="M9.9,2.7,6,6.8,1.5,2.2l-1,1L6,9l5-5.2a.8.8,0,1,0-1.1-1" transform="translate(0 0.8)"/></g></g></g><g class="c" transform="translate(6 6)"><g class="b" transform="translate(-6 -6)"><g class="b"><g class="c"><g class="b"><rect class="d" width="12" height="12"/></g></g><path class="f" d="M9.9,8.5,6,4.4,1.5,9,.5,8,6,2.2l5,5.2a.8.8,0,1,1-1.1,1"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_448328" data-name="사각형 448328" width="16" height="16" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="accordion_arrow_16x16" transform="translate(8 8) rotate(180)">
+    <g id="그룹_620677" data-name="그룹 620677" transform="translate(-8 -8)" clip-path="url(#clip-path)">
+      <g id="그룹_620676" data-name="그룹 620676" clip-path="url(#clip-path)">
+        <g id="그룹_620673" data-name="그룹 620673" opacity="0">
+          <g id="그룹_620672" data-name="그룹 620672" clip-path="url(#clip-path)">
+            <rect id="사각형_448323" data-name="사각형 448323" width="16" height="16" fill="#ff00c4"/>
+          </g>
+        </g>
+        <g id="그룹_620675" data-name="그룹 620675" opacity="0">
+          <g id="그룹_620674" data-name="그룹 620674" clip-path="url(#clip-path)">
+            <rect id="사각형_448325" data-name="사각형 448325" width="16" height="16" fill="#f0f"/>
+          </g>
+        </g>
+        <line id="선_175251" data-name="선 175251" x2="3.3" y2="3.3" transform="translate(10.8 6.8)" fill="none" stroke="#999" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="패스_1502039" data-name="패스 1502039" d="M1.3,10.8,8,4l2.8,2.8" fill="none" stroke="#999" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
