@@ -14,7 +14,7 @@
 
   .form-div {
     .title {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     .wrap-check {
       margin-top: 2.5rem;
@@ -114,7 +114,10 @@
 
     .wrap-card {
       .info {
-        padding-bottom: 1rem;
+        padding: 3rem 2.5rem 0.5rem;
+      }
+      .logo-card {
+        margin-bottom: 0.5rem;
       }
       .bottom {
         justify-content: flex-end;
@@ -122,6 +125,7 @@
         padding-right: 1.5rem;
         color: rgba(255, 255, 255, 0.7);
         font-size: 1rem;
+        margin: 0 1.5rem 2rem 2.5rem;
 
         p:first-child {
           margin-right: 0.5rem;

@@ -515,12 +515,13 @@
     margin-top: 1.4rem;
     font-size: 1.3rem;
     line-height: 1.5;
+    color: $fc1;
   }
   .noti-box {
     display: block;
     color: $fc1;
     text-align: center;
-
+    margin-top: 2rem;
     &.type1 {
       padding: 3rem 2rem;
       font-size: 1.7rem;
@@ -531,7 +532,7 @@
     }
   }
   .coupon {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   .list-dot {
     padding-top: 3rem;
@@ -547,8 +548,8 @@
     }
   }
   .price-box {
-    padding-bottom: 2rem;
     & + .list-dot {
+      margin-top: 2rem;
       border-top: 0.1rem solid $fcF0;
     }
   }
