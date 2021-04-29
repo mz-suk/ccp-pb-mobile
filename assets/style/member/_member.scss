@@ -700,57 +700,6 @@
     padding: 1.5rem 0 3rem;
     border-bottom: 0.1rem solid $fcF0;
   }
-  // padding: 2.5rem 2rem 4rem;
-  // border: 0.1rem solid $fcD7;
-  // border-radius: 1.6rem;
-  // .membership-top {
-  //   display: flex;
-  //   align-items: center;
-  //   .thumb {
-  //     margin-right: 2.3rem;
-  //     width: 10rem;
-  //   }
-  //   .info {
-  //     color: $fc1;
-  //   }
-  //   .title {
-  //     font-size: 1.7rem;
-  //   }
-  //   .annual-fees {
-  //     .col-point {
-  //       color: $pc3;
-  //       em {
-  //         font-size: 1.4rem;
-  //       }
-  //     }
-  //   }
-  //   .period {
-  //     margin-top: 0.5rem;
-  //     font-size: 1.1rem;
-  //     color: $fc6;
-  //   }
-  // }
-
-  // .card-detail-info {
-  //   margin-top: 3rem;
-  //   padding: 3rem 0.5rem 0;
-  //   border-top: 0.1rem solid $fcE4;
-
-  //   .title {
-  //     font-size: 1.5rem;
-  //     &:not(:first-child) {
-  //       margin-top: 2.5rem;
-  //     }
-  //   }
-  //   .list-dot {
-  //     margin-top: 0.7rem;
-  //   }
-  // }
-
-  // .btn-area {
-  //   margin-top: 3rem;
-  //   padding: 0 0.5rem;
-  // }
 }
 
 .membership-detail {
@@ -1076,10 +1025,17 @@
         margin-top: 3rem;
       }
       .list-dot {
+        &.type3 {
+          li:not(:first-child) {
+            margin-top: 0.5rem;
+          }
+        }
         .list-dot {
           &.type2 {
+            margin-left: -0.3rem;
             li {
               padding-left: 1.2rem;
+              line-height: 1.2;
               &:before {
                 width: 0.3rem;
               }

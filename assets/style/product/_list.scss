@@ -472,6 +472,8 @@
 
   &.type1 {
     .empty-text {
+      margin-top: 1.5rem;
+      line-height: 1.2;
       &:first-child {
         margin-top: 0;
       }
