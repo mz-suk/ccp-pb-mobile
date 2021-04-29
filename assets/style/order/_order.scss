@@ -125,7 +125,7 @@
         padding-right: 1.5rem;
         color: rgba(255, 255, 255, 0.7);
         font-size: 1rem;
-        margin: 0 1.5rem 2rem 2.5rem;
+        margin: 0 1.5rem 0 2.5rem;
 
         p:first-child {
           margin-right: 0.5rem;
@@ -175,7 +175,7 @@
   }
 
   .wrap-card {
-    height: 17.2rem;
+    height: 17rem;
     margin: 0 -2rem;
     padding: 0 5.5rem;
 
@@ -227,12 +227,6 @@
       strong {
         font-size: 1.8rem;
       }
-    }
-  }
-
-  .accordion {
-    & + .order-cont {
-      border-top: 0;
     }
   }
 
