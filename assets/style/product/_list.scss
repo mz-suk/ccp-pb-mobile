@@ -252,12 +252,10 @@
       margin-top: 0.5rem;
     }
     &.type2 {
+      margin-top: 1rem;
       li {
         font-size: 1.3rem;
-        margin-right: 0.7rem;
-      }
-      &:not(:first-child) {
-        margin-top: 0.7rem;
+        margin: 0.7rem 0.7rem 0 0;
       }
     }
   }
