@@ -1387,6 +1387,7 @@
           }
         }
 
+        &.txt-line-th,
         .txt-line-th {
           text-decoration: line-through;
         }
@@ -1491,6 +1492,16 @@
         font-size: 1.1rem;
         .blue {
           color: $pc3;
+          &.link {
+            padding-right: 1rem;
+            background: url(~assets/img/layout/icon-more-type-blue.svg) 100% 50% / 1rem 1rem no-repeat;
+          }
+        }
+        .red {
+          color: $gc3;
+        }
+        .under-line {
+          text-decoration: underline;
         }
       }
     }
@@ -1516,6 +1527,10 @@
           &:before {
             background: $pc3;
           }
+        }
+        &.txt-line-th,
+        .txt-line-th {
+          text-decoration: line-through;
         }
       }
     }
@@ -1549,6 +1564,29 @@
         .bg-icon {
           width: 1.6rem;
           height: 1.6rem;
+        }
+      }
+    }
+    .sum-box {
+      margin-top: 1rem;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      background: $fcF9;
+      color: $fc6;
+      dt,
+      dd {
+        width: 50%;
+        &:not(:first-of-type) {
+          margin-top: 0.7rem;
+        }
+      }
+      dd {
+        text-align: right;
+        em {
+          margin-left: 0.5rem;
+          font-size: 1.4rem;
         }
       }
     }

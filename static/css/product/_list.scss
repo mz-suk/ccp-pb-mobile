@@ -3615,22 +3615,26 @@
       }
     }
     .muffin-grade {
-      background: #fafafa;
-      border-radius: 0;
-      padding: 2.5rem 8rem 2.5rem 2.5rem;
-      border: 0.1rem solid $fcF0;
-      width: 31.5rem;
-      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       position: relative;
+      width: 31.5rem;
+      height: 9rem;
+      padding: 0 8.6rem 0 2.5rem;
+      background: #fafafa;
+      border: 0.1rem solid $fcF0;
+      box-sizing: border-box;
 
       &:before {
         content: "";
         position: absolute;
         width: 6.6rem;
         height: 7rem;
+        top: 50%;
         right: 2rem;
-        top: 1rem;
         background: url(~assets/img/layout/icon-cashback.svg) 0 0/100% auto no-repeat;
+        transform: translateY(-50%);
       }
       &.type2 {
         &:before {
