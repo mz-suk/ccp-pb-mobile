@@ -515,12 +515,13 @@
     margin-top: 1.4rem;
     font-size: 1.3rem;
     line-height: 1.5;
+    color: $fc1;
   }
   .noti-box {
     display: block;
     color: $fc1;
     text-align: center;
-
+    margin-top: 2rem;
     &.type1 {
       padding: 3rem 2rem;
       font-size: 1.7rem;
@@ -530,8 +531,44 @@
       margin-top: 2rem;
     }
   }
+  .coupon-area {
+    margin-top: 2rem;
+    .rolling-btn {
+      position: relative;
+      width: 7.2rem;
+      margin: 1.5rem auto 0;
+      padding: 0 1.6rem;
+      box-sizing: border-box;
+      line-height: 1.6rem;
+      text-align: center;
+      .bg-icon {
+        position: absolute;
+        top: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+      .btn-prev {
+        left: 0;
+      }
+      .btn-next {
+        right: 0;
+        transform: rotate(180deg);
+      }
+      button:disabled {
+        opacity: 0.5;
+      }
+      .paging {
+        display: inline-block;
+        color: rgba($fc1, 0.6);
+        font-size: 1rem;
+        span {
+          color: rgba($fc1, 1);
+        }
+      }
+    }
+  }
   .coupon {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   .list-dot {
     padding-top: 3rem;
@@ -547,8 +584,8 @@
     }
   }
   .price-box {
-    padding-bottom: 2rem;
     & + .list-dot {
+      margin-top: 2rem;
       border-top: 0.1rem solid $fcF0;
     }
   }

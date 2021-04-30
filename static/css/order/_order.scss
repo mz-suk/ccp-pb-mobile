@@ -14,7 +14,7 @@
 
   .form-div {
     .title {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     .wrap-check {
       margin-top: 2.5rem;
@@ -114,7 +114,10 @@
 
     .wrap-card {
       .info {
-        padding-bottom: 1rem;
+        padding: 3rem 2.5rem 0.5rem;
+      }
+      .logo-card {
+        margin-bottom: 0.5rem;
       }
       .bottom {
         justify-content: flex-end;
@@ -122,6 +125,7 @@
         padding-right: 1.5rem;
         color: rgba(255, 255, 255, 0.7);
         font-size: 1rem;
+        margin: 0 1.5rem 0 2.5rem;
 
         p:first-child {
           margin-right: 0.5rem;
@@ -171,7 +175,7 @@
   }
 
   .wrap-card {
-    height: 17.2rem;
+    height: 17rem;
     margin: 0 -2rem;
     padding: 0 5.5rem;
 
@@ -223,12 +227,6 @@
       strong {
         font-size: 1.8rem;
       }
-    }
-  }
-
-  .accordion {
-    & + .order-cont {
-      border-top: 0;
     }
   }
 
@@ -548,13 +546,12 @@
 
 .define-box {
   &.total {
-    margin: 2.7rem 0 0;
+    margin: 2.5rem 0 0;
     border-color: $pc3;
     color: $pc3;
 
     dd.right {
       font-size: 1.5rem;
-      font-weight: 700;
     }
 
     span {
