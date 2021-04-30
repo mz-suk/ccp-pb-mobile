@@ -44,12 +44,10 @@
               <p class="title">셀세모 경기광주점셀세모 경기광주점셀세모 경기광주점셀세모 경기광주점셀세모 경기광주점경기광주점경기광주점</p>
               <p class="desc">경기도 광주시 곤지암읍 곤지암리 377-7번지경기도 광주시 곤지암읍 곤지암리 377-7번지경기도 광주시 곤지암읍 곤지암리 377-7번지</p>
             </div>
-
             <div class="etc">
               <a href="javascript:;" class="active"><i class="bg-icon location">거리</i>1.7 km</a>
               <a href="javascript:;"><i class="bg-icon review">평점</i>4.5 <span>(88)</span></a>
             </div>
-
             <dl class="store-time">
               <dt><i class="bg-icon time">시간</i>운영시간 :</dt>
               <dd>
@@ -60,14 +58,12 @@
                 </ul>
               </dd>
             </dl>
-
             <ul class="wrap-etc type2">
               <li>24시간</li>
               <li>온수</li>
               <li>실내</li>
               <li>개인용품</li>
             </ul>
-
             <ul class="store-link">
               <li>
                 <button type="button"><i class="bg-icon like active"></i><span>즐겨찾기</span></button>
@@ -82,25 +78,75 @@
                 <button type="button"><i class="bg-icon share"></i><span>공유</span></button>
               </li>
             </ul>
-
-            <div class="coupon">
-              <div class="left">
-                <div class="discount">
-                  <p class="num">10<span>%</span></p>
-                </div>
-                <p class="d-day">
-                  D day<span><i>-</i>7</span>
-                </p>
-                <p class="txt">예약방문 셀프세차장 이용 시</p>
+            <!-- swiper -->
+            <div class="coupon-area">
+              <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="coupon type1">
+                      <div class="left">
+                        <div class="discount">
+                          <p class="num">50,000<span>원</span></p>
+                        </div>
+                        <div class="desc">
+                          <strong>가정의 달 프리미엄 세차 할인 혜택 가정의 달 프리미엄 세차 할인 혜택</strong>
+                          <p>150,000원 이상 세차상품 예약 시 할인 적용 가능</p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="download">
+                          <button type="button">
+                            <img src="../../assets/img/layout/img-get-coupon.svg" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="coupon type1">
+                      <div class="left">
+                        <div class="discount">
+                          <p class="num">50,000<span>원</span></p>
+                        </div>
+                        <div class="desc">
+                          <strong>가정의 달 프리미엄 세차 할인 혜택 가정의 달 프리미엄 세차 할인 혜택</strong>
+                          <p>150,000원 이상 세차상품 예약 시 할인 적용 가능</p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="download">
+                          <button type="button">
+                            <img src="../../assets/img/layout/img-get-coupon.svg" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <div class="right">
-                <div class="download">
-                  <button type="button">
-                    <img src="../../assets/img/layout/img-get-coupon.svg" />
-                  </button>
-                </div>
+              <div class="swiper-btm">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
             </div>
+
+            <link rel="stylesheet" href="../swiper-bundle.min.css" />
+            <script src="../swiper-bundle.min.js"></script>
+            <script>
+              var swiper = new Swiper(".coupon-area .swiper-container", {
+                slidesPerView: "auto",
+                pagination: {
+                  el: ".coupon-area .swiper-pagination",
+                  type: "fraction",
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                }
+              });
+            </script>
+            <!-- //swiper -->
           </div>
         </div>
 

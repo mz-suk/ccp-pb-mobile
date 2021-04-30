@@ -44,33 +44,78 @@
                 <span class="discount"><span>60,000</span>원</span>
               </span>
             </div>
+            <!-- swiper -->
             <div class="coupon-area">
-              <div class="coupon type1">
-                <div class="left">
-                  <div class="discount">
-                    <p class="num">50,000<span>원</span></p>
-                  </div>
-                  <div class="desc">
-                    <strong>가정의 달 프리미엄 세차 할인 혜택 가정의 달 프리미엄 세차 할인 혜택</strong>
-                    <p>150,000원 이상 세차상품 예약 시 할인 적용 가능</p>
-                  </div>
-                </div>
-                <div class="right">
-                  <div class="download">
-                    <button type="button">
-                      <img src="../../assets/img/layout/img-get-coupon.svg" />
-                    </button>
-                  </div>
-                </div>
+              <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="coupon type1">
+                      <div class="left">
+                        <div class="discount">
+                          <p class="num">50,000<span>원</span></p>
+                        </div>
+                        <div class="desc">
+                          <strong>가정의 달 프리미엄 세차 할인 혜택 가정의 달 프리미엄 세차 할인 혜택</strong>
+                          <p>150,000원 이상 세차상품 예약 시 할인 적용 가능</p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="download">
+                          <button type="button">
+                            <img src="../../assets/img/layout/img-get-coupon.svg" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="coupon type1">
+                      <div class="left">
+                        <div class="discount">
+                          <p class="num">50,000<span>원</span></p>
+                        </div>
+                        <div class="desc">
+                          <strong>가정의 달 프리미엄 세차 할인 혜택 가정의 달 프리미엄 세차 할인 혜택</strong>
+                          <p>150,000원 이상 세차상품 예약 시 할인 적용 가능</p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="download">
+                          <button type="button">
+                            <img src="../../assets/img/layout/img-get-coupon.svg" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <div class="rolling-btn">
-                <button type="button" class="bg-icon btn-prev">이전</button>
-                <button type="button" class="bg-icon btn-next" disabled>다음</button>
-                <p class="paging"><span>1</span>/12</p>
+              <div class="swiper-btm">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
             </div>
+
+            <link rel="stylesheet" href="../swiper-bundle.min.css" />
+            <script src="../swiper-bundle.min.js"></script>
+            <script>
+              var swiper = new Swiper(".coupon-area .swiper-container", {
+                slidesPerView: "auto",
+                pagination: {
+                  el: ".coupon-area .swiper-pagination",
+                  type: "fraction",
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                }
+              });
+            </script>
+            <!-- //swiper -->
           </div>
         </div>
+
         <div class="block-layout">
           <div class="wrap-tab type3">
             <ul class="tab-menu">
