@@ -883,11 +883,6 @@
         margin-left: auto;
       }
     }
-    .wrap-tooltip {
-      .tooltip2 {
-        margin-top: 0.2rem;
-      }
-    }
   }
 
   .text-guide {
@@ -2258,6 +2253,7 @@
 .wrap-tooltip {
   display: inline-block;
   position: relative;
+  height: 1.6rem;
 
   .tooltip2 {
     display: inline-block;
