@@ -386,7 +386,8 @@
           font-size: 1.5rem;
           .address-detail {
             font-size: 1.3rem;
-            margin-top: 0.6rem;
+            margin-top: 0.8rem;
+            padding-left: 3rem;
             line-height: 1.2;
           }
         }
@@ -413,23 +414,11 @@
       padding-bottom: 8rem;
     }
     .checkbox.type4 {
-      position: relative;
-      input[type="radio"] {
-        position: absolute;
-        top: 0;
-        left: 0.1rem;
-        width: 2rem;
-        height: 2rem;
-        background: url(../../assets/img/layout/icon-radio-off.svg) 0 0 / 100% auto no-repeat;
-        clip: inherit;
-        &:checked {
-          background: url(../../assets/img/layout/icon-radio-on.svg) 0 0 / 100% auto no-repeat;
-        }
-      }
       label {
-        padding-left: 3rem;
         .left:before {
-          display: none;
+          flex: 0 0 0.6rem;
+          align-self: flex-start;
+          margin-top: 0.1rem;
         }
       }
     }
