@@ -3063,7 +3063,7 @@
 }
 
 .mymuffin-cont {
-  padding: 3.5rem 2rem 3.5rem;
+  padding: 4rem 2rem 3.5rem;
   box-sizing: border-box;
   border-top: 0.8rem solid $fcF9;
   border-bottom: 0.1rem solid $fcF0;
@@ -3134,7 +3134,7 @@
   }
 
   .my-carinfo {
-    padding: 2rem 1rem 1.5rem;
+    padding: 2rem 1rem 0;
     height: 9rem;
     .my-logo {
       position: static;
@@ -3307,7 +3307,6 @@
 
   &:first-of-type {
     border-top: 0;
-    padding: 4rem 2rem 2rem;
   }
 
   &:last-of-type {
