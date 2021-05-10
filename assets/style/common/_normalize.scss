@@ -251,10 +251,11 @@ html {
 .swiper-pagination {
   .swiper-pagination-bullet {
     overflow: hidden;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     margin: 4px;
     background: $fcF;
+    box-sizing: border-box;
     opacity: 0.6;
   }
   .swiper-pagination-bullet-active {
