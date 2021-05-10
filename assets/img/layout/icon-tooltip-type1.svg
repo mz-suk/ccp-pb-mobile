@@ -1,10 +1,10 @@
 <svg id="icon_info_16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
   <rect id="사각형_155148" data-name="사각형 155148" width="16" height="16" fill="#ed007b" opacity="0"/>
   <g id="그룹_27523" data-name="그룹 27523" transform="translate(-0.047)">
-    <g id="타원_2526" data-name="타원 2526" transform="translate(0.047)" fill="none" stroke="#999" stroke-width="1">
+    <g id="타원_2526" data-name="타원 2526" transform="translate(0.047)" fill="none" stroke="#666" stroke-width="1">
       <circle cx="8" cy="8" r="8" stroke="none"/>
       <circle cx="8" cy="8" r="7.5" fill="none"/>
     </g>
   </g>
-  <path id="패스_134350" data-name="패스 134350" d="M2.331-7.546a.646.646,0,0,1-.2.473.646.646,0,0,1-.473.2.628.628,0,0,1-.467-.2A.655.655,0,0,1,1-7.546a.655.655,0,0,1,.193-.473.628.628,0,0,1,.467-.2.649.649,0,0,1,.478.193A.649.649,0,0,1,2.331-7.546Zm.795,5.558V-1H.274v-.988h.881V-4.651H.274v-.994H2.267v3.657Z" transform="translate(6.226 12.218)" fill="#999"/>
+  <path id="패스_134350" data-name="패스 134350" d="M2.331-7.546a.646.646,0,0,1-.2.473.646.646,0,0,1-.473.2.628.628,0,0,1-.467-.2A.655.655,0,0,1,1-7.546a.655.655,0,0,1,.193-.473.628.628,0,0,1,.467-.2.649.649,0,0,1,.478.193A.649.649,0,0,1,2.331-7.546Zm.795,5.558V-1H.274v-.988h.881V-4.651H.274v-.994H2.267v3.657Z" transform="translate(6.226 12.218)" fill="#666"/>
 </svg>
