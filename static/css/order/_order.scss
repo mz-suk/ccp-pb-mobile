@@ -117,6 +117,8 @@
         padding: 3rem 2.5rem 0.5rem;
       }
       .logo-card {
+        align-items: center;
+        width: 5rem;
         margin-bottom: 0.5rem;
       }
       .bottom {
@@ -551,7 +553,8 @@
     color: $pc3;
 
     span {
-      margin-right: 0.2rem;
+      display: inline-block;
+      margin: -0.1rem 0.2rem 0 0;
       font-size: 2rem;
       font-weight: 400;
       line-height: 1;
@@ -1151,13 +1154,14 @@
 
 .wrap-card {
   .logo-card {
-    margin-left: 2.5rem;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
     height: 3.8rem;
+    margin-left: 2.5rem;
     margin-bottom: 1rem;
-
     img {
-      height: 100%;
+      width: 100%;
     }
   }
 
@@ -1706,6 +1710,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      width: 6rem;
       height: 4.6rem;
       margin-bottom: 0;
     }

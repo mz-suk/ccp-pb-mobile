@@ -3287,11 +3287,10 @@
   }
   .swiper-pagination {
     position: static;
-    height: 0.6rem;
     margin-top: 1.5rem;
+    height: 1rem;
     .swiper-pagination-bullet {
       background: $fc1;
-      border-radius: 50%;
       vertical-align: top;
       opacity: 0.2;
       &.swiper-pagination-bullet-active {

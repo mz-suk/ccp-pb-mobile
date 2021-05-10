@@ -467,7 +467,7 @@
     .swiper-pagination {
       position: static;
       margin-top: 2rem;
-      height: 0.6rem;
+      height: 1rem;
     }
     .swiper-pagination-bullet {
       display: inline-block;
@@ -757,6 +757,9 @@
         font-size: 1.5rem;
         button {
           margin-left: auto;
+          &.btn-arrow:after {
+            margin-left: 0;
+          }
         }
       }
       .list-dot {
@@ -969,14 +972,9 @@
     }
 
     .swiper-pagination {
-      height: 0.6rem;
       bottom: 2.5rem;
       .swiper-pagination-bullet {
-        width: 0.6rem;
-        height: 0.6rem;
         background: #e0e0e0;
-        border-radius: 50%;
-        vertical-align: top;
         opacity: 1;
         &.swiper-pagination-bullet-active {
           background: $fc1;

@@ -18,6 +18,7 @@
 .mx-btn-current-year:after {
   display: inline-block;
   content: ".";
+  margin: 0 0.2rem 0 -0.2rem;
 }
 .mx-calendar-header-label button {
   margin-top: -0.3rem;
