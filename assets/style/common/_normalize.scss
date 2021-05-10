@@ -249,13 +249,11 @@ html {
 }
 
 .swiper-pagination {
-  padding-top: 2px;
   .swiper-pagination-bullet {
     overflow: hidden;
     width: 6px;
     height: 6px;
-    margin: 0 0.4rem;
-    border-radius: 10rem !important;
+    margin: 4px;
     background: $fcF;
     opacity: 0.6;
   }
