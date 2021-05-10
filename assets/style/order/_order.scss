@@ -551,7 +551,8 @@
     color: $pc3;
 
     span {
-      margin-right: 0.2rem;
+      display: inline-block;
+      margin: -0.2rem 0.2rem 0 0;
       font-size: 2rem;
       font-weight: 400;
       line-height: 1;

@@ -3288,8 +3288,10 @@
   .swiper-pagination {
     position: static;
     margin-top: 1.5rem;
+    height: 8px;
     .swiper-pagination-bullet {
       background: $fc1;
+      vertical-align: top;
       opacity: 0.2;
       &.swiper-pagination-bullet-active {
         background: $fc1;

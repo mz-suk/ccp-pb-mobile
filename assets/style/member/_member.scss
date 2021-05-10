@@ -757,6 +757,9 @@
         font-size: 1.5rem;
         button {
           margin-left: auto;
+          &.btn-arrow:after {
+            margin-left: 0;
+          }
         }
       }
       .list-dot {
