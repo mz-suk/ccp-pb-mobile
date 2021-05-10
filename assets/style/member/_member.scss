@@ -972,11 +972,9 @@
     }
 
     .swiper-pagination {
-      height: 0.6rem;
       bottom: 2.5rem;
       .swiper-pagination-bullet {
         background: #e0e0e0;
-        vertical-align: top;
         opacity: 1;
         &.swiper-pagination-bullet-active {
           background: $fc1;
