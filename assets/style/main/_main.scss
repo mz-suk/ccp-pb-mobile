@@ -327,17 +327,7 @@
   .swiper-pagination {
     position: static;
     margin-top: 2rem;
-    height: 1rem;
-  }
-  .swiper-pagination-bullet {
-    display: inline-block;
-    background: $fc1;
-    border-radius: 50%;
-    vertical-align: top;
-    opacity: 0.2;
-  }
-  .swiper-pagination-bullet-active {
-    opacity: 1;
+    height: 0.8rem;
   }
 
   .wrap-empty {
