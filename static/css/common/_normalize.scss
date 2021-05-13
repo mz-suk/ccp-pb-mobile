@@ -250,13 +250,12 @@ html {
 
 .swiper-pagination {
   .swiper-pagination-bullet {
-    overflow: hidden;
-    width: 6px;
-    height: 6px;
-    margin: 0 4px;
-    background: $fcF;
-    box-sizing: border-box;
-    opacity: 0.6;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px !important;
+    background: url(~assets/img/layout/icon-paging.svg) 0 0 /100% auto no-repeat;
+    vertical-align: top;
+    opacity: 0.2;
   }
   .swiper-pagination-bullet-active {
     opacity: 1;

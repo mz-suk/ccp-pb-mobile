@@ -476,7 +476,9 @@
       z-index: 5;
       .swiper-pagination-bullet {
         display: inline-block;
-        vertical-align: top;
+        width: 6px;
+        height: 6px;
+        background: $fcF;
         border-radius: 50%;
       }
     }

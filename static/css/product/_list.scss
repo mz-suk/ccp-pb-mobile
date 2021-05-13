@@ -2608,16 +2608,7 @@
 
   .swiper-pagination {
     bottom: 0 !important;
-    .swiper-pagination-bullet {
-      width: 0.8rem;
-      height: 0.8rem;
-      background: #e0e0e0;
-      border-radius: 50%;
-      opacity: 1;
-      &.swiper-pagination-bullet-active {
-        background: $fc1;
-      }
-    }
+    height: 0.8rem;
   }
 }
 
@@ -2652,16 +2643,7 @@
 
   .swiper-pagination {
     bottom: 0 !important;
-    .swiper-pagination-bullet {
-      width: 0.8rem;
-      height: 0.8rem;
-      background: #e0e0e0;
-      border-radius: 50%;
-      opacity: 1;
-      &.swiper-pagination-bullet-active {
-        background: $fc1;
-      }
-    }
+    height: 0.8rem;
   }
 }
 
@@ -2736,16 +2718,7 @@
 
   .swiper-pagination {
     bottom: 0 !important;
-    .swiper-pagination-bullet {
-      width: 0.8rem;
-      height: 0.8rem;
-      background: #e0e0e0;
-      border-radius: 50%;
-      opacity: 1;
-      &.swiper-pagination-bullet-active {
-        background: $fc1;
-      }
-    }
+    height: 0.8rem;
   }
 
   .oil-qa {
@@ -3288,16 +3261,7 @@
   .swiper-pagination {
     position: static;
     margin-top: 1.5rem;
-    height: 1rem;
-    .swiper-pagination-bullet {
-      background: $fc1;
-      vertical-align: top;
-      opacity: 0.2;
-      &.swiper-pagination-bullet-active {
-        background: $fc1;
-        opacity: 1;
-      }
-    }
+    height: 0.8rem;
   }
 
   &:first-of-type {
