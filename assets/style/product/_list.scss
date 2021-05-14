@@ -3769,3 +3769,38 @@
     }
   }
 }
+
+.info-area {
+  margin-top: -2rem;
+  padding-bottom: 3rem;
+  .accordion {
+    margin-top: 4rem;
+  }
+  .list-dot {
+    li {
+      word-break: break-all;
+    }
+    .col-pc3 {
+      color: $pc3;
+      > a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.list-info {
+  li {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid $fcF0;
+    line-height: 1.2;
+
+    .tit {
+      color: $fc1;
+    }
+    .txt {
+      margin-top: 0.7rem;
+      color: $fc9;
+    }
+  }
+}

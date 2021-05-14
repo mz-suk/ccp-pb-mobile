@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <!-- Popup -->
+    <div class="wrapper-layer pos-right">
+      <div class="wrap-layer">
+        <!-- Header -->
+        <header class="header header-popup">
+          <h1 class="title">사업자정보 확인</h1>
+          <div class="right">
+            <button type="button" class="bg-icon close">닫기</button>
+          </div>
+        </header>
+        <!-- //Header -->
+
+        <!-- wrap-contents -->
+        <div class="wrap-contents">
+          <div class="block-layout">
+            <div class="info-area">
+              <ul class="list-info">
+                <li>
+                  <p class="tit">통신판매번호</p>
+                  <p class="txt">01-5283</p>
+                </li>
+                <li>
+                  <p class="tit">사업자등록번호</p>
+                  <p class="txt">101-86-60120</p>
+                </li>
+                <li>
+                  <p class="tit">신고현황</p>
+                  <p class="txt">통신판매업 신고</p>
+                </li>
+                <li>
+                  <p class="tit">법인여부</p>
+                  <p class="txt">법인</p>
+                </li>
+                <li>
+                  <p class="tit">상호</p>
+                  <p class="txt">SK에너지 주식회사</p>
+                </li>
+                <li>
+                  <p class="tit">대표자명</p>
+                  <p class="txt">정철길</p>
+                </li>
+                <li>
+                  <p class="tit">대표 전화번호</p>
+                  <p class="txt">02-2121-6269</p>
+                </li>
+                <li>
+                  <p class="tit">판매방식</p>
+                  <p class="txt">종합몰, 교육/도서/완구/오락, 가전, 컴퓨터/사무용품</p>
+                </li>
+                <li>
+                  <p class="tit">전자우편(E-mail)</p>
+                  <p class="txt">-</p>
+                </li>
+                <li>
+                  <p class="tit">신고일자</p>
+                  <p class="txt">20070710</p>
+                </li>
+                <li>
+                  <p class="tit">사업장소재지</p>
+                  <p class="txt">서울특별시 종로구 서린동 99번지 1층동</p>
+                </li>
+                <li>
+                  <p class="tit">사업장소재지(도로명)</p>
+                  <p class="txt">서울특별시 종로구 종로 26, 1층 (서린동)</p>
+                </li>
+                <li>
+                  <p class="tit">인터넷도메인</p>
+                  <p class="txt">www.enclean.com</p>
+                </li>
+                <li>
+                  <p class="tit">호스트서버소재지</p>
+                  <p class="txt">서울특별시 중구 남대문로5가 267번지 SK남산그린빌딩</p>
+                </li>
+                <li>
+                  <p class="tit">통신판매업 신고기관명</p>
+                  <p class="txt">서울특별시 종로구청 (02-2148-2265)</p>
+                </li>
+              </ul>
+
+              <!-- [D] accordion 활성화 .active 추가 -->
+              <div class="accordion type4 active">
+                <div class="accordion-title">
+                  <p class="title"><i class="bg-icon tooltip2"></i> 유의사항</p>
+                  <button type="button" class="bg-icon toggle">펼침</button>
+                </div>
+                <div class="accordion-cont">
+                  <ul class="list-dot">
+                    <li>본 자료는 전자상거래시장에서 소비지가 정확한 사업자 정보를 가지고 안전한 거래를 할 수 있도록 전국 시,군,구에 신고된 통신판매업자의 신원정보를 전자상거래소비자보호법 제12조4항 에 따라 제공하는 정보입니다.</li>
+                    <li>사업자 정보에 대한 궁금한 사항이나 사업자의 신원정보가 정보공개 내용과 불일치할 경우에는 사업자 정보 검색시 확인되는 해당 신고기관(지방자치단체)에 문의하여 주시기 바랍니다.</li>
+                    <li>일부 사업자의 경우, 부가가치세법상 사업자 폐업 신고는 하였으나, 전자상거래법상 통신판매업 폐업 신고는 하지 않은 사례가 있을 수 있습니다.</li>
+                    <li>소비자 피해를 방지하기 위해 부가가치세법상 <span class="col-pc3">사업자 폐업 여부</span>도 국세청 홈텍스 홈페이지 <span class="col-pc3">(<a href="https://www.hometax.go.kr/" class="link">www.hometax.go.kr</a>)</span>의 사업자등록상태조회 코너를 통해 확인하시기 바랍니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //wrap-contents -->
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    <!-- //Popup -->
+  </body>
+</html>
