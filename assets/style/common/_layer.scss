@@ -429,6 +429,17 @@
         position: absolute;
         top: 1.5rem;
         right: 2rem;
+        height: 2.2rem;
+        padding: 0 1rem;
+        font-size: 1rem;
+        border: 0;
+
+        &.bg-blue {
+          background: #4674e6;
+        }
+        &.bg-red {
+          background: #d62e36;
+        }
       }
     }
   }
