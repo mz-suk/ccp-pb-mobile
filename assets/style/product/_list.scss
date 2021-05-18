@@ -1642,7 +1642,7 @@
         line-height: 1.2;
       }
       .btn-area {
-        margin: 2rem -5rem 0 0;
+        margin: 2rem 0 0;
         padding-top: 2rem;
       }
       .right {
@@ -1693,11 +1693,11 @@
       }
 
       &.type1 {
-        // height: 26.5rem;
+        padding: 2.5rem;
       }
+
       &.type2 {
         padding-bottom: 3.5rem;
-        // height: 21.7rem;
         .count {
           right: 1.3rem;
         }
@@ -3776,17 +3776,29 @@
 .info-area {
   margin-top: -2rem;
   padding-bottom: 3rem;
+
   .accordion {
     margin-top: 4rem;
   }
-  .list-dot {
-    li {
-      word-break: break-all;
-    }
-    .col-pc3 {
-      color: $pc3;
-      > a {
-        text-decoration: underline;
+
+  .accordion-cont {
+    .list-dot {
+      padding-right: 1rem;
+
+      li {
+        word-break: break-all;
+        line-height: 1.4;
+
+        &:not(:first-child) {
+          margin-top: 1.8rem;
+        }
+      }
+
+      .col-pc3 {
+        color: $pc3;
+        > a {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -3802,7 +3814,7 @@
       color: $fc1;
     }
     .txt {
-      margin-top: 0.7rem;
+      margin-top: 0.8rem;
       color: $fc9;
     }
   }
