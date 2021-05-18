@@ -221,42 +221,22 @@
   }
 
   .wrap-tag {
-    margin-left: -1.5rem;
+    margin: 1.3rem 0 0 -0.5rem;
     font-size: 0;
-    vertical-align: top;
+
     .bg-icon {
-      width: 2.8rem;
-      height: 2.8rem;
-      margin-right: 0.7rem;
+      display: none;
     }
+
     .tag {
       display: inline-block;
-      margin: 1.5rem 0 0 1.5rem;
-      font-size: 1.3rem;
-      color: $fc1;
-    }
-  }
-  .wrap-etc {
-    margin-top: 2rem;
-    font-size: 0;
-    li {
-      display: inline-block;
-      margin-right: 0.5rem;
-      color: $fc6;
-      background-color: $fcF9;
-      border: 0.1rem solid $fcF0;
-      padding: 0.4rem 0.8rem;
+      margin: 0.7rem 0 0 0.5rem;
+      padding: 0 0.7rem;
+      box-sizing: border-box;
       font-size: 1.1rem;
-    }
-    &:not(:first-of-type) {
-      margin-top: 0.5rem;
-    }
-    &.type2 {
-      margin-top: 1rem;
-      li {
-        font-size: 1.3rem;
-        margin: 0.7rem 0.7rem 0 0;
-      }
+      line-height: 1.8;
+      background: $fcF9;
+      border: 1px solid $fcF0;
     }
   }
 
@@ -2021,6 +2001,10 @@
       .customer-info {
         margin-top: 1.5rem;
         text-align: left;
+
+        dt:before {
+          top: 0.5rem;
+        }
       }
     }
     .car-info-box {
@@ -3582,6 +3566,7 @@
       position: relative;
       width: 31.5rem;
       height: 9rem;
+      margin: 0 auto;
       padding: 0 8.6rem 0 2.5rem;
       background: #fafafa;
       border: 0.1rem solid $fcF0;
@@ -3622,6 +3607,10 @@
           line-height: 2rem;
         }
       }
+    }
+
+    .swiper-slide {
+      margin: 0 !important;
     }
   }
   .more-benefits {

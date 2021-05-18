@@ -2,10 +2,12 @@
   margin-bottom: 0;
   padding-bottom: 3.5rem;
   border-bottom: 0.1rem solid $fcF0;
+
   & + div .row-section {
     border-top: 0.8rem solid $fcF9;
     padding-bottom: 6rem;
   }
+
   .item-top {
     overflow: hidden;
     height: 20rem;
@@ -31,6 +33,11 @@
       bottom: 1rem;
     }
   }
+
+  .wrap-tag {
+    margin-top: 0.3rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .store-time {
@@ -55,7 +62,7 @@
 
 .store-link {
   display: flex;
-  padding: 1.5em 0;
+  padding: 2rem 0;
   margin-top: 2rem;
   border-radius: 0.1rem;
   background: $fcF9;
@@ -79,7 +86,8 @@
     position: relative;
     text-align: center;
     color: $fc1;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+
     button {
       display: block;
       width: 100%;
@@ -102,7 +110,7 @@
   .bg-icon {
     position: static;
     display: block;
-    margin: 0 auto 0.8rem;
+    margin: 0 auto 1rem;
     width: 2.4rem;
     height: 2.4rem;
   }

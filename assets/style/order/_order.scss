@@ -237,6 +237,22 @@
       padding-bottom: 0rem;
     }
   }
+
+  .order-btm {
+    margin-top: -0.1rem;
+    padding: 0 2rem;
+    background: $fcF;
+    text-align: center;
+
+    .btn-area {
+      margin-top: 0;
+      padding-top: 0.5rem;
+    }
+
+    .btn-arrow {
+      margin-top: 2.5rem;
+    }
+  }
 }
 
 .wrap-btn-pay {
