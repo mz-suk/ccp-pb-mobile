@@ -221,7 +221,7 @@
   }
 
   .wrap-tag {
-    margin: 1.3rem 0 0 -0.5rem;
+    margin: 1.5rem 0 0 -0.5rem;
     font-size: 0;
 
     .bg-icon {
@@ -230,7 +230,7 @@
 
     .tag {
       display: inline-block;
-      margin: 0.7rem 0 0 0.5rem;
+      margin: 0.5rem 0 0 0.5rem;
       padding: 0 0.7rem;
       box-sizing: border-box;
       font-size: 1.1rem;
@@ -3025,7 +3025,11 @@
   border-bottom: 0.1rem solid $fcF0;
   color: $fc1;
   .mymuffin-title {
+    display: flex;
+    align-items: center;
     position: relative;
+    line-height: 1.1;
+
     .count {
       position: absolute;
       right: 0rem;
@@ -3052,27 +3056,25 @@
       }
     }
     .count-round {
-      position: absolute;
-      right: 0rem;
-      top: -1rem;
-      line-height: 4.6rem;
+      position: relative;
+      margin-left: auto;
       color: $pc3;
       font-size: 1.5rem;
       .round-num {
+        position: absolute;
+        top: -1.5rem;
+        right: 1.8rem;
         width: 4.6rem;
         height: 4.6rem;
         border-radius: 50%;
         background: rgba(54, 115, 288, 0.1);
-        display: inline-block;
         text-align: center;
+        line-height: 4.6rem;
       }
     }
     .text-link {
+      margin-left: auto;
       color: $fc1;
-      position: absolute;
-      right: 0rem;
-      top: -0.5rem;
-      padding: 1rem 0;
       .refresh {
         width: 1.6rem;
         height: 1.6rem;
@@ -3227,7 +3229,8 @@
       .swiper-wrapper {
         align-items: center;
         .swiper-slide {
-          margin: 0 3rem;
+          width: 31.5rem;
+          margin: 0 0 0 3rem;
         }
       }
       &.type1 {
@@ -3261,6 +3264,7 @@
 
   .title {
     font-size: 1.5rem;
+    line-height: 1.1;
 
     span {
       color: $fc6;
@@ -3564,9 +3568,8 @@
       flex-wrap: wrap;
       align-items: center;
       position: relative;
-      width: 31.5rem;
       height: 9rem;
-      margin: 0 auto;
+      margin: 0;
       padding: 0 8.6rem 0 2.5rem;
       background: #fafafa;
       border: 0.1rem solid $fcF0;
@@ -3607,10 +3610,6 @@
           line-height: 2rem;
         }
       }
-    }
-
-    .swiper-slide {
-      margin: 0 !important;
     }
   }
   .more-benefits {
