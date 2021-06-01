@@ -259,6 +259,10 @@
       margin-top: 2.5rem;
     }
   }
+
+  .accordion:not(.active) + .order-cont {
+    border-top: 0;
+  }
 }
 
 .wrap-btn-pay {
