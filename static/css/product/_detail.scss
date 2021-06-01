@@ -318,8 +318,11 @@
     }
 
     .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       width: 22.4rem;
-      padding: 2rem 2rem 1.8rem;
+      padding: 0 2rem;
       box-sizing: border-box;
       background: url(~assets/img/layout/bg-icon-membership2.svg) no-repeat 0 0/100% auto;
 
