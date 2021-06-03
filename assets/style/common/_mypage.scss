@@ -384,15 +384,31 @@
     padding: 0 1rem 4rem;
   }
   .head-title {
+    position: relative;
     padding-left: 1rem;
     padding-right: 1rem;
+    border-bottom: 0;
+
     label {
       margin-left: 1rem;
+      &:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background: $fcE4;
+        content: "";
+      }
+    }
+    input:checked + label:after {
+      background: $fc1;
     }
   }
   .auto-select-list {
     padding: 0 1rem;
   }
+
   .label-tit,
   .checkbox {
     font-size: 1.5rem;

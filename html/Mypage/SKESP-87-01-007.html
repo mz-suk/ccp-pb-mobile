@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=contain" />
+    <title>Document</title>
+    <script>
+      function setFontSize() {
+        var doc = document.documentElement,
+          fontSizeVal = parseInt((doc.clientWidth / 375) * 62.5 * 10) / 10;
+        fontSizeVal = fontSizeVal >= 125 ? 125 : fontSizeVal;
+
+        doc.style.fontSize = fontSizeVal + "%";
+      }
+      setFontSize();
+      window.addEventListener("resize", setFontSize);
+    </script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header class="header header-sub">
+        <h1 class="title">포인트 사용</h1>
+        <div class="left">
+          <button type="button" class="bg-icon prev">이전페이지</button>
+        </div>
+        <div class="right">
+          <button type="button" class="bg-icon menu">메뉴</button>
+        </div>
+      </header>
+      <!-- //Header -->
+
+      <!-- Wrap-contents -->
+      <div class="wrap-contents">
+        <div class="row-section-wrap">
+          <div class="row-section">
+            <div class="title-sub type2">사용할 머핀포인트를<br/>입력해주세요.</div>
+            <div class="using-wrap">
+              <p class="head-title">
+                <input type="checkbox" id="allChk" checked/>
+                <label for="allChk">포인트 사용</label>
+              </p>
+              <div class="auto-select-list">
+                <div class="cont-row">
+                  <div class="checkbox type4">
+                    <input type="checkbox" id="chk1-1" name="group1" checked="" />
+                    <label for="chk1-1">
+                      <p class="left">머핀 포인트</p>
+                      <span class="right"><span class="point">71,650</span> 사용가능 포인트 .</span>
+                    </label>
+                  </div>
+                  <div class="form-input">
+                    <input type="tel" placeholder="최소 1,000원부터 1단위로 사용가능" />
+                  </div>
+                </div>
+                <div class="cont-row">
+                  <div class="checkbox type4">
+                    <input type="checkbox" id="chk1-2" name="group1" />
+                    <label for="chk1-2">
+                      <p class="left">OK 캐시백</p>
+                      <span class="right"><span class="point">24</span> 사용가능 포인트 .</span>
+                    </label>
+                  </div>
+                  <div class="form-input">
+                    <input type="tel" placeholder="최소 1,000원부터 1단위로 사용가능" />
+                    <p class="form-more-msg">멤버십 No<span class="more-number">1234 5678 1234 5678</span></p>
+                  </div>
+                </div>
+                <div class="cont-row">
+                  <ul class="btn-list">
+                    <li><button type="button" class="btn type1">현대블루 멤버스 포인트 등록</button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fix-footer-area">
+          <!-- <button type="button" class="btn type2 color4" disabled>다음</button> -->
+          <button type="button" class="btn type2 color4">다음</button>
+        </div>
+      </div>
+      <!-- //Wrap-contents -->
+    </div>
+  </body>
+</html>

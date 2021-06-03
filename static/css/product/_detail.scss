@@ -327,9 +327,10 @@
       background: url(~assets/img/layout/bg-icon-membership2.svg) no-repeat 0 0/100% auto;
 
       .tit {
-        line-height: 1.4;
+        line-height: 1.3;
         > span {
           display: block;
+          padding-bottom: 0.2rem;
         }
         em {
           margin-left: 0.5rem;
@@ -471,6 +472,13 @@
   }
   & > .wrap-empty:first-child {
     padding-top: 4rem;
+  }
+
+  .title-sub {
+    &.type2 {
+      margin-bottom: 4rem;
+      line-height: 1.4;
+    }
   }
 }
 
