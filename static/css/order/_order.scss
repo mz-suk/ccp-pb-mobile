@@ -119,6 +119,7 @@
     }
 
     .wrap-card {
+      padding: 0 4.5rem;
       .info {
         padding: 3rem 2.5rem 0.5rem;
       }
@@ -139,6 +140,12 @@
           margin-right: 0.5rem;
           font-size: 0.9rem;
           font-weight: 700;
+        }
+      }
+      .swiper-slide {
+        margin: 0;
+        .card {
+          margin-left: 1rem;
         }
       }
     }
